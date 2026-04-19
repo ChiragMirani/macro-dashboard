@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-04-12T09:55:41.757553+00:00",
-  "target_month": "2026-03",
+  "generated_at_utc": "2026-04-19T18:16:55.116741+00:00",
+  "target_month": "2026-04",
   "threshold_pp": 0.1,
-  "house_forecast_mom": 0.210605440495015,
-  "house_forecast_yoy": 2.6173337887880344,
+  "house_forecast_mom": 0.1875477231675532,
+  "house_forecast_yoy": 2.5499419081018715,
   "ma3_mom": 0.24799842977876185,
-  "house_gap_vs_ma3": -0.03739298928374685,
+  "house_gap_vs_ma3": -0.06045070661120866,
   "consensus_proxy": {
     "source": "kalshi_implied",
-    "mom_event": "KXECONSTATCPICORE-26MAR",
-    "yoy_event": "KXECONSTATCORECPIYOY-26MAR",
+    "mom_event": "KXECONSTATCPICORE-26APR",
+    "yoy_event": "KXECONSTATCORECPIYOY-26APR",
     "core_mom": null,
     "core_yoy": null
   },
@@ -845,17 +845,17 @@
       "natgas_mom_lag1": 79.5,
       "natgas_mom_lag2": -12.85403050108932,
       "natgas_vol_3m": 46.25843165831158,
-      "days_in_month": 31.0,
+      "days_in_month": 30.0,
       "bizdays_total": 22.0,
-      "bizdays_p1": 7.0,
-      "bizdays_p2": 8.0,
-      "bizdays_p3": 7.0,
-      "month_mod6": 2.0,
-      "is_even_month": 0.0,
+      "bizdays_p1": 8.0,
+      "bizdays_p2": 6.0,
+      "bizdays_p3": 8.0,
+      "month_mod6": 3.0,
+      "is_even_month": 1.0,
       "is_january": 0.0,
       "is_february": 0.0,
-      "is_march": 1.0,
-      "is_april": 0.0,
+      "is_march": 0.0,
+      "is_april": 1.0,
       "is_may": 0.0,
       "is_june": 0.0,
       "is_july": 0.0,
@@ -864,7 +864,7 @@
       "is_october": 0.0,
       "is_november": 0.0,
       "is_december": 0.0,
-      "month": 3.0
+      "month": 4.0
     }
   }
 }

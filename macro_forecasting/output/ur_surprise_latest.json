@@ -1,21 +1,21 @@
 {
-  "generated_at_utc": "2026-03-13T14:18:39.536557+00:00",
-  "target_month": "2026-03",
+  "generated_at_utc": "2026-04-19T18:27:24.345472+00:00",
+  "target_month": "2026-04",
   "threshold_pp": 0.12,
   "baseline": {
     "regression": {
-      "rows": 37.0,
-      "mae": 0.05885885885885893,
-      "rmse": 0.07535922203472523,
-      "bias": -0.0006006006006005587
+      "rows": 38.0,
+      "mae": 0.057894736842105304,
+      "rmse": 0.07444837207060753,
+      "bias": 1.5338607577058085e-17
     },
     "classification": {
-      "rows": 37.0,
-      "accuracy": 0.6756756756756757,
-      "brier": 0.21913805697589483,
+      "rows": 38.0,
+      "accuracy": 0.6842105263157895,
+      "brier": 0.2160664819944598,
       "precision": 0.0,
       "recall": 0.0,
-      "base_rate": 0.32432432432432434
+      "base_rate": 0.3157894736842105
     }
   },
   "bakeoff": {
@@ -33,27 +33,10 @@
           "prime_participation_gap"
         ],
         "model": "hgb",
-        "rows": 36.0,
-        "mae": 0.05029470256369571,
-        "rmse": 0.06603689009004002,
-        "bias": -0.0003570407425769099
-      },
-      {
-        "blocks": [
-          "labor_state"
-        ],
-        "features": [
-          "ur_prev",
-          "payems_prev",
-          "sahm_gap_prev",
-          "short_u_share_prev",
-          "long_u_share_prev"
-        ],
-        "model": "hgb",
-        "rows": 36.0,
-        "mae": 0.052944566861796674,
-        "rmse": 0.06881203352524534,
-        "bias": 0.004097186236857017
+        "rows": 37.0,
+        "mae": 0.05081030400769819,
+        "rmse": 0.06612923853020411,
+        "bias": -0.002222308722285301
       },
       {
         "blocks": [
@@ -68,10 +51,27 @@
           "iur_4wma"
         ],
         "model": "hgb",
+        "rows": 38.0,
+        "mae": 0.051529715790901126,
+        "rmse": 0.06653897713345473,
+        "bias": 0.0014308235255932995
+      },
+      {
+        "blocks": [
+          "labor_state"
+        ],
+        "features": [
+          "ur_prev",
+          "payems_prev",
+          "sahm_gap_prev",
+          "short_u_share_prev",
+          "long_u_share_prev"
+        ],
+        "model": "hgb",
         "rows": 37.0,
-        "mae": 0.05172350968768279,
-        "rmse": 0.06896406927804424,
-        "bias": 0.0032867464679050954
+        "mae": 0.053275383109919125,
+        "rmse": 0.06871651685246395,
+        "bias": 0.0022247009860682466
       },
       {
         "blocks": [
@@ -89,10 +89,10 @@
           "layoffs_to_unemployed"
         ],
         "model": "hgb",
-        "rows": 37.0,
-        "mae": 0.05324338351827758,
-        "rmse": 0.07059497042674213,
-        "bias": -0.006528577322203682
+        "rows": 38.0,
+        "mae": 0.05116610229180935,
+        "rmse": 0.071231163238097,
+        "bias": -0.011200988340298767
       },
       {
         "blocks": [
@@ -107,10 +107,10 @@
           "gap_3m_mean"
         ],
         "model": "hgb",
-        "rows": 37.0,
-        "mae": 0.05724341348457375,
-        "rmse": 0.07314082431050908,
-        "bias": -0.013723851264344797
+        "rows": 38.0,
+        "mae": 0.05677897148101336,
+        "rmse": 0.07245728331655756,
+        "bias": -0.01440466089815885
       },
       {
         "blocks": [
@@ -123,10 +123,10 @@
           "u_signed_surprise_lag1"
         ],
         "model": "hgb",
-        "rows": 37.0,
-        "mae": 0.06282299148344672,
-        "rmse": 0.07952355379505821,
-        "bias": -0.008040914214814874
+        "rows": 38.0,
+        "mae": 0.06230601709343643,
+        "rmse": 0.07878220713755876,
+        "bias": -0.008965573437137001
       },
       {
         "blocks": [
@@ -140,10 +140,10 @@
           "is_january"
         ],
         "model": "hgb",
-        "rows": 37.0,
-        "mae": 0.07161106690429339,
-        "rmse": 0.08433043461512185,
-        "bias": -0.03828912031433065
+        "rows": 38.0,
+        "mae": 0.07156716221685229,
+        "rmse": 0.08398339453692112,
+        "bias": -0.039122108958204345
       },
       {
         "blocks": [
@@ -156,10 +156,10 @@
           "u_signed_surprise_lag1"
         ],
         "model": "ols",
-        "rows": 37.0,
-        "mae": 0.08585201732290161,
-        "rmse": 0.10249721863304097,
-        "bias": -0.04959548723422184
+        "rows": 38.0,
+        "mae": 0.08564320755746532,
+        "rmse": 0.10192634736066447,
+        "bias": -0.05034079668164554
       },
       {
         "blocks": [
@@ -174,10 +174,10 @@
           "gap_3m_mean"
         ],
         "model": "ols",
-        "rows": 37.0,
-        "mae": 0.09008126536101498,
-        "rmse": 0.10482182508857957,
-        "bias": -0.05660328944316608
+        "rows": 38.0,
+        "mae": 0.08929654548561071,
+        "rmse": 0.10389433566441499,
+        "bias": -0.056699568934021005
       },
       {
         "blocks": [
@@ -192,16 +192,41 @@
           "iur_4wma"
         ],
         "model": "ols",
-        "rows": 37.0,
-        "mae": 0.09775602525002611,
-        "rmse": 0.11446871357019231,
-        "bias": 0.09775602525002611
+        "rows": 38.0,
+        "mae": 0.09702242570166693,
+        "rmse": 0.1135821870212387,
+        "bias": 0.09702242570166693
       }
     ],
     "reg_combo_results": [
       {
         "blocks": [
           "participation",
+          "claims_iur"
+        ],
+        "features": [
+          "civpart_prev",
+          "emratio_prev",
+          "prime_lfpr_lag1",
+          "prime_epop_lag1",
+          "participation_gap",
+          "prime_participation_gap",
+          "claims_delta",
+          "claims_accel",
+          "cclaims_delta",
+          "iur_delta",
+          "iur_accel",
+          "iur_4wma"
+        ],
+        "model": "hgb",
+        "rows": 37.0,
+        "mae": 0.048345167937855746,
+        "rmse": 0.0611379479539037,
+        "bias": 0.0024420490313188806
+      },
+      {
+        "blocks": [
+          "participation",
           "labor_state"
         ],
         "features": [
@@ -218,15 +243,15 @@
           "long_u_share_prev"
         ],
         "model": "hgb",
-        "rows": 36.0,
-        "mae": 0.051144486128694364,
-        "rmse": 0.06420593148522045,
-        "bias": 0.006985285839522685
+        "rows": 37.0,
+        "mae": 0.05301469043641419,
+        "rmse": 0.066350556909703,
+        "bias": 0.003544006613742933
       },
       {
         "blocks": [
           "participation",
-          "claims_iur"
+          "jolts_flows"
         ],
         "features": [
           "civpart_prev",
@@ -235,42 +260,21 @@
           "prime_epop_lag1",
           "participation_gap",
           "prime_participation_gap",
-          "claims_delta",
-          "claims_accel",
-          "cclaims_delta",
-          "iur_delta",
-          "iur_accel",
-          "iur_4wma"
+          "jts_hires_lag2",
+          "jts_hires_chg_lag2",
+          "jts_quits_lag2",
+          "jts_quits_chg_lag2",
+          "jts_layoffs_lag2",
+          "jts_layoffs_chg_lag2",
+          "openings_to_unemployed",
+          "hires_to_unemployed",
+          "layoffs_to_unemployed"
         ],
         "model": "hgb",
-        "rows": 36.0,
-        "mae": 0.0487003458272329,
-        "rmse": 0.06423457886034646,
-        "bias": 0.0032732764544543724
-      },
-      {
-        "blocks": [
-          "labor_state",
-          "claims_iur"
-        ],
-        "features": [
-          "ur_prev",
-          "payems_prev",
-          "sahm_gap_prev",
-          "short_u_share_prev",
-          "long_u_share_prev",
-          "claims_delta",
-          "claims_accel",
-          "cclaims_delta",
-          "iur_delta",
-          "iur_accel",
-          "iur_4wma"
-        ],
-        "model": "hgb",
-        "rows": 36.0,
-        "mae": 0.04955272488976161,
-        "rmse": 0.06446419004316749,
-        "bias": 0.0015907380371262567
+        "rows": 37.0,
+        "mae": 0.05162441710163443,
+        "rmse": 0.06696211899849376,
+        "bias": -0.004008113049780505
       },
       {
         "blocks": [
@@ -295,38 +299,83 @@
           "layoffs_to_unemployed"
         ],
         "model": "hgb",
+        "rows": 38.0,
+        "mae": 0.05065602208703313,
+        "rmse": 0.06702162830249611,
+        "bias": -0.011746491225300745
+      },
+      {
+        "blocks": [
+          "participation",
+          "claims_iur"
+        ],
+        "features": [
+          "civpart_prev",
+          "emratio_prev",
+          "prime_lfpr_lag1",
+          "prime_epop_lag1",
+          "participation_gap",
+          "prime_participation_gap",
+          "claims_delta",
+          "claims_accel",
+          "cclaims_delta",
+          "iur_delta",
+          "iur_accel",
+          "iur_4wma"
+        ],
+        "model": "ols",
         "rows": 37.0,
-        "mae": 0.05057641296835687,
-        "rmse": 0.06758351260009987,
-        "bias": -0.010406994858626601
+        "mae": 0.054059703033853185,
+        "rmse": 0.07175185574306833,
+        "bias": 0.0072732157458318195
       },
       {
         "blocks": [
-          "participation",
-          "jolts_flows"
+          "claims_iur",
+          "labor_state"
         ],
         "features": [
-          "civpart_prev",
-          "emratio_prev",
-          "prime_lfpr_lag1",
-          "prime_epop_lag1",
-          "participation_gap",
-          "prime_participation_gap",
-          "jts_hires_lag2",
-          "jts_hires_chg_lag2",
-          "jts_quits_lag2",
-          "jts_quits_chg_lag2",
-          "jts_layoffs_lag2",
-          "jts_layoffs_chg_lag2",
-          "openings_to_unemployed",
-          "hires_to_unemployed",
-          "layoffs_to_unemployed"
+          "claims_delta",
+          "claims_accel",
+          "cclaims_delta",
+          "iur_delta",
+          "iur_accel",
+          "iur_4wma",
+          "ur_prev",
+          "payems_prev",
+          "sahm_gap_prev",
+          "short_u_share_prev",
+          "long_u_share_prev"
         ],
         "model": "hgb",
-        "rows": 36.0,
-        "mae": 0.053101820289109515,
-        "rmse": 0.06812731411175524,
-        "bias": -0.0028587285956737556
+        "rows": 37.0,
+        "mae": 0.05330074399974561,
+        "rmse": 0.0717886133436463,
+        "bias": 0.000421002590166515
+      },
+      {
+        "blocks": [
+          "claims_iur",
+          "labor_state"
+        ],
+        "features": [
+          "claims_delta",
+          "claims_accel",
+          "cclaims_delta",
+          "iur_delta",
+          "iur_accel",
+          "iur_4wma",
+          "ur_prev",
+          "payems_prev",
+          "sahm_gap_prev",
+          "short_u_share_prev",
+          "long_u_share_prev"
+        ],
+        "model": "ols",
+        "rows": 37.0,
+        "mae": 0.06656647536640956,
+        "rmse": 0.0836066471329128,
+        "bias": 0.02174773794584379
       },
       {
         "blocks": [
@@ -350,59 +399,10 @@
           "layoffs_to_unemployed"
         ],
         "model": "hgb",
-        "rows": 36.0,
-        "mae": 0.05530451235719638,
-        "rmse": 0.07214344163988042,
-        "bias": -0.015077133992801313
-      },
-      {
-        "blocks": [
-          "participation",
-          "claims_iur"
-        ],
-        "features": [
-          "civpart_prev",
-          "emratio_prev",
-          "prime_lfpr_lag1",
-          "prime_epop_lag1",
-          "participation_gap",
-          "prime_participation_gap",
-          "claims_delta",
-          "claims_accel",
-          "cclaims_delta",
-          "iur_delta",
-          "iur_accel",
-          "iur_4wma"
-        ],
-        "model": "ols",
-        "rows": 36.0,
-        "mae": 0.05451944228105757,
-        "rmse": 0.07252330622927423,
-        "bias": 0.007019028755958094
-      },
-      {
-        "blocks": [
-          "labor_state",
-          "claims_iur"
-        ],
-        "features": [
-          "ur_prev",
-          "payems_prev",
-          "sahm_gap_prev",
-          "short_u_share_prev",
-          "long_u_share_prev",
-          "claims_delta",
-          "claims_accel",
-          "cclaims_delta",
-          "iur_delta",
-          "iur_accel",
-          "iur_4wma"
-        ],
-        "model": "ols",
-        "rows": 36.0,
-        "mae": 0.06683548594971706,
-        "rmse": 0.08399836303553455,
-        "bias": 0.020468384840696796
+        "rows": 37.0,
+        "mae": 0.06226315876533888,
+        "rmse": 0.08440170811128109,
+        "bias": -0.024928929043926105
       },
       {
         "blocks": [
@@ -427,10 +427,10 @@
           "layoffs_to_unemployed"
         ],
         "model": "ols",
-        "rows": 37.0,
-        "mae": 0.10303267617181829,
-        "rmse": 0.12294913923418309,
-        "bias": 0.05317222977197072
+        "rows": 38.0,
+        "mae": 0.10131927099568669,
+        "rmse": 0.12100815501013973,
+        "bias": 0.05257249814561851
       },
       {
         "blocks": [
@@ -451,10 +451,10 @@
           "long_u_share_prev"
         ],
         "model": "ols",
-        "rows": 36.0,
-        "mae": 0.1868543637656748,
-        "rmse": 0.26873057959421603,
-        "bias": -0.09739296634952208
+        "rows": 37.0,
+        "mae": 0.18360604762786376,
+        "rmse": 0.2653006923906778,
+        "bias": -0.09295892221394941
       }
     ],
     "cls_block_results": [
@@ -469,12 +469,12 @@
           "iur_4wma"
         ],
         "model": "logit",
-        "rows": 37.0,
-        "accuracy": 0.6756756756756757,
-        "brier": 0.2199966154570321,
+        "rows": 38.0,
+        "accuracy": 0.6842105263157895,
+        "brier": 0.21765241508190095,
         "precision": 0.0,
         "recall": 0.0,
-        "base_rate": 0.32432432432432434
+        "base_rate": 0.3157894736842105
       },
       {
         "blocks": [
@@ -487,12 +487,12 @@
           "openings_to_unemployed"
         ],
         "model": "logit",
-        "rows": 37.0,
-        "accuracy": 0.6756756756756757,
-        "brier": 0.22336315243911406,
+        "rows": 38.0,
+        "accuracy": 0.6842105263157895,
+        "brier": 0.22097319928313924,
         "precision": 0.0,
         "recall": 0.0,
-        "base_rate": 0.32432432432432434
+        "base_rate": 0.3157894736842105
       },
       {
         "blocks": [
@@ -505,12 +505,12 @@
           "prime_participation_gap"
         ],
         "model": "logit",
-        "rows": 36.0,
-        "accuracy": 0.6944444444444444,
-        "brier": 0.22579183953417648,
+        "rows": 37.0,
+        "accuracy": 0.7027027027027027,
+        "brier": 0.22513572623234643,
         "precision": 0.0,
         "recall": 0.0,
-        "base_rate": 0.3055555555555556
+        "base_rate": 0.2972972972972973
       },
       {
         "blocks": [
@@ -522,12 +522,12 @@
           "sahm_gap_prev"
         ],
         "model": "logit",
-        "rows": 36.0,
-        "accuracy": 0.6944444444444444,
-        "brier": 0.22867138030098413,
+        "rows": 37.0,
+        "accuracy": 0.7027027027027027,
+        "brier": 0.22731636961672091,
         "precision": 0.0,
         "recall": 0.0,
-        "base_rate": 0.3055555555555556
+        "base_rate": 0.2972972972972973
       },
       {
         "blocks": [
@@ -539,12 +539,12 @@
           "u_same_month_hist_abs_surprise"
         ],
         "model": "logit",
-        "rows": 37.0,
-        "accuracy": 0.6486486486486487,
-        "brier": 0.23493927956839833,
+        "rows": 38.0,
+        "accuracy": 0.6578947368421053,
+        "brier": 0.23051986322556323,
         "precision": 0.4444444444444444,
         "recall": 0.3333333333333333,
-        "base_rate": 0.32432432432432434
+        "base_rate": 0.3157894736842105
       },
       {
         "blocks": [
@@ -559,12 +559,12 @@
           "gap_3m_mean"
         ],
         "model": "logit",
-        "rows": 37.0,
-        "accuracy": 0.6486486486486487,
-        "brier": 0.2410762243283491,
+        "rows": 38.0,
+        "accuracy": 0.6578947368421053,
+        "brier": 0.23765488465251194,
         "precision": 0.4,
         "recall": 0.16666666666666666,
-        "base_rate": 0.32432432432432434
+        "base_rate": 0.3157894736842105
       },
       {
         "blocks": [
@@ -577,12 +577,30 @@
           "iur_4wma"
         ],
         "model": "hgb",
-        "rows": 37.0,
-        "accuracy": 0.5945945945945946,
-        "brier": 0.24912588837794533,
-        "precision": 0.36363636363636365,
-        "recall": 0.3333333333333333,
-        "base_rate": 0.32432432432432434
+        "rows": 38.0,
+        "accuracy": 0.5263157894736842,
+        "brier": 0.24630056580068507,
+        "precision": 0.25,
+        "recall": 0.25,
+        "base_rate": 0.3157894736842105
+      },
+      {
+        "blocks": [
+          "jolts_flows"
+        ],
+        "features": [
+          "jts_hires_chg_lag2",
+          "jts_quits_chg_lag2",
+          "jts_layoffs_chg_lag2",
+          "openings_to_unemployed"
+        ],
+        "model": "hgb",
+        "rows": 38.0,
+        "accuracy": 0.5789473684210527,
+        "brier": 0.2559535795313391,
+        "precision": 0.35714285714285715,
+        "recall": 0.4166666666666667,
+        "base_rate": 0.3157894736842105
       },
       {
         "blocks": [
@@ -596,30 +614,12 @@
           "is_january"
         ],
         "model": "logit",
-        "rows": 37.0,
-        "accuracy": 0.3783783783783784,
-        "brier": 0.2581930108807542,
+        "rows": 38.0,
+        "accuracy": 0.39473684210526316,
+        "brier": 0.2573621479153717,
         "precision": 0.17647058823529413,
         "recall": 0.25,
-        "base_rate": 0.32432432432432434
-      },
-      {
-        "blocks": [
-          "jolts_flows"
-        ],
-        "features": [
-          "jts_hires_chg_lag2",
-          "jts_quits_chg_lag2",
-          "jts_layoffs_chg_lag2",
-          "openings_to_unemployed"
-        ],
-        "model": "hgb",
-        "rows": 37.0,
-        "accuracy": 0.6216216216216216,
-        "brier": 0.2686546224962472,
-        "precision": 0.4444444444444444,
-        "recall": 0.6666666666666666,
-        "base_rate": 0.32432432432432434
+        "base_rate": 0.3157894736842105
       },
       {
         "blocks": [
@@ -632,12 +632,12 @@
           "prime_participation_gap"
         ],
         "model": "hgb",
-        "rows": 36.0,
-        "accuracy": 0.5555555555555556,
-        "brier": 0.27335595087214304,
+        "rows": 37.0,
+        "accuracy": 0.5405405405405406,
+        "brier": 0.28240694423698726,
         "precision": 0.0,
         "recall": 0.0,
-        "base_rate": 0.3055555555555556
+        "base_rate": 0.2972972972972973
       }
     ],
     "cls_combo_results": [
@@ -657,12 +657,12 @@
           "prime_participation_gap"
         ],
         "model": "logit",
-        "rows": 36.0,
-        "accuracy": 0.6944444444444444,
-        "brier": 0.2166715079859715,
+        "rows": 37.0,
+        "accuracy": 0.7027027027027027,
+        "brier": 0.21354316314036226,
         "precision": 0.0,
         "recall": 0.0,
-        "base_rate": 0.3055555555555556
+        "base_rate": 0.2972972972972973
       },
       {
         "blocks": [
@@ -679,12 +679,12 @@
           "sahm_gap_prev"
         ],
         "model": "logit",
-        "rows": 36.0,
-        "accuracy": 0.6944444444444444,
-        "brier": 0.22244933459500438,
+        "rows": 37.0,
+        "accuracy": 0.7027027027027027,
+        "brier": 0.21915373650867387,
         "precision": 0.0,
         "recall": 0.0,
-        "base_rate": 0.3055555555555556
+        "base_rate": 0.2972972972972973
       },
       {
         "blocks": [
@@ -702,12 +702,12 @@
           "prime_participation_gap"
         ],
         "model": "logit",
-        "rows": 36.0,
-        "accuracy": 0.6944444444444444,
-        "brier": 0.22346292790108568,
+        "rows": 37.0,
+        "accuracy": 0.7027027027027027,
+        "brier": 0.22194281449545403,
         "precision": 0.0,
         "recall": 0.0,
-        "base_rate": 0.3055555555555556
+        "base_rate": 0.2972972972972973
       },
       {
         "blocks": [
@@ -725,12 +725,12 @@
           "openings_to_unemployed"
         ],
         "model": "logit",
-        "rows": 37.0,
-        "accuracy": 0.6756756756756757,
-        "brier": 0.22633120849012597,
+        "rows": 38.0,
+        "accuracy": 0.6842105263157895,
+        "brier": 0.2224665577393275,
         "precision": 0.0,
         "recall": 0.0,
-        "base_rate": 0.32432432432432434
+        "base_rate": 0.3157894736842105
       },
       {
         "blocks": [
@@ -747,12 +747,12 @@
           "sahm_gap_prev"
         ],
         "model": "logit",
-        "rows": 36.0,
-        "accuracy": 0.6944444444444444,
-        "brier": 0.22890759993539664,
+        "rows": 37.0,
+        "accuracy": 0.7027027027027027,
+        "brier": 0.22639308364109811,
         "precision": 0.0,
         "recall": 0.0,
-        "base_rate": 0.3055555555555556
+        "base_rate": 0.2972972972972973
       },
       {
         "blocks": [
@@ -769,18 +769,18 @@
           "sahm_gap_prev"
         ],
         "model": "logit",
-        "rows": 36.0,
-        "accuracy": 0.6944444444444444,
-        "brier": 0.23577820690945442,
+        "rows": 37.0,
+        "accuracy": 0.7027027027027027,
+        "brier": 0.23461688487422896,
         "precision": 0.0,
         "recall": 0.0,
-        "base_rate": 0.3055555555555556
+        "base_rate": 0.2972972972972973
       }
     ],
     "reg_best": {
       "blocks": [
         "participation",
-        "labor_state"
+        "claims_iur"
       ],
       "features": [
         "civpart_prev",
@@ -789,17 +789,18 @@
         "prime_epop_lag1",
         "participation_gap",
         "prime_participation_gap",
-        "ur_prev",
-        "payems_prev",
-        "sahm_gap_prev",
-        "short_u_share_prev",
-        "long_u_share_prev"
+        "claims_delta",
+        "claims_accel",
+        "cclaims_delta",
+        "iur_delta",
+        "iur_accel",
+        "iur_4wma"
       ],
       "model": "hgb",
-      "rows": 36.0,
-      "mae": 0.051144486128694364,
-      "rmse": 0.06420593148522045,
-      "bias": 0.006985285839522685
+      "rows": 37.0,
+      "mae": 0.048345167937855746,
+      "rmse": 0.0611379479539037,
+      "bias": 0.0024420490313188806
     },
     "cls_best": {
       "blocks": [
@@ -817,19 +818,19 @@
         "prime_participation_gap"
       ],
       "model": "logit",
-      "rows": 36.0,
-      "accuracy": 0.6944444444444444,
-      "brier": 0.2166715079859715,
+      "rows": 37.0,
+      "accuracy": 0.7027027027027027,
+      "brier": 0.21354316314036226,
       "precision": 0.0,
       "recall": 0.0,
-      "base_rate": 0.3055555555555556
+      "base_rate": 0.2972972972972973
     }
   },
   "live": {
-    "final_unrate": 4.41708165734724,
-    "rounded_unrate": 4.4,
-    "expected_abs_gap_vs_ma3_pp": 0.08453383466677654,
-    "big_surprise_prob": 0.34975030889698444,
+    "final_unrate": 4.284235055779595,
+    "rounded_unrate": 4.3,
+    "expected_abs_gap_vs_ma3_pp": 0.06930055144108885,
+    "big_surprise_prob": 0.35617154564056797,
     "risk_label": "elevated"
   }
 }
