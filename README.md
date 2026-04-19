@@ -57,6 +57,10 @@ Model code, training data, methodology, and live backtest results are not publis
 - [`track_record.json`](https://chiragmirani.github.io/macro-dashboard/track_record.json) &middot; historical scoreboard, settled vs actual
 - [`llms.txt`](https://chiragmirani.github.io/macro-dashboard/llms.txt) &middot; AI-assistant–friendly summary
 
+## Published research
+
+- **A Predictive Model for 10-Year Treasury Futures** &middot; [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6292699) &middot; [PDF mirror](https://chiragmirani.github.io/macro-dashboard/treasury-futures-model.pdf)
+
 ## Contact
 
 Questions about methodology, requests for backtests or model output, consultation work, or partnership ideas — **reach out for details**.
