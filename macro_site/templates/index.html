@@ -73,10 +73,8 @@
             <thead>
               <tr>
                 <th>Release</th>
-                <th>Reporting month</th>
-                <th>Day</th>
-                <th>Date</th>
-                <th>Time</th>
+                <th>Reporting period</th>
+                <th>Releases</th>
                 <th>House forecast</th>
                 <th>Kalshi consensus</th>
                 <th>Last release</th>
@@ -91,10 +89,8 @@
                   <strong>{{ event.label }}</strong>
                   <span class="subtle">{{ event.group }}</span>
                 </td>
-                <td data-label="Reporting month">{{ event.reporting_period }}</td>
-                <td data-label="Day" class="col-day">{{ event.release_day }}</td>
-                <td data-label="Date">{{ event.release_date }}</td>
-                <td data-label="Time" class="col-time">{{ event.release_time }}</td>
+                <td data-label="Reporting period">{{ event.reporting_period }}</td>
+                <td data-label="Releases">{{ event.release_day }}, {{ event.release_date }} &middot; {{ event.release_time }}</td>
                 <td data-label="House forecast">{{ event.house_forecast or "n/a" }}</td>
                 <td data-label="Kalshi consensus">
                   {% if event.kalshi_url %}
@@ -115,7 +111,7 @@
               </tr>
               {% if event.notes %}
               <tr class="detail-row">
-                <td colspan="10">
+                <td colspan="8">
                   <span class="detail">{{ event.notes }}</span>
                   {% if event.model_source %}
                   <span class="detail source">Source: {{ event.model_source }}</span>

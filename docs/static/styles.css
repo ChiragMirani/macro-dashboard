@@ -130,18 +130,16 @@ tbody tr:last-child td { border-bottom: 0; }
 /* ---- Tablet ---- */
 @media (max-width: 980px) {
   main { width: min(100% - 20px, 100%); }
-  table { min-width: 720px; }
-  .col-day, .col-time { display: none; }
-  thead th[scope]:nth-child(3),
-  thead th:nth-child(3),
-  thead th:nth-child(5) { display: none; }
+  table { min-width: 680px; }
 }
 
-/* ---- Phone: convert table rows into stacked cards ---- */
+/* ---- Phone: compact card grid that fits ~3 cards per screen ---- */
 @media (max-width: 640px) {
-  main { padding: 16px 0 32px; width: calc(100% - 16px); }
+  main { padding: 12px 0 28px; width: calc(100% - 16px); }
 
-  .hero { padding: 8px 0 12px; }
+  .hero { padding: 4px 0 10px; }
+  .hero-copy h1 { font-size: 1.5rem; }
+  .eyebrow { font-size: 0.7rem; }
 
   .table-wrap {
     overflow-x: visible;
@@ -151,23 +149,26 @@ tbody tr:last-child td { border-bottom: 0; }
   }
   table { min-width: 0; border-collapse: separate; border-spacing: 0; }
   thead { display: none; }
+  caption { display: none; }
 
+  /* Each row becomes a card laid out as a 2-column grid:
+     Release header (full)  /  Releases when (full)  /  Period (full)
+     House+Kalshi (split)   /  Last+Risk (split) */
   tbody tr {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "release release"
+      "when    when"
+      "period  period"
+      "house   kalshi"
+      "last    risk";
     background: var(--panel);
     border: 1px solid var(--border);
-    border-radius: 10px;
+    border-radius: 12px;
     margin-bottom: 12px;
-    padding: 4px 0;
+    overflow: hidden;
   }
-  tbody tr.detail-row {
-    background: #fcfcfd;
-    margin-top: -10px;
-    border-top: 0;
-    border-radius: 0 0 10px 10px;
-    padding: 8px 14px 12px;
-  }
-  tbody tr.detail-row + tr { margin-top: 12px; }
 
   tbody td {
     display: block;
@@ -176,52 +177,66 @@ tbody tr:last-child td { border-bottom: 0; }
     font-size: 0.95rem;
     overflow-wrap: anywhere;
     word-break: break-word;
+    min-width: 0;
   }
-  tbody tr td:last-child { border-bottom: 0; }
-
   tbody td::before {
     content: attr(data-label);
     display: block;
     color: var(--muted);
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     text-transform: uppercase;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.04em;
     margin-bottom: 2px;
+    line-height: 1.1;
   }
 
-  /* Make the first cell behave like a card header */
+  /* Release name as the card header — no label, larger type, light fill */
   tbody td[data-label="Release"] {
-    display: block;
+    grid-area: release;
     background: #f7f7fa;
     border-bottom: 1px solid var(--border);
-    border-radius: 10px 10px 0 0;
     padding: 10px 12px;
   }
   tbody td[data-label="Release"]::before { content: none; }
-  tbody td[data-label="Release"] strong {
-    font-size: 1.1rem;
-    display: block;
-  }
+  tbody td[data-label="Release"] strong { font-size: 1.06rem; display: block; }
   tbody td[data-label="Release"] .subtle {
-    margin-top: 2px;
-    font-size: 0.78rem;
+    margin-top: 1px;
+    font-size: 0.7rem;
     text-transform: uppercase;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
   }
 
-  /* Hide low-value columns on phone — Day/Time are obvious from Date,
-     and Status is redundant with the colored badge inside Surprise risk */
-  .col-day, .col-time, .col-status { display: none; }
-
-  /* Touch-friendly link targets */
-  tbody td a { padding: 4px 0; min-height: 28px; display: inline-block; }
-
-  .detail-row td {
-    display: block;
-    padding: 0;
-    background: transparent;
-    border: 0;
+  /* Combined "Day, Date · Time" — full width, prominent */
+  tbody td[data-label="Releases"] {
+    grid-area: when;
+    padding: 8px 12px 4px;
+    font-weight: 500;
   }
-  .detail-row td::before { content: none; }
-  .detail { display: block; margin: 4px 0; }
+
+  /* Reporting period (full width) — small muted line */
+  tbody td[data-label="Reporting period"] {
+    grid-area: period;
+    padding: 0 12px 8px;
+    font-size: 0.85rem;
+    color: var(--muted);
+    border-bottom: 1px solid #f2f2f4;
+  }
+  tbody td[data-label="Reporting period"]::before { content: none; }
+
+  /* Forecast comparison row: house | kalshi side by side */
+  tbody td[data-label="House forecast"]   { grid-area: house;  border-right: 1px solid #f2f2f4; }
+  tbody td[data-label="Kalshi consensus"] { grid-area: kalshi; }
+
+  /* Bottom row: last release | risk side by side */
+  tbody td[data-label="Last release"]  { grid-area: last; border-right: 1px solid #f2f2f4; border-bottom: 0; }
+  tbody td[data-label="Surprise risk"] { grid-area: risk; border-bottom: 0; }
+
+  /* Hide redundant cells on mobile */
+  tbody td[data-label="Status"] { display: none; }
+
+  /* Touch-friendly link area */
+  tbody td a { display: inline-block; padding: 2px 0; }
+
+  /* Drop the verbose notes row on mobile */
+  .detail-row { display: none; }
 }
