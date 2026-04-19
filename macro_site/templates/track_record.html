@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Track Record | MacroForecastbyCM</title>
+    <meta name="description" content="Live scoreboard of MacroForecastbyCM's house forecasts versus Kalshi market consensus, settled against actual prints.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://chiragmirani.github.io/macro-dashboard/track-record.html">
+
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#0a1628">
+    <meta name="apple-mobile-web-app-title" content="MacroForecastbyCM">
+
+    <link rel="stylesheet" href="static/styles.css">
+  </head>
+  <body>
+    <main>
+      <nav class="topnav">
+        <a href="./">Forecasts</a>
+        <a href="track-record.html" class="active">Track record</a>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Created by Chirag Mirani &middot; Updated {{ tr.last_updated_utc[:19].replace('T',' ') }} UTC</p>
+          <h1>Track record</h1>
+          <p class="tr-blurb">House forecasts vs Kalshi consensus, settled against the actual print. Snapshots start {{ tr.started_at }} — no historical backfill, no cherry-picking.</p>
+        </div>
+      </section>
+
+      <section class="tr-summary">
+        <div class="tr-card">
+          <span class="summary-label">Settled / Pending</span>
+          <strong>{{ tr.summary.settled_count }} / {{ tr.summary.pending_count }}</strong>
+        </div>
+        <div class="tr-card">
+          <span class="summary-label">House wins</span>
+          <strong>{{ tr.summary.house_wins }}</strong>
+          <span class="muted">vs Kalshi {{ tr.summary.kalshi_wins }} (ties {{ tr.summary.ties }})</span>
+        </div>
+        <div class="tr-card">
+          <span class="summary-label">House mean abs error</span>
+          <strong>{% if tr.summary.house_mean_abs_error is not none %}{{ "%.3f"|format(tr.summary.house_mean_abs_error) }}{% else %}—{% endif %}</strong>
+        </div>
+        <div class="tr-card">
+          <span class="summary-label">Kalshi mean abs error</span>
+          <strong>{% if tr.summary.kalshi_mean_abs_error is not none %}{{ "%.3f"|format(tr.summary.kalshi_mean_abs_error) }}{% else %}—{% endif %}</strong>
+        </div>
+      </section>
+
+      <section class="table-section">
+        <div class="table-wrap">
+          <table>
+            <caption class="sr-only">Track record of forecasts vs Kalshi consensus vs actual prints, newest first.</caption>
+            <thead>
+              <tr>
+                <th>Release</th>
+                <th>For</th>
+                <th>Released</th>
+                <th>House</th>
+                <th>Kalshi</th>
+                <th>Actual</th>
+                <th>House err</th>
+                <th>Kalshi err</th>
+                <th>Winner</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% if not tr.snapshots %}
+              <tr><td colspan="9" class="empty">No snapshots yet — first forecasts will appear within 14 days of their release date.</td></tr>
+              {% endif %}
+              {% for s in tr.snapshots %}
+              <tr>
+                <td data-label="Release"><strong>{{ s.release_label }}</strong><span class="subtle">{{ s.release_group }}</span></td>
+                <td data-label="For">{{ s.target_period }}</td>
+                <td data-label="Released">{{ s.release_date_pretty }}</td>
+                <td data-label="House">{{ s.house_display }}</td>
+                <td data-label="Kalshi">
+                  {% if s.kalshi_url %}<a href="{{ s.kalshi_url }}" target="_blank" rel="noopener">{{ s.kalshi_display }}</a>{% else %}{{ s.kalshi_display }}{% endif %}
+                </td>
+                <td data-label="Actual">
+                  {% if s.actual_display %}{% if s.release_source_url %}<a href="{{ s.release_source_url }}" target="_blank" rel="noopener">{{ s.actual_display }}</a>{% else %}{{ s.actual_display }}{% endif %}{% else %}<span class="muted">pending</span>{% endif %}
+                </td>
+                <td data-label="House err">{{ s.house_error_display or "—" }}</td>
+                <td data-label="Kalshi err">{{ s.kalshi_error_display or "—" }}</td>
+                <td data-label="Winner">
+                  {% if s.winner == "house" %}<span class="status status-live">House</span>
+                  {% elif s.winner == "kalshi" %}<span class="status status-partial">Kalshi</span>
+                  {% elif s.winner == "tie" %}<span class="status">Tie</span>
+                  {% else %}<span class="muted">—</span>{% endif %}
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

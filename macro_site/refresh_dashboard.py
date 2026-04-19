@@ -6,7 +6,7 @@ import json
 import math
 import shutil
 from dataclasses import dataclass
-from datetime import date, datetime, time, timedelta
+from datetime import date, datetime, time, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
@@ -14,6 +14,8 @@ import pandas as pd
 import requests
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from zoneinfo import ZoneInfo
+
+import track_record
 
 
 BASE_DIR = Path(__file__).resolve().parents[1]
@@ -699,6 +701,19 @@ def _render_llms_txt(payload: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
+def render_track_record(env: Environment) -> None:
+    snapshot_count = track_record.snapshot({"events": []})  # snapshot is also called inside main()
+    settled = track_record.settle()
+    if settled:
+        print(f"Settled {settled} new snapshots against actuals")
+    track_record.export_json()
+    tr = track_record.render_for_template()
+    tr["last_updated_utc"] = datetime.now(timezone.utc).isoformat()
+    tr["started_at"] = datetime.now(tz=ET).strftime("%B %d, %Y")
+    template = env.get_template("track_record.html")
+    (DOCS_DIR / "track-record.html").write_text(template.render(tr=tr), encoding="utf-8")
+
+
 def render_site(payload: dict[str, Any]) -> None:
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
     STATIC_DIR.mkdir(parents=True, exist_ok=True)
@@ -734,10 +749,15 @@ def render_site(payload: dict[str, Any]) -> None:
     OUTPUT_HTML.write_text(template.render(payload=payload), encoding="utf-8")
     shutil.copy2(BASE_DIR / "macro_site" / "static" / "styles.css", STATIC_DIR / "styles.css")
 
+    render_track_record(env)
+
 
 def main() -> None:
     now_et = datetime.now(tz=ET)
     payload = build_payload(now_et)
+    new_snaps = track_record.snapshot(payload)
+    if new_snaps:
+        print(f"Recorded {new_snaps} new track-record snapshot(s)")
     render_site(payload)
     next_label = payload["next_event"]["label"] if payload["next_event"] else "n/a"
     print(f"Generated macro dashboard at {OUTPUT_HTML}")
