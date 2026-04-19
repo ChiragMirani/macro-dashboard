@@ -1,0 +1,870 @@
+{
+  "generated_at_utc": "2026-04-12T09:55:41.757553+00:00",
+  "target_month": "2026-03",
+  "threshold_pp": 0.1,
+  "house_forecast_mom": 0.210605440495015,
+  "house_forecast_yoy": 2.6173337887880344,
+  "ma3_mom": 0.24799842977876185,
+  "house_gap_vs_ma3": -0.03739298928374685,
+  "consensus_proxy": {
+    "source": "kalshi_implied",
+    "mom_event": "KXECONSTATCPICORE-26MAR",
+    "yoy_event": "KXECONSTATCORECPIYOY-26MAR",
+    "core_mom": null,
+    "core_yoy": null
+  },
+  "baseline": {
+    "regression": {
+      "rows": 48.0,
+      "mae": 0.06278187139618285,
+      "rmse": 0.07937923425793214,
+      "bias": 0.007292129553869944
+    },
+    "classification": {
+      "rows": 48.0,
+      "accuracy": 0.6458333333333334,
+      "brier": 0.22873263888888887,
+      "precision": 0.0,
+      "recall": 0.0,
+      "base_rate": 0.3541666666666667
+    }
+  },
+  "search": {
+    "regression_screen": [
+      {
+        "feature": "same_month_hist_abs_gap",
+        "model": "ols",
+        "rows": 48.0,
+        "mae": 0.04585529551974918,
+        "rmse": 0.05661673719418661,
+        "bias": 0.0063772716646299495
+      },
+      {
+        "feature": "wti_oil_mom_lag2",
+        "model": "ols",
+        "rows": 48.0,
+        "mae": 0.049996560084512996,
+        "rmse": 0.06362667027756717,
+        "bias": -0.011534895755794567
+      },
+      {
+        "feature": "adjusted_minus_reported_core_lag1",
+        "model": "ols",
+        "rows": 47.0,
+        "mae": 0.04859151210858858,
+        "rmse": 0.06377331454361741,
+        "bias": -0.011672803287617335
+      },
+      {
+        "feature": "volatile_impact_lag1",
+        "model": "ols",
+        "rows": 47.0,
+        "mae": 0.04859151210858858,
+        "rmse": 0.06377331454361741,
+        "bias": -0.01167280328761733
+      },
+      {
+        "feature": "core_mom_lag1",
+        "model": "ols",
+        "rows": 48.0,
+        "mae": 0.055941849959559975,
+        "rmse": 0.06418890813373293,
+        "bias": 0.013814786551129934
+      },
+      {
+        "feature": "is_june",
+        "model": "ols",
+        "rows": 48.0,
+        "mae": 0.04786744086290493,
+        "rmse": 0.0642195417040252,
+        "bias": -0.009290451322594415
+      },
+      {
+        "feature": "bizdays_p2",
+        "model": "ols",
+        "rows": 48.0,
+        "mae": 0.04892302811911417,
+        "rmse": 0.06474033246648836,
+        "bias": -0.009504298471399731
+      },
+      {
+        "feature": "is_march",
+        "model": "ols",
+        "rows": 48.0,
+        "mae": 0.04887596652630521,
+        "rmse": 0.06476711262513678,
+        "bias": -0.009363616597073477
+      },
+      {
+        "feature": "shelter_gap_lag1",
+        "model": "ols",
+        "rows": 48.0,
+        "mae": 0.049342617475088495,
+        "rmse": 0.0648344855523444,
+        "bias": -0.010529400091273539
+      },
+      {
+        "feature": "bizdays_p3",
+        "model": "ols",
+        "rows": 48.0,
+        "mae": 0.049288622338345016,
+        "rmse": 0.06484930703429133,
+        "bias": -0.009569447920479774
+      },
+      {
+        "feature": "import_prices_mom_lag1",
+        "model": "ols",
+        "rows": 48.0,
+        "mae": 0.048324433281379864,
+        "rmse": 0.06491459573901925,
+        "bias": -0.00944915620607866
+      },
+      {
+        "feature": "is_december",
+        "model": "ols",
+        "rows": 48.0,
+        "mae": 0.04852316167728351,
+        "rmse": 0.06512388298606026,
+        "bias": -0.009147572188712821
+      }
+    ],
+    "classification_screen": [
+      {
+        "feature": "wti_oil_mom_lag2",
+        "model": "logit",
+        "rows": 48.0,
+        "accuracy": 0.5833333333333334,
+        "brier": 0.241795676287384,
+        "precision": 0.42857142857142855,
+        "recall": 0.5294117647058824,
+        "base_rate": 0.3541666666666667
+      },
+      {
+        "feature": "is_july",
+        "model": "logit",
+        "rows": 48.0,
+        "accuracy": 0.6875,
+        "brier": 0.24546515014492484,
+        "precision": 0.75,
+        "recall": 0.17647058823529413,
+        "base_rate": 0.3541666666666667
+      },
+      {
+        "feature": "supercore_gap_lag1",
+        "model": "logit",
+        "rows": 48.0,
+        "accuracy": 0.5416666666666666,
+        "brier": 0.24580236627923494,
+        "precision": 0.3684210526315789,
+        "recall": 0.4117647058823529,
+        "base_rate": 0.3541666666666667
+      },
+      {
+        "feature": "bizdays_p2",
+        "model": "logit",
+        "rows": 48.0,
+        "accuracy": 0.5,
+        "brier": 0.24711069919752648,
+        "precision": 0.37037037037037035,
+        "recall": 0.5882352941176471,
+        "base_rate": 0.3541666666666667
+      },
+      {
+        "feature": "adjusted_minus_reported_core_lag1",
+        "model": "logit",
+        "rows": 47.0,
+        "accuracy": 0.5531914893617021,
+        "brier": 0.24766723276412186,
+        "precision": 0.4,
+        "recall": 0.47058823529411764,
+        "base_rate": 0.3617021276595745
+      },
+      {
+        "feature": "volatile_impact_lag1",
+        "model": "logit",
+        "rows": 47.0,
+        "accuracy": 0.5531914893617021,
+        "brier": 0.24766723276412186,
+        "precision": 0.4,
+        "recall": 0.47058823529411764,
+        "base_rate": 0.3617021276595745
+      },
+      {
+        "feature": "import_prices_mom_lag1",
+        "model": "logit",
+        "rows": 48.0,
+        "accuracy": 0.5625,
+        "brier": 0.24768117599526737,
+        "precision": 0.4,
+        "recall": 0.47058823529411764,
+        "base_rate": 0.3541666666666667
+      },
+      {
+        "feature": "volatile_abs_3mavg",
+        "model": "logit",
+        "rows": 48.0,
+        "accuracy": 0.6666666666666666,
+        "brier": 0.24815932974623003,
+        "precision": 0.5333333333333333,
+        "recall": 0.47058823529411764,
+        "base_rate": 0.3541666666666667
+      },
+      {
+        "feature": "is_even_month",
+        "model": "logit",
+        "rows": 48.0,
+        "accuracy": 0.5625,
+        "brier": 0.24823434253486876,
+        "precision": 0.4166666666666667,
+        "recall": 0.5882352941176471,
+        "base_rate": 0.3541666666666667
+      },
+      {
+        "feature": "same_month_hist_abs_gap",
+        "model": "logit",
+        "rows": 48.0,
+        "accuracy": 0.5625,
+        "brier": 0.2486405019694704,
+        "precision": 0.4230769230769231,
+        "recall": 0.6470588235294118,
+        "base_rate": 0.3541666666666667
+      },
+      {
+        "feature": "mean_reversion_3m",
+        "model": "logit",
+        "rows": 48.0,
+        "accuracy": 0.5416666666666666,
+        "brier": 0.2489366405393109,
+        "precision": 0.35294117647058826,
+        "recall": 0.35294117647058826,
+        "base_rate": 0.3541666666666667
+      },
+      {
+        "feature": "gap_lag1",
+        "model": "logit",
+        "rows": 48.0,
+        "accuracy": 0.4375,
+        "brier": 0.2493564659531847,
+        "precision": 0.2727272727272727,
+        "recall": 0.35294117647058826,
+        "base_rate": 0.3541666666666667
+      }
+    ],
+    "regression_best": {
+      "name": "adjusted_core",
+      "model": "ols",
+      "features": [
+        "adjusted_core_mom_lag1",
+        "adjusted_core_3mavg",
+        "adjusted_minus_reported_core_lag1",
+        "volatile_impact_lag1"
+      ],
+      "rows": 47.0,
+      "mae": 0.05558018582142377,
+      "rmse": 0.06447165627746851,
+      "bias": 0.009231256569475774
+    },
+    "classification_best": {
+      "name": "top_block_ensemble",
+      "model": "ensemble",
+      "features": [
+        "component_payback",
+        "adjusted_core",
+        "fx_imports"
+      ],
+      "rows": 233.0,
+      "accuracy": 0.7124463519313304,
+      "brier": 0.2263808134673233,
+      "precision": 0.15384615384615385,
+      "recall": 0.034482758620689655,
+      "base_rate": 0.24892703862660945
+    },
+    "econ_regression_sets": [
+      {
+        "name": "adjusted_core",
+        "model": "ols",
+        "features": [
+          "adjusted_core_mom_lag1",
+          "adjusted_core_3mavg",
+          "adjusted_minus_reported_core_lag1",
+          "volatile_impact_lag1"
+        ],
+        "rows": 47.0,
+        "mae": 0.05558018582142377,
+        "rmse": 0.06447165627746851,
+        "bias": 0.009231256569475774
+      },
+      {
+        "name": "fx_imports",
+        "model": "ols",
+        "features": [
+          "usd_mom_lag1",
+          "usd_mom_lag3",
+          "import_prices_mom_lag1",
+          "import_prices_mom_lag2"
+        ],
+        "rows": 48.0,
+        "mae": 0.04836615086193568,
+        "rmse": 0.06501366650206002,
+        "bias": -0.010339483571974308
+      },
+      {
+        "name": "component_payback",
+        "model": "ols",
+        "features": [
+          "shelter_gap_lag1",
+          "goods_gap_lag1",
+          "supercore_gap_lag1",
+          "mean_reversion_3m"
+        ],
+        "rows": 48.0,
+        "mae": 0.04882747679594256,
+        "rmse": 0.06579256436713192,
+        "bias": -0.011562142886168495
+      },
+      {
+        "name": "econ_defensible",
+        "model": "hgb",
+        "features": [
+          "abs_gap_lag1",
+          "abs_gap_3m_avg",
+          "same_month_last_year_abs_gap",
+          "same_month_hist_abs_gap",
+          "shelter_gap_lag1",
+          "goods_gap_lag1",
+          "supercore_gap_lag1",
+          "adjusted_minus_reported_core_lag1",
+          "volatile_abs_3mavg",
+          "mean_reversion_3m",
+          "usd_mom_lag3",
+          "import_prices_mom_lag2",
+          "wti_oil_mom_lag2",
+          "days_in_month",
+          "bizdays_p3"
+        ],
+        "rows": 47.0,
+        "mae": 0.05358198887419077,
+        "rmse": 0.06644637589246458,
+        "bias": -0.006479206752413403
+      },
+      {
+        "name": "energy_spillovers",
+        "model": "ols",
+        "features": [
+          "wti_oil_mom_lag1",
+          "wti_oil_mom_lag2",
+          "natgas_mom_lag1",
+          "natgas_mom_lag2",
+          "natgas_vol_3m"
+        ],
+        "rows": 48.0,
+        "mae": 0.0534585204968769,
+        "rmse": 0.06700294783509969,
+        "bias": -0.013551699678899206
+      },
+      {
+        "name": "recurrence_core",
+        "model": "hgb",
+        "features": [
+          "abs_gap_lag1",
+          "abs_gap_3m_avg",
+          "same_month_last_year_abs_gap",
+          "same_month_hist_abs_gap"
+        ],
+        "rows": 48.0,
+        "mae": 0.052408079613212845,
+        "rmse": 0.06743028687730922,
+        "bias": -0.008038637358326203
+      },
+      {
+        "name": "reporting_period",
+        "model": "ols",
+        "features": [
+          "days_in_month",
+          "bizdays_total",
+          "bizdays_p1",
+          "bizdays_p2",
+          "bizdays_p3",
+          "month_mod6",
+          "is_even_month"
+        ],
+        "rows": 48.0,
+        "mae": 0.05093846725734307,
+        "rmse": 0.06748951084495068,
+        "bias": -0.00943624610286786
+      },
+      {
+        "name": "component_payback",
+        "model": "hgb",
+        "features": [
+          "shelter_gap_lag1",
+          "goods_gap_lag1",
+          "supercore_gap_lag1",
+          "mean_reversion_3m"
+        ],
+        "rows": 48.0,
+        "mae": 0.05172371610885485,
+        "rmse": 0.07147769313330347,
+        "bias": -0.02502044229438891
+      },
+      {
+        "name": "signed_recurrence",
+        "model": "ols",
+        "features": [
+          "gap_lag1",
+          "gap_3m_mean",
+          "same_month_last_year_core",
+          "same_month_hist_core"
+        ],
+        "rows": 48.0,
+        "mae": 0.05398012020777915,
+        "rmse": 0.07224229939139383,
+        "bias": 0.0018271559527144744
+      },
+      {
+        "name": "signed_recurrence",
+        "model": "hgb",
+        "features": [
+          "gap_lag1",
+          "gap_3m_mean",
+          "same_month_last_year_core",
+          "same_month_hist_core"
+        ],
+        "rows": 48.0,
+        "mae": 0.05369250317370015,
+        "rmse": 0.0737636119298673,
+        "bias": -0.012036263613185128
+      },
+      {
+        "name": "energy_spillovers",
+        "model": "hgb",
+        "features": [
+          "wti_oil_mom_lag1",
+          "wti_oil_mom_lag2",
+          "natgas_mom_lag1",
+          "natgas_mom_lag2",
+          "natgas_vol_3m"
+        ],
+        "rows": 48.0,
+        "mae": 0.0539641037372775,
+        "rmse": 0.07422551542803738,
+        "bias": -0.027538340450330517
+      },
+      {
+        "name": "reporting_period",
+        "model": "hgb",
+        "features": [
+          "days_in_month",
+          "bizdays_total",
+          "bizdays_p1",
+          "bizdays_p2",
+          "bizdays_p3",
+          "month_mod6",
+          "is_even_month"
+        ],
+        "rows": 48.0,
+        "mae": 0.05180262084612264,
+        "rmse": 0.0744773539736887,
+        "bias": -0.03481448591850366
+      },
+      {
+        "name": "fx_imports",
+        "model": "hgb",
+        "features": [
+          "usd_mom_lag1",
+          "usd_mom_lag3",
+          "import_prices_mom_lag1",
+          "import_prices_mom_lag2"
+        ],
+        "rows": 48.0,
+        "mae": 0.05284592208715347,
+        "rmse": 0.07478831583901412,
+        "bias": -0.037016539580249704
+      },
+      {
+        "name": "adjusted_core",
+        "model": "hgb",
+        "features": [
+          "adjusted_core_mom_lag1",
+          "adjusted_core_3mavg",
+          "adjusted_minus_reported_core_lag1",
+          "volatile_impact_lag1"
+        ],
+        "rows": 47.0,
+        "mae": 0.05907148796260134,
+        "rmse": 0.07495283102445377,
+        "bias": -0.00305400236246535
+      },
+      {
+        "name": "econ_defensible",
+        "model": "ols",
+        "features": [
+          "abs_gap_lag1",
+          "abs_gap_3m_avg",
+          "same_month_last_year_abs_gap",
+          "same_month_hist_abs_gap",
+          "shelter_gap_lag1",
+          "goods_gap_lag1",
+          "supercore_gap_lag1",
+          "adjusted_minus_reported_core_lag1",
+          "volatile_abs_3mavg",
+          "mean_reversion_3m",
+          "usd_mom_lag3",
+          "import_prices_mom_lag2",
+          "wti_oil_mom_lag2",
+          "days_in_month",
+          "bizdays_p3"
+        ],
+        "rows": 47.0,
+        "mae": 0.060872890290340924,
+        "rmse": 0.0799748475371116,
+        "bias": 0.020240120678663022
+      },
+      {
+        "name": "recurrence_core",
+        "model": "ols",
+        "features": [
+          "abs_gap_lag1",
+          "abs_gap_3m_avg",
+          "same_month_last_year_abs_gap",
+          "same_month_hist_abs_gap"
+        ],
+        "rows": 48.0,
+        "mae": 0.0627521437065775,
+        "rmse": 0.08268242201132048,
+        "bias": 0.021999267832345248
+      },
+      {
+        "name": "top_block_ensemble",
+        "model": "ensemble",
+        "features": [
+          "adjusted_core",
+          "fx_imports",
+          "component_payback"
+        ],
+        "rows": 233.0,
+        "mae": 0.07723127391984862,
+        "rmse": 0.1261908822616633,
+        "bias": -0.06793579377011334
+      }
+    ],
+    "econ_classification_sets": [
+      {
+        "name": "top_block_ensemble",
+        "model": "ensemble",
+        "features": [
+          "component_payback",
+          "adjusted_core",
+          "fx_imports"
+        ],
+        "rows": 233.0,
+        "accuracy": 0.7124463519313304,
+        "brier": 0.2263808134673233,
+        "precision": 0.15384615384615385,
+        "recall": 0.034482758620689655,
+        "base_rate": 0.24892703862660945
+      },
+      {
+        "name": "component_payback",
+        "model": "logit",
+        "features": [
+          "shelter_gap_lag1",
+          "goods_gap_lag1",
+          "supercore_gap_lag1",
+          "mean_reversion_3m"
+        ],
+        "rows": 48.0,
+        "accuracy": 0.5625,
+        "brier": 0.24664526492889316,
+        "precision": 0.375,
+        "recall": 0.35294117647058826,
+        "base_rate": 0.3541666666666667
+      },
+      {
+        "name": "adjusted_core",
+        "model": "logit",
+        "features": [
+          "adjusted_minus_reported_core_lag1",
+          "volatile_impact_lag1",
+          "volatile_abs_3mavg",
+          "abs_gap_lag1"
+        ],
+        "rows": 47.0,
+        "accuracy": 0.5531914893617021,
+        "brier": 0.24795559957681362,
+        "precision": 0.4,
+        "recall": 0.47058823529411764,
+        "base_rate": 0.3617021276595745
+      },
+      {
+        "name": "fx_imports",
+        "model": "logit",
+        "features": [
+          "usd_mom_lag3",
+          "import_prices_mom_lag1",
+          "import_prices_mom_lag2"
+        ],
+        "rows": 48.0,
+        "accuracy": 0.5208333333333334,
+        "brier": 0.2529956502365936,
+        "precision": 0.3333333333333333,
+        "recall": 0.35294117647058826,
+        "base_rate": 0.3541666666666667
+      },
+      {
+        "name": "energy_spillovers",
+        "model": "hgb",
+        "features": [
+          "wti_oil_mom_lag2",
+          "natgas_mom_lag2",
+          "natgas_vol_3m"
+        ],
+        "rows": 48.0,
+        "accuracy": 0.6666666666666666,
+        "brier": 0.25504766386165695,
+        "precision": 0.5714285714285714,
+        "recall": 0.23529411764705882,
+        "base_rate": 0.3541666666666667
+      },
+      {
+        "name": "energy_spillovers",
+        "model": "logit",
+        "features": [
+          "wti_oil_mom_lag2",
+          "natgas_mom_lag2",
+          "natgas_vol_3m"
+        ],
+        "rows": 48.0,
+        "accuracy": 0.5833333333333334,
+        "brier": 0.25587494080079226,
+        "precision": 0.4444444444444444,
+        "recall": 0.7058823529411765,
+        "base_rate": 0.3541666666666667
+      },
+      {
+        "name": "reporting_period",
+        "model": "logit",
+        "features": [
+          "days_in_month",
+          "bizdays_total",
+          "bizdays_p1",
+          "bizdays_p2",
+          "bizdays_p3",
+          "month_mod6"
+        ],
+        "rows": 48.0,
+        "accuracy": 0.5,
+        "brier": 0.25761213935802973,
+        "precision": 0.3333333333333333,
+        "recall": 0.4117647058823529,
+        "base_rate": 0.3541666666666667
+      },
+      {
+        "name": "econ_defensible",
+        "model": "logit",
+        "features": [
+          "abs_gap_lag1",
+          "abs_gap_3m_avg",
+          "same_month_last_year_abs_gap",
+          "same_month_hist_abs_gap",
+          "shelter_gap_lag1",
+          "goods_gap_lag1",
+          "supercore_gap_lag1",
+          "volatile_abs_3mavg",
+          "usd_mom_lag3",
+          "import_prices_mom_lag2",
+          "wti_oil_mom_lag2",
+          "bizdays_p3"
+        ],
+        "rows": 48.0,
+        "accuracy": 0.4166666666666667,
+        "brier": 0.2603452949872708,
+        "precision": 0.23809523809523808,
+        "recall": 0.29411764705882354,
+        "base_rate": 0.3541666666666667
+      },
+      {
+        "name": "component_payback",
+        "model": "hgb",
+        "features": [
+          "shelter_gap_lag1",
+          "goods_gap_lag1",
+          "supercore_gap_lag1",
+          "mean_reversion_3m"
+        ],
+        "rows": 48.0,
+        "accuracy": 0.625,
+        "brier": 0.26066396616458665,
+        "precision": 0.42857142857142855,
+        "recall": 0.17647058823529413,
+        "base_rate": 0.3541666666666667
+      },
+      {
+        "name": "recurrence_core",
+        "model": "logit",
+        "features": [
+          "abs_gap_lag1",
+          "abs_gap_3m_avg",
+          "same_month_last_year_abs_gap",
+          "same_month_hist_abs_gap"
+        ],
+        "rows": 48.0,
+        "accuracy": 0.5208333333333334,
+        "brier": 0.26750130728021254,
+        "precision": 0.36363636363636365,
+        "recall": 0.47058823529411764,
+        "base_rate": 0.3541666666666667
+      },
+      {
+        "name": "fx_imports",
+        "model": "hgb",
+        "features": [
+          "usd_mom_lag3",
+          "import_prices_mom_lag1",
+          "import_prices_mom_lag2"
+        ],
+        "rows": 48.0,
+        "accuracy": 0.6458333333333334,
+        "brier": 0.2683788944404784,
+        "precision": 0.0,
+        "recall": 0.0,
+        "base_rate": 0.3541666666666667
+      },
+      {
+        "name": "adjusted_core",
+        "model": "hgb",
+        "features": [
+          "adjusted_minus_reported_core_lag1",
+          "volatile_impact_lag1",
+          "volatile_abs_3mavg",
+          "abs_gap_lag1"
+        ],
+        "rows": 47.0,
+        "accuracy": 0.574468085106383,
+        "brier": 0.27195738413551357,
+        "precision": 0.2,
+        "recall": 0.058823529411764705,
+        "base_rate": 0.3617021276595745
+      },
+      {
+        "name": "recurrence_core",
+        "model": "hgb",
+        "features": [
+          "abs_gap_lag1",
+          "abs_gap_3m_avg",
+          "same_month_last_year_abs_gap",
+          "same_month_hist_abs_gap"
+        ],
+        "rows": 48.0,
+        "accuracy": 0.6041666666666666,
+        "brier": 0.28542782506600334,
+        "precision": 0.4166666666666667,
+        "recall": 0.29411764705882354,
+        "base_rate": 0.3541666666666667
+      },
+      {
+        "name": "reporting_period",
+        "model": "hgb",
+        "features": [
+          "days_in_month",
+          "bizdays_total",
+          "bizdays_p1",
+          "bizdays_p2",
+          "bizdays_p3",
+          "month_mod6"
+        ],
+        "rows": 48.0,
+        "accuracy": 0.6458333333333334,
+        "brier": 0.29025397974967465,
+        "precision": 0.0,
+        "recall": 0.0,
+        "base_rate": 0.3541666666666667
+      },
+      {
+        "name": "econ_defensible",
+        "model": "hgb",
+        "features": [
+          "abs_gap_lag1",
+          "abs_gap_3m_avg",
+          "same_month_last_year_abs_gap",
+          "same_month_hist_abs_gap",
+          "shelter_gap_lag1",
+          "goods_gap_lag1",
+          "supercore_gap_lag1",
+          "volatile_abs_3mavg",
+          "usd_mom_lag3",
+          "import_prices_mom_lag2",
+          "wti_oil_mom_lag2",
+          "bizdays_p3"
+        ],
+        "rows": 48.0,
+        "accuracy": 0.5,
+        "brier": 0.336812631223177,
+        "precision": 0.26666666666666666,
+        "recall": 0.23529411764705882,
+        "base_rate": 0.3541666666666667
+      }
+    ]
+  },
+  "live": {
+    "expected_abs_gap_vs_ma3_pp": 0.0971272787243963,
+    "big_surprise_prob": 0.4681379568485001,
+    "risk_label": "elevated",
+    "implied_ma3_range": [
+      0.15087115105436555,
+      0.34512570850315816
+    ],
+    "features": {
+      "abs_gap_lag1": 0.03252271780798863,
+      "abs_gap_3m_avg": 0.04040250530844681,
+      "gap_lag1": -0.03252271780798863,
+      "gap_3m_mean": -0.012682818062999729,
+      "same_month_last_year_abs_gap": 0.04558366091667043,
+      "same_month_hist_abs_gap": 0.024243732103020527,
+      "same_month_last_year_gap": -0.04558366091667043,
+      "same_month_hist_gap": 0.024243732103020527,
+      "core_mom_lag1": 0.21605021740240815,
+      "core_mom_ma12": 0.24479681627048352,
+      "mean_reversion_3m": 0.003201613508278328,
+      "shelter_gap_lag1": -0.107222286841339,
+      "goods_gap_lag1": 0.16071520697111819,
+      "supercore_gap_lag1": -0.10974465088882113,
+      "adjusted_core_mom_lag1": 0.29647510873102445,
+      "adjusted_core_3mavg": 0.24979966383861799,
+      "adjusted_minus_reported_core_lag1": 0.0014302944676123364,
+      "volatile_impact_lag1": -0.0014302944676123442,
+      "volatile_abs_3mavg": 0.015603166595933065,
+      "same_month_last_year_core": 0.2547452855180321,
+      "same_month_hist_core": 0.3638045051741834,
+      "usd_mom_lag1": -1.5416015285738993,
+      "usd_mom_lag3": -0.2744964612858669,
+      "import_prices_mom_lag1": 0.21216407355020284,
+      "import_prices_mom_lag2": 0.2126151665485576,
+      "wti_oil_mom_lag1": 12.644079636744676,
+      "wti_oil_mom_lag2": -2.2533287811539737,
+      "natgas_mom_lag1": 79.5,
+      "natgas_mom_lag2": -12.85403050108932,
+      "natgas_vol_3m": 46.25843165831158,
+      "days_in_month": 31.0,
+      "bizdays_total": 22.0,
+      "bizdays_p1": 7.0,
+      "bizdays_p2": 8.0,
+      "bizdays_p3": 7.0,
+      "month_mod6": 2.0,
+      "is_even_month": 0.0,
+      "is_january": 0.0,
+      "is_february": 0.0,
+      "is_march": 1.0,
+      "is_april": 0.0,
+      "is_may": 0.0,
+      "is_june": 0.0,
+      "is_july": 0.0,
+      "is_august": 0.0,
+      "is_september": 0.0,
+      "is_october": 0.0,
+      "is_november": 0.0,
+      "is_december": 0.0,
+      "month": 3.0
+    }
+  }
+}

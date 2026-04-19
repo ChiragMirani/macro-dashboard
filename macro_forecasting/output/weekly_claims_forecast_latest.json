@@ -1,0 +1,36 @@
+{
+  "generated_at_utc": "2026-03-30T20:19:13+00:00",
+  "training_cache_generated_at_utc": "2026-03-11T16:13:33+00:00",
+  "best_model_name": "calendar_factor_hgb",
+  "latest_actual_week": "2026-03-21",
+  "target_week": "2026-03-28",
+  "forecast": 212439.27746786072,
+  "lag1": 210000.0,
+  "ma4": 210500.0,
+  "context": {
+    "holiday_week": 0,
+    "post_holiday_week": 0,
+    "pre_holiday_week": 1,
+    "month_end_window": 1,
+    "month_start_window": 0,
+    "quarter_end_window": 1,
+    "state_outlier_count_prev": 0,
+    "ny_delta_prev": NaN,
+    "seasonal_ratio_lag1": 0.8856190476190476,
+    "seasonal_ratio_yoy": 0.9094590909090909
+  },
+  "surprise": {
+    "expected_abs_gap_vs_ma4": 3125.262910858746,
+    "implied_range_low": 207374.73708914124,
+    "implied_range_high": 213625.26291085876,
+    "risk_label": "normal",
+    "baseline_abs_gap_4wavg": 3937.5
+  },
+  "kalshi": {
+    "event_ticker": "KXJOBLESSCLAIMS-26APR02",
+    "markets": [],
+    "consensus_floor": null,
+    "consensus_range": null,
+    "expected_claims": null
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "house_forecast": 213749.9198225853,
+  "house_abs_error": 8749.919822585303,
+  "target_actual": 205000.0,
+  "results": [
+    {
+      "name": "hgb_breadth_payback",
+      "feature_count": 29,
+      "oos_metrics": {
+        "mae": 7640.43727190676,
+        "rmse": 9878.047557763251,
+        "medae": 5687.828914753132,
+        "n": 167
+      },
+      "target_week": "2026-03-14",
+      "target_actual": 205000.0,
+      "target_pred": 214792.6057580863,
+      "target_abs_error": 9792.605758086313,
+      "better_than_house_on_target": false
+    },
+    {
+      "name": "hgb_breadth",
+      "feature_count": 26,
+      "oos_metrics": {
+        "mae": 7423.144953211552,
+        "rmse": 9706.932445169246,
+        "medae": 5534.322737037583,
+        "n": 167
+      },
+      "target_week": "2026-03-14",
+      "target_actual": 205000.0,
+      "target_pred": 215781.33100062268,
+      "target_abs_error": 10781.331000622682,
+      "better_than_house_on_target": false
+    },
+    {
+      "name": "ridge_breadth_payback",
+      "feature_count": 29,
+      "oos_metrics": {
+        "mae": 21456.37059834797,
+        "rmse": 31271.84952081087,
+        "medae": 12415.003307269333,
+        "n": 167
+      },
+      "target_week": "2026-03-14",
+      "target_actual": 205000.0,
+      "target_pred": 219633.833979348,
+      "target_abs_error": 14633.833979348012,
+      "better_than_house_on_target": false
+    },
+    {
+      "name": "ridge_breadth",
+      "feature_count": 26,
+      "oos_metrics": {
+        "mae": 21633.428431318673,
+        "rmse": 31910.38626682816,
+        "medae": 13308.80657160742,
+        "n": 167
+      },
+      "target_week": "2026-03-14",
+      "target_actual": 205000.0,
+      "target_pred": 221678.4693564998,
+      "target_abs_error": 16678.469356499787,
+      "better_than_house_on_target": false
+    }
+  ]
+}

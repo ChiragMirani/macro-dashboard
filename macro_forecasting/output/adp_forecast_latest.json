@@ -1,0 +1,24 @@
+{
+  "generated_at_utc": "2026-04-19T16:58:43.247879+00:00",
+  "latest_actual_month": "2026-02-01",
+  "next_target_month": "2026-03-01",
+  "release_target_month": "2026-04-01",
+  "imputed_features": [],
+  "release_imputed_features": [],
+  "one_step_upgraded_k": 30.17153908577491,
+  "one_step_ensemble_k": 51.09456644923262,
+  "one_step_linear_k": 76.19019166983779,
+  "one_step_tree_k": 33.87102074705385,
+  "release_upgraded_k": 45.693513635932746,
+  "release_ensemble_k": 62.77462137183821,
+  "release_linear_k": 79.72759960369483,
+  "release_tree_k": 51.13950996107802,
+  "weights": {
+    "linear": 0.4069915673349334,
+    "tree": 0.5930084326650665,
+    "ensemble": 0.23415427427120256,
+    "naive": 0.3308154800944838,
+    "ma3_seas": 0.10740796515464154,
+    "ma3": 0.3276222804796722
+  }
+}

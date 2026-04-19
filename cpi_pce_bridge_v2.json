@@ -1,0 +1,208 @@
+{
+  "date": "January 2026",
+  "methodology": {
+    "reference": "McCully, Moyer & Stewart (2007), BEA NIPA Ch.5, BLS PCE-CPI Mapping",
+    "table_9_1u": "https://www.bea.gov/help/faq/555",
+    "bls_mapping": "https://www.bls.gov/cpi/additional-resources/pce-cpi-code-mapping.htm",
+    "formula_effect_bps": -3.0
+  },
+  "core_cpi_sa": {
+    "mom_bps": 29.5,
+    "mom_pct": 0.295,
+    "yoy_pct": 2.95
+  },
+  "implied_core_pce": {
+    "mom_bps": 30.5,
+    "mom_pct": 0.3052,
+    "annualized_pct": 3.66
+  },
+  "wedge_decomposition_bps": {
+    "total": 1.0,
+    "shelter": -5.6,
+    "medical_scope_weight": -1.8,
+    "financial_services": 10.6,
+    "airfare_scope_swap": -5.0,
+    "food_services": 1.0,
+    "formula_effect": -3.0,
+    "other": 6.4
+  },
+  "cpi_components": [
+    {
+      "name": "Rent",
+      "mom_pct": 0.249,
+      "cpi_wt": 9.67,
+      "pce_wt": 4.5,
+      "cpi_bps": 2.4,
+      "pce_bps": 1.1
+    },
+    {
+      "name": "OER",
+      "mom_pct": 0.2196,
+      "cpi_wt": 32.98,
+      "pce_wt": 13.5,
+      "cpi_bps": 7.2,
+      "pce_bps": 3.0
+    },
+    {
+      "name": "Lodging",
+      "mom_pct": -0.0983,
+      "cpi_wt": 1.16,
+      "pce_wt": 1.0,
+      "cpi_bps": -0.1,
+      "pce_bps": -0.1
+    },
+    {
+      "name": "Used Cars",
+      "mom_pct": -1.8406,
+      "cpi_wt": 3.63,
+      "pce_wt": 3.2,
+      "cpi_bps": -6.7,
+      "pce_bps": -5.9
+    },
+    {
+      "name": "New Vehicles",
+      "mom_pct": 0.1464,
+      "cpi_wt": 4.92,
+      "pce_wt": 4.2,
+      "cpi_bps": 0.7,
+      "pce_bps": 0.6
+    },
+    {
+      "name": "Med Svcs OOP",
+      "mom_pct": 0.3257,
+      "cpi_wt": 8.95,
+      "pce_wt": 4.8,
+      "cpi_bps": 2.9,
+      "pce_bps": 1.6
+    },
+    {
+      "name": "Med Goods OOP",
+      "mom_pct": -0.0626,
+      "cpi_wt": 2.03,
+      "pce_wt": 1.5,
+      "cpi_bps": -0.1,
+      "pce_bps": -0.1
+    },
+    {
+      "name": "Apparel",
+      "mom_pct": 0.3068,
+      "cpi_wt": 3.91,
+      "pce_wt": 3.0,
+      "cpi_bps": 1.2,
+      "pce_bps": 0.9
+    },
+    {
+      "name": "Recreation",
+      "mom_pct": 0.4785,
+      "cpi_wt": 7.19,
+      "pce_wt": 5.0,
+      "cpi_bps": 3.4,
+      "pce_bps": 2.4
+    },
+    {
+      "name": "Edu/Comm",
+      "mom_pct": 0.3875,
+      "cpi_wt": 7.95,
+      "pce_wt": 5.5,
+      "cpi_bps": 3.1,
+      "pce_bps": 2.1
+    },
+    {
+      "name": "Airfares CPI",
+      "mom_pct": 6.5201,
+      "cpi_wt": 0.83,
+      "pce_wt": 0.0,
+      "cpi_bps": 5.4,
+      "pce_bps": 0.0
+    },
+    {
+      "name": "Food Svcs",
+      "mom_pct": 0.1493,
+      "cpi_wt": 0.0,
+      "pce_wt": 6.5,
+      "cpi_bps": 0.0,
+      "pce_bps": 1.0
+    }
+  ],
+  "ppi_components": [
+    {
+      "name": "Hospitals",
+      "mom_pct": -0.1832,
+      "pce_wt": 6.0,
+      "pce_bps": -1.1,
+      "source": "PPI (Dec)"
+    },
+    {
+      "name": "Physicians",
+      "mom_pct": 0.0686,
+      "pce_wt": 3.5,
+      "pce_bps": 0.2,
+      "source": "PPI (Dec)"
+    },
+    {
+      "name": "Nursing",
+      "mom_pct": 0.3,
+      "pce_wt": 1.0,
+      "pce_bps": 0.3,
+      "source": "trend"
+    },
+    {
+      "name": "Home Health",
+      "mom_pct": 0.25,
+      "pce_wt": 0.5,
+      "pce_bps": 0.1,
+      "source": "trend"
+    },
+    {
+      "name": "Portfolio Mgmt",
+      "mom_pct": 2.0106,
+      "pce_wt": 4.5,
+      "pce_bps": 9.0,
+      "source": "PPI (Dec)"
+    },
+    {
+      "name": "Banking",
+      "mom_pct": -0.0974,
+      "pce_wt": 2.0,
+      "pce_bps": -0.2,
+      "source": "PPI (Dec)"
+    },
+    {
+      "name": "Insurance",
+      "mom_pct": 1.1403,
+      "pce_wt": 1.5,
+      "pce_bps": 1.7,
+      "source": "PPI (Dec)"
+    },
+    {
+      "name": "Airlines PPI",
+      "mom_pct": 0.5,
+      "pce_wt": 0.85,
+      "pce_bps": 0.4,
+      "source": "trend"
+    }
+  ],
+  "lookback_3m": [
+    {
+      "month": "Jan 2026",
+      "pce_bps": 30.520995589463112,
+      "pce_pct": 0.3052099558946311,
+      "ann": 3.6625194707355737,
+      "core_cpi_bps": 29.50448142634121
+    },
+    {
+      "month": "Dec 2025",
+      "pce_bps": 23.340777133961037,
+      "pce_pct": 0.23340777133961038,
+      "ann": 2.800893256075325,
+      "core_cpi_bps": 23.29002576704653
+    },
+    {
+      "month": "Nov 2025",
+      "pce_bps": 28.962361856683586,
+      "pce_pct": 0.2896236185668359,
+      "ann": 3.4754834228020304,
+      "core_cpi_bps": 18.91543438916843
+    }
+  ]
+}

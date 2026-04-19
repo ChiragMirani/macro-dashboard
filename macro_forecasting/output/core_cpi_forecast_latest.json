@@ -1,0 +1,71 @@
+{
+  "generated_at_utc": "2026-03-16T16:22:26+00:00",
+  "target_month": "2026-03",
+  "latest_actual_month": "2026-02",
+  "final_mom": 0.210605440495015,
+  "direct_mom": 0.26181822589157744,
+  "bottomup_mom": 0.1593926550984526,
+  "core_implied_yoy": 2.6173337887880344,
+  "core_actual_yoy_at_forecast": 2.4724624767640258,
+  "components": {
+    "shelter": 0.17492774439929182,
+    "core_goods": 0.24910576779588556,
+    "supercore": 0.06352988249590609,
+    "core_cpi": 0.26181822589157744
+  },
+  "uncertainty": {
+    "component_rmse": {
+      "shelter": 0.09411732647138839,
+      "core_goods": 0.16517866370749154,
+      "supercore": 0.2354721351658749,
+      "core_cpi": 0.1074347337557971
+    },
+    "bottomup_mom_rmse": 0.09367920841050796,
+    "final_mom_rmse": 0.07127063930118488,
+    "core_yoy_rmse": 0.0730327791148565
+  },
+  "model_details": {
+    "shelter": {
+      "selected_model": "ridge",
+      "raw_forecast": 0.17492774439929182,
+      "final_forecast": 0.17492774439929182,
+      "ensemble_forecast": 0.17492774439929182,
+      "was_clipped": false,
+      "gc_lo": null,
+      "gc_hi": null
+    },
+    "core_goods": {
+      "selected_model": "enet",
+      "raw_forecast": 0.24910576779588556,
+      "final_forecast": 0.24910576779588556,
+      "ensemble_forecast": 0.24910576779588556,
+      "was_clipped": false,
+      "gc_lo": null,
+      "gc_hi": null
+    },
+    "supercore": {
+      "selected_model": "sarimax",
+      "raw_forecast": 0.06352988249590609,
+      "final_forecast": 0.06352988249590609,
+      "ensemble_forecast": 0.06352988249590609,
+      "was_clipped": false,
+      "gc_lo": null,
+      "gc_hi": null
+    },
+    "core_cpi": {
+      "selected_model": "enet",
+      "raw_forecast": 0.26181822589157744,
+      "final_forecast": 0.26181822589157744,
+      "ensemble_forecast": 0.26181822589157744,
+      "was_clipped": false,
+      "gc_lo": null,
+      "gc_hi": null
+    }
+  },
+  "adjusted_core_signal": {
+    "latest_mom": 0.16947427173612803,
+    "avg3m": 0.223024533137788
+  },
+  "training_cache_generated_at_utc": "2026-03-11T17:57:01+00:00",
+  "training_cache_latest_actual_month": "2026-02"
+}

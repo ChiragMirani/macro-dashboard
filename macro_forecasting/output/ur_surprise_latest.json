@@ -1,0 +1,835 @@
+{
+  "generated_at_utc": "2026-03-13T14:18:39.536557+00:00",
+  "target_month": "2026-03",
+  "threshold_pp": 0.12,
+  "baseline": {
+    "regression": {
+      "rows": 37.0,
+      "mae": 0.05885885885885893,
+      "rmse": 0.07535922203472523,
+      "bias": -0.0006006006006005587
+    },
+    "classification": {
+      "rows": 37.0,
+      "accuracy": 0.6756756756756757,
+      "brier": 0.21913805697589483,
+      "precision": 0.0,
+      "recall": 0.0,
+      "base_rate": 0.32432432432432434
+    }
+  },
+  "bakeoff": {
+    "reg_block_results": [
+      {
+        "blocks": [
+          "participation"
+        ],
+        "features": [
+          "civpart_prev",
+          "emratio_prev",
+          "prime_lfpr_lag1",
+          "prime_epop_lag1",
+          "participation_gap",
+          "prime_participation_gap"
+        ],
+        "model": "hgb",
+        "rows": 36.0,
+        "mae": 0.05029470256369571,
+        "rmse": 0.06603689009004002,
+        "bias": -0.0003570407425769099
+      },
+      {
+        "blocks": [
+          "labor_state"
+        ],
+        "features": [
+          "ur_prev",
+          "payems_prev",
+          "sahm_gap_prev",
+          "short_u_share_prev",
+          "long_u_share_prev"
+        ],
+        "model": "hgb",
+        "rows": 36.0,
+        "mae": 0.052944566861796674,
+        "rmse": 0.06881203352524534,
+        "bias": 0.004097186236857017
+      },
+      {
+        "blocks": [
+          "claims_iur"
+        ],
+        "features": [
+          "claims_delta",
+          "claims_accel",
+          "cclaims_delta",
+          "iur_delta",
+          "iur_accel",
+          "iur_4wma"
+        ],
+        "model": "hgb",
+        "rows": 37.0,
+        "mae": 0.05172350968768279,
+        "rmse": 0.06896406927804424,
+        "bias": 0.0032867464679050954
+      },
+      {
+        "blocks": [
+          "jolts_flows"
+        ],
+        "features": [
+          "jts_hires_lag2",
+          "jts_hires_chg_lag2",
+          "jts_quits_lag2",
+          "jts_quits_chg_lag2",
+          "jts_layoffs_lag2",
+          "jts_layoffs_chg_lag2",
+          "openings_to_unemployed",
+          "hires_to_unemployed",
+          "layoffs_to_unemployed"
+        ],
+        "model": "hgb",
+        "rows": 37.0,
+        "mae": 0.05324338351827758,
+        "rmse": 0.07059497042674213,
+        "bias": -0.006528577322203682
+      },
+      {
+        "blocks": [
+          "recurrence_ur"
+        ],
+        "features": [
+          "abs_gap_lag1",
+          "abs_gap_3m_avg",
+          "same_month_last_year_abs_gap",
+          "same_month_hist_abs_gap",
+          "gap_lag1",
+          "gap_3m_mean"
+        ],
+        "model": "hgb",
+        "rows": 37.0,
+        "mae": 0.05724341348457375,
+        "rmse": 0.07314082431050908,
+        "bias": -0.013723851264344797
+      },
+      {
+        "blocks": [
+          "numerator_recurrence"
+        ],
+        "features": [
+          "u_abs_surprise_lag1",
+          "u_same_month_last_year_abs_surprise",
+          "u_same_month_hist_abs_surprise",
+          "u_signed_surprise_lag1"
+        ],
+        "model": "hgb",
+        "rows": 37.0,
+        "mae": 0.06282299148344672,
+        "rmse": 0.07952355379505821,
+        "bias": -0.008040914214814874
+      },
+      {
+        "blocks": [
+          "calendar"
+        ],
+        "features": [
+          "biz_days",
+          "month",
+          "month_sin",
+          "month_cos",
+          "is_january"
+        ],
+        "model": "hgb",
+        "rows": 37.0,
+        "mae": 0.07161106690429339,
+        "rmse": 0.08433043461512185,
+        "bias": -0.03828912031433065
+      },
+      {
+        "blocks": [
+          "numerator_recurrence"
+        ],
+        "features": [
+          "u_abs_surprise_lag1",
+          "u_same_month_last_year_abs_surprise",
+          "u_same_month_hist_abs_surprise",
+          "u_signed_surprise_lag1"
+        ],
+        "model": "ols",
+        "rows": 37.0,
+        "mae": 0.08585201732290161,
+        "rmse": 0.10249721863304097,
+        "bias": -0.04959548723422184
+      },
+      {
+        "blocks": [
+          "recurrence_ur"
+        ],
+        "features": [
+          "abs_gap_lag1",
+          "abs_gap_3m_avg",
+          "same_month_last_year_abs_gap",
+          "same_month_hist_abs_gap",
+          "gap_lag1",
+          "gap_3m_mean"
+        ],
+        "model": "ols",
+        "rows": 37.0,
+        "mae": 0.09008126536101498,
+        "rmse": 0.10482182508857957,
+        "bias": -0.05660328944316608
+      },
+      {
+        "blocks": [
+          "claims_iur"
+        ],
+        "features": [
+          "claims_delta",
+          "claims_accel",
+          "cclaims_delta",
+          "iur_delta",
+          "iur_accel",
+          "iur_4wma"
+        ],
+        "model": "ols",
+        "rows": 37.0,
+        "mae": 0.09775602525002611,
+        "rmse": 0.11446871357019231,
+        "bias": 0.09775602525002611
+      }
+    ],
+    "reg_combo_results": [
+      {
+        "blocks": [
+          "participation",
+          "labor_state"
+        ],
+        "features": [
+          "civpart_prev",
+          "emratio_prev",
+          "prime_lfpr_lag1",
+          "prime_epop_lag1",
+          "participation_gap",
+          "prime_participation_gap",
+          "ur_prev",
+          "payems_prev",
+          "sahm_gap_prev",
+          "short_u_share_prev",
+          "long_u_share_prev"
+        ],
+        "model": "hgb",
+        "rows": 36.0,
+        "mae": 0.051144486128694364,
+        "rmse": 0.06420593148522045,
+        "bias": 0.006985285839522685
+      },
+      {
+        "blocks": [
+          "participation",
+          "claims_iur"
+        ],
+        "features": [
+          "civpart_prev",
+          "emratio_prev",
+          "prime_lfpr_lag1",
+          "prime_epop_lag1",
+          "participation_gap",
+          "prime_participation_gap",
+          "claims_delta",
+          "claims_accel",
+          "cclaims_delta",
+          "iur_delta",
+          "iur_accel",
+          "iur_4wma"
+        ],
+        "model": "hgb",
+        "rows": 36.0,
+        "mae": 0.0487003458272329,
+        "rmse": 0.06423457886034646,
+        "bias": 0.0032732764544543724
+      },
+      {
+        "blocks": [
+          "labor_state",
+          "claims_iur"
+        ],
+        "features": [
+          "ur_prev",
+          "payems_prev",
+          "sahm_gap_prev",
+          "short_u_share_prev",
+          "long_u_share_prev",
+          "claims_delta",
+          "claims_accel",
+          "cclaims_delta",
+          "iur_delta",
+          "iur_accel",
+          "iur_4wma"
+        ],
+        "model": "hgb",
+        "rows": 36.0,
+        "mae": 0.04955272488976161,
+        "rmse": 0.06446419004316749,
+        "bias": 0.0015907380371262567
+      },
+      {
+        "blocks": [
+          "claims_iur",
+          "jolts_flows"
+        ],
+        "features": [
+          "claims_delta",
+          "claims_accel",
+          "cclaims_delta",
+          "iur_delta",
+          "iur_accel",
+          "iur_4wma",
+          "jts_hires_lag2",
+          "jts_hires_chg_lag2",
+          "jts_quits_lag2",
+          "jts_quits_chg_lag2",
+          "jts_layoffs_lag2",
+          "jts_layoffs_chg_lag2",
+          "openings_to_unemployed",
+          "hires_to_unemployed",
+          "layoffs_to_unemployed"
+        ],
+        "model": "hgb",
+        "rows": 37.0,
+        "mae": 0.05057641296835687,
+        "rmse": 0.06758351260009987,
+        "bias": -0.010406994858626601
+      },
+      {
+        "blocks": [
+          "participation",
+          "jolts_flows"
+        ],
+        "features": [
+          "civpart_prev",
+          "emratio_prev",
+          "prime_lfpr_lag1",
+          "prime_epop_lag1",
+          "participation_gap",
+          "prime_participation_gap",
+          "jts_hires_lag2",
+          "jts_hires_chg_lag2",
+          "jts_quits_lag2",
+          "jts_quits_chg_lag2",
+          "jts_layoffs_lag2",
+          "jts_layoffs_chg_lag2",
+          "openings_to_unemployed",
+          "hires_to_unemployed",
+          "layoffs_to_unemployed"
+        ],
+        "model": "hgb",
+        "rows": 36.0,
+        "mae": 0.053101820289109515,
+        "rmse": 0.06812731411175524,
+        "bias": -0.0028587285956737556
+      },
+      {
+        "blocks": [
+          "labor_state",
+          "jolts_flows"
+        ],
+        "features": [
+          "ur_prev",
+          "payems_prev",
+          "sahm_gap_prev",
+          "short_u_share_prev",
+          "long_u_share_prev",
+          "jts_hires_lag2",
+          "jts_hires_chg_lag2",
+          "jts_quits_lag2",
+          "jts_quits_chg_lag2",
+          "jts_layoffs_lag2",
+          "jts_layoffs_chg_lag2",
+          "openings_to_unemployed",
+          "hires_to_unemployed",
+          "layoffs_to_unemployed"
+        ],
+        "model": "hgb",
+        "rows": 36.0,
+        "mae": 0.05530451235719638,
+        "rmse": 0.07214344163988042,
+        "bias": -0.015077133992801313
+      },
+      {
+        "blocks": [
+          "participation",
+          "claims_iur"
+        ],
+        "features": [
+          "civpart_prev",
+          "emratio_prev",
+          "prime_lfpr_lag1",
+          "prime_epop_lag1",
+          "participation_gap",
+          "prime_participation_gap",
+          "claims_delta",
+          "claims_accel",
+          "cclaims_delta",
+          "iur_delta",
+          "iur_accel",
+          "iur_4wma"
+        ],
+        "model": "ols",
+        "rows": 36.0,
+        "mae": 0.05451944228105757,
+        "rmse": 0.07252330622927423,
+        "bias": 0.007019028755958094
+      },
+      {
+        "blocks": [
+          "labor_state",
+          "claims_iur"
+        ],
+        "features": [
+          "ur_prev",
+          "payems_prev",
+          "sahm_gap_prev",
+          "short_u_share_prev",
+          "long_u_share_prev",
+          "claims_delta",
+          "claims_accel",
+          "cclaims_delta",
+          "iur_delta",
+          "iur_accel",
+          "iur_4wma"
+        ],
+        "model": "ols",
+        "rows": 36.0,
+        "mae": 0.06683548594971706,
+        "rmse": 0.08399836303553455,
+        "bias": 0.020468384840696796
+      },
+      {
+        "blocks": [
+          "claims_iur",
+          "jolts_flows"
+        ],
+        "features": [
+          "claims_delta",
+          "claims_accel",
+          "cclaims_delta",
+          "iur_delta",
+          "iur_accel",
+          "iur_4wma",
+          "jts_hires_lag2",
+          "jts_hires_chg_lag2",
+          "jts_quits_lag2",
+          "jts_quits_chg_lag2",
+          "jts_layoffs_lag2",
+          "jts_layoffs_chg_lag2",
+          "openings_to_unemployed",
+          "hires_to_unemployed",
+          "layoffs_to_unemployed"
+        ],
+        "model": "ols",
+        "rows": 37.0,
+        "mae": 0.10303267617181829,
+        "rmse": 0.12294913923418309,
+        "bias": 0.05317222977197072
+      },
+      {
+        "blocks": [
+          "participation",
+          "labor_state"
+        ],
+        "features": [
+          "civpart_prev",
+          "emratio_prev",
+          "prime_lfpr_lag1",
+          "prime_epop_lag1",
+          "participation_gap",
+          "prime_participation_gap",
+          "ur_prev",
+          "payems_prev",
+          "sahm_gap_prev",
+          "short_u_share_prev",
+          "long_u_share_prev"
+        ],
+        "model": "ols",
+        "rows": 36.0,
+        "mae": 0.1868543637656748,
+        "rmse": 0.26873057959421603,
+        "bias": -0.09739296634952208
+      }
+    ],
+    "cls_block_results": [
+      {
+        "blocks": [
+          "claims_iur"
+        ],
+        "features": [
+          "claims_delta",
+          "claims_accel",
+          "iur_delta",
+          "iur_4wma"
+        ],
+        "model": "logit",
+        "rows": 37.0,
+        "accuracy": 0.6756756756756757,
+        "brier": 0.2199966154570321,
+        "precision": 0.0,
+        "recall": 0.0,
+        "base_rate": 0.32432432432432434
+      },
+      {
+        "blocks": [
+          "jolts_flows"
+        ],
+        "features": [
+          "jts_hires_chg_lag2",
+          "jts_quits_chg_lag2",
+          "jts_layoffs_chg_lag2",
+          "openings_to_unemployed"
+        ],
+        "model": "logit",
+        "rows": 37.0,
+        "accuracy": 0.6756756756756757,
+        "brier": 0.22336315243911406,
+        "precision": 0.0,
+        "recall": 0.0,
+        "base_rate": 0.32432432432432434
+      },
+      {
+        "blocks": [
+          "participation"
+        ],
+        "features": [
+          "civpart_prev",
+          "emratio_prev",
+          "participation_gap",
+          "prime_participation_gap"
+        ],
+        "model": "logit",
+        "rows": 36.0,
+        "accuracy": 0.6944444444444444,
+        "brier": 0.22579183953417648,
+        "precision": 0.0,
+        "recall": 0.0,
+        "base_rate": 0.3055555555555556
+      },
+      {
+        "blocks": [
+          "labor_state"
+        ],
+        "features": [
+          "ur_prev",
+          "payems_prev",
+          "sahm_gap_prev"
+        ],
+        "model": "logit",
+        "rows": 36.0,
+        "accuracy": 0.6944444444444444,
+        "brier": 0.22867138030098413,
+        "precision": 0.0,
+        "recall": 0.0,
+        "base_rate": 0.3055555555555556
+      },
+      {
+        "blocks": [
+          "numerator_recurrence"
+        ],
+        "features": [
+          "u_abs_surprise_lag1",
+          "u_same_month_last_year_abs_surprise",
+          "u_same_month_hist_abs_surprise"
+        ],
+        "model": "logit",
+        "rows": 37.0,
+        "accuracy": 0.6486486486486487,
+        "brier": 0.23493927956839833,
+        "precision": 0.4444444444444444,
+        "recall": 0.3333333333333333,
+        "base_rate": 0.32432432432432434
+      },
+      {
+        "blocks": [
+          "recurrence_ur"
+        ],
+        "features": [
+          "abs_gap_lag1",
+          "abs_gap_3m_avg",
+          "same_month_last_year_abs_gap",
+          "same_month_hist_abs_gap",
+          "gap_lag1",
+          "gap_3m_mean"
+        ],
+        "model": "logit",
+        "rows": 37.0,
+        "accuracy": 0.6486486486486487,
+        "brier": 0.2410762243283491,
+        "precision": 0.4,
+        "recall": 0.16666666666666666,
+        "base_rate": 0.32432432432432434
+      },
+      {
+        "blocks": [
+          "claims_iur"
+        ],
+        "features": [
+          "claims_delta",
+          "claims_accel",
+          "iur_delta",
+          "iur_4wma"
+        ],
+        "model": "hgb",
+        "rows": 37.0,
+        "accuracy": 0.5945945945945946,
+        "brier": 0.24912588837794533,
+        "precision": 0.36363636363636365,
+        "recall": 0.3333333333333333,
+        "base_rate": 0.32432432432432434
+      },
+      {
+        "blocks": [
+          "calendar"
+        ],
+        "features": [
+          "biz_days",
+          "month",
+          "month_sin",
+          "month_cos",
+          "is_january"
+        ],
+        "model": "logit",
+        "rows": 37.0,
+        "accuracy": 0.3783783783783784,
+        "brier": 0.2581930108807542,
+        "precision": 0.17647058823529413,
+        "recall": 0.25,
+        "base_rate": 0.32432432432432434
+      },
+      {
+        "blocks": [
+          "jolts_flows"
+        ],
+        "features": [
+          "jts_hires_chg_lag2",
+          "jts_quits_chg_lag2",
+          "jts_layoffs_chg_lag2",
+          "openings_to_unemployed"
+        ],
+        "model": "hgb",
+        "rows": 37.0,
+        "accuracy": 0.6216216216216216,
+        "brier": 0.2686546224962472,
+        "precision": 0.4444444444444444,
+        "recall": 0.6666666666666666,
+        "base_rate": 0.32432432432432434
+      },
+      {
+        "blocks": [
+          "participation"
+        ],
+        "features": [
+          "civpart_prev",
+          "emratio_prev",
+          "participation_gap",
+          "prime_participation_gap"
+        ],
+        "model": "hgb",
+        "rows": 36.0,
+        "accuracy": 0.5555555555555556,
+        "brier": 0.27335595087214304,
+        "precision": 0.0,
+        "recall": 0.0,
+        "base_rate": 0.3055555555555556
+      }
+    ],
+    "cls_combo_results": [
+      {
+        "blocks": [
+          "claims_iur",
+          "participation"
+        ],
+        "features": [
+          "claims_delta",
+          "claims_accel",
+          "iur_delta",
+          "iur_4wma",
+          "civpart_prev",
+          "emratio_prev",
+          "participation_gap",
+          "prime_participation_gap"
+        ],
+        "model": "logit",
+        "rows": 36.0,
+        "accuracy": 0.6944444444444444,
+        "brier": 0.2166715079859715,
+        "precision": 0.0,
+        "recall": 0.0,
+        "base_rate": 0.3055555555555556
+      },
+      {
+        "blocks": [
+          "claims_iur",
+          "labor_state"
+        ],
+        "features": [
+          "claims_delta",
+          "claims_accel",
+          "iur_delta",
+          "iur_4wma",
+          "ur_prev",
+          "payems_prev",
+          "sahm_gap_prev"
+        ],
+        "model": "logit",
+        "rows": 36.0,
+        "accuracy": 0.6944444444444444,
+        "brier": 0.22244933459500438,
+        "precision": 0.0,
+        "recall": 0.0,
+        "base_rate": 0.3055555555555556
+      },
+      {
+        "blocks": [
+          "jolts_flows",
+          "participation"
+        ],
+        "features": [
+          "jts_hires_chg_lag2",
+          "jts_quits_chg_lag2",
+          "jts_layoffs_chg_lag2",
+          "openings_to_unemployed",
+          "civpart_prev",
+          "emratio_prev",
+          "participation_gap",
+          "prime_participation_gap"
+        ],
+        "model": "logit",
+        "rows": 36.0,
+        "accuracy": 0.6944444444444444,
+        "brier": 0.22346292790108568,
+        "precision": 0.0,
+        "recall": 0.0,
+        "base_rate": 0.3055555555555556
+      },
+      {
+        "blocks": [
+          "claims_iur",
+          "jolts_flows"
+        ],
+        "features": [
+          "claims_delta",
+          "claims_accel",
+          "iur_delta",
+          "iur_4wma",
+          "jts_hires_chg_lag2",
+          "jts_quits_chg_lag2",
+          "jts_layoffs_chg_lag2",
+          "openings_to_unemployed"
+        ],
+        "model": "logit",
+        "rows": 37.0,
+        "accuracy": 0.6756756756756757,
+        "brier": 0.22633120849012597,
+        "precision": 0.0,
+        "recall": 0.0,
+        "base_rate": 0.32432432432432434
+      },
+      {
+        "blocks": [
+          "jolts_flows",
+          "labor_state"
+        ],
+        "features": [
+          "jts_hires_chg_lag2",
+          "jts_quits_chg_lag2",
+          "jts_layoffs_chg_lag2",
+          "openings_to_unemployed",
+          "ur_prev",
+          "payems_prev",
+          "sahm_gap_prev"
+        ],
+        "model": "logit",
+        "rows": 36.0,
+        "accuracy": 0.6944444444444444,
+        "brier": 0.22890759993539664,
+        "precision": 0.0,
+        "recall": 0.0,
+        "base_rate": 0.3055555555555556
+      },
+      {
+        "blocks": [
+          "participation",
+          "labor_state"
+        ],
+        "features": [
+          "civpart_prev",
+          "emratio_prev",
+          "participation_gap",
+          "prime_participation_gap",
+          "ur_prev",
+          "payems_prev",
+          "sahm_gap_prev"
+        ],
+        "model": "logit",
+        "rows": 36.0,
+        "accuracy": 0.6944444444444444,
+        "brier": 0.23577820690945442,
+        "precision": 0.0,
+        "recall": 0.0,
+        "base_rate": 0.3055555555555556
+      }
+    ],
+    "reg_best": {
+      "blocks": [
+        "participation",
+        "labor_state"
+      ],
+      "features": [
+        "civpart_prev",
+        "emratio_prev",
+        "prime_lfpr_lag1",
+        "prime_epop_lag1",
+        "participation_gap",
+        "prime_participation_gap",
+        "ur_prev",
+        "payems_prev",
+        "sahm_gap_prev",
+        "short_u_share_prev",
+        "long_u_share_prev"
+      ],
+      "model": "hgb",
+      "rows": 36.0,
+      "mae": 0.051144486128694364,
+      "rmse": 0.06420593148522045,
+      "bias": 0.006985285839522685
+    },
+    "cls_best": {
+      "blocks": [
+        "claims_iur",
+        "participation"
+      ],
+      "features": [
+        "claims_delta",
+        "claims_accel",
+        "iur_delta",
+        "iur_4wma",
+        "civpart_prev",
+        "emratio_prev",
+        "participation_gap",
+        "prime_participation_gap"
+      ],
+      "model": "logit",
+      "rows": 36.0,
+      "accuracy": 0.6944444444444444,
+      "brier": 0.2166715079859715,
+      "precision": 0.0,
+      "recall": 0.0,
+      "base_rate": 0.3055555555555556
+    }
+  },
+  "live": {
+    "final_unrate": 4.41708165734724,
+    "rounded_unrate": 4.4,
+    "expected_abs_gap_vs_ma3_pp": 0.08453383466677654,
+    "big_surprise_prob": 0.34975030889698444,
+    "risk_label": "elevated"
+  }
+}
