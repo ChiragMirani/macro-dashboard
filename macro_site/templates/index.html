@@ -87,31 +87,31 @@
             <tbody>
               {% for event in payload.events %}
               <tr>
-                <td>
+                <td data-label="Release">
                   <strong>{{ event.label }}</strong>
                   <span class="subtle">{{ event.group }}</span>
                 </td>
-                <td>{{ event.reporting_period }}</td>
-                <td>{{ event.release_day }}</td>
-                <td>{{ event.release_date }}</td>
-                <td>{{ event.release_time }}</td>
-                <td>{{ event.house_forecast or "n/a" }}</td>
-                <td>
+                <td data-label="Reporting month">{{ event.reporting_period }}</td>
+                <td data-label="Day" class="col-day">{{ event.release_day }}</td>
+                <td data-label="Date">{{ event.release_date }}</td>
+                <td data-label="Time" class="col-time">{{ event.release_time }}</td>
+                <td data-label="House forecast">{{ event.house_forecast or "n/a" }}</td>
+                <td data-label="Kalshi consensus">
                   {% if event.kalshi_url %}
                     <a href="{{ event.kalshi_url }}" target="_blank" rel="noopener">{{ event.kalshi_consensus or "view market" }}</a>
                   {% else %}
                     {{ event.kalshi_consensus or "n/a" }}
                   {% endif %}
                 </td>
-                <td>
+                <td data-label="Last release">
                   {% if event.release_source_url and event.last_release %}
                     <a href="{{ event.release_source_url }}" target="_blank" rel="noopener">{{ event.last_release }}</a>
                   {% else %}
                     {{ event.last_release or "n/a" }}
                   {% endif %}
                 </td>
-                <td>{{ event.risk or "n/a" }}</td>
-                <td><span class="status status-{{ event.status }}">{{ event.status }}</span></td>
+                <td data-label="Surprise risk">{{ event.risk or "n/a" }}</td>
+                <td data-label="Status" class="col-status"><span class="status status-{{ event.status }}">{{ event.status }}</span></td>
               </tr>
               {% if event.notes %}
               <tr class="detail-row">

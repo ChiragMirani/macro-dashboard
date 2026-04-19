@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-19T17:37:59.697588+00:00",
+  "generated_at_utc": "2026-04-19T18:15:20.178701+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
@@ -36,8 +36,8 @@
       "event_ticker": "KXCPICOREYOY-26APR",
       "kind": "threshold",
       "market_count": 15,
-      "implied_value": 2.6599999999999997,
-      "consensus_label": "2.66% y/y",
+      "implied_value": 2.6752500000000006,
+      "consensus_label": "2.68% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26apr",
       "title": "Core inflation in Apr 2026 (Core CPI YoY)"
     },
@@ -46,8 +46,8 @@
       "event_ticker": "KXPAYROLLS-26APR",
       "kind": "threshold",
       "market_count": 19,
-      "implied_value": 68.1375,
-      "consensus_label": "68k",
+      "implied_value": 68.91250000000001,
+      "consensus_label": "69k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26apr",
       "title": "Jobs numbers in Apr 2026?"
     },
