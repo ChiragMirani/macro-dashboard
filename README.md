@@ -6,6 +6,8 @@ Maintained by: Chirag Mirani
 
 A live, auto-updating release schedule for the most market-moving US macroeconomic prints, paired with house model forecasts and live Kalshi market consensus for direct comparison. Built and maintained solo.
 
+[![Macro Forecast Dashboard](docs/screenshot-desktop.png)](https://chiragmirani.github.io/macro-dashboard/)
+
 ## What it is
 
 A daily-refreshed dashboard that answers, for every upcoming US macro release:
