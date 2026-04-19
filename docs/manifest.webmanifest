@@ -1,0 +1,16 @@
+{
+  "name": "MacroForecastbyCM",
+  "short_name": "MacroForecastbyCM",
+  "description": "Live US macro release schedule with house forecasts and Kalshi consensus by Chirag Mirani.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fbfbfd",
+  "theme_color": "#0a1628",
+  "icons": [
+    { "src": "favicon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "favicon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "favicon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
