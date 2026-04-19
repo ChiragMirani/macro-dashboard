@@ -2,7 +2,7 @@
 
 **Live site:** [chiragmirani.github.io/macro-dashboard](https://chiragmirani.github.io/macro-dashboard/)
 **Track record:** [chiragmirani.github.io/macro-dashboard/track-record.html](https://chiragmirani.github.io/macro-dashboard/track-record.html)
-**Maintained by:** Chirag Mirani &middot; chiragmirani@gmail.com
+**Maintained by:** Chirag Mirani
 
 A live, auto-updating release schedule for the most market-moving US macroeconomic prints, paired with house model forecasts and live Kalshi market consensus for direct comparison. Built and maintained solo.
 
@@ -43,7 +43,7 @@ Capabilities at a glance:
 - Continuous retraining on the latest data
 - Live calibration against prediction-market consensus
 
-Model code, training data, methodology, and live backtest results are not published. **Reach out via email for details, demos, or partnership inquiries.**
+Model code, training data, methodology, and live backtest results are not published. **Reach out for details, demos, or consultation inquiries.**
 
 ## How the data flow works
 
@@ -59,7 +59,7 @@ Model code, training data, methodology, and live backtest results are not publis
 
 ## Contact
 
-Questions about the methodology, requests for the model code, partnership ideas, or just want to compare forecasts? Email **chiragmirani@gmail.com**.
+Questions about methodology, requests for backtests or model output, consultation work, or partnership ideas — **reach out for details**.
 
 ## License
 
