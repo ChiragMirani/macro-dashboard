@@ -78,6 +78,17 @@ main {
 .tr-card strong { display: block; font-size: 1.4rem; margin: 4px 0 2px; }
 .tr-card .muted { color: var(--muted); font-size: 0.78rem; }
 .empty { text-align: center; padding: 32px; color: var(--muted); }
+
+.site-foot {
+  margin-top: 36px;
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+.site-foot p { margin: 4px 0; }
+.site-foot strong { color: var(--text); }
+.site-foot a { color: var(--link); }
 .summary-label { color: var(--muted); text-transform: uppercase; font-size: 0.72rem; letter-spacing: 0.04em; }
 
 .hero { padding: 24px 0 8px; }
