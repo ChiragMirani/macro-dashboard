@@ -64,7 +64,7 @@
             "contentUrl": "https://chiragmirani.github.io/macro-dashboard/dashboard_data.json"
           }],
           "keywords": ["CPI", "PCE", "NFP", "ADP", "Unemployment Rate", "Jobless Claims", "Kalshi", "macro forecast"],
-          "dateModified": "2026-04-19T16:12:58.666037-04:00"
+          "dateModified": "2026-04-20T07:37:54.108724-04:00"
 ,"variableMeasured": [
 {"@type": "PropertyValue", "name": "Weekly Claims", "value": "211,999", "unitText": "Labor"},{"@type": "PropertyValue", "name": "Core PCE", "value": "0.305% m/m", "unitText": "Inflation"},{"@type": "PropertyValue", "name": "ADP", "value": "46k", "unitText": "Labor"},{"@type": "PropertyValue", "name": "NFP", "value": "155k", "unitText": "Labor"},{"@type": "PropertyValue", "name": "Unemployment Rate", "value": "4.30%", "unitText": "Labor"},{"@type": "PropertyValue", "name": "Core CPI", "value": "0.188% m/m | 2.55% y/y", "unitText": "Inflation"}          ]        }
       ]
@@ -80,7 +80,7 @@
 
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Created by Chirag Mirani &middot; Updated Sunday, April 19, 2026 04:12 PM ET</p>
+          <p class="eyebrow">Created by Chirag Mirani &middot; Updated Monday, April 20, 2026 07:37 AM ET</p>
           <h1>Macro Forecast Schedule</h1>
         </div>
       </section>
@@ -111,7 +111,7 @@
                 <td data-label="Releases">Thursday, April 23, 2026 &middot; 8:30 AM ET</td>
                 <td data-label="House forecast">211,999</td>
                 <td data-label="Kalshi consensus">
-                    <a href="https://kalshi.com/markets/kxjoblessclaims-26apr23" target="_blank" rel="noopener">210,325</a>
+                    <a href="https://kalshi.com/markets/kxjoblessclaims-26apr23" target="_blank" rel="noopener">210,875</a>
                 </td>
                 <td data-label="Last release">
                     <a href="https://www.dol.gov/ui/data.pdf" target="_blank" rel="noopener">Week ending Apr 11, 2026: 207,000</a>
@@ -122,7 +122,7 @@
               <tr class="detail-row">
                 <td colspan="8">
                   <span class="detail">Weekly model output with surprise-risk overlay.</span>
-                  <span class="detail source">Source: macro_forecasting\output\weekly_claims_forecast_latest.json</span>
+                  <span class="detail source">Source: macro_forecasting/output/weekly_claims_forecast_latest.json</span>
                   <span class="detail source">Schedule: weekly_rule</span>
                 </td>
               </tr>
@@ -169,7 +169,7 @@
               </tr>
               <tr class="detail-row">
                 <td colspan="8">
-                  <span class="detail">Two-step recursive forecast for the April 2026 ADP release; cached in macro_forecasting\output\adp_forecast_latest.json.</span>
+                  <span class="detail">Two-step recursive forecast for the April 2026 ADP release; cached in macro_forecasting/output/adp_forecast_latest.json.</span>
                   <span class="detail source">Source: macro_forecasting/adp_forecast_kaggle_style.py</span>
                   <span class="detail source">Schedule: seeded_official_schedule</span>
                 </td>
@@ -194,7 +194,7 @@
               <tr class="detail-row">
                 <td colspan="8">
                   <span class="detail">NFP surprise model already uses weekly claims features, so the forecast can refresh as claims move.</span>
-                  <span class="detail source">Source: macro_forecasting\output\nfp_surprise_latest.json</span>
+                  <span class="detail source">Source: macro_forecasting/output/nfp_surprise_latest.json</span>
                   <span class="detail source">Schedule: seeded_official_schedule</span>
                 </td>
               </tr>
@@ -207,7 +207,7 @@
                 <td data-label="Releases">Friday, May 08, 2026 &middot; 8:30 AM ET</td>
                 <td data-label="House forecast">4.30%</td>
                 <td data-label="Kalshi consensus">
-                    <a href="https://kalshi.com/markets/kxeconstatu3-26apr" target="_blank" rel="noopener">4.36%</a>
+                    <a href="https://kalshi.com/markets/kxeconstatu3-26apr" target="_blank" rel="noopener">4.37%</a>
                 </td>
                 <td data-label="Last release">
                     <a href="https://www.bls.gov/news.release/empsit.toc.htm" target="_blank" rel="noopener">March 2026: 4.30%</a>
@@ -218,7 +218,7 @@
               <tr class="detail-row">
                 <td colspan="8">
                   <span class="detail">Rounded to the market print convention; live model also stores unrounded UR.</span>
-                  <span class="detail source">Source: macro_forecasting\output\ur_surprise_latest.json</span>
+                  <span class="detail source">Source: macro_forecasting/output/ur_surprise_latest.json</span>
                   <span class="detail source">Schedule: seeded_official_schedule</span>
                 </td>
               </tr>
@@ -231,7 +231,7 @@
                 <td data-label="Releases">Tuesday, May 12, 2026 &middot; 8:30 AM ET</td>
                 <td data-label="House forecast">0.188% m/m | 2.55% y/y</td>
                 <td data-label="Kalshi consensus">
-                    <a href="https://kalshi.com/markets/kxeconstatcpicore-26apr" target="_blank" rel="noopener">0.356% m/m | 2.68% y/y</a>
+                    <a href="https://kalshi.com/markets/kxeconstatcpicore-26apr" target="_blank" rel="noopener">0.357% m/m | 2.74% y/y</a>
                 </td>
                 <td data-label="Last release">
                     <a href="https://www.bls.gov/news.release/cpi.toc.htm" target="_blank" rel="noopener">March 2026: 0.196% m/m, 2.67% y/y</a>
@@ -242,7 +242,7 @@
               <tr class="detail-row">
                 <td colspan="8">
                   <span class="detail">Model output from core CPI workflow and surprise model.</span>
-                  <span class="detail source">Source: macro_forecasting\output\core_cpi_forecast_latest.json</span>
+                  <span class="detail source">Source: macro_forecasting/output/core_cpi_forecast_latest.json</span>
                   <span class="detail source">Schedule: seeded_official_schedule</span>
                 </td>
               </tr>
