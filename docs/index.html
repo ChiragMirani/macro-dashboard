@@ -64,7 +64,7 @@
             "contentUrl": "https://chiragmirani.github.io/macro-dashboard/dashboard_data.json"
           }],
           "keywords": ["CPI", "PCE", "NFP", "ADP", "Unemployment Rate", "Jobless Claims", "Kalshi", "macro forecast"],
-          "dateModified": "2026-04-19T16:12:58.666037-04:00"
+          "dateModified": "2026-04-20T10:55:48.626606-04:00"
 ,"variableMeasured": [
 {"@type": "PropertyValue", "name": "Weekly Claims", "value": "211,999", "unitText": "Labor"},{"@type": "PropertyValue", "name": "Core PCE", "value": "0.305% m/m", "unitText": "Inflation"},{"@type": "PropertyValue", "name": "ADP", "value": "46k", "unitText": "Labor"},{"@type": "PropertyValue", "name": "NFP", "value": "155k", "unitText": "Labor"},{"@type": "PropertyValue", "name": "Unemployment Rate", "value": "4.30%", "unitText": "Labor"},{"@type": "PropertyValue", "name": "Core CPI", "value": "0.188% m/m | 2.55% y/y", "unitText": "Inflation"}          ]        }
       ]
@@ -80,10 +80,23 @@
 
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Created by Chirag Mirani &middot; Updated Sunday, April 19, 2026 04:12 PM ET</p>
+          <p class="eyebrow">Created by Chirag Mirani &middot; Updated Monday, April 20, 2026 10:55 AM ET</p>
           <h1>Macro Forecast Schedule</h1>
         </div>
       </section>
+
+      <div class="share-row" data-share-url="https://chiragmirani.github.io/macro-dashboard/" data-share-text="Live US macro release schedule with house forecasts vs Kalshi consensus by @chirag_mirani1">
+        <span class="share-label">Share</span>
+        <a class="share-btn" target="_blank" rel="noopener"
+           href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fchiragmirani.github.io%2Fmacro-dashboard%2F&text=Live%20US%20macro%20release%20schedule%20with%20house%20forecasts%20vs%20Kalshi%20consensus%20by%20%40chirag_mirani1">X</a>
+        <a class="share-btn" target="_blank" rel="noopener"
+           href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fchiragmirani.github.io%2Fmacro-dashboard%2F">LinkedIn</a>
+        <a class="share-btn" target="_blank" rel="noopener"
+           href="https://www.reddit.com/submit?url=https%3A%2F%2Fchiragmirani.github.io%2Fmacro-dashboard%2F&title=Live%20US%20macro%20release%20schedule%20with%20house%20forecasts%20vs%20Kalshi%20consensus">Reddit</a>
+        <a class="share-btn"
+           href="mailto:?subject=Macro%20Forecast%20Schedule&body=Live%20US%20macro%20release%20schedule%20with%20house%20forecasts%20vs%20Kalshi%20consensus%3A%20https%3A%2F%2Fchiragmirani.github.io%2Fmacro-dashboard%2F">Email</a>
+        <button type="button" class="share-btn share-copy" id="copy-link">Copy link</button>
+      </div>
 
       <section class="table-section">
         <div class="table-wrap">
@@ -250,6 +263,22 @@
           </table>
         </div>
       </section>
+
+      <script>
+        (function () {
+          var btn = document.getElementById('copy-link');
+          if (!btn) return;
+          var row = btn.closest('.share-row');
+          var url = row && row.dataset.shareUrl ? row.dataset.shareUrl : window.location.href;
+          var label = btn.textContent;
+          btn.addEventListener('click', function () {
+            navigator.clipboard.writeText(url).then(function () {
+              btn.textContent = 'Copied';
+              setTimeout(function () { btn.textContent = label; }, 1500);
+            });
+          });
+        })();
+      </script>
 
       <footer class="site-foot">
         <p>Models are proprietary. Reach out for details or consultation on methodology, backtests, and model output.</p>

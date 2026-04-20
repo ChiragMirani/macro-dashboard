@@ -24,11 +24,24 @@
         <a href="track-record.html" class="active">Track record</a>
       </nav>
 
+      <div class="share-row" data-share-url="https://chiragmirani.github.io/macro-dashboard/track-record.html">
+        <span class="share-label">Share</span>
+        <a class="share-btn" target="_blank" rel="noopener"
+           href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fchiragmirani.github.io%2Fmacro-dashboard%2Ftrack-record.html&text=Honest%20track%20record%3A%20my%20macro%20forecasts%20vs%20Kalshi%20consensus%20vs%20the%20actual%20prints.%20by%20%40chirag_mirani1">X</a>
+        <a class="share-btn" target="_blank" rel="noopener"
+           href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fchiragmirani.github.io%2Fmacro-dashboard%2Ftrack-record.html">LinkedIn</a>
+        <a class="share-btn" target="_blank" rel="noopener"
+           href="https://www.reddit.com/submit?url=https%3A%2F%2Fchiragmirani.github.io%2Fmacro-dashboard%2Ftrack-record.html&title=Honest%20track%20record%3A%20macro%20forecasts%20vs%20Kalshi%20consensus%20vs%20actuals">Reddit</a>
+        <a class="share-btn"
+           href="mailto:?subject=Macro%20Forecast%20Track%20Record&body=Honest%20track%20record%20of%20macro%20forecasts%20vs%20Kalshi%20vs%20actuals%3A%20https%3A%2F%2Fchiragmirani.github.io%2Fmacro-dashboard%2Ftrack-record.html">Email</a>
+        <button type="button" class="share-btn share-copy" id="copy-link">Copy link</button>
+      </div>
+
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Created by Chirag Mirani &middot; Updated 2026-04-19 20:12:59 UTC</p>
+          <p class="eyebrow">Created by Chirag Mirani &middot; Updated 2026-04-20 14:55:50 UTC</p>
           <h1>Track record</h1>
-          <p class="tr-blurb">House forecasts vs Kalshi consensus, settled against the actual print. Snapshots start April 19, 2026. No historical backfill. No cherry-picking.</p>
+          <p class="tr-blurb">House forecasts vs Kalshi consensus, settled against the actual print. Snapshots start April 20, 2026. No historical backfill. No cherry-picking.</p>
         </div>
       </section>
 
@@ -102,6 +115,22 @@
           </table>
         </div>
       </section>
+
+      <script>
+        (function () {
+          var btn = document.getElementById('copy-link');
+          if (!btn) return;
+          var row = btn.closest('.share-row');
+          var url = row && row.dataset.shareUrl ? row.dataset.shareUrl : window.location.href;
+          var label = btn.textContent;
+          btn.addEventListener('click', function () {
+            navigator.clipboard.writeText(url).then(function () {
+              btn.textContent = 'Copied';
+              setTimeout(function () { btn.textContent = label; }, 1500);
+            });
+          });
+        })();
+      </script>
 
       <footer class="site-foot">
         <p>Models are proprietary. Reach out for details or consultation on methodology, backtests, and model output.</p>

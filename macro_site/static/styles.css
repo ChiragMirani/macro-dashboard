@@ -63,6 +63,28 @@ main {
 
 .tr-blurb { color: var(--muted); margin-top: 8px; max-width: 60ch; }
 
+.share-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0 16px;
+  font-size: 0.9rem;
+}
+.share-label { color: var(--muted); margin-right: 4px; }
+.share-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--panel);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+.share-btn:hover { background: #f0f0f3; text-decoration: none; }
+
 .tr-summary {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
