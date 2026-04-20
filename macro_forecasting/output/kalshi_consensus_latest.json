@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-04-20T11:37:53.621732+00:00",
+  "generated_at_utc": "2026-04-19T18:15:20.178701+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26APR23",
       "kind": "threshold",
       "market_count": 10,
-      "implied_value": 210875.0,
-      "consensus_label": "210,875",
+      "implied_value": 210325.0,
+      "consensus_label": "210,325",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26apr23",
       "title": "Initial jobless claims for the week ending April 18, 2026"
     },
@@ -26,8 +26,8 @@
       "event_ticker": "KXECONSTATCPICORE-26APR",
       "kind": "bucket",
       "market_count": 13,
-      "implied_value": 0.3565610859728509,
-      "consensus_label": "0.357% m/m",
+      "implied_value": 0.3559633027522936,
+      "consensus_label": "0.356% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26apr",
       "title": "CPI core month-over-month in Apr 2026?"
     },
@@ -36,8 +36,8 @@
       "event_ticker": "KXCPICOREYOY-26APR",
       "kind": "threshold",
       "market_count": 15,
-      "implied_value": 2.7369999999999997,
-      "consensus_label": "2.74% y/y",
+      "implied_value": 2.6752500000000006,
+      "consensus_label": "2.68% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26apr",
       "title": "Core inflation in Apr 2026 (Core CPI YoY)"
     },
@@ -46,7 +46,7 @@
       "event_ticker": "KXPAYROLLS-26APR",
       "kind": "threshold",
       "market_count": 19,
-      "implied_value": 68.625,
+      "implied_value": 68.91250000000001,
       "consensus_label": "69k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26apr",
       "title": "Jobs numbers in Apr 2026?"
@@ -56,8 +56,8 @@
       "event_ticker": "KXECONSTATU3-26APR",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.3651162790697695,
-      "consensus_label": "4.37%",
+      "implied_value": 4.363533834586466,
+      "consensus_label": "4.36%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26apr",
       "title": "Unemployment rate in Apr 2026?"
     },
