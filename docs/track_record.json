@@ -7,11 +7,11 @@
       "release_group": "Labor",
       "target_period": "April 2026",
       "release_iso": "2026-05-06T08:15:00-04:00",
-      "snapshot_at_utc": "2026-04-22T11:40:27.862856+00:00",
+      "snapshot_at_utc": "2026-04-22T17:37:16.183830+00:00",
       "house_raw": "46k",
       "house_value": 46.0,
-      "kalshi_raw": "84k",
-      "kalshi_value": 84.0,
+      "kalshi_raw": "85k",
+      "kalshi_value": 85.0,
       "kalshi_url": "https://kalshi.com/markets/kxadp-26apr",
       "release_source_url": "https://adpemploymentreport.com/",
       "fred_series": "ADPMNUSNERSA",
@@ -23,7 +23,7 @@
       "settled_at_utc": null,
       "release_date_pretty": "May 06, 2026",
       "house_display": "46k",
-      "kalshi_display": "84k",
+      "kalshi_display": "85k",
       "actual_display": null,
       "house_error_display": null,
       "kalshi_error_display": null
@@ -95,5 +95,5 @@
     "house_mean_abs_error": null,
     "kalshi_mean_abs_error": null
   },
-  "last_updated_utc": "2026-04-22T11:40:27.876454+00:00"
+  "last_updated_utc": "2026-04-22T17:37:16.197362+00:00"
 }
