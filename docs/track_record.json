@@ -7,7 +7,7 @@
       "release_group": "Labor",
       "target_period": "April 2026",
       "release_iso": "2026-05-06T08:15:00-04:00",
-      "snapshot_at_utc": "2026-04-22T17:37:16.183830+00:00",
+      "snapshot_at_utc": "2026-04-23T11:41:28.752893+00:00",
       "house_raw": "46k",
       "house_value": 46.0,
       "kalshi_raw": "85k",
@@ -95,5 +95,5 @@
     "house_mean_abs_error": null,
     "kalshi_mean_abs_error": null
   },
-  "last_updated_utc": "2026-04-22T17:37:16.197362+00:00"
+  "last_updated_utc": "2026-04-23T11:41:28.765150+00:00"
 }
