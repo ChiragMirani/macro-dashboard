@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-23T22:06:09.125292+00:00",
+  "generated_at_utc": "2026-04-27T22:01:29.213614+00:00",
   "inputs": {
     "spot_date": "2026-02-01",
     "spot_ur": 4.3,
@@ -29,10 +29,10 @@
     "as_of": "2026-04-01",
     "level_bps_per_1z": 25.0,
     "delta_bps_per_1z": 15.0,
-    "composite_z_tighter_positive": -0.1732551206070479,
-    "level_adjustment_pp": 0.043313780151761974,
-    "delta_adjustment_pp": -0.05951252792431704,
-    "total_adjustment_pp": -0.016198747772555068,
+    "composite_z_tighter_positive": -0.13714602405967274,
+    "level_adjustment_pp": 0.034286506014918186,
+    "delta_adjustment_pp": -0.07034525688852959,
+    "total_adjustment_pp": -0.036058750873611406,
     "components": [
       {
         "name": "ANFCI",
@@ -40,65 +40,65 @@
         "lookback_mean": -0.4345666666666667,
         "lookback_std": 0.18453295700828679,
         "zscore_tighter_positive": -0.21369263232237937,
-        "contribution_bps": 1.0828445037940493
+        "contribution_bps": 0.8571626503729547
       },
       {
         "name": "HY OAS",
-        "latest": 2.84,
-        "lookback_mean": 3.3191891891891894,
-        "lookback_std": 0.5259964976678096,
-        "zscore_tighter_positive": -0.9110121290043626,
-        "contribution_bps": 1.0828445037940493
+        "latest": 2.86,
+        "lookback_mean": 3.3197297297297297,
+        "lookback_std": 0.5255138359918281,
+        "zscore_tighter_positive": -0.8748194590577416,
+        "contribution_bps": 0.8571626503729547
       },
       {
         "name": "VIX",
-        "latest": 20.432000000000002,
-        "lookback_mean": 18.529421826139792,
-        "lookback_std": 6.69491883379715,
-        "zscore_tighter_positive": 0.2841824107344893,
-        "contribution_bps": 1.0828445037940493
+        "latest": 20.264705882352942,
+        "lookback_mean": 18.528027708492733,
+        "lookback_std": 6.6945399124686125,
+        "zscore_tighter_positive": 0.2594171065625642,
+        "contribution_bps": 0.8571626503729547
       },
       {
         "name": "Broad USD",
-        "latest": 118.0795,
-        "lookback_mean": 117.36515250000001,
-        "lookback_std": 4.8429725595437505,
-        "zscore_tighter_positive": 0.14750186816406116,
-        "contribution_bps": 1.0828445037940493
+        "latest": 118.7294,
+        "lookback_mean": 117.37056833333334,
+        "lookback_std": 4.844131625516647,
+        "zscore_tighter_positive": 0.28051088857886575,
+        "contribution_bps": 0.8571626503729547
       }
     ],
     "checkpoint_deltas": [
       {
         "name": "since_last_fomc",
         "checkpoint_date": "2026-01-28",
-        "delta_z_tighter_positive": 0.21580158749854972,
-        "adjustment_bps": -3.2370238124782458
+        "delta_z_tighter_positive": 0.25191068404592487,
+        "adjustment_bps": -3.778660260688873
       },
       {
         "name": "since_last_sep",
         "checkpoint_date": "2025-12-17",
-        "delta_z_tighter_positive": 0.1809485986635639,
-        "adjustment_bps": -2.7142289799534582
+        "delta_z_tighter_positive": 0.21705769521093904,
+        "adjustment_bps": -3.2558654281640855
       }
     ]
   },
   "adjusted_taylor": {
-    "spot": 4.167384800163943,
+    "spot": 4.1475247970628875,
     "forward": null,
     "sep_delta_only_forward": null
   },
   "quarterly_revision": {
     "macro_revision_vs_sep_pp": null,
-    "fci_impulse_since_sep_pp": -0.02714228979953458,
+    "fci_impulse_since_sep_pp": -0.032558654281640856,
     "net_revision_vs_sep_pp": null
   },
   "market_pricing": {
     "treasury": {
       "as_of": "2026-04-01",
       "rates": {
-        "6m": 3.72,
-        "1y": 3.69,
-        "2y": 3.79
+        "6m": 3.71,
+        "1y": 3.67,
+        "2y": 3.78
       },
       "implied_cuts": {
         "6m": 0.0,
@@ -110,7 +110,7 @@
   },
   "policy_gap": {
     "raw_spot_vs_ff_pp": 0.5435835479364983,
-    "adjusted_spot_vs_ff_pp": 0.5273848001639432,
+    "adjusted_spot_vs_ff_pp": 0.5075247970628873,
     "raw_forward_vs_ff_pp": null,
     "adjusted_forward_vs_ff_pp": null
   }
