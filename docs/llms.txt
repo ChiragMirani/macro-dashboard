@@ -2,7 +2,7 @@
 
 > Live US macroeconomic release calendar with house model forecasts and Kalshi market consensus, maintained by Chirag Mirani.
 
-Updated: Monday, April 27, 2026 01:37 PM ET
+Updated: Tuesday, April 28, 2026 07:41 AM ET
 Machine-readable feed: https://chiragmirani.github.io/macro-dashboard/dashboard_data.json
 
 ## Tracked releases
@@ -13,15 +13,15 @@ Machine-readable feed: https://chiragmirani.github.io/macro-dashboard/dashboard_
   Last release: February 2026: 0.367% m/m, 2.97% y/y.
 - **Weekly Claims** (Labor) — releases Thursday, April 30, 2026 at 8:30 AM ET.
   House forecast: 211,999.
-  Kalshi consensus: 299,175.
+  Kalshi consensus: 209,625.
   Last release: Week ending Apr 11, 2026: 207,000.
 - **ADP** (Labor) — releases Wednesday, May 06, 2026 at 8:15 AM ET.
   House forecast: 46k.
-  Kalshi consensus: 87k.
+  Kalshi consensus: 88k.
   Last release: March 2026: 62k.
 - **NFP** (Labor) — releases Friday, May 08, 2026 at 8:30 AM ET.
   House forecast: 155k.
-  Kalshi consensus: 68k.
+  Kalshi consensus: 64k.
   Last release: March 2026: 178k.
 - **Unemployment Rate** (Labor) — releases Friday, May 08, 2026 at 8:30 AM ET.
   House forecast: 4.30%.
@@ -29,7 +29,7 @@ Machine-readable feed: https://chiragmirani.github.io/macro-dashboard/dashboard_
   Last release: March 2026: 4.30%.
 - **Core CPI** (Inflation) — releases Tuesday, May 12, 2026 at 8:30 AM ET.
   House forecast: 0.188% m/m | 2.55% y/y.
-  Kalshi consensus: 0.361% m/m | 2.73% y/y.
+  Kalshi consensus: 0.361% m/m | 2.74% y/y.
   Last release: March 2026: 0.196% m/m, 2.67% y/y.
 
 ## How to cite
