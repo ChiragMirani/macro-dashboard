@@ -48,6 +48,7 @@ LATEST_ACTUAL_CACHE = BASE_DIR / "macro_site" / "latest_actuals_cache.json"
 
 ET = ZoneInfo("America/New_York")
 REQUEST_HEADERS = {"User-Agent": "ChiragMiraniMacroDashboard/1.0"}
+BEA_NIPA_MONTHLY_TXT = "https://apps.bea.gov/national/Release/TXT/NipaDataM.txt"
 
 RELEASE_SOURCE_URL = {
     "core_cpi": "https://www.bls.gov/news.release/cpi.toc.htm",
@@ -178,6 +179,31 @@ def fetch_fred_series(series_id: str) -> pd.Series | None:
     return series
 
 
+def fetch_bea_monthly_series(series_code: str) -> pd.Series | None:
+    try:
+        response = requests.get(BEA_NIPA_MONTHLY_TXT, headers=REQUEST_HEADERS, timeout=60)
+        response.raise_for_status()
+        frame = pd.read_csv(io.StringIO(response.text), dtype=str)
+    except Exception:
+        return None
+
+    if "%SeriesCode" not in frame.columns or "Period" not in frame.columns or "Value" not in frame.columns:
+        return None
+    frame = frame[frame["%SeriesCode"] == series_code].copy()
+    if frame.empty:
+        return None
+
+    frame["date"] = pd.to_datetime(frame["Period"].str.replace("M", "-", regex=False) + "-01", errors="coerce")
+    frame["value"] = pd.to_numeric(frame["Value"].str.replace(",", "", regex=False), errors="coerce")
+    frame = frame.dropna(subset=["date", "value"]).sort_values("date")
+    if frame.empty:
+        return None
+
+    series = frame.set_index("date")["value"].astype(float)
+    series.name = series_code
+    return series
+
+
 def load_core_cpi_last_release_local() -> str | None:
     if not REPORT_TABLE.exists():
         return None
@@ -212,6 +238,14 @@ def load_core_cpi_last_release() -> str | None:
 
 
 def load_core_pce_last_release() -> str | None:
+    bea_series = fetch_bea_monthly_series("DPCCRG")
+    if bea_series is not None and len(bea_series) >= 13:
+        mom = (bea_series.iloc[-1] / bea_series.iloc[-2] - 1.0) * 100.0
+        yoy = (bea_series.iloc[-1] / bea_series.iloc[-13] - 1.0) * 100.0
+        value = f"{bea_series.index[-1].strftime('%B %Y')}: {fmt_pct(mom)} m/m, {fmt_pct(yoy)} y/y"
+        write_actual_cache("core_pce", value)
+        return value
+
     series = fetch_fred_series("PCEPILFE")
     if series is not None and len(series) >= 13:
         mom = (series.iloc[-1] / series.iloc[-2] - 1.0) * 100.0
@@ -425,17 +459,20 @@ def build_core_cpi_event(now_et: datetime) -> ReleaseEvent:
 
 
 def build_core_pce_event(now_et: datetime) -> ReleaseEvent:
-    bridge = read_json(MACRO_OUTPUT / "core_pce_bridge_latest.json") or read_json(ROOT_CORE_PCE_BRIDGE) or {}
+    latest_bridge_path = MACRO_OUTPUT / "core_pce_bridge_latest.json"
+    bridge = read_json(latest_bridge_path) or read_json(ROOT_CORE_PCE_BRIDGE) or {}
     taylor = read_json(FCI_TAYLOR) or {}
     cpi = read_json(CORE_CPI_FORECAST) or {}
     reporting_month, release_dt, source = next_seeded_release(now_et, "core_pce")
+    bridge_period = bridge.get("reporting_month") or bridge.get("date")
+    bridge_is_current = latest_bridge_path.exists() or bridge_period == reporting_month
 
-    bridge_mom = ((bridge.get("implied_core_pce") or {}).get("mom_pct"))
-    bridge_yoy = ((bridge.get("expected_core_pce") or {}).get("yoy_pct"))
-    if bridge_yoy is None:
+    bridge_mom = ((bridge.get("implied_core_pce") or {}).get("mom_pct")) if bridge_is_current else None
+    bridge_yoy = ((bridge.get("expected_core_pce") or {}).get("yoy_pct")) if bridge_is_current else None
+    if bridge_yoy is None and bridge_is_current:
         bridge_yoy = (((taylor.get("inputs") or {}).get("forecast_core_pce_yoy")))
 
-    if bridge_mom is None and cpi:
+    if bridge_mom is None and cpi and bridge_is_current:
         cpi_mom = float(cpi.get("final_mom"))
         historical_bridge = read_json(ROOT_CORE_PCE_BRIDGE) or {}
         historical_cpi = ((historical_bridge.get("core_cpi_sa") or {}).get("mom_pct"))
@@ -453,7 +490,9 @@ def build_core_pce_event(now_et: datetime) -> ReleaseEvent:
         house = " | ".join(pieces)
 
     note = "Standard estimate from CPI/PPI bridge."
-    if not (MACRO_OUTPUT / "core_pce_bridge_latest.json").exists():
+    if not bridge_is_current:
+        note += " House forecast pending until the CPI/PPI bridge refreshes for this release month."
+    elif not latest_bridge_path.exists():
         note += " Local repo does not yet write macro_forecasting/output/core_pce_bridge_latest.json, so this refresh falls back to existing bridge artifacts."
 
     kalshi_line, kalshi_link = kalshi_for("core_pce")

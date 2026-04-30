@@ -3,8 +3,9 @@
 from __future__ import annotations
 
 import json
-from datetime import date, datetime, timedelta, timezone
+from datetime import date, datetime, time, timedelta, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import requests
 
@@ -13,6 +14,13 @@ KALSHI_API = "https://api.elections.kalshi.com/trade-api/v2"
 OUTPUT = Path(__file__).resolve().parents[1] / "macro_forecasting" / "output" / "kalshi_consensus_latest.json"
 
 MONTH_ABBR = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"]
+ET = ZoneInfo("America/New_York")
+CORE_PCE_RELEASE_DATES = [
+    date(2026, 3, 27),
+    date(2026, 4, 30),
+    date(2026, 5, 28),
+    date(2026, 6, 26),
+]
 
 
 def yy(d: date) -> str:
@@ -171,21 +179,36 @@ def upcoming_month_ticker(prefix: str, today: date) -> str:
     return f"{prefix}-{yy(target)}{MONTH_ABBR[target.month - 1]}"
 
 
-def upcoming_claims_ticker(today: date) -> str:
+def upcoming_claims_ticker(now_et: datetime) -> str:
     """Initial Jobless Claims releases Thursdays. Find next Thursday."""
+    today = now_et.date()
     days_ahead = (3 - today.weekday()) % 7
-    if days_ahead == 0 and datetime.now().hour >= 12:
+    if days_ahead == 0 and now_et.time() >= time(8, 30):
         days_ahead = 7
     release = today + timedelta(days=max(days_ahead, 1) if today.weekday() == 3 else days_ahead)
     return f"KXJOBLESSCLAIMS-{yy(release)}{MONTH_ABBR[release.month - 1]}{release.day:02d}"
 
 
+def upcoming_core_pce_ticker(now_et: datetime) -> str:
+    """Kalshi Core PCE tickers use the release month, not the data month."""
+    release_time = time(8, 30)
+    for release_date in CORE_PCE_RELEASE_DATES:
+        release_dt = datetime.combine(release_date, release_time, tzinfo=ET)
+        if now_et < release_dt:
+            return f"KXPCECORE-{yy(release_date)}{MONTH_ABBR[release_date.month - 1]}"
+    fallback_month = now_et.month + 1
+    fallback_year = now_et.year + (fallback_month - 1) // 12
+    fallback_month = ((fallback_month - 1) % 12) + 1
+    return f"KXPCECORE-{fallback_year % 100:02d}{MONTH_ABBR[fallback_month - 1]}"
+
+
 def main() -> None:
-    today = date.today()
+    now_et = datetime.now(tz=ET)
+    today = now_et.date()
     events = [
         build_for_event(
             "weekly_claims",
-            upcoming_claims_ticker(today),
+            upcoming_claims_ticker(now_et),
             "threshold",
             value_scale=1.0,
             formatter=fmt_claims,
@@ -227,7 +250,7 @@ def main() -> None:
         ),
         build_for_event(
             "core_pce",
-            upcoming_month_ticker("KXPCECORE", today),
+            upcoming_core_pce_ticker(now_et),
             "threshold",
             value_scale=1.0,
             formatter=fmt_pct_3dp,

@@ -28,6 +28,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 DB_PATH = REPO_ROOT / "macro_site" / "track_record.db"
 EXPORT_PATH = REPO_ROOT / "docs" / "track_record.json"
 REQUEST_HEADERS = {"User-Agent": "ChiragMiraniMacroDashboard/1.0"}
+BEA_NIPA_MONTHLY_TXT = "https://apps.bea.gov/national/Release/TXT/NipaDataM.txt"
 
 
 ACTUAL_SOURCES: dict[str, dict[str, Any]] = {
@@ -112,11 +113,37 @@ def fetch_fred_csv(series_id: str) -> pd.DataFrame | None:
     return df
 
 
+def fetch_bea_monthly_series(series_code: str) -> pd.DataFrame | None:
+    try:
+        resp = requests.get(BEA_NIPA_MONTHLY_TXT, headers=REQUEST_HEADERS, timeout=60)
+        resp.raise_for_status()
+        df = pd.read_csv(io.StringIO(resp.text), dtype=str)
+    except Exception:
+        return None
+    required = {"%SeriesCode", "Period", "Value"}
+    if not required.issubset(df.columns):
+        return None
+    df = df[df["%SeriesCode"] == series_code].copy()
+    if df.empty:
+        return None
+    df["date"] = pd.to_datetime(df["Period"].str.replace("M", "-", regex=False) + "-01", errors="coerce")
+    df[series_code] = pd.to_numeric(df["Value"].str.replace(",", "", regex=False), errors="coerce")
+    df = df.dropna(subset=["date", series_code]).sort_values("date").reset_index(drop=True)
+    return df[["date", series_code]]
+
+
 def actual_for(release_key: str, target_period: str | None) -> float | None:
     cfg = ACTUAL_SOURCES.get(release_key)
     if not cfg:
         return None
-    df = fetch_fred_csv(cfg["series"])
+    if release_key == "core_pce":
+        df = fetch_bea_monthly_series("DPCCRG")
+        if df is not None and not df.empty:
+            cfg = {**cfg, "series": "DPCCRG"}
+        else:
+            df = fetch_fred_csv(cfg["series"])
+    else:
+        df = fetch_fred_csv(cfg["series"])
     if df is None or df.empty:
         return None
 
