@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-23T22:05:51.821531+00:00",
+  "generated_at_utc": "2026-04-30T22:07:27.585307+00:00",
   "target_month": "2026-04",
   "threshold_pp": 0.12,
   "baseline": {
@@ -827,7 +827,7 @@
     }
   },
   "live": {
-    "final_unrate": 4.284244474228396,
+    "final_unrate": 4.282917380164647,
     "rounded_unrate": 4.3,
     "expected_abs_gap_vs_ma3_pp": 0.06930055144108885,
     "big_surprise_prob": 0.34074434565936845,
