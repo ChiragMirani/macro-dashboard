@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-05-05T11:36:32.479236+00:00",
+  "generated_at_utc": "2026-05-05T17:42:03.885142+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26MAY07",
       "kind": "threshold",
       "market_count": 10,
-      "implied_value": 199050.0,
-      "consensus_label": "199,050",
+      "implied_value": 199375.0,
+      "consensus_label": "199,375",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26may07",
       "title": "Initial jobless claims for the week ending May\u3164 2, 2026"
     },
@@ -16,8 +16,8 @@
       "event_ticker": "KXADP-26MAY",
       "kind": "threshold",
       "market_count": 7,
-      "implied_value": 47.49999999999999,
-      "consensus_label": "47k",
+      "implied_value": 47.5,
+      "consensus_label": "48k",
       "kalshi_url": "https://kalshi.com/markets/kxadp-26may",
       "title": "ADP employment change in May 2026?"
     },
@@ -26,7 +26,7 @@
       "event_ticker": "KXECONSTATCPICORE-26MAY",
       "kind": "bucket",
       "market_count": 8,
-      "implied_value": 0.19462365591397848,
+      "implied_value": 0.19456521739130433,
       "consensus_label": "0.195% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26may",
       "title": "CPI core month-over-month in May 2026?"
@@ -36,8 +36,8 @@
       "event_ticker": "KXCPICOREYOY-26MAY",
       "kind": "threshold",
       "market_count": 15,
-      "implied_value": 2.737,
-      "consensus_label": "2.74% y/y",
+      "implied_value": 2.7315,
+      "consensus_label": "2.73% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26may",
       "title": "Core inflation in May 2026 (Core CPI YoY)"
     },
@@ -66,8 +66,8 @@
       "event_ticker": "KXPCECORE-26MAY",
       "kind": "threshold",
       "market_count": 5,
-      "implied_value": 0.21300000000000002,
-      "consensus_label": "0.213% m/m",
+      "implied_value": 0.21350000000000002,
+      "consensus_label": "0.214% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxpcecore-26may",
       "title": "How much will core PCE increase in May 2026?"
     }
