@@ -1,6 +1,34 @@
 {
   "snapshots": [
     {
+      "id": "weekly_claims_2026-05-14",
+      "release_key": "weekly_claims",
+      "release_label": "Weekly Claims",
+      "release_group": "Labor",
+      "target_period": "Week ending May 09, 2026",
+      "release_iso": "2026-05-14T08:30:00-04:00",
+      "snapshot_at_utc": "2026-05-07T17:48:04.060954+00:00",
+      "house_raw": "213,095",
+      "house_value": 213095.0,
+      "kalshi_raw": "202,475",
+      "kalshi_value": 202475.0,
+      "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26may14",
+      "release_source_url": "https://www.dol.gov/ui/data.pdf",
+      "fred_series": "ICSA",
+      "unit": "claims",
+      "actual_value": null,
+      "house_error_abs": null,
+      "kalshi_error_abs": null,
+      "winner": null,
+      "settled_at_utc": null,
+      "release_date_pretty": "May 14, 2026",
+      "house_display": "213,095",
+      "kalshi_display": "202,475",
+      "actual_display": null,
+      "house_error_display": null,
+      "kalshi_error_display": null
+    },
+    {
       "id": "core_cpi_2026-05-12",
       "release_key": "core_cpi",
       "release_label": "Core CPI",
@@ -198,14 +226,14 @@
     }
   ],
   "summary": {
-    "total_snapshots": 7,
+    "total_snapshots": 8,
     "settled_count": 2,
-    "pending_count": 5,
+    "pending_count": 6,
     "house_wins": 2,
     "kalshi_wins": 0,
     "ties": 0,
     "house_mean_abs_error": 1500.50587584658,
     "kalshi_mean_abs_error": 2337.51412415342
   },
-  "last_updated_utc": "2026-05-07T11:49:17.910865+00:00"
+  "last_updated_utc": "2026-05-07T17:48:44.163744+00:00"
 }
