@@ -29,15 +29,16 @@ DB_PATH = REPO_ROOT / "macro_site" / "track_record.db"
 EXPORT_PATH = REPO_ROOT / "docs" / "track_record.json"
 REQUEST_HEADERS = {"User-Agent": "ChiragMiraniMacroDashboard/1.0"}
 BEA_NIPA_MONTHLY_TXT = "https://apps.bea.gov/national/Release/TXT/NipaDataM.txt"
+BLS_API = "https://api.bls.gov/publicAPI/v2/timeseries/data/{series_id}?startyear=2020&endyear=2026"
 
 
 ACTUAL_SOURCES: dict[str, dict[str, Any]] = {
     "weekly_claims":  {"series": "ICSA",         "kind": "weekly_level",   "unit": "claims"},
     "core_cpi":       {"series": "CPILFESL",     "kind": "monthly_mom_pct","unit": "% m/m"},
     "core_pce":       {"series": "PCEPILFE",     "kind": "monthly_mom_pct","unit": "% m/m"},
-    "adp":            {"series": "ADPMNUSNERSA", "kind": "monthly_diff_k", "unit": "k jobs"},
-    "nfp":            {"series": "PAYEMS",       "kind": "monthly_diff_k", "unit": "k jobs"},
-    "ur":             {"series": "UNRATE",       "kind": "monthly_level",  "unit": "% UR"},
+    "adp":            {"series": "ADPMNUSNERSA", "kind": "monthly_diff_k", "unit": "k jobs", "diff_scale": 1 / 1000.0},
+    "nfp":            {"series": "PAYEMS",       "bls_series": "CES0000000001", "kind": "monthly_diff_k", "unit": "k jobs", "diff_scale": 1.0},
+    "ur":             {"series": "UNRATE",       "bls_series": "LNS14000000", "kind": "monthly_level",  "unit": "% UR"},
 }
 
 
@@ -62,6 +63,9 @@ CREATE TABLE IF NOT EXISTS snapshots (
     house_error_abs REAL,
     kalshi_error_abs REAL,
     winner TEXT,
+    actual_consensus_side TEXT,
+    house_consensus_side TEXT,
+    house_direction_correct INTEGER,
     settled_at_utc TEXT
 );
 CREATE INDEX IF NOT EXISTS idx_release  ON snapshots(release_key, release_iso);
@@ -74,7 +78,20 @@ def _connect() -> sqlite3.Connection:
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     conn.executescript(SCHEMA)
+    _ensure_columns(conn)
     return conn
+
+
+def _ensure_columns(conn: sqlite3.Connection) -> None:
+    existing = {row["name"] for row in conn.execute("PRAGMA table_info(snapshots)").fetchall()}
+    additions = {
+        "actual_consensus_side": "TEXT",
+        "house_consensus_side": "TEXT",
+        "house_direction_correct": "INTEGER",
+    }
+    for col, col_type in additions.items():
+        if col not in existing:
+            conn.execute(f"ALTER TABLE snapshots ADD COLUMN {col} {col_type}")
 
 
 def _first_number(text: str | None) -> float | None:
@@ -113,6 +130,34 @@ def fetch_fred_csv(series_id: str) -> pd.DataFrame | None:
     return df
 
 
+def fetch_bls_series(series_id: str) -> pd.DataFrame | None:
+    try:
+        resp = requests.get(BLS_API.format(series_id=series_id), headers=REQUEST_HEADERS, timeout=60)
+        resp.raise_for_status()
+        payload = resp.json()
+    except Exception:
+        return None
+    try:
+        rows = payload["Results"]["series"][0]["data"]
+    except Exception:
+        return None
+    parsed = []
+    for row in rows:
+        period = str(row.get("period", ""))
+        if not re.match(r"M\d\d", period):
+            continue
+        parsed.append(
+            {
+                "date": pd.to_datetime(f"{row['year']}-{period[1:]}-01", errors="coerce"),
+                series_id: pd.to_numeric(row.get("value"), errors="coerce"),
+            }
+        )
+    if not parsed:
+        return None
+    df = pd.DataFrame(parsed).dropna(subset=["date", series_id]).sort_values("date").reset_index(drop=True)
+    return df
+
+
 def fetch_bea_monthly_series(series_code: str) -> pd.DataFrame | None:
     try:
         resp = requests.get(BEA_NIPA_MONTHLY_TXT, headers=REQUEST_HEADERS, timeout=60)
@@ -140,6 +185,12 @@ def actual_for(release_key: str, target_period: str | None) -> float | None:
         df = fetch_bea_monthly_series("DPCCRG")
         if df is not None and not df.empty:
             cfg = {**cfg, "series": "DPCCRG"}
+        else:
+            df = fetch_fred_csv(cfg["series"])
+    elif cfg.get("bls_series"):
+        df = fetch_bls_series(cfg["bls_series"])
+        if df is not None and not df.empty:
+            cfg = {**cfg, "series": cfg["bls_series"]}
         else:
             df = fetch_fred_csv(cfg["series"])
     else:
@@ -177,7 +228,7 @@ def actual_for(release_key: str, target_period: str | None) -> float | None:
         if prev.empty:
             return None
         prev_val = float(prev.iloc[0][cfg["series"]])
-        scale = 1.0 if cfg["series"] == "PAYEMS" else 1 / 1000.0
+        scale = float(cfg.get("diff_scale", 1.0 if cfg["series"] == "PAYEMS" else 1 / 1000.0))
         return (val - prev_val) * scale
 
     if cfg["kind"] == "monthly_mom_pct":
@@ -188,6 +239,23 @@ def actual_for(release_key: str, target_period: str | None) -> float | None:
         return (val / prev_val - 1.0) * 100.0
 
     return None
+
+
+def _side(value: float | None, consensus: float | None) -> str | None:
+    if value is None or consensus is None:
+        return None
+    diff = value - consensus
+    if abs(diff) < 1e-9:
+        return "in_line"
+    return "above" if diff > 0 else "below"
+
+
+def _direction_score(actual: float | None, house: float | None, consensus: float | None) -> tuple[str | None, str | None, int | None]:
+    actual_side = _side(actual, consensus)
+    house_side = _side(house, consensus)
+    if actual_side in (None, "in_line") or house_side in (None, "in_line"):
+        return actual_side, house_side, None
+    return actual_side, house_side, int(actual_side == house_side)
 
 
 def snapshot(payload: dict[str, Any]) -> int:
@@ -254,17 +322,44 @@ def settle() -> int:
             winner = None
             if house_err is not None and kalshi_err is not None:
                 winner = "tie" if abs(house_err - kalshi_err) < 1e-9 else ("house" if house_err < kalshi_err else "kalshi")
+            actual_side, house_side, direction_correct = _direction_score(actual, row["house_value"], row["kalshi_value"])
             conn.execute(
                 """
                 UPDATE snapshots SET actual_value=?, house_error_abs=?, kalshi_error_abs=?,
-                                     winner=?, settled_at_utc=?
+                                     winner=?, actual_consensus_side=?, house_consensus_side=?,
+                                     house_direction_correct=?, settled_at_utc=?
                 WHERE id = ?
                 """,
-                (actual, house_err, kalshi_err, winner, now_utc.isoformat(), row["id"]),
+                (actual, house_err, kalshi_err, winner, actual_side, house_side, direction_correct, now_utc.isoformat(), row["id"]),
             )
             settled += 1
+        _backfill_direction_scores(conn)
         conn.commit()
     return settled
+
+
+def _backfill_direction_scores(conn: sqlite3.Connection) -> None:
+    rows = conn.execute(
+        """
+        SELECT * FROM snapshots
+        WHERE actual_value IS NOT NULL
+          AND kalshi_value IS NOT NULL
+          AND house_value IS NOT NULL
+          AND (actual_consensus_side IS NULL OR house_consensus_side IS NULL)
+        """
+    ).fetchall()
+    for row in rows:
+        actual_side, house_side, direction_correct = _direction_score(
+            row["actual_value"], row["house_value"], row["kalshi_value"]
+        )
+        conn.execute(
+            """
+            UPDATE snapshots
+               SET actual_consensus_side=?, house_consensus_side=?, house_direction_correct=?
+             WHERE id=?
+            """,
+            (actual_side, house_side, direction_correct, row["id"]),
+        )
 
 
 def _summary(rows: list[sqlite3.Row]) -> dict[str, Any]:
@@ -275,6 +370,8 @@ def _summary(rows: list[sqlite3.Row]) -> dict[str, Any]:
         clean = [v for v in vals if v is not None]
         return sum(clean) / len(clean) if clean else None
 
+    direction_calls = sum(1 for r in settled_rows if r["house_direction_correct"] in (0, 1))
+    direction_hits = sum(1 for r in settled_rows if r["house_direction_correct"] == 1)
     return {
         "total_snapshots": len(rows),
         "settled_count": len(settled_rows),
@@ -282,9 +379,23 @@ def _summary(rows: list[sqlite3.Row]) -> dict[str, Any]:
         "house_wins":  sum(1 for r in settled_rows if r["winner"] == "house"),
         "kalshi_wins": sum(1 for r in settled_rows if r["winner"] == "kalshi"),
         "ties":        sum(1 for r in settled_rows if r["winner"] == "tie"),
+        "house_direction_hits": direction_hits,
+        "house_direction_misses": sum(1 for r in settled_rows if r["house_direction_correct"] == 0),
+        "house_direction_call_count": direction_calls,
+        "house_direction_hit_rate": (direction_hits / direction_calls) if direction_calls else None,
         "house_mean_abs_error":  avg([r["house_error_abs"]  for r in settled_rows]),
         "kalshi_mean_abs_error": avg([r["kalshi_error_abs"] for r in settled_rows]),
     }
+
+
+def _format_side(side: str | None) -> str | None:
+    if side == "above":
+        return "above consensus"
+    if side == "below":
+        return "below consensus"
+    if side == "in_line":
+        return "in line"
+    return None
 
 
 def _format_value(v: float | None, unit: str | None) -> str | None:
@@ -329,6 +440,8 @@ def render_for_template() -> dict[str, Any]:
             "actual_display": _format_value(r.get("actual_value"), r.get("unit")) if r.get("actual_value") is not None else None,
             "house_error_display":  _format_error(r.get("house_error_abs"),  r.get("unit")),
             "kalshi_error_display": _format_error(r.get("kalshi_error_abs"), r.get("unit")),
+            "actual_consensus_side_display": _format_side(r.get("actual_consensus_side")),
+            "house_consensus_side_display": _format_side(r.get("house_consensus_side")),
         })
     summary = _summary(rows)
     return {"snapshots": snaps, "summary": summary}
