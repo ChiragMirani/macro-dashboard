@@ -21,6 +21,23 @@ CORE_PCE_RELEASE_DATES = [
     date(2026, 5, 28),
     date(2026, 6, 26),
 ]
+DATA_MONTH_RELEASES = {
+    "adp": [
+        (date(2026, 4, 1), date(2026, 5, 6), time(8, 15)),
+        (date(2026, 5, 1), date(2026, 6, 3), time(8, 15)),
+        (date(2026, 6, 1), date(2026, 7, 1), time(8, 15)),
+    ],
+    "core_cpi": [
+        (date(2026, 4, 1), date(2026, 5, 12), time(8, 30)),
+        (date(2026, 5, 1), date(2026, 6, 10), time(8, 30)),
+        (date(2026, 6, 1), date(2026, 7, 15), time(8, 30)),
+    ],
+    "nfp": [
+        (date(2026, 4, 1), date(2026, 5, 8), time(8, 30)),
+        (date(2026, 5, 1), date(2026, 6, 5), time(8, 30)),
+        (date(2026, 6, 1), date(2026, 7, 2), time(8, 30)),
+    ],
+}
 
 
 def yy(d: date) -> str:
@@ -173,10 +190,18 @@ def fmt_pct_2dp(v: float | None) -> str | None:
     return f"{v:.2f}%"
 
 
-def upcoming_month_ticker(prefix: str, today: date) -> str:
-    """Pick the next month for events listed monthly (e.g. KXADP-26APR)."""
-    target = today.replace(day=1)
+def ticker_for_month(prefix: str, target: date) -> str:
     return f"{prefix}-{yy(target)}{MONTH_ABBR[target.month - 1]}"
+
+
+def upcoming_data_month_ticker(prefix: str, now_et: datetime, schedule_key: str) -> str:
+    """Pick the Kalshi ticker for the data month whose release has not passed."""
+    for target_month, release_date, release_time in DATA_MONTH_RELEASES[schedule_key]:
+        release_dt = datetime.combine(release_date, release_time, tzinfo=ET)
+        if now_et < release_dt:
+            return ticker_for_month(prefix, target_month)
+    fallback_month = now_et.date().replace(day=1)
+    return ticker_for_month(prefix, fallback_month)
 
 
 def upcoming_claims_ticker(now_et: datetime) -> str:
@@ -204,7 +229,6 @@ def upcoming_core_pce_ticker(now_et: datetime) -> str:
 
 def main() -> None:
     now_et = datetime.now(tz=ET)
-    today = now_et.date()
     events = [
         build_for_event(
             "weekly_claims",
@@ -215,35 +239,35 @@ def main() -> None:
         ),
         build_for_event(
             "adp",
-            upcoming_month_ticker("KXADP", today),
+            upcoming_data_month_ticker("KXADP", now_et, "adp"),
             "threshold",
             value_scale=1 / 1000.0,
             formatter=fmt_k,
         ),
         build_for_event(
             "core_cpi",
-            upcoming_month_ticker("KXECONSTATCPICORE", today),
+            upcoming_data_month_ticker("KXECONSTATCPICORE", now_et, "core_cpi"),
             "bucket",
             value_scale=1.0,
             formatter=fmt_pct_3dp,
         ),
         build_for_event(
             "core_cpi_yoy",
-            upcoming_month_ticker("KXCPICOREYOY", today),
+            upcoming_data_month_ticker("KXCPICOREYOY", now_et, "core_cpi"),
             "threshold",
             value_scale=1.0,
             formatter=fmt_pct_2dp_yoy,
         ),
         build_for_event(
             "nfp",
-            upcoming_month_ticker("KXPAYROLLS", today),
+            upcoming_data_month_ticker("KXPAYROLLS", now_et, "nfp"),
             "threshold",
             value_scale=1 / 1000.0,
             formatter=fmt_k,
         ),
         build_for_event(
             "ur",
-            upcoming_month_ticker("KXECONSTATU3", today),
+            upcoming_data_month_ticker("KXECONSTATU3", now_et, "nfp"),
             "bucket",
             value_scale=1.0,
             formatter=fmt_pct_2dp,

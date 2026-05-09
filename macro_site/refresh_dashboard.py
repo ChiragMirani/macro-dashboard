@@ -49,6 +49,7 @@ LATEST_ACTUAL_CACHE = BASE_DIR / "macro_site" / "latest_actuals_cache.json"
 ET = ZoneInfo("America/New_York")
 REQUEST_HEADERS = {"User-Agent": "ChiragMiraniMacroDashboard/1.0"}
 BEA_NIPA_MONTHLY_TXT = "https://apps.bea.gov/national/Release/TXT/NipaDataM.txt"
+BLS_API = "https://api.bls.gov/publicAPI/v2/timeseries/data/{series_id}?startyear=2020&endyear=2026"
 
 RELEASE_SOURCE_URL = {
     "core_cpi": "https://www.bls.gov/news.release/cpi.toc.htm",
@@ -204,6 +205,37 @@ def fetch_bea_monthly_series(series_code: str) -> pd.Series | None:
     return series
 
 
+def fetch_bls_series(series_id: str) -> pd.Series | None:
+    try:
+        response = requests.get(BLS_API.format(series_id=series_id), headers=REQUEST_HEADERS, timeout=60)
+        response.raise_for_status()
+        payload = response.json()
+        rows = payload["Results"]["series"][0]["data"]
+    except Exception:
+        return None
+
+    parsed = []
+    for row in rows:
+        period = str(row.get("period", ""))
+        if not period.startswith("M") or len(period) != 3:
+            continue
+        parsed.append(
+            {
+                "date": pd.to_datetime(f"{row['year']}-{period[1:]}-01", errors="coerce"),
+                "value": pd.to_numeric(row.get("value"), errors="coerce"),
+            }
+        )
+    if not parsed:
+        return None
+
+    frame = pd.DataFrame(parsed).dropna(subset=["date", "value"]).sort_values("date")
+    if frame.empty:
+        return None
+    series = frame.set_index("date")["value"].astype(float)
+    series.name = series_id
+    return series
+
+
 def load_core_cpi_last_release_local() -> str | None:
     if not REPORT_TABLE.exists():
         return None
@@ -275,6 +307,13 @@ def load_adp_last_release() -> str | None:
 
 
 def load_nfp_last_release() -> str | None:
+    bls = fetch_bls_series("CES0000000001")
+    if bls is not None and len(bls) >= 2:
+        change_k = bls.iloc[-1] - bls.iloc[-2]
+        value = f"{bls.index[-1].strftime('%B %Y')}: {fmt_k(change_k)}"
+        write_actual_cache("nfp", value)
+        return value
+
     series = fetch_fred_series("PAYEMS")
     if series is not None and len(series) >= 2:
         change_k = series.iloc[-1] - series.iloc[-2]
@@ -285,6 +324,12 @@ def load_nfp_last_release() -> str | None:
 
 
 def load_ur_last_release() -> str | None:
+    bls = fetch_bls_series("LNS14000000")
+    if bls is not None and len(bls) >= 1:
+        value = f"{bls.index[-1].strftime('%B %Y')}: {fmt_pct(bls.iloc[-1])}"
+        write_actual_cache("ur", value)
+        return value
+
     series = fetch_fred_series("UNRATE")
     if series is not None and len(series) >= 1:
         value = f"{series.index[-1].strftime('%B %Y')}: {fmt_pct(series.iloc[-1])}"
