@@ -9,7 +9,7 @@
       "implied_value": 205825.0,
       "consensus_label": "205,825",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26may14",
-      "title": "Initial jobless claims for the week ending May \u31649, 2026"
+      "title": "Initial jobless claims for the week ending May 9, 2026"
     },
     "adp": {
       "key": "adp",
@@ -66,8 +66,8 @@
       "event_ticker": "KXPCECORE-26MAY",
       "kind": "threshold",
       "market_count": 5,
-      "implied_value": 0.211,
-      "consensus_label": "0.211% m/m",
+      "implied_value": 0.21350000000000002,
+      "consensus_label": "0.214% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxpcecore-26may",
       "title": "How much will core PCE increase in May 2026?"
     }

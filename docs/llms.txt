@@ -17,7 +17,7 @@ Machine-readable feed: https://chiragmirani.github.io/macro-dashboard/dashboard_
   Last release: Week ending May 02, 2026: 200,000.
 - **Core PCE** (Inflation) — releases Thursday, May 28, 2026 at 8:30 AM ET.
   House forecast: n/a.
-  Kalshi consensus: 0.211% m/m.
+  Kalshi consensus: 0.214% m/m.
   Last release: March 2026: 0.293% m/m, 3.20% y/y.
 - **ADP** (Labor) — releases Wednesday, June 03, 2026 at 8:15 AM ET.
   House forecast: 44k.
