@@ -34,7 +34,7 @@ BLS_API = "https://api.bls.gov/publicAPI/v2/timeseries/data/{series_id}?startyea
 
 ACTUAL_SOURCES: dict[str, dict[str, Any]] = {
     "weekly_claims":  {"series": "ICSA",         "kind": "weekly_level",   "unit": "claims"},
-    "core_cpi":       {"series": "CPILFESL",     "kind": "monthly_mom_pct","unit": "% m/m"},
+    "core_cpi":       {"series": "CPILFESL",     "bls_series": "CUSR0000SA0L1E", "kind": "monthly_mom_pct","unit": "% m/m"},
     "core_pce":       {"series": "PCEPILFE",     "kind": "monthly_mom_pct","unit": "% m/m"},
     "adp":            {"series": "ADPMNUSNERSA", "kind": "monthly_diff_k", "unit": "k jobs", "diff_scale": 1 / 1000.0},
     "nfp":            {"series": "PAYEMS",       "bls_series": "CES0000000001", "kind": "monthly_diff_k", "unit": "k jobs", "diff_scale": 1.0},

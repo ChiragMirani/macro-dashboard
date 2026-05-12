@@ -155,6 +155,19 @@ def month_label(value: str | None) -> str:
     return ts.strftime("%B %Y")
 
 
+def monthly_yoy_pct(series: pd.Series) -> float | None:
+    if series is None or series.empty:
+        return None
+    latest_date = pd.Timestamp(series.index[-1])
+    year_ago = latest_date - pd.DateOffset(years=1)
+    try:
+        year_ago_value = float(series.loc[year_ago])
+    except Exception:
+        return None
+    latest_value = float(series.iloc[-1])
+    return (latest_value / year_ago_value - 1.0) * 100.0
+
+
 def fetch_fred_series(series_id: str) -> pd.Series | None:
     url = f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={series_id}"
     frame = None
@@ -259,11 +272,19 @@ def load_core_cpi_last_release_local() -> str | None:
 
 
 def load_core_cpi_last_release() -> str | None:
+    bls = fetch_bls_series("CUSR0000SA0L1E")
+    if bls is not None and len(bls) >= 2:
+        mom = (bls.iloc[-1] / bls.iloc[-2] - 1.0) * 100.0
+        yoy = monthly_yoy_pct(bls)
+        value = f"{bls.index[-1].strftime('%B %Y')}: {fmt_pct(mom)} m/m" + (f", {fmt_pct(yoy)} y/y" if yoy is not None else "")
+        write_actual_cache("core_cpi", value)
+        return value
+
     series = fetch_fred_series("CPILFESL")
-    if series is not None and len(series) >= 13:
+    if series is not None and len(series) >= 2:
         mom = (series.iloc[-1] / series.iloc[-2] - 1.0) * 100.0
-        yoy = (series.iloc[-1] / series.iloc[-13] - 1.0) * 100.0
-        value = f"{series.index[-1].strftime('%B %Y')}: {fmt_pct(mom)} m/m, {fmt_pct(yoy)} y/y"
+        yoy = monthly_yoy_pct(series)
+        value = f"{series.index[-1].strftime('%B %Y')}: {fmt_pct(mom)} m/m" + (f", {fmt_pct(yoy)} y/y" if yoy is not None else "")
         write_actual_cache("core_cpi", value)
         return value
     return read_actual_cache().get("core_cpi") or load_core_cpi_last_release_local()
@@ -271,18 +292,18 @@ def load_core_cpi_last_release() -> str | None:
 
 def load_core_pce_last_release() -> str | None:
     bea_series = fetch_bea_monthly_series("DPCCRG")
-    if bea_series is not None and len(bea_series) >= 13:
+    if bea_series is not None and len(bea_series) >= 2:
         mom = (bea_series.iloc[-1] / bea_series.iloc[-2] - 1.0) * 100.0
-        yoy = (bea_series.iloc[-1] / bea_series.iloc[-13] - 1.0) * 100.0
-        value = f"{bea_series.index[-1].strftime('%B %Y')}: {fmt_pct(mom)} m/m, {fmt_pct(yoy)} y/y"
+        yoy = monthly_yoy_pct(bea_series)
+        value = f"{bea_series.index[-1].strftime('%B %Y')}: {fmt_pct(mom)} m/m" + (f", {fmt_pct(yoy)} y/y" if yoy is not None else "")
         write_actual_cache("core_pce", value)
         return value
 
     series = fetch_fred_series("PCEPILFE")
-    if series is not None and len(series) >= 13:
+    if series is not None and len(series) >= 2:
         mom = (series.iloc[-1] / series.iloc[-2] - 1.0) * 100.0
-        yoy = (series.iloc[-1] / series.iloc[-13] - 1.0) * 100.0
-        value = f"{series.index[-1].strftime('%B %Y')}: {fmt_pct(mom)} m/m, {fmt_pct(yoy)} y/y"
+        yoy = monthly_yoy_pct(series)
+        value = f"{series.index[-1].strftime('%B %Y')}: {fmt_pct(mom)} m/m" + (f", {fmt_pct(yoy)} y/y" if yoy is not None else "")
         write_actual_cache("core_pce", value)
         return value
 
@@ -473,7 +494,14 @@ def build_core_cpi_event(now_et: datetime) -> ReleaseEvent:
     reporting_month, release_dt, source = next_seeded_release(now_et, "core_cpi")
 
     house = None
-    if forecast:
+    forecast_target = forecast.get("target_month")
+    forecast_is_current = False
+    if forecast_target:
+        try:
+            forecast_is_current = pd.Timestamp(f"{forecast_target}-01").strftime("%B %Y") == reporting_month
+        except Exception:
+            forecast_is_current = False
+    if forecast and forecast_is_current:
         house = f"{fmt_pct(float(forecast.get('final_mom')))} m/m | {fmt_pct(float(forecast.get('core_implied_yoy')))} y/y"
 
     mom_line, kalshi_link = kalshi_for("core_cpi")
@@ -497,7 +525,7 @@ def build_core_cpi_event(now_et: datetime) -> ReleaseEvent:
         last_release=load_core_cpi_last_release(),
         risk=humanize_risk(risk_label),
         status=event_status(house, kalshi_line),
-        notes="Model output from core CPI workflow and surprise model.",
+        notes="Model output from core CPI workflow and surprise model." if forecast_is_current else "House forecast pending until the Core CPI model refreshes for this release month.",
         model_source=str(CORE_CPI_FORECAST.relative_to(BASE_DIR)) if CORE_CPI_FORECAST.exists() else None,
         kalshi_url=kalshi_link,
     )
