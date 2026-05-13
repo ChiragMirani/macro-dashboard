@@ -148,6 +148,15 @@
               <tr class="detail-row">
                 <td colspan="8">
                   <span class="detail">{{ event.notes }}</span>
+                  {% if event.consensus_review and event.consensus_review.required %}
+                  <span class="detail review-note">{{ event.consensus_review.message }}</span>
+                  {% for source in event.consensus_review.official_guidance %}
+                    <a class="detail source" href="{{ source.url }}" target="_blank" rel="noopener">{{ source.label }}{% if source.hits %}: {{ source.hits | join(", ") }}{% endif %}</a>
+                  {% endfor %}
+                  {% if event.consensus_review.news_search_url %}
+                    <a class="detail source" href="{{ event.consensus_review.news_search_url }}" target="_blank" rel="noopener">News search: {{ event.consensus_review.news_query }}</a>
+                  {% endif %}
+                  {% endif %}
                   {% if event.model_source %}
                   <span class="detail source">Source: {{ event.model_source }}</span>
                   {% endif %}

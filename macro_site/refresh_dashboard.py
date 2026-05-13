@@ -5,10 +5,12 @@ import io
 import json
 import math
 import shutil
+import xml.etree.ElementTree as ETREE
 from dataclasses import dataclass
 from datetime import date, datetime, time, timedelta, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote_plus
 
 import pandas as pd
 import requests
@@ -50,6 +52,7 @@ ET = ZoneInfo("America/New_York")
 REQUEST_HEADERS = {"User-Agent": "ChiragMiraniMacroDashboard/1.0"}
 BEA_NIPA_MONTHLY_TXT = "https://apps.bea.gov/national/Release/TXT/NipaDataM.txt"
 BLS_API = "https://api.bls.gov/publicAPI/v2/timeseries/data/{series_id}?startyear=2020&endyear=2026"
+GOOGLE_NEWS_RSS = "https://news.google.com/rss/search"
 
 RELEASE_SOURCE_URL = {
     "core_cpi": "https://www.bls.gov/news.release/cpi.toc.htm",
@@ -78,6 +81,7 @@ class ReleaseEvent:
     notes: str | None
     model_source: str | None
     kalshi_url: str | None = None
+    consensus_review: dict[str, Any] | None = None
 
 
 def read_json(path: Path) -> dict[str, Any] | None:
@@ -98,6 +102,212 @@ def kalshi_for(key: str) -> tuple[str | None, str | None]:
     """Return (label, url) for a release key, or (None, None) when no live consensus."""
     entry = KALSHI_SNAPSHOT.get(key) or {}
     return entry.get("consensus_label"), entry.get("kalshi_url")
+
+
+def kalshi_value_for(key: str) -> float | None:
+    entry = KALSHI_SNAPSHOT.get(key) or {}
+    value = entry.get("implied_value")
+    try:
+        value = float(value)
+    except Exception:
+        return None
+    return value if math.isfinite(value) else None
+
+
+CONSENSUS_GAP_THRESHOLDS = {
+    # Inflation values are already percentage points of m/m or y/y.
+    "core_cpi": 0.05,
+    "core_pce": 0.05,
+    "ur": 0.05,
+    # Labor values are in thousands, except weekly claims are raw claims.
+    "nfp": 40.0,
+    "adp": 35.0,
+    "weekly_claims": 10000.0,
+}
+
+CONSENSUS_GAP_UNITS = {
+    "core_cpi": "pp",
+    "core_pce": "pp",
+    "ur": "pp",
+    "nfp": "k",
+    "adp": "k",
+    "weekly_claims": "claims",
+}
+
+GUIDANCE_SOURCES = {
+    "core_cpi": [
+        {
+            "label": "BLS CPI shutdown impact guidance",
+            "url": "https://www.bls.gov/cpi/additional-resources/2025-federal-government-shutdown-impact-cpi.htm",
+            "keywords": [
+                "rent and owners' equivalent rent",
+                "April 2026",
+                "carry-forward",
+                "12-month change",
+                "6-month change",
+                "shutdown",
+            ],
+        },
+        {
+            "label": "BLS CPI latest release",
+            "url": "https://www.bls.gov/news.release/cpi.toc.htm",
+            "keywords": ["shelter", "rent", "owners' equivalent rent", "technical note"],
+        },
+    ],
+    "core_pce": [
+        {
+            "label": "BEA PCE latest release",
+            "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
+            "keywords": ["technical note", "methodology", "price index", "revision"],
+        },
+    ],
+    "nfp": [
+        {
+            "label": "BLS Employment Situation latest release",
+            "url": "https://www.bls.gov/news.release/empsit.toc.htm",
+            "keywords": ["technical note", "strike", "weather", "survey", "revision"],
+        },
+    ],
+    "ur": [
+        {
+            "label": "BLS Employment Situation latest release",
+            "url": "https://www.bls.gov/news.release/empsit.toc.htm",
+            "keywords": ["technical note", "household survey", "classification", "revision"],
+        },
+    ],
+    "weekly_claims": [
+        {
+            "label": "DOL weekly claims release",
+            "url": "https://www.dol.gov/ui/data.pdf",
+            "keywords": ["seasonally adjusted", "week ending", "technical", "state"],
+        },
+    ],
+}
+
+
+def fmt_gap_value(value: float, unit: str) -> str:
+    if unit == "claims":
+        return f"{value:+,.0f}"
+    if unit == "k":
+        return f"{value:+.0f}k"
+    return f"{value:+.3f} pp"
+
+
+def fetch_guidance_text(url: str) -> str | None:
+    try:
+        response = requests.get(url, headers=REQUEST_HEADERS, timeout=20)
+        response.raise_for_status()
+    except Exception:
+        return None
+    return response.text
+
+
+def scan_guidance_sources(key: str) -> list[dict[str, Any]]:
+    findings: list[dict[str, Any]] = []
+    for source in GUIDANCE_SOURCES.get(key, []):
+        text = fetch_guidance_text(source["url"])
+        if text is None:
+            findings.append({
+                "label": source["label"],
+                "url": source["url"],
+                "status": "unavailable",
+                "hits": [],
+            })
+            continue
+        lowered = text.lower()
+        hits = [kw for kw in source.get("keywords", []) if kw.lower() in lowered]
+        findings.append({
+            "label": source["label"],
+            "url": source["url"],
+            "status": "checked",
+            "hits": hits[:8],
+        })
+    return findings
+
+
+def news_query_for(key: str, reporting_period: str) -> str:
+    if key == "core_cpi":
+        return f'{reporting_period} CPI shelter rent OER adjustment BLS forecast'
+    if key == "core_pce":
+        return f'{reporting_period} core PCE forecast BEA adjustment inflation'
+    if key in {"nfp", "ur"}:
+        return f'{reporting_period} jobs report BLS forecast adjustment survey'
+    if key == "weekly_claims":
+        return f'{reporting_period} jobless claims forecast seasonal adjustment'
+    return f'{reporting_period} macro data forecast adjustment'
+
+
+def fetch_news_headlines(query: str, limit: int = 4) -> list[dict[str, str]]:
+    try:
+        response = requests.get(
+            GOOGLE_NEWS_RSS,
+            params={"q": query, "hl": "en-US", "gl": "US", "ceid": "US:en"},
+            headers=REQUEST_HEADERS,
+            timeout=20,
+        )
+        response.raise_for_status()
+        root = ETREE.fromstring(response.text)
+    except Exception:
+        return []
+
+    out: list[dict[str, str]] = []
+    for item in root.findall("./channel/item"):
+        title = (item.findtext("title") or "").strip()
+        link = (item.findtext("link") or "").strip()
+        pub_date = (item.findtext("pubDate") or "").strip()
+        if title:
+            out.append({"title": title, "url": link, "published": pub_date})
+        if len(out) >= limit:
+            break
+    return out
+
+
+def build_consensus_review(
+    *,
+    key: str,
+    label: str,
+    reporting_period: str,
+    house_value: float | None,
+    kalshi_value: float | None,
+) -> dict[str, Any] | None:
+    if house_value is None or kalshi_value is None:
+        return None
+    threshold = CONSENSUS_GAP_THRESHOLDS.get(key)
+    if threshold is None:
+        return None
+    gap = house_value - kalshi_value
+    if not math.isfinite(gap):
+        return None
+
+    unit = CONSENSUS_GAP_UNITS.get(key, "")
+    review = {
+        "required": abs(gap) >= threshold,
+        "gap_value": gap,
+        "gap_display": fmt_gap_value(gap, unit),
+        "threshold": threshold,
+        "threshold_display": fmt_gap_value(threshold, unit).replace("+", ""),
+        "house_side": "above Kalshi" if gap > 0 else "below Kalshi" if gap < 0 else "in line with Kalshi",
+    }
+    if not review["required"]:
+        return review
+
+    query = news_query_for(key, reporting_period)
+    guidance = scan_guidance_sources(key)
+    headlines = fetch_news_headlines(query)
+    hit_sources = [src for src in guidance if src.get("hits")]
+    review.update({
+        "label": "Review required",
+        "message": (
+            f"{label} house forecast is {review['gap_display']} {review['house_side']}; "
+            f"threshold is {review['threshold_display']}. Check official guidance and news before using the forecast."
+        ),
+        "news_query": query,
+        "news_search_url": f"https://news.google.com/search?q={quote_plus(query)}",
+        "official_guidance": guidance,
+        "guidance_hit_count": len(hit_sources),
+        "news_headlines": headlines,
+    })
+    return review
 
 
 def humanize_risk(label: str | None) -> str | None:
@@ -487,6 +697,12 @@ def event_status(*values: str | None) -> str:
     return "live" if any(v for v in values) else "partial"
 
 
+def event_status_with_review(review: dict[str, Any] | None, *values: str | None) -> str:
+    if review and review.get("required"):
+        return "review"
+    return event_status(*values)
+
+
 def build_core_cpi_event(now_et: datetime) -> ReleaseEvent:
     forecast = read_json(CORE_CPI_FORECAST) or {}
     surprise = read_json(CORE_CPI_SURPRISE) or {}
@@ -502,7 +718,10 @@ def build_core_cpi_event(now_et: datetime) -> ReleaseEvent:
         except Exception:
             forecast_is_current = False
     if forecast and forecast_is_current:
-        house = f"{fmt_pct(float(forecast.get('final_mom')))} m/m | {fmt_pct(float(forecast.get('core_implied_yoy')))} y/y"
+        house_value = float(forecast.get("final_mom"))
+        house = f"{fmt_pct(house_value)} m/m | {fmt_pct(float(forecast.get('core_implied_yoy')))} y/y"
+    else:
+        house_value = None
 
     mom_line, kalshi_link = kalshi_for("core_cpi")
     yoy_line, _ = kalshi_for("core_cpi_yoy")
@@ -511,6 +730,13 @@ def build_core_cpi_event(now_et: datetime) -> ReleaseEvent:
     risk_label = surprise.get("live", {}).get("risk_label") or surprise.get("risk_label")
     if not risk_label and surprise.get("big_surprise_prob") is not None:
         risk_label = f"{surprise['big_surprise_prob'] * 100:.0f}% big-surprise risk"
+    review = build_consensus_review(
+        key="core_cpi",
+        label="Core CPI",
+        reporting_period=reporting_month,
+        house_value=house_value,
+        kalshi_value=kalshi_value_for("core_cpi"),
+    )
 
     return ReleaseEvent(
         key="core_cpi",
@@ -524,10 +750,11 @@ def build_core_cpi_event(now_et: datetime) -> ReleaseEvent:
         kalshi_consensus=kalshi_line,
         last_release=load_core_cpi_last_release(),
         risk=humanize_risk(risk_label),
-        status=event_status(house, kalshi_line),
+        status=event_status_with_review(review, house, kalshi_line),
         notes="Model output from core CPI workflow and surprise model." if forecast_is_current else "House forecast pending until the Core CPI model refreshes for this release month.",
         model_source=str(CORE_CPI_FORECAST.relative_to(BASE_DIR)) if CORE_CPI_FORECAST.exists() else None,
         kalshi_url=kalshi_link,
+        consensus_review=review,
     )
 
 
@@ -571,6 +798,13 @@ def build_core_pce_event(now_et: datetime) -> ReleaseEvent:
     kalshi_line, kalshi_link = kalshi_for("core_pce")
     if not kalshi_line:
         kalshi_line = "no live Kalshi market found"
+    review = build_consensus_review(
+        key="core_pce",
+        label="Core PCE",
+        reporting_period=reporting_month,
+        house_value=float(bridge_mom) if bridge_mom is not None else None,
+        kalshi_value=kalshi_value_for("core_pce"),
+    )
     return ReleaseEvent(
         key="core_pce",
         label="Core PCE",
@@ -583,10 +817,11 @@ def build_core_pce_event(now_et: datetime) -> ReleaseEvent:
         kalshi_consensus=kalshi_line,
         last_release=load_core_pce_last_release(),
         risk=None,
-        status=event_status(house),
+        status=event_status_with_review(review, house),
         notes=note,
         model_source="macro_forecasting/cpi_to_pce_bridge.py",
         kalshi_url=kalshi_link,
+        consensus_review=review,
     )
 
 
@@ -594,7 +829,8 @@ def build_claims_event(now_et: datetime) -> ReleaseEvent:
     forecast = read_json(WEEKLY_CLAIMS_FORECAST) or {}
     surprise = read_json(WEEKLY_CLAIMS_SURPRISE) or {}
     reporting_period, release_dt = next_weekly_claims_release(now_et)
-    house = fmt_claims(float(forecast["forecast"])) if forecast.get("forecast") is not None else None
+    house_value = float(forecast["forecast"]) if forecast.get("forecast") is not None else None
+    house = fmt_claims(house_value) if house_value is not None else None
     kalshi_line, kalshi_link = kalshi_for("weekly_claims")
     if not kalshi_line:
         kalshi_line = "no live Kalshi market found"
@@ -603,6 +839,13 @@ def build_claims_event(now_et: datetime) -> ReleaseEvent:
         live_prob = (((surprise.get("forecast") or {}).get("surprise_prob_10k")))
         if live_prob is not None:
             risk = f"{live_prob * 100:.0f}% surprise risk"
+    review = build_consensus_review(
+        key="weekly_claims",
+        label="Weekly Claims",
+        reporting_period=reporting_period,
+        house_value=house_value,
+        kalshi_value=kalshi_value_for("weekly_claims"),
+    )
     return ReleaseEvent(
         key="weekly_claims",
         label="Weekly Claims",
@@ -615,10 +858,11 @@ def build_claims_event(now_et: datetime) -> ReleaseEvent:
         kalshi_consensus=kalshi_line,
         last_release=load_claims_last_release(),
         risk=humanize_risk(risk),
-        status=event_status(house, kalshi_line),
+        status=event_status_with_review(review, house, kalshi_line),
         notes="Weekly model output with surprise-risk overlay.",
         model_source=str(WEEKLY_CLAIMS_FORECAST.relative_to(BASE_DIR)) if WEEKLY_CLAIMS_FORECAST.exists() else None,
         kalshi_url=kalshi_link,
+        consensus_review=review,
     )
 
 
@@ -631,6 +875,7 @@ def build_adp_event(now_et: datetime) -> ReleaseEvent:
         house_value = cached.get("one_step_upgraded_k")
     if house_value is None:
         house_value = parsed.get("release_forecast_k")
+    house_value = float(house_value) if house_value is not None else None
     house = fmt_k(house_value) if house_value is not None else None
     if cached.get("release_upgraded_k") is not None:
         target = cached.get("release_target_month")
@@ -647,6 +892,13 @@ def build_adp_event(now_et: datetime) -> ReleaseEvent:
     kalshi_line, kalshi_link = kalshi_for("adp")
     if not kalshi_line:
         kalshi_line = "no live Kalshi market found"
+    review = build_consensus_review(
+        key="adp",
+        label="ADP",
+        reporting_period=reporting_period,
+        house_value=house_value,
+        kalshi_value=kalshi_value_for("adp"),
+    )
     return ReleaseEvent(
         key="adp",
         label="ADP",
@@ -659,10 +911,11 @@ def build_adp_event(now_et: datetime) -> ReleaseEvent:
         kalshi_consensus=kalshi_line,
         last_release=load_adp_last_release(),
         risk=None,
-        status=event_status(house),
+        status=event_status_with_review(review, house),
         notes=notes,
         model_source="macro_forecasting/adp_forecast_kaggle_style.py",
         kalshi_url=kalshi_link,
+        consensus_review=review,
     )
 
 
@@ -670,13 +923,21 @@ def build_nfp_event(now_et: datetime) -> ReleaseEvent:
     surprise = read_json(NFP_SURPRISE) or {}
     reporting_period, release_dt, source = next_seeded_release(now_et, "nfp")
     live = surprise.get("live") or {}
-    house = fmt_k(float(surprise["house_forecast_k"])) if surprise.get("house_forecast_k") is not None else None
+    house_value = float(surprise["house_forecast_k"]) if surprise.get("house_forecast_k") is not None else None
+    house = fmt_k(house_value) if house_value is not None else None
     risk = live.get("risk_label")
     if not risk and live.get("big_surprise_prob") is not None:
         risk = f"{live['big_surprise_prob'] * 100:.0f}% big-surprise risk"
     kalshi_line, kalshi_link = kalshi_for("nfp")
     if not kalshi_line:
         kalshi_line = "no live Kalshi market found"
+    review = build_consensus_review(
+        key="nfp",
+        label="NFP",
+        reporting_period=reporting_period,
+        house_value=house_value,
+        kalshi_value=kalshi_value_for("nfp"),
+    )
     return ReleaseEvent(
         key="nfp",
         label="NFP",
@@ -689,10 +950,11 @@ def build_nfp_event(now_et: datetime) -> ReleaseEvent:
         kalshi_consensus=kalshi_line,
         last_release=load_nfp_last_release(),
         risk=humanize_risk(risk),
-        status=event_status(house),
+        status=event_status_with_review(review, house),
         notes="NFP surprise model already uses weekly claims features, so the forecast can refresh as claims move.",
         model_source=str(NFP_SURPRISE.relative_to(BASE_DIR)) if NFP_SURPRISE.exists() else None,
         kalshi_url=kalshi_link,
+        consensus_review=review,
     )
 
 
@@ -700,13 +962,21 @@ def build_ur_event(now_et: datetime) -> ReleaseEvent:
     surprise = read_json(UR_SURPRISE) or {}
     live = surprise.get("live") or {}
     reporting_period, release_dt, source = next_seeded_release(now_et, "ur")
-    house = fmt_pct(float(live["rounded_unrate"])) if live.get("rounded_unrate") is not None else None
+    house_value = float(live["rounded_unrate"]) if live.get("rounded_unrate") is not None else None
+    house = fmt_pct(house_value) if house_value is not None else None
     risk = live.get("risk_label")
     if not risk and live.get("big_surprise_prob") is not None:
         risk = f"{live['big_surprise_prob'] * 100:.0f}% big-surprise risk"
     kalshi_line, kalshi_link = kalshi_for("ur")
     if not kalshi_line:
         kalshi_line = "no live Kalshi market found"
+    review = build_consensus_review(
+        key="ur",
+        label="Unemployment Rate",
+        reporting_period=reporting_period,
+        house_value=house_value,
+        kalshi_value=kalshi_value_for("ur"),
+    )
     return ReleaseEvent(
         key="ur",
         label="Unemployment Rate",
@@ -719,10 +989,11 @@ def build_ur_event(now_et: datetime) -> ReleaseEvent:
         kalshi_consensus=kalshi_line,
         last_release=load_ur_last_release(),
         risk=humanize_risk(risk),
-        status=event_status(house),
+        status=event_status_with_review(review, house),
         notes="Rounded to the market print convention; live model also stores unrounded UR.",
         model_source=str(UR_SURPRISE.relative_to(BASE_DIR)) if UR_SURPRISE.exists() else None,
         kalshi_url=kalshi_link,
+        consensus_review=review,
     )
 
 
@@ -749,6 +1020,7 @@ def serialize_event(event: ReleaseEvent, now_et: datetime) -> dict[str, Any]:
         "model_source": event.model_source,
         "kalshi_url": event.kalshi_url,
         "release_source_url": RELEASE_SOURCE_URL.get(event.key),
+        "consensus_review": event.consensus_review,
     }
 
 
@@ -779,6 +1051,7 @@ def build_payload(now_et: datetime) -> dict[str, Any]:
             "event_count": len(serialized),
             "live_count": sum(1 for event in serialized if event["status"] == "live"),
             "partial_count": sum(1 for event in serialized if event["status"] == "partial"),
+            "review_count": sum(1 for event in serialized if event["status"] == "review"),
         },
     }
 
@@ -875,7 +1148,12 @@ def main() -> None:
     print(f"Generated macro dashboard at {OUTPUT_HTML}")
     print(f"Updated at: {payload['generated_at_et']}")
     print(f"Next release: {next_label}")
-    print(f"Events: {payload['summary']['event_count']} total, {payload['summary']['live_count']} live, {payload['summary']['partial_count']} partial")
+    print(
+        f"Events: {payload['summary']['event_count']} total, "
+        f"{payload['summary']['live_count']} live, "
+        f"{payload['summary']['partial_count']} partial, "
+        f"{payload['summary']['review_count']} review"
+    )
 
 
 if __name__ == "__main__":
