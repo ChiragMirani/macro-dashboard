@@ -1,6 +1,39 @@
 {
   "snapshots": [
     {
+      "id": "core_pce_2026-05-28",
+      "release_key": "core_pce",
+      "release_label": "Core PCE",
+      "release_group": "Inflation",
+      "target_period": "April 2026",
+      "release_iso": "2026-05-28T08:30:00-04:00",
+      "snapshot_at_utc": "2026-05-14T11:44:59.614009+00:00",
+      "house_raw": "0.187% m/m | 3.20% y/y",
+      "house_value": 0.187,
+      "kalshi_raw": "0.215% m/m",
+      "kalshi_value": 0.215,
+      "kalshi_url": "https://kalshi.com/markets/kxpcecore-26may",
+      "release_source_url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
+      "fred_series": "PCEPILFE",
+      "unit": "% m/m",
+      "actual_value": null,
+      "house_error_abs": null,
+      "kalshi_error_abs": null,
+      "winner": null,
+      "settled_at_utc": null,
+      "actual_consensus_side": null,
+      "house_consensus_side": null,
+      "house_direction_correct": null,
+      "release_date_pretty": "May 28, 2026",
+      "house_display": "0.187% m/m | 3.20% y/y",
+      "kalshi_display": "0.215% m/m",
+      "actual_display": null,
+      "house_error_display": null,
+      "kalshi_error_display": null,
+      "actual_consensus_side_display": null,
+      "house_consensus_side_display": null
+    },
+    {
       "id": "weekly_claims_2026-05-14",
       "release_key": "weekly_claims",
       "release_label": "Weekly Claims",
@@ -266,9 +299,9 @@
     }
   ],
   "summary": {
-    "total_snapshots": 8,
+    "total_snapshots": 9,
     "settled_count": 7,
-    "pending_count": 1,
+    "pending_count": 2,
     "house_wins": 4,
     "kalshi_wins": 2,
     "ties": 0,
@@ -279,5 +312,5 @@
     "house_mean_abs_error": 2314.1714589176627,
     "kalshi_mean_abs_error": 791.3484515062196
   },
-  "last_updated_utc": "2026-05-13T17:52:06.282948+00:00"
+  "last_updated_utc": "2026-05-14T11:44:59.629409+00:00"
 }
