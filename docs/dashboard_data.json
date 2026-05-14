@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Thursday, May 14, 2026 01:41 PM ET",
-  "generated_at_iso": "2026-05-14T13:41:33.221233-04:00",
+  "generated_at_et": "Thursday, May 14, 2026 02:31 PM ET",
+  "generated_at_iso": "2026-05-14T14:31:06.986689-04:00",
   "current_day": "Thursday",
   "current_date": "May 14, 2026",
-  "current_time": "01:41 PM ET",
+  "current_time": "02:31 PM ET",
   "next_event": {
     "key": "weekly_claims",
     "label": "Weekly Claims",
@@ -14,59 +14,24 @@
     "release_date": "May 21, 2026",
     "release_time": "8:30 AM ET",
     "release_iso": "2026-05-21T08:30:00-04:00",
-    "hours_until_release": 162,
+    "hours_until_release": 161,
     "schedule_source": "weekly_rule",
-    "house_forecast": "211,469",
-    "kalshi_consensus": "404,112",
-    "last_release": "Week ending May 02, 2026: 200,000",
+    "house_forecast": "212,352",
+    "kalshi_consensus": "210,400",
+    "last_release": "Week ending May 09, 2026: 211,000",
     "risk": "elevated surprise risk",
-    "status": "review",
+    "status": "live",
     "notes": "Weekly model output with surprise-risk overlay.",
-    "model_source": "macro_forecasting/output/weekly_claims_forecast_latest.json",
+    "model_source": "macro_forecasting\\output\\weekly_claims_forecast_latest.json",
     "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26may21",
     "release_source_url": "https://www.dol.gov/ui/data.pdf",
     "consensus_review": {
-      "required": true,
-      "gap_value": -192643.76193955794,
-      "gap_display": "-192,644",
+      "required": false,
+      "gap_value": 1952.0541324224323,
+      "gap_display": "+1,952",
       "threshold": 10000.0,
       "threshold_display": "10,000",
-      "house_side": "below Kalshi",
-      "label": "Review required",
-      "message": "Weekly Claims house forecast is -192,644 below Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
-      "news_query": "Week ending May 16, 2026 jobless claims forecast seasonal adjustment",
-      "news_search_url": "https://news.google.com/search?q=Week+ending+May+16%2C+2026+jobless+claims+forecast+seasonal+adjustment",
-      "official_guidance": [
-        {
-          "label": "DOL weekly claims release",
-          "url": "https://www.dol.gov/ui/data.pdf",
-          "status": "unavailable",
-          "hits": []
-        }
-      ],
-      "guidance_hit_count": 0,
-      "news_headlines": [
-        {
-          "title": "Initial Unemployment Claims Up 12K, Higher Than Expected - Advisor Perspectives",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQXQtWlZZN0JTWkpDTTRDRkNNZzQzdWkzSjlDN085NnNjMmJQYVV3YWs2YnVaVHVZajF1bUgtelFPOUpadTJtWW9SNkdfamxnZ1pESzR1dG9uTHVQVm5nU1UxS1hqVUFNMDc2Mk9lYU5aWnUyT2RwLUhFOE9wTkJFOWtWbTRkYWViOTJfUlFaTC1pazNxd3VSaGx5TmNWbmFaVjFsRWkzcUhoUy1GR2ZDX1BMV19LMGxi?oc=5",
-          "published": "Thu, 14 May 2026 13:26:51 GMT"
-        },
-        {
-          "title": "US weekly jobless claims increase moderately, labor market remains stable - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQaTJWYTJvTjNoR1pFel9Zazc1ZkdTck55WVFnZXFUa3Z1ZGtUU1ZzOWt2WUl6UUhtNm50ajVNd1MyajFiWS1nZHp4RjIwZmthWE8tSG5WdDdqTjdBOEg0R29Hd0h3ejUtSlZINFNWZ0xocXBjMTNoQWFLWUFUaUoxVnVBRzZMd0FIcnplV0xtUTJTVklZSWlWVVU5NEh1dEtHZUVzOUdTcU5Ka1JWeHVPX2xINWRENTA1?oc=5",
-          "published": "Thu, 14 May 2026 12:48:17 GMT"
-        },
-        {
-          "title": "Spot gold approaching session high after U.S. weekly jobless claims rise to 211k - KITCO",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNa0QzSmxaLXJaTHJjN3NpZFc3dDFkam5ZaXp5QlBQbm9ZUVFNMlNrNlhPWXlvcHhEYjY1NUtmSExxQy03cURnZTVrbEdtSzRYQ0E2ZXExcFpia2tvS3NBTUl5ZS1tOWNMMVdSNlgxTFpnNWRnZzM5R09WckQtQzIzQ2hkRGoxRkFUQ2lVVUpHekFNcWIzRHJkSjF0ME8zcUsxcGJoWV90dEJRdjB2TFpBVzJDMzRIYWc3d2RUWFZR?oc=5",
-          "published": "Thu, 14 May 2026 09:30:00 GMT"
-        },
-        {
-          "title": "Weekly unemployment claims fall back to under 400 - Vermont Business Magazine",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOaVVDd2pNS0lpMEd6UWpZdHFxQWJhZGFtZDB5bkdLSWl2dU5lU2NzOUF2WDVIMFFfRTQyMHNjOG1ock1vOHN4R1FvalpkcHpUaURLTmxlclNpNU5pNUlqbVZDZDhTa1JxT1JBRUhzYmgxNFU2N1hoVE0zTjNwX0ItYTFMOW9VTk5PSmFfMnFHdw?oc=5",
-          "published": "Fri, 08 May 2026 17:32:57 GMT"
-        }
-      ]
+      "house_side": "above Kalshi"
     }
   },
   "events": [
@@ -79,59 +44,24 @@
       "release_date": "May 21, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-05-21T08:30:00-04:00",
-      "hours_until_release": 162,
+      "hours_until_release": 161,
       "schedule_source": "weekly_rule",
-      "house_forecast": "211,469",
-      "kalshi_consensus": "404,112",
-      "last_release": "Week ending May 02, 2026: 200,000",
+      "house_forecast": "212,352",
+      "kalshi_consensus": "210,400",
+      "last_release": "Week ending May 09, 2026: 211,000",
       "risk": "elevated surprise risk",
-      "status": "review",
+      "status": "live",
       "notes": "Weekly model output with surprise-risk overlay.",
-      "model_source": "macro_forecasting/output/weekly_claims_forecast_latest.json",
+      "model_source": "macro_forecasting\\output\\weekly_claims_forecast_latest.json",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26may21",
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "consensus_review": {
-        "required": true,
-        "gap_value": -192643.76193955794,
-        "gap_display": "-192,644",
+        "required": false,
+        "gap_value": 1952.0541324224323,
+        "gap_display": "+1,952",
         "threshold": 10000.0,
         "threshold_display": "10,000",
-        "house_side": "below Kalshi",
-        "label": "Review required",
-        "message": "Weekly Claims house forecast is -192,644 below Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
-        "news_query": "Week ending May 16, 2026 jobless claims forecast seasonal adjustment",
-        "news_search_url": "https://news.google.com/search?q=Week+ending+May+16%2C+2026+jobless+claims+forecast+seasonal+adjustment",
-        "official_guidance": [
-          {
-            "label": "DOL weekly claims release",
-            "url": "https://www.dol.gov/ui/data.pdf",
-            "status": "unavailable",
-            "hits": []
-          }
-        ],
-        "guidance_hit_count": 0,
-        "news_headlines": [
-          {
-            "title": "Initial Unemployment Claims Up 12K, Higher Than Expected - Advisor Perspectives",
-            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQXQtWlZZN0JTWkpDTTRDRkNNZzQzdWkzSjlDN085NnNjMmJQYVV3YWs2YnVaVHVZajF1bUgtelFPOUpadTJtWW9SNkdfamxnZ1pESzR1dG9uTHVQVm5nU1UxS1hqVUFNMDc2Mk9lYU5aWnUyT2RwLUhFOE9wTkJFOWtWbTRkYWViOTJfUlFaTC1pazNxd3VSaGx5TmNWbmFaVjFsRWkzcUhoUy1GR2ZDX1BMV19LMGxi?oc=5",
-            "published": "Thu, 14 May 2026 13:26:51 GMT"
-          },
-          {
-            "title": "US weekly jobless claims increase moderately, labor market remains stable - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQaTJWYTJvTjNoR1pFel9Zazc1ZkdTck55WVFnZXFUa3Z1ZGtUU1ZzOWt2WUl6UUhtNm50ajVNd1MyajFiWS1nZHp4RjIwZmthWE8tSG5WdDdqTjdBOEg0R29Hd0h3ejUtSlZINFNWZ0xocXBjMTNoQWFLWUFUaUoxVnVBRzZMd0FIcnplV0xtUTJTVklZSWlWVVU5NEh1dEtHZUVzOUdTcU5Ka1JWeHVPX2xINWRENTA1?oc=5",
-            "published": "Thu, 14 May 2026 12:48:17 GMT"
-          },
-          {
-            "title": "Spot gold approaching session high after U.S. weekly jobless claims rise to 211k - KITCO",
-            "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNa0QzSmxaLXJaTHJjN3NpZFc3dDFkam5ZaXp5QlBQbm9ZUVFNMlNrNlhPWXlvcHhEYjY1NUtmSExxQy03cURnZTVrbEdtSzRYQ0E2ZXExcFpia2tvS3NBTUl5ZS1tOWNMMVdSNlgxTFpnNWRnZzM5R09WckQtQzIzQ2hkRGoxRkFUQ2lVVUpHekFNcWIzRHJkSjF0ME8zcUsxcGJoWV90dEJRdjB2TFpBVzJDMzRIYWc3d2RUWFZR?oc=5",
-            "published": "Thu, 14 May 2026 09:30:00 GMT"
-          },
-          {
-            "title": "Weekly unemployment claims fall back to under 400 - Vermont Business Magazine",
-            "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOaVVDd2pNS0lpMEd6UWpZdHFxQWJhZGFtZDB5bkdLSWl2dU5lU2NzOUF2WDVIMFFfRTQyMHNjOG1ock1vOHN4R1FvalpkcHpUaURLTmxlclNpNU5pNUlqbVZDZDhTa1JxT1JBRUhzYmgxNFU2N1hoVE0zTjNwX0ItYTFMOW9VTk5PSmFfMnFHdw?oc=5",
-            "published": "Fri, 08 May 2026 17:32:57 GMT"
-          }
-        ]
+        "house_side": "above Kalshi"
       }
     },
     {
@@ -143,10 +73,10 @@
       "release_date": "May 28, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-05-28T08:30:00-04:00",
-      "hours_until_release": 330,
+      "hours_until_release": 329,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "0.187% m/m | 3.20% y/y",
-      "kalshi_consensus": "0.215% m/m",
+      "kalshi_consensus": "0.219% m/m",
       "last_release": "March 2026: 0.293% m/m, 3.20% y/y",
       "risk": null,
       "status": "live",
@@ -156,8 +86,8 @@
       "release_source_url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
       "consensus_review": {
         "required": false,
-        "gap_value": -0.028000000000000025,
-        "gap_display": "-0.028 pp",
+        "gap_value": -0.032,
+        "gap_display": "-0.032 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "below Kalshi"
@@ -172,14 +102,14 @@
       "release_date": "June 03, 2026",
       "release_time": "8:15 AM ET",
       "release_iso": "2026-06-03T08:15:00-04:00",
-      "hours_until_release": 474,
+      "hours_until_release": 473,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "44k",
       "kalshi_consensus": "66k",
       "last_release": "April 2026: 109k",
       "risk": null,
       "status": "live",
-      "notes": "Two-step recursive forecast for the May 2026 ADP release; cached in macro_forecasting/output/adp_forecast_latest.json. Some release-month feature inputs were imputed with training medians.",
+      "notes": "Two-step recursive forecast for the May 2026 ADP release; cached in macro_forecasting\\output\\adp_forecast_latest.json. Some release-month feature inputs were imputed with training medians.",
       "model_source": "macro_forecasting/adp_forecast_kaggle_style.py",
       "kalshi_url": "https://kalshi.com/markets/kxadp-26may",
       "release_source_url": "https://adpemploymentreport.com/",
@@ -201,59 +131,24 @@
       "release_date": "June 05, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-05T08:30:00-04:00",
-      "hours_until_release": 522,
+      "hours_until_release": 521,
       "schedule_source": "seeded_official_schedule",
-      "house_forecast": "155k",
+      "house_forecast": "67k",
       "kalshi_consensus": "73k",
       "last_release": "April 2026: 115k",
-      "risk": "high",
-      "status": "review",
+      "risk": "normal surprise risk",
+      "status": "live",
       "notes": "NFP surprise model already uses weekly claims features, so the forecast can refresh as claims move.",
-      "model_source": "macro_forecasting/output/nfp_surprise_latest.json",
+      "model_source": "macro_forecasting\\output\\nfp_surprise_latest.json",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26may",
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
-        "required": true,
-        "gap_value": 81.85705261230468,
-        "gap_display": "+82k",
+        "required": false,
+        "gap_value": -6.325000000000017,
+        "gap_display": "-6k",
         "threshold": 40.0,
         "threshold_display": "40k",
-        "house_side": "above Kalshi",
-        "label": "Review required",
-        "message": "NFP house forecast is +82k above Kalshi; threshold is 40k. Check official guidance and news before using the forecast.",
-        "news_query": "May 2026 jobs report BLS forecast adjustment survey",
-        "news_search_url": "https://news.google.com/search?q=May+2026+jobs+report+BLS+forecast+adjustment+survey",
-        "official_guidance": [
-          {
-            "label": "BLS Employment Situation latest release",
-            "url": "https://www.bls.gov/news.release/empsit.toc.htm",
-            "status": "unavailable",
-            "hits": []
-          }
-        ],
-        "guidance_hit_count": 0,
-        "news_headlines": [
-          {
-            "title": "Monthly Retail Trade - Sales Report - Census.gov",
-            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBTZ0xCM0k1TjhISk1PSHVjZmNkRkluTlhWVXFXTzRXWEY5ek02S0ZKT3NBbzgtNVVPdmN5ZDc1ZzQ5QzBjd0lOUW50RmxRVnlfUnc?oc=5",
-            "published": "Thu, 14 May 2026 17:41:22 GMT"
-          },
-          {
-            "title": "U.S. payrolls jump more than expected, but the report had several red flags for the economy - CNBC",
-            "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1lUFdEbERNS0FVaC0za3F4SWVvTUNKUG51NWtHZWFGYXhKUmQyZzFnc2ZVTXhQekRwVmRFMHo0d2wtc2FLem9fU01TaVFNWW5IVkpZU2VBZ3VvSlNKZjZSUG9Pdm1sNDJTZXJJ0gFwQVVfeXFMTU1NdzFla1JfTEw2bnJvbUZiZ3h0TTR0TzI2VTBqVjdIZHdlb1hqeklrXzlpRTJnZUpVYl9sODZUal80VjRsTVk2aGRfd0JqQ1g5MjNtejhWN1VvOVBySFJycWpabzdxVnhPWnRvOGlGSw?oc=5",
-            "published": "Fri, 08 May 2026 12:31:00 GMT"
-          },
-          {
-            "title": "NEWS RELEASE: Hawai\u2019i March Unemployment Rate at 2.4% - Office of the Governor Josh Green (.gov)",
-            "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPelMxTEVpYXJKVHV2RmlORkwxeGpKanBkVEVWUDctQkVwU3Q4V2ZiZHlmVUlOWVlUS1V0SGtqNHBsZkV0eHhzQ2J1Umt5T1U4NnRKTldDUmJONFFKbGdDdzdCMUc1dmVudWt4clVfVHl5em5fUUpjWjJ3SmozeXpFZDZXbEtUTDZxN1BrSm9veG9Gdw?oc=5",
-            "published": "Wed, 06 May 2026 20:11:34 GMT"
-          },
-          {
-            "title": "BLS Jobs Report Is Broken. Is There A Better Measure? - RIA - Real Investment Advice",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQLWZKLVlsV2xxOWpHRE9ULVhoNEVZMDgtQlpaTnlaSWhmMFlybHhUT1hBNU45OHhWcUwzd1NBM245aWNCOHVhUXg2RUdJUUpWdjMyeWJJdVJzYlpUa1Z1NzBlaWVPc2o0TmlSZ1RtWC1Xc3pNMHVtVjZUZmV5QmVLWUEycVIzbDIzLVNwS3dLanBZUzd1aGI1amFSdzFzLVNiRGc?oc=5",
-            "published": "Fri, 17 Apr 2026 07:00:00 GMT"
-          }
-        ]
+        "house_side": "below Kalshi"
       }
     },
     {
@@ -265,7 +160,7 @@
       "release_date": "June 05, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-05T08:30:00-04:00",
-      "hours_until_release": 522,
+      "hours_until_release": 521,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "4.30%",
       "kalshi_consensus": "4.34%",
@@ -273,12 +168,12 @@
       "risk": "elevated surprise risk",
       "status": "live",
       "notes": "Rounded to the market print convention; live model also stores unrounded UR.",
-      "model_source": "macro_forecasting/output/ur_surprise_latest.json",
+      "model_source": "macro_forecasting\\output\\ur_surprise_latest.json",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26may",
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": -0.037914691943131906,
+        "gap_value": -0.03773584905660332,
         "gap_display": "-0.038 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
@@ -294,24 +189,72 @@
       "release_date": "June 10, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-10T08:30:00-04:00",
-      "hours_until_release": 642,
+      "hours_until_release": 641,
       "schedule_source": "seeded_official_schedule",
-      "house_forecast": null,
-      "kalshi_consensus": "0.245% m/m | 2.87% y/y",
+      "house_forecast": "0.187% m/m | 2.80% y/y",
+      "kalshi_consensus": "0.245% m/m | 2.84% y/y",
       "last_release": "April 2026: 0.376% m/m, 2.74% y/y",
       "risk": "elevated surprise risk",
-      "status": "live",
-      "notes": "House forecast pending until the Core CPI model refreshes for this release month.",
-      "model_source": "macro_forecasting/output/core_cpi_forecast_latest.json",
+      "status": "review",
+      "notes": "Model output from core CPI workflow and surprise model.",
+      "model_source": "macro_forecasting\\output\\core_cpi_forecast_latest.json",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26may",
       "release_source_url": "https://www.bls.gov/news.release/cpi.toc.htm",
-      "consensus_review": null
+      "consensus_review": {
+        "required": true,
+        "gap_value": -0.058214781687576045,
+        "gap_display": "-0.058 pp",
+        "threshold": 0.05,
+        "threshold_display": "0.050 pp",
+        "house_side": "below Kalshi",
+        "label": "Review required",
+        "message": "Core CPI house forecast is -0.058 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
+        "news_query": "May 2026 CPI shelter rent OER adjustment BLS forecast",
+        "news_search_url": "https://news.google.com/search?q=May+2026+CPI+shelter+rent+OER+adjustment+BLS+forecast",
+        "official_guidance": [
+          {
+            "label": "BLS CPI shutdown impact guidance",
+            "url": "https://www.bls.gov/cpi/additional-resources/2025-federal-government-shutdown-impact-cpi.htm",
+            "status": "unavailable",
+            "hits": []
+          },
+          {
+            "label": "BLS CPI latest release",
+            "url": "https://www.bls.gov/news.release/cpi.toc.htm",
+            "status": "unavailable",
+            "hits": []
+          }
+        ],
+        "guidance_hit_count": 0,
+        "news_headlines": [
+          {
+            "title": "Consumer Price Index, Northeast region \u2014 April 2026 - Bureau of Labor Statistics (.gov)",
+            "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZ2lPN2JNZ19uSTZtbGJmMWZhUWRjVU5Mc3NTdnBDdHI4ejRYM1BRRU9DUTJ2Um5MLVV0RGFiMVN4NmlaYjJiWnBwSkVkNGNqX1MxeTlodkh4WUNpQ2dUZXZTLWZqRjlqd3FZZVNlVkl5QjFhaEhkaHFyTWdOSGx4bnhYUjlNNGdWSnQySGZ0TQ?oc=5",
+            "published": "Tue, 12 May 2026 07:00:00 GMT"
+          },
+          {
+            "title": "US consumer inflation expected to have increased further in April amid Iran war - Reuters",
+            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNazJLUlB0MFZIdGRtOTJtcXZEVTJfOEFqcDVUWWJBSjdudTZCLXNZSGNRWFFRU1pFZlYxUTc2SXpJOXEzMHpYX2syMUZJYTZ2S1hIUDBIdkluaDhna0RfQldJWWFRYVg5UVN6MjNfUXRkXzhOQ25UQ2JBeFpkTF9TUDAtMklZT1lnWFhtLW9CMmxCSjR1UXFPOENKU3R2VkJHM2dReGtnQ1ZjLTkxX2RncV9HcmhxMnI2Q0E?oc=5",
+            "published": "Tue, 12 May 2026 04:05:00 GMT"
+          },
+          {
+            "title": "Consumer Price Index, New York-Newark-Jersey City \u2014 April 2026 - Bureau of Labor Statistics (.gov)",
+            "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdDRtRUUwYXI4YWYyclVPQncxVllMOGM5bnV5QUhkRF9heTcwa2JUV3VtOVgtSzBXTGNiOHh2LUQ1Z1l5eUN6WmJ1QTQzOUc3emNmNk1lbWFFOE1QX1F3d05hUFVjQ0ItVjBTVTFUSzV4Q2ltaWJxZEhMNjhjT3FUMmNCQzB4SEl6?oc=5",
+            "published": "Tue, 12 May 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Consumer Price Index, Miami-Fort Lauderdale-West Palm Beach \u2014 April 2026 - Bureau of Labor Statistics (.gov)",
+            "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTFU4MGNOYjg2UUoyMUl5OEZCWWNQR0x0VW8yS3NTV0Y2SVNjR2x2a0lIZlROTGtEcVduM3paSVE3UE9PXzVjSlRudkZDN3pMeG1veXU5NlNCckN5YWRGYWpyYXA4R3dSNUV6RmV4SzF6ME5HTDRuQzFZblpiaG13UGtLZ2FnZw?oc=5",
+            "published": "Tue, 12 May 2026 07:00:00 GMT"
+          }
+        ]
+      }
     }
   ],
   "summary": {
     "event_count": 6,
-    "live_count": 4,
+    "live_count": 5,
     "partial_count": 0,
-    "review_count": 2
+    "review_count": 1
   }
 }

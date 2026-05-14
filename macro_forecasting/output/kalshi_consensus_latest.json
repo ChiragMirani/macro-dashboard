@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-05-14T17:41:32.752121+00:00",
+  "generated_at_utc": "2026-05-14T18:31:03.547055+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26MAY21",
       "kind": "threshold",
       "market_count": 10,
-      "implied_value": 404112.5,
-      "consensus_label": "404,112",
+      "implied_value": 210400.0,
+      "consensus_label": "210,400",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26may21",
       "title": "Initial jobless claims for the week ending May 16th"
     },
@@ -36,8 +36,8 @@
       "event_ticker": "KXCPICOREYOY-26MAY",
       "kind": "threshold",
       "market_count": 15,
-      "implied_value": 2.866,
-      "consensus_label": "2.87% y/y",
+      "implied_value": 2.83775,
+      "consensus_label": "2.84% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26may",
       "title": "Core inflation in May 2026 (Core CPI YoY)"
     },
@@ -46,7 +46,7 @@
       "event_ticker": "KXPAYROLLS-26MAY",
       "kind": "threshold",
       "market_count": 17,
-      "implied_value": 73.0125,
+      "implied_value": 73.32500000000002,
       "consensus_label": "73k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26may",
       "title": "Jobs numbers in May 2026?"
@@ -56,7 +56,7 @@
       "event_ticker": "KXECONSTATU3-26MAY",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.337914691943132,
+      "implied_value": 4.337735849056603,
       "consensus_label": "4.34%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26may",
       "title": "Unemployment rate in May 2026?"
@@ -66,8 +66,8 @@
       "event_ticker": "KXPCECORE-26MAY",
       "kind": "threshold",
       "market_count": 5,
-      "implied_value": 0.21500000000000002,
-      "consensus_label": "0.215% m/m",
+      "implied_value": 0.219,
+      "consensus_label": "0.219% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxpcecore-26may",
       "title": "How much will core PCE increase in May 2026?"
     }
