@@ -1,6 +1,39 @@
 {
   "snapshots": [
     {
+      "id": "adp_2026-06-03",
+      "release_key": "adp",
+      "release_label": "ADP",
+      "release_group": "Labor",
+      "target_period": "May 2026",
+      "release_iso": "2026-06-03T08:15:00-04:00",
+      "snapshot_at_utc": "2026-05-20T12:06:13.273338+00:00",
+      "house_raw": "44k",
+      "house_value": 44.0,
+      "kalshi_raw": "74k",
+      "kalshi_value": 74.0,
+      "kalshi_url": "https://kalshi.com/markets/kxadp-26may",
+      "release_source_url": "https://adpemploymentreport.com/",
+      "fred_series": "ADPMNUSNERSA",
+      "unit": "k jobs",
+      "actual_value": null,
+      "house_error_abs": null,
+      "kalshi_error_abs": null,
+      "winner": null,
+      "settled_at_utc": null,
+      "actual_consensus_side": null,
+      "house_consensus_side": null,
+      "house_direction_correct": null,
+      "release_date_pretty": "Jun 03, 2026",
+      "house_display": "44k",
+      "kalshi_display": "74k",
+      "actual_display": null,
+      "house_error_display": null,
+      "kalshi_error_display": null,
+      "actual_consensus_side_display": null,
+      "house_consensus_side_display": null
+    },
+    {
       "id": "core_pce_2026-05-28",
       "release_key": "core_pce",
       "release_label": "Core PCE",
@@ -332,9 +365,9 @@
     }
   ],
   "summary": {
-    "total_snapshots": 10,
+    "total_snapshots": 11,
     "settled_count": 8,
-    "pending_count": 2,
+    "pending_count": 3,
     "house_wins": 5,
     "kalshi_wins": 2,
     "ties": 0,
@@ -345,5 +378,5 @@
     "house_mean_abs_error": 2083.525026552955,
     "kalshi_mean_abs_error": 1417.584387005331
   },
-  "last_updated_utc": "2026-05-19T17:55:14.788069+00:00"
+  "last_updated_utc": "2026-05-20T12:06:13.289979+00:00"
 }
