@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-05-20T12:03:28.895697+00:00",
+  "generated_at_utc": "2026-05-20T18:01:33.966967+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26MAY21",
       "kind": "threshold",
       "market_count": 10,
-      "implied_value": 210725.0,
-      "consensus_label": "210,725",
+      "implied_value": 210175.0,
+      "consensus_label": "210,175",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26may21",
       "title": "Initial jobless claims for the week ending May 16th"
     },
@@ -16,8 +16,8 @@
       "event_ticker": "KXADP-26MAY",
       "kind": "threshold",
       "market_count": 7,
-      "implied_value": 73.5,
-      "consensus_label": "74k",
+      "implied_value": 86.1875,
+      "consensus_label": "86k",
       "kalshi_url": "https://kalshi.com/markets/kxadp-26may",
       "title": "ADP employment change in May 2026?"
     },
@@ -26,8 +26,8 @@
       "event_ticker": "KXECONSTATCPICORE-26MAY",
       "kind": "bucket",
       "market_count": 8,
-      "implied_value": 0.16182336182336185,
-      "consensus_label": "0.162% m/m",
+      "implied_value": 0.1582386363636364,
+      "consensus_label": "0.158% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26may",
       "title": "CPI core month-over-month in May 2026?"
     },
@@ -36,7 +36,7 @@
       "event_ticker": "KXCPICOREYOY-26MAY",
       "kind": "threshold",
       "market_count": 15,
-      "implied_value": 2.8994999999999993,
+      "implied_value": 2.8994999999999997,
       "consensus_label": "2.90% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26may",
       "title": "Core inflation in May 2026 (Core CPI YoY)"
@@ -46,7 +46,7 @@
       "event_ticker": "KXPAYROLLS-26MAY",
       "kind": "threshold",
       "market_count": 17,
-      "implied_value": 67.7375,
+      "implied_value": 68.075,
       "consensus_label": "68k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26may",
       "title": "Jobs numbers in May 2026?"
@@ -56,7 +56,7 @@
       "event_ticker": "KXECONSTATU3-26MAY",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.327906976744191,
+      "implied_value": 4.3275362318840624,
       "consensus_label": "4.33%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26may",
       "title": "Unemployment rate in May 2026?"
@@ -66,8 +66,8 @@
       "event_ticker": "KXPCECORE-26MAY",
       "kind": "threshold",
       "market_count": 5,
-      "implied_value": 0.22949999999999998,
-      "consensus_label": "0.229% m/m",
+      "implied_value": 0.22849999999999998,
+      "consensus_label": "0.228% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxpcecore-26may",
       "title": "How much will core PCE increase in May 2026?"
     }
