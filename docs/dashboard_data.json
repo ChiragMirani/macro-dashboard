@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Friday, May 22, 2026 08:01 AM ET",
-  "generated_at_iso": "2026-05-22T08:01:17.434606-04:00",
+  "generated_at_et": "Friday, May 22, 2026 01:42 PM ET",
+  "generated_at_iso": "2026-05-22T13:42:12.033948-04:00",
   "current_day": "Friday",
   "current_date": "May 22, 2026",
-  "current_time": "08:01 AM ET",
+  "current_time": "01:42 PM ET",
   "next_event": {
     "key": "core_pce",
     "label": "Core PCE",
@@ -14,10 +14,10 @@
     "release_date": "May 28, 2026",
     "release_time": "8:30 AM ET",
     "release_iso": "2026-05-28T08:30:00-04:00",
-    "hours_until_release": 144,
+    "hours_until_release": 138,
     "schedule_source": "seeded_official_schedule",
     "house_forecast": "0.187% m/m | 3.20% y/y",
-    "kalshi_consensus": "0.206% m/m",
+    "kalshi_consensus": "0.225% m/m",
     "last_release": "March 2026: 0.293% m/m, 3.20% y/y",
     "risk": null,
     "status": "live",
@@ -27,8 +27,8 @@
     "release_source_url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
     "consensus_review": {
       "required": false,
-      "gap_value": -0.019000000000000017,
-      "gap_display": "-0.019 pp",
+      "gap_value": -0.038000000000000034,
+      "gap_display": "-0.038 pp",
       "threshold": 0.05,
       "threshold_display": "0.050 pp",
       "house_side": "below Kalshi"
@@ -44,10 +44,10 @@
       "release_date": "May 28, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-05-28T08:30:00-04:00",
-      "hours_until_release": 144,
+      "hours_until_release": 138,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "0.187% m/m | 3.20% y/y",
-      "kalshi_consensus": "0.206% m/m",
+      "kalshi_consensus": "0.225% m/m",
       "last_release": "March 2026: 0.293% m/m, 3.20% y/y",
       "risk": null,
       "status": "live",
@@ -57,8 +57,8 @@
       "release_source_url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
       "consensus_review": {
         "required": false,
-        "gap_value": -0.019000000000000017,
-        "gap_display": "-0.019 pp",
+        "gap_value": -0.038000000000000034,
+        "gap_display": "-0.038 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "below Kalshi"
@@ -73,10 +73,10 @@
       "release_date": "May 28, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-05-28T08:30:00-04:00",
-      "hours_until_release": 144,
+      "hours_until_release": 138,
       "schedule_source": "weekly_rule",
       "house_forecast": "212,352",
-      "kalshi_consensus": "210,825",
+      "kalshi_consensus": "211,650",
       "last_release": "Week ending May 09, 2026: 211,000",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -86,8 +86,8 @@
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "consensus_review": {
         "required": false,
-        "gap_value": 1527.0541324224323,
-        "gap_display": "+1,527",
+        "gap_value": 702.0541324224323,
+        "gap_display": "+702",
         "threshold": 10000.0,
         "threshold_display": "10,000",
         "house_side": "above Kalshi"
@@ -102,52 +102,24 @@
       "release_date": "June 03, 2026",
       "release_time": "8:15 AM ET",
       "release_iso": "2026-06-03T08:15:00-04:00",
-      "hours_until_release": 288,
+      "hours_until_release": 282,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "44k",
-      "kalshi_consensus": "79k",
+      "kalshi_consensus": "78k",
       "last_release": "April 2026: 109k",
       "risk": null,
-      "status": "review",
+      "status": "live",
       "notes": "Two-step recursive forecast for the May 2026 ADP release; cached in macro_forecasting/output/adp_forecast_latest.json. Some release-month feature inputs were imputed with training medians.",
       "model_source": "macro_forecasting/adp_forecast_kaggle_style.py",
       "kalshi_url": "https://kalshi.com/markets/kxadp-26may",
       "release_source_url": "https://adpemploymentreport.com/",
       "consensus_review": {
-        "required": true,
-        "gap_value": -35.59643123386974,
-        "gap_display": "-36k",
+        "required": false,
+        "gap_value": -33.78393123386974,
+        "gap_display": "-34k",
         "threshold": 35.0,
         "threshold_display": "35k",
-        "house_side": "below Kalshi",
-        "label": "Review required",
-        "message": "ADP house forecast is -36k below Kalshi; threshold is 35k. Check official guidance and news before using the forecast.",
-        "news_query": "May 2026 macro data forecast adjustment",
-        "news_search_url": "https://news.google.com/search?q=May+2026+macro+data+forecast+adjustment",
-        "official_guidance": [],
-        "guidance_hit_count": 0,
-        "news_headlines": [
-          {
-            "title": "What\u2019s happening this week in economics? - Deloitte",
-            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcV9VYnV0R0RPcWN0d2g1SHJIVlNmaVA1TV9nXzRKdVlFcWtSMjQ1T1B0djE4dDNRanZvSVFGX0ZBNUd6cnZkVnAtenFuMnFzdU9zYzg5cFdkTVRxU1F5YVVXVFhVWGdhd2RsTDBkNS1Xcm9ub1FnMFp5NnB3WVBYa3JJa1FVbG5IT0ZRRHphTUhtNThkenVJS1ZrdWNDdw?oc=5",
-            "published": "Tue, 19 May 2026 07:00:00 GMT"
-          },
-          {
-            "title": "Stocks under pressure as correction fears grow and record rally defies geopolitical turmoil - CNBC",
-            "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZDhCUTZEU2pXVVZLci1CM2VKbXE4a2lZbnhHV3I2SXdFd2VtYnhEYmlDekRTbGswSUI5a0ZlTk04TmtQNjNQYjlTQ25OTjdTcGEzQVVmVWJNTlAyd3hCOXJsTDhmUG4zTElSdXgwT01GT3pFbzN0WnhGQjR4SmlDQWhBMFh3cGpWN3dSdDVMYlpCa2J4R0HSAZsBQVVfeXFMUFlUeE9oa3I0SHhxaDNYLTNERlNuazdIeEV4bnY2NFU3SG5HQTFQa0NyOGlfSERxWk5vcFljYS1jamNWOHZkY2UtaFJONlZjRHVXMC13STRxNDJRbFlKaWpkX2pGN09WcS1pdnJyMW1adzhoeFpSLXIzTUZIR2R4c1lEZUQ3Q3p3N2ZSQkl2MnpxLVQ3bDBaVkxOWWs?oc=5",
-            "published": "Wed, 20 May 2026 05:33:30 GMT"
-          },
-          {
-            "title": "Oshkosh Q1 2026 Earnings: Revenue Flat, Adjusted EPS Misses Analyst Expectations | May 2026 - News and Statistics - IndexBox",
-            "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQYklsX3IwOUk2bkVHX3JUR29CLUdFMUkxcmNPb1hwcGpsYUx6OWhnRXhwTE9FRGJ2MUxwRTBKSF9Kb25IUTVWYnItVmZVS3otNTMxWkpiV1RvcWJKYnNHQ0tjRWRwQlg4ZVBjOE9LbkJidDZTOGtFRHJaX1ZvWHVGRUctS0kwbGxnajZlVGpkNWVUZw?oc=5",
-            "published": "Wed, 20 May 2026 00:01:00 GMT"
-          },
-          {
-            "title": "The Budget and Economic Outlook: 2026 to 2036 - Congressional Budget Office (.gov)",
-            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1xYkpKUjdyNWpIYlp2eU9kZkNKNWw2dlNfNk9OTHRjNk5XQ0lJOVd6OXZnSkR3RnNyblVfNFMtT2RxdVBYLUFTaDYxZkdvdw?oc=5",
-            "published": "Wed, 11 Feb 2026 08:00:00 GMT"
-          }
-        ]
+        "house_side": "below Kalshi"
       }
     },
     {
@@ -159,10 +131,10 @@
       "release_date": "June 05, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-05T08:30:00-04:00",
-      "hours_until_release": 336,
+      "hours_until_release": 330,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "67k",
-      "kalshi_consensus": "68k",
+      "kalshi_consensus": "69k",
       "last_release": "April 2026: 115k",
       "risk": "normal surprise risk",
       "status": "live",
@@ -172,8 +144,8 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": -1.0499999999999972,
-        "gap_display": "-1k",
+        "gap_value": -1.8749999999999858,
+        "gap_display": "-2k",
         "threshold": 40.0,
         "threshold_display": "40k",
         "house_side": "below Kalshi"
@@ -188,7 +160,7 @@
       "release_date": "June 05, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-05T08:30:00-04:00",
-      "hours_until_release": 336,
+      "hours_until_release": 330,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "4.30%",
       "kalshi_consensus": "4.33%",
@@ -201,8 +173,8 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": -0.026415094339627743,
-        "gap_display": "-0.026 pp",
+        "gap_value": -0.03150684931507275,
+        "gap_display": "-0.032 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "below Kalshi"
@@ -217,10 +189,10 @@
       "release_date": "June 10, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-10T08:30:00-04:00",
-      "hours_until_release": 456,
+      "hours_until_release": 450,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "0.187% m/m | 2.80% y/y",
-      "kalshi_consensus": "0.152% m/m | 2.90% y/y",
+      "kalshi_consensus": "0.151% m/m | 2.87% y/y",
       "last_release": "April 2026: 0.376% m/m, 2.74% y/y",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -230,8 +202,8 @@
       "release_source_url": "https://www.bls.gov/news.release/cpi.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": 0.03518111881910285,
-        "gap_display": "+0.035 pp",
+        "gap_value": 0.03638581002840027,
+        "gap_display": "+0.036 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "above Kalshi"
@@ -240,8 +212,8 @@
   ],
   "summary": {
     "event_count": 6,
-    "live_count": 5,
+    "live_count": 6,
     "partial_count": 0,
-    "review_count": 1
+    "review_count": 0
   }
 }
