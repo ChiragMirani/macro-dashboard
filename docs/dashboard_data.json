@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Friday, May 29, 2026 08:11 AM ET",
-  "generated_at_iso": "2026-05-29T08:11:17.303736-04:00",
+  "generated_at_et": "Friday, May 29, 2026 02:10 PM ET",
+  "generated_at_iso": "2026-05-29T14:10:24.203274-04:00",
   "current_day": "Friday",
   "current_date": "May 29, 2026",
-  "current_time": "08:11 AM ET",
+  "current_time": "02:10 PM ET",
   "next_event": {
     "key": "adp",
     "label": "ADP",
@@ -14,7 +14,7 @@
     "release_date": "June 03, 2026",
     "release_time": "8:15 AM ET",
     "release_iso": "2026-06-03T08:15:00-04:00",
-    "hours_until_release": 120,
+    "hours_until_release": 114,
     "schedule_source": "seeded_official_schedule",
     "house_forecast": "44k",
     "kalshi_consensus": "81k",
@@ -27,13 +27,13 @@
     "release_source_url": "https://adpemploymentreport.com/",
     "consensus_review": {
       "required": true,
-      "gap_value": -37.03393123386974,
-      "gap_display": "-37k",
+      "gap_value": -37.65893123386974,
+      "gap_display": "-38k",
       "threshold": 35.0,
       "threshold_display": "35k",
       "house_side": "below Kalshi",
       "label": "Review required",
-      "message": "ADP house forecast is -37k below Kalshi; threshold is 35k. Check official guidance and news before using the forecast.",
+      "message": "ADP house forecast is -38k below Kalshi; threshold is 35k. Check official guidance and news before using the forecast.",
       "news_query": "May 2026 macro data forecast adjustment",
       "news_search_url": "https://news.google.com/search?q=May+2026+macro+data+forecast+adjustment",
       "official_guidance": [],
@@ -50,14 +50,14 @@
           "published": "Thu, 07 May 2026 07:00:00 GMT"
         },
         {
+          "title": "Stocks under pressure as correction fears grow and record rally defies geopolitical turmoil - CNBC",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZDhCUTZEU2pXVVZLci1CM2VKbXE4a2lZbnhHV3I2SXdFd2VtYnhEYmlDekRTbGswSUI5a0ZlTk04TmtQNjNQYjlTQ25OTjdTcGEzQVVmVWJNTlAyd3hCOXJsTDhmUG4zTElSdXgwT01GT3pFbzN0WnhGQjR4SmlDQWhBMFh3cGpWN3dSdDVMYlpCa2J4R0HSAZsBQVVfeXFMUFlUeE9oa3I0SHhxaDNYLTNERlNuazdIeEV4bnY2NFU3SG5HQTFQa0NyOGlfSERxWk5vcFljYS1jamNWOHZkY2UtaFJONlZjRHVXMC13STRxNDJRbFlKaWpkX2pGN09WcS1pdnJyMW1adzhoeFpSLXIzTUZIR2R4c1lEZUQ3Q3p3N2ZSQkl2MnpxLVQ3bDBaVkxOWWs?oc=5",
+          "published": "Wed, 20 May 2026 07:00:00 GMT"
+        },
+        {
           "title": "ECB staff macroeconomic projections for the euro area, March 2026 - European Central Bank",
           "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcEhjOU5BUG5VUzE2MjRSS3plWDR6UDhKTC1vaTdLeEVUbVktYjQ0VUJQd2dtUTV4SHpFd0hOSlozMGZYUHV3UG9rTWExTkVlb0FGWVZaQkVPbVFDMWQwTlYxOWZ0bC1HbVJIc29FZzYyWkl4bC1oZDhZMlE3SjNkdDg3TThjRDlIMkx4WWh2UnBLby1UM0dTZFNJTWR3QTQ?oc=5",
           "published": "Wed, 11 Mar 2026 07:00:00 GMT"
-        },
-        {
-          "title": "NL - A new energy shock while still digesting the former - ABN AMRO",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcUdBZTlUT29hNGJuMzZpNGQ5R0doQXJ0a052UXVkQ0Fqd0E4RmZEdWFaQTRpUFRmMmpfOG9YNkdYV0tUcEpRRHlGS3lhcmVla1NnbnZscW1VZmJ3MGZ2R3dJMWt5cWdMNmlSU0EyWERzd1I4cE9pMGJfU0V2WU1SSzZkMUZiWDl3blJNdElSNENYdEJSUm04RWVYQjRDLUctYXNrSl9ac0JiZ2dNVFZIbkhFQUpoMUU?oc=5",
-          "published": "Wed, 25 Mar 2026 07:00:00 GMT"
         }
       ]
     }
@@ -72,7 +72,7 @@
       "release_date": "June 03, 2026",
       "release_time": "8:15 AM ET",
       "release_iso": "2026-06-03T08:15:00-04:00",
-      "hours_until_release": 120,
+      "hours_until_release": 114,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "44k",
       "kalshi_consensus": "81k",
@@ -85,13 +85,13 @@
       "release_source_url": "https://adpemploymentreport.com/",
       "consensus_review": {
         "required": true,
-        "gap_value": -37.03393123386974,
-        "gap_display": "-37k",
+        "gap_value": -37.65893123386974,
+        "gap_display": "-38k",
         "threshold": 35.0,
         "threshold_display": "35k",
         "house_side": "below Kalshi",
         "label": "Review required",
-        "message": "ADP house forecast is -37k below Kalshi; threshold is 35k. Check official guidance and news before using the forecast.",
+        "message": "ADP house forecast is -38k below Kalshi; threshold is 35k. Check official guidance and news before using the forecast.",
         "news_query": "May 2026 macro data forecast adjustment",
         "news_search_url": "https://news.google.com/search?q=May+2026+macro+data+forecast+adjustment",
         "official_guidance": [],
@@ -108,14 +108,14 @@
             "published": "Thu, 07 May 2026 07:00:00 GMT"
           },
           {
+            "title": "Stocks under pressure as correction fears grow and record rally defies geopolitical turmoil - CNBC",
+            "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZDhCUTZEU2pXVVZLci1CM2VKbXE4a2lZbnhHV3I2SXdFd2VtYnhEYmlDekRTbGswSUI5a0ZlTk04TmtQNjNQYjlTQ25OTjdTcGEzQVVmVWJNTlAyd3hCOXJsTDhmUG4zTElSdXgwT01GT3pFbzN0WnhGQjR4SmlDQWhBMFh3cGpWN3dSdDVMYlpCa2J4R0HSAZsBQVVfeXFMUFlUeE9oa3I0SHhxaDNYLTNERlNuazdIeEV4bnY2NFU3SG5HQTFQa0NyOGlfSERxWk5vcFljYS1jamNWOHZkY2UtaFJONlZjRHVXMC13STRxNDJRbFlKaWpkX2pGN09WcS1pdnJyMW1adzhoeFpSLXIzTUZIR2R4c1lEZUQ3Q3p3N2ZSQkl2MnpxLVQ3bDBaVkxOWWs?oc=5",
+            "published": "Wed, 20 May 2026 07:00:00 GMT"
+          },
+          {
             "title": "ECB staff macroeconomic projections for the euro area, March 2026 - European Central Bank",
             "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcEhjOU5BUG5VUzE2MjRSS3plWDR6UDhKTC1vaTdLeEVUbVktYjQ0VUJQd2dtUTV4SHpFd0hOSlozMGZYUHV3UG9rTWExTkVlb0FGWVZaQkVPbVFDMWQwTlYxOWZ0bC1HbVJIc29FZzYyWkl4bC1oZDhZMlE3SjNkdDg3TThjRDlIMkx4WWh2UnBLby1UM0dTZFNJTWR3QTQ?oc=5",
             "published": "Wed, 11 Mar 2026 07:00:00 GMT"
-          },
-          {
-            "title": "NL - A new energy shock while still digesting the former - ABN AMRO",
-            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcUdBZTlUT29hNGJuMzZpNGQ5R0doQXJ0a052UXVkQ0Fqd0E4RmZEdWFaQTRpUFRmMmpfOG9YNkdYV0tUcEpRRHlGS3lhcmVla1NnbnZscW1VZmJ3MGZ2R3dJMWt5cWdMNmlSU0EyWERzd1I4cE9pMGJfU0V2WU1SSzZkMUZiWDl3blJNdElSNENYdEJSUm04RWVYQjRDLUctYXNrSl9ac0JiZ2dNVFZIbkhFQUpoMUU?oc=5",
-            "published": "Wed, 25 Mar 2026 07:00:00 GMT"
           }
         ]
       }
@@ -129,59 +129,24 @@
       "release_date": "June 04, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-04T08:30:00-04:00",
-      "hours_until_release": 144,
+      "hours_until_release": 138,
       "schedule_source": "weekly_rule",
       "house_forecast": "212,352",
-      "kalshi_consensus": "222,900",
+      "kalshi_consensus": "218,575",
       "last_release": "Week ending May 09, 2026: 211,000",
       "risk": "elevated surprise risk",
-      "status": "review",
+      "status": "live",
       "notes": "Weekly model output with surprise-risk overlay.",
       "model_source": "macro_forecasting/output/weekly_claims_forecast_latest.json",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26jun04",
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "consensus_review": {
-        "required": true,
-        "gap_value": -10547.945867577568,
-        "gap_display": "-10,548",
+        "required": false,
+        "gap_value": -6222.945867577568,
+        "gap_display": "-6,223",
         "threshold": 10000.0,
         "threshold_display": "10,000",
-        "house_side": "below Kalshi",
-        "label": "Review required",
-        "message": "Weekly Claims house forecast is -10,548 below Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
-        "news_query": "Week ending May 30, 2026 jobless claims forecast seasonal adjustment",
-        "news_search_url": "https://news.google.com/search?q=Week+ending+May+30%2C+2026+jobless+claims+forecast+seasonal+adjustment",
-        "official_guidance": [
-          {
-            "label": "DOL weekly claims release",
-            "url": "https://www.dol.gov/ui/data.pdf",
-            "status": "unavailable",
-            "hits": []
-          }
-        ],
-        "guidance_hit_count": 0,
-        "news_headlines": [
-          {
-            "title": "US weekly jobless claims increase marginally amid low layoffs - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSlN6cEVrVTdJa1pya3RlMXJjZFFXdWhZb1Y0aDRQWmgzZlpVN01XSXdwN2R3aVZHVnBOWHZlcUFianlYY05vZjBuQnRTYTVzcHhaRUhXQUQydVJIT2NEdEpqM2Zxb0M5b1pDbnJfOTVKaHJOMGV1bkJYTzlmM056QkVVcThBNjNueURxclJ6Unk3UE5QNG5IUWU5ZXVOX2c5WjlrNFBWa3Fydw?oc=5",
-            "published": "Thu, 28 May 2026 19:11:18 GMT"
-          },
-          {
-            "title": "Initial Unemployment Claims Up 5K, Higher Than Expected - Advisor Perspectives",
-            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMHRnV0ZQYnVtLTZsMXhVNzRicjVfR0NXMk45SEJoT05QWGFBTWE1MEdnUC1hcnZaMS1NcmplYmhWV3RkMG5TZHhSZ1QzNnFLbUtzRjY0NEFYaHVGaWhJY3dkQkZjQkhaOW1UOTM2WUlNMDk0aV8xdDZJSERKOHZ2bEpkdGI3LWV3QWsxdExaMHhaZ2lJNjdJWlcwcHpCNFdzTUowVFVDRUpKVzBKYlN6UDk1SVN3QUE?oc=5",
-            "published": "Thu, 28 May 2026 13:04:11 GMT"
-          },
-          {
-            "title": "Spot gold at $4,513/oz after U.S. weekly jobless claims drop to 209k - KITCO",
-            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWTg2TFRlM3owZTk1LUdBbVR0dnY2VFZxZndzS2lvOE1LZVlZUDlZNFZja3BFSUNvdkVQekNfNTNhTWptdUVlcnRGWHhXSGc1RGhfQzdaN21qMzliSElSY0FfUG5VVFVTTTRfTF9IVXRvYmlJRmdTOW5Md2E0MHV0dC00WW9zN0sxZGhvY2tWRU54QV9XZk9ERG1LZW9JaDFsbmVJbl9R?oc=5",
-            "published": "Thu, 21 May 2026 09:48:00 GMT"
-          },
-          {
-            "title": "US labor market shows resilience in face of war; housing still subdued - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNNVRvak1VSmRQU3R6VnNfSlNFd0ZLSS03TmI2OUdlZ1dDMklUWmFFcEY4WlhuWG5qazlqUENXZmZnQTh1NWNMVHpsbHY5T0NqUDBZYVY4aWlBNjA0QVJlSXJzMV9JZXYtcDRxMkpNdEdYeXRORG54MzBkYVdMdnpDWWt1T1dQTzFDdmRMMnNqbUM0NU5DcXlhWVFmMGVMVC1QVXl2dzRn?oc=5",
-            "published": "Thu, 21 May 2026 17:10:32 GMT"
-          }
-        ]
+        "house_side": "below Kalshi"
       }
     },
     {
@@ -193,10 +158,10 @@
       "release_date": "June 05, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-05T08:30:00-04:00",
-      "hours_until_release": 168,
+      "hours_until_release": 162,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "67k",
-      "kalshi_consensus": "100k",
+      "kalshi_consensus": "77k",
       "last_release": "April 2026: 115k",
       "risk": "normal surprise risk",
       "status": "live",
@@ -206,8 +171,8 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": -32.95,
-        "gap_display": "-33k",
+        "gap_value": -10.399999999999991,
+        "gap_display": "-10k",
         "threshold": 40.0,
         "threshold_display": "40k",
         "house_side": "below Kalshi"
@@ -222,7 +187,7 @@
       "release_date": "June 05, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-05T08:30:00-04:00",
-      "hours_until_release": 168,
+      "hours_until_release": 162,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "4.30%",
       "kalshi_consensus": "4.33%",
@@ -235,7 +200,7 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": -0.027358490566042448,
+        "gap_value": -0.02739726027397804,
         "gap_display": "-0.027 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
@@ -251,65 +216,24 @@
       "release_date": "June 10, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-10T08:30:00-04:00",
-      "hours_until_release": 288,
+      "hours_until_release": 282,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "0.187% m/m | 2.80% y/y",
-      "kalshi_consensus": "0.136% m/m | 2.89% y/y",
+      "kalshi_consensus": "0.144% m/m | 2.86% y/y",
       "last_release": "April 2026: 0.376% m/m, 2.74% y/y",
       "risk": "elevated surprise risk",
-      "status": "review",
+      "status": "live",
       "notes": "Model output from core CPI workflow and surprise model.",
       "model_source": "macro_forecasting/output/core_cpi_forecast_latest.json",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26may",
       "release_source_url": "https://www.bls.gov/news.release/cpi.toc.htm",
       "consensus_review": {
-        "required": true,
-        "gap_value": 0.05121995024715589,
-        "gap_display": "+0.051 pp",
+        "required": false,
+        "gap_value": 0.04263790336322221,
+        "gap_display": "+0.043 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
-        "house_side": "above Kalshi",
-        "label": "Review required",
-        "message": "Core CPI house forecast is +0.051 pp above Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
-        "news_query": "May 2026 CPI shelter rent OER adjustment BLS forecast",
-        "news_search_url": "https://news.google.com/search?q=May+2026+CPI+shelter+rent+OER+adjustment+BLS+forecast",
-        "official_guidance": [
-          {
-            "label": "BLS CPI shutdown impact guidance",
-            "url": "https://www.bls.gov/cpi/additional-resources/2025-federal-government-shutdown-impact-cpi.htm",
-            "status": "unavailable",
-            "hits": []
-          },
-          {
-            "label": "BLS CPI latest release",
-            "url": "https://www.bls.gov/news.release/cpi.toc.htm",
-            "status": "unavailable",
-            "hits": []
-          }
-        ],
-        "guidance_hit_count": 0,
-        "news_headlines": [
-          {
-            "title": "Consumer Price Index, New York-Newark-Jersey City \u2014 April 2026 - Bureau of Labor Statistics (.gov)",
-            "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdDRtRUUwYXI4YWYyclVPQncxVllMOGM5bnV5QUhkRF9heTcwa2JUV3VtOVgtSzBXTGNiOHh2LUQ1Z1l5eUN6WmJ1QTQzOUc3emNmNk1lbWFFOE1QX1F3d05hUFVjQ0ItVjBTVTFUSzV4Q2ltaWJxZEhMNjhjT3FUMmNCQzB4SEl6?oc=5",
-            "published": "Tue, 12 May 2026 07:00:00 GMT"
-          },
-          {
-            "title": "Consumer Price Index, Northeast region \u2014 April 2026 - Bureau of Labor Statistics (.gov)",
-            "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZ2lPN2JNZ19uSTZtbGJmMWZhUWRjVU5Mc3NTdnBDdHI4ejRYM1BRRU9DUTJ2Um5MLVV0RGFiMVN4NmlaYjJiWnBwSkVkNGNqX1MxeTlodkh4WUNpQ2dUZXZTLWZqRjlqd3FZZVNlVkl5QjFhaEhkaHFyTWdOSGx4bnhYUjlNNGdWSnQySGZ0TQ?oc=5",
-            "published": "Tue, 12 May 2026 07:00:00 GMT"
-          },
-          {
-            "title": "On May 12, Don\u2019t Forget the Correction of Understated Shelter Costs - Haver Analytics",
-            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRUkxc3pMcnR5bEZFdXNXLXJSc0NvSEtodzhkbEZRMHBFQ2phVUhfRWhiTVpIME55UHhwbjNIdnNmaVpBT3NEb29GNnZBQ1BsUlg3eE54WVlSaE13UlRpR3BNR0QxQW44RHVmcnpWZjlBeWVIanJRZVRSVXlTdTU0V0lBendfWE1SZU9Ccy1RZ2R4d2lfcVA0MXpjSmYwQQ?oc=5",
-            "published": "Fri, 01 May 2026 19:15:46 GMT"
-          },
-          {
-            "title": "Counterfactual imputation approaches for the housing component of the October 2025 CPI - Bureau of Labor Statistics (.gov)",
-            "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPQ3B0U1RwOXc0RXJfUXpZVjdmbGYzdW5fRl9QZi12V3dCQkJsQWdJMGNmamtrZGl4X1VFQVhJLVRJTWlXeUo1NDIxRXoyekp2RWVqVzVJQjBtZVlIVl9fbHJ2TW95N3ROXy16djhWbXptY0xTLVRnaEt2RFdHMkVySk10NkJuaF9MWk9QQ0ZZS2h4WG5NX3loeUZ2d3NHR3pyZlBxR3dldUx4ejBlWmh2VkRhLXMwSUpqRkY0MVdtckQ5cnJ0VTRVSGNEd04?oc=5",
-            "published": "Tue, 12 May 2026 16:30:51 GMT"
-          }
-        ]
+        "house_side": "above Kalshi"
       }
     },
     {
@@ -321,68 +245,31 @@
       "release_date": "June 26, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-26T08:30:00-04:00",
-      "hours_until_release": 672,
+      "hours_until_release": 666,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "0.187% m/m | 3.20% y/y",
-      "kalshi_consensus": "0.237% m/m",
+      "kalshi_consensus": "0.235% m/m",
       "last_release": "April 2026: 0.239% m/m, 3.29% y/y",
       "risk": null,
-      "status": "review",
+      "status": "live",
       "notes": "Standard estimate from CPI/PPI bridge.",
       "model_source": "macro_forecasting/cpi_to_pce_bridge.py",
       "kalshi_url": "https://kalshi.com/markets/kxpcecore-26jun",
       "release_source_url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
       "consensus_review": {
-        "required": true,
-        "gap_value": -0.050000000000000044,
-        "gap_display": "-0.050 pp",
+        "required": false,
+        "gap_value": -0.047500000000000014,
+        "gap_display": "-0.048 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
-        "house_side": "below Kalshi",
-        "label": "Review required",
-        "message": "Core PCE house forecast is -0.050 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
-        "news_query": "May 2026 core PCE forecast BEA adjustment inflation",
-        "news_search_url": "https://news.google.com/search?q=May+2026+core+PCE+forecast+BEA+adjustment+inflation",
-        "official_guidance": [
-          {
-            "label": "BEA PCE latest release",
-            "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
-            "status": "checked",
-            "hits": [
-              "price index"
-            ]
-          }
-        ],
-        "guidance_hit_count": 1,
-        "news_headlines": [
-          {
-            "title": "April 2026 Personal Income Falls, Consumer Spending Up $111.1 Billion | BEA Report - News and Statistics - IndexBox",
-            "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQU1lpTUpDR3NOZUJ6S0NxdEVuT1QtVHB1dGpLdzk4QnlEMXpLVWRWa3JMU1RZejNDZWo5Mk85ZVJ6NUxiUjl5RUZSUHJRVUZHODFqVUZFWG9WNGhXenIxaHlDaTE1TmhieXlvaDJJc0xhNmktVE1wOVd6X3BIbTZxTUFDUWw4cnFUSDhpM21QQUF6RFA1eVVGeWFR?oc=5",
-            "published": "Thu, 28 May 2026 12:50:00 GMT"
-          },
-          {
-            "title": "Residual Seasonality in Some Components of PCE Inflation - Federal Reserve Bank of Cleveland",
-            "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNN1o3RHpVSEJNblNWcEN0VWpVY1FMTHZYNGdOVXhkd3dJWF9Jc3ZRT1I0eGNuTl85WXVQV3lXM3VjRE9iZ2RWT3V6RmdUcTBaeGtOSnYwWU9IWjFRbDB6V2hPSmRPTzdCNHJWWWcwaS01ZmRWYklhVXZXcmdCTF9tUFVETGxwWjBOYk9YTXRVSjZnSlVFWS1URWw2TFdPc3lKNlNHakpWcnRvRTZ1OXEtOE5WV3gtQmttWTVfcTZoeUV0U3BCcjhvSFlaekFidw?oc=5",
-            "published": "Thu, 05 Mar 2026 14:15:42 GMT"
-          },
-          {
-            "title": "GDP (Advance Estimate), 4th Quarter and Year 2025 - U.S. Bureau of Economic Analysis (BEA) (.gov)",
-            "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQ3gxNnp5ajZDUWhLTi10dGxYRzEwM25EVzBQVDRkY3ZCR2RYaWNCLXdRY0xSVzNxUTRiSmJxcWNoSDJybmgwLWo4UjZsSUFYcFZzNEVzX25rTWdZVXlVM3ZoXzBXRk1TVDAzRU5QZDVuQ0JSMUQ3ZVRZa21BLTc0ZHNn?oc=5",
-            "published": "Fri, 20 Feb 2026 08:00:00 GMT"
-          },
-          {
-            "title": "U.S. April PCE Preview: Inflation Spreading Across Multiple Sectors Pushes Up Treasuries, May 28 Data May End Rate Policy Debate - TradingKey",
-            "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTU5iczFjLXpvRzVxMHdBUzBGUkl2QWc4MWVJS3FjQWhtZGlLT1hQU2xpaUp0SnNvNkpOTWlCZnV3anRNYUR2VTU1OXlRcnI5YzdRMk5KQ3VxRXMzb1RrdnlPcUJUbUlyaVNmU1psUWQ5Q3dUVUF3UWJVc0Fya2lnX1V1RjI1azU4TjhPN0JjQ3Z6Q2FZaEpTNkZwWVp6TUJ1NzlyVjBTamdUWDY0eU9reGEySWxONldPcGVMOVlKbVNHaFFN?oc=5",
-            "published": "Thu, 28 May 2026 03:38:17 GMT"
-          }
-        ]
+        "house_side": "below Kalshi"
       }
     }
   ],
   "summary": {
     "event_count": 6,
-    "live_count": 2,
+    "live_count": 5,
     "partial_count": 0,
-    "review_count": 4
+    "review_count": 1
   }
 }
