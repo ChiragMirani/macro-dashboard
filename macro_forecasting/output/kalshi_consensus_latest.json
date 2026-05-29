@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-05-28T18:10:25.079232+00:00",
+  "generated_at_utc": "2026-05-29T12:11:16.800559+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26JUN04",
       "kind": "threshold",
       "market_count": 10,
-      "implied_value": 221975.0,
-      "consensus_label": "221,975",
+      "implied_value": 222900.0,
+      "consensus_label": "222,900",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26jun04",
       "title": "Initial jobless claims for the week ending May 30th"
     },
@@ -16,8 +16,8 @@
       "event_ticker": "KXADP-26MAY",
       "kind": "threshold",
       "market_count": 7,
-      "implied_value": 91.68749999999999,
-      "consensus_label": "92k",
+      "implied_value": 80.75,
+      "consensus_label": "81k",
       "kalshi_url": "https://kalshi.com/markets/kxadp-26may",
       "title": "ADP employment change in May 2026?"
     },
@@ -26,8 +26,8 @@
       "event_ticker": "KXECONSTATCPICORE-26MAY",
       "kind": "bucket",
       "market_count": 8,
-      "implied_value": 0.1349544072948328,
-      "consensus_label": "0.135% m/m",
+      "implied_value": 0.13575757575757574,
+      "consensus_label": "0.136% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26may",
       "title": "CPI core month-over-month in May 2026?"
     },
@@ -36,7 +36,7 @@
       "event_ticker": "KXCPICOREYOY-26MAY",
       "kind": "threshold",
       "market_count": 15,
-      "implied_value": 2.8862500000000004,
+      "implied_value": 2.88875,
       "consensus_label": "2.89% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26may",
       "title": "Core inflation in May 2026 (Core CPI YoY)"
@@ -46,8 +46,8 @@
       "event_ticker": "KXPAYROLLS-26MAY",
       "kind": "threshold",
       "market_count": 17,
-      "implied_value": 71.2625,
-      "consensus_label": "71k",
+      "implied_value": 99.95,
+      "consensus_label": "100k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26may",
       "title": "Jobs numbers in May 2026?"
     },
