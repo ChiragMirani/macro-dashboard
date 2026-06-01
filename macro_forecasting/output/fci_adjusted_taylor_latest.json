@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-30T22:01:23.100196+00:00",
+  "generated_at_utc": "2026-06-01T22:01:35.775723+00:00",
   "inputs": {
     "spot_date": "2026-04-01",
     "spot_ur": 4.3,
@@ -29,10 +29,10 @@
     "as_of": "2026-05-01",
     "level_bps_per_1z": 25.0,
     "delta_bps_per_1z": 15.0,
-    "composite_z_tighter_positive": -0.2516873578462857,
-    "level_adjustment_pp": 0.06292183946157143,
-    "delta_adjustment_pp": -0.03945157988602399,
-    "total_adjustment_pp": 0.023470259575547436,
+    "composite_z_tighter_positive": -0.2774681165918918,
+    "level_adjustment_pp": 0.06936702914797295,
+    "delta_adjustment_pp": -0.033013925004652916,
+    "total_adjustment_pp": 0.036353104143320034,
     "components": [
       {
         "name": "ANFCI",
@@ -40,65 +40,65 @@
         "lookback_mean": -0.4380333333333334,
         "lookback_std": 0.18195704316006994,
         "zscore_tighter_positive": -0.09874125427978693,
-        "contribution_bps": 1.5730459865392856
+        "contribution_bps": 1.7341757286993238
       },
       {
         "name": "HY OAS",
-        "latest": 2.72,
-        "lookback_mean": 3.27,
-        "lookback_std": 0.49456505597807315,
-        "zscore_tighter_positive": -1.112088275044617,
-        "contribution_bps": 1.5730459865392856
+        "latest": 2.74,
+        "lookback_mean": 3.231111111111111,
+        "lookback_std": 0.439619644805331,
+        "zscore_tighter_positive": -1.1171273097419945,
+        "contribution_bps": 1.7341757286993238
       },
       {
         "name": "VIX",
-        "latest": 17.333000000000002,
-        "lookback_mean": 18.544922222965184,
-        "lookback_std": 6.68614425980337,
-        "zscore_tighter_positive": -0.18125876078552078,
-        "contribution_bps": 1.5730459865392856
+        "latest": 17.237142857142857,
+        "lookback_mean": 18.544123413441376,
+        "lookback_std": 6.6862947277570095,
+        "zscore_tighter_positive": -0.19547157424467293,
+        "contribution_bps": 1.7341757286993238
       },
       {
         "name": "Broad USD",
-        "latest": 119.2868,
-        "lookback_mean": 117.42724166666667,
-        "lookback_std": 4.825774227616804,
-        "zscore_tighter_positive": 0.38533885872478196,
-        "contribution_bps": 1.5730459865392856
+        "latest": 118.8783,
+        "lookback_mean": 117.4238375,
+        "lookback_std": 4.824605208374783,
+        "zscore_tighter_positive": 0.3014676718988871,
+        "contribution_bps": 1.7341757286993238
       }
     ],
     "checkpoint_deltas": [
       {
         "name": "since_last_fomc",
         "checkpoint_date": "2026-01-28",
-        "delta_z_tighter_positive": 0.15258106751503175,
-        "adjustment_bps": -2.288716012725476
+        "delta_z_tighter_positive": 0.12883777197933244,
+        "adjustment_bps": -1.9325665796899867
       },
       {
         "name": "since_last_sep",
         "checkpoint_date": "2025-12-17",
-        "delta_z_tighter_positive": 0.11042946505846152,
-        "adjustment_bps": -1.6564419758769229
+        "delta_z_tighter_positive": 0.09125506138502032,
+        "adjustment_bps": -1.3688259207753048
       }
     ]
   },
   "adjusted_taylor": {
-    "spot": 4.6892036211527985,
+    "spot": 4.702086465720571,
     "forward": null,
     "sep_delta_only_forward": null
   },
   "quarterly_revision": {
     "macro_revision_vs_sep_pp": null,
-    "fci_impulse_since_sep_pp": -0.01656441975876923,
+    "fci_impulse_since_sep_pp": -0.013688259207753049,
     "net_revision_vs_sep_pp": null
   },
   "market_pricing": {
     "treasury": {
       "as_of": "2026-05-01",
       "rates": {
-        "6m": 3.79,
-        "1y": 3.8,
-        "2y": 3.99
+        "6m": 3.78,
+        "1y": 3.79,
+        "2y": 3.98
       },
       "implied_cuts": {
         "6m": 0.0,
@@ -110,7 +110,7 @@
   },
   "policy_gap": {
     "raw_spot_vs_ff_pp": 1.045733361577251,
-    "adjusted_spot_vs_ff_pp": 1.0692036211527984,
+    "adjusted_spot_vs_ff_pp": 1.0820864657205709,
     "raw_forward_vs_ff_pp": null,
     "adjusted_forward_vs_ff_pp": null
   }
