@@ -409,7 +409,7 @@
     "house_direction_call_count": 8,
     "house_direction_hit_rate": 0.625,
     "house_mean_abs_error": 1852.0280169705507,
-    "kalshi_mean_abs_error": 1240.3893311685795
+    "kalshi_mean_abs_error": 1240.3893311685797
   },
-  "last_updated_utc": "2026-06-05T17:27:12.620909+00:00"
+  "last_updated_utc": "2026-06-05T17:45:51.135333+00:00"
 }

@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Friday, June 05, 2026 01:25 PM ET",
-  "generated_at_iso": "2026-06-05T13:25:12.916959-04:00",
+  "generated_at_et": "Friday, June 05, 2026 01:42 PM ET",
+  "generated_at_iso": "2026-06-05T13:42:48.075712-04:00",
   "current_day": "Friday",
   "current_date": "June 05, 2026",
-  "current_time": "01:25 PM ET",
+  "current_time": "01:42 PM ET",
   "next_event": {
     "key": "core_cpi",
     "label": "Core CPI",
@@ -14,7 +14,7 @@
     "release_date": "June 10, 2026",
     "release_time": "8:30 AM ET",
     "release_iso": "2026-06-10T08:30:00-04:00",
-    "hours_until_release": 115,
+    "hours_until_release": 114,
     "schedule_source": "seeded_official_schedule",
     "house_forecast": "0.187% m/m | 2.80% y/y",
     "kalshi_consensus": "0.216% m/m | 2.86% y/y",
@@ -22,7 +22,7 @@
     "risk": "elevated surprise risk",
     "status": "live",
     "notes": "Model output from core CPI workflow and surprise model.",
-    "model_source": "macro_forecasting\\output\\core_cpi_forecast_latest.json",
+    "model_source": "macro_forecasting/output/core_cpi_forecast_latest.json",
     "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26may",
     "release_source_url": "https://www.bls.gov/news.release/cpi.toc.htm",
     "consensus_review": {
@@ -44,7 +44,7 @@
       "release_date": "June 10, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-10T08:30:00-04:00",
-      "hours_until_release": 115,
+      "hours_until_release": 114,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "0.187% m/m | 2.80% y/y",
       "kalshi_consensus": "0.216% m/m | 2.86% y/y",
@@ -52,7 +52,7 @@
       "risk": "elevated surprise risk",
       "status": "live",
       "notes": "Model output from core CPI workflow and surprise model.",
-      "model_source": "macro_forecasting\\output\\core_cpi_forecast_latest.json",
+      "model_source": "macro_forecasting/output/core_cpi_forecast_latest.json",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26may",
       "release_source_url": "https://www.bls.gov/news.release/cpi.toc.htm",
       "consensus_review": {
@@ -73,7 +73,7 @@
       "release_date": "June 11, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-11T08:30:00-04:00",
-      "hours_until_release": 139,
+      "hours_until_release": 138,
       "schedule_source": "weekly_rule",
       "house_forecast": "217,263",
       "kalshi_consensus": "217,950",
@@ -81,7 +81,7 @@
       "risk": "elevated surprise risk",
       "status": "live",
       "notes": "Weekly model output with surprise-risk overlay.",
-      "model_source": "macro_forecasting\\output\\weekly_claims_forecast_latest.json",
+      "model_source": "macro_forecasting/output/weekly_claims_forecast_latest.json",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26jun11",
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "consensus_review": {
@@ -102,7 +102,7 @@
       "release_date": "June 26, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-26T08:30:00-04:00",
-      "hours_until_release": 499,
+      "hours_until_release": 498,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "0.187% m/m | 3.24% y/y",
       "kalshi_consensus": "0.233% m/m",
@@ -138,7 +138,7 @@
       "last_release": "May 2026: 122k",
       "risk": null,
       "status": "live",
-      "notes": "Two-step recursive forecast for the May 2026 ADP release; cached in macro_forecasting\\output\\adp_forecast_latest.json. Some release-month feature inputs were imputed with training medians.",
+      "notes": "Two-step recursive forecast for the May 2026 ADP release; cached in macro_forecasting/output/adp_forecast_latest.json. Some release-month feature inputs were imputed with training medians.",
       "model_source": "macro_forecasting/adp_forecast_kaggle_style.py",
       "kalshi_url": "https://kalshi.com/markets/kxadp-26jun",
       "release_source_url": "https://adpemploymentreport.com/",
@@ -160,7 +160,7 @@
       "release_date": "July 02, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-07-02T08:30:00-04:00",
-      "hours_until_release": 643,
+      "hours_until_release": 642,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "119k",
       "kalshi_consensus": "90k",
@@ -168,7 +168,7 @@
       "risk": "normal surprise risk",
       "status": "live",
       "notes": "NFP surprise model already uses weekly claims features, so the forecast can refresh as claims move.",
-      "model_source": "macro_forecasting\\output\\nfp_surprise_latest.json",
+      "model_source": "macro_forecasting/output/nfp_surprise_latest.json",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26jun",
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
@@ -189,7 +189,7 @@
       "release_date": "July 02, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-07-02T08:30:00-04:00",
-      "hours_until_release": 643,
+      "hours_until_release": 642,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "4.30%",
       "kalshi_consensus": "4.41%",
@@ -197,18 +197,18 @@
       "risk": "elevated surprise risk",
       "status": "review",
       "notes": "Rounded to the market print convention; live model also stores unrounded UR.",
-      "model_source": "macro_forecasting\\output\\ur_surprise_latest.json",
+      "model_source": "macro_forecasting/output/ur_surprise_latest.json",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26jun",
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": true,
-        "gap_value": -0.10967741935483932,
-        "gap_display": "-0.110 pp",
+        "gap_value": -0.1086642599277976,
+        "gap_display": "-0.109 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "below Kalshi",
         "label": "Review required",
-        "message": "Unemployment Rate house forecast is -0.110 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
+        "message": "Unemployment Rate house forecast is -0.109 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
         "news_query": "June 2026 jobs report BLS forecast adjustment survey",
         "news_search_url": "https://news.google.com/search?q=June+2026+jobs+report+BLS+forecast+adjustment+survey",
         "official_guidance": [
@@ -222,9 +222,9 @@
         "guidance_hit_count": 0,
         "news_headlines": [
           {
-            "title": "Monthly Retail Trade - Sales Report - Census.gov",
-            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBTZ0xCM0k1TjhISk1PSHVjZmNkRkluTlhWVXFXTzRXWEY5ek02S0ZKT3NBbzgtNVVPdmN5ZDc1ZzQ5QzBjd0lOUW50RmxRVnlfUnc?oc=5",
-            "published": "Thu, 14 May 2026 07:00:00 GMT"
+            "title": "Challenger Predicts Summer Jobs for Teens Will Fall to Lowest Pace on Record - Challenger, Gray & Christmas, Inc.",
+            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPSlpqY21tN2k5N1lDQ0JHcGpwOUNsaU4tcUpCWUVOQjVPZldjRk94NGtKY19WdHh4R1V6V0U4X2lzVHlzUkxzR1pkZzBEbkZxMjZZVXFLYmRHT2pHS3c0QnMyTlcwOUVyeGIxZy1Qcm1SMDc0TlRwQ3JTd05tZHdwcUdzR3I5NzA1R2l2TDg5bUpPOG9LM3pQc0xEdVBmeEZaZXdIRlpvTWJ3U1FOMmR3czJuYw?oc=5",
+            "published": "Wed, 20 May 2026 07:00:00 GMT"
           },
           {
             "title": "Signs of Life - The Economic Policy Innovation Center",
@@ -237,9 +237,9 @@
             "published": "Wed, 11 Feb 2026 08:00:00 GMT"
           },
           {
-            "title": "US job growth likely picked up in January; unemployment rate forecast steady at 4.4% - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQjFJSElZLWk1SDdvYkNPenhWQ3dMVmo0eHhfLV90WldHSi1WUW91Qm1GbVJSOUc5MjhkRnFMNGJoc1pBcUtocEtuNG9DQ3J4RHBicS1mN2g5Nmo4WXRlTnZyT0Y4S2k5a3pmaDBJdkN3VGdFMEowYU1tVmhTSFdMS1BnV2lKejRvd0RuYnlDeFdpS1BQaEhEQUNvTFc4dm1GVzVOUUZEWmgzUU1HdkhDeFZIbE1sU0ZMbFYzOQ?oc=5",
-            "published": "Wed, 11 Feb 2026 08:00:00 GMT"
+            "title": "Florida Job Openings and Labor Turnover \u2014 December 2025 - Bureau of Labor Statistics (.gov)",
+            "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUUNudERhYlc2YkdlQUR0MEhGMTFOVjUyRmJETGtDUUJoakMxaGM0d1lNakpHblFpeUVMR0xDYlI3SjRvbnRrYXl3TWx2QTB6dGVsa2Z0MjVrTEdEQnhhaklsUE5xNWZyWTlFUzMzejVVVENpVnJ6OHpHR1AwclIyWlpHdnRDSUplR0FNaXkwaTY?oc=5",
+            "published": "Tue, 24 Feb 2026 08:00:00 GMT"
           }
         ]
       }
