@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -24,7 +24,7 @@
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Macro Forecast Schedule by Chirag Mirani">
-    <meta property="og:description" content="House forecasts vs live Kalshi consensus for the week's biggest US macro releases — CPI, PCE, NFP, ADP, UR, jobless claims.">
+    <meta property="og:description" content="House forecasts vs live Kalshi consensus for the week's biggest US macro releases â€” CPI, PCE, NFP, ADP, UR, jobless claims.">
     <meta property="og:url" content="https://chiragmirani.github.io/macro-dashboard/">
     <meta property="og:site_name" content="Chirag Mirani Macro Dashboard">
     <meta property="og:image" content="https://chiragmirani.github.io/macro-dashboard/social-preview.png">
@@ -53,7 +53,7 @@
         {
           "@type": "Dataset",
           "name": "US Macro Release Forecasts and Kalshi Consensus",
-          "description": "Per-release table of US macroeconomic data prints (Core CPI, Core PCE, NFP, ADP, Unemployment Rate, Weekly Jobless Claims) with house model forecasts, live Kalshi market-implied consensus, last actual release values, and a model-estimated surprise-risk label.",
+          "description": "Per-release table of US macroeconomic data prints (Core CPI, Core PCE, NFP, ADP, Unemployment Rate, Weekly Jobless Claims) with house model forecasts, live Kalshi market-implied consensus, latest actual release values, and a model-estimated surprise-risk label.",
           "creator": {"@type": "Person", "name": "Chirag Mirani"},
           "license": "https://creativecommons.org/licenses/by/4.0/",
           "isAccessibleForFree": true,
@@ -104,7 +104,7 @@
       <section class="table-section">
         <div class="table-wrap">
           <table>
-            <caption class="sr-only">Upcoming US macroeconomic data releases with house forecasts, live Kalshi consensus, last release values, and surprise-risk labels.</caption>
+            <caption class="sr-only">Upcoming US macroeconomic data releases with house forecasts, live Kalshi consensus, latest actual values, and surprise-risk labels.</caption>
             <thead>
               <tr>
                 <th>Release</th>
@@ -112,7 +112,7 @@
                 <th>Releases</th>
                 <th>House forecast</th>
                 <th>Kalshi consensus</th>
-                <th>Last release</th>
+                <th>Latest actual</th>
                 <th title="Model-estimated probability that the print misses consensus by a wide margin. 'Elevated surprise risk' = high probability of a big miss; 'normal' = print likely lands near consensus.">Surprise risk</th>
                 <th>Status</th>
               </tr>
@@ -134,7 +134,7 @@
                     {{ event.kalshi_consensus or "n/a" }}
                   {% endif %}
                 </td>
-                <td data-label="Last release">
+                <td data-label="Latest actual">
                   {% if event.release_source_url and event.last_release %}
                     <a href="{{ event.release_source_url }}" target="_blank" rel="noopener">{{ event.last_release }}</a>
                   {% else %}
@@ -193,3 +193,4 @@
     </main>
   </body>
 </html>
+

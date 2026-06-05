@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import csv
 import io
@@ -888,7 +888,7 @@ def build_adp_event(now_et: datetime) -> ReleaseEvent:
     elif parsed:
         notes = "ADP one-step forecast pulled from the latest saved console output."
     else:
-        notes = "ADP forecast unavailable — run macro_site/build_adp_forecast.py to refresh."
+        notes = "ADP forecast unavailable â€” run macro_site/build_adp_forecast.py to refresh."
     kalshi_line, kalshi_link = kalshi_for("adp")
     if not kalshi_line:
         kalshi_line = "no live Kalshi market found"
@@ -938,6 +938,10 @@ def build_nfp_event(now_et: datetime) -> ReleaseEvent:
         house_value=house_value,
         kalshi_value=kalshi_value_for("nfp"),
     )
+    last_release = load_nfp_last_release()
+    notes = "NFP surprise model already uses weekly claims features, so the forecast can refresh as claims move."
+    if last_release:
+        notes = f"Latest BLS actual: {last_release}. {notes}"
     return ReleaseEvent(
         key="nfp",
         label="NFP",
@@ -948,10 +952,10 @@ def build_nfp_event(now_et: datetime) -> ReleaseEvent:
         schedule_source=source,
         house_forecast=house,
         kalshi_consensus=kalshi_line,
-        last_release=load_nfp_last_release(),
+        last_release=last_release,
         risk=humanize_risk(risk),
         status=event_status_with_review(review, house),
-        notes="NFP surprise model already uses weekly claims features, so the forecast can refresh as claims move.",
+        notes=notes,
         model_source=str(NFP_SURPRISE.relative_to(BASE_DIR)) if NFP_SURPRISE.exists() else None,
         kalshi_url=kalshi_link,
         consensus_review=review,
@@ -977,6 +981,10 @@ def build_ur_event(now_et: datetime) -> ReleaseEvent:
         house_value=house_value,
         kalshi_value=kalshi_value_for("ur"),
     )
+    last_release = load_ur_last_release()
+    notes = "Rounded to the market print convention; live model also stores unrounded UR."
+    if last_release:
+        notes = f"Latest BLS actual: {last_release}. {notes}"
     return ReleaseEvent(
         key="ur",
         label="Unemployment Rate",
@@ -987,10 +995,10 @@ def build_ur_event(now_et: datetime) -> ReleaseEvent:
         schedule_source=source,
         house_forecast=house,
         kalshi_consensus=kalshi_line,
-        last_release=load_ur_last_release(),
+        last_release=last_release,
         risk=humanize_risk(risk),
         status=event_status_with_review(review, house),
-        notes="Rounded to the market print convention; live model also stores unrounded UR.",
+        notes=notes,
         model_source=str(UR_SURPRISE.relative_to(BASE_DIR)) if UR_SURPRISE.exists() else None,
         kalshi_url=kalshi_link,
         consensus_review=review,
@@ -1070,7 +1078,7 @@ def _render_llms_txt(payload: dict[str, Any]) -> str:
     ]
     for ev in payload.get("events", []):
         bits = [
-            f"- **{ev['label']}** ({ev['group']}) — releases {ev['release_day']}, {ev['release_date']} at {ev['release_time']}.",
+            f"- **{ev['label']}** ({ev['group']}) â€” releases {ev['release_day']}, {ev['release_date']} at {ev['release_time']}.",
             f"  House forecast: {ev.get('house_forecast') or 'n/a'}.",
             f"  Kalshi consensus: {ev.get('kalshi_consensus') or 'n/a'}.",
             f"  Last release: {ev.get('last_release') or 'n/a'}.",
@@ -1158,3 +1166,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

@@ -2,34 +2,34 @@
 
 > Live US macroeconomic release calendar with house model forecasts and Kalshi market consensus, maintained by Chirag Mirani.
 
-Updated: Friday, June 05, 2026 01:42 PM ET
+Updated: Friday, June 05, 2026 07:34 PM ET
 Machine-readable feed: https://chiragmirani.github.io/macro-dashboard/dashboard_data.json
 
 ## Tracked releases
 
-- **Core CPI** (Inflation) — releases Wednesday, June 10, 2026 at 8:30 AM ET.
+- **Core CPI** (Inflation) â€” releases Wednesday, June 10, 2026 at 8:30 AM ET.
   House forecast: 0.187% m/m | 2.80% y/y.
-  Kalshi consensus: 0.216% m/m | 2.86% y/y.
+  Kalshi consensus: 0.152% m/m | 2.89% y/y.
   Last release: April 2026: 0.376% m/m, 2.74% y/y.
-- **Weekly Claims** (Labor) — releases Thursday, June 11, 2026 at 8:30 AM ET.
+- **Weekly Claims** (Labor) â€” releases Thursday, June 11, 2026 at 8:30 AM ET.
   House forecast: 217,263.
-  Kalshi consensus: 217,950.
+  Kalshi consensus: 217,900.
   Last release: Week ending May 09, 2026: 211,000.
-- **Core PCE** (Inflation) — releases Friday, June 26, 2026 at 8:30 AM ET.
+- **Core PCE** (Inflation) â€” releases Friday, June 26, 2026 at 8:30 AM ET.
   House forecast: 0.187% m/m | 3.24% y/y.
   Kalshi consensus: 0.233% m/m.
   Last release: April 2026: 0.239% m/m, 3.29% y/y.
-- **ADP** (Labor) — releases Wednesday, July 01, 2026 at 8:15 AM ET.
+- **ADP** (Labor) â€” releases Wednesday, July 01, 2026 at 8:15 AM ET.
   House forecast: 44k.
   Kalshi consensus: 75k.
   Last release: May 2026: 122k.
-- **NFP** (Labor) — releases Thursday, July 02, 2026 at 8:30 AM ET.
+- **NFP** (Labor) â€” releases Thursday, July 02, 2026 at 8:30 AM ET.
   House forecast: 119k.
-  Kalshi consensus: 90k.
+  Kalshi consensus: 104k.
   Last release: May 2026: 172k.
-- **Unemployment Rate** (Labor) — releases Thursday, July 02, 2026 at 8:30 AM ET.
+- **Unemployment Rate** (Labor) â€” releases Thursday, July 02, 2026 at 8:30 AM ET.
   House forecast: 4.30%.
-  Kalshi consensus: 4.41%.
+  Kalshi consensus: 4.39%.
   Last release: May 2026: 4.30%.
 
 ## How to cite
