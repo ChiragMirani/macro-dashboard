@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13T08:47:56",
+  "generated_at": "2026-06-05T12:50:40",
   "date": "April 2026",
   "reporting_month": "April 2026",
   "data_month": "2026-04-01",
@@ -21,11 +21,11 @@
     "annualized_pct": 2.24
   },
   "expected_core_pce": {
-    "yoy_pct": 3.2,
+    "yoy_pct": 3.24,
     "index_source": "FRED API",
-    "previous_month_index": 129.279,
+    "previous_month_index": 129.321,
     "year_ago_index": 125.502,
-    "projected_index": 129.521
+    "projected_index": 129.563
   },
   "wedge_decomposition_bps": {
     "total": -18.9,

@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-05-14T17:58:04+00:00",
+  "generated_at_utc": "2026-06-05T16:33:19+00:00",
   "target_month": "2026-05",
   "latest_actual_month": "2026-04",
-  "final_mom": 0.18697752600473164,
+  "final_mom": 0.18701836844293668,
   "direct_mom": 0.20808764186305878,
-  "bottomup_mom": 0.1658674101464045,
-  "core_implied_yoy": 2.8012730853982593,
+  "bottomup_mom": 0.1659490950228146,
+  "core_implied_yoy": 2.8013149935857795,
   "core_actual_yoy_at_forecast": 2.7433094309685213,
   "components": {
-    "shelter": 0.25455343008037523,
+    "shelter": 0.25474139555565045,
     "core_goods": 0.19230752287923417,
     "supercore": 0.019603521665047315,
     "core_cpi": 0.20808764186305878
@@ -27,9 +27,9 @@
   "model_details": {
     "shelter": {
       "selected_model": "ridge",
-      "raw_forecast": 0.25455343008037523,
-      "final_forecast": 0.25455343008037523,
-      "ensemble_forecast": 0.25455343008037523,
+      "raw_forecast": 0.25474139555565045,
+      "final_forecast": 0.25474139555565045,
+      "ensemble_forecast": 0.25474139555565045,
       "was_clipped": false,
       "gc_lo": null,
       "gc_hi": null
