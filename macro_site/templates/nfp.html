@@ -38,7 +38,7 @@
           <div>
             <p class="eyebrow">Establishment survey &middot; {{ payload.nfp_breakdown.period }} &middot; Updated {{ payload.generated_at_et }}</p>
             <h1 id="nfp-breakdown-title">NFP Sector Momentum</h1>
-            <p>{{ payload.nfp_breakdown.source }}. Changes are net payroll changes over each window, in thousands of jobs.</p>
+            <p>{{ payload.nfp_breakdown.source }}. Top rows show household/wage rates; payroll rows show month-over-month job changes in thousands.</p>
           </div>
           <div class="nfp-headline-stat">
             <span>Headline 1M</span>
@@ -82,7 +82,7 @@
               <span class="summary-label">Last 12 monthly prints</span>
               <h2>Establishment Survey Detail</h2>
             </div>
-            <p>Each cell is the month-over-month payroll change for that CES category, in thousands.</p>
+            <p>UR and participation are CPS household-survey rates; AHE rows are CES wage m/m and y/y changes; payroll rows are CES month-over-month job changes in thousands.</p>
           </div>
           <div class="nfp-history-scroll" role="region" aria-label="Last 12 months of NFP establishment survey changes">
             <div class="nfp-history-grid" style="grid-template-columns: minmax(280px, 1.2fr) repeat({{ payload.nfp_breakdown.history_months | length }}, minmax(74px, 1fr));">
@@ -90,8 +90,8 @@
               {% for month in payload.nfp_breakdown.history_months %}
               <div class="nfp-history-header">{{ month.label }}</div>
               {% endfor %}
-              {% for row in payload.nfp_breakdown.rows %}
-              <div class="nfp-history-category nfp-history-sticky{% if row.is_headline or row.group == 'Aggregate' %} nfp-history-category-key{% endif %}">
+              {% for row in payload.nfp_breakdown.history_rows %}
+              <div class="nfp-history-category nfp-history-sticky{% if row.is_metric %} nfp-history-category-metric{% elif row.is_headline or row.group == 'Aggregate' %} nfp-history-category-key{% endif %}">
                 <strong>{{ row.label }}</strong>
                 <span>{{ row.group }}</span>
               </div>
@@ -141,9 +141,10 @@
       {% endif %}
 
       <footer class="site-foot">
-        <p>Source: U.S. Bureau of Labor Statistics CES establishment survey, seasonally adjusted payroll levels.</p>
+        <p>Source: SQLite store populated from BLS CES establishment survey and CPS household survey series.</p>
         <p class="muted"><a href="./">Back to forecasts</a>.</p>
       </footer>
     </main>
   </body>
 </html>
+

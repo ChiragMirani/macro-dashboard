@@ -1,9 +1,9 @@
-name: Macro Dashboard Daily Refresh
+﻿name: Macro Dashboard Daily Refresh
 
 on:
   workflow_dispatch:
   schedule:
-    # Twice on US weekdays — 7:05 AM and 1:05 PM ET (11:05 / 17:05 UTC).
+    # Twice on US weekdays â€” 7:05 AM and 1:05 PM ET (11:05 / 17:05 UTC).
     - cron: "5 11 * * 1-5"
     - cron: "5 17 * * 1-5"
 
@@ -36,6 +36,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs macro_forecasting/output/kalshi_consensus_latest.json macro_site/latest_actuals_cache.json
+          git add docs macro_forecasting/output/kalshi_consensus_latest.json macro_site/latest_actuals_cache.json macro_site/nfp_survey_data.db macro_site/nfp_breakdown_cache.json
           git diff --cached --quiet || git commit -m "Refresh macro dashboard"
           git push
+

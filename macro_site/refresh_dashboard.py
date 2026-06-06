@@ -5,6 +5,7 @@ import io
 import json
 import math
 import shutil
+import sqlite3
 import xml.etree.ElementTree as ETREE
 from dataclasses import dataclass
 from datetime import date, datetime, time, timedelta, timezone
@@ -48,6 +49,8 @@ ROOT_CORE_PCE_BRIDGE = BASE_DIR / "cpi_pce_bridge_v2.json"
 REPORT_TABLE = BASE_DIR / "report_table.csv"
 ADP_LOG = BASE_DIR / "adp_run.log"
 LATEST_ACTUAL_CACHE = BASE_DIR / "macro_site" / "latest_actuals_cache.json"
+NFP_BREAKDOWN_CACHE = BASE_DIR / "macro_site" / "nfp_breakdown_cache.json"
+NFP_SURVEY_DB = BASE_DIR / "macro_site" / "nfp_survey_data.db"
 
 ET = ZoneInfo("America/New_York")
 REQUEST_HEADERS = {"User-Agent": "ChiragMiraniMacroDashboard/1.0"}
@@ -87,6 +90,12 @@ NFP_BREAKDOWN_SERIES = [
 ]
 NFP_BREAKDOWN_WINDOWS = [(1, "1M"), (3, "3M"), (6, "6M"), (12, "12M")]
 BLS_BULK_API = "https://api.bls.gov/publicAPI/v2/timeseries/data/"
+BLS_API_KEY = "3178d811e9bd40d680cd4399fe006d5e"
+NFP_METRIC_SERIES = {
+    "ur": "LNS14000000",
+    "participation": "LNS11300000",
+    "ahe": "CES0500000003",
+}
 
 
 @dataclass
@@ -407,6 +416,29 @@ def change_tone(value: float | None) -> str:
         return "negative"
     return "flat"
 
+def fmt_sig_value(value: float | None, sig: int = 3) -> str | None:
+    if value is None or not math.isfinite(value):
+        return None
+    if value == 0:
+        return "0." + "0" * (sig - 1)
+    digits_before = math.floor(math.log10(abs(value))) + 1
+    decimals = max(sig - digits_before, 0)
+    return f"{value:.{decimals}f}"
+
+
+def fmt_sig_pct(value: float | None, sig: int = 3) -> str | None:
+    formatted = fmt_sig_value(value, sig=sig)
+    return f"{formatted}%" if formatted is not None else None
+
+
+def metric_tone(value: float | None, prior: float | None, invert: bool = False) -> str:
+    if value is None or prior is None or not (math.isfinite(value) and math.isfinite(prior)):
+        return "flat"
+    delta = value - prior
+    if invert:
+        delta = -delta
+    return change_tone(delta)
+
 
 def month_label(value: str | None) -> str:
     if not value:
@@ -480,7 +512,7 @@ def fetch_bea_monthly_series(series_code: str) -> pd.Series | None:
 
 def fetch_bls_series(series_id: str) -> pd.Series | None:
     try:
-        response = requests.get(BLS_API.format(series_id=series_id), headers=REQUEST_HEADERS, timeout=60)
+        response = requests.get(BLS_API.format(series_id=series_id) + f"&registrationkey={BLS_API_KEY}", headers=REQUEST_HEADERS, timeout=60)
         response.raise_for_status()
         payload = response.json()
         rows = payload["Results"]["series"][0]["data"]
@@ -535,6 +567,7 @@ def fetch_bls_series_batch(series_ids: list[str], start_year: int, end_year: int
         "seriesid": series_ids,
         "startyear": str(start_year),
         "endyear": str(end_year),
+        "registrationkey": BLS_API_KEY,
     }
     try:
         response = requests.post(BLS_BULK_API, json=payload, headers=REQUEST_HEADERS, timeout=60)
@@ -561,19 +594,220 @@ def nfp_window_change(series: pd.Series, months: int) -> float | None:
     return value if math.isfinite(value) else None
 
 
-def build_nfp_breakdown(now_et: datetime) -> dict[str, Any] | None:
-    series_ids = [series_id for series_id, _, _ in NFP_BREAKDOWN_SERIES]
-    start_year = max(2020, now_et.year - 2)
+def read_nfp_breakdown_cache() -> dict[str, Any] | None:
+    payload = read_json(NFP_BREAKDOWN_CACHE)
+    return payload if isinstance(payload, dict) else None
+
+
+def write_nfp_breakdown_cache(payload: dict[str, Any] | None) -> None:
+    if payload:
+        NFP_BREAKDOWN_CACHE.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+
+
+def nfp_series_metadata() -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for idx, (series_id, label, group) in enumerate(NFP_BREAKDOWN_SERIES):
+        rows.append({
+            "series_id": series_id,
+            "label": label,
+            "group_name": group,
+            "kind": "payroll_level",
+            "unit": "thousands of jobs",
+            "source": "BLS CES establishment survey",
+            "display_order": 100 + idx,
+        })
+    rows.extend([
+        {
+            "series_id": NFP_METRIC_SERIES["ur"],
+            "label": "Unemployment rate",
+            "group_name": "Household survey",
+            "kind": "rate_level",
+            "unit": "%",
+            "source": "BLS CPS household survey",
+            "display_order": 1,
+        },
+        {
+            "series_id": NFP_METRIC_SERIES["participation"],
+            "label": "Labor force participation rate",
+            "group_name": "Household survey",
+            "kind": "rate_level",
+            "unit": "%",
+            "source": "BLS CPS household survey",
+            "display_order": 2,
+        },
+        {
+            "series_id": NFP_METRIC_SERIES["ahe"],
+            "label": "Average hourly earnings",
+            "group_name": "Establishment survey wages",
+            "kind": "ahe_level",
+            "unit": "dollars per hour",
+            "source": "BLS CES establishment survey",
+            "display_order": 3,
+        },
+    ])
+    return rows
+
+
+def connect_nfp_survey_db() -> sqlite3.Connection:
+    NFP_SURVEY_DB.parent.mkdir(parents=True, exist_ok=True)
+    conn = sqlite3.connect(NFP_SURVEY_DB)
+    conn.row_factory = sqlite3.Row
+    conn.executescript(
+        """
+        CREATE TABLE IF NOT EXISTS series (
+            series_id TEXT PRIMARY KEY,
+            label TEXT NOT NULL,
+            group_name TEXT NOT NULL,
+            kind TEXT NOT NULL,
+            unit TEXT NOT NULL,
+            source TEXT NOT NULL,
+            display_order INTEGER NOT NULL
+        );
+        CREATE TABLE IF NOT EXISTS observations (
+            series_id TEXT NOT NULL,
+            month TEXT NOT NULL,
+            value REAL NOT NULL,
+            updated_at_utc TEXT NOT NULL,
+            PRIMARY KEY (series_id, month),
+            FOREIGN KEY (series_id) REFERENCES series(series_id)
+        );
+        CREATE INDEX IF NOT EXISTS idx_nfp_observations_month ON observations(month);
+        """
+    )
+    return conn
+
+
+def upsert_nfp_series_metadata(conn: sqlite3.Connection) -> None:
+    conn.executemany(
+        """
+        INSERT INTO series(series_id, label, group_name, kind, unit, source, display_order)
+        VALUES(:series_id, :label, :group_name, :kind, :unit, :source, :display_order)
+        ON CONFLICT(series_id) DO UPDATE SET
+            label=excluded.label,
+            group_name=excluded.group_name,
+            kind=excluded.kind,
+            unit=excluded.unit,
+            source=excluded.source,
+            display_order=excluded.display_order
+        """,
+        nfp_series_metadata(),
+    )
+
+
+def update_nfp_survey_db_from_bls(now_et: datetime) -> int:
+    series_ids = [row["series_id"] for row in nfp_series_metadata()]
+    # Initial seed is long enough for y/y wages and later chart extensions; each run is idempotent.
+    start_year = max(2010, now_et.year - 15)
     series_map = fetch_bls_series_batch(series_ids, start_year, now_et.year)
     if not series_map:
+        return 0
+
+    updated_at = datetime.now(timezone.utc).isoformat()
+    rows: list[tuple[str, str, float, str]] = []
+    for series_id, series in series_map.items():
+        for dt, value in series.dropna().items():
+            rows.append((series_id, pd.Timestamp(dt).strftime("%Y-%m-01"), float(value), updated_at))
+
+    if not rows:
+        return 0
+    with connect_nfp_survey_db() as conn:
+        upsert_nfp_series_metadata(conn)
+        conn.executemany(
+            """
+            INSERT INTO observations(series_id, month, value, updated_at_utc)
+            VALUES(?, ?, ?, ?)
+            ON CONFLICT(series_id, month) DO UPDATE SET
+                value=excluded.value,
+                updated_at_utc=excluded.updated_at_utc
+            """,
+            rows,
+        )
+        conn.commit()
+    return len(rows)
+
+
+def load_nfp_survey_db_series() -> dict[str, pd.Series]:
+    if not NFP_SURVEY_DB.exists():
+        return {}
+    with connect_nfp_survey_db() as conn:
+        upsert_nfp_series_metadata(conn)
+        frame = pd.read_sql_query(
+            "SELECT series_id, month, value FROM observations ORDER BY series_id, month",
+            conn,
+        )
+        conn.commit()
+    if frame.empty:
+        return {}
+    frame["month"] = pd.to_datetime(frame["month"], errors="coerce")
+    frame["value"] = pd.to_numeric(frame["value"], errors="coerce")
+    frame = frame.dropna(subset=["month", "value"])
+    return {
+        series_id: group.set_index("month")["value"].sort_index().astype(float)
+        for series_id, group in frame.groupby("series_id")
+    }
+
+
+def metric_history_row(
+    *,
+    series: pd.Series | None,
+    label: str,
+    group: str,
+    history_index: list[pd.Timestamp],
+    transform: str,
+    invert_tone: bool = False,
+) -> dict[str, Any] | None:
+    if series is None or series.empty:
         return None
+    series = series.sort_index()
+    if transform == "mom_pct":
+        values = series.pct_change() * 100.0
+    elif transform == "yoy_pct":
+        values = series.pct_change(12) * 100.0
+    else:
+        values = series
+
+    history = []
+    for hist_dt in history_index:
+        value = None
+        prior = None
+        if hist_dt in values.index:
+            raw = float(values.loc[hist_dt])
+            value = raw if math.isfinite(raw) else None
+        prior_dt = hist_dt - pd.DateOffset(months=1)
+        if prior_dt in values.index:
+            raw_prior = float(values.loc[prior_dt])
+            prior = raw_prior if math.isfinite(raw_prior) else None
+        history.append({
+            "label": pd.Timestamp(hist_dt).strftime("%b-%y"),
+            "value": value,
+            "display": fmt_sig_pct(value) or "n/a",
+            "tone": metric_tone(value, prior, invert=invert_tone),
+        })
+
+    latest_value = next((cell["value"] for cell in history if cell.get("value") is not None), None)
+    return {
+        "series_id": "",
+        "label": label,
+        "group": group,
+        "is_metric": True,
+        "history": history,
+        "latest_value": latest_value,
+        "latest": fmt_sig_pct(latest_value) or "n/a",
+    }
+
+
+def build_nfp_breakdown(now_et: datetime) -> dict[str, Any] | None:
+    update_nfp_survey_db_from_bls(now_et)
+    series_map = load_nfp_survey_db_series()
+    if not series_map:
+        return read_nfp_breakdown_cache()
 
     headline_series = series_map.get("CES0000000001")
     latest_dt = headline_series.index[-1] if headline_series is not None and not headline_series.empty else None
     if latest_dt is None:
         latest_candidates = [series.index[-1] for series in series_map.values() if series is not None and not series.empty]
         if not latest_candidates:
-            return None
+            return read_nfp_breakdown_cache()
         latest_dt = max(latest_candidates)
 
     history_source = headline_series if headline_series is not None and not headline_series.empty else None
@@ -587,6 +821,16 @@ def build_nfp_breakdown(now_et: datetime) -> dict[str, Any] | None:
         {"label": pd.Timestamp(dt).strftime("%b-%y"), "iso": pd.Timestamp(dt).strftime("%Y-%m")}
         for dt in history_index
     ]
+
+    metric_rows = []
+    for row in [
+        metric_history_row(series=series_map.get(NFP_METRIC_SERIES["ur"]), label="Unemployment rate", group="Household survey", history_index=history_index, transform="level", invert_tone=True),
+        metric_history_row(series=series_map.get(NFP_METRIC_SERIES["participation"]), label="Labor force participation rate", group="Household survey", history_index=history_index, transform="level"),
+        metric_history_row(series=series_map.get(NFP_METRIC_SERIES["ahe"]), label="Avg hourly earnings m/m", group="Establishment survey wages", history_index=history_index, transform="mom_pct"),
+        metric_history_row(series=series_map.get(NFP_METRIC_SERIES["ahe"]), label="Avg hourly earnings y/y", group="Establishment survey wages", history_index=history_index, transform="yoy_pct"),
+    ]:
+        if row is not None:
+            metric_rows.append(row)
 
     rows: list[dict[str, Any]] = []
     for series_id, label, group in NFP_BREAKDOWN_SERIES:
@@ -631,6 +875,7 @@ def build_nfp_breakdown(now_et: datetime) -> dict[str, Any] | None:
             "latest_date": pd.Timestamp(series.index[-1]).strftime("%B %Y"),
             "is_headline": series_id == "CES0000000001",
             "is_major": group == "Major sector",
+            "is_metric": False,
             "windows": windows,
             "history": history,
             "change_1m_value": change_values.get("change_1m"),
@@ -642,7 +887,7 @@ def build_nfp_breakdown(now_et: datetime) -> dict[str, Any] | None:
         })
 
     if not rows:
-        return None
+        return read_nfp_breakdown_cache()
 
     max_abs_1m = max(abs(row["change_1m_value"] or 0.0) for row in rows) or 1.0
     for row in rows:
@@ -654,9 +899,10 @@ def build_nfp_breakdown(now_et: datetime) -> dict[str, Any] | None:
     drag = min(major_rows, key=lambda row: row["change_1m_value"], default=None)
     positive_count = sum(1 for row in major_rows if (row["change_1m_value"] or 0) > 0)
 
-    return {
+    payload = {
         "period": pd.Timestamp(latest_dt).strftime("%B %Y"),
-        "source": "BLS CES seasonally adjusted payroll levels",
+        "source": "SQLite store populated from BLS CES establishment survey and CPS household survey series",
+        "database": str(NFP_SURVEY_DB.relative_to(BASE_DIR)),
         "headline": headline,
         "breadth": {
             "positive": positive_count,
@@ -665,11 +911,14 @@ def build_nfp_breakdown(now_et: datetime) -> dict[str, Any] | None:
         },
         "biggest_gain": gain,
         "biggest_drag": drag,
+        "metric_rows": metric_rows,
+        "history_rows": metric_rows + rows,
         "rows": rows,
         "history_months": history_months,
         "windows": [label for _, label in NFP_BREAKDOWN_WINDOWS],
     }
-
+    write_nfp_breakdown_cache(payload)
+    return payload
 def load_core_cpi_last_release_local() -> str | None:
     if not REPORT_TABLE.exists():
         return None

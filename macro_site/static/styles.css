@@ -665,3 +665,7 @@ tbody tr:last-child td { border-bottom: 0; }
     font-size: 0.78rem;
   }
 }
+
+.nfp-history-category-metric {
+  background: #eef4ff;
+}

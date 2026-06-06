@@ -32,16 +32,748 @@
         <a href="track-record.html">Track record</a>
       </nav>
 
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Establishment survey</p>
-          <h1>NFP Sector Momentum</h1>
-          <p class="tr-blurb">NFP breakdown is unavailable because the BLS CES pull did not return usable data.</p>
+      <section class="nfp-breakdown-section nfp-breakdown-page" aria-labelledby="nfp-breakdown-title">
+        <div class="nfp-breakdown-hero">
+          <div>
+            <p class="eyebrow">Establishment survey &middot; May 2026 &middot; Updated Friday, June 05, 2026 09:27 PM ET</p>
+            <h1 id="nfp-breakdown-title">NFP Sector Momentum</h1>
+            <p>SQLite store populated from BLS CES establishment survey and CPS household survey series. Top rows show household/wage rates; payroll rows show month-over-month job changes in thousands.</p>
+          </div>
+          <div class="nfp-headline-stat">
+            <span>Headline 1M</span>
+            <strong class="positive">+172k</strong>
+            <small>159.0m payrolls</small>
+          </div>
+        </div>
+
+        <div class="nfp-stat-grid">
+          <div class="nfp-stat-card">
+            <span>Major-sector breadth</span>
+            <strong>10/14</strong>
+            <small>positive 1M changes</small>
+          </div>
+          <div class="nfp-stat-card">
+            <span>Largest 1M gain</span>
+            <strong class="positive">+70.0k</strong>
+            <small>Leisure and hospitality</small>
+          </div>
+          <div class="nfp-stat-card">
+            <span>Largest 1M drag</span>
+            <strong class="negative">-22.0k</strong>
+            <small>Financial activities</small>
+          </div>
+          <div class="nfp-stat-card">
+            <span>Latest official month</span>
+            <strong>May 2026</strong>
+            <small>BLS CES table pull</small>
+          </div>
+        </div>
+
+
+        <div class="nfp-history-panel">
+          <div class="nfp-history-title">
+            <div>
+              <span class="summary-label">Last 12 monthly prints</span>
+              <h2>Establishment Survey Detail</h2>
+            </div>
+            <p>UR and participation are CPS household-survey rates; AHE rows are CES wage m/m and y/y changes; payroll rows are CES month-over-month job changes in thousands.</p>
+          </div>
+          <div class="nfp-history-scroll" role="region" aria-label="Last 12 months of NFP establishment survey changes">
+            <div class="nfp-history-grid" style="grid-template-columns: minmax(280px, 1.2fr) repeat(12, minmax(74px, 1fr));">
+              <div class="nfp-history-header nfp-history-sticky">Category</div>
+              <div class="nfp-history-header">May-26</div>
+              <div class="nfp-history-header">Apr-26</div>
+              <div class="nfp-history-header">Mar-26</div>
+              <div class="nfp-history-header">Feb-26</div>
+              <div class="nfp-history-header">Jan-26</div>
+              <div class="nfp-history-header">Dec-25</div>
+              <div class="nfp-history-header">Nov-25</div>
+              <div class="nfp-history-header">Oct-25</div>
+              <div class="nfp-history-header">Sep-25</div>
+              <div class="nfp-history-header">Aug-25</div>
+              <div class="nfp-history-header">Jul-25</div>
+              <div class="nfp-history-header">Jun-25</div>
+              <div class="nfp-history-category nfp-history-sticky nfp-history-category-metric">
+                <strong>Unemployment rate</strong>
+                <span>Household survey</span>
+              </div>
+              <div class="nfp-history-cell flat">4.30%</div>
+              <div class="nfp-history-cell flat">4.30%</div>
+              <div class="nfp-history-cell positive">4.30%</div>
+              <div class="nfp-history-cell negative">4.40%</div>
+              <div class="nfp-history-cell positive">4.30%</div>
+              <div class="nfp-history-cell positive">4.40%</div>
+              <div class="nfp-history-cell flat">4.50%</div>
+              <div class="nfp-history-cell flat">n/a</div>
+              <div class="nfp-history-cell negative">4.40%</div>
+              <div class="nfp-history-cell flat">4.30%</div>
+              <div class="nfp-history-cell negative">4.30%</div>
+              <div class="nfp-history-cell positive">4.10%</div>
+              <div class="nfp-history-category nfp-history-sticky nfp-history-category-metric">
+                <strong>Labor force participation rate</strong>
+                <span>Household survey</span>
+              </div>
+              <div class="nfp-history-cell flat">61.8%</div>
+              <div class="nfp-history-cell negative">61.8%</div>
+              <div class="nfp-history-cell negative">61.9%</div>
+              <div class="nfp-history-cell negative">62.0%</div>
+              <div class="nfp-history-cell negative">62.1%</div>
+              <div class="nfp-history-cell negative">62.4%</div>
+              <div class="nfp-history-cell flat">62.5%</div>
+              <div class="nfp-history-cell flat">n/a</div>
+              <div class="nfp-history-cell positive">62.5%</div>
+              <div class="nfp-history-cell positive">62.3%</div>
+              <div class="nfp-history-cell negative">62.2%</div>
+              <div class="nfp-history-cell negative">62.3%</div>
+              <div class="nfp-history-category nfp-history-sticky nfp-history-category-metric">
+                <strong>Avg hourly earnings m/m</strong>
+                <span>Establishment survey wages</span>
+              </div>
+              <div class="nfp-history-cell positive">0.321%</div>
+              <div class="nfp-history-cell negative">0.161%</div>
+              <div class="nfp-history-cell negative">0.215%</div>
+              <div class="nfp-history-cell negative">0.323%</div>
+              <div class="nfp-history-cell positive">0.351%</div>
+              <div class="nfp-history-cell negative">0.0541%</div>
+              <div class="nfp-history-cell negative">0.407%</div>
+              <div class="nfp-history-cell positive">0.409%</div>
+              <div class="nfp-history-cell negative">0.218%</div>
+              <div class="nfp-history-cell positive">0.411%</div>
+              <div class="nfp-history-cell positive">0.303%</div>
+              <div class="nfp-history-cell negative">0.221%</div>
+              <div class="nfp-history-category nfp-history-sticky nfp-history-category-metric">
+                <strong>Avg hourly earnings y/y</strong>
+                <span>Establishment survey wages</span>
+              </div>
+              <div class="nfp-history-cell negative">3.45%</div>
+              <div class="nfp-history-cell positive">3.57%</div>
+              <div class="nfp-history-cell negative">3.43%</div>
+              <div class="nfp-history-cell positive">3.70%</div>
+              <div class="nfp-history-cell negative">3.66%</div>
+              <div class="nfp-history-cell negative">3.73%</div>
+              <div class="nfp-history-cell positive">3.93%</div>
+              <div class="nfp-history-cell positive">3.92%</div>
+              <div class="nfp-history-cell negative">3.85%</div>
+              <div class="nfp-history-cell positive">3.98%</div>
+              <div class="nfp-history-cell positive">3.96%</div>
+              <div class="nfp-history-cell negative">3.86%</div>
+              <div class="nfp-history-category nfp-history-sticky nfp-history-category-key">
+                <strong>Total nonfarm</strong>
+                <span>Headline</span>
+              </div>
+              <div class="nfp-history-cell positive">+172k</div>
+              <div class="nfp-history-cell positive">+179k</div>
+              <div class="nfp-history-cell positive">+214k</div>
+              <div class="nfp-history-cell negative">-156k</div>
+              <div class="nfp-history-cell positive">+160k</div>
+              <div class="nfp-history-cell negative">-17.0k</div>
+              <div class="nfp-history-cell positive">+41.0k</div>
+              <div class="nfp-history-cell negative">-140k</div>
+              <div class="nfp-history-cell positive">+76.0k</div>
+              <div class="nfp-history-cell negative">-70.0k</div>
+              <div class="nfp-history-cell positive">+64.0k</div>
+              <div class="nfp-history-cell negative">-20.0k</div>
+              <div class="nfp-history-category nfp-history-sticky nfp-history-category-key">
+                <strong>Total private</strong>
+                <span>Aggregate</span>
+              </div>
+              <div class="nfp-history-cell positive">+120k</div>
+              <div class="nfp-history-cell positive">+177k</div>
+              <div class="nfp-history-cell positive">+202k</div>
+              <div class="nfp-history-cell negative">-148k</div>
+              <div class="nfp-history-cell positive">+180k</div>
+              <div class="nfp-history-cell negative">-7.0k</div>
+              <div class="nfp-history-cell positive">+72.0k</div>
+              <div class="nfp-history-cell positive">+13.0k</div>
+              <div class="nfp-history-cell positive">+68.0k</div>
+              <div class="nfp-history-cell negative">-20.0k</div>
+              <div class="nfp-history-cell positive">+65.0k</div>
+              <div class="nfp-history-cell negative">-45.0k</div>
+              <div class="nfp-history-category nfp-history-sticky nfp-history-category-key">
+                <strong>Goods-producing</strong>
+                <span>Aggregate</span>
+              </div>
+              <div class="nfp-history-cell positive">+28.0k</div>
+              <div class="nfp-history-cell positive">+14.0k</div>
+              <div class="nfp-history-cell positive">+33.0k</div>
+              <div class="nfp-history-cell negative">-21.0k</div>
+              <div class="nfp-history-cell positive">+45.0k</div>
+              <div class="nfp-history-cell negative">-21.0k</div>
+              <div class="nfp-history-cell positive">+25.0k</div>
+              <div class="nfp-history-cell negative">-20.0k</div>
+              <div class="nfp-history-cell positive">+11.0k</div>
+              <div class="nfp-history-cell negative">-35.0k</div>
+              <div class="nfp-history-cell negative">-23.0k</div>
+              <div class="nfp-history-cell negative">-19.0k</div>
+              <div class="nfp-history-category nfp-history-sticky nfp-history-category-key">
+                <strong>Private service-providing</strong>
+                <span>Aggregate</span>
+              </div>
+              <div class="nfp-history-cell positive">+92.0k</div>
+              <div class="nfp-history-cell positive">+163k</div>
+              <div class="nfp-history-cell positive">+169k</div>
+              <div class="nfp-history-cell negative">-127k</div>
+              <div class="nfp-history-cell positive">+135k</div>
+              <div class="nfp-history-cell positive">+14.0k</div>
+              <div class="nfp-history-cell positive">+47.0k</div>
+              <div class="nfp-history-cell positive">+33.0k</div>
+              <div class="nfp-history-cell positive">+57.0k</div>
+              <div class="nfp-history-cell positive">+15.0k</div>
+              <div class="nfp-history-cell positive">+88.0k</div>
+              <div class="nfp-history-cell negative">-26.0k</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Mining and logging</strong>
+                <span>Major sector</span>
+              </div>
+              <div class="nfp-history-cell positive">+4.0k</div>
+              <div class="nfp-history-cell positive">+5.0k</div>
+              <div class="nfp-history-cell positive">+3.0k</div>
+              <div class="nfp-history-cell negative">-1.0k</div>
+              <div class="nfp-history-cell negative">-2.0k</div>
+              <div class="nfp-history-cell negative">-1.0k</div>
+              <div class="nfp-history-cell negative">-1.0k</div>
+              <div class="nfp-history-cell positive">+1.0k</div>
+              <div class="nfp-history-cell negative">-2.0k</div>
+              <div class="nfp-history-cell negative">-3.0k</div>
+              <div class="nfp-history-cell negative">-6.0k</div>
+              <div class="nfp-history-cell negative">-2.0k</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Construction</strong>
+                <span>Major sector</span>
+              </div>
+              <div class="nfp-history-cell positive">+17.0k</div>
+              <div class="nfp-history-cell positive">+9.0k</div>
+              <div class="nfp-history-cell positive">+15.0k</div>
+              <div class="nfp-history-cell negative">-21.0k</div>
+              <div class="nfp-history-cell positive">+45.0k</div>
+              <div class="nfp-history-cell negative">-7.0k</div>
+              <div class="nfp-history-cell positive">+36.0k</div>
+              <div class="nfp-history-cell negative">-12.0k</div>
+              <div class="nfp-history-cell positive">+16.0k</div>
+              <div class="nfp-history-cell negative">-22.0k</div>
+              <div class="nfp-history-cell negative">-6.0k</div>
+              <div class="nfp-history-cell negative">-2.0k</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Manufacturing</strong>
+                <span>Major sector</span>
+              </div>
+              <div class="nfp-history-cell positive">+7.0k</div>
+              <div class="nfp-history-cell flat">+0.0k</div>
+              <div class="nfp-history-cell positive">+15.0k</div>
+              <div class="nfp-history-cell positive">+1.0k</div>
+              <div class="nfp-history-cell positive">+2.0k</div>
+              <div class="nfp-history-cell negative">-13.0k</div>
+              <div class="nfp-history-cell negative">-10.0k</div>
+              <div class="nfp-history-cell negative">-9.0k</div>
+              <div class="nfp-history-cell negative">-3.0k</div>
+              <div class="nfp-history-cell negative">-10.0k</div>
+              <div class="nfp-history-cell negative">-11.0k</div>
+              <div class="nfp-history-cell negative">-15.0k</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Wholesale trade</strong>
+                <span>Major sector</span>
+              </div>
+              <div class="nfp-history-cell negative">-3.7k</div>
+              <div class="nfp-history-cell negative">-1.8k</div>
+              <div class="nfp-history-cell negative">-1.7k</div>
+              <div class="nfp-history-cell positive">+8.4k</div>
+              <div class="nfp-history-cell positive">+2.1k</div>
+              <div class="nfp-history-cell negative">-5.7k</div>
+              <div class="nfp-history-cell negative">-6.4k</div>
+              <div class="nfp-history-cell positive">+2.8k</div>
+              <div class="nfp-history-cell positive">+8.8k</div>
+              <div class="nfp-history-cell negative">-8.6k</div>
+              <div class="nfp-history-cell negative">-5.7k</div>
+              <div class="nfp-history-cell negative">-10.4k</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Retail trade</strong>
+                <span>Major sector</span>
+              </div>
+              <div class="nfp-history-cell negative">-1.1k</div>
+              <div class="nfp-history-cell positive">+23.5k</div>
+              <div class="nfp-history-cell positive">+9.6k</div>
+              <div class="nfp-history-cell negative">-0.3k</div>
+              <div class="nfp-history-cell positive">+12.7k</div>
+              <div class="nfp-history-cell negative">-23.6k</div>
+              <div class="nfp-history-cell negative">-0.9k</div>
+              <div class="nfp-history-cell negative">-15.4k</div>
+              <div class="nfp-history-cell positive">+13.1k</div>
+              <div class="nfp-history-cell positive">+10.1k</div>
+              <div class="nfp-history-cell positive">+4.7k</div>
+              <div class="nfp-history-cell negative">-14.5k</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Transportation and warehousing</strong>
+                <span>Major sector</span>
+              </div>
+              <div class="nfp-history-cell positive">+0.6k</div>
+              <div class="nfp-history-cell positive">+39.3k</div>
+              <div class="nfp-history-cell positive">+25.1k</div>
+              <div class="nfp-history-cell negative">-45.5k</div>
+              <div class="nfp-history-cell positive">+22.6k</div>
+              <div class="nfp-history-cell negative">-4.8k</div>
+              <div class="nfp-history-cell negative">-58.9k</div>
+              <div class="nfp-history-cell positive">+0.6k</div>
+              <div class="nfp-history-cell negative">-39.3k</div>
+              <div class="nfp-history-cell negative">-1.6k</div>
+              <div class="nfp-history-cell positive">+3.9k</div>
+              <div class="nfp-history-cell flat">+0.0k</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Utilities</strong>
+                <span>Major sector</span>
+              </div>
+              <div class="nfp-history-cell positive">+1.4k</div>
+              <div class="nfp-history-cell positive">+1.0k</div>
+              <div class="nfp-history-cell negative">-0.5k</div>
+              <div class="nfp-history-cell positive">+1.6k</div>
+              <div class="nfp-history-cell positive">+0.2k</div>
+              <div class="nfp-history-cell positive">+0.7k</div>
+              <div class="nfp-history-cell positive">+1.9k</div>
+              <div class="nfp-history-cell positive">+0.5k</div>
+              <div class="nfp-history-cell flat">+0.0k</div>
+              <div class="nfp-history-cell negative">-1.2k</div>
+              <div class="nfp-history-cell positive">+0.4k</div>
+              <div class="nfp-history-cell positive">+0.5k</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Information</strong>
+                <span>Major sector</span>
+              </div>
+              <div class="nfp-history-cell negative">-2.0k</div>
+              <div class="nfp-history-cell negative">-8.0k</div>
+              <div class="nfp-history-cell positive">+1.0k</div>
+              <div class="nfp-history-cell negative">-23.0k</div>
+              <div class="nfp-history-cell negative">-27.0k</div>
+              <div class="nfp-history-cell negative">-6.0k</div>
+              <div class="nfp-history-cell negative">-5.0k</div>
+              <div class="nfp-history-cell negative">-6.0k</div>
+              <div class="nfp-history-cell negative">-1.0k</div>
+              <div class="nfp-history-cell negative">-1.0k</div>
+              <div class="nfp-history-cell negative">-2.0k</div>
+              <div class="nfp-history-cell negative">-1.0k</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Financial activities</strong>
+                <span>Major sector</span>
+              </div>
+              <div class="nfp-history-cell negative">-22.0k</div>
+              <div class="nfp-history-cell negative">-6.0k</div>
+              <div class="nfp-history-cell negative">-17.0k</div>
+              <div class="nfp-history-cell positive">+2.0k</div>
+              <div class="nfp-history-cell negative">-39.0k</div>
+              <div class="nfp-history-cell positive">+1.0k</div>
+              <div class="nfp-history-cell positive">+1.0k</div>
+              <div class="nfp-history-cell negative">-5.0k</div>
+              <div class="nfp-history-cell positive">+4.0k</div>
+              <div class="nfp-history-cell negative">-19.0k</div>
+              <div class="nfp-history-cell flat">+0.0k</div>
+              <div class="nfp-history-cell negative">-7.0k</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Professional and business services</strong>
+                <span>Major sector</span>
+              </div>
+              <div class="nfp-history-cell positive">+6.0k</div>
+              <div class="nfp-history-cell positive">+22.0k</div>
+              <div class="nfp-history-cell positive">+28.0k</div>
+              <div class="nfp-history-cell positive">+4.0k</div>
+              <div class="nfp-history-cell positive">+36.0k</div>
+              <div class="nfp-history-cell negative">-19.0k</div>
+              <div class="nfp-history-cell positive">+56.0k</div>
+              <div class="nfp-history-cell negative">-24.0k</div>
+              <div class="nfp-history-cell negative">-16.0k</div>
+              <div class="nfp-history-cell negative">-28.0k</div>
+              <div class="nfp-history-cell negative">-16.0k</div>
+              <div class="nfp-history-cell negative">-31.0k</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Private education and health services</strong>
+                <span>Major sector</span>
+              </div>
+              <div class="nfp-history-cell positive">+40.0k</div>
+              <div class="nfp-history-cell positive">+54.0k</div>
+              <div class="nfp-history-cell positive">+95.0k</div>
+              <div class="nfp-history-cell negative">-49.0k</div>
+              <div class="nfp-history-cell positive">+119k</div>
+              <div class="nfp-history-cell positive">+38.0k</div>
+              <div class="nfp-history-cell positive">+56.0k</div>
+              <div class="nfp-history-cell positive">+44.0k</div>
+              <div class="nfp-history-cell positive">+54.0k</div>
+              <div class="nfp-history-cell positive">+23.0k</div>
+              <div class="nfp-history-cell positive">+87.0k</div>
+              <div class="nfp-history-cell positive">+49.0k</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Health care and social assistance</strong>
+                <span>Detail</span>
+              </div>
+              <div class="nfp-history-cell positive">+47.2k</div>
+              <div class="nfp-history-cell positive">+58.0k</div>
+              <div class="nfp-history-cell positive">+92.7k</div>
+              <div class="nfp-history-cell negative">-30.4k</div>
+              <div class="nfp-history-cell positive">+107k</div>
+              <div class="nfp-history-cell positive">+41.8k</div>
+              <div class="nfp-history-cell positive">+59.9k</div>
+              <div class="nfp-history-cell positive">+47.6k</div>
+              <div class="nfp-history-cell positive">+55.3k</div>
+              <div class="nfp-history-cell positive">+22.8k</div>
+              <div class="nfp-history-cell positive">+82.6k</div>
+              <div class="nfp-history-cell positive">+60.5k</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Leisure and hospitality</strong>
+                <span>Major sector</span>
+              </div>
+              <div class="nfp-history-cell positive">+70.0k</div>
+              <div class="nfp-history-cell positive">+30.0k</div>
+              <div class="nfp-history-cell positive">+44.0k</div>
+              <div class="nfp-history-cell negative">-31.0k</div>
+              <div class="nfp-history-cell positive">+5.0k</div>
+              <div class="nfp-history-cell positive">+25.0k</div>
+              <div class="nfp-history-cell negative">-12.0k</div>
+              <div class="nfp-history-cell positive">+41.0k</div>
+              <div class="nfp-history-cell positive">+37.0k</div>
+              <div class="nfp-history-cell positive">+22.0k</div>
+              <div class="nfp-history-cell positive">+11.0k</div>
+              <div class="nfp-history-cell negative">-2.0k</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Other services</strong>
+                <span>Major sector</span>
+              </div>
+              <div class="nfp-history-cell positive">+3.0k</div>
+              <div class="nfp-history-cell positive">+9.0k</div>
+              <div class="nfp-history-cell negative">-14.0k</div>
+              <div class="nfp-history-cell positive">+6.0k</div>
+              <div class="nfp-history-cell positive">+3.0k</div>
+              <div class="nfp-history-cell positive">+8.0k</div>
+              <div class="nfp-history-cell positive">+16.0k</div>
+              <div class="nfp-history-cell negative">-6.0k</div>
+              <div class="nfp-history-cell negative">-3.0k</div>
+              <div class="nfp-history-cell positive">+19.0k</div>
+              <div class="nfp-history-cell positive">+5.0k</div>
+              <div class="nfp-history-cell negative">-10.0k</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Government</strong>
+                <span>Major sector</span>
+              </div>
+              <div class="nfp-history-cell positive">+52.0k</div>
+              <div class="nfp-history-cell positive">+2.0k</div>
+              <div class="nfp-history-cell positive">+12.0k</div>
+              <div class="nfp-history-cell negative">-8.0k</div>
+              <div class="nfp-history-cell negative">-20.0k</div>
+              <div class="nfp-history-cell negative">-10.0k</div>
+              <div class="nfp-history-cell negative">-31.0k</div>
+              <div class="nfp-history-cell negative">-153k</div>
+              <div class="nfp-history-cell positive">+8.0k</div>
+              <div class="nfp-history-cell negative">-50.0k</div>
+              <div class="nfp-history-cell negative">-1.0k</div>
+              <div class="nfp-history-cell positive">+25.0k</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Federal government</strong>
+                <span>Detail</span>
+              </div>
+              <div class="nfp-history-cell positive">+1.0k</div>
+              <div class="nfp-history-cell negative">-6.0k</div>
+              <div class="nfp-history-cell negative">-7.0k</div>
+              <div class="nfp-history-cell positive">+4.0k</div>
+              <div class="nfp-history-cell negative">-37.0k</div>
+              <div class="nfp-history-cell negative">-11.0k</div>
+              <div class="nfp-history-cell negative">-15.0k</div>
+              <div class="nfp-history-cell negative">-166k</div>
+              <div class="nfp-history-cell negative">-2.0k</div>
+              <div class="nfp-history-cell negative">-19.0k</div>
+              <div class="nfp-history-cell negative">-9.0k</div>
+              <div class="nfp-history-cell negative">-8.0k</div>
+            </div>
+          </div>
+        </div>
+        <div class="nfp-table-panel">
+          <div class="nfp-table-head">
+            <span>Category</span>
+            <span>Level</span>
+            <span>1M</span>
+            <span>3M</span>
+            <span>6M</span>
+            <span>12M</span>
+          </div>
+          <div class="nfp-table-row nfp-table-row-headline">
+            <div class="nfp-sector-name">
+              <strong>Total nonfarm</strong>
+              <span>Headline &middot; CES0000000001</span>
+            </div>
+            <div class="nfp-level" data-label="Level">159.0m</div>
+            <div class="nfp-one-month" data-label="1M">
+              <span class="nfp-change positive">+172k</span>
+              <span class="nfp-bar nfp-bar-positive" style="--bar: 100.0%"></span>
+            </div>
+            <div data-label="3M"><span class="nfp-change positive">+565k</span></div>
+            <div data-label="6M"><span class="nfp-change positive">+552k</span></div>
+            <div data-label="12M"><span class="nfp-change positive">+503k</span></div>
+          </div>
+          <div class="nfp-table-row">
+            <div class="nfp-sector-name">
+              <strong>Total private</strong>
+              <span>Aggregate &middot; CES0500000001</span>
+            </div>
+            <div class="nfp-level" data-label="Level">135.6m</div>
+            <div class="nfp-one-month" data-label="1M">
+              <span class="nfp-change positive">+120k</span>
+              <span class="nfp-bar nfp-bar-positive" style="--bar: 69.8%"></span>
+            </div>
+            <div data-label="3M"><span class="nfp-change positive">+499k</span></div>
+            <div data-label="6M"><span class="nfp-change positive">+524k</span></div>
+            <div data-label="12M"><span class="nfp-change positive">+677k</span></div>
+          </div>
+          <div class="nfp-table-row">
+            <div class="nfp-sector-name">
+              <strong>Goods-producing</strong>
+              <span>Aggregate &middot; CES0600000001</span>
+            </div>
+            <div class="nfp-level" data-label="Level">21.6m</div>
+            <div class="nfp-one-month" data-label="1M">
+              <span class="nfp-change positive">+28.0k</span>
+              <span class="nfp-bar nfp-bar-positive" style="--bar: 16.3%"></span>
+            </div>
+            <div data-label="3M"><span class="nfp-change positive">+75.0k</span></div>
+            <div data-label="6M"><span class="nfp-change positive">+78.0k</span></div>
+            <div data-label="12M"><span class="nfp-change positive">+17.0k</span></div>
+          </div>
+          <div class="nfp-table-row">
+            <div class="nfp-sector-name">
+              <strong>Private service-providing</strong>
+              <span>Aggregate &middot; CES0800000001</span>
+            </div>
+            <div class="nfp-level" data-label="Level">114.1m</div>
+            <div class="nfp-one-month" data-label="1M">
+              <span class="nfp-change positive">+92.0k</span>
+              <span class="nfp-bar nfp-bar-positive" style="--bar: 53.5%"></span>
+            </div>
+            <div data-label="3M"><span class="nfp-change positive">+424k</span></div>
+            <div data-label="6M"><span class="nfp-change positive">+446k</span></div>
+            <div data-label="12M"><span class="nfp-change positive">+660k</span></div>
+          </div>
+          <div class="nfp-table-row">
+            <div class="nfp-sector-name">
+              <strong>Mining and logging</strong>
+              <span>Major sector &middot; CES1000000001</span>
+            </div>
+            <div class="nfp-level" data-label="Level">613.0k</div>
+            <div class="nfp-one-month" data-label="1M">
+              <span class="nfp-change positive">+4.0k</span>
+              <span class="nfp-bar nfp-bar-positive" style="--bar: 2.3%"></span>
+            </div>
+            <div data-label="3M"><span class="nfp-change positive">+12.0k</span></div>
+            <div data-label="6M"><span class="nfp-change positive">+8.0k</span></div>
+            <div data-label="12M"><span class="nfp-change negative">-5.0k</span></div>
+          </div>
+          <div class="nfp-table-row">
+            <div class="nfp-sector-name">
+              <strong>Construction</strong>
+              <span>Major sector &middot; CES2000000001</span>
+            </div>
+            <div class="nfp-level" data-label="Level">8.3m</div>
+            <div class="nfp-one-month" data-label="1M">
+              <span class="nfp-change positive">+17.0k</span>
+              <span class="nfp-bar nfp-bar-positive" style="--bar: 9.9%"></span>
+            </div>
+            <div data-label="3M"><span class="nfp-change positive">+41.0k</span></div>
+            <div data-label="6M"><span class="nfp-change positive">+58.0k</span></div>
+            <div data-label="12M"><span class="nfp-change positive">+68.0k</span></div>
+          </div>
+          <div class="nfp-table-row">
+            <div class="nfp-sector-name">
+              <strong>Manufacturing</strong>
+              <span>Major sector &middot; CES3000000001</span>
+            </div>
+            <div class="nfp-level" data-label="Level">12.6m</div>
+            <div class="nfp-one-month" data-label="1M">
+              <span class="nfp-change positive">+7.0k</span>
+              <span class="nfp-bar nfp-bar-positive" style="--bar: 4.1%"></span>
+            </div>
+            <div data-label="3M"><span class="nfp-change positive">+22.0k</span></div>
+            <div data-label="6M"><span class="nfp-change positive">+12.0k</span></div>
+            <div data-label="12M"><span class="nfp-change negative">-46.0k</span></div>
+          </div>
+          <div class="nfp-table-row">
+            <div class="nfp-sector-name">
+              <strong>Wholesale trade</strong>
+              <span>Major sector &middot; CES4142000001</span>
+            </div>
+            <div class="nfp-level" data-label="Level">6.0m</div>
+            <div class="nfp-one-month" data-label="1M">
+              <span class="nfp-change negative">-3.7k</span>
+              <span class="nfp-bar nfp-bar-negative" style="--bar: 2.2%"></span>
+            </div>
+            <div data-label="3M"><span class="nfp-change negative">-7.2k</span></div>
+            <div data-label="6M"><span class="nfp-change negative">-2.4k</span></div>
+            <div data-label="12M"><span class="nfp-change negative">-21.9k</span></div>
+          </div>
+          <div class="nfp-table-row">
+            <div class="nfp-sector-name">
+              <strong>Retail trade</strong>
+              <span>Major sector &middot; CES4200000001</span>
+            </div>
+            <div class="nfp-level" data-label="Level">15.5m</div>
+            <div class="nfp-one-month" data-label="1M">
+              <span class="nfp-change negative">-1.1k</span>
+              <span class="nfp-bar nfp-bar-negative" style="--bar: 0.6%"></span>
+            </div>
+            <div data-label="3M"><span class="nfp-change positive">+32.0k</span></div>
+            <div data-label="6M"><span class="nfp-change positive">+20.8k</span></div>
+            <div data-label="12M"><span class="nfp-change positive">+17.9k</span></div>
+          </div>
+          <div class="nfp-table-row">
+            <div class="nfp-sector-name">
+              <strong>Transportation and warehousing</strong>
+              <span>Major sector &middot; CES4300000001</span>
+            </div>
+            <div class="nfp-level" data-label="Level">6.6m</div>
+            <div class="nfp-one-month" data-label="1M">
+              <span class="nfp-change positive">+0.6k</span>
+              <span class="nfp-bar nfp-bar-positive" style="--bar: 0.3%"></span>
+            </div>
+            <div data-label="3M"><span class="nfp-change positive">+65.0k</span></div>
+            <div data-label="6M"><span class="nfp-change positive">+37.3k</span></div>
+            <div data-label="12M"><span class="nfp-change negative">-58.0k</span></div>
+          </div>
+          <div class="nfp-table-row">
+            <div class="nfp-sector-name">
+              <strong>Utilities</strong>
+              <span>Major sector &middot; CES4422000001</span>
+            </div>
+            <div class="nfp-level" data-label="Level">608.2k</div>
+            <div class="nfp-one-month" data-label="1M">
+              <span class="nfp-change positive">+1.4k</span>
+              <span class="nfp-bar nfp-bar-positive" style="--bar: 0.8%"></span>
+            </div>
+            <div data-label="3M"><span class="nfp-change positive">+1.9k</span></div>
+            <div data-label="6M"><span class="nfp-change positive">+4.4k</span></div>
+            <div data-label="12M"><span class="nfp-change positive">+6.5k</span></div>
+          </div>
+          <div class="nfp-table-row">
+            <div class="nfp-sector-name">
+              <strong>Information</strong>
+              <span>Major sector &middot; CES5000000001</span>
+            </div>
+            <div class="nfp-level" data-label="Level">2.8m</div>
+            <div class="nfp-one-month" data-label="1M">
+              <span class="nfp-change negative">-2.0k</span>
+              <span class="nfp-bar nfp-bar-negative" style="--bar: 1.2%"></span>
+            </div>
+            <div data-label="3M"><span class="nfp-change negative">-9.0k</span></div>
+            <div data-label="6M"><span class="nfp-change negative">-65.0k</span></div>
+            <div data-label="12M"><span class="nfp-change negative">-81.0k</span></div>
+          </div>
+          <div class="nfp-table-row">
+            <div class="nfp-sector-name">
+              <strong>Financial activities</strong>
+              <span>Major sector &middot; CES5500000001</span>
+            </div>
+            <div class="nfp-level" data-label="Level">9.1m</div>
+            <div class="nfp-one-month" data-label="1M">
+              <span class="nfp-change negative">-22.0k</span>
+              <span class="nfp-bar nfp-bar-negative" style="--bar: 12.8%"></span>
+            </div>
+            <div data-label="3M"><span class="nfp-change negative">-45.0k</span></div>
+            <div data-label="6M"><span class="nfp-change negative">-81.0k</span></div>
+            <div data-label="12M"><span class="nfp-change negative">-107k</span></div>
+          </div>
+          <div class="nfp-table-row">
+            <div class="nfp-sector-name">
+              <strong>Professional and business services</strong>
+              <span>Major sector &middot; CES6000000001</span>
+            </div>
+            <div class="nfp-level" data-label="Level">22.5m</div>
+            <div class="nfp-one-month" data-label="1M">
+              <span class="nfp-change positive">+6.0k</span>
+              <span class="nfp-bar nfp-bar-positive" style="--bar: 3.5%"></span>
+            </div>
+            <div data-label="3M"><span class="nfp-change positive">+56.0k</span></div>
+            <div data-label="6M"><span class="nfp-change positive">+77.0k</span></div>
+            <div data-label="12M"><span class="nfp-change positive">+18.0k</span></div>
+          </div>
+          <div class="nfp-table-row">
+            <div class="nfp-sector-name">
+              <strong>Private education and health services</strong>
+              <span>Major sector &middot; CES6500000001</span>
+            </div>
+            <div class="nfp-level" data-label="Level">27.9m</div>
+            <div class="nfp-one-month" data-label="1M">
+              <span class="nfp-change positive">+40.0k</span>
+              <span class="nfp-bar nfp-bar-positive" style="--bar: 23.3%"></span>
+            </div>
+            <div data-label="3M"><span class="nfp-change positive">+189k</span></div>
+            <div data-label="6M"><span class="nfp-change positive">+297k</span></div>
+            <div data-label="12M"><span class="nfp-change positive">+610k</span></div>
+          </div>
+          <div class="nfp-table-row">
+            <div class="nfp-sector-name">
+              <strong>Health care and social assistance</strong>
+              <span>Detail &middot; CES6562000001</span>
+            </div>
+            <div class="nfp-level" data-label="Level">23.9m</div>
+            <div class="nfp-one-month" data-label="1M">
+              <span class="nfp-change positive">+47.2k</span>
+              <span class="nfp-bar nfp-bar-positive" style="--bar: 27.4%"></span>
+            </div>
+            <div data-label="3M"><span class="nfp-change positive">+198k</span></div>
+            <div data-label="6M"><span class="nfp-change positive">+316k</span></div>
+            <div data-label="12M"><span class="nfp-change positive">+645k</span></div>
+          </div>
+          <div class="nfp-table-row">
+            <div class="nfp-sector-name">
+              <strong>Leisure and hospitality</strong>
+              <span>Major sector &middot; CES7000000001</span>
+            </div>
+            <div class="nfp-level" data-label="Level">17.1m</div>
+            <div class="nfp-one-month" data-label="1M">
+              <span class="nfp-change positive">+70.0k</span>
+              <span class="nfp-bar nfp-bar-positive" style="--bar: 40.7%"></span>
+            </div>
+            <div data-label="3M"><span class="nfp-change positive">+144k</span></div>
+            <div data-label="6M"><span class="nfp-change positive">+143k</span></div>
+            <div data-label="12M"><span class="nfp-change positive">+240k</span></div>
+          </div>
+          <div class="nfp-table-row">
+            <div class="nfp-sector-name">
+              <strong>Other services</strong>
+              <span>Major sector &middot; CES8000000001</span>
+            </div>
+            <div class="nfp-level" data-label="Level">6.0m</div>
+            <div class="nfp-one-month" data-label="1M">
+              <span class="nfp-change positive">+3.0k</span>
+              <span class="nfp-bar nfp-bar-positive" style="--bar: 1.7%"></span>
+            </div>
+            <div data-label="3M"><span class="nfp-change negative">-2.0k</span></div>
+            <div data-label="6M"><span class="nfp-change positive">+15.0k</span></div>
+            <div data-label="12M"><span class="nfp-change positive">+36.0k</span></div>
+          </div>
+          <div class="nfp-table-row">
+            <div class="nfp-sector-name">
+              <strong>Government</strong>
+              <span>Major sector &middot; CES9000000001</span>
+            </div>
+            <div class="nfp-level" data-label="Level">23.4m</div>
+            <div class="nfp-one-month" data-label="1M">
+              <span class="nfp-change positive">+52.0k</span>
+              <span class="nfp-bar nfp-bar-positive" style="--bar: 30.2%"></span>
+            </div>
+            <div data-label="3M"><span class="nfp-change positive">+66.0k</span></div>
+            <div data-label="6M"><span class="nfp-change positive">+28.0k</span></div>
+            <div data-label="12M"><span class="nfp-change negative">-174k</span></div>
+          </div>
+          <div class="nfp-table-row">
+            <div class="nfp-sector-name">
+              <strong>Federal government</strong>
+              <span>Detail &middot; CES9091000001</span>
+            </div>
+            <div class="nfp-level" data-label="Level">2.7m</div>
+            <div class="nfp-one-month" data-label="1M">
+              <span class="nfp-change positive">+1.0k</span>
+              <span class="nfp-bar nfp-bar-positive" style="--bar: 0.6%"></span>
+            </div>
+            <div data-label="3M"><span class="nfp-change negative">-12.0k</span></div>
+            <div data-label="6M"><span class="nfp-change negative">-56.0k</span></div>
+            <div data-label="12M"><span class="nfp-change negative">-275k</span></div>
+          </div>
         </div>
       </section>
 
       <footer class="site-foot">
-        <p>Source: U.S. Bureau of Labor Statistics CES establishment survey, seasonally adjusted payroll levels.</p>
+        <p>Source: SQLite store populated from BLS CES establishment survey and CPS household survey series.</p>
         <p class="muted"><a href="./">Back to forecasts</a>.</p>
       </footer>
     </main>
