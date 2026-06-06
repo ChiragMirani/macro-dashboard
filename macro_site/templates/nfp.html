@@ -1,0 +1,149 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NFP Establishment Survey Breakdown | Macro Forecast Schedule by Chirag Mirani</title>
+    <meta name="description" content="Live BLS CES establishment survey payroll breakdown with 1-month, 3-month, 6-month, and 12-month changes by NFP category.">
+    <meta name="author" content="Chirag Mirani">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://chiragmirani.github.io/macro-dashboard/nfp.html">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#0a1628">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="NFP Establishment Survey Breakdown">
+    <meta property="og:description" content="BLS CES payroll changes by category across 1M, 3M, 6M, and 12M windows.">
+    <meta property="og:url" content="https://chiragmirani.github.io/macro-dashboard/nfp.html">
+    <meta property="og:site_name" content="Chirag Mirani Macro Dashboard">
+    <meta property="og:image" content="https://chiragmirani.github.io/macro-dashboard/social-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NFP Establishment Survey Breakdown">
+    <meta name="twitter:description" content="BLS CES payroll changes by category across 1M, 3M, 6M, and 12M windows.">
+    <meta name="twitter:image" content="https://chiragmirani.github.io/macro-dashboard/social-preview.png">
+    <link rel="stylesheet" href="static/styles.css">
+  </head>
+  <body>
+    <main>
+      <nav class="topnav">
+        <a href="./">Forecasts</a>
+        <a href="nfp.html" class="active">NFP breakdown</a>
+        <a href="track-record.html">Track record</a>
+      </nav>
+
+      {% if payload.nfp_breakdown %}
+      <section class="nfp-breakdown-section nfp-breakdown-page" aria-labelledby="nfp-breakdown-title">
+        <div class="nfp-breakdown-hero">
+          <div>
+            <p class="eyebrow">Establishment survey &middot; {{ payload.nfp_breakdown.period }} &middot; Updated {{ payload.generated_at_et }}</p>
+            <h1 id="nfp-breakdown-title">NFP Sector Momentum</h1>
+            <p>{{ payload.nfp_breakdown.source }}. Changes are net payroll changes over each window, in thousands of jobs.</p>
+          </div>
+          <div class="nfp-headline-stat">
+            <span>Headline 1M</span>
+            <strong class="{{ payload.nfp_breakdown.headline.tone_1m }}">{{ payload.nfp_breakdown.headline.change_1m }}</strong>
+            <small>{{ payload.nfp_breakdown.headline.level }} payrolls</small>
+          </div>
+        </div>
+
+        <div class="nfp-stat-grid">
+          <div class="nfp-stat-card">
+            <span>Major-sector breadth</span>
+            <strong>{{ payload.nfp_breakdown.breadth.display }}</strong>
+            <small>positive 1M changes</small>
+          </div>
+          {% if payload.nfp_breakdown.biggest_gain %}
+          <div class="nfp-stat-card">
+            <span>Largest 1M gain</span>
+            <strong class="positive">{{ payload.nfp_breakdown.biggest_gain.change_1m }}</strong>
+            <small>{{ payload.nfp_breakdown.biggest_gain.label }}</small>
+          </div>
+          {% endif %}
+          {% if payload.nfp_breakdown.biggest_drag %}
+          <div class="nfp-stat-card">
+            <span>Largest 1M drag</span>
+            <strong class="negative">{{ payload.nfp_breakdown.biggest_drag.change_1m }}</strong>
+            <small>{{ payload.nfp_breakdown.biggest_drag.label }}</small>
+          </div>
+          {% endif %}
+          <div class="nfp-stat-card">
+            <span>Latest official month</span>
+            <strong>{{ payload.nfp_breakdown.period }}</strong>
+            <small>BLS CES table pull</small>
+          </div>
+        </div>
+
+
+        {% if payload.nfp_breakdown.history_months %}
+        <div class="nfp-history-panel">
+          <div class="nfp-history-title">
+            <div>
+              <span class="summary-label">Last 12 monthly prints</span>
+              <h2>Establishment Survey Detail</h2>
+            </div>
+            <p>Each cell is the month-over-month payroll change for that CES category, in thousands.</p>
+          </div>
+          <div class="nfp-history-scroll" role="region" aria-label="Last 12 months of NFP establishment survey changes">
+            <div class="nfp-history-grid" style="grid-template-columns: minmax(280px, 1.2fr) repeat({{ payload.nfp_breakdown.history_months | length }}, minmax(74px, 1fr));">
+              <div class="nfp-history-header nfp-history-sticky">Category</div>
+              {% for month in payload.nfp_breakdown.history_months %}
+              <div class="nfp-history-header">{{ month.label }}</div>
+              {% endfor %}
+              {% for row in payload.nfp_breakdown.rows %}
+              <div class="nfp-history-category nfp-history-sticky{% if row.is_headline or row.group == 'Aggregate' %} nfp-history-category-key{% endif %}">
+                <strong>{{ row.label }}</strong>
+                <span>{{ row.group }}</span>
+              </div>
+              {% for cell in row.history %}
+              <div class="nfp-history-cell {{ cell.tone }}">{{ cell.display }}</div>
+              {% endfor %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        {% endif %}
+        <div class="nfp-table-panel">
+          <div class="nfp-table-head">
+            <span>Category</span>
+            <span>Level</span>
+            <span>1M</span>
+            <span>3M</span>
+            <span>6M</span>
+            <span>12M</span>
+          </div>
+          {% for row in payload.nfp_breakdown.rows %}
+          <div class="nfp-table-row{% if row.is_headline %} nfp-table-row-headline{% endif %}">
+            <div class="nfp-sector-name">
+              <strong>{{ row.label }}</strong>
+              <span>{{ row.group }} &middot; {{ row.series_id }}</span>
+            </div>
+            <div class="nfp-level" data-label="Level">{{ row.level }}</div>
+            <div class="nfp-one-month" data-label="1M">
+              <span class="nfp-change {{ row.tone_1m }}">{{ row.change_1m or "n/a" }}</span>
+              <span class="nfp-bar nfp-bar-{{ row.tone_1m }}" style="--bar: {{ row.bar_pct }}%"></span>
+            </div>
+            <div data-label="3M"><span class="nfp-change {{ row.windows[1].tone }}">{{ row.change_3m or "n/a" }}</span></div>
+            <div data-label="6M"><span class="nfp-change {{ row.windows[2].tone }}">{{ row.change_6m or "n/a" }}</span></div>
+            <div data-label="12M"><span class="nfp-change {{ row.windows[3].tone }}">{{ row.change_12m or "n/a" }}</span></div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+      {% else %}
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Establishment survey</p>
+          <h1>NFP Sector Momentum</h1>
+          <p class="tr-blurb">NFP breakdown is unavailable because the BLS CES pull did not return usable data.</p>
+        </div>
+      </section>
+      {% endif %}
+
+      <footer class="site-foot">
+        <p>Source: U.S. Bureau of Labor Statistics CES establishment survey, seasonally adjusted payroll levels.</p>
+        <p class="muted"><a href="./">Back to forecasts</a>.</p>
+      </footer>
+    </main>
+  </body>
+</html>

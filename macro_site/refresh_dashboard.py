@@ -26,6 +26,7 @@ STATIC_DIR = DOCS_DIR / "static"
 TEMPLATE_DIR = BASE_DIR / "macro_site" / "templates"
 OUTPUT_JSON = DOCS_DIR / "dashboard_data.json"
 OUTPUT_HTML = DOCS_DIR / "index.html"
+NFP_HTML = DOCS_DIR / "nfp.html"
 NOJEKYLL = DOCS_DIR / ".nojekyll"
 ROBOTS_TXT = DOCS_DIR / "robots.txt"
 SITEMAP_XML = DOCS_DIR / "sitemap.xml"
@@ -575,6 +576,18 @@ def build_nfp_breakdown(now_et: datetime) -> dict[str, Any] | None:
             return None
         latest_dt = max(latest_candidates)
 
+    history_source = headline_series if headline_series is not None and not headline_series.empty else None
+    if history_source is None:
+        history_source = next((series for series in series_map.values() if series is not None and not series.empty), None)
+    history_index: list[pd.Timestamp] = []
+    if history_source is not None:
+        history_changes = history_source[history_source.index <= latest_dt].sort_index().diff().dropna().tail(12)
+        history_index = [pd.Timestamp(dt) for dt in reversed(history_changes.index)]
+    history_months = [
+        {"label": pd.Timestamp(dt).strftime("%b-%y"), "iso": pd.Timestamp(dt).strftime("%Y-%m")}
+        for dt in history_index
+    ]
+
     rows: list[dict[str, Any]] = []
     for series_id, label, group in NFP_BREAKDOWN_SERIES:
         series = series_map.get(series_id)
@@ -585,6 +598,19 @@ def build_nfp_breakdown(now_et: datetime) -> dict[str, Any] | None:
             continue
         level = float(series.iloc[-1])
         windows = []
+        monthly_changes = series.diff()
+        history = []
+        for hist_dt in history_index:
+            value = None
+            if hist_dt in monthly_changes.index:
+                raw = float(monthly_changes.loc[hist_dt])
+                value = raw if math.isfinite(raw) else None
+            history.append({
+                "label": pd.Timestamp(hist_dt).strftime("%b-%y"),
+                "value": value,
+                "display": fmt_signed_k(value) or "n/a",
+                "tone": change_tone(value),
+            })
         change_values: dict[str, float | None] = {}
         for months, window_label in NFP_BREAKDOWN_WINDOWS:
             value = nfp_window_change(series, months)
@@ -606,6 +632,7 @@ def build_nfp_breakdown(now_et: datetime) -> dict[str, Any] | None:
             "is_headline": series_id == "CES0000000001",
             "is_major": group == "Major sector",
             "windows": windows,
+            "history": history,
             "change_1m_value": change_values.get("change_1m"),
             "change_1m": fmt_signed_k(change_values.get("change_1m")),
             "change_3m": fmt_signed_k(change_values.get("change_3m")),
@@ -639,6 +666,7 @@ def build_nfp_breakdown(now_et: datetime) -> dict[str, Any] | None:
         "biggest_gain": gain,
         "biggest_drag": drag,
         "rows": rows,
+        "history_months": history_months,
         "windows": [label for _, label in NFP_BREAKDOWN_WINDOWS],
     }
 
@@ -1311,6 +1339,7 @@ def render_site(payload: dict[str, Any]) -> None:
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         f'  <url><loc>{SITE_URL}</loc><lastmod>{payload["generated_at_iso"]}</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>\n'
         f'  <url><loc>{SITE_URL}dashboard_data.json</loc><lastmod>{payload["generated_at_iso"]}</lastmod><changefreq>daily</changefreq></url>\n'
+        f'  <url><loc>{SITE_URL}nfp.html</loc><lastmod>{payload["generated_at_iso"]}</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>\n'
         '</urlset>\n',
         encoding="utf-8",
     )
@@ -1324,6 +1353,8 @@ def render_site(payload: dict[str, Any]) -> None:
     )
     template = env.get_template("index.html")
     OUTPUT_HTML.write_text(template.render(payload=payload), encoding="utf-8")
+    nfp_template = env.get_template("nfp.html")
+    NFP_HTML.write_text(nfp_template.render(payload=payload), encoding="utf-8")
     shutil.copy2(BASE_DIR / "macro_site" / "static" / "styles.css", STATIC_DIR / "styles.css")
 
     render_track_record(env)

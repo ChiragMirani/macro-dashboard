@@ -78,6 +78,7 @@
     <main>
       <nav class="topnav">
         <a href="./" class="active">Forecasts</a>
+        <a href="nfp.html">NFP breakdown</a>
         <a href="track-record.html">Track record</a>
       </nav>
 
@@ -170,76 +171,6 @@
         </div>
       </section>
 
-      {% if payload.nfp_breakdown %}
-      <section class="nfp-breakdown-section" aria-labelledby="nfp-breakdown-title">
-        <div class="nfp-breakdown-hero">
-          <div>
-            <p class="eyebrow">Employment Situation &middot; {{ payload.nfp_breakdown.period }}</p>
-            <h2 id="nfp-breakdown-title">NFP Sector Momentum</h2>
-            <p>{{ payload.nfp_breakdown.source }}. Changes are net payroll changes over each window, in thousands of jobs.</p>
-          </div>
-          <div class="nfp-headline-stat">
-            <span>Headline 1M</span>
-            <strong class="{{ payload.nfp_breakdown.headline.tone_1m }}">{{ payload.nfp_breakdown.headline.change_1m }}</strong>
-            <small>{{ payload.nfp_breakdown.headline.level }} payrolls</small>
-          </div>
-        </div>
-
-        <div class="nfp-stat-grid">
-          <div class="nfp-stat-card">
-            <span>Major-sector breadth</span>
-            <strong>{{ payload.nfp_breakdown.breadth.display }}</strong>
-            <small>positive 1M changes</small>
-          </div>
-          {% if payload.nfp_breakdown.biggest_gain %}
-          <div class="nfp-stat-card">
-            <span>Largest 1M gain</span>
-            <strong class="positive">{{ payload.nfp_breakdown.biggest_gain.change_1m }}</strong>
-            <small>{{ payload.nfp_breakdown.biggest_gain.label }}</small>
-          </div>
-          {% endif %}
-          {% if payload.nfp_breakdown.biggest_drag %}
-          <div class="nfp-stat-card">
-            <span>Largest 1M drag</span>
-            <strong class="negative">{{ payload.nfp_breakdown.biggest_drag.change_1m }}</strong>
-            <small>{{ payload.nfp_breakdown.biggest_drag.label }}</small>
-          </div>
-          {% endif %}
-          <div class="nfp-stat-card">
-            <span>Latest official month</span>
-            <strong>{{ payload.nfp_breakdown.period }}</strong>
-            <small>BLS CES table pull</small>
-          </div>
-        </div>
-
-        <div class="nfp-table-panel">
-          <div class="nfp-table-head">
-            <span>Category</span>
-            <span>Level</span>
-            <span>1M</span>
-            <span>3M</span>
-            <span>6M</span>
-            <span>12M</span>
-          </div>
-          {% for row in payload.nfp_breakdown.rows %}
-          <div class="nfp-table-row{% if row.is_headline %} nfp-table-row-headline{% endif %}">
-            <div class="nfp-sector-name">
-              <strong>{{ row.label }}</strong>
-              <span>{{ row.group }} &middot; {{ row.series_id }}</span>
-            </div>
-            <div class="nfp-level" data-label="Level">{{ row.level }}</div>
-            <div class="nfp-one-month" data-label="1M">
-              <span class="nfp-change {{ row.tone_1m }}">{{ row.change_1m or "n/a" }}</span>
-              <span class="nfp-bar nfp-bar-{{ row.tone_1m }}" style="--bar: {{ row.bar_pct }}%"></span>
-            </div>
-            <div data-label="3M"><span class="nfp-change {{ row.windows[1].tone }}">{{ row.change_3m or "n/a" }}</span></div>
-            <div data-label="6M"><span class="nfp-change {{ row.windows[2].tone }}">{{ row.change_6m or "n/a" }}</span></div>
-            <div data-label="12M"><span class="nfp-change {{ row.windows[3].tone }}">{{ row.change_12m or "n/a" }}</span></div>
-          </div>
-          {% endfor %}
-        </div>
-      </section>
-      {% endif %}
       <script>
         (function () {
           var btn = document.getElementById('copy-link');
