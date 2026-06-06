@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   color-scheme: light;
   --text: #111111;
   --muted: #6e6e73;
@@ -263,7 +263,7 @@ tbody tr:last-child td { border-bottom: 0; }
     line-height: 1.1;
   }
 
-  /* Release name as the card header — no label, larger type, light fill */
+  /* Release name as the card header â€” no label, larger type, light fill */
   tbody td[data-label="Release"] {
     grid-area: release;
     background: #f7f7fa;
@@ -279,14 +279,14 @@ tbody tr:last-child td { border-bottom: 0; }
     letter-spacing: 0.04em;
   }
 
-  /* Combined "Day, Date · Time" — full width, prominent */
+  /* Combined "Day, Date Â· Time" â€” full width, prominent */
   tbody td[data-label="Releases"] {
     grid-area: when;
     padding: 8px 12px 4px;
     font-weight: 500;
   }
 
-  /* Reporting period (full width) — small muted line */
+  /* Reporting period (full width) â€” small muted line */
   tbody td[data-label="Reporting period"] {
     grid-area: period;
     padding: 0 12px 8px;
@@ -301,7 +301,7 @@ tbody tr:last-child td { border-bottom: 0; }
   tbody td[data-label="Kalshi consensus"] { grid-area: kalshi; }
 
   /* Bottom row: last release | risk side by side */
-  tbody td[data-label="Last release"]  { grid-area: last; border-right: 1px solid #f2f2f4; border-bottom: 0; }
+  tbody td[data-label="Latest actual"] { grid-area: last; border-right: 1px solid #f2f2f4; border-bottom: 0; }
   tbody td[data-label="Surprise risk"] { grid-area: risk; border-bottom: 0; }
 
   /* Hide redundant cells on mobile */
@@ -312,4 +312,213 @@ tbody tr:last-child td { border-bottom: 0; }
 
   /* Drop the verbose notes row on mobile */
   .detail-row { display: none; }
+}
+
+.nfp-breakdown-section {
+  padding: 46px 0 8px;
+}
+
+.nfp-breakdown-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
+  gap: 20px;
+  align-items: end;
+  padding-bottom: 18px;
+}
+
+.nfp-breakdown-hero h2 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 4.2rem);
+  line-height: 1.03;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.nfp-breakdown-hero p:not(.eyebrow) {
+  max-width: 68ch;
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+.nfp-headline-stat,
+.nfp-stat-card,
+.nfp-table-panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.nfp-headline-stat { padding: 18px; }
+
+.nfp-headline-stat span,
+.nfp-stat-card span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.nfp-headline-stat strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 2.35rem;
+  line-height: 1;
+}
+
+.nfp-headline-stat small,
+.nfp-stat-card small {
+  display: block;
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.nfp-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 4px 0 18px;
+}
+
+.nfp-stat-card {
+  min-height: 112px;
+  padding: 16px;
+}
+
+.nfp-stat-card strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.75rem;
+  line-height: 1.06;
+}
+
+.nfp-table-panel { overflow: hidden; }
+
+.nfp-table-head,
+.nfp-table-row {
+  display: grid;
+  grid-template-columns: minmax(260px, 1.65fr) minmax(78px, 0.55fr) repeat(4, minmax(88px, 0.6fr));
+  gap: 12px;
+  align-items: center;
+}
+
+.nfp-table-head {
+  padding: 13px 18px;
+  color: var(--muted);
+  background: #f5f5f7;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.nfp-table-row {
+  min-height: 70px;
+  padding: 14px 18px;
+  border-bottom: 1px solid #ececee;
+}
+
+.nfp-table-row:last-child { border-bottom: 0; }
+.nfp-table-row-headline { background: #fcfcfd; }
+
+.nfp-sector-name strong {
+  display: block;
+  font-size: 0.98rem;
+}
+
+.nfp-sector-name span {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.nfp-level {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.nfp-change {
+  display: inline-block;
+  min-width: 58px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.positive { color: var(--live); }
+.negative { color: #b42318; }
+.flat { color: var(--muted); }
+
+.nfp-one-month {
+  display: grid;
+  grid-template-columns: 64px minmax(42px, 1fr);
+  gap: 8px;
+  align-items: center;
+}
+
+.nfp-bar {
+  display: block;
+  height: 5px;
+  width: var(--bar);
+  min-width: 4px;
+  border-radius: 999px;
+  background: #d2d2d7;
+}
+
+.nfp-bar-positive { background: var(--live); }
+.nfp-bar-negative { background: #b42318; }
+
+
+/* nfp-responsive-rules */
+@media (max-width: 980px) {
+  .nfp-breakdown-hero { grid-template-columns: 1fr; }
+  .nfp-stat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .nfp-table-head { display: none; }
+  .nfp-table-row {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .nfp-sector-name { grid-column: 1 / -1; }
+}
+
+@media (max-width: 640px) {
+  .nfp-breakdown-section { padding-top: 28px; }
+  .nfp-breakdown-hero h2 { font-size: 2rem; }
+  .nfp-breakdown-hero p:not(.eyebrow) { font-size: 0.94rem; }
+  .nfp-headline-stat strong { font-size: 2rem; }
+  .nfp-stat-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .nfp-stat-card { min-height: 100px; padding: 12px; }
+  .nfp-stat-card strong { font-size: 1.2rem; }
+  .nfp-table-panel { border-radius: 8px; }
+  .nfp-table-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 12px;
+    align-items: start;
+  }
+  .nfp-sector-name,
+  .nfp-level,
+  .nfp-one-month,
+  .nfp-table-row > div[data-label="3M"],
+  .nfp-table-row > div[data-label="6M"],
+  .nfp-table-row > div[data-label="12M"] { min-width: 0; }
+  .nfp-sector-name { grid-column: 1 / -1; }
+  .nfp-level::before,
+  .nfp-one-month::before,
+  .nfp-table-row > div[data-label="3M"]::before,
+  .nfp-table-row > div[data-label="6M"]::before,
+  .nfp-table-row > div[data-label="12M"]::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 2px;
+    color: var(--muted);
+    font-size: 0.68rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .nfp-one-month { display: block; }
+  .nfp-bar { margin-top: 6px; max-width: 100%; }
 }

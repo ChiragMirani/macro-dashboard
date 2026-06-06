@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import csv
 import io
@@ -62,6 +62,30 @@ RELEASE_SOURCE_URL = {
     "nfp": "https://www.bls.gov/news.release/empsit.toc.htm",
     "ur": "https://www.bls.gov/news.release/empsit.toc.htm",
 }
+NFP_BREAKDOWN_SERIES = [
+    ("CES0000000001", "Total nonfarm", "Headline"),
+    ("CES0500000001", "Total private", "Aggregate"),
+    ("CES0600000001", "Goods-producing", "Aggregate"),
+    ("CES0800000001", "Private service-providing", "Aggregate"),
+    ("CES1000000001", "Mining and logging", "Major sector"),
+    ("CES2000000001", "Construction", "Major sector"),
+    ("CES3000000001", "Manufacturing", "Major sector"),
+    ("CES4142000001", "Wholesale trade", "Major sector"),
+    ("CES4200000001", "Retail trade", "Major sector"),
+    ("CES4300000001", "Transportation and warehousing", "Major sector"),
+    ("CES4422000001", "Utilities", "Major sector"),
+    ("CES5000000001", "Information", "Major sector"),
+    ("CES5500000001", "Financial activities", "Major sector"),
+    ("CES6000000001", "Professional and business services", "Major sector"),
+    ("CES6500000001", "Private education and health services", "Major sector"),
+    ("CES6562000001", "Health care and social assistance", "Detail"),
+    ("CES7000000001", "Leisure and hospitality", "Major sector"),
+    ("CES8000000001", "Other services", "Major sector"),
+    ("CES9000000001", "Government", "Major sector"),
+    ("CES9091000001", "Federal government", "Detail"),
+]
+NFP_BREAKDOWN_WINDOWS = [(1, "1M"), (3, "3M"), (6, "6M"), (12, "12M")]
+BLS_BULK_API = "https://api.bls.gov/publicAPI/v2/timeseries/data/"
 
 
 @dataclass
@@ -357,6 +381,31 @@ def fmt_claims(value: float | None) -> str | None:
         return None
     return f"{value:,.0f}"
 
+def fmt_signed_k(value: float | None) -> str | None:
+    if value is None or not math.isfinite(value):
+        return None
+    if abs(value) >= 100:
+        return f"{value:+.0f}k"
+    return f"{value:+.1f}k"
+
+
+def fmt_jobs_level(value: float | None) -> str | None:
+    if value is None or not math.isfinite(value):
+        return None
+    if abs(value) >= 1000:
+        return f"{value / 1000:.1f}m"
+    return f"{value:.1f}k"
+
+
+def change_tone(value: float | None) -> str:
+    if value is None or not math.isfinite(value):
+        return "flat"
+    if value > 0:
+        return "positive"
+    if value < 0:
+        return "negative"
+    return "flat"
+
 
 def month_label(value: str | None) -> str:
     if not value:
@@ -458,6 +507,140 @@ def fetch_bls_series(series_id: str) -> pd.Series | None:
     series.name = series_id
     return series
 
+
+
+def _series_from_bls_rows(series_id: str, rows: list[dict[str, Any]]) -> pd.Series | None:
+    parsed = []
+    for row in rows:
+        period = str(row.get("period", ""))
+        if not period.startswith("M") or len(period) != 3:
+            continue
+        parsed.append({
+            "date": pd.to_datetime(f"{row['year']}-{period[1:]}-01", errors="coerce"),
+            "value": pd.to_numeric(row.get("value"), errors="coerce"),
+        })
+    if not parsed:
+        return None
+    frame = pd.DataFrame(parsed).dropna(subset=["date", "value"]).sort_values("date")
+    if frame.empty:
+        return None
+    series = frame.set_index("date")["value"].astype(float)
+    series.name = series_id
+    return series
+
+
+def fetch_bls_series_batch(series_ids: list[str], start_year: int, end_year: int) -> dict[str, pd.Series]:
+    payload = {
+        "seriesid": series_ids,
+        "startyear": str(start_year),
+        "endyear": str(end_year),
+    }
+    try:
+        response = requests.post(BLS_BULK_API, json=payload, headers=REQUEST_HEADERS, timeout=60)
+        response.raise_for_status()
+        data = response.json()
+    except Exception:
+        return {}
+    if data.get("status") != "REQUEST_SUCCEEDED":
+        return {}
+
+    out: dict[str, pd.Series] = {}
+    for entry in data.get("Results", {}).get("series", []):
+        series_id = entry.get("seriesID")
+        series = _series_from_bls_rows(str(series_id), entry.get("data") or [])
+        if series_id and series is not None and not series.empty:
+            out[str(series_id)] = series
+    return out
+
+
+def nfp_window_change(series: pd.Series, months: int) -> float | None:
+    if series is None or len(series) <= months:
+        return None
+    value = float(series.iloc[-1] - series.iloc[-1 - months])
+    return value if math.isfinite(value) else None
+
+
+def build_nfp_breakdown(now_et: datetime) -> dict[str, Any] | None:
+    series_ids = [series_id for series_id, _, _ in NFP_BREAKDOWN_SERIES]
+    start_year = max(2020, now_et.year - 2)
+    series_map = fetch_bls_series_batch(series_ids, start_year, now_et.year)
+    if not series_map:
+        return None
+
+    headline_series = series_map.get("CES0000000001")
+    latest_dt = headline_series.index[-1] if headline_series is not None and not headline_series.empty else None
+    if latest_dt is None:
+        latest_candidates = [series.index[-1] for series in series_map.values() if series is not None and not series.empty]
+        if not latest_candidates:
+            return None
+        latest_dt = max(latest_candidates)
+
+    rows: list[dict[str, Any]] = []
+    for series_id, label, group in NFP_BREAKDOWN_SERIES:
+        series = series_map.get(series_id)
+        if series is None or series.empty:
+            continue
+        series = series[series.index <= latest_dt].sort_index()
+        if series.empty:
+            continue
+        level = float(series.iloc[-1])
+        windows = []
+        change_values: dict[str, float | None] = {}
+        for months, window_label in NFP_BREAKDOWN_WINDOWS:
+            value = nfp_window_change(series, months)
+            key = f"change_{months}m"
+            change_values[key] = value
+            windows.append({
+                "label": window_label,
+                "value": value,
+                "display": fmt_signed_k(value) or "n/a",
+                "tone": change_tone(value),
+            })
+        rows.append({
+            "series_id": series_id,
+            "label": label,
+            "group": group,
+            "level_value": level,
+            "level": fmt_jobs_level(level),
+            "latest_date": pd.Timestamp(series.index[-1]).strftime("%B %Y"),
+            "is_headline": series_id == "CES0000000001",
+            "is_major": group == "Major sector",
+            "windows": windows,
+            "change_1m_value": change_values.get("change_1m"),
+            "change_1m": fmt_signed_k(change_values.get("change_1m")),
+            "change_3m": fmt_signed_k(change_values.get("change_3m")),
+            "change_6m": fmt_signed_k(change_values.get("change_6m")),
+            "change_12m": fmt_signed_k(change_values.get("change_12m")),
+            "tone_1m": change_tone(change_values.get("change_1m")),
+        })
+
+    if not rows:
+        return None
+
+    max_abs_1m = max(abs(row["change_1m_value"] or 0.0) for row in rows) or 1.0
+    for row in rows:
+        row["bar_pct"] = round(abs(row["change_1m_value"] or 0.0) / max_abs_1m * 100, 1)
+
+    major_rows = [row for row in rows if row["is_major"] and row["change_1m_value"] is not None]
+    headline = next((row for row in rows if row["is_headline"]), rows[0])
+    gain = max(major_rows, key=lambda row: row["change_1m_value"], default=None)
+    drag = min(major_rows, key=lambda row: row["change_1m_value"], default=None)
+    positive_count = sum(1 for row in major_rows if (row["change_1m_value"] or 0) > 0)
+
+    return {
+        "period": pd.Timestamp(latest_dt).strftime("%B %Y"),
+        "source": "BLS CES seasonally adjusted payroll levels",
+        "headline": headline,
+        "breadth": {
+            "positive": positive_count,
+            "total": len(major_rows),
+            "display": f"{positive_count}/{len(major_rows)}",
+        },
+        "biggest_gain": gain,
+        "biggest_drag": drag,
+        "rows": rows,
+        "windows": [label for _, label in NFP_BREAKDOWN_WINDOWS],
+    }
 
 def load_core_cpi_last_release_local() -> str | None:
     if not REPORT_TABLE.exists():
@@ -1055,6 +1238,7 @@ def build_payload(now_et: datetime) -> dict[str, Any]:
         "current_time": now_et.strftime("%I:%M %p ET"),
         "next_event": next_event,
         "events": serialized,
+        "nfp_breakdown": build_nfp_breakdown(now_et),
         "summary": {
             "event_count": len(serialized),
             "live_count": sum(1 for event in serialized if event["status"] == "live"),
