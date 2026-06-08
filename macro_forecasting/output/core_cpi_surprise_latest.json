@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-05-14T18:14:16.670993+00:00",
+  "generated_at_utc": "2026-06-08T22:07:49.301218+00:00",
   "target_month": "2026-05",
   "threshold_pp": 0.1,
-  "house_forecast_mom": 0.18697752600473164,
-  "house_forecast_yoy": 2.8012730853982593,
+  "house_forecast_mom": 0.18701836844293668,
+  "house_forecast_yoy": 2.8013149935857795,
   "ma3_mom": 0.24799842977876185,
-  "house_gap_vs_ma3": -0.061020903774030216,
+  "house_gap_vs_ma3": -0.060980061335825175,
   "consensus_proxy": {
     "source": "kalshi_implied",
     "mom_event": "KXECONSTATCPICORE-26MAY",
