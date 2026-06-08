@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Monday, June 08, 2026 08:39 AM ET",
-  "generated_at_iso": "2026-06-08T08:39:05.345624-04:00",
+  "generated_at_et": "Monday, June 08, 2026 02:06 PM ET",
+  "generated_at_iso": "2026-06-08T14:06:36.110669-04:00",
   "current_day": "Monday",
   "current_date": "June 08, 2026",
-  "current_time": "08:39 AM ET",
+  "current_time": "02:06 PM ET",
   "next_event": {
     "key": "core_cpi",
     "label": "Core CPI",
@@ -14,10 +14,10 @@
     "release_date": "June 10, 2026",
     "release_time": "8:30 AM ET",
     "release_iso": "2026-06-10T08:30:00-04:00",
-    "hours_until_release": 47,
+    "hours_until_release": 42,
     "schedule_source": "seeded_official_schedule",
     "house_forecast": "0.187% m/m | 2.80% y/y",
-    "kalshi_consensus": "0.157% m/m | 5.01% y/y",
+    "kalshi_consensus": "0.166% m/m | 2.87% y/y",
     "last_release": "April 2026: 0.376% m/m, 2.74% y/y",
     "risk": "elevated surprise risk",
     "status": "live",
@@ -27,8 +27,8 @@
     "release_source_url": "https://www.bls.gov/news.release/cpi.toc.htm",
     "consensus_review": {
       "required": false,
-      "gap_value": 0.030006173320985458,
-      "gap_display": "+0.030 pp",
+      "gap_value": 0.02055682998139821,
+      "gap_display": "+0.021 pp",
       "threshold": 0.05,
       "threshold_display": "0.050 pp",
       "house_side": "above Kalshi"
@@ -44,10 +44,10 @@
       "release_date": "June 10, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-10T08:30:00-04:00",
-      "hours_until_release": 47,
+      "hours_until_release": 42,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "0.187% m/m | 2.80% y/y",
-      "kalshi_consensus": "0.157% m/m | 5.01% y/y",
+      "kalshi_consensus": "0.166% m/m | 2.87% y/y",
       "last_release": "April 2026: 0.376% m/m, 2.74% y/y",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -57,8 +57,8 @@
       "release_source_url": "https://www.bls.gov/news.release/cpi.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": 0.030006173320985458,
-        "gap_display": "+0.030 pp",
+        "gap_value": 0.02055682998139821,
+        "gap_display": "+0.021 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "above Kalshi"
@@ -73,10 +73,10 @@
       "release_date": "June 11, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-11T08:30:00-04:00",
-      "hours_until_release": 71,
+      "hours_until_release": 66,
       "schedule_source": "weekly_rule",
       "house_forecast": "217,263",
-      "kalshi_consensus": "219,550",
+      "kalshi_consensus": "220,550",
       "last_release": "Week ending May 09, 2026: 211,000",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -86,8 +86,8 @@
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "consensus_review": {
         "required": false,
-        "gap_value": -2287.3032046311127,
-        "gap_display": "-2,287",
+        "gap_value": -3287.3032046311127,
+        "gap_display": "-3,287",
         "threshold": 10000.0,
         "threshold_display": "10,000",
         "house_side": "below Kalshi"
@@ -102,7 +102,7 @@
       "release_date": "June 26, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-26T08:30:00-04:00",
-      "hours_until_release": 431,
+      "hours_until_release": 426,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "0.187% m/m | 3.24% y/y",
       "kalshi_consensus": "0.233% m/m",
@@ -131,7 +131,7 @@
       "release_date": "July 01, 2026",
       "release_time": "8:15 AM ET",
       "release_iso": "2026-07-01T08:15:00-04:00",
-      "hours_until_release": 551,
+      "hours_until_release": 546,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "44k",
       "kalshi_consensus": "77k",
@@ -160,10 +160,10 @@
       "release_date": "July 02, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-07-02T08:30:00-04:00",
-      "hours_until_release": 575,
+      "hours_until_release": 570,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "119k",
-      "kalshi_consensus": "103k",
+      "kalshi_consensus": "106k",
       "last_release": "May 2026: 172k",
       "risk": "normal surprise risk",
       "status": "live",
@@ -173,8 +173,8 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": 16.655165100097648,
-        "gap_display": "+17k",
+        "gap_value": 13.367665100097653,
+        "gap_display": "+13k",
         "threshold": 40.0,
         "threshold_display": "40k",
         "house_side": "above Kalshi"
@@ -189,10 +189,10 @@
       "release_date": "July 02, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-07-02T08:30:00-04:00",
-      "hours_until_release": 575,
+      "hours_until_release": 570,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "4.30%",
-      "kalshi_consensus": "4.42%",
+      "kalshi_consensus": "4.38%",
       "last_release": "May 2026: 4.30%",
       "risk": "elevated surprise risk",
       "status": "review",
@@ -202,13 +202,13 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": true,
-        "gap_value": -0.11689698492462419,
-        "gap_display": "-0.117 pp",
+        "gap_value": -0.07699680511182017,
+        "gap_display": "-0.077 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "below Kalshi",
         "label": "Review required",
-        "message": "Unemployment Rate house forecast is -0.117 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
+        "message": "Unemployment Rate house forecast is -0.077 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
         "news_query": "June 2026 jobs report BLS forecast adjustment survey",
         "news_search_url": "https://news.google.com/search?q=June+2026+jobs+report+BLS+forecast+adjustment+survey",
         "official_guidance": [
@@ -232,14 +232,14 @@
             "published": "Fri, 13 Feb 2026 08:00:00 GMT"
           },
           {
-            "title": "Florida Job Openings and Labor Turnover \u2014 December 2025 - Bureau of Labor Statistics (.gov)",
-            "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUUNudERhYlc2YkdlQUR0MEhGMTFOVjUyRmJETGtDUUJoakMxaGM0d1lNakpHblFpeUVMR0xDYlI3SjRvbnRrYXl3TWx2QTB6dGVsa2Z0MjVrTEdEQnhhaklsUE5xNWZyWTlFUzMzejVVVENpVnJ6OHpHR1AwclIyWlpHdnRDSUplR0FNaXkwaTY?oc=5",
-            "published": "Tue, 24 Feb 2026 08:00:00 GMT"
-          },
-          {
             "title": "US job growth likely picked up in January; unemployment rate forecast steady at 4.4% - Reuters",
             "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQjFJSElZLWk1SDdvYkNPenhWQ3dMVmo0eHhfLV90WldHSi1WUW91Qm1GbVJSOUc5MjhkRnFMNGJoc1pBcUtocEtuNG9DQ3J4RHBicS1mN2g5Nmo4WXRlTnZyT0Y4S2k5a3pmaDBJdkN3VGdFMEowYU1tVmhTSFdMS1BnV2lKejRvd0RuYnlDeFdpS1BQaEhEQUNvTFc4dm1GVzVOUUZEWmgzUU1HdkhDeFZIbE1sU0ZMbFYzOQ?oc=5",
             "published": "Wed, 11 Feb 2026 08:00:00 GMT"
+          },
+          {
+            "title": "January 2026 US Jobs Report - Staffing Industry Analysts",
+            "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxONjAxbUdBdF9WQWVpMnFZdkFxbS11aHRBTm9HUG5SZVJQVjFfY3BvdF9rSFUxVF9LclZydWVqODZoeGRscHNjSVYyVWJQM0RUdkRjTHBVenEzQnVBWE13QkExR0xpN01iRGdsRHFJZnZrZlYzQjJCNnVyMkxhVGZrbVRSenJReHQyT05sOHFkcGdKZ2lrbEI3SWJWRQ?oc=5",
+            "published": "Wed, 28 Jan 2026 08:00:00 GMT"
           }
         ]
       }
