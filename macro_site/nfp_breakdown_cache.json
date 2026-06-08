@@ -1,7 +1,7 @@
 {
   "period": "May 2026",
-  "source": "SQLite store populated from BLS CES establishment survey and CPS household survey series",
-  "database": "macro_site\\nfp_survey_data.db",
+  "source": "SQLite store populated from BLS CES establishment survey and CPS household survey component series; UR = 100 * unemployed / civilian labor force",
+  "database": "macro_site/nfp_survey_data.db",
   "headline": {
     "series_id": "CES0000000001",
     "label": "Total nonfarm",
@@ -363,51 +363,52 @@
   },
   "metric_rows": [
     {
-      "series_id": "",
+      "series_id": "LNS13000000/LNS11000000",
       "label": "Unemployment rate",
-      "group": "Household survey",
+      "group": "Household survey formula",
       "is_metric": true,
+      "formula": "100 * unemployed persons / civilian labor force",
       "history": [
         {
           "label": "May-26",
-          "value": 4.3,
+          "value": 4.296264067075107,
           "display": "4.30%",
-          "tone": "flat"
+          "tone": "positive"
         },
         {
           "label": "Apr-26",
-          "value": 4.3,
-          "display": "4.30%",
-          "tone": "flat"
+          "value": 4.337186387834937,
+          "display": "4.34%",
+          "tone": "negative"
         },
         {
           "label": "Mar-26",
-          "value": 4.3,
-          "display": "4.30%",
+          "value": 4.256057194259409,
+          "display": "4.26%",
           "tone": "positive"
         },
         {
           "label": "Feb-26",
-          "value": 4.4,
-          "display": "4.40%",
+          "value": 4.440911997090619,
+          "display": "4.44%",
           "tone": "negative"
         },
         {
           "label": "Jan-26",
-          "value": 4.3,
-          "display": "4.30%",
+          "value": 4.322294899246179,
+          "display": "4.32%",
           "tone": "positive"
         },
         {
           "label": "Dec-25",
-          "value": 4.4,
-          "display": "4.40%",
+          "value": 4.375054666316802,
+          "display": "4.38%",
           "tone": "positive"
         },
         {
           "label": "Nov-25",
-          "value": 4.5,
-          "display": "4.50%",
+          "value": 4.535941844806781,
+          "display": "4.54%",
           "tone": "flat"
         },
         {
@@ -418,30 +419,30 @@
         },
         {
           "label": "Sep-25",
-          "value": 4.4,
-          "display": "4.40%",
+          "value": 4.440590677387146,
+          "display": "4.44%",
           "tone": "negative"
         },
         {
           "label": "Aug-25",
-          "value": 4.3,
-          "display": "4.30%",
-          "tone": "flat"
+          "value": 4.322108345534407,
+          "display": "4.32%",
+          "tone": "negative"
         },
         {
           "label": "Jul-25",
-          "value": 4.3,
-          "display": "4.30%",
+          "value": 4.2673051193577916,
+          "display": "4.27%",
           "tone": "negative"
         },
         {
           "label": "Jun-25",
-          "value": 4.1,
-          "display": "4.10%",
+          "value": 4.140157295457214,
+          "display": "4.14%",
           "tone": "positive"
         }
       ],
-      "latest_value": 4.3,
+      "latest_value": 4.296264067075107,
       "latest": "4.30%"
     },
     {
@@ -693,51 +694,52 @@
   ],
   "history_rows": [
     {
-      "series_id": "",
+      "series_id": "LNS13000000/LNS11000000",
       "label": "Unemployment rate",
-      "group": "Household survey",
+      "group": "Household survey formula",
       "is_metric": true,
+      "formula": "100 * unemployed persons / civilian labor force",
       "history": [
         {
           "label": "May-26",
-          "value": 4.3,
+          "value": 4.296264067075107,
           "display": "4.30%",
-          "tone": "flat"
+          "tone": "positive"
         },
         {
           "label": "Apr-26",
-          "value": 4.3,
-          "display": "4.30%",
-          "tone": "flat"
+          "value": 4.337186387834937,
+          "display": "4.34%",
+          "tone": "negative"
         },
         {
           "label": "Mar-26",
-          "value": 4.3,
-          "display": "4.30%",
+          "value": 4.256057194259409,
+          "display": "4.26%",
           "tone": "positive"
         },
         {
           "label": "Feb-26",
-          "value": 4.4,
-          "display": "4.40%",
+          "value": 4.440911997090619,
+          "display": "4.44%",
           "tone": "negative"
         },
         {
           "label": "Jan-26",
-          "value": 4.3,
-          "display": "4.30%",
+          "value": 4.322294899246179,
+          "display": "4.32%",
           "tone": "positive"
         },
         {
           "label": "Dec-25",
-          "value": 4.4,
-          "display": "4.40%",
+          "value": 4.375054666316802,
+          "display": "4.38%",
           "tone": "positive"
         },
         {
           "label": "Nov-25",
-          "value": 4.5,
-          "display": "4.50%",
+          "value": 4.535941844806781,
+          "display": "4.54%",
           "tone": "flat"
         },
         {
@@ -748,30 +750,30 @@
         },
         {
           "label": "Sep-25",
-          "value": 4.4,
-          "display": "4.40%",
+          "value": 4.440590677387146,
+          "display": "4.44%",
           "tone": "negative"
         },
         {
           "label": "Aug-25",
-          "value": 4.3,
-          "display": "4.30%",
-          "tone": "flat"
+          "value": 4.322108345534407,
+          "display": "4.32%",
+          "tone": "negative"
         },
         {
           "label": "Jul-25",
-          "value": 4.3,
-          "display": "4.30%",
+          "value": 4.2673051193577916,
+          "display": "4.27%",
           "tone": "negative"
         },
         {
           "label": "Jun-25",
-          "value": 4.1,
-          "display": "4.10%",
+          "value": 4.140157295457214,
+          "display": "4.14%",
           "tone": "positive"
         }
       ],
-      "latest_value": 4.3,
+      "latest_value": 4.296264067075107,
       "latest": "4.30%"
     },
     {

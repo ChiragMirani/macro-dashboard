@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Friday, June 05, 2026 09:27 PM ET",
-  "generated_at_iso": "2026-06-05T21:27:15.487018-04:00",
-  "current_day": "Friday",
-  "current_date": "June 05, 2026",
-  "current_time": "09:27 PM ET",
+  "generated_at_et": "Monday, June 08, 2026 08:39 AM ET",
+  "generated_at_iso": "2026-06-08T08:39:05.345624-04:00",
+  "current_day": "Monday",
+  "current_date": "June 08, 2026",
+  "current_time": "08:39 AM ET",
   "next_event": {
     "key": "core_cpi",
     "label": "Core CPI",
@@ -14,21 +14,21 @@
     "release_date": "June 10, 2026",
     "release_time": "8:30 AM ET",
     "release_iso": "2026-06-10T08:30:00-04:00",
-    "hours_until_release": 107,
+    "hours_until_release": 47,
     "schedule_source": "seeded_official_schedule",
     "house_forecast": "0.187% m/m | 2.80% y/y",
-    "kalshi_consensus": "0.151% m/m | 2.87% y/y",
+    "kalshi_consensus": "0.157% m/m | 5.01% y/y",
     "last_release": "April 2026: 0.376% m/m, 2.74% y/y",
     "risk": "elevated surprise risk",
     "status": "live",
     "notes": "Model output from core CPI workflow and surprise model.",
-    "model_source": "macro_forecasting\\output\\core_cpi_forecast_latest.json",
+    "model_source": "macro_forecasting/output/core_cpi_forecast_latest.json",
     "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26may",
     "release_source_url": "https://www.bls.gov/news.release/cpi.toc.htm",
     "consensus_review": {
       "required": false,
-      "gap_value": 0.03557328173773436,
-      "gap_display": "+0.036 pp",
+      "gap_value": 0.030006173320985458,
+      "gap_display": "+0.030 pp",
       "threshold": 0.05,
       "threshold_display": "0.050 pp",
       "house_side": "above Kalshi"
@@ -44,21 +44,21 @@
       "release_date": "June 10, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-10T08:30:00-04:00",
-      "hours_until_release": 107,
+      "hours_until_release": 47,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "0.187% m/m | 2.80% y/y",
-      "kalshi_consensus": "0.151% m/m | 2.87% y/y",
+      "kalshi_consensus": "0.157% m/m | 5.01% y/y",
       "last_release": "April 2026: 0.376% m/m, 2.74% y/y",
       "risk": "elevated surprise risk",
       "status": "live",
       "notes": "Model output from core CPI workflow and surprise model.",
-      "model_source": "macro_forecasting\\output\\core_cpi_forecast_latest.json",
+      "model_source": "macro_forecasting/output/core_cpi_forecast_latest.json",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26may",
       "release_source_url": "https://www.bls.gov/news.release/cpi.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": 0.03557328173773436,
-        "gap_display": "+0.036 pp",
+        "gap_value": 0.030006173320985458,
+        "gap_display": "+0.030 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "above Kalshi"
@@ -73,21 +73,21 @@
       "release_date": "June 11, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-11T08:30:00-04:00",
-      "hours_until_release": 131,
+      "hours_until_release": 71,
       "schedule_source": "weekly_rule",
       "house_forecast": "217,263",
-      "kalshi_consensus": "217,975",
+      "kalshi_consensus": "219,550",
       "last_release": "Week ending May 09, 2026: 211,000",
       "risk": "elevated surprise risk",
       "status": "live",
       "notes": "Weekly model output with surprise-risk overlay.",
-      "model_source": "macro_forecasting\\output\\weekly_claims_forecast_latest.json",
+      "model_source": "macro_forecasting/output/weekly_claims_forecast_latest.json",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26jun11",
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "consensus_review": {
         "required": false,
-        "gap_value": -712.3032046311127,
-        "gap_display": "-712",
+        "gap_value": -2287.3032046311127,
+        "gap_display": "-2,287",
         "threshold": 10000.0,
         "threshold_display": "10,000",
         "house_side": "below Kalshi"
@@ -102,7 +102,7 @@
       "release_date": "June 26, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-26T08:30:00-04:00",
-      "hours_until_release": 491,
+      "hours_until_release": 431,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "0.187% m/m | 3.24% y/y",
       "kalshi_consensus": "0.233% m/m",
@@ -131,21 +131,21 @@
       "release_date": "July 01, 2026",
       "release_time": "8:15 AM ET",
       "release_iso": "2026-07-01T08:15:00-04:00",
-      "hours_until_release": 610,
+      "hours_until_release": 551,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "44k",
-      "kalshi_consensus": "75k",
+      "kalshi_consensus": "77k",
       "last_release": "May 2026: 122k",
       "risk": null,
       "status": "live",
-      "notes": "Two-step recursive forecast for the May 2026 ADP release; cached in macro_forecasting\\output\\adp_forecast_latest.json. Some release-month feature inputs were imputed with training medians.",
+      "notes": "Two-step recursive forecast for the May 2026 ADP release; cached in macro_forecasting/output/adp_forecast_latest.json. Some release-month feature inputs were imputed with training medians.",
       "model_source": "macro_forecasting/adp_forecast_kaggle_style.py",
       "kalshi_url": "https://kalshi.com/markets/kxadp-26jun",
       "release_source_url": "https://adpemploymentreport.com/",
       "consensus_review": {
         "required": false,
-        "gap_value": -31.533931233869737,
-        "gap_display": "-32k",
+        "gap_value": -33.03393123386974,
+        "gap_display": "-33k",
         "threshold": 35.0,
         "threshold_display": "35k",
         "house_side": "below Kalshi"
@@ -160,24 +160,24 @@
       "release_date": "July 02, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-07-02T08:30:00-04:00",
-      "hours_until_release": 635,
+      "hours_until_release": 575,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "119k",
-      "kalshi_consensus": "128k",
+      "kalshi_consensus": "103k",
       "last_release": "May 2026: 172k",
       "risk": "normal surprise risk",
       "status": "live",
       "notes": "Latest BLS actual: May 2026: 172k. NFP surprise model already uses weekly claims features, so the forecast can refresh as claims move.",
-      "model_source": "macro_forecasting\\output\\nfp_surprise_latest.json",
+      "model_source": "macro_forecasting/output/nfp_surprise_latest.json",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26jun",
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": -9.107334899902355,
-        "gap_display": "-9k",
+        "gap_value": 16.655165100097648,
+        "gap_display": "+17k",
         "threshold": 40.0,
         "threshold_display": "40k",
-        "house_side": "below Kalshi"
+        "house_side": "above Kalshi"
       }
     },
     {
@@ -189,26 +189,26 @@
       "release_date": "July 02, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-07-02T08:30:00-04:00",
-      "hours_until_release": 635,
+      "hours_until_release": 575,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "4.30%",
-      "kalshi_consensus": "4.39%",
+      "kalshi_consensus": "4.42%",
       "last_release": "May 2026: 4.30%",
       "risk": "elevated surprise risk",
       "status": "review",
       "notes": "Latest BLS actual: May 2026: 4.30%. Rounded to the market print convention; live model also stores unrounded UR.",
-      "model_source": "macro_forecasting\\output\\ur_surprise_latest.json",
+      "model_source": "macro_forecasting/output/ur_surprise_latest.json",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26jun",
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": true,
-        "gap_value": -0.09418604651162799,
-        "gap_display": "-0.094 pp",
+        "gap_value": -0.11689698492462419,
+        "gap_display": "-0.117 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "below Kalshi",
         "label": "Review required",
-        "message": "Unemployment Rate house forecast is -0.094 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
+        "message": "Unemployment Rate house forecast is -0.117 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
         "news_query": "June 2026 jobs report BLS forecast adjustment survey",
         "news_search_url": "https://news.google.com/search?q=June+2026+jobs+report+BLS+forecast+adjustment+survey",
         "official_guidance": [
@@ -222,24 +222,24 @@
         "guidance_hit_count": 0,
         "news_headlines": [
           {
+            "title": "U.S. payrolls rose by 172,000 in May, much more than expected; unemployment at 4.3% - CNBC",
+            "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1GcU53MmVDeWEzOERLdGp6aWRFMzdLcmJDOTIyOUxLcWNmZUMwMktKUFFuYnA2d2ctUUs4d0w0YjhMbkZZbnJBRDZYUUpaQko1Tm8yWkRMTjcyd3lhVE90NnFHdGtjVWxM0gFuQVVfeXFMT2hWVGJYR0kzSnNEMzNtMVBtN0xwYTBRWEFxZ21Bd1V5bUFHRnREOV9fQnFQNElHNlhWeW9neGFzZG5XdDU0TVBSQTh3SXBjNkMyeUowZFUza1hqZEtDcHBBUmFWRVh2YVZrUkNHU2c?oc=5",
+            "published": "Fri, 05 Jun 2026 12:31:00 GMT"
+          },
+          {
             "title": "Signs of Life - The Economic Policy Innovation Center",
             "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1XeWpfT1NZb25DdXVVY3F6aVh1aWNGdjZLc1ljcnY1VUpSLUctakpoTElJTDZlZWF2ZkhLN1YtSm1NSk5XNF9vMDdzczkwTFRCRWdDT21XR2xKMU1vX2JxZ3p2WUJHVlU?oc=5",
             "published": "Fri, 13 Feb 2026 08:00:00 GMT"
           },
           {
-            "title": "U.S. payrolls rose by 130,000 in January, more than expected; unemployment down to 4.3% - CNBC",
-            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE80QmlGMzFFZjM3TDhfN2R0NkdUZkM0VGRwQjE0UG1JVTh4Rnk4Wmg2U250a3p3cUFfX3l3YjV0TXh0dFlmRWdXakdNN2tFeTduNUpnaTRoZm44cExLbmhhbnlBX0FkMU1mRnRtcGdBZ9IBdEFVX3lxTE1tOWIxV2doSWlXYnlkTWl6bVNpYVpCbDB0YURFWWlCR2ZrNUkxRXIzRHphU2MwX0RxMlQ0WnozSTFBeHF5ZzQ2Wm91OW9XRTk3dG5VNTBlWW5vbGhIRFBEb2xDTUJkT1NCVmM1Mkcydzl0Zl9C?oc=5",
+            "title": "Florida Job Openings and Labor Turnover \u2014 December 2025 - Bureau of Labor Statistics (.gov)",
+            "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUUNudERhYlc2YkdlQUR0MEhGMTFOVjUyRmJETGtDUUJoakMxaGM0d1lNakpHblFpeUVMR0xDYlI3SjRvbnRrYXl3TWx2QTB6dGVsa2Z0MjVrTEdEQnhhaklsUE5xNWZyWTlFUzMzejVVVENpVnJ6OHpHR1AwclIyWlpHdnRDSUplR0FNaXkwaTY?oc=5",
+            "published": "Tue, 24 Feb 2026 08:00:00 GMT"
+          },
+          {
+            "title": "US job growth likely picked up in January; unemployment rate forecast steady at 4.4% - Reuters",
+            "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQjFJSElZLWk1SDdvYkNPenhWQ3dMVmo0eHhfLV90WldHSi1WUW91Qm1GbVJSOUc5MjhkRnFMNGJoc1pBcUtocEtuNG9DQ3J4RHBicS1mN2g5Nmo4WXRlTnZyT0Y4S2k5a3pmaDBJdkN3VGdFMEowYU1tVmhTSFdMS1BnV2lKejRvd0RuYnlDeFdpS1BQaEhEQUNvTFc4dm1GVzVOUUZEWmgzUU1HdkhDeFZIbE1sU0ZMbFYzOQ?oc=5",
             "published": "Wed, 11 Feb 2026 08:00:00 GMT"
-          },
-          {
-            "title": "BLS Jobs Report Is Broken. Is There A Better Measure? - RIA - Real Investment Advice",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQLWZKLVlsV2xxOWpHRE9ULVhoNEVZMDgtQlpaTnlaSWhmMFlybHhUT1hBNU45OHhWcUwzd1NBM245aWNCOHVhUXg2RUdJUUpWdjMyeWJJdVJzYlpUa1Z1NzBlaWVPc2o0TmlSZ1RtWC1Xc3pNMHVtVjZUZmV5QmVLWUEycVIzbDIzLVNwS3dLanBZUzd1aGI1amFSdzFzLVNiRGc?oc=5",
-            "published": "Fri, 17 Apr 2026 07:00:00 GMT"
-          },
-          {
-            "title": "Slower US job growth expected in December; unemployment rate likely dipped - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTGVQRms2YjZFbWdySmpwbjBpRVc3ZTBZMHgwSmhsYVlsZHlzc3NjVnBOczUxR0gzbmhkVkx3MXFHZ25PMWI3OTkwNHBkVV9iUUVrbGludGd2eDJkODJ6aUV2UnN1aWowZlRiVjd6c1gwMmU5WGRMSEJVQXZCYU54NTRaRDlGNU1ueUdnZDhmQ0xBMUhnUHZlVWZ4OEpQQThCc2MyWHRaZ2F6b1R4UkZmenBjenYyZw?oc=5",
-            "published": "Fri, 09 Jan 2026 08:00:00 GMT"
           }
         ]
       }
@@ -247,8 +247,8 @@
   ],
   "nfp_breakdown": {
     "period": "May 2026",
-    "source": "SQLite store populated from BLS CES establishment survey and CPS household survey series",
-    "database": "macro_site\\nfp_survey_data.db",
+    "source": "SQLite store populated from BLS CES establishment survey and CPS household survey component series; UR = 100 * unemployed / civilian labor force",
+    "database": "macro_site/nfp_survey_data.db",
     "headline": {
       "series_id": "CES0000000001",
       "label": "Total nonfarm",
@@ -610,51 +610,52 @@
     },
     "metric_rows": [
       {
-        "series_id": "",
+        "series_id": "LNS13000000/LNS11000000",
         "label": "Unemployment rate",
-        "group": "Household survey",
+        "group": "Household survey formula",
         "is_metric": true,
+        "formula": "100 * unemployed persons / civilian labor force",
         "history": [
           {
             "label": "May-26",
-            "value": 4.3,
+            "value": 4.296264067075107,
             "display": "4.30%",
-            "tone": "flat"
+            "tone": "positive"
           },
           {
             "label": "Apr-26",
-            "value": 4.3,
-            "display": "4.30%",
-            "tone": "flat"
+            "value": 4.337186387834937,
+            "display": "4.34%",
+            "tone": "negative"
           },
           {
             "label": "Mar-26",
-            "value": 4.3,
-            "display": "4.30%",
+            "value": 4.256057194259409,
+            "display": "4.26%",
             "tone": "positive"
           },
           {
             "label": "Feb-26",
-            "value": 4.4,
-            "display": "4.40%",
+            "value": 4.440911997090619,
+            "display": "4.44%",
             "tone": "negative"
           },
           {
             "label": "Jan-26",
-            "value": 4.3,
-            "display": "4.30%",
+            "value": 4.322294899246179,
+            "display": "4.32%",
             "tone": "positive"
           },
           {
             "label": "Dec-25",
-            "value": 4.4,
-            "display": "4.40%",
+            "value": 4.375054666316802,
+            "display": "4.38%",
             "tone": "positive"
           },
           {
             "label": "Nov-25",
-            "value": 4.5,
-            "display": "4.50%",
+            "value": 4.535941844806781,
+            "display": "4.54%",
             "tone": "flat"
           },
           {
@@ -665,30 +666,30 @@
           },
           {
             "label": "Sep-25",
-            "value": 4.4,
-            "display": "4.40%",
+            "value": 4.440590677387146,
+            "display": "4.44%",
             "tone": "negative"
           },
           {
             "label": "Aug-25",
-            "value": 4.3,
-            "display": "4.30%",
-            "tone": "flat"
+            "value": 4.322108345534407,
+            "display": "4.32%",
+            "tone": "negative"
           },
           {
             "label": "Jul-25",
-            "value": 4.3,
-            "display": "4.30%",
+            "value": 4.2673051193577916,
+            "display": "4.27%",
             "tone": "negative"
           },
           {
             "label": "Jun-25",
-            "value": 4.1,
-            "display": "4.10%",
+            "value": 4.140157295457214,
+            "display": "4.14%",
             "tone": "positive"
           }
         ],
-        "latest_value": 4.3,
+        "latest_value": 4.296264067075107,
         "latest": "4.30%"
       },
       {
@@ -940,51 +941,52 @@
     ],
     "history_rows": [
       {
-        "series_id": "",
+        "series_id": "LNS13000000/LNS11000000",
         "label": "Unemployment rate",
-        "group": "Household survey",
+        "group": "Household survey formula",
         "is_metric": true,
+        "formula": "100 * unemployed persons / civilian labor force",
         "history": [
           {
             "label": "May-26",
-            "value": 4.3,
+            "value": 4.296264067075107,
             "display": "4.30%",
-            "tone": "flat"
+            "tone": "positive"
           },
           {
             "label": "Apr-26",
-            "value": 4.3,
-            "display": "4.30%",
-            "tone": "flat"
+            "value": 4.337186387834937,
+            "display": "4.34%",
+            "tone": "negative"
           },
           {
             "label": "Mar-26",
-            "value": 4.3,
-            "display": "4.30%",
+            "value": 4.256057194259409,
+            "display": "4.26%",
             "tone": "positive"
           },
           {
             "label": "Feb-26",
-            "value": 4.4,
-            "display": "4.40%",
+            "value": 4.440911997090619,
+            "display": "4.44%",
             "tone": "negative"
           },
           {
             "label": "Jan-26",
-            "value": 4.3,
-            "display": "4.30%",
+            "value": 4.322294899246179,
+            "display": "4.32%",
             "tone": "positive"
           },
           {
             "label": "Dec-25",
-            "value": 4.4,
-            "display": "4.40%",
+            "value": 4.375054666316802,
+            "display": "4.38%",
             "tone": "positive"
           },
           {
             "label": "Nov-25",
-            "value": 4.5,
-            "display": "4.50%",
+            "value": 4.535941844806781,
+            "display": "4.54%",
             "tone": "flat"
           },
           {
@@ -995,30 +997,30 @@
           },
           {
             "label": "Sep-25",
-            "value": 4.4,
-            "display": "4.40%",
+            "value": 4.440590677387146,
+            "display": "4.44%",
             "tone": "negative"
           },
           {
             "label": "Aug-25",
-            "value": 4.3,
-            "display": "4.30%",
-            "tone": "flat"
+            "value": 4.322108345534407,
+            "display": "4.32%",
+            "tone": "negative"
           },
           {
             "label": "Jul-25",
-            "value": 4.3,
-            "display": "4.30%",
+            "value": 4.2673051193577916,
+            "display": "4.27%",
             "tone": "negative"
           },
           {
             "label": "Jun-25",
-            "value": 4.1,
-            "display": "4.10%",
+            "value": 4.140157295457214,
+            "display": "4.14%",
             "tone": "positive"
           }
         ],
-        "latest_value": 4.3,
+        "latest_value": 4.296264067075107,
         "latest": "4.30%"
       },
       {
