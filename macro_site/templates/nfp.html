@@ -39,7 +39,7 @@
           <div>
             <p class="eyebrow">Establishment survey &middot; {{ payload.nfp_breakdown.period }} &middot; Updated {{ payload.generated_at_et }}</p>
             <h1 id="nfp-breakdown-title">NFP Sector Momentum</h1>
-            <p>{{ payload.nfp_breakdown.source }}. Top rows show household/wage rates; payroll rows show month-over-month job changes in thousands.</p>
+            <p>{{ payload.nfp_breakdown.source }}. Top rows separate exact CPS component calculations from official rounded household rates; payroll rows show month-over-month job changes in thousands.</p>
           </div>
           <div class="nfp-headline-stat">
             <span>Headline 1M</span>
@@ -75,6 +75,17 @@
           </div>
         </div>
 
+        {% if payload.nfp_breakdown.household_rounding %}
+        <div class="cpi-insight-grid nfp-household-rounding">
+          {% for item in payload.nfp_breakdown.household_rounding %}
+          <div class="cpi-insight-card">
+            <span>{{ item.label }}</span>
+            <strong>{{ item.exact }}</strong>
+            <small>Official rounded: {{ item.official }}{% if item.rounding %} &middot; {{ item.rounding.summary }}{% endif %}</small>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
 
         {% if payload.nfp_breakdown.history_months %}
         <div class="nfp-history-panel">
@@ -83,7 +94,7 @@
               <span class="summary-label">Last 12 monthly prints</span>
               <h2>Establishment Survey Detail</h2>
             </div>
-            <p>UR is calculated from CPS household components as 100 * unemployed persons / civilian labor force; participation is CPS household-survey rate; AHE rows are CES wage m/m and y/y changes; payroll rows are CES month-over-month job changes in thousands.</p>
+            <p>Exact U-3 is 100 * unemployed persons / civilian labor force; exact participation is 100 * labor force / civilian noninstitutional population. Official rows are the rounded BLS published rates; AHE rows are CES wage m/m and y/y changes; payroll rows are job changes in thousands.</p>
           </div>
           <div class="nfp-history-scroll" role="region" aria-label="Last 12 months of NFP establishment survey changes">
             <div class="nfp-history-grid" style="grid-template-columns: minmax(280px, 1.2fr) repeat({{ payload.nfp_breakdown.history_months | length }}, minmax(74px, 1fr));">
@@ -142,7 +153,7 @@
       {% endif %}
 
       <footer class="site-foot">
-        <p>Source: SQLite store populated from BLS CES establishment survey and CPS household survey component series. UR = 100 * unemployed persons / civilian labor force.</p>
+        <p>Source: SQLite store populated from BLS CES establishment survey and CPS household survey component series. Exact U-3 and LFPR are component-derived; official rows are BLS rounded published rates.</p>
         <p class="muted"><a href="./">Back to forecasts</a>.</p>
       </footer>
     </main>

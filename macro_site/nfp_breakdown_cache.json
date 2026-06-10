@@ -1,6 +1,6 @@
 {
   "period": "May 2026",
-  "source": "SQLite store populated from BLS CES establishment survey and CPS household survey component series; UR = 100 * unemployed / civilian labor force",
+  "source": "SQLite store populated from BLS CES establishment survey and CPS household survey component series; U-3 and LFPR exact rows are calculated from components and separated from official rounded published rates",
   "database": "macro_site\\nfp_survey_data.db",
   "headline": {
     "series_id": "CES0000000001",
@@ -361,54 +361,100 @@
     "tone_1m": "negative",
     "bar_pct": 12.8
   },
+  "household_rounding": [
+    {
+      "label": "U-3 unemployment rate",
+      "exact": "4.296%",
+      "official": "4.3%",
+      "formula": "100 * unemployed persons / civilian labor force",
+      "rounding": {
+        "exact_value": 4.296264067075107,
+        "exact_display": "4.296%",
+        "rounded_value": 4.3,
+        "rounded_display": "4.3%",
+        "lower_print": "4.2%",
+        "higher_print": "4.4%",
+        "lower_cutoff": "4.25%",
+        "upper_cutoff": "4.35%",
+        "down_buffer_bps_value": 4.626406707510711,
+        "up_buffer_bps_value": 5.373593292489254,
+        "down_buffer_bps": "4.63 bps",
+        "up_buffer_bps": "5.37 bps",
+        "closest_side": "lower",
+        "summary": "4.63 bps above 4.2% cutoff; 5.37 bps below 4.4% cutoff"
+      }
+    },
+    {
+      "label": "Labor force participation rate",
+      "exact": "61.834%",
+      "official": "61.8%",
+      "formula": "100 * civilian labor force / civilian noninstitutional population",
+      "rounding": {
+        "exact_value": 61.8344034262363,
+        "exact_display": "61.834%",
+        "rounded_value": 61.8,
+        "rounded_display": "61.8%",
+        "lower_print": "61.7%",
+        "higher_print": "61.9%",
+        "lower_cutoff": "61.75%",
+        "upper_cutoff": "61.85%",
+        "down_buffer_bps_value": 8.44034262362996,
+        "up_buffer_bps_value": 1.559657376369472,
+        "down_buffer_bps": "8.44 bps",
+        "up_buffer_bps": "1.56 bps",
+        "closest_side": "higher",
+        "summary": "8.44 bps above 61.7% cutoff; 1.56 bps below 61.9% cutoff"
+      }
+    }
+  ],
   "metric_rows": [
     {
       "series_id": "LNS13000000/LNS11000000",
-      "label": "Unemployment rate",
-      "group": "Household survey formula",
+      "label": "Unemployment rate calc exact",
+      "group": "Household formula exact",
       "is_metric": true,
       "formula": "100 * unemployed persons / civilian labor force",
       "history": [
         {
           "label": "May-26",
           "value": 4.296264067075107,
-          "display": "4.30%",
+          "display": "4.296%",
           "tone": "positive"
         },
         {
           "label": "Apr-26",
           "value": 4.337186387834937,
-          "display": "4.34%",
+          "display": "4.337%",
           "tone": "negative"
         },
         {
           "label": "Mar-26",
           "value": 4.256057194259409,
-          "display": "4.26%",
+          "display": "4.256%",
           "tone": "positive"
         },
         {
           "label": "Feb-26",
           "value": 4.440911997090619,
-          "display": "4.44%",
+          "display": "4.441%",
           "tone": "negative"
         },
         {
           "label": "Jan-26",
           "value": 4.322294899246179,
-          "display": "4.32%",
+          "display": "4.322%",
           "tone": "positive"
         },
         {
           "label": "Dec-25",
           "value": 4.375054666316802,
-          "display": "4.38%",
+          "display": "4.375%",
           "tone": "positive"
         },
         {
           "label": "Nov-25",
           "value": 4.535941844806781,
-          "display": "4.54%",
+          "display": "4.536%",
           "tone": "flat"
         },
         {
@@ -420,36 +466,235 @@
         {
           "label": "Sep-25",
           "value": 4.440590677387146,
-          "display": "4.44%",
+          "display": "4.441%",
           "tone": "negative"
         },
         {
           "label": "Aug-25",
           "value": 4.322108345534407,
-          "display": "4.32%",
+          "display": "4.322%",
           "tone": "negative"
         },
         {
           "label": "Jul-25",
           "value": 4.2673051193577916,
-          "display": "4.27%",
+          "display": "4.267%",
           "tone": "negative"
         },
         {
           "label": "Jun-25",
           "value": 4.140157295457214,
-          "display": "4.14%",
+          "display": "4.140%",
           "tone": "positive"
         }
       ],
       "latest_value": 4.296264067075107,
-      "latest": "4.30%"
+      "latest": "4.296%",
+      "rounding": {
+        "exact_value": 4.296264067075107,
+        "exact_display": "4.296%",
+        "rounded_value": 4.3,
+        "rounded_display": "4.3%",
+        "lower_print": "4.2%",
+        "higher_print": "4.4%",
+        "lower_cutoff": "4.25%",
+        "upper_cutoff": "4.35%",
+        "down_buffer_bps_value": 4.626406707510711,
+        "up_buffer_bps_value": 5.373593292489254,
+        "down_buffer_bps": "4.63 bps",
+        "up_buffer_bps": "5.37 bps",
+        "closest_side": "lower",
+        "summary": "4.63 bps above 4.2% cutoff; 5.37 bps below 4.4% cutoff"
+      }
     },
     {
-      "series_id": "",
-      "label": "Labor force participation rate",
-      "group": "Household survey",
+      "series_id": "LNS14000000",
+      "label": "Unemployment rate official rounded",
+      "group": "Household published U-3",
       "is_metric": true,
+      "formula": null,
+      "history": [
+        {
+          "label": "May-26",
+          "value": 4.3,
+          "display": "4.3%",
+          "tone": "flat"
+        },
+        {
+          "label": "Apr-26",
+          "value": 4.3,
+          "display": "4.3%",
+          "tone": "flat"
+        },
+        {
+          "label": "Mar-26",
+          "value": 4.3,
+          "display": "4.3%",
+          "tone": "positive"
+        },
+        {
+          "label": "Feb-26",
+          "value": 4.4,
+          "display": "4.4%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 4.3,
+          "display": "4.3%",
+          "tone": "positive"
+        },
+        {
+          "label": "Dec-25",
+          "value": 4.4,
+          "display": "4.4%",
+          "tone": "positive"
+        },
+        {
+          "label": "Nov-25",
+          "value": 4.5,
+          "display": "4.5%",
+          "tone": "flat"
+        },
+        {
+          "label": "Oct-25",
+          "value": null,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 4.4,
+          "display": "4.4%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 4.3,
+          "display": "4.3%",
+          "tone": "flat"
+        },
+        {
+          "label": "Jul-25",
+          "value": 4.3,
+          "display": "4.3%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": 4.1,
+          "display": "4.1%",
+          "tone": "positive"
+        }
+      ],
+      "latest_value": 4.3,
+      "latest": "4.3%"
+    },
+    {
+      "series_id": "LNS11000000/LNU00000000",
+      "label": "Participation rate calc exact",
+      "group": "Household formula exact",
+      "is_metric": true,
+      "formula": "100 * civilian labor force / civilian noninstitutional population",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 61.8344034262363,
+          "display": "61.834%",
+          "tone": "positive"
+        },
+        {
+          "label": "Apr-26",
+          "value": 61.8264806968413,
+          "display": "61.826%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 61.8817716784667,
+          "display": "61.882%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 62.04661420990952,
+          "display": "62.047%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 62.06039115175698,
+          "display": "62.060%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 62.4035718444341,
+          "display": "62.404%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": 62.46190370421617,
+          "display": "62.462%",
+          "tone": "flat"
+        },
+        {
+          "label": "Oct-25",
+          "value": null,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 62.45250268027102,
+          "display": "62.453%",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-25",
+          "value": 62.31729081280725,
+          "display": "62.317%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-25",
+          "value": 62.24300089486276,
+          "display": "62.243%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": 62.27680611144617,
+          "display": "62.277%",
+          "tone": "negative"
+        }
+      ],
+      "latest_value": 61.8344034262363,
+      "latest": "61.834%",
+      "rounding": {
+        "exact_value": 61.8344034262363,
+        "exact_display": "61.834%",
+        "rounded_value": 61.8,
+        "rounded_display": "61.8%",
+        "lower_print": "61.7%",
+        "higher_print": "61.9%",
+        "lower_cutoff": "61.75%",
+        "upper_cutoff": "61.85%",
+        "down_buffer_bps_value": 8.44034262362996,
+        "up_buffer_bps_value": 1.559657376369472,
+        "down_buffer_bps": "8.44 bps",
+        "up_buffer_bps": "1.56 bps",
+        "closest_side": "higher",
+        "summary": "8.44 bps above 61.7% cutoff; 1.56 bps below 61.9% cutoff"
+      }
+    },
+    {
+      "series_id": "LNS11300000",
+      "label": "Participation rate official rounded",
+      "group": "Household published LFPR",
+      "is_metric": true,
+      "formula": null,
       "history": [
         {
           "label": "May-26",
@@ -695,51 +940,51 @@
   "history_rows": [
     {
       "series_id": "LNS13000000/LNS11000000",
-      "label": "Unemployment rate",
-      "group": "Household survey formula",
+      "label": "Unemployment rate calc exact",
+      "group": "Household formula exact",
       "is_metric": true,
       "formula": "100 * unemployed persons / civilian labor force",
       "history": [
         {
           "label": "May-26",
           "value": 4.296264067075107,
-          "display": "4.30%",
+          "display": "4.296%",
           "tone": "positive"
         },
         {
           "label": "Apr-26",
           "value": 4.337186387834937,
-          "display": "4.34%",
+          "display": "4.337%",
           "tone": "negative"
         },
         {
           "label": "Mar-26",
           "value": 4.256057194259409,
-          "display": "4.26%",
+          "display": "4.256%",
           "tone": "positive"
         },
         {
           "label": "Feb-26",
           "value": 4.440911997090619,
-          "display": "4.44%",
+          "display": "4.441%",
           "tone": "negative"
         },
         {
           "label": "Jan-26",
           "value": 4.322294899246179,
-          "display": "4.32%",
+          "display": "4.322%",
           "tone": "positive"
         },
         {
           "label": "Dec-25",
           "value": 4.375054666316802,
-          "display": "4.38%",
+          "display": "4.375%",
           "tone": "positive"
         },
         {
           "label": "Nov-25",
           "value": 4.535941844806781,
-          "display": "4.54%",
+          "display": "4.536%",
           "tone": "flat"
         },
         {
@@ -751,36 +996,235 @@
         {
           "label": "Sep-25",
           "value": 4.440590677387146,
-          "display": "4.44%",
+          "display": "4.441%",
           "tone": "negative"
         },
         {
           "label": "Aug-25",
           "value": 4.322108345534407,
-          "display": "4.32%",
+          "display": "4.322%",
           "tone": "negative"
         },
         {
           "label": "Jul-25",
           "value": 4.2673051193577916,
-          "display": "4.27%",
+          "display": "4.267%",
           "tone": "negative"
         },
         {
           "label": "Jun-25",
           "value": 4.140157295457214,
-          "display": "4.14%",
+          "display": "4.140%",
           "tone": "positive"
         }
       ],
       "latest_value": 4.296264067075107,
-      "latest": "4.30%"
+      "latest": "4.296%",
+      "rounding": {
+        "exact_value": 4.296264067075107,
+        "exact_display": "4.296%",
+        "rounded_value": 4.3,
+        "rounded_display": "4.3%",
+        "lower_print": "4.2%",
+        "higher_print": "4.4%",
+        "lower_cutoff": "4.25%",
+        "upper_cutoff": "4.35%",
+        "down_buffer_bps_value": 4.626406707510711,
+        "up_buffer_bps_value": 5.373593292489254,
+        "down_buffer_bps": "4.63 bps",
+        "up_buffer_bps": "5.37 bps",
+        "closest_side": "lower",
+        "summary": "4.63 bps above 4.2% cutoff; 5.37 bps below 4.4% cutoff"
+      }
     },
     {
-      "series_id": "",
-      "label": "Labor force participation rate",
-      "group": "Household survey",
+      "series_id": "LNS14000000",
+      "label": "Unemployment rate official rounded",
+      "group": "Household published U-3",
       "is_metric": true,
+      "formula": null,
+      "history": [
+        {
+          "label": "May-26",
+          "value": 4.3,
+          "display": "4.3%",
+          "tone": "flat"
+        },
+        {
+          "label": "Apr-26",
+          "value": 4.3,
+          "display": "4.3%",
+          "tone": "flat"
+        },
+        {
+          "label": "Mar-26",
+          "value": 4.3,
+          "display": "4.3%",
+          "tone": "positive"
+        },
+        {
+          "label": "Feb-26",
+          "value": 4.4,
+          "display": "4.4%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 4.3,
+          "display": "4.3%",
+          "tone": "positive"
+        },
+        {
+          "label": "Dec-25",
+          "value": 4.4,
+          "display": "4.4%",
+          "tone": "positive"
+        },
+        {
+          "label": "Nov-25",
+          "value": 4.5,
+          "display": "4.5%",
+          "tone": "flat"
+        },
+        {
+          "label": "Oct-25",
+          "value": null,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 4.4,
+          "display": "4.4%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 4.3,
+          "display": "4.3%",
+          "tone": "flat"
+        },
+        {
+          "label": "Jul-25",
+          "value": 4.3,
+          "display": "4.3%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": 4.1,
+          "display": "4.1%",
+          "tone": "positive"
+        }
+      ],
+      "latest_value": 4.3,
+      "latest": "4.3%"
+    },
+    {
+      "series_id": "LNS11000000/LNU00000000",
+      "label": "Participation rate calc exact",
+      "group": "Household formula exact",
+      "is_metric": true,
+      "formula": "100 * civilian labor force / civilian noninstitutional population",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 61.8344034262363,
+          "display": "61.834%",
+          "tone": "positive"
+        },
+        {
+          "label": "Apr-26",
+          "value": 61.8264806968413,
+          "display": "61.826%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 61.8817716784667,
+          "display": "61.882%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 62.04661420990952,
+          "display": "62.047%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 62.06039115175698,
+          "display": "62.060%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 62.4035718444341,
+          "display": "62.404%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": 62.46190370421617,
+          "display": "62.462%",
+          "tone": "flat"
+        },
+        {
+          "label": "Oct-25",
+          "value": null,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 62.45250268027102,
+          "display": "62.453%",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-25",
+          "value": 62.31729081280725,
+          "display": "62.317%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-25",
+          "value": 62.24300089486276,
+          "display": "62.243%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": 62.27680611144617,
+          "display": "62.277%",
+          "tone": "negative"
+        }
+      ],
+      "latest_value": 61.8344034262363,
+      "latest": "61.834%",
+      "rounding": {
+        "exact_value": 61.8344034262363,
+        "exact_display": "61.834%",
+        "rounded_value": 61.8,
+        "rounded_display": "61.8%",
+        "lower_print": "61.7%",
+        "higher_print": "61.9%",
+        "lower_cutoff": "61.75%",
+        "upper_cutoff": "61.85%",
+        "down_buffer_bps_value": 8.44034262362996,
+        "up_buffer_bps_value": 1.559657376369472,
+        "down_buffer_bps": "8.44 bps",
+        "up_buffer_bps": "1.56 bps",
+        "closest_side": "higher",
+        "summary": "8.44 bps above 61.7% cutoff; 1.56 bps below 61.9% cutoff"
+      }
+    },
+    {
+      "series_id": "LNS11300000",
+      "label": "Participation rate official rounded",
+      "group": "Household published LFPR",
+      "is_metric": true,
+      "formula": null,
       "history": [
         {
           "label": "May-26",

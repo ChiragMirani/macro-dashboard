@@ -97,7 +97,9 @@ BLS_API_KEY = "3178d811e9bd40d680cd4399fe006d5e"
 NFP_METRIC_SERIES = {
     "unemployed": "LNS13000000",
     "labor_force": "LNS11000000",
-    "participation": "LNS11300000",
+    "population": "LNU00000000",
+    "official_unemployment_rate": "LNS14000000",
+    "official_participation_rate": "LNS11300000",
     "ahe": "CES0500000003",
 }
 CPI_COMPONENT_SERIES = [
@@ -653,7 +655,7 @@ def nfp_series_metadata() -> list[dict[str, Any]]:
         {
             "series_id": NFP_METRIC_SERIES["unemployed"],
             "label": "Unemployed persons",
-            "group_name": "Household survey",
+            "group_name": "Household survey components",
             "kind": "household_level",
             "unit": "thousands of persons",
             "source": "BLS CPS household survey",
@@ -662,20 +664,38 @@ def nfp_series_metadata() -> list[dict[str, Any]]:
         {
             "series_id": NFP_METRIC_SERIES["labor_force"],
             "label": "Civilian labor force",
-            "group_name": "Household survey",
+            "group_name": "Household survey components",
             "kind": "household_level",
             "unit": "thousands of persons",
             "source": "BLS CPS household survey",
             "display_order": 2,
         },
         {
-            "series_id": NFP_METRIC_SERIES["participation"],
-            "label": "Labor force participation rate",
-            "group_name": "Household survey",
+            "series_id": NFP_METRIC_SERIES["population"],
+            "label": "Civilian noninstitutional population",
+            "group_name": "Household survey components",
+            "kind": "household_level",
+            "unit": "thousands of persons",
+            "source": "BLS CPS household survey",
+            "display_order": 3,
+        },
+        {
+            "series_id": NFP_METRIC_SERIES["official_unemployment_rate"],
+            "label": "Official unemployment rate",
+            "group_name": "Household survey rounded rate",
             "kind": "rate_level",
             "unit": "%",
             "source": "BLS CPS household survey",
-            "display_order": 3,
+            "display_order": 4,
+        },
+        {
+            "series_id": NFP_METRIC_SERIES["official_participation_rate"],
+            "label": "Official labor force participation rate",
+            "group_name": "Household survey rounded rate",
+            "kind": "rate_level",
+            "unit": "%",
+            "source": "BLS CPS household survey",
+            "display_order": 5,
         },
         {
             "series_id": NFP_METRIC_SERIES["ahe"],
@@ -684,7 +704,7 @@ def nfp_series_metadata() -> list[dict[str, Any]]:
             "kind": "ahe_level",
             "unit": "dollars per hour",
             "source": "BLS CES establishment survey",
-            "display_order": 4,
+            "display_order": 6,
         },
     ])
     return rows
@@ -789,17 +809,60 @@ def load_nfp_survey_db_series() -> dict[str, pd.Series]:
     }
 
 
-def unemployment_rate_history_row(
-    *,
-    unemployed: pd.Series | None,
-    labor_force: pd.Series | None,
-    history_index: list[pd.Timestamp],
-) -> dict[str, Any] | None:
-    if unemployed is None or labor_force is None or unemployed.empty or labor_force.empty:
+def fmt_fixed_pct(value: float | None, decimals: int = 3) -> str | None:
+    if value is None or not math.isfinite(value):
         return None
-    unemployed = unemployed.sort_index()
-    labor_force = labor_force.sort_index()
-    values = 100.0 * unemployed / labor_force
+    return f"{value:.{decimals}f}%"
+
+
+def round_half_up_one_decimal(value: float) -> float:
+    return math.floor(value * 10.0 + 0.5) / 10.0
+
+
+def household_rounding_detail(value: float | None) -> dict[str, Any] | None:
+    if value is None or not math.isfinite(value):
+        return None
+    rounded = round_half_up_one_decimal(value)
+    lower_print = rounded - 0.1
+    higher_print = rounded + 0.1
+    lower_cutoff = rounded - 0.05
+    upper_cutoff = rounded + 0.05
+    down_buffer_bps = (value - lower_cutoff) * 100.0
+    up_buffer_bps = (upper_cutoff - value) * 100.0
+    return {
+        "exact_value": value,
+        "exact_display": fmt_fixed_pct(value, 3),
+        "rounded_value": rounded,
+        "rounded_display": f"{rounded:.1f}%",
+        "lower_print": f"{lower_print:.1f}%",
+        "higher_print": f"{higher_print:.1f}%",
+        "lower_cutoff": f"{lower_cutoff:.2f}%",
+        "upper_cutoff": f"{upper_cutoff:.2f}%",
+        "down_buffer_bps_value": down_buffer_bps,
+        "up_buffer_bps_value": up_buffer_bps,
+        "down_buffer_bps": f"{down_buffer_bps:.2f} bps",
+        "up_buffer_bps": f"{up_buffer_bps:.2f} bps",
+        "closest_side": "lower" if down_buffer_bps < up_buffer_bps else "higher",
+        "summary": f"{down_buffer_bps:.2f} bps above {lower_print:.1f}% cutoff; {up_buffer_bps:.2f} bps below {higher_print:.1f}% cutoff",
+    }
+
+
+def ratio_metric_history_row(
+    *,
+    numerator: pd.Series | None,
+    denominator: pd.Series | None,
+    label: str,
+    group: str,
+    formula: str,
+    series_id: str,
+    history_index: list[pd.Timestamp],
+    invert_tone: bool = False,
+) -> dict[str, Any] | None:
+    if numerator is None or denominator is None or numerator.empty or denominator.empty:
+        return None
+    numerator = numerator.sort_index()
+    denominator = denominator.sort_index()
+    values = 100.0 * numerator / denominator
     history = []
     for hist_dt in history_index:
         value = None
@@ -814,19 +877,62 @@ def unemployment_rate_history_row(
         history.append({
             "label": pd.Timestamp(hist_dt).strftime("%b-%y"),
             "value": value,
-            "display": fmt_sig_pct(value) or "n/a",
-            "tone": metric_tone(value, prior, invert=True),
+            "display": fmt_fixed_pct(value, 3) or "n/a",
+            "tone": metric_tone(value, prior, invert=invert_tone),
         })
     latest_value = next((cell["value"] for cell in history if cell.get("value") is not None), None)
     return {
-        "series_id": f"{NFP_METRIC_SERIES['unemployed']}/{NFP_METRIC_SERIES['labor_force']}",
-        "label": "Unemployment rate",
-        "group": "Household survey formula",
+        "series_id": series_id,
+        "label": label,
+        "group": group,
         "is_metric": True,
-        "formula": "100 * unemployed persons / civilian labor force",
+        "formula": formula,
         "history": history,
         "latest_value": latest_value,
-        "latest": fmt_sig_pct(latest_value) or "n/a",
+        "latest": fmt_fixed_pct(latest_value, 3) or "n/a",
+        "rounding": household_rounding_detail(latest_value),
+    }
+
+
+def official_rate_history_row(
+    *,
+    series: pd.Series | None,
+    label: str,
+    group: str,
+    series_id: str,
+    history_index: list[pd.Timestamp],
+    invert_tone: bool = False,
+) -> dict[str, Any] | None:
+    if series is None or series.empty:
+        return None
+    values = series.sort_index()
+    history = []
+    for hist_dt in history_index:
+        value = None
+        prior = None
+        if hist_dt in values.index:
+            raw = float(values.loc[hist_dt])
+            value = raw if math.isfinite(raw) else None
+        prior_dt = hist_dt - pd.DateOffset(months=1)
+        if prior_dt in values.index:
+            raw_prior = float(values.loc[prior_dt])
+            prior = raw_prior if math.isfinite(raw_prior) else None
+        history.append({
+            "label": pd.Timestamp(hist_dt).strftime("%b-%y"),
+            "value": value,
+            "display": fmt_fixed_pct(value, 1) or "n/a",
+            "tone": metric_tone(value, prior, invert=invert_tone),
+        })
+    latest_value = next((cell["value"] for cell in history if cell.get("value") is not None), None)
+    return {
+        "series_id": series_id,
+        "label": label,
+        "group": group,
+        "is_metric": True,
+        "formula": None,
+        "history": history,
+        "latest_value": latest_value,
+        "latest": fmt_fixed_pct(latest_value, 1) or "n/a",
     }
 
 def metric_history_row(
@@ -904,14 +1010,47 @@ def build_nfp_breakdown(now_et: datetime) -> dict[str, Any] | None:
         for dt in history_index
     ]
 
+    ur_exact_row = ratio_metric_history_row(
+        numerator=series_map.get(NFP_METRIC_SERIES["unemployed"]),
+        denominator=series_map.get(NFP_METRIC_SERIES["labor_force"]),
+        label="Unemployment rate calc exact",
+        group="Household formula exact",
+        formula="100 * unemployed persons / civilian labor force",
+        series_id=f"{NFP_METRIC_SERIES['unemployed']}/{NFP_METRIC_SERIES['labor_force']}",
+        history_index=history_index,
+        invert_tone=True,
+    )
+    ur_official_row = official_rate_history_row(
+        series=series_map.get(NFP_METRIC_SERIES["official_unemployment_rate"]),
+        label="Unemployment rate official rounded",
+        group="Household published U-3",
+        series_id=NFP_METRIC_SERIES["official_unemployment_rate"],
+        history_index=history_index,
+        invert_tone=True,
+    )
+    participation_exact_row = ratio_metric_history_row(
+        numerator=series_map.get(NFP_METRIC_SERIES["labor_force"]),
+        denominator=series_map.get(NFP_METRIC_SERIES["population"]),
+        label="Participation rate calc exact",
+        group="Household formula exact",
+        formula="100 * civilian labor force / civilian noninstitutional population",
+        series_id=f"{NFP_METRIC_SERIES['labor_force']}/{NFP_METRIC_SERIES['population']}",
+        history_index=history_index,
+    )
+    participation_official_row = official_rate_history_row(
+        series=series_map.get(NFP_METRIC_SERIES["official_participation_rate"]),
+        label="Participation rate official rounded",
+        group="Household published LFPR",
+        series_id=NFP_METRIC_SERIES["official_participation_rate"],
+        history_index=history_index,
+    )
+
     metric_rows = []
     for row in [
-        unemployment_rate_history_row(
-            unemployed=series_map.get(NFP_METRIC_SERIES["unemployed"]),
-            labor_force=series_map.get(NFP_METRIC_SERIES["labor_force"]),
-            history_index=history_index,
-        ),
-        metric_history_row(series=series_map.get(NFP_METRIC_SERIES["participation"]), label="Labor force participation rate", group="Household survey", history_index=history_index, transform="level"),
+        ur_exact_row,
+        ur_official_row,
+        participation_exact_row,
+        participation_official_row,
         metric_history_row(series=series_map.get(NFP_METRIC_SERIES["ahe"]), label="Avg hourly earnings m/m", group="Establishment survey wages", history_index=history_index, transform="mom_pct"),
         metric_history_row(series=series_map.get(NFP_METRIC_SERIES["ahe"]), label="Avg hourly earnings y/y", group="Establishment survey wages", history_index=history_index, transform="yoy_pct"),
     ]:
@@ -984,10 +1123,24 @@ def build_nfp_breakdown(now_et: datetime) -> dict[str, Any] | None:
     gain = max(major_rows, key=lambda row: row["change_1m_value"], default=None)
     drag = min(major_rows, key=lambda row: row["change_1m_value"], default=None)
     positive_count = sum(1 for row in major_rows if (row["change_1m_value"] or 0) > 0)
+    household_rounding = []
+    for name, exact_row, official_row in [
+        ("U-3 unemployment rate", ur_exact_row, ur_official_row),
+        ("Labor force participation rate", participation_exact_row, participation_official_row),
+    ]:
+        if exact_row is None:
+            continue
+        household_rounding.append({
+            "label": name,
+            "exact": exact_row.get("latest") or "n/a",
+            "official": official_row.get("latest") if official_row else "n/a",
+            "formula": exact_row.get("formula"),
+            "rounding": exact_row.get("rounding"),
+        })
 
     payload = {
         "period": pd.Timestamp(latest_dt).strftime("%B %Y"),
-        "source": "SQLite store populated from BLS CES establishment survey and CPS household survey component series; UR = 100 * unemployed / civilian labor force",
+        "source": "SQLite store populated from BLS CES establishment survey and CPS household survey component series; U-3 and LFPR exact rows are calculated from components and separated from official rounded published rates",
         "database": str(NFP_SURVEY_DB.relative_to(BASE_DIR)),
         "headline": headline,
         "breadth": {
@@ -997,6 +1150,7 @@ def build_nfp_breakdown(now_et: datetime) -> dict[str, Any] | None:
         },
         "biggest_gain": gain,
         "biggest_drag": drag,
+        "household_rounding": household_rounding,
         "metric_rows": metric_rows,
         "history_rows": metric_rows + rows,
         "rows": rows,

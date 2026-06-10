@@ -36,9 +36,9 @@
       <section class="nfp-breakdown-section nfp-breakdown-page" aria-labelledby="nfp-breakdown-title">
         <div class="nfp-breakdown-hero">
           <div>
-            <p class="eyebrow">Establishment survey &middot; May 2026 &middot; Updated Wednesday, June 10, 2026 09:52 AM ET</p>
+            <p class="eyebrow">Establishment survey &middot; May 2026 &middot; Updated Wednesday, June 10, 2026 10:41 AM ET</p>
             <h1 id="nfp-breakdown-title">NFP Sector Momentum</h1>
-            <p>SQLite store populated from BLS CES establishment survey and CPS household survey component series; UR = 100 * unemployed / civilian labor force. Top rows show household/wage rates; payroll rows show month-over-month job changes in thousands.</p>
+            <p>SQLite store populated from BLS CES establishment survey and CPS household survey component series; U-3 and LFPR exact rows are calculated from components and separated from official rounded published rates. Top rows separate exact CPS component calculations from official rounded household rates; payroll rows show month-over-month job changes in thousands.</p>
           </div>
           <div class="nfp-headline-stat">
             <span>Headline 1M</span>
@@ -70,6 +70,18 @@
           </div>
         </div>
 
+        <div class="cpi-insight-grid nfp-household-rounding">
+          <div class="cpi-insight-card">
+            <span>U-3 unemployment rate</span>
+            <strong>4.296%</strong>
+            <small>Official rounded: 4.3% &middot; 4.63 bps above 4.2% cutoff; 5.37 bps below 4.4% cutoff</small>
+          </div>
+          <div class="cpi-insight-card">
+            <span>Labor force participation rate</span>
+            <strong>61.834%</strong>
+            <small>Official rounded: 61.8% &middot; 8.44 bps above 61.7% cutoff; 1.56 bps below 61.9% cutoff</small>
+          </div>
+        </div>
 
         <div class="nfp-history-panel">
           <div class="nfp-history-title">
@@ -77,7 +89,7 @@
               <span class="summary-label">Last 12 monthly prints</span>
               <h2>Establishment Survey Detail</h2>
             </div>
-            <p>UR is calculated from CPS household components as 100 * unemployed persons / civilian labor force; participation is CPS household-survey rate; AHE rows are CES wage m/m and y/y changes; payroll rows are CES month-over-month job changes in thousands.</p>
+            <p>Exact U-3 is 100 * unemployed persons / civilian labor force; exact participation is 100 * labor force / civilian noninstitutional population. Official rows are the rounded BLS published rates; AHE rows are CES wage m/m and y/y changes; payroll rows are job changes in thousands.</p>
           </div>
           <div class="nfp-history-scroll" role="region" aria-label="Last 12 months of NFP establishment survey changes">
             <div class="nfp-history-grid" style="grid-template-columns: minmax(280px, 1.2fr) repeat(12, minmax(74px, 1fr));">
@@ -95,24 +107,56 @@
               <div class="nfp-history-header">Jul-25</div>
               <div class="nfp-history-header">Jun-25</div>
               <div class="nfp-history-category nfp-history-sticky nfp-history-category-metric">
-                <strong>Unemployment rate</strong>
-                <span>Household survey formula</span>
+                <strong>Unemployment rate calc exact</strong>
+                <span>Household formula exact</span>
               </div>
-              <div class="nfp-history-cell positive">4.30%</div>
-              <div class="nfp-history-cell negative">4.34%</div>
-              <div class="nfp-history-cell positive">4.26%</div>
-              <div class="nfp-history-cell negative">4.44%</div>
-              <div class="nfp-history-cell positive">4.32%</div>
-              <div class="nfp-history-cell positive">4.38%</div>
-              <div class="nfp-history-cell flat">4.54%</div>
+              <div class="nfp-history-cell positive">4.296%</div>
+              <div class="nfp-history-cell negative">4.337%</div>
+              <div class="nfp-history-cell positive">4.256%</div>
+              <div class="nfp-history-cell negative">4.441%</div>
+              <div class="nfp-history-cell positive">4.322%</div>
+              <div class="nfp-history-cell positive">4.375%</div>
+              <div class="nfp-history-cell flat">4.536%</div>
               <div class="nfp-history-cell flat">n/a</div>
-              <div class="nfp-history-cell negative">4.44%</div>
-              <div class="nfp-history-cell negative">4.32%</div>
-              <div class="nfp-history-cell negative">4.27%</div>
-              <div class="nfp-history-cell positive">4.14%</div>
+              <div class="nfp-history-cell negative">4.441%</div>
+              <div class="nfp-history-cell negative">4.322%</div>
+              <div class="nfp-history-cell negative">4.267%</div>
+              <div class="nfp-history-cell positive">4.140%</div>
               <div class="nfp-history-category nfp-history-sticky nfp-history-category-metric">
-                <strong>Labor force participation rate</strong>
-                <span>Household survey</span>
+                <strong>Unemployment rate official rounded</strong>
+                <span>Household published U-3</span>
+              </div>
+              <div class="nfp-history-cell flat">4.3%</div>
+              <div class="nfp-history-cell flat">4.3%</div>
+              <div class="nfp-history-cell positive">4.3%</div>
+              <div class="nfp-history-cell negative">4.4%</div>
+              <div class="nfp-history-cell positive">4.3%</div>
+              <div class="nfp-history-cell positive">4.4%</div>
+              <div class="nfp-history-cell flat">4.5%</div>
+              <div class="nfp-history-cell flat">n/a</div>
+              <div class="nfp-history-cell negative">4.4%</div>
+              <div class="nfp-history-cell flat">4.3%</div>
+              <div class="nfp-history-cell negative">4.3%</div>
+              <div class="nfp-history-cell positive">4.1%</div>
+              <div class="nfp-history-category nfp-history-sticky nfp-history-category-metric">
+                <strong>Participation rate calc exact</strong>
+                <span>Household formula exact</span>
+              </div>
+              <div class="nfp-history-cell positive">61.834%</div>
+              <div class="nfp-history-cell negative">61.826%</div>
+              <div class="nfp-history-cell negative">61.882%</div>
+              <div class="nfp-history-cell negative">62.047%</div>
+              <div class="nfp-history-cell negative">62.060%</div>
+              <div class="nfp-history-cell negative">62.404%</div>
+              <div class="nfp-history-cell flat">62.462%</div>
+              <div class="nfp-history-cell flat">n/a</div>
+              <div class="nfp-history-cell positive">62.453%</div>
+              <div class="nfp-history-cell positive">62.317%</div>
+              <div class="nfp-history-cell negative">62.243%</div>
+              <div class="nfp-history-cell negative">62.277%</div>
+              <div class="nfp-history-category nfp-history-sticky nfp-history-category-metric">
+                <strong>Participation rate official rounded</strong>
+                <span>Household published LFPR</span>
               </div>
               <div class="nfp-history-cell flat">61.8%</div>
               <div class="nfp-history-cell negative">61.8%</div>
@@ -774,7 +818,7 @@
       </section>
 
       <footer class="site-foot">
-        <p>Source: SQLite store populated from BLS CES establishment survey and CPS household survey component series. UR = 100 * unemployed persons / civilian labor force.</p>
+        <p>Source: SQLite store populated from BLS CES establishment survey and CPS household survey component series. Exact U-3 and LFPR are component-derived; official rows are BLS rounded published rates.</p>
         <p class="muted"><a href="./">Back to forecasts</a>.</p>
       </footer>
     </main>
