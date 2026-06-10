@@ -1,4 +1,4 @@
-﻿name: Macro Dashboard Daily Refresh
+name: Macro Dashboard Daily Refresh
 
 on:
   workflow_dispatch:
@@ -36,7 +36,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs macro_forecasting/output/kalshi_consensus_latest.json macro_site/latest_actuals_cache.json macro_site/nfp_survey_data.db macro_site/nfp_breakdown_cache.json
+          git add docs macro_forecasting/output/kalshi_consensus_latest.json macro_site/latest_actuals_cache.json macro_site/nfp_survey_data.db macro_site/nfp_breakdown_cache.json macro_site/cpi_detail_data.db macro_site/cpi_detail_cache.json
           git diff --cached --quiet || git commit -m "Refresh macro dashboard"
           git push
 

@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CPI Detail Breakdown | Macro Forecast Schedule by Chirag Mirani</title>
+    <meta name="description" content="BLS CPI-U component detail with last 12 months of m/m changes, y/y changes, weights, and weighted contribution in basis points.">
+    <meta name="author" content="Chirag Mirani">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://chiragmirani.github.io/macro-dashboard/cpi.html">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#0a1628">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CPI Detail Breakdown">
+    <meta property="og:description" content="BLS CPI component heatmap with m/m, y/y, weights, and weighted contribution in basis points.">
+    <meta property="og:url" content="https://chiragmirani.github.io/macro-dashboard/cpi.html">
+    <meta property="og:site_name" content="Chirag Mirani Macro Dashboard">
+    <meta property="og:image" content="https://chiragmirani.github.io/macro-dashboard/social-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CPI Detail Breakdown">
+    <meta name="twitter:description" content="BLS CPI component heatmap with m/m, y/y, weights, and weighted contribution in basis points.">
+    <meta name="twitter:image" content="https://chiragmirani.github.io/macro-dashboard/social-preview.png">
+    <link rel="stylesheet" href="static/styles.css">
+  </head>
+  <body>
+    <main>
+      <nav class="topnav">
+        <a href="./">Forecasts</a>
+        <a href="cpi.html" class="active">CPI detail</a>
+        <a href="nfp.html">NFP breakdown</a>
+        <a href="track-record.html">Track record</a>
+      </nav>
+
+      <section class="cpi-detail-section" aria-labelledby="cpi-detail-title">
+        <div class="nfp-breakdown-hero cpi-detail-hero">
+          <div>
+            <p class="eyebrow">CPI-U components &middot; May 2026 &middot; Updated Wednesday, June 10, 2026 09:52 AM ET</p>
+            <h1 id="cpi-detail-title">CPI Detail</h1>
+            <p>SQLite store populated from BLS CPI-U component series via public API. Non-level rows are exact calendar m/m percent changes; level rows show NSA index levels. Color marks whether the m/m pace is above or below a 2% annualized rate.</p>
+          </div>
+          <div class="nfp-headline-stat">
+            <span>Core CPI m/m</span>
+            <strong class="negative">0.208%</strong>
+            <small>2.82% y/y</small>
+          </div>
+        </div>
+
+        <div class="nfp-stat-grid">
+          <div class="nfp-stat-card">
+            <span>Headline CPI m/m</span>
+            <strong class="negative">0.473%</strong>
+            <small>4.17% y/y</small>
+          </div>
+          <div class="nfp-stat-card">
+            <span>Core CPI m/m</span>
+            <strong class="negative">0.208%</strong>
+            <small>2.82% y/y</small>
+          </div>
+          <div class="nfp-stat-card">
+            <span>Core CPI 3M avg</span>
+            <strong class="negative">0.260%</strong>
+            <small>average monthly change</small>
+          </div>
+          <div class="nfp-stat-card">
+            <span>CPI NSA level</span>
+            <strong class="flat">335.123</strong>
+            <small>May 2026</small>
+          </div>
+        </div>
+
+        <div class="cpi-insight-grid">
+          <div class="cpi-insight-card">
+            <span>Volatile adjusted core</span>
+            <strong>0.175%</strong>
+            <small>removes 3.4 bps from airfares, lodging, used cars, apparel</small>
+          </div>
+          <div class="cpi-insight-card">
+            <span>Largest weighted upside</span>
+            <strong class="negative">28.6 bps</strong>
+            <small>Energy CPI &middot; 3.88%</small>
+          </div>
+          <div class="cpi-insight-card">
+            <span>Largest weighted downside</span>
+            <strong class="positive">0.3 bps</strong>
+            <small>Used cars SA &middot; 0.102%</small>
+          </div>
+        </div>
+
+        <div class="nfp-history-panel cpi-history-panel">
+          <div class="nfp-history-title">
+            <div>
+              <span class="summary-label">Last 12 monthly prints</span>
+              <h2>CPI Component Heatmap</h2>
+            </div>
+            <p>Rows are BLS CPI-U component series. Non-level cells are m/m percent changes; CPI NSA level rows show index levels.</p>
+          </div>
+          <div class="nfp-history-scroll" role="region" aria-label="Last 12 months of CPI component changes">
+            <div class="nfp-history-grid cpi-history-grid" style="grid-template-columns: minmax(250px, 1.25fr) repeat(12, minmax(74px, 1fr));">
+              <div class="nfp-history-header nfp-history-sticky">Category</div>
+              <div class="nfp-history-header">May-26</div>
+              <div class="nfp-history-header">Apr-26</div>
+              <div class="nfp-history-header">Mar-26</div>
+              <div class="nfp-history-header">Feb-26</div>
+              <div class="nfp-history-header">Jan-26</div>
+              <div class="nfp-history-header">Dec-25</div>
+              <div class="nfp-history-header">Nov-25</div>
+              <div class="nfp-history-header">Sep-25</div>
+              <div class="nfp-history-header">Aug-25</div>
+              <div class="nfp-history-header">Jul-25</div>
+              <div class="nfp-history-header">Jun-25</div>
+              <div class="nfp-history-header">May-25</div>
+              <div class="nfp-history-category nfp-history-sticky nfp-history-category-key">
+                <strong>CPI SA</strong>
+                <span>Headline &middot; wt 100</span>
+              </div>
+              <div class="nfp-history-cell negative">0.473%</div>
+              <div class="nfp-history-cell negative">0.640%</div>
+              <div class="nfp-history-cell negative">0.865%</div>
+              <div class="nfp-history-cell negative">0.267%</div>
+              <div class="nfp-history-cell negative">0.171%</div>
+              <div class="nfp-history-cell negative">0.298%</div>
+              <div class="nfp-history-cell flat">n/a</div>
+              <div class="nfp-history-cell negative">0.295%</div>
+              <div class="nfp-history-cell negative">0.348%</div>
+              <div class="nfp-history-cell negative">0.228%</div>
+              <div class="nfp-history-cell negative">0.254%</div>
+              <div class="nfp-history-cell positive">0.0993%</div>
+              <div class="nfp-history-category nfp-history-sticky nfp-history-category-key">
+                <strong>CPI NSA</strong>
+                <span>Headline &middot; wt 100</span>
+              </div>
+              <div class="nfp-history-cell negative">0.631%</div>
+              <div class="nfp-history-cell negative">0.850%</div>
+              <div class="nfp-history-cell negative">1.05%</div>
+              <div class="nfp-history-cell negative">0.471%</div>
+              <div class="nfp-history-cell negative">0.370%</div>
+              <div class="nfp-history-cell positive">-0.0210%</div>
+              <div class="nfp-history-cell flat">n/a</div>
+              <div class="nfp-history-cell negative">0.254%</div>
+              <div class="nfp-history-cell negative">0.287%</div>
+              <div class="nfp-history-cell positive">0.151%</div>
+              <div class="nfp-history-cell negative">0.341%</div>
+              <div class="nfp-history-cell negative">0.209%</div>
+              <div class="nfp-history-category nfp-history-sticky nfp-history-category-key">
+                <strong>CPI NSA Level</strong>
+                <span>Headline level</span>
+              </div>
+              <div class="nfp-history-cell flat">335.123</div>
+              <div class="nfp-history-cell flat">333.020</div>
+              <div class="nfp-history-cell flat">330.213</div>
+              <div class="nfp-history-cell flat">326.785</div>
+              <div class="nfp-history-cell flat">325.252</div>
+              <div class="nfp-history-cell flat">324.054</div>
+              <div class="nfp-history-cell flat">324.122</div>
+              <div class="nfp-history-cell flat">324.800</div>
+              <div class="nfp-history-cell flat">323.976</div>
+              <div class="nfp-history-cell flat">323.048</div>
+              <div class="nfp-history-cell flat">322.561</div>
+              <div class="nfp-history-cell flat">321.465</div>
+              <div class="nfp-history-category nfp-history-sticky nfp-history-category-key">
+                <strong>Food CPI</strong>
+                <span>Food &middot; wt 13.4</span>
+              </div>
+              <div class="nfp-history-cell positive">0.150%</div>
+              <div class="nfp-history-cell negative">0.491%</div>
+              <div class="nfp-history-cell positive">0.00961%</div>
+              <div class="nfp-history-cell negative">0.375%</div>
+              <div class="nfp-history-cell negative">0.185%</div>
+              <div class="nfp-history-cell negative">0.614%</div>
+              <div class="nfp-history-cell flat">n/a</div>
+              <div class="nfp-history-cell negative">0.223%</div>
+              <div class="nfp-history-cell negative">0.430%</div>
+              <div class="nfp-history-cell positive">0.123%</div>
+              <div class="nfp-history-cell negative">0.285%</div>
+              <div class="nfp-history-cell negative">0.266%</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Food at home CPI</strong>
+                <span>Food &middot; wt 8.56</span>
+              </div>
+              <div class="nfp-history-cell positive">0.0633%</div>
+              <div class="nfp-history-cell negative">0.682%</div>
+              <div class="nfp-history-cell positive">-0.164%</div>
+              <div class="nfp-history-cell negative">0.440%</div>
+              <div class="nfp-history-cell negative">0.191%</div>
+              <div class="nfp-history-cell negative">0.629%</div>
+              <div class="nfp-history-cell flat">n/a</div>
+              <div class="nfp-history-cell negative">0.284%</div>
+              <div class="nfp-history-cell negative">0.515%</div>
+              <div class="nfp-history-cell positive">0.0169%</div>
+              <div class="nfp-history-cell negative">0.220%</div>
+              <div class="nfp-history-cell negative">0.275%</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Food away from home CPI</strong>
+                <span>Food &middot; wt 4.83</span>
+              </div>
+              <div class="nfp-history-cell negative">0.300%</div>
+              <div class="nfp-history-cell negative">0.228%</div>
+              <div class="nfp-history-cell negative">0.242%</div>
+              <div class="nfp-history-cell negative">0.316%</div>
+              <div class="nfp-history-cell positive">0.149%</div>
+              <div class="nfp-history-cell negative">0.694%</div>
+              <div class="nfp-history-cell flat">n/a</div>
+              <div class="nfp-history-cell positive">0.141%</div>
+              <div class="nfp-history-cell negative">0.287%</div>
+              <div class="nfp-history-cell negative">0.276%</div>
+              <div class="nfp-history-cell negative">0.399%</div>
+              <div class="nfp-history-cell negative">0.313%</div>
+              <div class="nfp-history-category nfp-history-sticky nfp-history-category-key">
+                <strong>Energy CPI</strong>
+                <span>Energy &middot; wt 7.36</span>
+              </div>
+              <div class="nfp-history-cell negative">3.88%</div>
+              <div class="nfp-history-cell negative">3.81%</div>
+              <div class="nfp-history-cell negative">10.9%</div>
+              <div class="nfp-history-cell negative">0.635%</div>
+              <div class="nfp-history-cell positive">-1.47%</div>
+              <div class="nfp-history-cell negative">0.343%</div>
+              <div class="nfp-history-cell flat">n/a</div>
+              <div class="nfp-history-cell negative">1.43%</div>
+              <div class="nfp-history-cell negative">0.685%</div>
+              <div class="nfp-history-cell positive">-0.618%</div>
+              <div class="nfp-history-cell negative">0.429%</div>
+              <div class="nfp-history-cell positive">-0.709%</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Energy commodities CPI</strong>
+                <span>Energy &middot; wt 3.79</span>
+              </div>
+              <div class="nfp-history-cell negative">6.70%</div>
+              <div class="nfp-history-cell negative">5.62%</div>
+              <div class="nfp-history-cell negative">21.3%</div>
+              <div class="nfp-history-cell negative">1.10%</div>
+              <div class="nfp-history-cell positive">-3.26%</div>
+              <div class="nfp-history-cell positive">-0.313%</div>
+              <div class="nfp-history-cell flat">n/a</div>
+              <div class="nfp-history-cell negative">3.41%</div>
+              <div class="nfp-history-cell negative">1.58%</div>
+              <div class="nfp-history-cell positive">-1.10%</div>
+              <div class="nfp-history-cell positive">0.165%</div>
+              <div class="nfp-history-cell positive">-1.91%</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Energy services CPI</strong>
+                <span>Energy &middot; wt 3.57</span>
+              </div>
+              <div class="nfp-history-cell negative">0.295%</div>
+              <div class="nfp-history-cell negative">0.500%</div>
+              <div class="nfp-history-cell negative">0.225%</div>
+              <div class="nfp-history-cell negative">0.268%</div>
+              <div class="nfp-history-cell negative">0.388%</div>
+              <div class="nfp-history-cell negative">0.272%</div>
+              <div class="nfp-history-cell flat">n/a</div>
+              <div class="nfp-history-cell negative">0.233%</div>
+              <div class="nfp-history-cell negative">0.316%</div>
+              <div class="nfp-history-cell negative">0.351%</div>
+              <div class="nfp-history-cell negative">0.277%</div>
+              <div class="nfp-history-cell negative">0.168%</div>
+              <div class="nfp-history-category nfp-history-sticky nfp-history-category-key">
+                <strong>Core CPI SA</strong>
+                <span>Core &middot; wt 79.2</span>
+              </div>
+              <div class="nfp-history-cell negative">0.208%</div>
+              <div class="nfp-history-cell negative">0.376%</div>
+              <div class="nfp-history-cell negative">0.196%</div>
+              <div class="nfp-history-cell negative">0.216%</div>
+              <div class="nfp-history-cell negative">0.295%</div>
+              <div class="nfp-history-cell negative">0.233%</div>
+              <div class="nfp-history-cell flat">n/a</div>
+              <div class="nfp-history-cell negative">0.218%</div>
+              <div class="nfp-history-cell negative">0.310%</div>
+              <div class="nfp-history-cell negative">0.313%</div>
+              <div class="nfp-history-cell negative">0.234%</div>
+              <div class="nfp-history-cell positive">0.130%</div>
+              <div class="nfp-history-category nfp-history-sticky nfp-history-category-key">
+                <strong>Core CPI NSA</strong>
+                <span>Core &middot; wt 79.2</span>
+              </div>
+              <div class="nfp-history-cell negative">0.311%</div>
+              <div class="nfp-history-cell negative">0.422%</div>
+              <div class="nfp-history-cell negative">0.345%</div>
+              <div class="nfp-history-cell negative">0.389%</div>
+              <div class="nfp-history-cell negative">0.437%</div>
+              <div class="nfp-history-cell positive">0.0245%</div>
+              <div class="nfp-history-cell flat">n/a</div>
+              <div class="nfp-history-cell negative">0.253%</div>
+              <div class="nfp-history-cell negative">0.301%</div>
+              <div class="nfp-history-cell negative">0.188%</div>
+              <div class="nfp-history-cell negative">0.261%</div>
+              <div class="nfp-history-cell negative">0.212%</div>
+              <div class="nfp-history-category nfp-history-sticky nfp-history-category-key">
+                <strong>Core CPI NSA Level</strong>
+                <span>Core level</span>
+              </div>
+              <div class="nfp-history-cell flat">336.846</div>
+              <div class="nfp-history-cell flat">335.803</div>
+              <div class="nfp-history-cell flat">334.391</div>
+              <div class="nfp-history-cell flat">333.242</div>
+              <div class="nfp-history-cell flat">331.950</div>
+              <div class="nfp-history-cell flat">330.506</div>
+              <div class="nfp-history-cell flat">330.425</div>
+              <div class="nfp-history-cell flat">330.804</div>
+              <div class="nfp-history-cell flat">329.970</div>
+              <div class="nfp-history-cell flat">328.980</div>
+              <div class="nfp-history-cell flat">328.364</div>
+              <div class="nfp-history-cell flat">327.509</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Rent SA</strong>
+                <span>Shelter &middot; wt 7.66</span>
+              </div>
+              <div class="nfp-history-cell negative">0.362%</div>
+              <div class="nfp-history-cell negative">0.545%</div>
+              <div class="nfp-history-cell negative">0.190%</div>
+              <div class="nfp-history-cell positive">0.131%</div>
+              <div class="nfp-history-cell negative">0.249%</div>
+              <div class="nfp-history-cell negative">0.270%</div>
+              <div class="nfp-history-cell flat">n/a</div>
+              <div class="nfp-history-cell negative">0.216%</div>
+              <div class="nfp-history-cell negative">0.285%</div>
+              <div class="nfp-history-cell negative">0.234%</div>
+              <div class="nfp-history-cell negative">0.229%</div>
+              <div class="nfp-history-cell negative">0.230%</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>OER SA</strong>
+                <span>Shelter &middot; wt 26.1</span>
+              </div>
+              <div class="nfp-history-cell negative">0.297%</div>
+              <div class="nfp-history-cell negative">0.533%</div>
+              <div class="nfp-history-cell negative">0.284%</div>
+              <div class="nfp-history-cell negative">0.224%</div>
+              <div class="nfp-history-cell negative">0.220%</div>
+              <div class="nfp-history-cell negative">0.314%</div>
+              <div class="nfp-history-cell flat">n/a</div>
+              <div class="nfp-history-cell positive">0.157%</div>
+              <div class="nfp-history-cell negative">0.336%</div>
+              <div class="nfp-history-cell negative">0.276%</div>
+              <div class="nfp-history-cell negative">0.305%</div>
+              <div class="nfp-history-cell negative">0.280%</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Out of town lodging SA</strong>
+                <span>Shelter &middot; wt 0.916</span>
+              </div>
+              <div class="nfp-history-cell negative">0.418%</div>
+              <div class="nfp-history-cell negative">2.44%</div>
+              <div class="nfp-history-cell negative">0.243%</div>
+              <div class="nfp-history-cell negative">0.962%</div>
+              <div class="nfp-history-cell positive">-0.0983%</div>
+              <div class="nfp-history-cell negative">2.18%</div>
+              <div class="nfp-history-cell flat">n/a</div>
+              <div class="nfp-history-cell negative">0.858%</div>
+              <div class="nfp-history-cell negative">2.01%</div>
+              <div class="nfp-history-cell positive">-0.976%</div>
+              <div class="nfp-history-cell positive">-2.02%</div>
+              <div class="nfp-history-cell positive">-0.148%</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Airfares SA</strong>
+                <span>Transportation &middot; wt 0.659</span>
+              </div>
+              <div class="nfp-history-cell negative">2.69%</div>
+              <div class="nfp-history-cell negative">2.82%</div>
+              <div class="nfp-history-cell negative">2.67%</div>
+              <div class="nfp-history-cell negative">1.36%</div>
+              <div class="nfp-history-cell negative">6.52%</div>
+              <div class="nfp-history-cell negative">3.76%</div>
+              <div class="nfp-history-cell flat">n/a</div>
+              <div class="nfp-history-cell negative">1.95%</div>
+              <div class="nfp-history-cell negative">4.46%</div>
+              <div class="nfp-history-cell negative">3.03%</div>
+              <div class="nfp-history-cell negative">0.340%</div>
+              <div class="nfp-history-cell positive">-2.17%</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Medical care SA</strong>
+                <span>Medical &middot; wt 8.71</span>
+              </div>
+              <div class="nfp-history-cell negative">0.314%</div>
+              <div class="nfp-history-cell positive">-0.0651%</div>
+              <div class="nfp-history-cell positive">-0.163%</div>
+              <div class="nfp-history-cell negative">0.499%</div>
+              <div class="nfp-history-cell negative">0.258%</div>
+              <div class="nfp-history-cell negative">0.359%</div>
+              <div class="nfp-history-cell flat">n/a</div>
+              <div class="nfp-history-cell negative">0.182%</div>
+              <div class="nfp-history-cell positive">-0.110%</div>
+              <div class="nfp-history-cell negative">0.676%</div>
+              <div class="nfp-history-cell negative">0.425%</div>
+              <div class="nfp-history-cell negative">0.265%</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Used cars SA</strong>
+                <span>Transportation &middot; wt 2.88</span>
+              </div>
+              <div class="nfp-history-cell positive">0.102%</div>
+              <div class="nfp-history-cell positive">-0.00445%</div>
+              <div class="nfp-history-cell positive">-0.420%</div>
+              <div class="nfp-history-cell positive">-0.375%</div>
+              <div class="nfp-history-cell positive">-1.84%</div>
+              <div class="nfp-history-cell positive">-0.875%</div>
+              <div class="nfp-history-cell positive">0.100%</div>
+              <div class="nfp-history-cell positive">-0.211%</div>
+              <div class="nfp-history-cell negative">0.823%</div>
+              <div class="nfp-history-cell negative">0.499%</div>
+              <div class="nfp-history-cell positive">-0.452%</div>
+              <div class="nfp-history-cell positive">-0.615%</div>
+              <div class="nfp-history-category nfp-history-sticky">
+                <strong>Apparel CPI</strong>
+                <span>Goods &middot; wt 3.10</span>
+              </div>
+              <div class="nfp-history-cell negative">0.292%</div>
+              <div class="nfp-history-cell negative">0.638%</div>
+              <div class="nfp-history-cell negative">1.03%</div>
+              <div class="nfp-history-cell negative">1.28%</div>
+              <div class="nfp-history-cell negative">0.307%</div>
+              <div class="nfp-history-cell negative">0.329%</div>
+              <div class="nfp-history-cell flat">n/a</div>
+              <div class="nfp-history-cell negative">0.544%</div>
+              <div class="nfp-history-cell negative">0.259%</div>
+              <div class="nfp-history-cell positive">0.107%</div>
+              <div class="nfp-history-cell negative">0.330%</div>
+              <div class="nfp-history-cell positive">-0.319%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cpi-table-panel">
+          <div class="cpi-table-head">
+            <span>Category</span>
+            <span>Weight</span>
+            <span>Latest</span>
+            <span>Prior</span>
+            <span>3M Avg</span>
+            <span>Y/Y</span>
+            <span>Contribution</span>
+          </div>
+          <div class="cpi-table-row cpi-table-row-key">
+            <div class="nfp-sector-name">
+              <strong>CPI SA</strong>
+              <span>Headline &middot; CUSR0000SA0</span>
+            </div>
+            <div data-label="Weight">100</div>
+            <div data-label="Latest"><span class="nfp-change negative">0.473%</span></div>
+            <div data-label="Prior">0.640%</div>
+            <div data-label="3M Avg">0.659%</div>
+            <div data-label="Y/Y"><span class="nfp-change negative">4.17%</span></div>
+            <div data-label="Contribution">47.3 bps</div>
+          </div>
+          <div class="cpi-table-row cpi-table-row-key">
+            <div class="nfp-sector-name">
+              <strong>CPI NSA</strong>
+              <span>Headline &middot; CUUR0000SA0</span>
+            </div>
+            <div data-label="Weight">100</div>
+            <div data-label="Latest"><span class="nfp-change negative">0.631%</span></div>
+            <div data-label="Prior">0.850%</div>
+            <div data-label="3M Avg">0.844%</div>
+            <div data-label="Y/Y"><span class="nfp-change negative">4.25%</span></div>
+            <div data-label="Contribution">63.1 bps</div>
+          </div>
+          <div class="cpi-table-row cpi-table-row-key">
+            <div class="nfp-sector-name">
+              <strong>CPI NSA Level</strong>
+              <span>Headline level &middot; CUUR0000SA0</span>
+            </div>
+            <div data-label="Weight">-</div>
+            <div data-label="Latest"><span class="nfp-change flat">335.123</span></div>
+            <div data-label="Prior">333.020</div>
+            <div data-label="3M Avg">332.785</div>
+            <div data-label="Y/Y"><span class="nfp-change negative">4.25%</span></div>
+            <div data-label="Contribution">-</div>
+          </div>
+          <div class="cpi-table-row cpi-table-row-key">
+            <div class="nfp-sector-name">
+              <strong>Food CPI</strong>
+              <span>Food &middot; CUSR0000SAF</span>
+            </div>
+            <div data-label="Weight">13.4</div>
+            <div data-label="Latest"><span class="nfp-change positive">0.150%</span></div>
+            <div data-label="Prior">0.491%</div>
+            <div data-label="3M Avg">0.217%</div>
+            <div data-label="Y/Y"><span class="nfp-change negative">3.02%</span></div>
+            <div data-label="Contribution">2.0 bps</div>
+          </div>
+          <div class="cpi-table-row">
+            <div class="nfp-sector-name">
+              <strong>Food at home CPI</strong>
+              <span>Food &middot; CUSR0000SAF11</span>
+            </div>
+            <div data-label="Weight">8.56</div>
+            <div data-label="Latest"><span class="nfp-change positive">0.0633%</span></div>
+            <div data-label="Prior">0.682%</div>
+            <div data-label="3M Avg">0.194%</div>
+            <div data-label="Y/Y"><span class="nfp-change negative">2.73%</span></div>
+            <div data-label="Contribution">0.5 bps</div>
+          </div>
+          <div class="cpi-table-row">
+            <div class="nfp-sector-name">
+              <strong>Food away from home CPI</strong>
+              <span>Food &middot; CUSR0000SEFV</span>
+            </div>
+            <div data-label="Weight">4.83</div>
+            <div data-label="Latest"><span class="nfp-change negative">0.300%</span></div>
+            <div data-label="Prior">0.228%</div>
+            <div data-label="3M Avg">0.257%</div>
+            <div data-label="Y/Y"><span class="nfp-change negative">3.54%</span></div>
+            <div data-label="Contribution">1.5 bps</div>
+          </div>
+          <div class="cpi-table-row cpi-table-row-key">
+            <div class="nfp-sector-name">
+              <strong>Energy CPI</strong>
+              <span>Energy &middot; CUSR0000SA0E</span>
+            </div>
+            <div data-label="Weight">7.36</div>
+            <div data-label="Latest"><span class="nfp-change negative">3.88%</span></div>
+            <div data-label="Prior">3.81%</div>
+            <div data-label="3M Avg">6.19%</div>
+            <div data-label="Y/Y"><span class="nfp-change negative">23.0%</span></div>
+            <div data-label="Contribution">28.6 bps</div>
+          </div>
+          <div class="cpi-table-row">
+            <div class="nfp-sector-name">
+              <strong>Energy commodities CPI</strong>
+              <span>Energy &middot; CUSR0000SACE</span>
+            </div>
+            <div data-label="Weight">3.79</div>
+            <div data-label="Latest"><span class="nfp-change negative">6.70%</span></div>
+            <div data-label="Prior">5.62%</div>
+            <div data-label="3M Avg">11.2%</div>
+            <div data-label="Y/Y"><span class="nfp-change negative">40.6%</span></div>
+            <div data-label="Contribution">25.4 bps</div>
+          </div>
+          <div class="cpi-table-row">
+            <div class="nfp-sector-name">
+              <strong>Energy services CPI</strong>
+              <span>Energy &middot; CUSR0000SASLE</span>
+            </div>
+            <div data-label="Weight">3.57</div>
+            <div data-label="Latest"><span class="nfp-change negative">0.295%</span></div>
+            <div data-label="Prior">0.500%</div>
+            <div data-label="3M Avg">0.340%</div>
+            <div data-label="Y/Y"><span class="nfp-change negative">3.38%</span></div>
+            <div data-label="Contribution">1.1 bps</div>
+          </div>
+          <div class="cpi-table-row cpi-table-row-key">
+            <div class="nfp-sector-name">
+              <strong>Core CPI SA</strong>
+              <span>Core &middot; CUSR0000SA0L1E</span>
+            </div>
+            <div data-label="Weight">79.2</div>
+            <div data-label="Latest"><span class="nfp-change negative">0.208%</span></div>
+            <div data-label="Prior">0.376%</div>
+            <div data-label="3M Avg">0.260%</div>
+            <div data-label="Y/Y"><span class="nfp-change negative">2.82%</span></div>
+            <div data-label="Contribution">16.5 bps</div>
+          </div>
+          <div class="cpi-table-row cpi-table-row-key">
+            <div class="nfp-sector-name">
+              <strong>Core CPI NSA</strong>
+              <span>Core &middot; CUUR0000SA0L1E</span>
+            </div>
+            <div data-label="Weight">79.2</div>
+            <div data-label="Latest"><span class="nfp-change negative">0.311%</span></div>
+            <div data-label="Prior">0.422%</div>
+            <div data-label="3M Avg">0.359%</div>
+            <div data-label="Y/Y"><span class="nfp-change negative">2.85%</span></div>
+            <div data-label="Contribution">24.6 bps</div>
+          </div>
+          <div class="cpi-table-row cpi-table-row-key">
+            <div class="nfp-sector-name">
+              <strong>Core CPI NSA Level</strong>
+              <span>Core level &middot; CUUR0000SA0L1E</span>
+            </div>
+            <div data-label="Weight">-</div>
+            <div data-label="Latest"><span class="nfp-change flat">336.846</span></div>
+            <div data-label="Prior">335.803</div>
+            <div data-label="3M Avg">335.680</div>
+            <div data-label="Y/Y"><span class="nfp-change negative">2.85%</span></div>
+            <div data-label="Contribution">-</div>
+          </div>
+          <div class="cpi-table-row">
+            <div class="nfp-sector-name">
+              <strong>Rent SA</strong>
+              <span>Shelter &middot; CUSR0000SEHA</span>
+            </div>
+            <div data-label="Weight">7.66</div>
+            <div data-label="Latest"><span class="nfp-change negative">0.362%</span></div>
+            <div data-label="Prior">0.545%</div>
+            <div data-label="3M Avg">0.366%</div>
+            <div data-label="Y/Y"><span class="nfp-change negative">2.92%</span></div>
+            <div data-label="Contribution">2.8 bps</div>
+          </div>
+          <div class="cpi-table-row">
+            <div class="nfp-sector-name">
+              <strong>OER SA</strong>
+              <span>Shelter &middot; CUSR0000SEHC</span>
+            </div>
+            <div data-label="Weight">26.1</div>
+            <div data-label="Latest"><span class="nfp-change negative">0.297%</span></div>
+            <div data-label="Prior">0.533%</div>
+            <div data-label="3M Avg">0.371%</div>
+            <div data-label="Y/Y"><span class="nfp-change negative">3.32%</span></div>
+            <div data-label="Contribution">7.8 bps</div>
+          </div>
+          <div class="cpi-table-row">
+            <div class="nfp-sector-name">
+              <strong>Out of town lodging SA</strong>
+              <span>Shelter &middot; CUSR0000SEHB</span>
+            </div>
+            <div data-label="Weight">0.916</div>
+            <div data-label="Latest"><span class="nfp-change negative">0.418%</span></div>
+            <div data-label="Prior">2.44%</div>
+            <div data-label="3M Avg">1.03%</div>
+            <div data-label="Y/Y"><span class="nfp-change negative">5.03%</span></div>
+            <div data-label="Contribution">0.4 bps</div>
+          </div>
+          <div class="cpi-table-row">
+            <div class="nfp-sector-name">
+              <strong>Airfares SA</strong>
+              <span>Transportation &middot; CUSR0000SETG01</span>
+            </div>
+            <div data-label="Weight">0.659</div>
+            <div data-label="Latest"><span class="nfp-change negative">2.69%</span></div>
+            <div data-label="Prior">2.82%</div>
+            <div data-label="3M Avg">2.72%</div>
+            <div data-label="Y/Y"><span class="nfp-change negative">26.7%</span></div>
+            <div data-label="Contribution">1.8 bps</div>
+          </div>
+          <div class="cpi-table-row">
+            <div class="nfp-sector-name">
+              <strong>Medical care SA</strong>
+              <span>Medical &middot; CUSR0000SAM</span>
+            </div>
+            <div data-label="Weight">8.71</div>
+            <div data-label="Latest"><span class="nfp-change negative">0.314%</span></div>
+            <div data-label="Prior">-0.0651%</div>
+            <div data-label="3M Avg">0.0285%</div>
+            <div data-label="Y/Y"><span class="nfp-change negative">2.59%</span></div>
+            <div data-label="Contribution">2.7 bps</div>
+          </div>
+          <div class="cpi-table-row">
+            <div class="nfp-sector-name">
+              <strong>Used cars SA</strong>
+              <span>Transportation &middot; CUSR0000SETA02</span>
+            </div>
+            <div data-label="Weight">2.88</div>
+            <div data-label="Latest"><span class="nfp-change positive">0.102%</span></div>
+            <div data-label="Prior">-0.00445%</div>
+            <div data-label="3M Avg">-0.108%</div>
+            <div data-label="Y/Y"><span class="nfp-change positive">-1.99%</span></div>
+            <div data-label="Contribution">0.3 bps</div>
+          </div>
+          <div class="cpi-table-row">
+            <div class="nfp-sector-name">
+              <strong>Apparel CPI</strong>
+              <span>Goods &middot; CUSR0000SAA</span>
+            </div>
+            <div data-label="Weight">3.10</div>
+            <div data-label="Latest"><span class="nfp-change negative">0.292%</span></div>
+            <div data-label="Prior">0.638%</div>
+            <div data-label="3M Avg">0.653%</div>
+            <div data-label="Y/Y"><span class="nfp-change negative">4.81%</span></div>
+            <div data-label="Contribution">0.9 bps</div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-foot">
+        <p>Source: SQLite store populated from BLS CPI-U public API component series. Database: macro_site\cpi_detail_data.db.</p>
+        <p class="muted"><a href="./">Back to forecasts</a>.</p>
+      </footer>
+    </main>
+  </body>
+</html>

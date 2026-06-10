@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CPI Detail Breakdown | Macro Forecast Schedule by Chirag Mirani</title>
+    <meta name="description" content="BLS CPI-U component detail with last 12 months of m/m changes, y/y changes, weights, and weighted contribution in basis points.">
+    <meta name="author" content="Chirag Mirani">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://chiragmirani.github.io/macro-dashboard/cpi.html">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#0a1628">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CPI Detail Breakdown">
+    <meta property="og:description" content="BLS CPI component heatmap with m/m, y/y, weights, and weighted contribution in basis points.">
+    <meta property="og:url" content="https://chiragmirani.github.io/macro-dashboard/cpi.html">
+    <meta property="og:site_name" content="Chirag Mirani Macro Dashboard">
+    <meta property="og:image" content="https://chiragmirani.github.io/macro-dashboard/social-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CPI Detail Breakdown">
+    <meta name="twitter:description" content="BLS CPI component heatmap with m/m, y/y, weights, and weighted contribution in basis points.">
+    <meta name="twitter:image" content="https://chiragmirani.github.io/macro-dashboard/social-preview.png">
+    <link rel="stylesheet" href="static/styles.css">
+  </head>
+  <body>
+    <main>
+      <nav class="topnav">
+        <a href="./">Forecasts</a>
+        <a href="cpi.html" class="active">CPI detail</a>
+        <a href="nfp.html">NFP breakdown</a>
+        <a href="track-record.html">Track record</a>
+      </nav>
+
+      {% if payload.cpi_detail %}
+      <section class="cpi-detail-section" aria-labelledby="cpi-detail-title">
+        <div class="nfp-breakdown-hero cpi-detail-hero">
+          <div>
+            <p class="eyebrow">CPI-U components &middot; {{ payload.cpi_detail.period }} &middot; Updated {{ payload.generated_at_et }}</p>
+            <h1 id="cpi-detail-title">CPI Detail</h1>
+            <p>{{ payload.cpi_detail.source }}. Non-level rows are exact calendar m/m percent changes; level rows show NSA index levels. Color marks whether the m/m pace is above or below a 2% annualized rate.</p>
+          </div>
+          <div class="nfp-headline-stat">
+            <span>Core CPI m/m</span>
+            <strong class="{{ payload.cpi_detail.core.latest_tone if payload.cpi_detail.core else 'flat' }}">{{ payload.cpi_detail.core.latest_display if payload.cpi_detail.core else 'n/a' }}</strong>
+            <small>{{ payload.cpi_detail.core.yoy_display if payload.cpi_detail.core else 'n/a' }} y/y</small>
+          </div>
+        </div>
+
+        <div class="nfp-stat-grid">
+          {% for stat in payload.cpi_detail.stats %}
+          <div class="nfp-stat-card">
+            <span>{{ stat.label }}</span>
+            <strong class="{{ stat.tone }}">{{ stat.value }}</strong>
+            <small>{{ stat.detail }}</small>
+          </div>
+          {% endfor %}
+        </div>
+
+        <div class="cpi-insight-grid">
+          <div class="cpi-insight-card">
+            <span>Volatile adjusted core</span>
+            <strong>{{ payload.cpi_detail.volatile_adjusted.adjusted_core_mom }}</strong>
+            <small>removes {{ payload.cpi_detail.volatile_adjusted.volatile_contribution_removed }} from airfares, lodging, used cars, apparel</small>
+          </div>
+          {% if payload.cpi_detail.largest_upside %}
+          <div class="cpi-insight-card">
+            <span>Largest weighted upside</span>
+            <strong class="negative">{{ payload.cpi_detail.largest_upside.contribution_bps }}</strong>
+            <small>{{ payload.cpi_detail.largest_upside.label }} &middot; {{ payload.cpi_detail.largest_upside.latest_display }}</small>
+          </div>
+          {% endif %}
+          {% if payload.cpi_detail.largest_downside %}
+          <div class="cpi-insight-card">
+            <span>Largest weighted downside</span>
+            <strong class="positive">{{ payload.cpi_detail.largest_downside.contribution_bps }}</strong>
+            <small>{{ payload.cpi_detail.largest_downside.label }} &middot; {{ payload.cpi_detail.largest_downside.latest_display }}</small>
+          </div>
+          {% endif %}
+        </div>
+
+        <div class="nfp-history-panel cpi-history-panel">
+          <div class="nfp-history-title">
+            <div>
+              <span class="summary-label">Last 12 monthly prints</span>
+              <h2>CPI Component Heatmap</h2>
+            </div>
+            <p>Rows are BLS CPI-U component series. Non-level cells are m/m percent changes; CPI NSA level rows show index levels.</p>
+          </div>
+          <div class="nfp-history-scroll" role="region" aria-label="Last 12 months of CPI component changes">
+            <div class="nfp-history-grid cpi-history-grid" style="grid-template-columns: minmax(250px, 1.25fr) repeat({{ payload.cpi_detail.history_months | length }}, minmax(74px, 1fr));">
+              <div class="nfp-history-header nfp-history-sticky">Category</div>
+              {% for month in payload.cpi_detail.history_months %}
+              <div class="nfp-history-header">{{ month.label }}</div>
+              {% endfor %}
+              {% for row in payload.cpi_detail.history_rows %}
+              <div class="nfp-history-category nfp-history-sticky{% if row.is_key %} nfp-history-category-key{% endif %}">
+                <strong>{{ row.label }}</strong>
+                <span>{{ row.group }}{% if not row.is_level %} &middot; wt {{ row.weight_display }}{% endif %}</span>
+              </div>
+              {% for cell in row.history %}
+              <div class="nfp-history-cell {{ cell.tone }}">{{ cell.display }}</div>
+              {% endfor %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+
+        <div class="cpi-table-panel">
+          <div class="cpi-table-head">
+            <span>Category</span>
+            <span>Weight</span>
+            <span>Latest</span>
+            <span>Prior</span>
+            <span>3M Avg</span>
+            <span>Y/Y</span>
+            <span>Contribution</span>
+          </div>
+          {% for row in payload.cpi_detail.rows %}
+          <div class="cpi-table-row{% if row.is_key %} cpi-table-row-key{% endif %}">
+            <div class="nfp-sector-name">
+              <strong>{{ row.label }}</strong>
+              <span>{{ row.group }} &middot; {{ row.series_id }}</span>
+            </div>
+            <div data-label="Weight">{{ row.weight_display }}</div>
+            <div data-label="Latest"><span class="nfp-change {{ row.latest_tone }}">{{ row.latest_display }}</span></div>
+            <div data-label="Prior">{{ row.previous_display }}</div>
+            <div data-label="3M Avg">{{ row.avg_3m_display }}</div>
+            <div data-label="Y/Y"><span class="nfp-change {{ row.yoy_tone }}">{{ row.yoy_display }}</span></div>
+            <div data-label="Contribution">{{ row.contribution_bps or '-' }}</div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+      {% else %}
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">CPI-U components</p>
+          <h1>CPI Detail</h1>
+          <p class="tr-blurb">CPI detail is unavailable because the BLS component pull did not return usable data.</p>
+        </div>
+      </section>
+      {% endif %}
+
+      <footer class="site-foot">
+        <p>Source: SQLite store populated from BLS CPI-U public API component series. Database: {{ payload.cpi_detail.database if payload.cpi_detail else 'n/a' }}.</p>
+        <p class="muted"><a href="./">Back to forecasts</a>.</p>
+      </footer>
+    </main>
+  </body>
+</html>

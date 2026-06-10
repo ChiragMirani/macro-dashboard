@@ -1,7 +1,7 @@
 {
   "period": "May 2026",
   "source": "SQLite store populated from BLS CES establishment survey and CPS household survey component series; UR = 100 * unemployed / civilian labor force",
-  "database": "macro_site/nfp_survey_data.db",
+  "database": "macro_site\\nfp_survey_data.db",
   "headline": {
     "series_id": "CES0000000001",
     "label": "Total nonfarm",

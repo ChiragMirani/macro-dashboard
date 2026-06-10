@@ -28,6 +28,7 @@ TEMPLATE_DIR = BASE_DIR / "macro_site" / "templates"
 OUTPUT_JSON = DOCS_DIR / "dashboard_data.json"
 OUTPUT_HTML = DOCS_DIR / "index.html"
 NFP_HTML = DOCS_DIR / "nfp.html"
+CPI_HTML = DOCS_DIR / "cpi.html"
 NOJEKYLL = DOCS_DIR / ".nojekyll"
 ROBOTS_TXT = DOCS_DIR / "robots.txt"
 SITEMAP_XML = DOCS_DIR / "sitemap.xml"
@@ -51,6 +52,8 @@ ADP_LOG = BASE_DIR / "adp_run.log"
 LATEST_ACTUAL_CACHE = BASE_DIR / "macro_site" / "latest_actuals_cache.json"
 NFP_BREAKDOWN_CACHE = BASE_DIR / "macro_site" / "nfp_breakdown_cache.json"
 NFP_SURVEY_DB = BASE_DIR / "macro_site" / "nfp_survey_data.db"
+CPI_DETAIL_CACHE = BASE_DIR / "macro_site" / "cpi_detail_cache.json"
+CPI_DETAIL_DB = BASE_DIR / "macro_site" / "cpi_detail_data.db"
 
 ET = ZoneInfo("America/New_York")
 REQUEST_HEADERS = {"User-Agent": "ChiragMiraniMacroDashboard/1.0"}
@@ -96,6 +99,35 @@ NFP_METRIC_SERIES = {
     "labor_force": "LNS11000000",
     "participation": "LNS11300000",
     "ahe": "CES0500000003",
+}
+CPI_COMPONENT_SERIES = [
+    ("CUSR0000SA0", "CPI SA", "Headline", 100.0),
+    ("CUUR0000SA0", "CPI NSA", "Headline", 100.0),
+    ("CUSR0000SAF", "Food CPI", "Food", 13.39),
+    ("CUSR0000SAF11", "Food at home CPI", "Food", 8.56),
+    ("CUSR0000SEFV", "Food away from home CPI", "Food", 4.83),
+    ("CUSR0000SA0E", "Energy CPI", "Energy", 7.36),
+    ("CUSR0000SACE", "Energy commodities CPI", "Energy", 3.79),
+    ("CUSR0000SASLE", "Energy services CPI", "Energy", 3.57),
+    ("CUSR0000SA0L1E", "Core CPI SA", "Core", 79.25),
+    ("CUUR0000SA0L1E", "Core CPI NSA", "Core", 79.25),
+    ("CUSR0000SEHA", "Rent SA", "Shelter", 7.66),
+    ("CUSR0000SEHC", "OER SA", "Shelter", 26.14),
+    ("CUSR0000SEHB", "Out of town lodging SA", "Shelter", 0.916),
+    ("CUSR0000SETG01", "Airfares SA", "Transportation", 0.659),
+    ("CUSR0000SAM", "Medical care SA", "Medical", 8.71),
+    ("CUSR0000SETA02", "Used cars SA", "Transportation", 2.88),
+    ("CUSR0000SAA", "Apparel CPI", "Goods", 3.1),
+]
+CPI_LEVEL_ROWS = [
+    ("CUUR0000SA0", "CPI NSA Level", "Headline level"),
+    ("CUUR0000SA0L1E", "Core CPI NSA Level", "Core level"),
+]
+CPI_VOLATILE_LABELS = {
+    "Airfares SA",
+    "Out of town lodging SA",
+    "Used cars SA",
+    "Apparel CPI",
 }
 
 
@@ -973,6 +1005,351 @@ def build_nfp_breakdown(now_et: datetime) -> dict[str, Any] | None:
     }
     write_nfp_breakdown_cache(payload)
     return payload
+
+def read_cpi_detail_cache() -> dict[str, Any] | None:
+    payload = read_json(CPI_DETAIL_CACHE)
+    return payload if isinstance(payload, dict) else None
+
+
+def write_cpi_detail_cache(payload: dict[str, Any] | None) -> None:
+    if payload:
+        CPI_DETAIL_CACHE.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+
+
+def cpi_series_metadata() -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for idx, (series_id, label, group, weight) in enumerate(CPI_COMPONENT_SERIES):
+        rows.append({
+            "series_id": series_id,
+            "label": label,
+            "group_name": group,
+            "kind": "cpi_index",
+            "unit": "index",
+            "weight": weight,
+            "source": "BLS CPI-U",
+            "display_order": 100 + idx,
+        })
+    return rows
+
+
+def connect_cpi_detail_db() -> sqlite3.Connection:
+    CPI_DETAIL_DB.parent.mkdir(parents=True, exist_ok=True)
+    conn = sqlite3.connect(CPI_DETAIL_DB)
+    conn.row_factory = sqlite3.Row
+    conn.executescript(
+        """
+        CREATE TABLE IF NOT EXISTS series (
+            series_id TEXT PRIMARY KEY,
+            label TEXT NOT NULL,
+            group_name TEXT NOT NULL,
+            kind TEXT NOT NULL,
+            unit TEXT NOT NULL,
+            weight REAL,
+            source TEXT NOT NULL,
+            display_order INTEGER NOT NULL
+        );
+        CREATE TABLE IF NOT EXISTS observations (
+            series_id TEXT NOT NULL,
+            month TEXT NOT NULL,
+            value REAL NOT NULL,
+            updated_at_utc TEXT NOT NULL,
+            PRIMARY KEY (series_id, month),
+            FOREIGN KEY (series_id) REFERENCES series(series_id)
+        );
+        CREATE INDEX IF NOT EXISTS idx_cpi_observations_month ON observations(month);
+        """
+    )
+    return conn
+
+
+def upsert_cpi_series_metadata(conn: sqlite3.Connection) -> None:
+    conn.executemany(
+        """
+        INSERT INTO series(series_id, label, group_name, kind, unit, weight, source, display_order)
+        VALUES(:series_id, :label, :group_name, :kind, :unit, :weight, :source, :display_order)
+        ON CONFLICT(series_id) DO UPDATE SET
+            label=excluded.label,
+            group_name=excluded.group_name,
+            kind=excluded.kind,
+            unit=excluded.unit,
+            weight=excluded.weight,
+            source=excluded.source,
+            display_order=excluded.display_order
+        """,
+        cpi_series_metadata(),
+    )
+
+
+def update_cpi_detail_db_from_bls(now_et: datetime) -> int:
+    series_ids = [row[0] for row in CPI_COMPONENT_SERIES]
+    start_year = max(2010, now_et.year - 15)
+    series_map = fetch_bls_series_batch(series_ids, start_year, now_et.year)
+    if not series_map:
+        return 0
+
+    updated_at = datetime.now(timezone.utc).isoformat()
+    rows: list[tuple[str, str, float, str]] = []
+    for series_id, series in series_map.items():
+        for dt, value in series.dropna().items():
+            rows.append((series_id, pd.Timestamp(dt).strftime("%Y-%m-01"), float(value), updated_at))
+
+    if not rows:
+        return 0
+    with connect_cpi_detail_db() as conn:
+        upsert_cpi_series_metadata(conn)
+        conn.executemany(
+            """
+            INSERT INTO observations(series_id, month, value, updated_at_utc)
+            VALUES(?, ?, ?, ?)
+            ON CONFLICT(series_id, month) DO UPDATE SET
+                value=excluded.value,
+                updated_at_utc=excluded.updated_at_utc
+            """,
+            rows,
+        )
+        conn.commit()
+    return len(rows)
+
+
+def load_cpi_detail_db_series() -> dict[str, pd.Series]:
+    if not CPI_DETAIL_DB.exists():
+        return {}
+    with connect_cpi_detail_db() as conn:
+        upsert_cpi_series_metadata(conn)
+        frame = pd.read_sql_query(
+            "SELECT series_id, month, value FROM observations ORDER BY series_id, month",
+            conn,
+        )
+        conn.commit()
+    if frame.empty:
+        return {}
+    frame["month"] = pd.to_datetime(frame["month"], errors="coerce")
+    frame["value"] = pd.to_numeric(frame["value"], errors="coerce")
+    frame = frame.dropna(subset=["month", "value"])
+    return {
+        series_id: group.set_index("month")["value"].sort_index().astype(float)
+        for series_id, group in frame.groupby("series_id")
+    }
+
+
+def exact_calendar_pct_change(series: pd.Series, months: int) -> pd.Series:
+    if series is None or series.empty:
+        return pd.Series(dtype="float64")
+    values = {pd.Timestamp(dt): float(value) for dt, value in series.sort_index().dropna().items()}
+    changes: dict[pd.Timestamp, float] = {}
+    for dt, value in values.items():
+        prior = values.get(dt - pd.DateOffset(months=months))
+        if prior is None or not math.isfinite(prior) or prior == 0:
+            continue
+        change = (value / prior - 1.0) * 100.0
+        if math.isfinite(change):
+            changes[dt] = change
+    return pd.Series(changes, dtype="float64").sort_index()
+
+
+def series_value_at(series: pd.Series, dt: pd.Timestamp) -> float | None:
+    if series is None or series.empty or dt not in series.index:
+        return None
+    value = float(series.loc[dt])
+    return value if math.isfinite(value) else None
+
+
+def cpi_mom_tone(value: float | None) -> str:
+    if value is None or not math.isfinite(value):
+        return "flat"
+    annualized = value * 12.0
+    if annualized > 2.0:
+        return "negative"
+    if annualized < 2.0:
+        return "positive"
+    return "flat"
+
+
+def cpi_yoy_tone(value: float | None) -> str:
+    if value is None or not math.isfinite(value):
+        return "flat"
+    if value > 2.0:
+        return "negative"
+    if value < 2.0:
+        return "positive"
+    return "flat"
+
+
+def fmt_cpi_level(value: float | None) -> str | None:
+    if value is None or not math.isfinite(value):
+        return None
+    return f"{value:.3f}"
+
+
+def fmt_cpi_bps(value: float | None) -> str | None:
+    if value is None or not math.isfinite(value):
+        return None
+    return f"{value:.1f} bps"
+
+
+def fmt_cpi_weight(value: float | None) -> str:
+    if value is None or not math.isfinite(float(value)):
+        return "-"
+    return fmt_sig_value(float(value), sig=3) or "-"
+
+
+def build_cpi_component_row(
+    *,
+    series_id: str,
+    label: str,
+    group: str,
+    weight: float | None,
+    series: pd.Series,
+    history_index: list[pd.Timestamp],
+    is_level: bool = False,
+) -> dict[str, Any] | None:
+    if series is None or series.empty or not history_index:
+        return None
+    series = series.sort_index()
+    latest_dt = history_index[0]
+    display_values = series if is_level else exact_calendar_pct_change(series, 1)
+    yoy_values = exact_calendar_pct_change(series, 12)
+
+    history = []
+    for hist_dt in history_index:
+        value = series_value_at(display_values, hist_dt)
+        yoy = series_value_at(yoy_values, hist_dt)
+        history.append({
+            "label": hist_dt.strftime("%b-%y"),
+            "value": value,
+            "yoy": yoy,
+            "display": (fmt_cpi_level(value) if is_level else fmt_sig_pct(value)) or "n/a",
+            "tone": "flat" if is_level else cpi_mom_tone(value),
+        })
+
+    latest_value = series_value_at(display_values, latest_dt)
+    previous_value = series_value_at(display_values, history_index[1]) if len(history_index) > 1 else None
+    latest_yoy = series_value_at(yoy_values, latest_dt)
+    avg_values = [series_value_at(display_values, dt) for dt in history_index[:3]]
+    avg_values = [value for value in avg_values if value is not None]
+    avg_3m = sum(avg_values) / len(avg_values) if avg_values else None
+    contribution_bps = None if is_level or weight is None or latest_value is None else weight * latest_value
+
+    return {
+        "series_id": series_id,
+        "label": label,
+        "group": group,
+        "weight": weight,
+        "weight_display": fmt_cpi_weight(weight),
+        "is_level": is_level,
+        "is_key": label in {"CPI SA", "CPI NSA", "CPI NSA Level", "Core CPI SA", "Core CPI NSA", "Core CPI NSA Level", "Food CPI", "Energy CPI"},
+        "latest_value": latest_value,
+        "latest_display": (fmt_cpi_level(latest_value) if is_level else fmt_sig_pct(latest_value)) or "n/a",
+        "previous_display": (fmt_cpi_level(previous_value) if is_level else fmt_sig_pct(previous_value)) or "n/a",
+        "avg_3m_value": avg_3m,
+        "avg_3m_display": (fmt_cpi_level(avg_3m) if is_level else fmt_sig_pct(avg_3m)) or "n/a",
+        "yoy_value": latest_yoy,
+        "yoy_display": fmt_sig_pct(latest_yoy) or "n/a",
+        "latest_tone": "flat" if is_level else cpi_mom_tone(latest_value),
+        "yoy_tone": cpi_yoy_tone(latest_yoy),
+        "contribution_bps_value": contribution_bps,
+        "contribution_bps": fmt_cpi_bps(contribution_bps),
+        "history": history,
+    }
+
+
+def build_cpi_detail(now_et: datetime) -> dict[str, Any] | None:
+    update_cpi_detail_db_from_bls(now_et)
+    series_map = load_cpi_detail_db_series()
+    if not series_map:
+        return read_cpi_detail_cache()
+
+    anchor = series_map.get("CUSR0000SA0L1E")
+    if anchor is None or anchor.empty:
+        anchor = series_map.get("CUSR0000SA0")
+    if anchor is None or anchor.empty:
+        return read_cpi_detail_cache()
+    latest_dt = pd.Timestamp(anchor.index[-1])
+    anchor = anchor[anchor.index <= latest_dt].sort_index()
+    history_index = [pd.Timestamp(dt) for dt in reversed(anchor.tail(12).index)]
+    history_months = [
+        {"label": dt.strftime("%b-%y"), "iso": dt.strftime("%Y-%m")}
+        for dt in history_index
+    ]
+
+    level_lookup = {series_id: (level_label, level_group) for series_id, level_label, level_group in CPI_LEVEL_ROWS}
+    rows: list[dict[str, Any]] = []
+    for series_id, label, group, weight in CPI_COMPONENT_SERIES:
+        series = series_map.get(series_id)
+        if series is None or series.empty:
+            continue
+        row = build_cpi_component_row(
+            series_id=series_id,
+            label=label,
+            group=group,
+            weight=weight,
+            series=series,
+            history_index=history_index,
+        )
+        if row is not None:
+            rows.append(row)
+        if series_id in level_lookup:
+            level_label, level_group = level_lookup[series_id]
+            level_row = build_cpi_component_row(
+                series_id=series_id,
+                label=level_label,
+                group=level_group,
+                weight=None,
+                series=series,
+                history_index=history_index,
+                is_level=True,
+            )
+            if level_row is not None:
+                rows.append(level_row)
+
+    if not rows:
+        return read_cpi_detail_cache()
+
+    headline = next((row for row in rows if row["label"] == "CPI SA"), rows[0])
+    core = next((row for row in rows if row["label"] == "Core CPI SA"), None)
+    nsa_level = next((row for row in rows if row["label"] == "CPI NSA Level"), None)
+    component_rows = [
+        row for row in rows
+        if not row["is_level"] and row["group"] not in {"Headline", "Core"} and row.get("contribution_bps_value") is not None
+    ]
+    largest_upside = max(component_rows, key=lambda row: row["contribution_bps_value"], default=None)
+    largest_downside = min(component_rows, key=lambda row: row["contribution_bps_value"], default=None)
+
+    volatile_bps = sum(
+        row.get("contribution_bps_value") or 0.0
+        for row in component_rows
+        if row["label"] in CPI_VOLATILE_LABELS
+    )
+    adjusted_core_mom = None
+    if core and core.get("latest_value") is not None:
+        adjusted_core_mom = float(core["latest_value"]) - (volatile_bps / 100.0)
+
+    payload = {
+        "period": latest_dt.strftime("%B %Y"),
+        "source": "SQLite store populated from BLS CPI-U component series via public API",
+        "database": str(CPI_DETAIL_DB.relative_to(BASE_DIR)),
+        "history_months": history_months,
+        "history_rows": rows,
+        "rows": rows,
+        "headline": headline,
+        "core": core,
+        "nsa_level": nsa_level,
+        "largest_upside": largest_upside,
+        "largest_downside": largest_downside,
+        "volatile_adjusted": {
+            "core_mom": core.get("latest_display") if core else "n/a",
+            "adjusted_core_mom": fmt_sig_pct(adjusted_core_mom) or "n/a",
+            "volatile_contribution_removed": fmt_cpi_bps(volatile_bps) or "n/a",
+        },
+        "stats": [
+            {"label": "Headline CPI m/m", "value": headline.get("latest_display", "n/a"), "tone": headline.get("latest_tone", "flat"), "detail": headline.get("yoy_display", "n/a") + " y/y"},
+            {"label": "Core CPI m/m", "value": core.get("latest_display", "n/a") if core else "n/a", "tone": core.get("latest_tone", "flat") if core else "flat", "detail": (core.get("yoy_display", "n/a") if core else "n/a") + " y/y"},
+            {"label": "Core CPI 3M avg", "value": core.get("avg_3m_display", "n/a") if core else "n/a", "tone": core.get("latest_tone", "flat") if core else "flat", "detail": "average monthly change"},
+            {"label": "CPI NSA level", "value": nsa_level.get("latest_display", "n/a") if nsa_level else "n/a", "tone": "flat", "detail": latest_dt.strftime("%b %Y")},
+        ],
+    }
+    write_cpi_detail_cache(payload)
+    return payload
 def load_core_cpi_last_release_local() -> str | None:
     if not REPORT_TABLE.exists():
         return None
@@ -1570,6 +1947,7 @@ def build_payload(now_et: datetime) -> dict[str, Any]:
         "next_event": next_event,
         "events": serialized,
         "nfp_breakdown": build_nfp_breakdown(now_et),
+        "cpi_detail": build_cpi_detail(now_et),
         "summary": {
             "event_count": len(serialized),
             "live_count": sum(1 for event in serialized if event["status"] == "live"),
@@ -1642,6 +2020,7 @@ def render_site(payload: dict[str, Any]) -> None:
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         f'  <url><loc>{SITE_URL}</loc><lastmod>{payload["generated_at_iso"]}</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>\n'
         f'  <url><loc>{SITE_URL}dashboard_data.json</loc><lastmod>{payload["generated_at_iso"]}</lastmod><changefreq>daily</changefreq></url>\n'
+        f'  <url><loc>{SITE_URL}cpi.html</loc><lastmod>{payload["generated_at_iso"]}</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>\n'
         f'  <url><loc>{SITE_URL}nfp.html</loc><lastmod>{payload["generated_at_iso"]}</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>\n'
         '</urlset>\n',
         encoding="utf-8",
@@ -1658,6 +2037,8 @@ def render_site(payload: dict[str, Any]) -> None:
     OUTPUT_HTML.write_text(template.render(payload=payload), encoding="utf-8")
     nfp_template = env.get_template("nfp.html")
     NFP_HTML.write_text(nfp_template.render(payload=payload), encoding="utf-8")
+    cpi_template = env.get_template("cpi.html")
+    CPI_HTML.write_text(cpi_template.render(payload=payload), encoding="utf-8")
     shutil.copy2(BASE_DIR / "macro_site" / "static" / "styles.css", STATIC_DIR / "styles.css")
 
     render_track_record(env)

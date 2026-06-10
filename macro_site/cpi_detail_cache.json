@@ -1,0 +1,4648 @@
+{
+  "period": "May 2026",
+  "source": "SQLite store populated from BLS CPI-U component series via public API",
+  "database": "macro_site\\cpi_detail_data.db",
+  "history_months": [
+    {
+      "label": "May-26",
+      "iso": "2026-05"
+    },
+    {
+      "label": "Apr-26",
+      "iso": "2026-04"
+    },
+    {
+      "label": "Mar-26",
+      "iso": "2026-03"
+    },
+    {
+      "label": "Feb-26",
+      "iso": "2026-02"
+    },
+    {
+      "label": "Jan-26",
+      "iso": "2026-01"
+    },
+    {
+      "label": "Dec-25",
+      "iso": "2025-12"
+    },
+    {
+      "label": "Nov-25",
+      "iso": "2025-11"
+    },
+    {
+      "label": "Sep-25",
+      "iso": "2025-09"
+    },
+    {
+      "label": "Aug-25",
+      "iso": "2025-08"
+    },
+    {
+      "label": "Jul-25",
+      "iso": "2025-07"
+    },
+    {
+      "label": "Jun-25",
+      "iso": "2025-06"
+    },
+    {
+      "label": "May-25",
+      "iso": "2025-05"
+    }
+  ],
+  "history_rows": [
+    {
+      "series_id": "CUSR0000SA0",
+      "label": "CPI SA",
+      "group": "Headline",
+      "weight": 100.0,
+      "weight_display": "100",
+      "is_level": false,
+      "is_key": true,
+      "latest_value": 0.47291422864139676,
+      "latest_display": "0.473%",
+      "previous_display": "0.640%",
+      "avg_3m_value": 0.6593652825454951,
+      "avg_3m_display": "0.659%",
+      "yoy_value": 4.166614684049641,
+      "yoy_display": "4.17%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 47.291422864139676,
+      "contribution_bps": "47.3 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.47291422864139676,
+          "yoy": 4.166614684049641,
+          "display": "0.473%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 0.6400377846336402,
+          "yoy": 3.7792458367415627,
+          "display": "0.640%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 0.8651438343614481,
+          "yoy": 3.2859577528651984,
+          "display": "0.865%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.26700307420970404,
+          "yoy": 2.4340041103732224,
+          "display": "0.267%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.170842649932057,
+          "yoy": 2.391201432150014,
+          "display": "0.171%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.297788428704604,
+          "yoy": 2.653304114557753,
+          "display": "0.298%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 2.6964439164939513,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.2950901819104068,
+          "yoy": 3.0225715847133294,
+          "display": "0.295%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.3482644202266627,
+          "yoy": 2.9385917430316155,
+          "display": "0.348%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.22835098853577485,
+          "yoy": 2.742618052167134,
+          "display": "0.228%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.2541949971929469,
+          "yoy": 2.680453865910226,
+          "display": "0.254%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": 0.09928130327003792,
+          "yoy": 2.3772651073680873,
+          "display": "0.0993%",
+          "tone": "positive"
+        }
+      ]
+    },
+    {
+      "series_id": "CUUR0000SA0",
+      "label": "CPI NSA",
+      "group": "Headline",
+      "weight": 100.0,
+      "weight_display": "100",
+      "is_level": false,
+      "is_key": true,
+      "latest_value": 0.6314936039877539,
+      "latest_display": "0.631%",
+      "previous_display": "0.850%",
+      "avg_3m_value": 0.843519582861115,
+      "avg_3m_display": "0.844%",
+      "yoy_value": 4.248674039164446,
+      "yoy_display": "4.25%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 63.149360398775386,
+      "contribution_bps": "63.1 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.6314936039877539,
+          "yoy": 4.248674039164446,
+          "display": "0.631%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 0.850057387201586,
+          "yoy": 3.8108449321217597,
+          "display": "0.850%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 1.0490077573940049,
+          "yoy": 3.2564204390883145,
+          "display": "1.05%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.4713268481054689,
+          "yoy": 2.4141129866304123,
+          "display": "0.471%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.36969147117456025,
+          "yoy": 2.386431244904319,
+          "display": "0.370%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": -0.020979754536887274,
+          "yoy": 2.6770805278750087,
+          "display": "-0.0210%",
+          "tone": "positive"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 2.735084455122627,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.2543398276415587,
+          "yoy": 3.0126767755256134,
+          "display": "0.254%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.2872638121889093,
+          "yoy": 2.9161742842984006,
+          "display": "0.287%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.15097919463296083,
+          "yoy": 2.7049023971513986,
+          "display": "0.151%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.34093913800881115,
+          "yoy": 2.669213018222316,
+          "display": "0.341%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": 0.2088561230692454,
+          "yoy": 2.354896535474671,
+          "display": "0.209%",
+          "tone": "negative"
+        }
+      ]
+    },
+    {
+      "series_id": "CUUR0000SA0",
+      "label": "CPI NSA Level",
+      "group": "Headline level",
+      "weight": null,
+      "weight_display": "-",
+      "is_level": true,
+      "is_key": true,
+      "latest_value": 335.123,
+      "latest_display": "335.123",
+      "previous_display": "333.020",
+      "avg_3m_value": 332.7853333333333,
+      "avg_3m_display": "332.785",
+      "yoy_value": 4.248674039164446,
+      "yoy_display": "4.25%",
+      "latest_tone": "flat",
+      "yoy_tone": "negative",
+      "contribution_bps_value": null,
+      "contribution_bps": null,
+      "history": [
+        {
+          "label": "May-26",
+          "value": 335.123,
+          "yoy": 4.248674039164446,
+          "display": "335.123",
+          "tone": "flat"
+        },
+        {
+          "label": "Apr-26",
+          "value": 333.02,
+          "yoy": 3.8108449321217597,
+          "display": "333.020",
+          "tone": "flat"
+        },
+        {
+          "label": "Mar-26",
+          "value": 330.213,
+          "yoy": 3.2564204390883145,
+          "display": "330.213",
+          "tone": "flat"
+        },
+        {
+          "label": "Feb-26",
+          "value": 326.785,
+          "yoy": 2.4141129866304123,
+          "display": "326.785",
+          "tone": "flat"
+        },
+        {
+          "label": "Jan-26",
+          "value": 325.252,
+          "yoy": 2.386431244904319,
+          "display": "325.252",
+          "tone": "flat"
+        },
+        {
+          "label": "Dec-25",
+          "value": 324.054,
+          "yoy": 2.6770805278750087,
+          "display": "324.054",
+          "tone": "flat"
+        },
+        {
+          "label": "Nov-25",
+          "value": 324.122,
+          "yoy": 2.735084455122627,
+          "display": "324.122",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 324.8,
+          "yoy": 3.0126767755256134,
+          "display": "324.800",
+          "tone": "flat"
+        },
+        {
+          "label": "Aug-25",
+          "value": 323.976,
+          "yoy": 2.9161742842984006,
+          "display": "323.976",
+          "tone": "flat"
+        },
+        {
+          "label": "Jul-25",
+          "value": 323.048,
+          "yoy": 2.7049023971513986,
+          "display": "323.048",
+          "tone": "flat"
+        },
+        {
+          "label": "Jun-25",
+          "value": 322.561,
+          "yoy": 2.669213018222316,
+          "display": "322.561",
+          "tone": "flat"
+        },
+        {
+          "label": "May-25",
+          "value": 321.465,
+          "yoy": 2.354896535474671,
+          "display": "321.465",
+          "tone": "flat"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SAF",
+      "label": "Food CPI",
+      "group": "Food",
+      "weight": 13.39,
+      "weight_display": "13.4",
+      "is_level": false,
+      "is_key": true,
+      "latest_value": 0.1500592415345281,
+      "latest_display": "0.150%",
+      "previous_display": "0.491%",
+      "avg_3m_value": 0.21692446324835432,
+      "avg_3m_display": "0.217%",
+      "yoy_value": 3.0229072238065813,
+      "yoy_display": "3.02%",
+      "latest_tone": "positive",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 2.0092932441473312,
+      "contribution_bps": "2.0 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.1500592415345281,
+          "yoy": 3.0229072238065813,
+          "display": "0.150%",
+          "tone": "positive"
+        },
+        {
+          "label": "Apr-26",
+          "value": 0.49110651800530203,
+          "yoy": 3.1424046850722975,
+          "display": "0.491%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 0.009607630205232809,
+          "yoy": 2.685283998003163,
+          "display": "0.00961%",
+          "tone": "positive"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.3749335172446022,
+          "yoy": 3.0527869619744186,
+          "display": "0.375%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.1847389793391052,
+          "yoy": 2.876503941363584,
+          "display": "0.185%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.6141782383541683,
+          "yoy": 2.988994421830249,
+          "display": "0.614%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 2.580853757663837,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.2231153402878272,
+          "yoy": 3.049445624397995,
+          "display": "0.223%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.4300456162948496,
+          "yoy": 3.119267173339346,
+          "display": "0.430%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.12302133261223869,
+          "yoy": 2.8074083114663972,
+          "display": "0.123%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.28488754987765486,
+          "yoy": 2.900239113019132,
+          "display": "0.285%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": 0.26622445320905186,
+          "yoy": 2.8144675766349714,
+          "display": "0.266%",
+          "tone": "negative"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SAF11",
+      "label": "Food at home CPI",
+      "group": "Food",
+      "weight": 8.56,
+      "weight_display": "8.56",
+      "is_level": false,
+      "is_key": false,
+      "latest_value": 0.06331226043483351,
+      "latest_display": "0.0633%",
+      "previous_display": "0.682%",
+      "avg_3m_value": 0.19368956514198934,
+      "avg_3m_display": "0.194%",
+      "yoy_value": 2.7345851371775476,
+      "yoy_display": "2.73%",
+      "latest_tone": "positive",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 0.5419529493221749,
+      "contribution_bps": "0.5 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.06331226043483351,
+          "yoy": 2.7345851371775476,
+          "display": "0.0633%",
+          "tone": "positive"
+        },
+        {
+          "label": "Apr-26",
+          "value": 0.6817139878541267,
+          "yoy": 2.9517724120215805,
+          "display": "0.682%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": -0.16395755286299218,
+          "yoy": 2.0207974269110807,
+          "display": "-0.164%",
+          "tone": "positive"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.439561823614798,
+          "yoy": 2.58236722355325,
+          "display": "0.440%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.19149352329153047,
+          "yoy": 2.1787740052828575,
+          "display": "0.191%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.6292063492063571,
+          "yoy": 2.329169989056301,
+          "display": "0.629%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 1.911075307431731,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.2838101110133051,
+          "yoy": 2.69545463421621,
+          "display": "0.284%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.5149583912341882,
+          "yoy": 2.6919147908446073,
+          "display": "0.515%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.01693388118166883,
+          "yoy": 2.2038297663940387,
+          "display": "0.0169%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.21966339626509068,
+          "yoy": 2.4216086026009442,
+          "display": "0.220%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": 0.2748522989981961,
+          "yoy": 2.2533348176573487,
+          "display": "0.275%",
+          "tone": "negative"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SEFV",
+      "label": "Food away from home CPI",
+      "group": "Food",
+      "weight": 4.83,
+      "weight_display": "4.83",
+      "is_level": false,
+      "is_key": false,
+      "latest_value": 0.3003460840664163,
+      "latest_display": "0.300%",
+      "previous_display": "0.228%",
+      "avg_3m_value": 0.2565120911549294,
+      "avg_3m_display": "0.257%",
+      "yoy_value": 3.54118795051781,
+      "yoy_display": "3.54%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 1.4506715860407906,
+      "contribution_bps": "1.5 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.3003460840664163,
+          "yoy": 3.54118795051781,
+          "display": "0.300%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 0.22768252804010736,
+          "yoy": 3.5541089204002674,
+          "display": "0.228%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 0.2415076613582645,
+          "yoy": 3.7765320604816077,
+          "display": "0.242%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.3162846920770068,
+          "yoy": 3.9032762055327686,
+          "display": "0.316%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.14927325469555885,
+          "yoy": 3.978089750007996,
+          "display": "0.149%",
+          "tone": "positive"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.6939530271021344,
+          "yoy": 4.069196357074989,
+          "display": "0.694%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 3.660214708323295,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.14081250373465526,
+          "yoy": 3.726278511533798,
+          "display": "0.141%",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.2868621810905525,
+          "yoy": 3.931707475131496,
+          "display": "0.287%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.2764206401045133,
+          "yoy": 3.9051607680916645,
+          "display": "0.276%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.39923615264356727,
+          "yoy": 3.834342513618516,
+          "display": "0.399%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": 0.31286262725667147,
+          "yoy": 3.848825521180932,
+          "display": "0.313%",
+          "tone": "negative"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SA0E",
+      "label": "Energy CPI",
+      "group": "Energy",
+      "weight": 7.36,
+      "weight_display": "7.36",
+      "is_level": false,
+      "is_key": true,
+      "latest_value": 3.8840044420175523,
+      "latest_display": "3.88%",
+      "previous_display": "3.81%",
+      "avg_3m_value": 6.188594476701489,
+      "avg_3m_display": "6.19%",
+      "yoy_value": 22.972869920145843,
+      "yoy_display": "23.0%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 28.586272693249185,
+      "contribution_bps": "28.6 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 3.8840044420175523,
+          "yoy": 22.972869920145843,
+          "display": "3.88%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 3.808368283447816,
+          "yoy": 17.536047421424005,
+          "display": "3.81%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 10.873410704639097,
+          "yoy": 12.589546298752975,
+          "display": "10.9%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.6349578589803784,
+          "yoy": 0.3995093868753852,
+          "display": "0.635%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": -1.4662633392152125,
+          "yoy": -0.296168234894012,
+          "display": "-1.47%",
+          "tone": "positive"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.3428796267670897,
+          "yoy": 2.0709075899924656,
+          "display": "0.343%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 4.159454920027383,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 1.433145186352247,
+          "yoy": 2.940798955556123,
+          "display": "1.43%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.685464798981239,
+          "yoy": 0.37286094608022236,
+          "display": "0.685%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": -0.6175919698580334,
+          "yoy": -1.2350558955322888,
+          "display": "-0.618%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.428866608322398,
+          "yoy": -0.6202296934067375,
+          "display": "0.429%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": -0.7088695225767383,
+          "yoy": -3.0925694578853857,
+          "display": "-0.709%",
+          "tone": "positive"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SACE",
+      "label": "Energy commodities CPI",
+      "group": "Energy",
+      "weight": 3.79,
+      "weight_display": "3.79",
+      "is_level": false,
+      "is_key": false,
+      "latest_value": 6.695244599127292,
+      "latest_display": "6.70%",
+      "previous_display": "5.62%",
+      "avg_3m_value": 11.220891658586263,
+      "avg_3m_display": "11.2%",
+      "yoy_value": 40.571566912859346,
+      "yoy_display": "40.6%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 25.37497703069244,
+      "contribution_bps": "25.4 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 6.695244599127292,
+          "yoy": 40.571566912859346,
+          "display": "6.70%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 5.621489465862917,
+          "yoy": 29.227612165117268,
+          "display": "5.62%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 21.34594091076858,
+          "yoy": 19.415464017379037,
+          "display": "21.3%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 1.104567892898145,
+          "yoy": -5.213688598054855,
+          "display": "1.10%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": -3.2563400814170973,
+          "yoy": -7.276154446923277,
+          "display": "-3.26%",
+          "tone": "positive"
+        },
+        {
+          "label": "Dec-25",
+          "value": -0.31292736177899183,
+          "yoy": -2.878113448226338,
+          "display": "-0.313%",
+          "tone": "positive"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 1.1867974849049334,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 3.4086787913607086,
+          "yoy": -0.33396434714295653,
+          "display": "3.41%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 1.5848987780412216,
+          "yoy": -6.244845057146231,
+          "display": "1.58%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": -1.102429240348346,
+          "yoy": -8.83818986529401,
+          "display": "-1.10%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.16549351756833808,
+          "yoy": -7.9022296347731285,
+          "display": "0.165%",
+          "tone": "positive"
+        },
+        {
+          "label": "May-25",
+          "value": -1.914932075378084,
+          "yoy": -11.486525385240288,
+          "display": "-1.91%",
+          "tone": "positive"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SASLE",
+      "label": "Energy services CPI",
+      "group": "Energy",
+      "weight": 3.57,
+      "weight_display": "3.57",
+      "is_level": false,
+      "is_key": false,
+      "latest_value": 0.2947056779358803,
+      "latest_display": "0.295%",
+      "previous_display": "0.500%",
+      "avg_3m_value": 0.33992774340212417,
+      "avg_3m_display": "0.340%",
+      "yoy_value": 3.3834673911526503,
+      "yoy_display": "3.38%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 1.0520992702310927,
+      "contribution_bps": "1.1 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.2947056779358803,
+          "yoy": 3.3834673911526503,
+          "display": "0.295%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 0.4996019965937126,
+          "yoy": 3.2530895263658266,
+          "display": "0.500%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 0.22547555567677957,
+          "yoy": 3.047362652514196,
+          "display": "0.225%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.26778551633606096,
+          "yoy": 2.9331667532321637,
+          "display": "0.268%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.38756320208652717,
+          "yoy": 2.9516381826543148,
+          "display": "0.388%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.2723082887706507,
+          "yoy": 3.032103095748262,
+          "display": "0.272%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 2.9829166243382055,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.23318832030674308,
+          "yoy": 3.477592732237955,
+          "display": "0.233%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.3159838841284568,
+          "yoy": 3.6127319435027117,
+          "display": "0.316%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.35072662112478614,
+          "yoy": 3.6553487268815354,
+          "display": "0.351%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.27703215061618547,
+          "yoy": 3.6110844068448555,
+          "display": "0.277%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": 0.16822307964732275,
+          "yoy": 3.532613276499408,
+          "display": "0.168%",
+          "tone": "negative"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SA0L1E",
+      "label": "Core CPI SA",
+      "group": "Core",
+      "weight": 79.25,
+      "weight_display": "79.2",
+      "is_level": false,
+      "is_key": true,
+      "latest_value": 0.20809544962627768,
+      "latest_display": "0.208%",
+      "previous_display": "0.376%",
+      "avg_3m_value": 0.2601170779849597,
+      "avg_3m_display": "0.260%",
+      "yoy_value": 2.8229420636110225,
+      "yoy_display": "2.82%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 16.49156438288251,
+      "contribution_bps": "16.5 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.20809544962627768,
+          "yoy": 2.8229420636110225,
+          "display": "0.208%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 0.376460730477457,
+          "yoy": 2.7433094309685213,
+          "display": "0.376%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 0.19579505385114437,
+          "yoy": 2.602167705486824,
+          "display": "0.196%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.21605021740240815,
+          "yoy": 2.4724624767640258,
+          "display": "0.216%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.2950448142634121,
+          "yoy": 2.512028782828879,
+          "display": "0.295%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.2329002576704653,
+          "yoy": 2.6464847073089937,
+          "display": "0.233%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 2.5990448060944082,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.2177737336973129,
+          "yoy": 3.0199668258857892,
+          "display": "0.218%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.3097218588179462,
+          "yoy": 3.111806098514469,
+          "display": "0.310%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.3125209822436803,
+          "yoy": 3.0544930080893096,
+          "display": "0.313%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.23402152998077685,
+          "yoy": 2.910895442696071,
+          "display": "0.234%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": 0.13048792067804627,
+          "yoy": 2.7658403935930886,
+          "display": "0.130%",
+          "tone": "positive"
+        }
+      ]
+    },
+    {
+      "series_id": "CUUR0000SA0L1E",
+      "label": "Core CPI NSA",
+      "group": "Core",
+      "weight": 79.25,
+      "weight_display": "79.2",
+      "is_level": false,
+      "is_key": true,
+      "latest_value": 0.31059877368575517,
+      "latest_display": "0.311%",
+      "previous_display": "0.422%",
+      "avg_3m_value": 0.35921780528564246,
+      "avg_3m_display": "0.359%",
+      "yoy_value": 2.850914020683404,
+      "yoy_display": "2.85%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 24.614952814596098,
+      "contribution_bps": "24.6 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.31059877368575517,
+          "yoy": 2.850914020683404,
+          "display": "0.311%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 0.42226016848538883,
+          "yoy": 2.7501797653106452,
+          "display": "0.422%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 0.3447944736857833,
+          "yoy": 2.5950118582653614,
+          "display": "0.345%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.38921524325954415,
+          "yoy": 2.4565567621413598,
+          "display": "0.389%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.4369058352949873,
+          "yoy": 2.5036900710840415,
+          "display": "0.437%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.024513883634691425,
+          "yoy": 2.6393836158841166,
+          "display": "0.0245%",
+          "tone": "positive"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 2.633352694698199,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.25275025002271523,
+          "yoy": 3.0192240018186878,
+          "display": "0.253%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.3009301477293391,
+          "yoy": 3.1101472734261115,
+          "display": "0.301%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.18759669147654368,
+          "yoy": 3.059389625768305,
+          "display": "0.188%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.26106152808014205,
+          "yoy": 2.9344551618636805,
+          "display": "0.261%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": 0.212352554197337,
+          "yoy": 2.7869402973363933,
+          "display": "0.212%",
+          "tone": "negative"
+        }
+      ]
+    },
+    {
+      "series_id": "CUUR0000SA0L1E",
+      "label": "Core CPI NSA Level",
+      "group": "Core level",
+      "weight": null,
+      "weight_display": "-",
+      "is_level": true,
+      "is_key": true,
+      "latest_value": 336.846,
+      "latest_display": "336.846",
+      "previous_display": "335.803",
+      "avg_3m_value": 335.68,
+      "avg_3m_display": "335.680",
+      "yoy_value": 2.850914020683404,
+      "yoy_display": "2.85%",
+      "latest_tone": "flat",
+      "yoy_tone": "negative",
+      "contribution_bps_value": null,
+      "contribution_bps": null,
+      "history": [
+        {
+          "label": "May-26",
+          "value": 336.846,
+          "yoy": 2.850914020683404,
+          "display": "336.846",
+          "tone": "flat"
+        },
+        {
+          "label": "Apr-26",
+          "value": 335.803,
+          "yoy": 2.7501797653106452,
+          "display": "335.803",
+          "tone": "flat"
+        },
+        {
+          "label": "Mar-26",
+          "value": 334.391,
+          "yoy": 2.5950118582653614,
+          "display": "334.391",
+          "tone": "flat"
+        },
+        {
+          "label": "Feb-26",
+          "value": 333.242,
+          "yoy": 2.4565567621413598,
+          "display": "333.242",
+          "tone": "flat"
+        },
+        {
+          "label": "Jan-26",
+          "value": 331.95,
+          "yoy": 2.5036900710840415,
+          "display": "331.950",
+          "tone": "flat"
+        },
+        {
+          "label": "Dec-25",
+          "value": 330.506,
+          "yoy": 2.6393836158841166,
+          "display": "330.506",
+          "tone": "flat"
+        },
+        {
+          "label": "Nov-25",
+          "value": 330.425,
+          "yoy": 2.633352694698199,
+          "display": "330.425",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 330.804,
+          "yoy": 3.0192240018186878,
+          "display": "330.804",
+          "tone": "flat"
+        },
+        {
+          "label": "Aug-25",
+          "value": 329.97,
+          "yoy": 3.1101472734261115,
+          "display": "329.970",
+          "tone": "flat"
+        },
+        {
+          "label": "Jul-25",
+          "value": 328.98,
+          "yoy": 3.059389625768305,
+          "display": "328.980",
+          "tone": "flat"
+        },
+        {
+          "label": "Jun-25",
+          "value": 328.364,
+          "yoy": 2.9344551618636805,
+          "display": "328.364",
+          "tone": "flat"
+        },
+        {
+          "label": "May-25",
+          "value": 327.509,
+          "yoy": 2.7869402973363933,
+          "display": "327.509",
+          "tone": "flat"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SEHA",
+      "label": "Rent SA",
+      "group": "Shelter",
+      "weight": 7.66,
+      "weight_display": "7.66",
+      "is_level": false,
+      "is_key": false,
+      "latest_value": 0.36192650038866514,
+      "latest_display": "0.362%",
+      "previous_display": "0.545%",
+      "avg_3m_value": 0.3656960113670375,
+      "avg_3m_display": "0.366%",
+      "yoy_value": 2.923937535423149,
+      "yoy_display": "2.92%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 2.772356992977175,
+      "contribution_bps": "2.8 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.36192650038866514,
+          "yoy": 2.923937535423149,
+          "display": "0.362%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 0.5450582216148581,
+          "yoy": 2.7884066940234487,
+          "display": "0.545%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 0.19010331209758924,
+          "yoy": 2.562290771351461,
+          "display": "0.190%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.13143433382054592,
+          "yoy": 2.6833643956329922,
+          "display": "0.131%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.2489839591629961,
+          "yoy": 2.842780135497014,
+          "display": "0.249%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.2703860119088297,
+          "yoy": 2.9248503554059058,
+          "display": "0.270%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 2.969447063624986,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.21564439484649256,
+          "yoy": 3.3924097221239125,
+          "display": "0.216%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.28528838435959436,
+          "yoy": 3.487821732504104,
+          "display": "0.285%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.23377536876512117,
+          "yoy": 3.540882086157038,
+          "display": "0.234%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.22924260087826553,
+          "yoy": 3.771262550003218,
+          "display": "0.229%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": 0.22976933006653155,
+          "yoy": 3.8120066969624444,
+          "display": "0.230%",
+          "tone": "negative"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SEHC",
+      "label": "OER SA",
+      "group": "Shelter",
+      "weight": 26.14,
+      "weight_display": "26.1",
+      "is_level": false,
+      "is_key": false,
+      "latest_value": 0.29678250439824083,
+      "latest_display": "0.297%",
+      "previous_display": "0.533%",
+      "avg_3m_value": 0.3711700808493849,
+      "avg_3m_display": "0.371%",
+      "yoy_value": 3.3181722270414715,
+      "yoy_display": "3.32%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 7.757894664970015,
+      "contribution_bps": "7.8 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.29678250439824083,
+          "yoy": 3.3181722270414715,
+          "display": "0.297%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 0.5326609480358124,
+          "yoy": 3.300410729273695,
+          "display": "0.533%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 0.2840667901141014,
+          "yoy": 3.097275199860361,
+          "display": "0.284%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.22445192106468337,
+          "yoy": 3.185197461880862,
+          "display": "0.224%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.2196439601368061,
+          "yoy": 3.263641847188503,
+          "display": "0.220%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.314433418723592,
+          "yoy": 3.3566543510730407,
+          "display": "0.314%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 3.3641058485303965,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.15704276395265282,
+          "yoy": 3.7604661293311636,
+          "display": "0.157%",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.33588569164249016,
+          "yoy": 3.9716144179047674,
+          "display": "0.336%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.2762760235886397,
+          "yoy": 4.069231515621952,
+          "display": "0.276%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.3054884767777377,
+          "yoy": 4.155173882877072,
+          "display": "0.305%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": 0.2795404158075332,
+          "yoy": 4.151100041511002,
+          "display": "0.280%",
+          "tone": "negative"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SEHB",
+      "label": "Out of town lodging SA",
+      "group": "Shelter",
+      "weight": 0.916,
+      "weight_display": "0.916",
+      "is_level": false,
+      "is_key": false,
+      "latest_value": 0.4180902254096175,
+      "latest_display": "0.418%",
+      "previous_display": "2.44%",
+      "avg_3m_value": 1.0343482746382342,
+      "avg_3m_display": "1.03%",
+      "yoy_value": 5.026826912758886,
+      "yoy_display": "5.03%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 0.3829706464752096,
+      "contribution_bps": "0.4 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.4180902254096175,
+          "yoy": 5.026826912758886,
+          "display": "0.418%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 2.4421006164372816,
+          "yoy": 4.434336778154568,
+          "display": "2.44%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 0.2428539820678033,
+          "yoy": 2.509858426530487,
+          "display": "0.243%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.9616100586113951,
+          "yoy": -1.0642733545979555,
+          "display": "0.962%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": -0.09829811427023438,
+          "yoy": -1.889490135097771,
+          "display": "-0.0983%",
+          "tone": "positive"
+        },
+        {
+          "label": "Dec-25",
+          "value": 2.1842762514931113,
+          "yoy": -0.9202373243625939,
+          "display": "2.18%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": -4.152789342214813,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.8576524610071745,
+          "yoy": 0.0010750549621851846,
+          "display": "0.858%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 2.009135955404129,
+          "yoy": -2.416095310648392,
+          "display": "2.01%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": -0.9764138286045942,
+          "yoy": -3.350740006307007,
+          "display": "-0.976%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jun-25",
+          "value": -2.0243588367850562,
+          "yoy": -2.4363269166038926,
+          "display": "-2.02%",
+          "tone": "positive"
+        },
+        {
+          "label": "May-25",
+          "value": -0.14840054217094556,
+          "yoy": -0.8748836590878883,
+          "display": "-0.148%",
+          "tone": "positive"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SETG01",
+      "label": "Airfares SA",
+      "group": "Transportation",
+      "weight": 0.659,
+      "weight_display": "0.659",
+      "is_level": false,
+      "is_key": false,
+      "latest_value": 2.6858958722478565,
+      "latest_display": "2.69%",
+      "previous_display": "2.82%",
+      "avg_3m_value": 2.7246867518520674,
+      "avg_3m_display": "2.72%",
+      "yoy_value": 26.69967758693197,
+      "yoy_display": "26.7%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 1.7700053798113375,
+      "contribution_bps": "1.8 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 2.6858958722478565,
+          "yoy": 26.69967758693197,
+          "display": "2.69%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 2.8151013663239244,
+          "yoy": 20.710142706173706,
+          "display": "2.82%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 2.6730630169844227,
+          "yoy": 14.886504023966186,
+          "display": "2.67%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 1.359347570371816,
+          "yoy": 7.051555579051505,
+          "display": "1.36%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 6.5200915554912475,
+          "yoy": 2.2303365242277717,
+          "display": "6.52%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 3.757957504652998,
+          "yoy": -3.374156368908754,
+          "display": "3.76%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": -5.12141810042629,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 1.9539720839314656,
+          "yoy": 2.9848904383238395,
+          "display": "1.95%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 4.458659690206912,
+          "yoy": 3.3829734327450955,
+          "display": "4.46%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 3.031597978386813,
+          "yoy": 1.0050231014328226,
+          "display": "3.03%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.33972937092345834,
+          "yoy": -3.1652243111508938,
+          "display": "0.340%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": -2.1684239397875116,
+          "yoy": -7.382063403569594,
+          "display": "-2.17%",
+          "tone": "positive"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SAM",
+      "label": "Medical care SA",
+      "group": "Medical",
+      "weight": 8.71,
+      "weight_display": "8.71",
+      "is_level": false,
+      "is_key": false,
+      "latest_value": 0.31376754476473145,
+      "latest_display": "0.314%",
+      "previous_display": "-0.0651%",
+      "avg_3m_value": 0.02849882719455632,
+      "avg_3m_display": "0.0285%",
+      "yoy_value": 2.5920601723311787,
+      "yoy_display": "2.59%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 2.7329153149008114,
+      "contribution_bps": "2.7 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.31376754476473145,
+          "yoy": 2.5920601723311787,
+          "display": "0.314%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": -0.0650791853100241,
+          "yoy": 2.5416790969702507,
+          "display": "-0.0651%",
+          "tone": "positive"
+        },
+        {
+          "label": "Mar-26",
+          "value": -0.1631918778710384,
+          "yoy": 3.051549552405719,
+          "display": "-0.163%",
+          "tone": "positive"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.49931310527298045,
+          "yoy": 3.3613357428429858,
+          "display": "0.499%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.2581228787332579,
+          "yoy": 3.1930496389354746,
+          "display": "0.258%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.3592229861754559,
+          "yoy": 3.1541281507077468,
+          "display": "0.359%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 2.8993320175038084,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.18208009811426784,
+          "yoy": 3.287558983922456,
+          "display": "0.182%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": -0.10967576353838604,
+          "yoy": 3.478658520373701,
+          "display": "-0.110%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.675765296015518,
+          "yoy": 3.5170467929995786,
+          "display": "0.676%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.42451385897630534,
+          "yoy": 2.748687161170782,
+          "display": "0.425%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": 0.26450529704378223,
+          "yoy": 2.460514258469204,
+          "display": "0.265%",
+          "tone": "negative"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SETA02",
+      "label": "Used cars SA",
+      "group": "Transportation",
+      "weight": 2.88,
+      "weight_display": "2.88",
+      "is_level": false,
+      "is_key": false,
+      "latest_value": 0.10176730322206673,
+      "latest_display": "0.102%",
+      "previous_display": "-0.00445%",
+      "avg_3m_value": -0.10765757419832027,
+      "avg_3m_display": "-0.108%",
+      "yoy_value": -1.992224932485409,
+      "yoy_display": "-1.99%",
+      "latest_tone": "positive",
+      "yoy_tone": "positive",
+      "contribution_bps_value": 0.2930898332795522,
+      "contribution_bps": "0.3 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.10176730322206673,
+          "yoy": -1.992224932485409,
+          "display": "0.102%",
+          "tone": "positive"
+        },
+        {
+          "label": "Apr-26",
+          "value": -0.004448645943400109,
+          "yoy": -2.6937229437229537,
+          "display": "-0.00445%",
+          "tone": "positive"
+        },
+        {
+          "label": "Mar-26",
+          "value": -0.4202913798736274,
+          "yoy": -3.1756116471398976,
+          "display": "-0.420%",
+          "tone": "positive"
+        },
+        {
+          "label": "Feb-26",
+          "value": -0.37513308949682633,
+          "yoy": -3.1990222827339543,
+          "display": "-0.375%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jan-26",
+          "value": -1.84060042887777,
+          "yoy": -1.958992054778208,
+          "display": "-1.84%",
+          "tone": "positive"
+        },
+        {
+          "label": "Dec-25",
+          "value": -0.8749422967503695,
+          "yoy": 1.630665089017902,
+          "display": "-0.875%",
+          "tone": "positive"
+        },
+        {
+          "label": "Nov-25",
+          "value": 0.10047767192697954,
+          "yoy": 3.5541177516897893,
+          "display": "0.100%",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-25",
+          "value": -0.2105160882872048,
+          "yoy": 5.138369143624089,
+          "display": "-0.211%",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.8234192853177724,
+          "yoy": 6.042254569183125,
+          "display": "0.823%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.4993628064955402,
+          "yoy": 4.813242978072885,
+          "display": "0.499%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": -0.4524566599877988,
+          "yoy": 2.735369314190983,
+          "display": "-0.452%",
+          "tone": "positive"
+        },
+        {
+          "label": "May-25",
+          "value": -0.6147186147186234,
+          "yoy": 1.7095200385430998,
+          "display": "-0.615%",
+          "tone": "positive"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SAA",
+      "label": "Apparel CPI",
+      "group": "Goods",
+      "weight": 3.1,
+      "weight_display": "3.10",
+      "is_level": false,
+      "is_key": false,
+      "latest_value": 0.29194409892441264,
+      "latest_display": "0.292%",
+      "previous_display": "0.638%",
+      "avg_3m_value": 0.6533293703028317,
+      "avg_3m_display": "0.653%",
+      "yoy_value": 4.807236469850573,
+      "yoy_display": "4.81%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 0.9050267066656792,
+      "contribution_bps": "0.9 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.29194409892441264,
+          "yoy": 4.807236469850573,
+          "display": "0.292%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 0.6376837206562236,
+          "yoy": 4.168413350507993,
+          "display": "0.638%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 1.0303602913278587,
+          "yoy": 3.3610375376746715,
+          "display": "1.03%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 1.277849355424454,
+          "yoy": 2.5355658110530532,
+          "display": "1.28%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.306838879357918,
+          "yoy": 1.7533503020638497,
+          "display": "0.307%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.3290795629459442,
+          "yoy": 0.5692873647087371,
+          "display": "0.329%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 0.14503538559669238,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.5444439382204402,
+          "yoy": -0.09657534763352071,
+          "display": "0.544%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.25884251716732365,
+          "yoy": 0.21230453144618355,
+          "display": "0.259%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.10669593183654236,
+          "yoy": -0.16341235397394627,
+          "display": "0.107%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.3303206863329633,
+          "yoy": -0.5623086483373174,
+          "display": "0.330%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": -0.31935732197161393,
+          "yoy": -0.9429889340816455,
+          "display": "-0.319%",
+          "tone": "positive"
+        }
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "series_id": "CUSR0000SA0",
+      "label": "CPI SA",
+      "group": "Headline",
+      "weight": 100.0,
+      "weight_display": "100",
+      "is_level": false,
+      "is_key": true,
+      "latest_value": 0.47291422864139676,
+      "latest_display": "0.473%",
+      "previous_display": "0.640%",
+      "avg_3m_value": 0.6593652825454951,
+      "avg_3m_display": "0.659%",
+      "yoy_value": 4.166614684049641,
+      "yoy_display": "4.17%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 47.291422864139676,
+      "contribution_bps": "47.3 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.47291422864139676,
+          "yoy": 4.166614684049641,
+          "display": "0.473%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 0.6400377846336402,
+          "yoy": 3.7792458367415627,
+          "display": "0.640%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 0.8651438343614481,
+          "yoy": 3.2859577528651984,
+          "display": "0.865%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.26700307420970404,
+          "yoy": 2.4340041103732224,
+          "display": "0.267%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.170842649932057,
+          "yoy": 2.391201432150014,
+          "display": "0.171%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.297788428704604,
+          "yoy": 2.653304114557753,
+          "display": "0.298%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 2.6964439164939513,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.2950901819104068,
+          "yoy": 3.0225715847133294,
+          "display": "0.295%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.3482644202266627,
+          "yoy": 2.9385917430316155,
+          "display": "0.348%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.22835098853577485,
+          "yoy": 2.742618052167134,
+          "display": "0.228%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.2541949971929469,
+          "yoy": 2.680453865910226,
+          "display": "0.254%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": 0.09928130327003792,
+          "yoy": 2.3772651073680873,
+          "display": "0.0993%",
+          "tone": "positive"
+        }
+      ]
+    },
+    {
+      "series_id": "CUUR0000SA0",
+      "label": "CPI NSA",
+      "group": "Headline",
+      "weight": 100.0,
+      "weight_display": "100",
+      "is_level": false,
+      "is_key": true,
+      "latest_value": 0.6314936039877539,
+      "latest_display": "0.631%",
+      "previous_display": "0.850%",
+      "avg_3m_value": 0.843519582861115,
+      "avg_3m_display": "0.844%",
+      "yoy_value": 4.248674039164446,
+      "yoy_display": "4.25%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 63.149360398775386,
+      "contribution_bps": "63.1 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.6314936039877539,
+          "yoy": 4.248674039164446,
+          "display": "0.631%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 0.850057387201586,
+          "yoy": 3.8108449321217597,
+          "display": "0.850%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 1.0490077573940049,
+          "yoy": 3.2564204390883145,
+          "display": "1.05%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.4713268481054689,
+          "yoy": 2.4141129866304123,
+          "display": "0.471%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.36969147117456025,
+          "yoy": 2.386431244904319,
+          "display": "0.370%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": -0.020979754536887274,
+          "yoy": 2.6770805278750087,
+          "display": "-0.0210%",
+          "tone": "positive"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 2.735084455122627,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.2543398276415587,
+          "yoy": 3.0126767755256134,
+          "display": "0.254%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.2872638121889093,
+          "yoy": 2.9161742842984006,
+          "display": "0.287%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.15097919463296083,
+          "yoy": 2.7049023971513986,
+          "display": "0.151%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.34093913800881115,
+          "yoy": 2.669213018222316,
+          "display": "0.341%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": 0.2088561230692454,
+          "yoy": 2.354896535474671,
+          "display": "0.209%",
+          "tone": "negative"
+        }
+      ]
+    },
+    {
+      "series_id": "CUUR0000SA0",
+      "label": "CPI NSA Level",
+      "group": "Headline level",
+      "weight": null,
+      "weight_display": "-",
+      "is_level": true,
+      "is_key": true,
+      "latest_value": 335.123,
+      "latest_display": "335.123",
+      "previous_display": "333.020",
+      "avg_3m_value": 332.7853333333333,
+      "avg_3m_display": "332.785",
+      "yoy_value": 4.248674039164446,
+      "yoy_display": "4.25%",
+      "latest_tone": "flat",
+      "yoy_tone": "negative",
+      "contribution_bps_value": null,
+      "contribution_bps": null,
+      "history": [
+        {
+          "label": "May-26",
+          "value": 335.123,
+          "yoy": 4.248674039164446,
+          "display": "335.123",
+          "tone": "flat"
+        },
+        {
+          "label": "Apr-26",
+          "value": 333.02,
+          "yoy": 3.8108449321217597,
+          "display": "333.020",
+          "tone": "flat"
+        },
+        {
+          "label": "Mar-26",
+          "value": 330.213,
+          "yoy": 3.2564204390883145,
+          "display": "330.213",
+          "tone": "flat"
+        },
+        {
+          "label": "Feb-26",
+          "value": 326.785,
+          "yoy": 2.4141129866304123,
+          "display": "326.785",
+          "tone": "flat"
+        },
+        {
+          "label": "Jan-26",
+          "value": 325.252,
+          "yoy": 2.386431244904319,
+          "display": "325.252",
+          "tone": "flat"
+        },
+        {
+          "label": "Dec-25",
+          "value": 324.054,
+          "yoy": 2.6770805278750087,
+          "display": "324.054",
+          "tone": "flat"
+        },
+        {
+          "label": "Nov-25",
+          "value": 324.122,
+          "yoy": 2.735084455122627,
+          "display": "324.122",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 324.8,
+          "yoy": 3.0126767755256134,
+          "display": "324.800",
+          "tone": "flat"
+        },
+        {
+          "label": "Aug-25",
+          "value": 323.976,
+          "yoy": 2.9161742842984006,
+          "display": "323.976",
+          "tone": "flat"
+        },
+        {
+          "label": "Jul-25",
+          "value": 323.048,
+          "yoy": 2.7049023971513986,
+          "display": "323.048",
+          "tone": "flat"
+        },
+        {
+          "label": "Jun-25",
+          "value": 322.561,
+          "yoy": 2.669213018222316,
+          "display": "322.561",
+          "tone": "flat"
+        },
+        {
+          "label": "May-25",
+          "value": 321.465,
+          "yoy": 2.354896535474671,
+          "display": "321.465",
+          "tone": "flat"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SAF",
+      "label": "Food CPI",
+      "group": "Food",
+      "weight": 13.39,
+      "weight_display": "13.4",
+      "is_level": false,
+      "is_key": true,
+      "latest_value": 0.1500592415345281,
+      "latest_display": "0.150%",
+      "previous_display": "0.491%",
+      "avg_3m_value": 0.21692446324835432,
+      "avg_3m_display": "0.217%",
+      "yoy_value": 3.0229072238065813,
+      "yoy_display": "3.02%",
+      "latest_tone": "positive",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 2.0092932441473312,
+      "contribution_bps": "2.0 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.1500592415345281,
+          "yoy": 3.0229072238065813,
+          "display": "0.150%",
+          "tone": "positive"
+        },
+        {
+          "label": "Apr-26",
+          "value": 0.49110651800530203,
+          "yoy": 3.1424046850722975,
+          "display": "0.491%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 0.009607630205232809,
+          "yoy": 2.685283998003163,
+          "display": "0.00961%",
+          "tone": "positive"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.3749335172446022,
+          "yoy": 3.0527869619744186,
+          "display": "0.375%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.1847389793391052,
+          "yoy": 2.876503941363584,
+          "display": "0.185%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.6141782383541683,
+          "yoy": 2.988994421830249,
+          "display": "0.614%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 2.580853757663837,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.2231153402878272,
+          "yoy": 3.049445624397995,
+          "display": "0.223%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.4300456162948496,
+          "yoy": 3.119267173339346,
+          "display": "0.430%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.12302133261223869,
+          "yoy": 2.8074083114663972,
+          "display": "0.123%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.28488754987765486,
+          "yoy": 2.900239113019132,
+          "display": "0.285%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": 0.26622445320905186,
+          "yoy": 2.8144675766349714,
+          "display": "0.266%",
+          "tone": "negative"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SAF11",
+      "label": "Food at home CPI",
+      "group": "Food",
+      "weight": 8.56,
+      "weight_display": "8.56",
+      "is_level": false,
+      "is_key": false,
+      "latest_value": 0.06331226043483351,
+      "latest_display": "0.0633%",
+      "previous_display": "0.682%",
+      "avg_3m_value": 0.19368956514198934,
+      "avg_3m_display": "0.194%",
+      "yoy_value": 2.7345851371775476,
+      "yoy_display": "2.73%",
+      "latest_tone": "positive",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 0.5419529493221749,
+      "contribution_bps": "0.5 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.06331226043483351,
+          "yoy": 2.7345851371775476,
+          "display": "0.0633%",
+          "tone": "positive"
+        },
+        {
+          "label": "Apr-26",
+          "value": 0.6817139878541267,
+          "yoy": 2.9517724120215805,
+          "display": "0.682%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": -0.16395755286299218,
+          "yoy": 2.0207974269110807,
+          "display": "-0.164%",
+          "tone": "positive"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.439561823614798,
+          "yoy": 2.58236722355325,
+          "display": "0.440%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.19149352329153047,
+          "yoy": 2.1787740052828575,
+          "display": "0.191%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.6292063492063571,
+          "yoy": 2.329169989056301,
+          "display": "0.629%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 1.911075307431731,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.2838101110133051,
+          "yoy": 2.69545463421621,
+          "display": "0.284%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.5149583912341882,
+          "yoy": 2.6919147908446073,
+          "display": "0.515%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.01693388118166883,
+          "yoy": 2.2038297663940387,
+          "display": "0.0169%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.21966339626509068,
+          "yoy": 2.4216086026009442,
+          "display": "0.220%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": 0.2748522989981961,
+          "yoy": 2.2533348176573487,
+          "display": "0.275%",
+          "tone": "negative"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SEFV",
+      "label": "Food away from home CPI",
+      "group": "Food",
+      "weight": 4.83,
+      "weight_display": "4.83",
+      "is_level": false,
+      "is_key": false,
+      "latest_value": 0.3003460840664163,
+      "latest_display": "0.300%",
+      "previous_display": "0.228%",
+      "avg_3m_value": 0.2565120911549294,
+      "avg_3m_display": "0.257%",
+      "yoy_value": 3.54118795051781,
+      "yoy_display": "3.54%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 1.4506715860407906,
+      "contribution_bps": "1.5 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.3003460840664163,
+          "yoy": 3.54118795051781,
+          "display": "0.300%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 0.22768252804010736,
+          "yoy": 3.5541089204002674,
+          "display": "0.228%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 0.2415076613582645,
+          "yoy": 3.7765320604816077,
+          "display": "0.242%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.3162846920770068,
+          "yoy": 3.9032762055327686,
+          "display": "0.316%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.14927325469555885,
+          "yoy": 3.978089750007996,
+          "display": "0.149%",
+          "tone": "positive"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.6939530271021344,
+          "yoy": 4.069196357074989,
+          "display": "0.694%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 3.660214708323295,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.14081250373465526,
+          "yoy": 3.726278511533798,
+          "display": "0.141%",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.2868621810905525,
+          "yoy": 3.931707475131496,
+          "display": "0.287%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.2764206401045133,
+          "yoy": 3.9051607680916645,
+          "display": "0.276%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.39923615264356727,
+          "yoy": 3.834342513618516,
+          "display": "0.399%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": 0.31286262725667147,
+          "yoy": 3.848825521180932,
+          "display": "0.313%",
+          "tone": "negative"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SA0E",
+      "label": "Energy CPI",
+      "group": "Energy",
+      "weight": 7.36,
+      "weight_display": "7.36",
+      "is_level": false,
+      "is_key": true,
+      "latest_value": 3.8840044420175523,
+      "latest_display": "3.88%",
+      "previous_display": "3.81%",
+      "avg_3m_value": 6.188594476701489,
+      "avg_3m_display": "6.19%",
+      "yoy_value": 22.972869920145843,
+      "yoy_display": "23.0%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 28.586272693249185,
+      "contribution_bps": "28.6 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 3.8840044420175523,
+          "yoy": 22.972869920145843,
+          "display": "3.88%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 3.808368283447816,
+          "yoy": 17.536047421424005,
+          "display": "3.81%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 10.873410704639097,
+          "yoy": 12.589546298752975,
+          "display": "10.9%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.6349578589803784,
+          "yoy": 0.3995093868753852,
+          "display": "0.635%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": -1.4662633392152125,
+          "yoy": -0.296168234894012,
+          "display": "-1.47%",
+          "tone": "positive"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.3428796267670897,
+          "yoy": 2.0709075899924656,
+          "display": "0.343%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 4.159454920027383,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 1.433145186352247,
+          "yoy": 2.940798955556123,
+          "display": "1.43%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.685464798981239,
+          "yoy": 0.37286094608022236,
+          "display": "0.685%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": -0.6175919698580334,
+          "yoy": -1.2350558955322888,
+          "display": "-0.618%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.428866608322398,
+          "yoy": -0.6202296934067375,
+          "display": "0.429%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": -0.7088695225767383,
+          "yoy": -3.0925694578853857,
+          "display": "-0.709%",
+          "tone": "positive"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SACE",
+      "label": "Energy commodities CPI",
+      "group": "Energy",
+      "weight": 3.79,
+      "weight_display": "3.79",
+      "is_level": false,
+      "is_key": false,
+      "latest_value": 6.695244599127292,
+      "latest_display": "6.70%",
+      "previous_display": "5.62%",
+      "avg_3m_value": 11.220891658586263,
+      "avg_3m_display": "11.2%",
+      "yoy_value": 40.571566912859346,
+      "yoy_display": "40.6%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 25.37497703069244,
+      "contribution_bps": "25.4 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 6.695244599127292,
+          "yoy": 40.571566912859346,
+          "display": "6.70%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 5.621489465862917,
+          "yoy": 29.227612165117268,
+          "display": "5.62%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 21.34594091076858,
+          "yoy": 19.415464017379037,
+          "display": "21.3%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 1.104567892898145,
+          "yoy": -5.213688598054855,
+          "display": "1.10%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": -3.2563400814170973,
+          "yoy": -7.276154446923277,
+          "display": "-3.26%",
+          "tone": "positive"
+        },
+        {
+          "label": "Dec-25",
+          "value": -0.31292736177899183,
+          "yoy": -2.878113448226338,
+          "display": "-0.313%",
+          "tone": "positive"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 1.1867974849049334,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 3.4086787913607086,
+          "yoy": -0.33396434714295653,
+          "display": "3.41%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 1.5848987780412216,
+          "yoy": -6.244845057146231,
+          "display": "1.58%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": -1.102429240348346,
+          "yoy": -8.83818986529401,
+          "display": "-1.10%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.16549351756833808,
+          "yoy": -7.9022296347731285,
+          "display": "0.165%",
+          "tone": "positive"
+        },
+        {
+          "label": "May-25",
+          "value": -1.914932075378084,
+          "yoy": -11.486525385240288,
+          "display": "-1.91%",
+          "tone": "positive"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SASLE",
+      "label": "Energy services CPI",
+      "group": "Energy",
+      "weight": 3.57,
+      "weight_display": "3.57",
+      "is_level": false,
+      "is_key": false,
+      "latest_value": 0.2947056779358803,
+      "latest_display": "0.295%",
+      "previous_display": "0.500%",
+      "avg_3m_value": 0.33992774340212417,
+      "avg_3m_display": "0.340%",
+      "yoy_value": 3.3834673911526503,
+      "yoy_display": "3.38%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 1.0520992702310927,
+      "contribution_bps": "1.1 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.2947056779358803,
+          "yoy": 3.3834673911526503,
+          "display": "0.295%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 0.4996019965937126,
+          "yoy": 3.2530895263658266,
+          "display": "0.500%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 0.22547555567677957,
+          "yoy": 3.047362652514196,
+          "display": "0.225%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.26778551633606096,
+          "yoy": 2.9331667532321637,
+          "display": "0.268%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.38756320208652717,
+          "yoy": 2.9516381826543148,
+          "display": "0.388%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.2723082887706507,
+          "yoy": 3.032103095748262,
+          "display": "0.272%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 2.9829166243382055,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.23318832030674308,
+          "yoy": 3.477592732237955,
+          "display": "0.233%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.3159838841284568,
+          "yoy": 3.6127319435027117,
+          "display": "0.316%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.35072662112478614,
+          "yoy": 3.6553487268815354,
+          "display": "0.351%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.27703215061618547,
+          "yoy": 3.6110844068448555,
+          "display": "0.277%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": 0.16822307964732275,
+          "yoy": 3.532613276499408,
+          "display": "0.168%",
+          "tone": "negative"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SA0L1E",
+      "label": "Core CPI SA",
+      "group": "Core",
+      "weight": 79.25,
+      "weight_display": "79.2",
+      "is_level": false,
+      "is_key": true,
+      "latest_value": 0.20809544962627768,
+      "latest_display": "0.208%",
+      "previous_display": "0.376%",
+      "avg_3m_value": 0.2601170779849597,
+      "avg_3m_display": "0.260%",
+      "yoy_value": 2.8229420636110225,
+      "yoy_display": "2.82%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 16.49156438288251,
+      "contribution_bps": "16.5 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.20809544962627768,
+          "yoy": 2.8229420636110225,
+          "display": "0.208%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 0.376460730477457,
+          "yoy": 2.7433094309685213,
+          "display": "0.376%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 0.19579505385114437,
+          "yoy": 2.602167705486824,
+          "display": "0.196%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.21605021740240815,
+          "yoy": 2.4724624767640258,
+          "display": "0.216%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.2950448142634121,
+          "yoy": 2.512028782828879,
+          "display": "0.295%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.2329002576704653,
+          "yoy": 2.6464847073089937,
+          "display": "0.233%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 2.5990448060944082,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.2177737336973129,
+          "yoy": 3.0199668258857892,
+          "display": "0.218%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.3097218588179462,
+          "yoy": 3.111806098514469,
+          "display": "0.310%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.3125209822436803,
+          "yoy": 3.0544930080893096,
+          "display": "0.313%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.23402152998077685,
+          "yoy": 2.910895442696071,
+          "display": "0.234%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": 0.13048792067804627,
+          "yoy": 2.7658403935930886,
+          "display": "0.130%",
+          "tone": "positive"
+        }
+      ]
+    },
+    {
+      "series_id": "CUUR0000SA0L1E",
+      "label": "Core CPI NSA",
+      "group": "Core",
+      "weight": 79.25,
+      "weight_display": "79.2",
+      "is_level": false,
+      "is_key": true,
+      "latest_value": 0.31059877368575517,
+      "latest_display": "0.311%",
+      "previous_display": "0.422%",
+      "avg_3m_value": 0.35921780528564246,
+      "avg_3m_display": "0.359%",
+      "yoy_value": 2.850914020683404,
+      "yoy_display": "2.85%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 24.614952814596098,
+      "contribution_bps": "24.6 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.31059877368575517,
+          "yoy": 2.850914020683404,
+          "display": "0.311%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 0.42226016848538883,
+          "yoy": 2.7501797653106452,
+          "display": "0.422%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 0.3447944736857833,
+          "yoy": 2.5950118582653614,
+          "display": "0.345%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.38921524325954415,
+          "yoy": 2.4565567621413598,
+          "display": "0.389%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.4369058352949873,
+          "yoy": 2.5036900710840415,
+          "display": "0.437%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.024513883634691425,
+          "yoy": 2.6393836158841166,
+          "display": "0.0245%",
+          "tone": "positive"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 2.633352694698199,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.25275025002271523,
+          "yoy": 3.0192240018186878,
+          "display": "0.253%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.3009301477293391,
+          "yoy": 3.1101472734261115,
+          "display": "0.301%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.18759669147654368,
+          "yoy": 3.059389625768305,
+          "display": "0.188%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.26106152808014205,
+          "yoy": 2.9344551618636805,
+          "display": "0.261%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": 0.212352554197337,
+          "yoy": 2.7869402973363933,
+          "display": "0.212%",
+          "tone": "negative"
+        }
+      ]
+    },
+    {
+      "series_id": "CUUR0000SA0L1E",
+      "label": "Core CPI NSA Level",
+      "group": "Core level",
+      "weight": null,
+      "weight_display": "-",
+      "is_level": true,
+      "is_key": true,
+      "latest_value": 336.846,
+      "latest_display": "336.846",
+      "previous_display": "335.803",
+      "avg_3m_value": 335.68,
+      "avg_3m_display": "335.680",
+      "yoy_value": 2.850914020683404,
+      "yoy_display": "2.85%",
+      "latest_tone": "flat",
+      "yoy_tone": "negative",
+      "contribution_bps_value": null,
+      "contribution_bps": null,
+      "history": [
+        {
+          "label": "May-26",
+          "value": 336.846,
+          "yoy": 2.850914020683404,
+          "display": "336.846",
+          "tone": "flat"
+        },
+        {
+          "label": "Apr-26",
+          "value": 335.803,
+          "yoy": 2.7501797653106452,
+          "display": "335.803",
+          "tone": "flat"
+        },
+        {
+          "label": "Mar-26",
+          "value": 334.391,
+          "yoy": 2.5950118582653614,
+          "display": "334.391",
+          "tone": "flat"
+        },
+        {
+          "label": "Feb-26",
+          "value": 333.242,
+          "yoy": 2.4565567621413598,
+          "display": "333.242",
+          "tone": "flat"
+        },
+        {
+          "label": "Jan-26",
+          "value": 331.95,
+          "yoy": 2.5036900710840415,
+          "display": "331.950",
+          "tone": "flat"
+        },
+        {
+          "label": "Dec-25",
+          "value": 330.506,
+          "yoy": 2.6393836158841166,
+          "display": "330.506",
+          "tone": "flat"
+        },
+        {
+          "label": "Nov-25",
+          "value": 330.425,
+          "yoy": 2.633352694698199,
+          "display": "330.425",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 330.804,
+          "yoy": 3.0192240018186878,
+          "display": "330.804",
+          "tone": "flat"
+        },
+        {
+          "label": "Aug-25",
+          "value": 329.97,
+          "yoy": 3.1101472734261115,
+          "display": "329.970",
+          "tone": "flat"
+        },
+        {
+          "label": "Jul-25",
+          "value": 328.98,
+          "yoy": 3.059389625768305,
+          "display": "328.980",
+          "tone": "flat"
+        },
+        {
+          "label": "Jun-25",
+          "value": 328.364,
+          "yoy": 2.9344551618636805,
+          "display": "328.364",
+          "tone": "flat"
+        },
+        {
+          "label": "May-25",
+          "value": 327.509,
+          "yoy": 2.7869402973363933,
+          "display": "327.509",
+          "tone": "flat"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SEHA",
+      "label": "Rent SA",
+      "group": "Shelter",
+      "weight": 7.66,
+      "weight_display": "7.66",
+      "is_level": false,
+      "is_key": false,
+      "latest_value": 0.36192650038866514,
+      "latest_display": "0.362%",
+      "previous_display": "0.545%",
+      "avg_3m_value": 0.3656960113670375,
+      "avg_3m_display": "0.366%",
+      "yoy_value": 2.923937535423149,
+      "yoy_display": "2.92%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 2.772356992977175,
+      "contribution_bps": "2.8 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.36192650038866514,
+          "yoy": 2.923937535423149,
+          "display": "0.362%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 0.5450582216148581,
+          "yoy": 2.7884066940234487,
+          "display": "0.545%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 0.19010331209758924,
+          "yoy": 2.562290771351461,
+          "display": "0.190%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.13143433382054592,
+          "yoy": 2.6833643956329922,
+          "display": "0.131%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.2489839591629961,
+          "yoy": 2.842780135497014,
+          "display": "0.249%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.2703860119088297,
+          "yoy": 2.9248503554059058,
+          "display": "0.270%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 2.969447063624986,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.21564439484649256,
+          "yoy": 3.3924097221239125,
+          "display": "0.216%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.28528838435959436,
+          "yoy": 3.487821732504104,
+          "display": "0.285%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.23377536876512117,
+          "yoy": 3.540882086157038,
+          "display": "0.234%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.22924260087826553,
+          "yoy": 3.771262550003218,
+          "display": "0.229%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": 0.22976933006653155,
+          "yoy": 3.8120066969624444,
+          "display": "0.230%",
+          "tone": "negative"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SEHC",
+      "label": "OER SA",
+      "group": "Shelter",
+      "weight": 26.14,
+      "weight_display": "26.1",
+      "is_level": false,
+      "is_key": false,
+      "latest_value": 0.29678250439824083,
+      "latest_display": "0.297%",
+      "previous_display": "0.533%",
+      "avg_3m_value": 0.3711700808493849,
+      "avg_3m_display": "0.371%",
+      "yoy_value": 3.3181722270414715,
+      "yoy_display": "3.32%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 7.757894664970015,
+      "contribution_bps": "7.8 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.29678250439824083,
+          "yoy": 3.3181722270414715,
+          "display": "0.297%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 0.5326609480358124,
+          "yoy": 3.300410729273695,
+          "display": "0.533%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 0.2840667901141014,
+          "yoy": 3.097275199860361,
+          "display": "0.284%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.22445192106468337,
+          "yoy": 3.185197461880862,
+          "display": "0.224%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.2196439601368061,
+          "yoy": 3.263641847188503,
+          "display": "0.220%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.314433418723592,
+          "yoy": 3.3566543510730407,
+          "display": "0.314%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 3.3641058485303965,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.15704276395265282,
+          "yoy": 3.7604661293311636,
+          "display": "0.157%",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.33588569164249016,
+          "yoy": 3.9716144179047674,
+          "display": "0.336%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.2762760235886397,
+          "yoy": 4.069231515621952,
+          "display": "0.276%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.3054884767777377,
+          "yoy": 4.155173882877072,
+          "display": "0.305%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": 0.2795404158075332,
+          "yoy": 4.151100041511002,
+          "display": "0.280%",
+          "tone": "negative"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SEHB",
+      "label": "Out of town lodging SA",
+      "group": "Shelter",
+      "weight": 0.916,
+      "weight_display": "0.916",
+      "is_level": false,
+      "is_key": false,
+      "latest_value": 0.4180902254096175,
+      "latest_display": "0.418%",
+      "previous_display": "2.44%",
+      "avg_3m_value": 1.0343482746382342,
+      "avg_3m_display": "1.03%",
+      "yoy_value": 5.026826912758886,
+      "yoy_display": "5.03%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 0.3829706464752096,
+      "contribution_bps": "0.4 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.4180902254096175,
+          "yoy": 5.026826912758886,
+          "display": "0.418%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 2.4421006164372816,
+          "yoy": 4.434336778154568,
+          "display": "2.44%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 0.2428539820678033,
+          "yoy": 2.509858426530487,
+          "display": "0.243%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.9616100586113951,
+          "yoy": -1.0642733545979555,
+          "display": "0.962%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": -0.09829811427023438,
+          "yoy": -1.889490135097771,
+          "display": "-0.0983%",
+          "tone": "positive"
+        },
+        {
+          "label": "Dec-25",
+          "value": 2.1842762514931113,
+          "yoy": -0.9202373243625939,
+          "display": "2.18%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": -4.152789342214813,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.8576524610071745,
+          "yoy": 0.0010750549621851846,
+          "display": "0.858%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 2.009135955404129,
+          "yoy": -2.416095310648392,
+          "display": "2.01%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": -0.9764138286045942,
+          "yoy": -3.350740006307007,
+          "display": "-0.976%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jun-25",
+          "value": -2.0243588367850562,
+          "yoy": -2.4363269166038926,
+          "display": "-2.02%",
+          "tone": "positive"
+        },
+        {
+          "label": "May-25",
+          "value": -0.14840054217094556,
+          "yoy": -0.8748836590878883,
+          "display": "-0.148%",
+          "tone": "positive"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SETG01",
+      "label": "Airfares SA",
+      "group": "Transportation",
+      "weight": 0.659,
+      "weight_display": "0.659",
+      "is_level": false,
+      "is_key": false,
+      "latest_value": 2.6858958722478565,
+      "latest_display": "2.69%",
+      "previous_display": "2.82%",
+      "avg_3m_value": 2.7246867518520674,
+      "avg_3m_display": "2.72%",
+      "yoy_value": 26.69967758693197,
+      "yoy_display": "26.7%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 1.7700053798113375,
+      "contribution_bps": "1.8 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 2.6858958722478565,
+          "yoy": 26.69967758693197,
+          "display": "2.69%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 2.8151013663239244,
+          "yoy": 20.710142706173706,
+          "display": "2.82%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 2.6730630169844227,
+          "yoy": 14.886504023966186,
+          "display": "2.67%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 1.359347570371816,
+          "yoy": 7.051555579051505,
+          "display": "1.36%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 6.5200915554912475,
+          "yoy": 2.2303365242277717,
+          "display": "6.52%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 3.757957504652998,
+          "yoy": -3.374156368908754,
+          "display": "3.76%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": -5.12141810042629,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 1.9539720839314656,
+          "yoy": 2.9848904383238395,
+          "display": "1.95%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 4.458659690206912,
+          "yoy": 3.3829734327450955,
+          "display": "4.46%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 3.031597978386813,
+          "yoy": 1.0050231014328226,
+          "display": "3.03%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.33972937092345834,
+          "yoy": -3.1652243111508938,
+          "display": "0.340%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": -2.1684239397875116,
+          "yoy": -7.382063403569594,
+          "display": "-2.17%",
+          "tone": "positive"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SAM",
+      "label": "Medical care SA",
+      "group": "Medical",
+      "weight": 8.71,
+      "weight_display": "8.71",
+      "is_level": false,
+      "is_key": false,
+      "latest_value": 0.31376754476473145,
+      "latest_display": "0.314%",
+      "previous_display": "-0.0651%",
+      "avg_3m_value": 0.02849882719455632,
+      "avg_3m_display": "0.0285%",
+      "yoy_value": 2.5920601723311787,
+      "yoy_display": "2.59%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 2.7329153149008114,
+      "contribution_bps": "2.7 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.31376754476473145,
+          "yoy": 2.5920601723311787,
+          "display": "0.314%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": -0.0650791853100241,
+          "yoy": 2.5416790969702507,
+          "display": "-0.0651%",
+          "tone": "positive"
+        },
+        {
+          "label": "Mar-26",
+          "value": -0.1631918778710384,
+          "yoy": 3.051549552405719,
+          "display": "-0.163%",
+          "tone": "positive"
+        },
+        {
+          "label": "Feb-26",
+          "value": 0.49931310527298045,
+          "yoy": 3.3613357428429858,
+          "display": "0.499%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.2581228787332579,
+          "yoy": 3.1930496389354746,
+          "display": "0.258%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.3592229861754559,
+          "yoy": 3.1541281507077468,
+          "display": "0.359%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 2.8993320175038084,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.18208009811426784,
+          "yoy": 3.287558983922456,
+          "display": "0.182%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": -0.10967576353838604,
+          "yoy": 3.478658520373701,
+          "display": "-0.110%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.675765296015518,
+          "yoy": 3.5170467929995786,
+          "display": "0.676%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.42451385897630534,
+          "yoy": 2.748687161170782,
+          "display": "0.425%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": 0.26450529704378223,
+          "yoy": 2.460514258469204,
+          "display": "0.265%",
+          "tone": "negative"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SETA02",
+      "label": "Used cars SA",
+      "group": "Transportation",
+      "weight": 2.88,
+      "weight_display": "2.88",
+      "is_level": false,
+      "is_key": false,
+      "latest_value": 0.10176730322206673,
+      "latest_display": "0.102%",
+      "previous_display": "-0.00445%",
+      "avg_3m_value": -0.10765757419832027,
+      "avg_3m_display": "-0.108%",
+      "yoy_value": -1.992224932485409,
+      "yoy_display": "-1.99%",
+      "latest_tone": "positive",
+      "yoy_tone": "positive",
+      "contribution_bps_value": 0.2930898332795522,
+      "contribution_bps": "0.3 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.10176730322206673,
+          "yoy": -1.992224932485409,
+          "display": "0.102%",
+          "tone": "positive"
+        },
+        {
+          "label": "Apr-26",
+          "value": -0.004448645943400109,
+          "yoy": -2.6937229437229537,
+          "display": "-0.00445%",
+          "tone": "positive"
+        },
+        {
+          "label": "Mar-26",
+          "value": -0.4202913798736274,
+          "yoy": -3.1756116471398976,
+          "display": "-0.420%",
+          "tone": "positive"
+        },
+        {
+          "label": "Feb-26",
+          "value": -0.37513308949682633,
+          "yoy": -3.1990222827339543,
+          "display": "-0.375%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jan-26",
+          "value": -1.84060042887777,
+          "yoy": -1.958992054778208,
+          "display": "-1.84%",
+          "tone": "positive"
+        },
+        {
+          "label": "Dec-25",
+          "value": -0.8749422967503695,
+          "yoy": 1.630665089017902,
+          "display": "-0.875%",
+          "tone": "positive"
+        },
+        {
+          "label": "Nov-25",
+          "value": 0.10047767192697954,
+          "yoy": 3.5541177516897893,
+          "display": "0.100%",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-25",
+          "value": -0.2105160882872048,
+          "yoy": 5.138369143624089,
+          "display": "-0.211%",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.8234192853177724,
+          "yoy": 6.042254569183125,
+          "display": "0.823%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.4993628064955402,
+          "yoy": 4.813242978072885,
+          "display": "0.499%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jun-25",
+          "value": -0.4524566599877988,
+          "yoy": 2.735369314190983,
+          "display": "-0.452%",
+          "tone": "positive"
+        },
+        {
+          "label": "May-25",
+          "value": -0.6147186147186234,
+          "yoy": 1.7095200385430998,
+          "display": "-0.615%",
+          "tone": "positive"
+        }
+      ]
+    },
+    {
+      "series_id": "CUSR0000SAA",
+      "label": "Apparel CPI",
+      "group": "Goods",
+      "weight": 3.1,
+      "weight_display": "3.10",
+      "is_level": false,
+      "is_key": false,
+      "latest_value": 0.29194409892441264,
+      "latest_display": "0.292%",
+      "previous_display": "0.638%",
+      "avg_3m_value": 0.6533293703028317,
+      "avg_3m_display": "0.653%",
+      "yoy_value": 4.807236469850573,
+      "yoy_display": "4.81%",
+      "latest_tone": "negative",
+      "yoy_tone": "negative",
+      "contribution_bps_value": 0.9050267066656792,
+      "contribution_bps": "0.9 bps",
+      "history": [
+        {
+          "label": "May-26",
+          "value": 0.29194409892441264,
+          "yoy": 4.807236469850573,
+          "display": "0.292%",
+          "tone": "negative"
+        },
+        {
+          "label": "Apr-26",
+          "value": 0.6376837206562236,
+          "yoy": 4.168413350507993,
+          "display": "0.638%",
+          "tone": "negative"
+        },
+        {
+          "label": "Mar-26",
+          "value": 1.0303602913278587,
+          "yoy": 3.3610375376746715,
+          "display": "1.03%",
+          "tone": "negative"
+        },
+        {
+          "label": "Feb-26",
+          "value": 1.277849355424454,
+          "yoy": 2.5355658110530532,
+          "display": "1.28%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jan-26",
+          "value": 0.306838879357918,
+          "yoy": 1.7533503020638497,
+          "display": "0.307%",
+          "tone": "negative"
+        },
+        {
+          "label": "Dec-25",
+          "value": 0.3290795629459442,
+          "yoy": 0.5692873647087371,
+          "display": "0.329%",
+          "tone": "negative"
+        },
+        {
+          "label": "Nov-25",
+          "value": null,
+          "yoy": 0.14503538559669238,
+          "display": "n/a",
+          "tone": "flat"
+        },
+        {
+          "label": "Sep-25",
+          "value": 0.5444439382204402,
+          "yoy": -0.09657534763352071,
+          "display": "0.544%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-25",
+          "value": 0.25884251716732365,
+          "yoy": 0.21230453144618355,
+          "display": "0.259%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-25",
+          "value": 0.10669593183654236,
+          "yoy": -0.16341235397394627,
+          "display": "0.107%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jun-25",
+          "value": 0.3303206863329633,
+          "yoy": -0.5623086483373174,
+          "display": "0.330%",
+          "tone": "negative"
+        },
+        {
+          "label": "May-25",
+          "value": -0.31935732197161393,
+          "yoy": -0.9429889340816455,
+          "display": "-0.319%",
+          "tone": "positive"
+        }
+      ]
+    }
+  ],
+  "headline": {
+    "series_id": "CUSR0000SA0",
+    "label": "CPI SA",
+    "group": "Headline",
+    "weight": 100.0,
+    "weight_display": "100",
+    "is_level": false,
+    "is_key": true,
+    "latest_value": 0.47291422864139676,
+    "latest_display": "0.473%",
+    "previous_display": "0.640%",
+    "avg_3m_value": 0.6593652825454951,
+    "avg_3m_display": "0.659%",
+    "yoy_value": 4.166614684049641,
+    "yoy_display": "4.17%",
+    "latest_tone": "negative",
+    "yoy_tone": "negative",
+    "contribution_bps_value": 47.291422864139676,
+    "contribution_bps": "47.3 bps",
+    "history": [
+      {
+        "label": "May-26",
+        "value": 0.47291422864139676,
+        "yoy": 4.166614684049641,
+        "display": "0.473%",
+        "tone": "negative"
+      },
+      {
+        "label": "Apr-26",
+        "value": 0.6400377846336402,
+        "yoy": 3.7792458367415627,
+        "display": "0.640%",
+        "tone": "negative"
+      },
+      {
+        "label": "Mar-26",
+        "value": 0.8651438343614481,
+        "yoy": 3.2859577528651984,
+        "display": "0.865%",
+        "tone": "negative"
+      },
+      {
+        "label": "Feb-26",
+        "value": 0.26700307420970404,
+        "yoy": 2.4340041103732224,
+        "display": "0.267%",
+        "tone": "negative"
+      },
+      {
+        "label": "Jan-26",
+        "value": 0.170842649932057,
+        "yoy": 2.391201432150014,
+        "display": "0.171%",
+        "tone": "negative"
+      },
+      {
+        "label": "Dec-25",
+        "value": 0.297788428704604,
+        "yoy": 2.653304114557753,
+        "display": "0.298%",
+        "tone": "negative"
+      },
+      {
+        "label": "Nov-25",
+        "value": null,
+        "yoy": 2.6964439164939513,
+        "display": "n/a",
+        "tone": "flat"
+      },
+      {
+        "label": "Sep-25",
+        "value": 0.2950901819104068,
+        "yoy": 3.0225715847133294,
+        "display": "0.295%",
+        "tone": "negative"
+      },
+      {
+        "label": "Aug-25",
+        "value": 0.3482644202266627,
+        "yoy": 2.9385917430316155,
+        "display": "0.348%",
+        "tone": "negative"
+      },
+      {
+        "label": "Jul-25",
+        "value": 0.22835098853577485,
+        "yoy": 2.742618052167134,
+        "display": "0.228%",
+        "tone": "negative"
+      },
+      {
+        "label": "Jun-25",
+        "value": 0.2541949971929469,
+        "yoy": 2.680453865910226,
+        "display": "0.254%",
+        "tone": "negative"
+      },
+      {
+        "label": "May-25",
+        "value": 0.09928130327003792,
+        "yoy": 2.3772651073680873,
+        "display": "0.0993%",
+        "tone": "positive"
+      }
+    ]
+  },
+  "core": {
+    "series_id": "CUSR0000SA0L1E",
+    "label": "Core CPI SA",
+    "group": "Core",
+    "weight": 79.25,
+    "weight_display": "79.2",
+    "is_level": false,
+    "is_key": true,
+    "latest_value": 0.20809544962627768,
+    "latest_display": "0.208%",
+    "previous_display": "0.376%",
+    "avg_3m_value": 0.2601170779849597,
+    "avg_3m_display": "0.260%",
+    "yoy_value": 2.8229420636110225,
+    "yoy_display": "2.82%",
+    "latest_tone": "negative",
+    "yoy_tone": "negative",
+    "contribution_bps_value": 16.49156438288251,
+    "contribution_bps": "16.5 bps",
+    "history": [
+      {
+        "label": "May-26",
+        "value": 0.20809544962627768,
+        "yoy": 2.8229420636110225,
+        "display": "0.208%",
+        "tone": "negative"
+      },
+      {
+        "label": "Apr-26",
+        "value": 0.376460730477457,
+        "yoy": 2.7433094309685213,
+        "display": "0.376%",
+        "tone": "negative"
+      },
+      {
+        "label": "Mar-26",
+        "value": 0.19579505385114437,
+        "yoy": 2.602167705486824,
+        "display": "0.196%",
+        "tone": "negative"
+      },
+      {
+        "label": "Feb-26",
+        "value": 0.21605021740240815,
+        "yoy": 2.4724624767640258,
+        "display": "0.216%",
+        "tone": "negative"
+      },
+      {
+        "label": "Jan-26",
+        "value": 0.2950448142634121,
+        "yoy": 2.512028782828879,
+        "display": "0.295%",
+        "tone": "negative"
+      },
+      {
+        "label": "Dec-25",
+        "value": 0.2329002576704653,
+        "yoy": 2.6464847073089937,
+        "display": "0.233%",
+        "tone": "negative"
+      },
+      {
+        "label": "Nov-25",
+        "value": null,
+        "yoy": 2.5990448060944082,
+        "display": "n/a",
+        "tone": "flat"
+      },
+      {
+        "label": "Sep-25",
+        "value": 0.2177737336973129,
+        "yoy": 3.0199668258857892,
+        "display": "0.218%",
+        "tone": "negative"
+      },
+      {
+        "label": "Aug-25",
+        "value": 0.3097218588179462,
+        "yoy": 3.111806098514469,
+        "display": "0.310%",
+        "tone": "negative"
+      },
+      {
+        "label": "Jul-25",
+        "value": 0.3125209822436803,
+        "yoy": 3.0544930080893096,
+        "display": "0.313%",
+        "tone": "negative"
+      },
+      {
+        "label": "Jun-25",
+        "value": 0.23402152998077685,
+        "yoy": 2.910895442696071,
+        "display": "0.234%",
+        "tone": "negative"
+      },
+      {
+        "label": "May-25",
+        "value": 0.13048792067804627,
+        "yoy": 2.7658403935930886,
+        "display": "0.130%",
+        "tone": "positive"
+      }
+    ]
+  },
+  "nsa_level": {
+    "series_id": "CUUR0000SA0",
+    "label": "CPI NSA Level",
+    "group": "Headline level",
+    "weight": null,
+    "weight_display": "-",
+    "is_level": true,
+    "is_key": true,
+    "latest_value": 335.123,
+    "latest_display": "335.123",
+    "previous_display": "333.020",
+    "avg_3m_value": 332.7853333333333,
+    "avg_3m_display": "332.785",
+    "yoy_value": 4.248674039164446,
+    "yoy_display": "4.25%",
+    "latest_tone": "flat",
+    "yoy_tone": "negative",
+    "contribution_bps_value": null,
+    "contribution_bps": null,
+    "history": [
+      {
+        "label": "May-26",
+        "value": 335.123,
+        "yoy": 4.248674039164446,
+        "display": "335.123",
+        "tone": "flat"
+      },
+      {
+        "label": "Apr-26",
+        "value": 333.02,
+        "yoy": 3.8108449321217597,
+        "display": "333.020",
+        "tone": "flat"
+      },
+      {
+        "label": "Mar-26",
+        "value": 330.213,
+        "yoy": 3.2564204390883145,
+        "display": "330.213",
+        "tone": "flat"
+      },
+      {
+        "label": "Feb-26",
+        "value": 326.785,
+        "yoy": 2.4141129866304123,
+        "display": "326.785",
+        "tone": "flat"
+      },
+      {
+        "label": "Jan-26",
+        "value": 325.252,
+        "yoy": 2.386431244904319,
+        "display": "325.252",
+        "tone": "flat"
+      },
+      {
+        "label": "Dec-25",
+        "value": 324.054,
+        "yoy": 2.6770805278750087,
+        "display": "324.054",
+        "tone": "flat"
+      },
+      {
+        "label": "Nov-25",
+        "value": 324.122,
+        "yoy": 2.735084455122627,
+        "display": "324.122",
+        "tone": "flat"
+      },
+      {
+        "label": "Sep-25",
+        "value": 324.8,
+        "yoy": 3.0126767755256134,
+        "display": "324.800",
+        "tone": "flat"
+      },
+      {
+        "label": "Aug-25",
+        "value": 323.976,
+        "yoy": 2.9161742842984006,
+        "display": "323.976",
+        "tone": "flat"
+      },
+      {
+        "label": "Jul-25",
+        "value": 323.048,
+        "yoy": 2.7049023971513986,
+        "display": "323.048",
+        "tone": "flat"
+      },
+      {
+        "label": "Jun-25",
+        "value": 322.561,
+        "yoy": 2.669213018222316,
+        "display": "322.561",
+        "tone": "flat"
+      },
+      {
+        "label": "May-25",
+        "value": 321.465,
+        "yoy": 2.354896535474671,
+        "display": "321.465",
+        "tone": "flat"
+      }
+    ]
+  },
+  "largest_upside": {
+    "series_id": "CUSR0000SA0E",
+    "label": "Energy CPI",
+    "group": "Energy",
+    "weight": 7.36,
+    "weight_display": "7.36",
+    "is_level": false,
+    "is_key": true,
+    "latest_value": 3.8840044420175523,
+    "latest_display": "3.88%",
+    "previous_display": "3.81%",
+    "avg_3m_value": 6.188594476701489,
+    "avg_3m_display": "6.19%",
+    "yoy_value": 22.972869920145843,
+    "yoy_display": "23.0%",
+    "latest_tone": "negative",
+    "yoy_tone": "negative",
+    "contribution_bps_value": 28.586272693249185,
+    "contribution_bps": "28.6 bps",
+    "history": [
+      {
+        "label": "May-26",
+        "value": 3.8840044420175523,
+        "yoy": 22.972869920145843,
+        "display": "3.88%",
+        "tone": "negative"
+      },
+      {
+        "label": "Apr-26",
+        "value": 3.808368283447816,
+        "yoy": 17.536047421424005,
+        "display": "3.81%",
+        "tone": "negative"
+      },
+      {
+        "label": "Mar-26",
+        "value": 10.873410704639097,
+        "yoy": 12.589546298752975,
+        "display": "10.9%",
+        "tone": "negative"
+      },
+      {
+        "label": "Feb-26",
+        "value": 0.6349578589803784,
+        "yoy": 0.3995093868753852,
+        "display": "0.635%",
+        "tone": "negative"
+      },
+      {
+        "label": "Jan-26",
+        "value": -1.4662633392152125,
+        "yoy": -0.296168234894012,
+        "display": "-1.47%",
+        "tone": "positive"
+      },
+      {
+        "label": "Dec-25",
+        "value": 0.3428796267670897,
+        "yoy": 2.0709075899924656,
+        "display": "0.343%",
+        "tone": "negative"
+      },
+      {
+        "label": "Nov-25",
+        "value": null,
+        "yoy": 4.159454920027383,
+        "display": "n/a",
+        "tone": "flat"
+      },
+      {
+        "label": "Sep-25",
+        "value": 1.433145186352247,
+        "yoy": 2.940798955556123,
+        "display": "1.43%",
+        "tone": "negative"
+      },
+      {
+        "label": "Aug-25",
+        "value": 0.685464798981239,
+        "yoy": 0.37286094608022236,
+        "display": "0.685%",
+        "tone": "negative"
+      },
+      {
+        "label": "Jul-25",
+        "value": -0.6175919698580334,
+        "yoy": -1.2350558955322888,
+        "display": "-0.618%",
+        "tone": "positive"
+      },
+      {
+        "label": "Jun-25",
+        "value": 0.428866608322398,
+        "yoy": -0.6202296934067375,
+        "display": "0.429%",
+        "tone": "negative"
+      },
+      {
+        "label": "May-25",
+        "value": -0.7088695225767383,
+        "yoy": -3.0925694578853857,
+        "display": "-0.709%",
+        "tone": "positive"
+      }
+    ]
+  },
+  "largest_downside": {
+    "series_id": "CUSR0000SETA02",
+    "label": "Used cars SA",
+    "group": "Transportation",
+    "weight": 2.88,
+    "weight_display": "2.88",
+    "is_level": false,
+    "is_key": false,
+    "latest_value": 0.10176730322206673,
+    "latest_display": "0.102%",
+    "previous_display": "-0.00445%",
+    "avg_3m_value": -0.10765757419832027,
+    "avg_3m_display": "-0.108%",
+    "yoy_value": -1.992224932485409,
+    "yoy_display": "-1.99%",
+    "latest_tone": "positive",
+    "yoy_tone": "positive",
+    "contribution_bps_value": 0.2930898332795522,
+    "contribution_bps": "0.3 bps",
+    "history": [
+      {
+        "label": "May-26",
+        "value": 0.10176730322206673,
+        "yoy": -1.992224932485409,
+        "display": "0.102%",
+        "tone": "positive"
+      },
+      {
+        "label": "Apr-26",
+        "value": -0.004448645943400109,
+        "yoy": -2.6937229437229537,
+        "display": "-0.00445%",
+        "tone": "positive"
+      },
+      {
+        "label": "Mar-26",
+        "value": -0.4202913798736274,
+        "yoy": -3.1756116471398976,
+        "display": "-0.420%",
+        "tone": "positive"
+      },
+      {
+        "label": "Feb-26",
+        "value": -0.37513308949682633,
+        "yoy": -3.1990222827339543,
+        "display": "-0.375%",
+        "tone": "positive"
+      },
+      {
+        "label": "Jan-26",
+        "value": -1.84060042887777,
+        "yoy": -1.958992054778208,
+        "display": "-1.84%",
+        "tone": "positive"
+      },
+      {
+        "label": "Dec-25",
+        "value": -0.8749422967503695,
+        "yoy": 1.630665089017902,
+        "display": "-0.875%",
+        "tone": "positive"
+      },
+      {
+        "label": "Nov-25",
+        "value": 0.10047767192697954,
+        "yoy": 3.5541177516897893,
+        "display": "0.100%",
+        "tone": "positive"
+      },
+      {
+        "label": "Sep-25",
+        "value": -0.2105160882872048,
+        "yoy": 5.138369143624089,
+        "display": "-0.211%",
+        "tone": "positive"
+      },
+      {
+        "label": "Aug-25",
+        "value": 0.8234192853177724,
+        "yoy": 6.042254569183125,
+        "display": "0.823%",
+        "tone": "negative"
+      },
+      {
+        "label": "Jul-25",
+        "value": 0.4993628064955402,
+        "yoy": 4.813242978072885,
+        "display": "0.499%",
+        "tone": "negative"
+      },
+      {
+        "label": "Jun-25",
+        "value": -0.4524566599877988,
+        "yoy": 2.735369314190983,
+        "display": "-0.452%",
+        "tone": "positive"
+      },
+      {
+        "label": "May-25",
+        "value": -0.6147186147186234,
+        "yoy": 1.7095200385430998,
+        "display": "-0.615%",
+        "tone": "positive"
+      }
+    ]
+  },
+  "volatile_adjusted": {
+    "core_mom": "0.208%",
+    "adjusted_core_mom": "0.175%",
+    "volatile_contribution_removed": "3.4 bps"
+  },
+  "stats": [
+    {
+      "label": "Headline CPI m/m",
+      "value": "0.473%",
+      "tone": "negative",
+      "detail": "4.17% y/y"
+    },
+    {
+      "label": "Core CPI m/m",
+      "value": "0.208%",
+      "tone": "negative",
+      "detail": "2.82% y/y"
+    },
+    {
+      "label": "Core CPI 3M avg",
+      "value": "0.260%",
+      "tone": "negative",
+      "detail": "average monthly change"
+    },
+    {
+      "label": "CPI NSA level",
+      "value": "335.123",
+      "tone": "flat",
+      "detail": "May 2026"
+    }
+  ]
+}
