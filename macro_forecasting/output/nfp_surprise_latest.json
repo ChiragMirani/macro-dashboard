@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-06-05T16:48:08.297521+00:00",
+  "generated_at_utc": "2026-06-11T22:15:57.550201+00:00",
   "target_month": "2026-06",
   "threshold_k": 75.0,
-  "house_forecast_k": 119.31766510009766,
+  "house_forecast_k": 93.25837707519531,
   "ma3_k": 155.0,
   "baseline": {
     "regression": {
@@ -114,9 +114,9 @@
         "feature": "weather_prev",
         "model": "ols",
         "rows": 26.0,
-        "mae": 43.440721324347365,
-        "rmse": 50.56693963158956,
-        "bias": 2.0788621211006637
+        "mae": 43.48271902476688,
+        "rmse": 50.5966292018069,
+        "bias": 2.066538768255278
       }
     ],
     "classification_screen": [
@@ -307,9 +307,9 @@
           "construction_prev"
         ],
         "rows": 26.0,
-        "mae": 45.59640872976884,
-        "rmse": 58.74288541773141,
-        "bias": 11.881231764105292
+        "mae": 45.56491288093059,
+        "rmse": 58.76415779267109,
+        "bias": 11.789639365188334
       },
       {
         "name": "claims_event_core",
@@ -341,9 +341,23 @@
           "temphelp_prev"
         ],
         "rows": 26.0,
-        "mae": 50.31810542502834,
-        "rmse": 60.557900824718274,
-        "bias": 7.116046625001857
+        "mae": 52.1003732576595,
+        "rmse": 60.75900349178309,
+        "bias": 3.0266489694823093
+      },
+      {
+        "name": "weather_strike_core",
+        "model": "hgb",
+        "features": [
+          "weather_abs_prev",
+          "strike_workers",
+          "strike_workers_prev",
+          "construction_prev"
+        ],
+        "rows": 26.0,
+        "mae": 48.438204722114115,
+        "rmse": 61.1461047382291,
+        "bias": 16.042776940792926
       },
       {
         "name": "recurrence_core",
@@ -358,20 +372,6 @@
         "mae": 54.389531906378515,
         "rmse": 64.43045682304142,
         "bias": 4.192051452547248
-      },
-      {
-        "name": "weather_strike_core",
-        "model": "hgb",
-        "features": [
-          "weather_abs_prev",
-          "strike_workers",
-          "strike_workers_prev",
-          "construction_prev"
-        ],
-        "rows": 26.0,
-        "mae": 53.93553806394209,
-        "rmse": 64.86401765068467,
-        "bias": 16.176132108560292
       },
       {
         "name": "econ_defensible",
@@ -389,9 +389,9 @@
           "temphelp_prev"
         ],
         "rows": 26.0,
-        "mae": 52.08528872540655,
-        "rmse": 67.57379565587489,
-        "bias": 6.48967173372756
+        "mae": 52.21968774894123,
+        "rmse": 67.69788146952347,
+        "bias": 6.409808454217416
       }
     ],
     "econ_classification_sets": [
@@ -421,10 +421,10 @@
           "construction_prev"
         ],
         "rows": 26.0,
-        "accuracy": 0.4230769230769231,
-        "brier": 0.34308191827903656,
-        "precision": 0.3333333333333333,
-        "recall": 0.15384615384615385,
+        "accuracy": 0.46153846153846156,
+        "brier": 0.34229023297020345,
+        "precision": 0.42857142857142855,
+        "recall": 0.23076923076923078,
         "base_rate": 0.5
       },
       {
@@ -443,9 +443,9 @@
           "temphelp_prev"
         ],
         "rows": 26.0,
-        "accuracy": 0.5,
-        "brier": 0.38165236238267214,
-        "precision": 0.5,
+        "accuracy": 0.5384615384615384,
+        "brier": 0.38609100498094456,
+        "precision": 0.5384615384615384,
         "recall": 0.5384615384615384,
         "base_rate": 0.5
       },
@@ -466,7 +466,7 @@
         ],
         "rows": 26.0,
         "accuracy": 0.4230769230769231,
-        "brier": 0.41380182361522105,
+        "brier": 0.4104259889114398,
         "precision": 0.4,
         "recall": 0.3076923076923077,
         "base_rate": 0.5
@@ -497,10 +497,10 @@
           "construction_prev"
         ],
         "rows": 26.0,
-        "accuracy": 0.34615384615384615,
-        "brier": 0.4703267494664383,
-        "precision": 0.3333333333333333,
-        "recall": 0.3076923076923077,
+        "accuracy": 0.4230769230769231,
+        "brier": 0.43250638717365025,
+        "precision": 0.4166666666666667,
+        "recall": 0.38461538461538464,
         "base_rate": 0.5
       }
     ]
@@ -526,14 +526,14 @@
       "ma12": 72.75,
       "mean_reversion_3m": 82.25,
       "payroll_momentum_12": 2.75,
-      "claims_delta_k": 10.75,
-      "claims_accel_k": 16.75,
+      "claims_delta_k": 15.0,
+      "claims_accel_k": 21.0,
       "claims_vol_3m_k": 7.375353098891831,
       "claims_vol_6m_k": 5.51909563847798,
       "biz_days": 23.0,
       "biz_days_dev": 1.0,
-      "weather_prev": null,
-      "weather_abs_prev": null,
+      "weather_prev": -185.1750493610449,
+      "weather_abs_prev": 185.1750493610449,
       "strike_workers": 0.0,
       "strike_workers_prev": 0.0,
       "temphelp_prev": 1.400000000000091,
@@ -543,7 +543,7 @@
       "government_prev": 52.0,
       "construction_prev": 17.0,
       "private_prev": 120.0,
-      "house_forecast": 119.31766510009766,
+      "house_forecast": 93.25837707519531,
       "is_january": 0.0,
       "is_february": 0.0,
       "is_march": 0.0,
