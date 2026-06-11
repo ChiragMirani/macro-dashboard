@@ -1,6 +1,39 @@
 {
   "snapshots": [
     {
+      "id": "weekly_claims_2026-06-18",
+      "release_key": "weekly_claims",
+      "release_label": "Weekly Claims",
+      "release_group": "Labor",
+      "target_period": "Week ending June 13, 2026",
+      "release_iso": "2026-06-18T08:30:00-04:00",
+      "snapshot_at_utc": "2026-06-11T18:13:17.023701+00:00",
+      "house_raw": "217,263",
+      "house_value": 217263.0,
+      "kalshi_raw": "197,500",
+      "kalshi_value": 197500.0,
+      "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26jun18",
+      "release_source_url": "https://www.dol.gov/ui/data.pdf",
+      "fred_series": "ICSA",
+      "unit": "claims",
+      "actual_value": null,
+      "house_error_abs": null,
+      "kalshi_error_abs": null,
+      "winner": null,
+      "settled_at_utc": null,
+      "actual_consensus_side": null,
+      "house_consensus_side": null,
+      "house_direction_correct": null,
+      "release_date_pretty": "Jun 18, 2026",
+      "house_display": "217,263",
+      "kalshi_display": "197,500",
+      "actual_display": null,
+      "house_error_display": null,
+      "kalshi_error_display": null,
+      "actual_consensus_side_display": null,
+      "house_consensus_side_display": null
+    },
+    {
       "id": "weekly_claims_2026-06-11",
       "release_key": "weekly_claims",
       "release_label": "Weekly Claims",
@@ -398,9 +431,9 @@
     }
   ],
   "summary": {
-    "total_snapshots": 12,
+    "total_snapshots": 13,
     "settled_count": 10,
-    "pending_count": 2,
+    "pending_count": 3,
     "house_wins": 5,
     "kalshi_wins": 4,
     "ties": 0,
@@ -411,5 +444,5 @@
     "house_mean_abs_error": 1666.8273248184582,
     "kalshi_mean_abs_error": 1102.5691726554458
   },
-  "last_updated_utc": "2026-06-11T12:29:26.027402+00:00"
+  "last_updated_utc": "2026-06-11T18:13:57.409303+00:00"
 }
