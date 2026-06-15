@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-06-15T13:10:47.049799+00:00",
+  "generated_at_utc": "2026-06-15T18:40:07.501622+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26JUN18",
       "kind": "threshold",
       "market_count": 10,
-      "implied_value": 226737.49999999997,
-      "consensus_label": "226,737",
+      "implied_value": 227762.5,
+      "consensus_label": "227,762",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26jun18",
       "title": "Initial jobless claims for the week ending June 13, 2026"
     },
@@ -26,7 +26,7 @@
       "event_ticker": "KXECONSTATCPICORE-26JUN",
       "kind": "bucket",
       "market_count": 8,
-      "implied_value": 0.21,
+      "implied_value": 0.20995475113122172,
       "consensus_label": "0.210% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26jun",
       "title": "CPI core month-over-month in Jun 2026?"
@@ -36,7 +36,7 @@
       "event_ticker": "KXCPICOREYOY-26JUN",
       "kind": "threshold",
       "market_count": 15,
-      "implied_value": 4.899749999999999,
+      "implied_value": 4.89725,
       "consensus_label": "4.90% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26jun",
       "title": "Core inflation in June 2026 (Core CPI YoY)"
@@ -46,7 +46,7 @@
       "event_ticker": "KXPAYROLLS-26JUN",
       "kind": "threshold",
       "market_count": 13,
-      "implied_value": 103.2,
+      "implied_value": 103.17500000000001,
       "consensus_label": "103k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26jun",
       "title": "Jobs numbers in June 2026?"
@@ -56,7 +56,7 @@
       "event_ticker": "KXECONSTATU3-26JUN",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.370358306188924,
+      "implied_value": 4.369480519480518,
       "consensus_label": "4.37%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26jun",
       "title": "Unemployment rate in Jun 2026?"
