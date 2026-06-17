@@ -7,7 +7,7 @@
       "release_group": "Labor",
       "target_period": "June 2026",
       "release_iso": "2026-07-01T08:15:00-04:00",
-      "snapshot_at_utc": "2026-06-17T12:33:36.893218+00:00",
+      "snapshot_at_utc": "2026-06-17T18:02:56.375212+00:00",
       "house_raw": "200k",
       "house_value": 200.0,
       "kalshi_raw": "78k",
@@ -40,7 +40,7 @@
       "release_group": "Inflation",
       "target_period": "May 2026",
       "release_iso": "2026-06-26T08:30:00-04:00",
-      "snapshot_at_utc": "2026-06-17T12:33:36.893218+00:00",
+      "snapshot_at_utc": "2026-06-17T18:02:56.375212+00:00",
       "house_raw": "0.352% m/m | 3.42% y/y",
       "house_value": 0.352,
       "kalshi_raw": "0.234% m/m",
@@ -73,11 +73,11 @@
       "release_group": "Labor",
       "target_period": "Week ending June 13, 2026",
       "release_iso": "2026-06-18T08:30:00-04:00",
-      "snapshot_at_utc": "2026-06-17T12:33:36.893218+00:00",
+      "snapshot_at_utc": "2026-06-17T18:02:56.375212+00:00",
       "house_raw": "227,261",
       "house_value": 227261.0,
-      "kalshi_raw": "227,438",
-      "kalshi_value": 227438.0,
+      "kalshi_raw": "231,388",
+      "kalshi_value": 231388.0,
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26jun18",
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "fred_series": "ICSA",
@@ -92,7 +92,7 @@
       "house_direction_correct": null,
       "release_date_pretty": "Jun 18, 2026",
       "house_display": "227,261",
-      "kalshi_display": "227,438",
+      "kalshi_display": "231,388",
       "actual_display": null,
       "house_error_display": null,
       "kalshi_error_display": null,
@@ -510,5 +510,5 @@
     "house_mean_abs_error": 1666.8273248184582,
     "kalshi_mean_abs_error": 1102.5691726554458
   },
-  "last_updated_utc": "2026-06-17T12:34:17.105765+00:00"
+  "last_updated_utc": "2026-06-17T18:03:36.750272+00:00"
 }
