@@ -3,55 +3,55 @@
   "metrics": {
     "regression": {
       "baseline_abs_gap_4wavg": {
-        "mae": 5386.587078651685,
-        "rmse": 7092.305915231288,
-        "bias": -111.3061797752809,
-        "n": 178
+        "mae": 5382.638888888889,
+        "rmse": 7072.7064892679755,
+        "bias": -109.72222222222223,
+        "n": 180
       },
       "model_abs_gap_hgb": {
-        "mae": 6216.019113753905,
-        "rmse": 9541.941006977107,
-        "bias": 379.54125400016744,
-        "n": 178
+        "mae": 6188.503405018153,
+        "rmse": 9504.808409696427,
+        "bias": 334.63406984986534,
+        "n": 180
       }
     },
     "classification_10k": {
       "baseline_base_rate": {
-        "accuracy": 0.4044943820224719,
+        "accuracy": 0.40555555555555556,
         "precision": 0.30578512396694213,
-        "recall": 0.6271186440677966,
-        "brier": 0.25494947144471775,
-        "base_rate": 0.33146067415730335,
-        "n": 178
+        "recall": 0.6166666666666667,
+        "brier": 0.2550734714003945,
+        "base_rate": 0.3333333333333333,
+        "n": 180
       },
       "model_prob_hgb": {
-        "accuracy": 0.5898876404494382,
-        "precision": 0.36538461538461536,
-        "recall": 0.3220338983050847,
-        "brier": 0.2788831118254088,
-        "base_rate": 0.33146067415730335,
-        "n": 178
+        "accuracy": 0.5833333333333334,
+        "precision": 0.3584905660377358,
+        "recall": 0.31666666666666665,
+        "brier": 0.2791583384844334,
+        "base_rate": 0.3333333333333333,
+        "n": 180
       }
     }
   },
   "forecast": {
-    "generated_at_utc": "2026-06-11T22:06:57+00:00",
-    "latest_actual_week": "2026-06-06",
-    "target_week": "2026-06-13",
+    "generated_at_utc": "2026-06-18T22:02:40+00:00",
+    "latest_actual_week": "2026-06-13",
+    "target_week": "2026-06-20",
     "surprise_threshold": 10000.0,
-    "expected_abs_gap_vs_ma4": 6401.412811089159,
+    "expected_abs_gap_vs_ma4": 6492.041021988639,
     "expected_range_vs_ma4": [
-      212598.58718891084,
-      225401.41281108916
+      216757.95897801136,
+      229742.04102198864
     ],
-    "surprise_prob_10k": 0.21275879446903725,
-    "baseline_abs_gap_4wavg": 10250.0,
+    "surprise_prob_10k": 0.20819384625538548,
+    "baseline_abs_gap_4wavg": 12000.0,
     "baseline_prob_10k": 0.3730769230769231,
-    "ma4_reference": 219000.0,
+    "ma4_reference": 223250.0,
     "context": {
-      "holiday_week": 0,
+      "holiday_week": 1,
       "post_holiday_week": 0,
-      "pre_holiday_week": 1,
+      "pre_holiday_week": 0,
       "state_outlier_count_prev": 0,
       "ny_delta_prev": NaN,
       "ca_delta_prev": NaN,
