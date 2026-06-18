@@ -1,20 +1,20 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Thursday, June 18, 2026 08:14 AM ET",
-  "generated_at_iso": "2026-06-18T08:14:01.674881-04:00",
+  "generated_at_et": "Thursday, June 18, 2026 02:08 PM ET",
+  "generated_at_iso": "2026-06-18T14:08:31.291216-04:00",
   "current_day": "Thursday",
   "current_date": "June 18, 2026",
-  "current_time": "08:14 AM ET",
+  "current_time": "02:08 PM ET",
   "next_event": {
     "key": "weekly_claims",
     "label": "Weekly Claims",
     "group": "Labor",
-    "reporting_period": "Week ending June 13, 2026",
+    "reporting_period": "Week ending June 20, 2026",
     "release_day": "Thursday",
-    "release_date": "June 18, 2026",
+    "release_date": "June 25, 2026",
     "release_time": "8:30 AM ET",
-    "release_iso": "2026-06-18T08:30:00-04:00",
-    "hours_until_release": 0,
+    "release_iso": "2026-06-25T08:30:00-04:00",
+    "hours_until_release": 162,
     "schedule_source": "weekly_rule",
     "house_forecast": "227,261",
     "kalshi_consensus": "no live Kalshi market found",
@@ -23,7 +23,7 @@
     "status": "live",
     "notes": "Weekly model output with surprise-risk overlay.",
     "model_source": "macro_forecasting/output/weekly_claims_forecast_latest.json",
-    "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26jun19",
+    "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26jun25",
     "release_source_url": "https://www.dol.gov/ui/data.pdf",
     "consensus_review": null
   },
@@ -32,12 +32,12 @@
       "key": "weekly_claims",
       "label": "Weekly Claims",
       "group": "Labor",
-      "reporting_period": "Week ending June 13, 2026",
+      "reporting_period": "Week ending June 20, 2026",
       "release_day": "Thursday",
-      "release_date": "June 18, 2026",
+      "release_date": "June 25, 2026",
       "release_time": "8:30 AM ET",
-      "release_iso": "2026-06-18T08:30:00-04:00",
-      "hours_until_release": 0,
+      "release_iso": "2026-06-25T08:30:00-04:00",
+      "hours_until_release": 162,
       "schedule_source": "weekly_rule",
       "house_forecast": "227,261",
       "kalshi_consensus": "no live Kalshi market found",
@@ -46,7 +46,7 @@
       "status": "live",
       "notes": "Weekly model output with surprise-risk overlay.",
       "model_source": "macro_forecasting/output/weekly_claims_forecast_latest.json",
-      "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26jun19",
+      "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26jun25",
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "consensus_review": null
     },
@@ -59,10 +59,10 @@
       "release_date": "June 26, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-26T08:30:00-04:00",
-      "hours_until_release": 192,
+      "hours_until_release": 186,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "0.352% m/m | 3.42% y/y",
-      "kalshi_consensus": "0.234% m/m",
+      "kalshi_consensus": "0.231% m/m",
       "last_release": "April 2026: 0.239% m/m, 3.29% y/y",
       "risk": null,
       "status": "review",
@@ -72,13 +72,13 @@
       "release_source_url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
       "consensus_review": {
         "required": true,
-        "gap_value": 0.1184,
-        "gap_display": "+0.118 pp",
+        "gap_value": 0.12140000000000001,
+        "gap_display": "+0.121 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "above Kalshi",
         "label": "Review required",
-        "message": "Core PCE house forecast is +0.118 pp above Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
+        "message": "Core PCE house forecast is +0.121 pp above Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
         "news_query": "May 2026 core PCE forecast BEA adjustment inflation",
         "news_search_url": "https://news.google.com/search?q=May+2026+core+PCE+forecast+BEA+adjustment+inflation",
         "official_guidance": [
@@ -109,9 +109,9 @@
             "published": "Thu, 28 May 2026 07:00:00 GMT"
           },
           {
-            "title": "US consumer spending increases in January, Iran war to add to inflation pressures - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVkswd3VEeXZRSnQzcWtrY2FHUElyZnR1RmpRcWNhMXplaFpkOFh0YXRKN0pPUXZyOXdWVURSb2pnbktqR2pHWUZHTWFRb1ZoeWtwemd5c3FMSEgxZ0ZQS2ExU0RJeGRlNWc2WWFucDlCVWY0LWVMcWoxOXI1ei0yRVVObk40dXB6MHVBaTY0TGhwM0luTVd5ZmNDamdtejVZ?oc=5",
-            "published": "Fri, 13 Mar 2026 07:00:00 GMT"
+            "title": "Tracking the Economic Effects of Tariffs - The Budget Lab",
+            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4wOW5VcEYwNXNrb2pBN1BEaUdTMElDODZwUVFETmxENnVFNUhqWXNZYXdGRXNlRVV6ZGp4T01OUlNKMHA3ZDdkRzJ1MC1NRGRuZVBDMmF0TTFKam1jZExfYnFESjlqOVB4enpuR1NHWkZVN2M1SjZhUA?oc=5",
+            "published": "Wed, 01 Apr 2026 07:00:00 GMT"
           }
         ]
       }
@@ -125,7 +125,7 @@
       "release_date": "July 01, 2026",
       "release_time": "8:15 AM ET",
       "release_iso": "2026-07-01T08:15:00-04:00",
-      "hours_until_release": 312,
+      "hours_until_release": 306,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "200k",
       "kalshi_consensus": "78k",
@@ -166,9 +166,9 @@
             "published": "Mon, 15 Jun 2026 07:00:00 GMT"
           },
           {
-            "title": "April\u2019s manufacturing, wholesale and retail data to point to Canada\u2019s growth rebound - rbc.com",
-            "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNY0hIelZKR3p1Nl9LcHRqTVBnZVpDUEFYWGJldnBENFFhM0FEUUJ1RE1BTDJNblpTcFpEaUxkanNyMVNna3hzdXI2Q1FCWFJ1UHdYTFV5Xzg1TS1YM1prZnEtSHZ0SnBCamp4ODNPQURmS0NOWkNxSG9ZWGVCb055X1N0dklPdnYzRnFMYzE4QQ?oc=5",
-            "published": "Fri, 12 Jun 2026 07:00:00 GMT"
+            "title": "GDPNow - Atlanta - Federal Reserve Bank",
+            "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE03N0V5YmZFQ2VfdWtTaE9hY0VzNkxrVTRWc09LeG56RzlnMmtlbUpUdFR1czg3Zm9pWjVFWS1LUHo0NVI4cVlBb3F4bHZrcko3RjZuYzJJcEpTZVlhMVllUzRJRWdxdnM?oc=5",
+            "published": "Sun, 08 Feb 2026 14:47:07 GMT"
           }
         ]
       }
@@ -182,10 +182,10 @@
       "release_date": "July 02, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-07-02T08:30:00-04:00",
-      "hours_until_release": 336,
+      "hours_until_release": 330,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "93k",
-      "kalshi_consensus": "92k",
+      "kalshi_consensus": "88k",
       "last_release": "May 2026: 172k",
       "risk": "normal surprise risk",
       "status": "live",
@@ -195,8 +195,8 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": 1.483377075195321,
-        "gap_display": "+1k",
+        "gap_value": 5.108377075195321,
+        "gap_display": "+5k",
         "threshold": 40.0,
         "threshold_display": "40k",
         "house_side": "above Kalshi"
@@ -211,7 +211,7 @@
       "release_date": "July 02, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-07-02T08:30:00-04:00",
-      "hours_until_release": 336,
+      "hours_until_release": 330,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "4.30%",
       "kalshi_consensus": "4.37%",
@@ -224,13 +224,13 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": true,
-        "gap_value": -0.07201257861635213,
-        "gap_display": "-0.072 pp",
+        "gap_value": -0.0685714285714285,
+        "gap_display": "-0.069 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "below Kalshi",
         "label": "Review required",
-        "message": "Unemployment Rate house forecast is -0.072 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
+        "message": "Unemployment Rate house forecast is -0.069 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
         "news_query": "June 2026 jobs report BLS forecast adjustment survey",
         "news_search_url": "https://news.google.com/search?q=June+2026+jobs+report+BLS+forecast+adjustment+survey",
         "official_guidance": [
@@ -259,9 +259,9 @@
             "published": "Fri, 05 Jun 2026 07:00:00 GMT"
           },
           {
-            "title": "BLS Jobs Report Is Broken. Is There A Better Measure? - RIA - Real Investment Advice",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQLWZKLVlsV2xxOWpHRE9ULVhoNEVZMDgtQlpaTnlaSWhmMFlybHhUT1hBNU45OHhWcUwzd1NBM245aWNCOHVhUXg2RUdJUUpWdjMyeWJJdVJzYlpUa1Z1NzBlaWVPc2o0TmlSZ1RtWC1Xc3pNMHVtVjZUZmV5QmVLWUEycVIzbDIzLVNwS3dLanBZUzd1aGI1amFSdzFzLVNiRGc?oc=5",
-            "published": "Fri, 17 Apr 2026 07:00:00 GMT"
+            "title": "U.S. Bureau of Labor Statistics (BLS) - Britannica",
+            "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5kVndjZF9jTTB2UnRXNnN5TVhrRUJZaDNfVWlyX1FuTWFJYmQtWDJZXzNka1c2RjdCTGtXYVF4NUFLbWtxSUhsRWFadHhJbE5vWEtFeUN5T1hmbXJfSjloTGtLRV9TMGt4a2w0?oc=5",
+            "published": "Mon, 15 Jun 2026 07:00:00 GMT"
           }
         ]
       }
@@ -275,10 +275,10 @@
       "release_date": "July 15, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-07-15T08:30:00-04:00",
-      "hours_until_release": 648,
+      "hours_until_release": 642,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "0.221% m/m | 2.81% y/y",
-      "kalshi_consensus": "0.188% m/m | 3.39% y/y",
+      "kalshi_consensus": "0.188% m/m | 3.60% y/y",
       "last_release": "May 2026: 0.208% m/m, 2.82% y/y",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -288,7 +288,7 @@
       "release_source_url": "https://www.bls.gov/news.release/cpi.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": 0.03308626778854712,
+        "gap_value": 0.032977677054956384,
         "gap_display": "+0.033 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
