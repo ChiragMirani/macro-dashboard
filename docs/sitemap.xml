@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://chiragmirani.github.io/macro-dashboard/</loc><lastmod>2026-06-18T14:08:31.291216-04:00</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://chiragmirani.github.io/macro-dashboard/dashboard_data.json</loc><lastmod>2026-06-18T14:08:31.291216-04:00</lastmod><changefreq>daily</changefreq></url>
-  <url><loc>https://chiragmirani.github.io/macro-dashboard/cpi.html</loc><lastmod>2026-06-18T14:08:31.291216-04:00</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
-  <url><loc>https://chiragmirani.github.io/macro-dashboard/nfp.html</loc><lastmod>2026-06-18T14:08:31.291216-04:00</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://chiragmirani.github.io/macro-dashboard/</loc><lastmod>2026-06-19T08:27:42.959862-04:00</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://chiragmirani.github.io/macro-dashboard/dashboard_data.json</loc><lastmod>2026-06-19T08:27:42.959862-04:00</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://chiragmirani.github.io/macro-dashboard/cpi.html</loc><lastmod>2026-06-19T08:27:42.959862-04:00</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+  <url><loc>https://chiragmirani.github.io/macro-dashboard/nfp.html</loc><lastmod>2026-06-19T08:27:42.959862-04:00</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
 </urlset>
