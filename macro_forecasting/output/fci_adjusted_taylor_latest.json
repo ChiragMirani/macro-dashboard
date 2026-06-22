@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-18T22:11:39.918829+00:00",
+  "generated_at_utc": "2026-06-22T22:01:12.549981+00:00",
   "inputs": {
     "spot_date": "2026-04-01",
     "spot_ur": 4.3,
@@ -29,10 +29,10 @@
     "as_of": "2026-06-01",
     "level_bps_per_1z": 25.0,
     "delta_bps_per_1z": 15.0,
-    "composite_z_tighter_positive": -0.28119368549032075,
-    "level_adjustment_pp": 0.07029842137258019,
-    "delta_adjustment_pp": -0.030447107278384847,
-    "total_adjustment_pp": 0.039851314094195345,
+    "composite_z_tighter_positive": -0.22673549143196026,
+    "level_adjustment_pp": 0.056683872857990064,
+    "delta_adjustment_pp": -0.046784565495893,
+    "total_adjustment_pp": 0.009899307362097064,
     "components": [
       {
         "name": "ANFCI",
@@ -40,65 +40,65 @@
         "lookback_mean": -0.4393083333333333,
         "lookback_std": 0.18057075233055386,
         "zscore_tighter_positive": -0.1478183278419575,
-        "contribution_bps": 1.7574605343145047
+        "contribution_bps": 1.4170968214497517
       },
       {
         "name": "HY OAS",
-        "latest": 2.63,
-        "lookback_mean": 3.2148648648648646,
-        "lookback_std": 0.4444591102198425,
-        "zscore_tighter_positive": -1.315902523801511,
-        "contribution_bps": 1.7574605343145047
+        "latest": 2.66,
+        "lookback_mean": 3.2156756756756755,
+        "lookback_std": 0.4434175662476351,
+        "zscore_tighter_positive": -1.2531656794249497,
+        "contribution_bps": 1.4170968214497517
       },
       {
         "name": "VIX",
-        "latest": 17.997692307692308,
-        "lookback_mean": 18.545982970550934,
-        "lookback_std": 6.6861114659019965,
-        "zscore_tighter_positive": -0.08200441551936626,
-        "contribution_bps": 1.7574605343145047
+        "latest": 17.81,
+        "lookback_mean": 18.54441886798683,
+        "lookback_std": 6.686261498306235,
+        "zscore_tighter_positive": -0.10983998579368688,
+        "contribution_bps": 1.4170968214497517
       },
       {
         "name": "Broad USD",
-        "latest": 119.5073,
-        "lookback_mean": 117.48505000000002,
-        "lookback_std": 4.804008734831082,
-        "zscore_tighter_positive": 0.42095052520155163,
-        "contribution_bps": 1.7574605343145047
+        "latest": 120.3958,
+        "lookback_mean": 117.49245416666668,
+        "lookback_std": 4.8078030176803175,
+        "zscore_tighter_positive": 0.6038820273327532,
+        "contribution_bps": 1.4170968214497517
       }
     ],
     "checkpoint_deltas": [
       {
         "name": "since_last_fomc",
         "checkpoint_date": "2026-01-28",
-        "delta_z_tighter_positive": 0.11955539865773923,
-        "adjustment_bps": -1.7933309798660884
+        "delta_z_tighter_positive": 0.17401359271609973,
+        "adjustment_bps": -2.610203890741496
       },
       {
         "name": "since_last_sep",
         "checkpoint_date": "2025-12-17",
-        "delta_z_tighter_positive": 0.0834253165314931,
-        "adjustment_bps": -1.2513797479723965
+        "delta_z_tighter_positive": 0.1378835105898536,
+        "adjustment_bps": -2.068252658847804
       }
     ]
   },
   "adjusted_taylor": {
-    "spot": 4.705584675671447,
+    "spot": 4.675632668939349,
     "forward": null,
     "sep_delta_only_forward": null
   },
   "quarterly_revision": {
     "macro_revision_vs_sep_pp": null,
-    "fci_impulse_since_sep_pp": -0.012513797479723966,
+    "fci_impulse_since_sep_pp": -0.02068252658847804,
     "net_revision_vs_sep_pp": null
   },
   "market_pricing": {
     "treasury": {
       "as_of": "2026-06-01",
       "rates": {
-        "6m": 3.91,
-        "1y": 3.98,
-        "2y": 4.2
+        "6m": 3.92,
+        "1y": 4.0,
+        "2y": 4.19
       },
       "implied_cuts": {
         "6m": 0.0,
@@ -110,7 +110,7 @@
   },
   "policy_gap": {
     "raw_spot_vs_ff_pp": 1.0357333615772513,
-    "adjusted_spot_vs_ff_pp": 1.0755846756714469,
+    "adjusted_spot_vs_ff_pp": 1.0456326689393487,
     "raw_forward_vs_ff_pp": null,
     "adjusted_forward_vs_ff_pp": null
   }
