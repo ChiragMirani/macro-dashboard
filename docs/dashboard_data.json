@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Monday, June 22, 2026 09:04 AM ET",
-  "generated_at_iso": "2026-06-22T09:04:07.983414-04:00",
+  "generated_at_et": "Monday, June 22, 2026 02:28 PM ET",
+  "generated_at_iso": "2026-06-22T14:28:53.704212-04:00",
   "current_day": "Monday",
   "current_date": "June 22, 2026",
-  "current_time": "09:04 AM ET",
+  "current_time": "02:28 PM ET",
   "next_event": {
     "key": "weekly_claims",
     "label": "Weekly Claims",
@@ -14,10 +14,10 @@
     "release_date": "June 25, 2026",
     "release_time": "8:30 AM ET",
     "release_iso": "2026-06-25T08:30:00-04:00",
-    "hours_until_release": 71,
+    "hours_until_release": 66,
     "schedule_source": "weekly_rule",
     "house_forecast": "225,130",
-    "kalshi_consensus": "358,650",
+    "kalshi_consensus": "344,400",
     "last_release": "Week ending May 09, 2026: 211,000",
     "risk": "high",
     "status": "review",
@@ -27,13 +27,13 @@
     "release_source_url": "https://www.dol.gov/ui/data.pdf",
     "consensus_review": {
       "required": true,
-      "gap_value": -133520.0397768843,
-      "gap_display": "-133,520",
+      "gap_value": -119270.03977688431,
+      "gap_display": "-119,270",
       "threshold": 10000.0,
       "threshold_display": "10,000",
       "house_side": "below Kalshi",
       "label": "Review required",
-      "message": "Weekly Claims house forecast is -133,520 below Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
+      "message": "Weekly Claims house forecast is -119,270 below Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
       "news_query": "Week ending June 20, 2026 jobless claims forecast seasonal adjustment",
       "news_search_url": "https://news.google.com/search?q=Week+ending+June+20%2C+2026+jobless+claims+forecast+seasonal+adjustment",
       "official_guidance": [
@@ -47,14 +47,14 @@
       "guidance_hit_count": 0,
       "news_headlines": [
         {
-          "title": "US weekly jobless claims stay elevated amid seasonal volatility, but labor market stable - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOWnJMZVpiOFFrNFFWSENFWFg1aGlmVl9jLXVidW1fLVJuRWgxYnFHMlVTd200WGdIVXJyVGwwNEduMlQ1SFJEQkVWVGJGOWlJX2xJVkZ1ZVlIbVFkd01xVmJEUmN3SWhDZGJtLUF0SzNHNGZNSGhXbzk4TzN0WmdpWVVyUm90V3BkckpaQVhkaUNOM1h5aXc?oc=5",
-          "published": "Thu, 18 Jun 2026 16:32:06 GMT"
-        },
-        {
           "title": "Initial Unemployment Claims Down 4K, Higher Than Expected - Advisor Perspectives",
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOS1pvc21nSjJXcFFUUmN0YnYtMWh5NmhJRVpJN25ERE1jRmppYWlGcHdrbXBzS3Z6c3ZqLTdvdXBVRGdZeHFoc0RHUlo0bzFmVjlXOXRCNHktUHV1b2RVblk2VVFlcERZWThuRUluSTdIWnctNVF6ZDVYd1J0eHF3c2I0bkpQdGlq?oc=5",
           "published": "Thu, 18 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Weekly jobless claims remain elevated as hiring slows - Honolulu Star-Advertiser",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNjBFM0NHYms0SDlSUmJTWWRoSGJpbWJpclJaRi1aWHZsNDJTbEJtMU0zbUc5dGR2SHhQR3Z5SXV0Zks2MEs5dkN4WDNaQVRZbkNiZHJrLVhPNWIzdHc3bGZUOVBpWG52YzFLMC1VRUlJcm40ZEw2NmdLSklGWWpGajlEWGNPZUF2RFBXZ2dlTmFGYjRpMllNNnd1b2ZOZjlubk1sRDVsSl9HWmsxV0w0?oc=5",
+          "published": "Thu, 18 Jun 2026 19:20:36 GMT"
         },
         {
           "title": "Gold Prices Rise Slightly as Weekly Jobless Claims Match Forecasts | June 2026 - News and Statistics - IndexBox",
@@ -79,10 +79,10 @@
       "release_date": "June 25, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-25T08:30:00-04:00",
-      "hours_until_release": 71,
+      "hours_until_release": 66,
       "schedule_source": "weekly_rule",
       "house_forecast": "225,130",
-      "kalshi_consensus": "358,650",
+      "kalshi_consensus": "344,400",
       "last_release": "Week ending May 09, 2026: 211,000",
       "risk": "high",
       "status": "review",
@@ -92,13 +92,13 @@
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "consensus_review": {
         "required": true,
-        "gap_value": -133520.0397768843,
-        "gap_display": "-133,520",
+        "gap_value": -119270.03977688431,
+        "gap_display": "-119,270",
         "threshold": 10000.0,
         "threshold_display": "10,000",
         "house_side": "below Kalshi",
         "label": "Review required",
-        "message": "Weekly Claims house forecast is -133,520 below Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
+        "message": "Weekly Claims house forecast is -119,270 below Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
         "news_query": "Week ending June 20, 2026 jobless claims forecast seasonal adjustment",
         "news_search_url": "https://news.google.com/search?q=Week+ending+June+20%2C+2026+jobless+claims+forecast+seasonal+adjustment",
         "official_guidance": [
@@ -112,14 +112,14 @@
         "guidance_hit_count": 0,
         "news_headlines": [
           {
-            "title": "US weekly jobless claims stay elevated amid seasonal volatility, but labor market stable - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOWnJMZVpiOFFrNFFWSENFWFg1aGlmVl9jLXVidW1fLVJuRWgxYnFHMlVTd200WGdIVXJyVGwwNEduMlQ1SFJEQkVWVGJGOWlJX2xJVkZ1ZVlIbVFkd01xVmJEUmN3SWhDZGJtLUF0SzNHNGZNSGhXbzk4TzN0WmdpWVVyUm90V3BkckpaQVhkaUNOM1h5aXc?oc=5",
-            "published": "Thu, 18 Jun 2026 16:32:06 GMT"
-          },
-          {
             "title": "Initial Unemployment Claims Down 4K, Higher Than Expected - Advisor Perspectives",
             "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOS1pvc21nSjJXcFFUUmN0YnYtMWh5NmhJRVpJN25ERE1jRmppYWlGcHdrbXBzS3Z6c3ZqLTdvdXBVRGdZeHFoc0RHUlo0bzFmVjlXOXRCNHktUHV1b2RVblk2VVFlcERZWThuRUluSTdIWnctNVF6ZDVYd1J0eHF3c2I0bkpQdGlq?oc=5",
             "published": "Thu, 18 Jun 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Weekly jobless claims remain elevated as hiring slows - Honolulu Star-Advertiser",
+            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNjBFM0NHYms0SDlSUmJTWWRoSGJpbWJpclJaRi1aWHZsNDJTbEJtMU0zbUc5dGR2SHhQR3Z5SXV0Zks2MEs5dkN4WDNaQVRZbkNiZHJrLVhPNWIzdHc3bGZUOVBpWG52YzFLMC1VRUlJcm40ZEw2NmdLSklGWWpGajlEWGNPZUF2RFBXZ2dlTmFGYjRpMllNNnd1b2ZOZjlubk1sRDVsSl9HWmsxV0w0?oc=5",
+            "published": "Thu, 18 Jun 2026 19:20:36 GMT"
           },
           {
             "title": "Gold Prices Rise Slightly as Weekly Jobless Claims Match Forecasts | June 2026 - News and Statistics - IndexBox",
@@ -143,7 +143,7 @@
       "release_date": "June 26, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-06-26T08:30:00-04:00",
-      "hours_until_release": 95,
+      "hours_until_release": 90,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "0.352% m/m | 3.42% y/y",
       "kalshi_consensus": "0.275% m/m",
@@ -156,13 +156,13 @@
       "release_source_url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
       "consensus_review": {
         "required": true,
-        "gap_value": 0.07789999999999997,
-        "gap_display": "+0.078 pp",
+        "gap_value": 0.07715,
+        "gap_display": "+0.077 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "above Kalshi",
         "label": "Review required",
-        "message": "Core PCE house forecast is +0.078 pp above Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
+        "message": "Core PCE house forecast is +0.077 pp above Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
         "news_query": "May 2026 core PCE forecast BEA adjustment inflation",
         "news_search_url": "https://news.google.com/search?q=May+2026+core+PCE+forecast+BEA+adjustment+inflation",
         "official_guidance": [
@@ -209,7 +209,7 @@
       "release_date": "July 01, 2026",
       "release_time": "8:15 AM ET",
       "release_iso": "2026-07-01T08:15:00-04:00",
-      "hours_until_release": 215,
+      "hours_until_release": 209,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "200k",
       "kalshi_consensus": "80k",
@@ -235,8 +235,8 @@
         "guidance_hit_count": 0,
         "news_headlines": [
           {
-            "title": "What\u2019s happening this week in economics? - Deloitte",
-            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcV9VYnV0R0RPcWN0d2g1SHJIVlNmaVA1TV9nXzRKdVlFcWtSMjQ1T1B0djE4dDNRanZvSVFGX0ZBNUd6cnZkVnAtenFuMnFzdU9zYzg5cFdkTVRxU1F5YVVXVFhVWGdhd2RsTDBkNS1Xcm9ub1FnMFp5NnB3WVBYa3JJa1FVbG5IT0ZRRHphTUhtNThkenVJS1ZrdWNDdw?oc=5",
+            "title": "Monthly Retail Trade - Sales Report - Census.gov",
+            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBTZ0xCM0k1TjhISk1PSHVjZmNkRkluTlhWVXFXTzRXWEY5ek02S0ZKT3NBbzgtNVVPdmN5ZDc1ZzQ5QzBjd0lOUW50RmxRVnlfUnc?oc=5",
             "published": "Wed, 17 Jun 2026 07:00:00 GMT"
           },
           {
@@ -245,14 +245,14 @@
             "published": "Thu, 11 Jun 2026 07:00:00 GMT"
           },
           {
+            "title": "What\u2019s happening this week in economics? - Deloitte",
+            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcV9VYnV0R0RPcWN0d2g1SHJIVlNmaVA1TV9nXzRKdVlFcWtSMjQ1T1B0djE4dDNRanZvSVFGX0ZBNUd6cnZkVnAtenFuMnFzdU9zYzg5cFdkTVRxU1F5YVVXVFhVWGdhd2RsTDBkNS1Xcm9ub1FnMFp5NnB3WVBYa3JJa1FVbG5IT0ZRRHphTUhtNThkenVJS1ZrdWNDdw?oc=5",
+            "published": "Wed, 17 Jun 2026 07:00:00 GMT"
+          },
+          {
             "title": "United States Housing Starts - Trading Economics",
             "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBnaUdsN0FOaDJULXU3WHFOem1jbERyNjkzeXphNGZrd2ZyU3k0VHBPNUtUMHlUZHpSb0FWODF0MDdtWFkyU0tlaVBsSlJIdU1pZ0dRWGZwMzNMN2NBTnE3R1Nvd194TDVI?oc=5",
             "published": "Tue, 16 Jun 2026 07:00:00 GMT"
-          },
-          {
-            "title": "GDPNow - Atlanta - Federal Reserve Bank",
-            "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE03N0V5YmZFQ2VfdWtTaE9hY0VzNkxrVTRWc09LeG56RzlnMmtlbUpUdFR1czg3Zm9pWjVFWS1LUHo0NVI4cVlBb3F4bHZrcko3RjZuYzJJcEpTZVlhMVllUzRJRWdxdnM?oc=5",
-            "published": "Sun, 08 Feb 2026 14:47:07 GMT"
           }
         ]
       }
@@ -266,59 +266,24 @@
       "release_date": "July 02, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-07-02T08:30:00-04:00",
-      "hours_until_release": 239,
+      "hours_until_release": 234,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "93k",
-      "kalshi_consensus": "141k",
+      "kalshi_consensus": "99k",
       "last_release": "May 2026: 172k",
       "risk": "normal surprise risk",
-      "status": "review",
+      "status": "live",
       "notes": "Latest BLS actual: May 2026: 172k. NFP surprise model already uses weekly claims features, so the forecast can refresh as claims move.",
       "model_source": "macro_forecasting/output/nfp_surprise_latest.json",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26jun",
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
-        "required": true,
-        "gap_value": -47.54162292480467,
-        "gap_display": "-48k",
+        "required": false,
+        "gap_value": -5.729122924804699,
+        "gap_display": "-6k",
         "threshold": 40.0,
         "threshold_display": "40k",
-        "house_side": "below Kalshi",
-        "label": "Review required",
-        "message": "NFP house forecast is -48k below Kalshi; threshold is 40k. Check official guidance and news before using the forecast.",
-        "news_query": "June 2026 jobs report BLS forecast adjustment survey",
-        "news_search_url": "https://news.google.com/search?q=June+2026+jobs+report+BLS+forecast+adjustment+survey",
-        "official_guidance": [
-          {
-            "label": "BLS Employment Situation latest release",
-            "url": "https://www.bls.gov/news.release/empsit.toc.htm",
-            "status": "unavailable",
-            "hits": []
-          }
-        ],
-        "guidance_hit_count": 0,
-        "news_headlines": [
-          {
-            "title": "What You Should Know About the Jobs Report - U.S. Government Accountability Office (.gov)",
-            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAzTnJfYU9zS1EyZ01scjRBNjl5R0JuMEZvQ1kyeG9pNlZ6SFNiS3loczhPN05yVHQtTzc1WVktYWxrMUlRMUNDUTJuQzVjSEFKVVR5WjdEb3RLOXc3bVFJbkNMemd3MUdwQjVlYzVoLTE?oc=5",
-            "published": "Tue, 02 Jun 2026 07:00:00 GMT"
-          },
-          {
-            "title": "May\u2019s Headline Jobs Numbers Mask Underlying Labor Market Slack - Center for American Progress",
-            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSXhjOEZUWGNhTTdJSGJ5ZHpEaVZJN0kxWmIzMFYwUk82R1A5aUNTem8td29FSEFVdWFyemFwWVExXzU1WE01M1VTaWdRd0JvRnRPd1F1U0RCUWNQaEhzV2hGeUlwcjZrSVVYYURYVVJwVUNpcTJBSGYxT0x2TXZzbUJVWERHd0VHcmZTaDdYUkZtZ1VHa1ZDblBNT1lWMFEwSVRHT2xR?oc=5",
-            "published": "Fri, 05 Jun 2026 07:00:00 GMT"
-          },
-          {
-            "title": "U.S. payrolls rose by 172,000 in May, much more than expected; unemployment at 4.3% - CNBC",
-            "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1GcU53MmVDeWEzOERLdGp6aWRFMzdLcmJDOTIyOUxLcWNmZUMwMktKUFFuYnA2d2ctUUs4d0w0YjhMbkZZbnJBRDZYUUpaQko1Tm8yWkRMTjcyd3lhVE90NnFHdGtjVWxM0gFuQVVfeXFMT2hWVGJYR0kzSnNEMzNtMVBtN0xwYTBRWEFxZ21Bd1V5bUFHRnREOV9fQnFQNElHNlhWeW9neGFzZG5XdDU0TVBSQTh3SXBjNkMyeUowZFUza1hqZEtDcHBBUmFWRVh2YVZrUkNHU2c?oc=5",
-            "published": "Fri, 05 Jun 2026 07:00:00 GMT"
-          },
-          {
-            "title": "U.S. Bureau of Labor Statistics (BLS) - Britannica",
-            "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5kVndjZF9jTTB2UnRXNnN5TVhrRUJZaDNfVWlyX1FuTWFJYmQtWDJZXzNka1c2RjdCTGtXYVF4NUFLbWtxSUhsRWFadHhJbE5vWEtFeUN5T1hmbXJfSjloTGtLRV9TMGt4a2w0?oc=5",
-            "published": "Mon, 15 Jun 2026 07:00:00 GMT"
-          }
-        ]
+        "house_side": "below Kalshi"
       }
     },
     {
@@ -330,10 +295,10 @@
       "release_date": "July 02, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-07-02T08:30:00-04:00",
-      "hours_until_release": 239,
+      "hours_until_release": 234,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "4.30%",
-      "kalshi_consensus": "4.37%",
+      "kalshi_consensus": "4.38%",
       "last_release": "May 2026: 4.30%",
       "risk": "elevated surprise risk",
       "status": "review",
@@ -343,13 +308,13 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": true,
-        "gap_value": -0.07281553398058094,
-        "gap_display": "-0.073 pp",
+        "gap_value": -0.07647058823529385,
+        "gap_display": "-0.076 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "below Kalshi",
         "label": "Review required",
-        "message": "Unemployment Rate house forecast is -0.073 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
+        "message": "Unemployment Rate house forecast is -0.076 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
         "news_query": "June 2026 jobs report BLS forecast adjustment survey",
         "news_search_url": "https://news.google.com/search?q=June+2026+jobs+report+BLS+forecast+adjustment+survey",
         "official_guidance": [
@@ -363,14 +328,14 @@
         "guidance_hit_count": 0,
         "news_headlines": [
           {
-            "title": "What You Should Know About the Jobs Report - U.S. Government Accountability Office (.gov)",
-            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAzTnJfYU9zS1EyZ01scjRBNjl5R0JuMEZvQ1kyeG9pNlZ6SFNiS3loczhPN05yVHQtTzc1WVktYWxrMUlRMUNDUTJuQzVjSEFKVVR5WjdEb3RLOXc3bVFJbkNMemd3MUdwQjVlYzVoLTE?oc=5",
-            "published": "Tue, 02 Jun 2026 07:00:00 GMT"
-          },
-          {
             "title": "May\u2019s Headline Jobs Numbers Mask Underlying Labor Market Slack - Center for American Progress",
             "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSXhjOEZUWGNhTTdJSGJ5ZHpEaVZJN0kxWmIzMFYwUk82R1A5aUNTem8td29FSEFVdWFyemFwWVExXzU1WE01M1VTaWdRd0JvRnRPd1F1U0RCUWNQaEhzV2hGeUlwcjZrSVVYYURYVVJwVUNpcTJBSGYxT0x2TXZzbUJVWERHd0VHcmZTaDdYUkZtZ1VHa1ZDblBNT1lWMFEwSVRHT2xR?oc=5",
             "published": "Fri, 05 Jun 2026 07:00:00 GMT"
+          },
+          {
+            "title": "What You Should Know About the Jobs Report - U.S. Government Accountability Office (.gov)",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAzTnJfYU9zS1EyZ01scjRBNjl5R0JuMEZvQ1kyeG9pNlZ6SFNiS3loczhPN05yVHQtTzc1WVktYWxrMUlRMUNDUTJuQzVjSEFKVVR5WjdEb3RLOXc3bVFJbkNMemd3MUdwQjVlYzVoLTE?oc=5",
+            "published": "Tue, 02 Jun 2026 07:00:00 GMT"
           },
           {
             "title": "U.S. payrolls rose by 172,000 in May, much more than expected; unemployment at 4.3% - CNBC",
@@ -394,10 +359,10 @@
       "release_date": "July 15, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-07-15T08:30:00-04:00",
-      "hours_until_release": 551,
+      "hours_until_release": 546,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "0.221% m/m | 2.81% y/y",
-      "kalshi_consensus": "0.184% m/m | 3.44% y/y",
+      "kalshi_consensus": "0.184% m/m | 3.48% y/y",
       "last_release": "May 2026: 0.208% m/m, 2.82% y/y",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -11313,8 +11278,8 @@
   },
   "summary": {
     "event_count": 6,
-    "live_count": 1,
+    "live_count": 2,
     "partial_count": 0,
-    "review_count": 5
+    "review_count": 4
   }
 }

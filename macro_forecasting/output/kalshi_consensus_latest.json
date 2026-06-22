@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-06-22T13:04:07.501736+00:00",
+  "generated_at_utc": "2026-06-22T18:28:53.139023+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26JUN25",
       "kind": "threshold",
       "market_count": 10,
-      "implied_value": 358650.0,
-      "consensus_label": "358,650",
+      "implied_value": 344400.0,
+      "consensus_label": "344,400",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26jun25",
       "title": "Initial jobless claims for the week ending June 20, 2026"
     },
@@ -36,8 +36,8 @@
       "event_ticker": "KXCPICOREYOY-26JUN",
       "kind": "threshold",
       "market_count": 15,
-      "implied_value": 3.444,
-      "consensus_label": "3.44% y/y",
+      "implied_value": 3.478249999999999,
+      "consensus_label": "3.48% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26jun",
       "title": "Core inflation in June 2026 (Core CPI YoY)"
     },
@@ -46,8 +46,8 @@
       "event_ticker": "KXPAYROLLS-26JUN",
       "kind": "threshold",
       "market_count": 15,
-      "implied_value": 140.79999999999998,
-      "consensus_label": "141k",
+      "implied_value": 98.98750000000001,
+      "consensus_label": "99k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26jun",
       "title": "Jobs numbers in June 2026?"
     },
@@ -56,8 +56,8 @@
       "event_ticker": "KXECONSTATU3-26JUN",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.372815533980581,
-      "consensus_label": "4.37%",
+      "implied_value": 4.376470588235294,
+      "consensus_label": "4.38%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26jun",
       "title": "Unemployment rate in Jun 2026?"
     },
@@ -66,7 +66,7 @@
       "event_ticker": "KXPCECORE-26JUN",
       "kind": "threshold",
       "market_count": 5,
-      "implied_value": 0.2745,
+      "implied_value": 0.27525,
       "consensus_label": "0.275% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxpcecore-26jun",
       "title": "How much will core PCE increase in Jun 2026?"
