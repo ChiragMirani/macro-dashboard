@@ -190,6 +190,7 @@
       </script>
 
       <footer class="site-foot">
+        <p><strong>Data sources:</strong> {{ payload.unique_data_sources | join("; ") }}.</p>
         <p>Models are proprietary. Reach out for details or consultation on methodology, backtests, and model output.</p>
         <p class="muted">Built and maintained solo by Chirag Mirani. <a href="https://github.com/ChiragMirani/macro-dashboard" target="_blank" rel="noopener">Source on GitHub</a>.</p>
       </footer>

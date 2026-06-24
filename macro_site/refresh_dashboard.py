@@ -133,6 +133,16 @@ CPI_VOLATILE_LABELS = {
     "Used cars SA",
     "Apparel CPI",
 }
+UNIQUE_DATA_SOURCES = [
+    "BLS (CPI, PPI, Employment Situation/CES/CPS)",
+    "BEA PCE data and methodology",
+    "DOL weekly jobless claims",
+    "ADP National Employment Report",
+    "FRED economic data",
+    "Kalshi prediction markets",
+    "Internal forecast models and snapshots",
+    "Client-specific datasets where available",
+]
 BRIDGE_WEDGE_ORDER = [
     ("total", "Total bridge wedge", "Implied Core PCE less Core CPI"),
     ("shelter", "Shelter re-weighting", "Lower PCE shelter weight than CPI"),
@@ -2285,6 +2295,7 @@ def build_payload(now_et: datetime) -> dict[str, Any]:
         "current_time": now_et.strftime("%I:%M %p ET"),
         "next_event": next_event,
         "events": serialized,
+        "unique_data_sources": UNIQUE_DATA_SOURCES,
         "nfp_breakdown": build_nfp_breakdown(now_et),
         "cpi_detail": build_cpi_detail(now_et),
         "cpi_pce_bridge": build_cpi_pce_bridge(now_et),
@@ -2305,6 +2316,10 @@ def _render_llms_txt(payload: dict[str, Any]) -> str:
         "",
         f"Updated: {payload['generated_at_et']}",
         f"Machine-readable feed: {SITE_URL}dashboard_data.json",
+        "",
+        "## Data sources",
+        "",
+        "; ".join(payload.get("unique_data_sources") or UNIQUE_DATA_SOURCES),
         "",
         "## Tracked releases",
         "",
