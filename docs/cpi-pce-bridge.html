@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CPI/PCE Bridge | Macro Forecast Schedule by Chirag Mirani</title>
+    <meta name="description" content="Core PCE bridge from CPI and PPI components, including CPI-to-PCE wedge decomposition, component weights, and expected Core PCE y/y.">
+    <meta name="author" content="Chirag Mirani">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://chiragmirani.github.io/macro-dashboard/cpi-pce-bridge.html">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#0a1628">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CPI/PCE Bridge">
+    <meta property="og:description" content="Core PCE bridge from CPI and PPI components with wedge decomposition and component contribution detail.">
+    <meta property="og:url" content="https://chiragmirani.github.io/macro-dashboard/cpi-pce-bridge.html">
+    <meta property="og:site_name" content="Chirag Mirani Macro Dashboard">
+    <meta property="og:image" content="https://chiragmirani.github.io/macro-dashboard/social-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CPI/PCE Bridge">
+    <meta name="twitter:description" content="Core PCE bridge from CPI and PPI components with wedge decomposition and component contribution detail.">
+    <meta name="twitter:image" content="https://chiragmirani.github.io/macro-dashboard/social-preview.png">
+    <link rel="stylesheet" href="static/styles.css">
+  </head>
+  <body>
+    <main>
+      <nav class="topnav">
+        <a href="./">Forecasts</a>
+        <a href="cpi.html">CPI detail</a>
+        <a href="cpi-pce-bridge.html" class="active">CPI/PCE bridge</a>
+        <a href="nfp.html">NFP breakdown</a>
+        <a href="track-record.html">Track record</a>
+      </nav>
+
+      <section class="bridge-section" aria-labelledby="bridge-title">
+        <div class="nfp-breakdown-hero bridge-hero">
+          <div>
+            <p class="eyebrow">Core PCE bridge &middot; May 2026 &middot; Updated Wednesday, June 24, 2026 11:46 AM ET</p>
+            <h1 id="bridge-title">CPI/PCE Bridge</h1>
+            <p>Best current bridge estimate from CPI and PPI component data. It re-weights CPI components to PCE scope, adds PCE-only PPI proxies, applies the Fisher formula adjustment, and projects Core PCE y/y from the PCE price index.</p>
+          </div>
+          <div class="nfp-headline-stat bridge-headline-stat">
+            <span>Bridge Core PCE m/m</span>
+            <strong class="bridge-hot">0.352%</strong>
+            <small>35.2 bps &middot; annualized 4.23%</small>
+          </div>
+        </div>
+
+        <div class="nfp-stat-grid bridge-stat-grid">
+          <div class="nfp-stat-card">
+            <span>Bridge Core PCE m/m</span>
+            <strong class="bridge-hot">0.352%</strong>
+            <small>35.2 bps, annualized 4.23%</small>
+          </div>
+          <div class="nfp-stat-card">
+            <span>Core CPI input</span>
+            <strong class="bridge-hot">0.208%</strong>
+            <small>2.96% y/y</small>
+          </div>
+          <div class="nfp-stat-card">
+            <span>CPI/PCE wedge</span>
+            <strong class="bridge-hot">+14.4 bps</strong>
+            <small>implied Core PCE less Core CPI</small>
+          </div>
+          <div class="nfp-stat-card">
+            <span>Expected Core PCE y/y</span>
+            <strong class="bridge-hot">3.42%</strong>
+            <small>FRED API</small>
+          </div>
+        </div>
+
+        <div class="cpi-insight-grid bridge-insight-grid">
+          <div class="cpi-insight-card">
+            <span>Largest upward wedge</span>
+            <strong class="bridge-hot">+32.5 bps</strong>
+            <small>Financial services</small>
+          </div>
+          <div class="cpi-insight-card">
+            <span>Largest downward wedge</span>
+            <strong class="bridge-cool">-7.7 bps</strong>
+            <small>Shelter re-weighting</small>
+          </div>
+          <div class="cpi-insight-card">
+            <span>Kalshi m/m event</span>
+            <strong>KXPCECORE-26MAY</strong>
+            <small>No live expected value captured for this event.</small>
+          </div>
+        </div>
+
+        <div class="bridge-panel">
+          <div class="bridge-panel-title">
+            <div>
+              <span class="summary-label">Waterfall</span>
+              <h2>CPI-to-PCE Wedge</h2>
+            </div>
+            <p>Positive values make implied Core PCE hotter than Core CPI; negative values cool it versus CPI.</p>
+          </div>
+          <div class="bridge-waterfall">
+            <div class="bridge-waterfall-row bridge-waterfall-row-total">
+              <div>
+                <strong>Total bridge wedge</strong>
+                <span>Implied Core PCE less Core CPI</span>
+              </div>
+              <strong class="bridge-hot">+14.4 bps</strong>
+            </div>
+            <div class="bridge-waterfall-row">
+              <div>
+                <strong>Shelter re-weighting</strong>
+                <span>Lower PCE shelter weight than CPI</span>
+              </div>
+              <strong class="bridge-cool">-7.7 bps</strong>
+            </div>
+            <div class="bridge-waterfall-row">
+              <div>
+                <strong>Medical scope and weight</strong>
+                <span>Out-of-pocket CPI plus PPI medical proxies</span>
+              </div>
+              <strong class="bridge-cool">-1.1 bps</strong>
+            </div>
+            <div class="bridge-waterfall-row">
+              <div>
+                <strong>Financial services</strong>
+                <span>PCE-only portfolio, banking, and insurance proxies</span>
+              </div>
+              <strong class="bridge-hot">+32.5 bps</strong>
+            </div>
+            <div class="bridge-waterfall-row">
+              <div>
+                <strong>Airfare scope swap</strong>
+                <span>CPI airfares replaced with PPI airline services</span>
+              </div>
+              <strong class="bridge-cool">-1.3 bps</strong>
+            </div>
+            <div class="bridge-waterfall-row">
+              <div>
+                <strong>Food services</strong>
+                <span>Food away from home is inside Core PCE</span>
+              </div>
+              <strong class="bridge-hot">+2.0 bps</strong>
+            </div>
+            <div class="bridge-waterfall-row">
+              <div>
+                <strong>Formula effect</strong>
+                <span>Fisher chain-weighted PCE versus fixed-weight CPI</span>
+              </div>
+              <strong class="bridge-cool">-3.0 bps</strong>
+            </div>
+            <div class="bridge-waterfall-row">
+              <div>
+                <strong>Other residual mapping</strong>
+                <span>Remaining non-shelter, non-medical bridge items</span>
+              </div>
+              <strong class="bridge-cool">-4.3 bps</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="bridge-table-panel">
+          <div class="bridge-table-head">
+            <span>Component</span>
+            <span>Source</span>
+            <span>m/m</span>
+            <span>CPI wt</span>
+            <span>PCE wt</span>
+            <span>CPI contrib</span>
+            <span>PCE contrib</span>
+            <span>Wedge</span>
+          </div>
+          <div class="bridge-table-row">
+            <div class="nfp-sector-name">
+              <strong>Rent</strong>
+              <span>shelter</span>
+            </div>
+            <div data-label="Source">CPI</div>
+            <div data-label="m/m">0.362%</div>
+            <div data-label="CPI wt">9.67%</div>
+            <div data-label="PCE wt">4.50%</div>
+            <div data-label="CPI contrib">3.5 bps</div>
+            <div data-label="PCE contrib">1.6 bps</div>
+            <div data-label="Wedge"><span class="bridge-cool">-1.9 bps</span></div>
+          </div>
+          <div class="bridge-table-row">
+            <div class="nfp-sector-name">
+              <strong>OER</strong>
+              <span>shelter</span>
+            </div>
+            <div data-label="Source">CPI</div>
+            <div data-label="m/m">0.297%</div>
+            <div data-label="CPI wt">32.98%</div>
+            <div data-label="PCE wt">13.50%</div>
+            <div data-label="CPI contrib">9.8 bps</div>
+            <div data-label="PCE contrib">4.0 bps</div>
+            <div data-label="Wedge"><span class="bridge-cool">-5.8 bps</span></div>
+          </div>
+          <div class="bridge-table-row">
+            <div class="nfp-sector-name">
+              <strong>Lodging</strong>
+              <span>shelter</span>
+            </div>
+            <div data-label="Source">CPI</div>
+            <div data-label="m/m">0.418%</div>
+            <div data-label="CPI wt">1.16%</div>
+            <div data-label="PCE wt">1.00%</div>
+            <div data-label="CPI contrib">0.5 bps</div>
+            <div data-label="PCE contrib">0.4 bps</div>
+            <div data-label="Wedge"><span class="bridge-cool">-0.1 bps</span></div>
+          </div>
+          <div class="bridge-table-row">
+            <div class="nfp-sector-name">
+              <strong>Used Cars</strong>
+              <span>goods</span>
+            </div>
+            <div data-label="Source">CPI</div>
+            <div data-label="m/m">0.102%</div>
+            <div data-label="CPI wt">3.63%</div>
+            <div data-label="PCE wt">3.20%</div>
+            <div data-label="CPI contrib">0.4 bps</div>
+            <div data-label="PCE contrib">0.3 bps</div>
+            <div data-label="Wedge"><span class="bridge-cool">-0.1 bps</span></div>
+          </div>
+          <div class="bridge-table-row">
+            <div class="nfp-sector-name">
+              <strong>New Vehicles</strong>
+              <span>goods</span>
+            </div>
+            <div data-label="Source">CPI</div>
+            <div data-label="m/m">-0.258%</div>
+            <div data-label="CPI wt">4.92%</div>
+            <div data-label="PCE wt">4.20%</div>
+            <div data-label="CPI contrib">-1.3 bps</div>
+            <div data-label="PCE contrib">-1.1 bps</div>
+            <div data-label="Wedge"><span class="bridge-hot">+0.2 bps</span></div>
+          </div>
+          <div class="bridge-table-row">
+            <div class="nfp-sector-name">
+              <strong>Med Svcs OOP</strong>
+              <span>medical oop</span>
+            </div>
+            <div data-label="Source">CPI</div>
+            <div data-label="m/m">0.528%</div>
+            <div data-label="CPI wt">8.95%</div>
+            <div data-label="PCE wt">4.80%</div>
+            <div data-label="CPI contrib">4.7 bps</div>
+            <div data-label="PCE contrib">2.5 bps</div>
+            <div data-label="Wedge"><span class="bridge-cool">-2.2 bps</span></div>
+          </div>
+          <div class="bridge-table-row">
+            <div class="nfp-sector-name">
+              <strong>Med Goods OOP</strong>
+              <span>medical oop</span>
+            </div>
+            <div data-label="Source">CPI</div>
+            <div data-label="m/m">-0.712%</div>
+            <div data-label="CPI wt">2.03%</div>
+            <div data-label="PCE wt">1.50%</div>
+            <div data-label="CPI contrib">-1.4 bps</div>
+            <div data-label="PCE contrib">-1.1 bps</div>
+            <div data-label="Wedge"><span class="bridge-hot">+0.3 bps</span></div>
+          </div>
+          <div class="bridge-table-row">
+            <div class="nfp-sector-name">
+              <strong>Apparel</strong>
+              <span>goods</span>
+            </div>
+            <div data-label="Source">CPI</div>
+            <div data-label="m/m">0.292%</div>
+            <div data-label="CPI wt">3.91%</div>
+            <div data-label="PCE wt">3.00%</div>
+            <div data-label="CPI contrib">1.1 bps</div>
+            <div data-label="PCE contrib">0.9 bps</div>
+            <div data-label="Wedge"><span class="bridge-cool">-0.2 bps</span></div>
+          </div>
+          <div class="bridge-table-row">
+            <div class="nfp-sector-name">
+              <strong>Recreation</strong>
+              <span>services</span>
+            </div>
+            <div data-label="Source">CPI</div>
+            <div data-label="m/m">0.287%</div>
+            <div data-label="CPI wt">7.19%</div>
+            <div data-label="PCE wt">5.00%</div>
+            <div data-label="CPI contrib">2.1 bps</div>
+            <div data-label="PCE contrib">1.4 bps</div>
+            <div data-label="Wedge"><span class="bridge-cool">-0.7 bps</span></div>
+          </div>
+          <div class="bridge-table-row">
+            <div class="nfp-sector-name">
+              <strong>Edu/Comm</strong>
+              <span>services</span>
+            </div>
+            <div data-label="Source">CPI</div>
+            <div data-label="m/m">0.752%</div>
+            <div data-label="CPI wt">7.95%</div>
+            <div data-label="PCE wt">5.50%</div>
+            <div data-label="CPI contrib">6.0 bps</div>
+            <div data-label="PCE contrib">4.1 bps</div>
+            <div data-label="Wedge"><span class="bridge-cool">-1.9 bps</span></div>
+          </div>
+          <div class="bridge-table-row">
+            <div class="nfp-sector-name">
+              <strong>Airfares CPI</strong>
+              <span>transport</span>
+            </div>
+            <div data-label="Source">CPI</div>
+            <div data-label="m/m">2.69%</div>
+            <div data-label="CPI wt">0.83%</div>
+            <div data-label="PCE wt">-</div>
+            <div data-label="CPI contrib">2.2 bps</div>
+            <div data-label="PCE contrib">0.0 bps</div>
+            <div data-label="Wedge"><span class="bridge-cool">-2.2 bps</span></div>
+          </div>
+          <div class="bridge-table-row">
+            <div class="nfp-sector-name">
+              <strong>Food Svcs</strong>
+              <span>food services</span>
+            </div>
+            <div data-label="Source">CPI</div>
+            <div data-label="m/m">0.300%</div>
+            <div data-label="CPI wt">-</div>
+            <div data-label="PCE wt">6.50%</div>
+            <div data-label="CPI contrib">-</div>
+            <div data-label="PCE contrib">2.0 bps</div>
+            <div data-label="Wedge"><span class="bridge-hot">+2.0 bps</span></div>
+          </div>
+          <div class="bridge-table-row">
+            <div class="nfp-sector-name">
+              <strong>Hospitals</strong>
+              <span>medical nonoop &middot; WPU5111</span>
+            </div>
+            <div data-label="Source">PPI</div>
+            <div data-label="m/m">0.076%</div>
+            <div data-label="CPI wt">-</div>
+            <div data-label="PCE wt">6.00%</div>
+            <div data-label="CPI contrib">-</div>
+            <div data-label="PCE contrib">0.5 bps</div>
+            <div data-label="Wedge"><span class="bridge-hot">+0.5 bps</span></div>
+          </div>
+          <div class="bridge-table-row">
+            <div class="nfp-sector-name">
+              <strong>Physicians</strong>
+              <span>medical nonoop &middot; WPU511101</span>
+            </div>
+            <div data-label="Source">PPI</div>
+            <div data-label="m/m">0.048%</div>
+            <div data-label="CPI wt">-</div>
+            <div data-label="PCE wt">3.50%</div>
+            <div data-label="CPI contrib">-</div>
+            <div data-label="PCE contrib">0.2 bps</div>
+            <div data-label="Wedge"><span class="bridge-hot">+0.2 bps</span></div>
+          </div>
+          <div class="bridge-table-row">
+            <div class="nfp-sector-name">
+              <strong>Nursing</strong>
+              <span>medical nonoop &middot; PCU6231106231101</span>
+            </div>
+            <div data-label="Source">PPI</div>
+            <div data-label="m/m">0.046%</div>
+            <div data-label="CPI wt">-</div>
+            <div data-label="PCE wt">1.00%</div>
+            <div data-label="CPI contrib">-</div>
+            <div data-label="PCE contrib">0.0 bps</div>
+            <div data-label="Wedge"><span class="flat">+0.0 bps</span></div>
+          </div>
+          <div class="bridge-table-row">
+            <div class="nfp-sector-name">
+              <strong>Home Health</strong>
+              <span>medical nonoop &middot; PCU621610621610</span>
+            </div>
+            <div data-label="Source">PPI</div>
+            <div data-label="m/m">0.015%</div>
+            <div data-label="CPI wt">-</div>
+            <div data-label="PCE wt">0.50%</div>
+            <div data-label="CPI contrib">-</div>
+            <div data-label="PCE contrib">0.0 bps</div>
+            <div data-label="Wedge"><span class="flat">+0.0 bps</span></div>
+          </div>
+          <div class="bridge-table-row">
+            <div class="nfp-sector-name">
+              <strong>Portfolio Mgmt</strong>
+              <span>financial &middot; WPU402</span>
+            </div>
+            <div data-label="Source">PPI</div>
+            <div data-label="m/m">4.84%</div>
+            <div data-label="CPI wt">-</div>
+            <div data-label="PCE wt">4.50%</div>
+            <div data-label="CPI contrib">-</div>
+            <div data-label="PCE contrib">21.8 bps</div>
+            <div data-label="Wedge"><span class="bridge-hot">+21.8 bps</span></div>
+          </div>
+          <div class="bridge-table-row">
+            <div class="nfp-sector-name">
+              <strong>Banking</strong>
+              <span>financial &middot; WPU4011</span>
+            </div>
+            <div data-label="Source">PPI</div>
+            <div data-label="m/m">5.36%</div>
+            <div data-label="CPI wt">-</div>
+            <div data-label="PCE wt">2.00%</div>
+            <div data-label="CPI contrib">-</div>
+            <div data-label="PCE contrib">10.7 bps</div>
+            <div data-label="Wedge"><span class="bridge-hot">+10.7 bps</span></div>
+          </div>
+          <div class="bridge-table-row">
+            <div class="nfp-sector-name">
+              <strong>Insurance</strong>
+              <span>financial &middot; WPU4031</span>
+            </div>
+            <div data-label="Source">PPI</div>
+            <div data-label="m/m">0.000%</div>
+            <div data-label="CPI wt">-</div>
+            <div data-label="PCE wt">1.50%</div>
+            <div data-label="CPI contrib">-</div>
+            <div data-label="PCE contrib">0.0 bps</div>
+            <div data-label="Wedge"><span class="flat">+0.0 bps</span></div>
+          </div>
+          <div class="bridge-table-row">
+            <div class="nfp-sector-name">
+              <strong>Airlines PPI</strong>
+              <span>transport &middot; PCU481111481111</span>
+            </div>
+            <div data-label="Source">PPI</div>
+            <div data-label="m/m">1.12%</div>
+            <div data-label="CPI wt">-</div>
+            <div data-label="PCE wt">0.85%</div>
+            <div data-label="CPI contrib">-</div>
+            <div data-label="PCE contrib">1.0 bps</div>
+            <div data-label="Wedge"><span class="bridge-hot">+1.0 bps</span></div>
+          </div>
+        </div>
+
+        <div class="bridge-method-panel">
+          <div>
+            <span class="summary-label">Methodology</span>
+            <p>McCully, Moyer &amp; Stewart (2007), BEA NIPA Ch.5, BLS PCE-CPI Mapping. Formula effect: -3.0 bps.</p>
+          </div>
+          <div class="bridge-method-links">
+            <a href="https://www.bea.gov/help/faq/555" target="_blank" rel="noopener">BEA NIPA table guidance</a>
+            <a href="https://www.bls.gov/cpi/additional-resources/pce-cpi-code-mapping.htm" target="_blank" rel="noopener">BLS PCE-CPI mapping</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-foot">
+        <p>Source artifact: macro_forecasting\output\core_pce_bridge_latest.json. Model source: macro_forecasting/cpi_to_pce_bridge.py.</p>
+        <p class="muted"><a href="./">Back to forecasts</a>.</p>
+      </footer>
+    </main>
+  </body>
+</html>

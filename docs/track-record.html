@@ -22,6 +22,7 @@
       <nav class="topnav">
         <a href="./">Forecasts</a>
         <a href="cpi.html">CPI detail</a>
+        <a href="cpi-pce-bridge.html">CPI/PCE bridge</a>
         <a href="nfp.html">NFP breakdown</a>
         <a href="track-record.html" class="active">Track record</a>
       </nav>
@@ -41,7 +42,7 @@
 
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Created by Chirag Mirani &middot; Updated 2026-06-24 12:05:05 UTC</p>
+          <p class="eyebrow">Created by Chirag Mirani &middot; Updated 2026-06-24 15:47:06 UTC</p>
           <h1>Track record</h1>
           <p class="tr-blurb">House forecasts vs Kalshi consensus, settled against the actual print. Snapshots start June 24, 2026. No historical backfill. No cherry-picking.</p>
         </div>
@@ -50,25 +51,25 @@
       <section class="tr-summary">
         <div class="tr-card">
           <span class="summary-label">Settled / Pending</span>
-          <strong>10 / 7</strong>
+          <strong>12 / 5</strong>
         </div>
         <div class="tr-card">
           <span class="summary-label">House wins</span>
           <strong>5</strong>
-          <span class="muted">vs Kalshi 4 (ties 0)</span>
+          <span class="muted">vs Kalshi 6 (ties 0)</span>
         </div>
         <div class="tr-card">
           <span class="summary-label">Surprise-side hits</span>
-          <strong>6 / 9</strong>
-          <span class="muted">67% hit rate</span>
+          <strong>6 / 11</strong>
+          <span class="muted">55% hit rate</span>
         </div>
         <div class="tr-card">
           <span class="summary-label">House mean abs error</span>
-          <strong>1666.827</strong>
+          <strong>2646.439</strong>
         </div>
         <div class="tr-card">
           <span class="summary-label">Kalshi mean abs error</span>
-          <strong>1102.569</strong>
+          <strong>2033.920</strong>
         </div>
       </section>
 
@@ -97,7 +98,7 @@
                 <td data-label="Released">Jul 02, 2026</td>
                 <td data-label="House">93k</td>
                 <td data-label="Kalshi">
-<a href="https://kalshi.com/markets/kxpayrolls-26jun" target="_blank" rel="noopener">146k</a>                </td>
+<a href="https://kalshi.com/markets/kxpayrolls-26jun" target="_blank" rel="noopener">105k</a>                </td>
                 <td data-label="Actual">
 <span class="muted">pending</span>                </td>
                 <td data-label="Surprise side">
@@ -114,7 +115,7 @@
                 <td data-label="Released">Jul 02, 2026</td>
                 <td data-label="House">4.30%</td>
                 <td data-label="Kalshi">
-<a href="https://kalshi.com/markets/kxeconstatu3-26jun" target="_blank" rel="noopener">4.45%</a>                </td>
+<a href="https://kalshi.com/markets/kxeconstatu3-26jun" target="_blank" rel="noopener">4.38%</a>                </td>
                 <td data-label="Actual">
 <span class="muted">pending</span>                </td>
                 <td data-label="Surprise side">
@@ -131,7 +132,7 @@
                 <td data-label="Released">Jul 01, 2026</td>
                 <td data-label="House">200k</td>
                 <td data-label="Kalshi">
-<a href="https://kalshi.com/markets/kxadp-26jun" target="_blank" rel="noopener">84k</a>                </td>
+<a href="https://kalshi.com/markets/kxadp-26jun" target="_blank" rel="noopener">77k</a>                </td>
                 <td data-label="Actual">
 <span class="muted">pending</span>                </td>
                 <td data-label="Surprise side">
@@ -148,7 +149,7 @@
                 <td data-label="Released">Jun 26, 2026</td>
                 <td data-label="House">0.352% m/m | 3.42% y/y</td>
                 <td data-label="Kalshi">
-<a href="https://kalshi.com/markets/kxpcecore-26jun" target="_blank" rel="noopener">0.354% m/m</a>                </td>
+<a href="https://kalshi.com/markets/kxpcecore-26jun" target="_blank" rel="noopener">0.237% m/m</a>                </td>
                 <td data-label="Actual">
 <span class="muted">pending</span>                </td>
                 <td data-label="Surprise side">
@@ -165,7 +166,7 @@
                 <td data-label="Released">Jun 25, 2026</td>
                 <td data-label="House">225,130</td>
                 <td data-label="Kalshi">
-<a href="https://kalshi.com/markets/kxjoblessclaims-26jun25" target="_blank" rel="noopener">257,062</a>                </td>
+<a href="https://kalshi.com/markets/kxjoblessclaims-26jun11" target="_blank" rel="noopener">220,975</a>                </td>
                 <td data-label="Actual">
 <span class="muted">pending</span>                </td>
                 <td data-label="Surprise side">
@@ -184,14 +185,15 @@
                 <td data-label="Kalshi">
 <a href="https://kalshi.com/markets/kxjoblessclaims-26jun11" target="_blank" rel="noopener">217,950</a>                </td>
                 <td data-label="Actual">
-<span class="muted">pending</span>                </td>
+<a href="https://www.dol.gov/ui/data.pdf" target="_blank" rel="noopener">230,000</a>                </td>
                 <td data-label="Surprise side">
-                    <span class="muted">—</span>
+                    <span class="status status-partial">Miss</span><span class="subtle">House below consensus; actual above consensus</span>
                 </td>
-                <td data-label="House err">—</td>
-                <td data-label="Kalshi err">—</td>
+                <td data-label="House err">12,737</td>
+                <td data-label="Kalshi err">12,050</td>
                 <td data-label="Winner">
-<span class="muted">—</span>                </td>
+<span class="status status-partial">Kalshi</span>
+                </td>
               </tr>
               <tr>
                 <td data-label="Release"><strong>Core CPI</strong><span class="subtle">Inflation</span></td>
@@ -237,14 +239,15 @@
                 <td data-label="Kalshi">
 <a href="https://kalshi.com/markets/kxjoblessclaims-26may21" target="_blank" rel="noopener">210,400</a>                </td>
                 <td data-label="Actual">
-<span class="muted">pending</span>                </td>
+<a href="https://www.dol.gov/ui/data.pdf" target="_blank" rel="noopener">210,000</a>                </td>
                 <td data-label="Surprise side">
-                    <span class="muted">—</span>
+                    <span class="status status-partial">Miss</span><span class="subtle">House above consensus; actual below consensus</span>
                 </td>
-                <td data-label="House err">—</td>
-                <td data-label="Kalshi err">—</td>
+                <td data-label="House err">2,352</td>
+                <td data-label="Kalshi err">400</td>
                 <td data-label="Winner">
-<span class="muted">—</span>                </td>
+<span class="status status-partial">Kalshi</span>
+                </td>
               </tr>
               <tr>
                 <td data-label="Release"><strong>Weekly Claims</strong><span class="subtle">Labor</span></td>

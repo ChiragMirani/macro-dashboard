@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CPI/PCE Bridge | Macro Forecast Schedule by Chirag Mirani</title>
+    <meta name="description" content="Core PCE bridge from CPI and PPI components, including CPI-to-PCE wedge decomposition, component weights, and expected Core PCE y/y.">
+    <meta name="author" content="Chirag Mirani">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://chiragmirani.github.io/macro-dashboard/cpi-pce-bridge.html">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#0a1628">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CPI/PCE Bridge">
+    <meta property="og:description" content="Core PCE bridge from CPI and PPI components with wedge decomposition and component contribution detail.">
+    <meta property="og:url" content="https://chiragmirani.github.io/macro-dashboard/cpi-pce-bridge.html">
+    <meta property="og:site_name" content="Chirag Mirani Macro Dashboard">
+    <meta property="og:image" content="https://chiragmirani.github.io/macro-dashboard/social-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CPI/PCE Bridge">
+    <meta name="twitter:description" content="Core PCE bridge from CPI and PPI components with wedge decomposition and component contribution detail.">
+    <meta name="twitter:image" content="https://chiragmirani.github.io/macro-dashboard/social-preview.png">
+    <link rel="stylesheet" href="static/styles.css">
+  </head>
+  <body>
+    <main>
+      <nav class="topnav">
+        <a href="./">Forecasts</a>
+        <a href="cpi.html">CPI detail</a>
+        <a href="cpi-pce-bridge.html" class="active">CPI/PCE bridge</a>
+        <a href="nfp.html">NFP breakdown</a>
+        <a href="track-record.html">Track record</a>
+      </nav>
+
+      {% if payload.cpi_pce_bridge %}
+      {% set bridge = payload.cpi_pce_bridge %}
+      <section class="bridge-section" aria-labelledby="bridge-title">
+        <div class="nfp-breakdown-hero bridge-hero">
+          <div>
+            <p class="eyebrow">Core PCE bridge &middot; {{ bridge.period }} &middot; Updated {{ payload.generated_at_et }}</p>
+            <h1 id="bridge-title">CPI/PCE Bridge</h1>
+            <p>Best current bridge estimate from CPI and PPI component data. It re-weights CPI components to PCE scope, adds PCE-only PPI proxies, applies the Fisher formula adjustment, and projects Core PCE y/y from the PCE price index.</p>
+          </div>
+          <div class="nfp-headline-stat bridge-headline-stat">
+            <span>Bridge Core PCE m/m</span>
+            <strong class="{{ bridge.stats[0].tone }}">{{ bridge.pce_mom_display }}</strong>
+            <small>{{ bridge.pce_bps_display }} &middot; annualized {{ bridge.pce_ann_display }}</small>
+          </div>
+        </div>
+
+        <div class="nfp-stat-grid bridge-stat-grid">
+          {% for stat in bridge.stats %}
+          <div class="nfp-stat-card">
+            <span>{{ stat.label }}</span>
+            <strong class="{{ stat.tone }}">{{ stat.value }}</strong>
+            <small>{{ stat.detail }}</small>
+          </div>
+          {% endfor %}
+        </div>
+
+        <div class="cpi-insight-grid bridge-insight-grid">
+          {% if bridge.largest_up %}
+          <div class="cpi-insight-card">
+            <span>Largest upward wedge</span>
+            <strong class="{{ bridge.largest_up.tone }}">{{ bridge.largest_up.display }}</strong>
+            <small>{{ bridge.largest_up.label }}</small>
+          </div>
+          {% endif %}
+          {% if bridge.largest_down %}
+          <div class="cpi-insight-card">
+            <span>Largest downward wedge</span>
+            <strong class="{{ bridge.largest_down.tone }}">{{ bridge.largest_down.display }}</strong>
+            <small>{{ bridge.largest_down.label }}</small>
+          </div>
+          {% endif %}
+          <div class="cpi-insight-card">
+            <span>Kalshi m/m event</span>
+            <strong>{{ bridge.kalshi.mom_event }}</strong>
+            {% if bridge.kalshi.mom_expected != 'n/a' or bridge.kalshi.mom_coinflip_range != 'n/a' %}
+            <small>Expected {{ bridge.kalshi.mom_expected }} &middot; coinflip {{ bridge.kalshi.mom_coinflip_range }}</small>
+            {% else %}
+            <small>No live expected value captured for this event.</small>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="bridge-panel">
+          <div class="bridge-panel-title">
+            <div>
+              <span class="summary-label">Waterfall</span>
+              <h2>CPI-to-PCE Wedge</h2>
+            </div>
+            <p>Positive values make implied Core PCE hotter than Core CPI; negative values cool it versus CPI.</p>
+          </div>
+          <div class="bridge-waterfall">
+            {% for row in bridge.wedge_rows %}
+            <div class="bridge-waterfall-row{% if row.key == 'total' %} bridge-waterfall-row-total{% endif %}">
+              <div>
+                <strong>{{ row.label }}</strong>
+                <span>{{ row.detail }}</span>
+              </div>
+              <strong class="{{ row.tone }}">{{ row.display }}</strong>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="bridge-table-panel">
+          <div class="bridge-table-head">
+            <span>Component</span>
+            <span>Source</span>
+            <span>m/m</span>
+            <span>CPI wt</span>
+            <span>PCE wt</span>
+            <span>CPI contrib</span>
+            <span>PCE contrib</span>
+            <span>Wedge</span>
+          </div>
+          {% for row in bridge.component_rows %}
+          <div class="bridge-table-row">
+            <div class="nfp-sector-name">
+              <strong>{{ row.name }}</strong>
+              <span>{{ row.category }}{% if row.series_id %} &middot; {{ row.series_id }}{% endif %}</span>
+            </div>
+            <div data-label="Source">{{ row.source }}</div>
+            <div data-label="m/m">{{ row.mom_display }}</div>
+            <div data-label="CPI wt">{{ row.cpi_weight_display }}</div>
+            <div data-label="PCE wt">{{ row.pce_weight_display }}</div>
+            <div data-label="CPI contrib">{{ row.cpi_bps_display }}</div>
+            <div data-label="PCE contrib">{{ row.pce_bps_display }}</div>
+            <div data-label="Wedge"><span class="{{ row.tone }}">{{ row.wedge_display }}</span></div>
+          </div>
+          {% endfor %}
+        </div>
+
+        <div class="bridge-method-panel">
+          <div>
+            <span class="summary-label">Methodology</span>
+            <p>{{ bridge.methodology.reference }}. Formula effect: {{ bridge.methodology.formula_effect }}.</p>
+          </div>
+          <div class="bridge-method-links">
+            {% if bridge.methodology.table_9_1u %}
+            <a href="{{ bridge.methodology.table_9_1u }}" target="_blank" rel="noopener">BEA NIPA table guidance</a>
+            {% endif %}
+            {% if bridge.methodology.bls_mapping %}
+            <a href="{{ bridge.methodology.bls_mapping }}" target="_blank" rel="noopener">BLS PCE-CPI mapping</a>
+            {% endif %}
+          </div>
+        </div>
+      </section>
+      {% else %}
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Core PCE bridge</p>
+          <h1>CPI/PCE Bridge</h1>
+          <p class="tr-blurb">The bridge page is unavailable because no CPI/PCE bridge artifact was found.</p>
+        </div>
+      </section>
+      {% endif %}
+
+      <footer class="site-foot">
+        <p>Source artifact: {{ payload.cpi_pce_bridge.source_path if payload.cpi_pce_bridge else 'n/a' }}. Model source: {{ payload.cpi_pce_bridge.model_source if payload.cpi_pce_bridge else 'n/a' }}.</p>
+        <p class="muted"><a href="./">Back to forecasts</a>.</p>
+      </footer>
+    </main>
+  </body>
+</html>

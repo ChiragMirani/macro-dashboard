@@ -29,6 +29,7 @@ OUTPUT_JSON = DOCS_DIR / "dashboard_data.json"
 OUTPUT_HTML = DOCS_DIR / "index.html"
 NFP_HTML = DOCS_DIR / "nfp.html"
 CPI_HTML = DOCS_DIR / "cpi.html"
+CPI_PCE_HTML = DOCS_DIR / "cpi-pce-bridge.html"
 NOJEKYLL = DOCS_DIR / ".nojekyll"
 ROBOTS_TXT = DOCS_DIR / "robots.txt"
 SITEMAP_XML = DOCS_DIR / "sitemap.xml"
@@ -46,6 +47,7 @@ UR_SURPRISE = MACRO_OUTPUT / "ur_surprise_latest.json"
 FCI_TAYLOR = MACRO_OUTPUT / "fci_adjusted_taylor_latest.json"
 ADP_FORECAST = MACRO_OUTPUT / "adp_forecast_latest.json"
 KALSHI_CONSENSUS = MACRO_OUTPUT / "kalshi_consensus_latest.json"
+CORE_PCE_BRIDGE = MACRO_OUTPUT / "core_pce_bridge_latest.json"
 ROOT_CORE_PCE_BRIDGE = BASE_DIR / "cpi_pce_bridge_v2.json"
 REPORT_TABLE = BASE_DIR / "report_table.csv"
 ADP_LOG = BASE_DIR / "adp_run.log"
@@ -131,6 +133,16 @@ CPI_VOLATILE_LABELS = {
     "Used cars SA",
     "Apparel CPI",
 }
+BRIDGE_WEDGE_ORDER = [
+    ("total", "Total bridge wedge", "Implied Core PCE less Core CPI"),
+    ("shelter", "Shelter re-weighting", "Lower PCE shelter weight than CPI"),
+    ("medical_scope_weight", "Medical scope and weight", "Out-of-pocket CPI plus PPI medical proxies"),
+    ("financial_services", "Financial services", "PCE-only portfolio, banking, and insurance proxies"),
+    ("airfare_scope_swap", "Airfare scope swap", "CPI airfares replaced with PPI airline services"),
+    ("food_services", "Food services", "Food away from home is inside Core PCE"),
+    ("formula_effect", "Formula effect", "Fisher chain-weighted PCE versus fixed-weight CPI"),
+    ("other", "Other residual mapping", "Remaining non-shelter, non-medical bridge items"),
+]
 
 
 @dataclass
@@ -1504,6 +1516,180 @@ def build_cpi_detail(now_et: datetime) -> dict[str, Any] | None:
     }
     write_cpi_detail_cache(payload)
     return payload
+
+
+def safe_float(value: Any) -> float | None:
+    try:
+        parsed = float(value)
+    except Exception:
+        return None
+    return parsed if math.isfinite(parsed) else None
+
+
+def fmt_bridge_bps(value: float | None, signed: bool = True) -> str:
+    if value is None or not math.isfinite(value):
+        return "n/a"
+    return f"{value:+.1f} bps" if signed else f"{value:.1f} bps"
+
+
+def fmt_bridge_weight(value: float | None) -> str:
+    if value is None or not math.isfinite(value) or abs(value) < 0.0001:
+        return "-"
+    return f"{value:.2f}%"
+
+
+def fmt_bridge_pct(value: float | None) -> str:
+    return fmt_pct(value) or "n/a"
+
+
+def bridge_bps_tone(value: float | None) -> str:
+    if value is None or not math.isfinite(value) or abs(value) < 0.05:
+        return "flat"
+    return "bridge-hot" if value > 0 else "bridge-cool"
+
+
+def bridge_inflation_tone(value: float | None, threshold: float = 2.0) -> str:
+    if value is None or not math.isfinite(value):
+        return "flat"
+    return "bridge-hot" if value > threshold else "bridge-cool"
+
+
+def bridge_component_row(row: dict[str, Any], source_group: str) -> dict[str, Any]:
+    cpi_bps = safe_float(row.get("cpi_bps"))
+    pce_bps = safe_float(row.get("pce_bps"))
+    wedge = (pce_bps or 0.0) - (cpi_bps or 0.0)
+    cpi_weight = safe_float(row.get("cpi_wt"))
+    pce_weight = safe_float(row.get("pce_wt"))
+    return {
+        "name": row.get("name") or "n/a",
+        "category": str(row.get("category") or "").replace("_", " "),
+        "source": row.get("source") or source_group,
+        "series_id": row.get("series_id"),
+        "mom": safe_float(row.get("mom_pct")),
+        "mom_display": fmt_bridge_pct(safe_float(row.get("mom_pct"))),
+        "cpi_weight": cpi_weight,
+        "cpi_weight_display": fmt_bridge_weight(cpi_weight),
+        "pce_weight": pce_weight,
+        "pce_weight_display": fmt_bridge_weight(pce_weight),
+        "cpi_bps": cpi_bps,
+        "cpi_bps_display": fmt_bridge_bps(cpi_bps, signed=False) if cpi_weight else "-",
+        "pce_bps": pce_bps,
+        "pce_bps_display": fmt_bridge_bps(pce_bps, signed=False),
+        "wedge_bps": wedge,
+        "wedge_display": fmt_bridge_bps(wedge),
+        "tone": bridge_bps_tone(wedge),
+    }
+
+
+def build_cpi_pce_bridge(now_et: datetime) -> dict[str, Any] | None:
+    source_path = CORE_PCE_BRIDGE if CORE_PCE_BRIDGE.exists() else ROOT_CORE_PCE_BRIDGE
+    bridge = read_json(source_path) or {}
+    if not bridge:
+        return None
+
+    core_cpi = bridge.get("core_cpi_sa") or {}
+    implied = bridge.get("implied_core_pce") or {}
+    expected = bridge.get("expected_core_pce") or {}
+    wedge = bridge.get("wedge_decomposition_bps") or {}
+    methodology = bridge.get("methodology") or {}
+    kalshi = bridge.get("kalshi_snapshot") or {}
+
+    core_cpi_mom = safe_float(core_cpi.get("mom_pct"))
+    core_cpi_yoy = safe_float(core_cpi.get("yoy_pct"))
+    pce_mom = safe_float(implied.get("mom_pct"))
+    pce_bps = safe_float(implied.get("mom_bps"))
+    pce_ann = safe_float(implied.get("annualized_pct"))
+    pce_yoy = safe_float(expected.get("yoy_pct"))
+
+    total_wedge = safe_float(wedge.get("total"))
+    if total_wedge is None and core_cpi_mom is not None and pce_mom is not None:
+        total_wedge = (pce_mom - core_cpi_mom) * 100.0
+
+    wedge_rows = []
+    for key, label, detail in BRIDGE_WEDGE_ORDER:
+        value = total_wedge if key == "total" and safe_float(wedge.get(key)) is None else safe_float(wedge.get(key))
+        wedge_rows.append({
+            "key": key,
+            "label": label,
+            "detail": detail,
+            "value": value,
+            "display": fmt_bridge_bps(value),
+            "tone": bridge_bps_tone(value),
+        })
+
+    driver_rows = [row for row in wedge_rows if row["key"] != "total" and row["value"] is not None]
+    largest_up = max(driver_rows, key=lambda row: row["value"], default=None)
+    largest_down = min(driver_rows, key=lambda row: row["value"], default=None)
+
+    cpi_rows = [bridge_component_row(row, "CPI") for row in bridge.get("cpi_components") or []]
+    ppi_rows = [bridge_component_row(row, "PPI") for row in bridge.get("ppi_components") or []]
+    component_rows = cpi_rows + ppi_rows
+
+    return {
+        "period": bridge.get("reporting_month") or bridge.get("date") or "n/a",
+        "data_month": bridge.get("data_month"),
+        "generated_at": bridge.get("generated_at"),
+        "updated_display": now_et.strftime("%A, %B %d, %Y %I:%M %p ET"),
+        "source_path": str(source_path.relative_to(BASE_DIR)),
+        "model_source": "macro_forecasting/cpi_to_pce_bridge.py",
+        "core_cpi_mom": core_cpi_mom,
+        "core_cpi_mom_display": fmt_bridge_pct(core_cpi_mom),
+        "core_cpi_yoy_display": fmt_bridge_pct(core_cpi_yoy),
+        "pce_mom": pce_mom,
+        "pce_mom_display": fmt_bridge_pct(pce_mom),
+        "pce_bps_display": fmt_bridge_bps(pce_bps, signed=False),
+        "pce_ann_display": fmt_bridge_pct(pce_ann),
+        "pce_yoy": pce_yoy,
+        "pce_yoy_display": fmt_bridge_pct(pce_yoy),
+        "total_wedge": total_wedge,
+        "total_wedge_display": fmt_bridge_bps(total_wedge),
+        "wedge_rows": wedge_rows,
+        "largest_up": largest_up,
+        "largest_down": largest_down,
+        "cpi_rows": cpi_rows,
+        "ppi_rows": ppi_rows,
+        "component_rows": component_rows,
+        "methodology": {
+            "reference": methodology.get("reference") or "CPI/PPI bridge with PCE-CPI mapping and Fisher formula adjustment",
+            "table_9_1u": methodology.get("table_9_1u"),
+            "bls_mapping": methodology.get("bls_mapping"),
+            "formula_effect": fmt_bridge_bps(safe_float(methodology.get("formula_effect_bps"))),
+        },
+        "kalshi": {
+            "mom_event": kalshi.get("mom_event") or "n/a",
+            "mom_expected": fmt_bridge_pct(safe_float(kalshi.get("mom_expected_value"))),
+            "mom_coinflip_range": kalshi.get("mom_coinflip_range") or "n/a",
+            "yoy_event": kalshi.get("yoy_event") or "n/a",
+            "yoy_expected": fmt_bridge_pct(safe_float(kalshi.get("yoy_expected_value"))),
+            "yoy_coinflip_range": kalshi.get("yoy_coinflip_range") or "n/a",
+        },
+        "stats": [
+            {
+                "label": "Bridge Core PCE m/m",
+                "value": fmt_bridge_pct(pce_mom),
+                "tone": bridge_inflation_tone(pce_ann if pce_ann is not None else (pce_mom * 12.0 if pce_mom is not None else None)),
+                "detail": f"{fmt_bridge_bps(pce_bps, signed=False)}, annualized {fmt_bridge_pct(pce_ann)}",
+            },
+            {
+                "label": "Core CPI input",
+                "value": fmt_bridge_pct(core_cpi_mom),
+                "tone": bridge_inflation_tone(core_cpi_mom * 12.0 if core_cpi_mom is not None else None),
+                "detail": f"{fmt_bridge_pct(core_cpi_yoy)} y/y",
+            },
+            {
+                "label": "CPI/PCE wedge",
+                "value": fmt_bridge_bps(total_wedge),
+                "tone": bridge_bps_tone(total_wedge),
+                "detail": "implied Core PCE less Core CPI",
+            },
+            {
+                "label": "Expected Core PCE y/y",
+                "value": fmt_bridge_pct(pce_yoy),
+                "tone": bridge_inflation_tone(pce_yoy),
+                "detail": expected.get("index_source") or "PCE index projection",
+            },
+        ],
+    }
 def load_core_cpi_last_release_local() -> str | None:
     if not REPORT_TABLE.exists():
         return None
@@ -1804,13 +1990,12 @@ def build_core_cpi_event(now_et: datetime) -> ReleaseEvent:
 
 
 def build_core_pce_event(now_et: datetime) -> ReleaseEvent:
-    latest_bridge_path = MACRO_OUTPUT / "core_pce_bridge_latest.json"
-    bridge = read_json(latest_bridge_path) or read_json(ROOT_CORE_PCE_BRIDGE) or {}
+    bridge = read_json(CORE_PCE_BRIDGE) or read_json(ROOT_CORE_PCE_BRIDGE) or {}
     taylor = read_json(FCI_TAYLOR) or {}
     cpi = read_json(CORE_CPI_FORECAST) or {}
     reporting_month, release_dt, source = next_seeded_release(now_et, "core_pce")
     bridge_period = bridge.get("reporting_month") or bridge.get("date")
-    bridge_is_current = latest_bridge_path.exists() or bridge_period == reporting_month
+    bridge_is_current = CORE_PCE_BRIDGE.exists() or bridge_period == reporting_month
 
     bridge_mom = ((bridge.get("implied_core_pce") or {}).get("mom_pct")) if bridge_is_current else None
     bridge_yoy = ((bridge.get("expected_core_pce") or {}).get("yoy_pct")) if bridge_is_current else None
@@ -1837,7 +2022,7 @@ def build_core_pce_event(now_et: datetime) -> ReleaseEvent:
     note = "Standard estimate from CPI/PPI bridge."
     if not bridge_is_current:
         note += " House forecast pending until the CPI/PPI bridge refreshes for this release month."
-    elif not latest_bridge_path.exists():
+    elif not CORE_PCE_BRIDGE.exists():
         note += " Local repo does not yet write macro_forecasting/output/core_pce_bridge_latest.json, so this refresh falls back to existing bridge artifacts."
 
     kalshi_line, kalshi_link = kalshi_for("core_pce")
@@ -2102,6 +2287,7 @@ def build_payload(now_et: datetime) -> dict[str, Any]:
         "events": serialized,
         "nfp_breakdown": build_nfp_breakdown(now_et),
         "cpi_detail": build_cpi_detail(now_et),
+        "cpi_pce_bridge": build_cpi_pce_bridge(now_et),
         "summary": {
             "event_count": len(serialized),
             "live_count": sum(1 for event in serialized if event["status"] == "live"),
@@ -2131,6 +2317,18 @@ def _render_llms_txt(payload: dict[str, Any]) -> str:
             f"  Last release: {ev.get('last_release') or 'n/a'}.",
         ]
         lines.extend(bits)
+    bridge = payload.get("cpi_pce_bridge")
+    if bridge:
+        lines.extend([
+            "",
+            "## CPI/PCE Bridge",
+            "",
+            f"Page: {SITE_URL}cpi-pce-bridge.html",
+            f"Reporting month: {bridge.get('period')}.",
+            f"Bridge Core PCE m/m: {bridge.get('pce_mom_display')} ({bridge.get('pce_bps_display')}).",
+            f"Expected Core PCE y/y: {bridge.get('pce_yoy_display')}.",
+            f"CPI/PCE wedge: {bridge.get('total_wedge_display')}.",
+        ])
     lines.extend([
         "",
         "## How to cite",
@@ -2175,6 +2373,7 @@ def render_site(payload: dict[str, Any]) -> None:
         f'  <url><loc>{SITE_URL}</loc><lastmod>{payload["generated_at_iso"]}</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>\n'
         f'  <url><loc>{SITE_URL}dashboard_data.json</loc><lastmod>{payload["generated_at_iso"]}</lastmod><changefreq>daily</changefreq></url>\n'
         f'  <url><loc>{SITE_URL}cpi.html</loc><lastmod>{payload["generated_at_iso"]}</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>\n'
+        f'  <url><loc>{SITE_URL}cpi-pce-bridge.html</loc><lastmod>{payload["generated_at_iso"]}</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>\n'
         f'  <url><loc>{SITE_URL}nfp.html</loc><lastmod>{payload["generated_at_iso"]}</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>\n'
         '</urlset>\n',
         encoding="utf-8",
@@ -2193,6 +2392,8 @@ def render_site(payload: dict[str, Any]) -> None:
     NFP_HTML.write_text(nfp_template.render(payload=payload), encoding="utf-8")
     cpi_template = env.get_template("cpi.html")
     CPI_HTML.write_text(cpi_template.render(payload=payload), encoding="utf-8")
+    cpi_pce_template = env.get_template("cpi_pce_bridge.html")
+    CPI_PCE_HTML.write_text(cpi_pce_template.render(payload=payload), encoding="utf-8")
     shutil.copy2(BASE_DIR / "macro_site" / "static" / "styles.css", STATIC_DIR / "styles.css")
 
     render_track_record(env)
@@ -2219,4 +2420,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
