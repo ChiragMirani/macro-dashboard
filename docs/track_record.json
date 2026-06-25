@@ -67,6 +67,39 @@
       "house_consensus_side_display": null
     },
     {
+      "id": "weekly_claims_2026-07-02",
+      "release_key": "weekly_claims",
+      "release_label": "Weekly Claims",
+      "release_group": "Labor",
+      "target_period": "Week ending June 27, 2026",
+      "release_iso": "2026-07-02T08:30:00-04:00",
+      "snapshot_at_utc": "2026-06-25T17:56:54.278874+00:00",
+      "house_raw": "225,130",
+      "house_value": 225130.0,
+      "kalshi_raw": "222,500",
+      "kalshi_value": 222500.0,
+      "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26jul02",
+      "release_source_url": "https://www.dol.gov/ui/data.pdf",
+      "fred_series": "ICSA",
+      "unit": "claims",
+      "actual_value": null,
+      "house_error_abs": null,
+      "kalshi_error_abs": null,
+      "winner": null,
+      "settled_at_utc": null,
+      "actual_consensus_side": null,
+      "house_consensus_side": null,
+      "house_direction_correct": null,
+      "release_date_pretty": "Jul 02, 2026",
+      "house_display": "225,130",
+      "kalshi_display": "222,500",
+      "actual_display": null,
+      "house_error_display": null,
+      "kalshi_error_display": null,
+      "actual_consensus_side_display": null,
+      "house_consensus_side_display": null
+    },
+    {
       "id": "adp_2026-07-01",
       "release_key": "adp",
       "release_label": "ADP",
@@ -563,9 +596,9 @@
     }
   ],
   "summary": {
-    "total_snapshots": 17,
+    "total_snapshots": 18,
     "settled_count": 12,
-    "pending_count": 5,
+    "pending_count": 6,
     "house_wins": 5,
     "kalshi_wins": 6,
     "ties": 0,
@@ -576,5 +609,5 @@
     "house_mean_abs_error": 2646.4394373487153,
     "kalshi_mean_abs_error": 2033.9202321726373
   },
-  "last_updated_utc": "2026-06-25T12:01:53.108253+00:00"
+  "last_updated_utc": "2026-06-25T17:57:14.416552+00:00"
 }
