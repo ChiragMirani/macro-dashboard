@@ -1,0 +1,246 @@
+{
+  "generated_at_utc": "2026-06-25T23:17:29.912297+00:00",
+  "data_source": {
+    "first_print_source": "FRED/ALFRED PAYEMS vintage observations",
+    "revised_prior_average_source": {
+      "series_id": "CES0000000001",
+      "label": "BLS CES total nonfarm payrolls, seasonally adjusted",
+      "database": "C:\\Users\\chira\\PycharmProjects\\BloombergFlyProject\\macro_site\\nfp_survey_data.db"
+    },
+    "database": "C:\\Users\\chira\\PycharmProjects\\BloombergFlyProject\\macro_site\\nfp_survey_data.db",
+    "latest_revised_month": "2026-05",
+    "latest_revised_change_k": 172.0,
+    "latest_first_print_month": "2026-05",
+    "latest_first_print_change_k": 172.0,
+    "latest_cache_updated_at_utc": "2026-06-24T16:08:07.132297+00:00"
+  },
+  "model_spec": {
+    "forecast": "Revised prior ma3 expectation plus the average first-print residual from the prior 3 same-calendar-month releases.",
+    "risk": "Average first-print same-month residual versus revised prior ma3 expectation.",
+    "hit_rate": "Share of months where the historical first-print residual sign matched first-print actual minus revised prior expectation sign.",
+    "expectation_method": "ma3",
+    "signal_threshold_k": 0.0
+  },
+  "live": {
+    "target_month": "2026-06",
+    "target_month_name": "June",
+    "same_month_history": [
+      {
+        "month": "2023-06",
+        "change_k": 209.0,
+        "expectation_k": 196.33333333333334,
+        "residual_vs_expectation_k": 12.666666666666657
+      },
+      {
+        "month": "2024-06",
+        "change_k": 206.0,
+        "expectation_k": 123.33333333333333,
+        "residual_vs_expectation_k": 82.66666666666667
+      },
+      {
+        "month": "2025-06",
+        "change_k": 147.0,
+        "expectation_k": 62.666666666666664,
+        "residual_vs_expectation_k": 84.33333333333334
+      }
+    ],
+    "same_month_residual_3y_average_k": 59.88888888888889,
+    "expectation_method": "ma3",
+    "expectation_k": 188.33333333333334,
+    "forecast_k": 248.22222222222223,
+    "seasonal_gap_vs_expectation_k": 59.88888888888889,
+    "risk_side_vs_expectation": "upside",
+    "actual_target_source": "first-print NFP release when available",
+    "expectation_source": "revised prior NFP changes",
+    "signal_threshold_k": 0.0
+  },
+  "backtest": {
+    "primary": {
+      "start": "2014-01-01",
+      "end": "2026-05",
+      "month": null,
+      "rows": 145,
+      "directional_calls": 145,
+      "hit_rate": 0.6206896551724138,
+      "upside_calls": 65,
+      "upside_hit_rate": 0.6461538461538462,
+      "downside_calls": 80,
+      "downside_hit_rate": 0.6,
+      "same_month_avg_mae_k": 807.2015325670498,
+      "expectation_mae_k": 470.42758620689654,
+      "model_closer_than_expectation_rate": 0.42758620689655175
+    },
+    "periods": [
+      {
+        "start": "2014-05",
+        "end": "2026-05",
+        "month": null,
+        "rows": 145,
+        "directional_calls": 145,
+        "hit_rate": 0.6206896551724138,
+        "upside_calls": 65,
+        "upside_hit_rate": 0.6461538461538462,
+        "downside_calls": 80,
+        "downside_hit_rate": 0.6,
+        "same_month_avg_mae_k": 807.2015325670498,
+        "expectation_mae_k": 470.42758620689654,
+        "model_closer_than_expectation_rate": 0.42758620689655175
+      },
+      {
+        "start": "2014-01-01",
+        "end": "2026-05",
+        "month": null,
+        "rows": 145,
+        "directional_calls": 145,
+        "hit_rate": 0.6206896551724138,
+        "upside_calls": 65,
+        "upside_hit_rate": 0.6461538461538462,
+        "downside_calls": 80,
+        "downside_hit_rate": 0.6,
+        "same_month_avg_mae_k": 807.2015325670498,
+        "expectation_mae_k": 470.42758620689654,
+        "model_closer_than_expectation_rate": 0.42758620689655175
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2026-05",
+        "month": null,
+        "rows": 113,
+        "directional_calls": 113,
+        "hit_rate": 0.6106194690265486,
+        "upside_calls": 56,
+        "upside_hit_rate": 0.6607142857142857,
+        "downside_calls": 57,
+        "downside_hit_rate": 0.5614035087719298,
+        "same_month_avg_mae_k": 1017.7836774827924,
+        "expectation_mae_k": 586.7374631268437,
+        "model_closer_than_expectation_rate": 0.3893805309734513
+      },
+      {
+        "start": "2021-04-01",
+        "end": "2026-05",
+        "month": null,
+        "rows": 62,
+        "directional_calls": 62,
+        "hit_rate": 0.7096774193548387,
+        "upside_calls": 29,
+        "upside_hit_rate": 0.8275862068965517,
+        "downside_calls": 33,
+        "downside_hit_rate": 0.6060606060606061,
+        "same_month_avg_mae_k": 911.8906810035842,
+        "expectation_mae_k": 135.08602150537635,
+        "model_closer_than_expectation_rate": 0.3548387096774194
+      },
+      {
+        "start": "2023-01-01",
+        "end": "2026-05",
+        "month": null,
+        "rows": 41,
+        "directional_calls": 41,
+        "hit_rate": 0.6341463414634146,
+        "upside_calls": 21,
+        "upside_hit_rate": 0.9047619047619048,
+        "downside_calls": 20,
+        "downside_hit_rate": 0.35,
+        "same_month_avg_mae_k": 557.6720867208672,
+        "expectation_mae_k": 93.04065040650407,
+        "model_closer_than_expectation_rate": 0.36585365853658536
+      }
+    ],
+    "target_month_periods": [
+      {
+        "start": "2014-01-01",
+        "end": "2025-06",
+        "month": 6,
+        "rows": 12,
+        "directional_calls": 12,
+        "hit_rate": 0.8333333333333334,
+        "upside_calls": 10,
+        "upside_hit_rate": 0.9,
+        "downside_calls": 2,
+        "downside_hit_rate": 0.5,
+        "same_month_avg_mae_k": 1891.1111111111113,
+        "expectation_mae_k": 995.7777777777778,
+        "model_closer_than_expectation_rate": 0.5833333333333334
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2025-06",
+        "month": 6,
+        "rows": 9,
+        "directional_calls": 9,
+        "hit_rate": 0.8888888888888888,
+        "upside_calls": 9,
+        "upside_hit_rate": 0.8888888888888888,
+        "downside_calls": 0,
+        "downside_hit_rate": null,
+        "same_month_avg_mae_k": 2496.6049382716055,
+        "expectation_mae_k": 1310.2222222222226,
+        "model_closer_than_expectation_rate": 0.5555555555555556
+      },
+      {
+        "start": "2021-04-01",
+        "end": "2025-06",
+        "month": 6,
+        "rows": 5,
+        "directional_calls": 5,
+        "hit_rate": 1.0,
+        "upside_calls": 5,
+        "upside_hit_rate": 1.0,
+        "downside_calls": 0,
+        "downside_hit_rate": null,
+        "same_month_avg_mae_k": 2239.355555555556,
+        "expectation_mae_k": 94.73333333333335,
+        "model_closer_than_expectation_rate": 0.4
+      },
+      {
+        "start": "2023-01-01",
+        "end": "2025-06",
+        "month": 6,
+        "rows": 3,
+        "directional_calls": 3,
+        "hit_rate": 1.0,
+        "upside_calls": 3,
+        "upside_hit_rate": 1.0,
+        "downside_calls": 0,
+        "downside_hit_rate": null,
+        "same_month_avg_mae_k": 1298.2592592592594,
+        "expectation_mae_k": 59.88888888888889,
+        "model_closer_than_expectation_rate": 0.6666666666666666
+      }
+    ],
+    "thresholds_since_2014": [
+      {
+        "threshold_k": 0.0,
+        "calls": 145,
+        "coverage": 1.0,
+        "hit_rate": 0.6206896551724138
+      },
+      {
+        "threshold_k": 25.0,
+        "calls": 115,
+        "coverage": 0.7931034482758621,
+        "hit_rate": 0.6347826086956522
+      },
+      {
+        "threshold_k": 50.0,
+        "calls": 83,
+        "coverage": 0.5724137931034483,
+        "hit_rate": 0.6385542168674698
+      },
+      {
+        "threshold_k": 75.0,
+        "calls": 59,
+        "coverage": 0.4068965517241379,
+        "hit_rate": 0.7457627118644068
+      },
+      {
+        "threshold_k": 100.0,
+        "calls": 47,
+        "coverage": 0.32413793103448274,
+        "hit_rate": 0.7446808510638298
+      }
+    ],
+    "csv": "C:\\Users\\chira\\PycharmProjects\\BloombergFlyProject\\macro_forecasting\\output\\nfp_residual_seasonality_backtest.csv"
+  }
+}

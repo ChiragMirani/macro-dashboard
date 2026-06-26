@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T18:13:37",
+  "generated_at": "2026-06-26T09:14:44",
   "date": "May 2026",
   "reporting_month": "May 2026",
   "data_month": "2026-05-01",
@@ -7,7 +7,30 @@
     "reference": "McCully, Moyer & Stewart (2007), BEA NIPA Ch.5, BLS PCE-CPI Mapping",
     "table_9_1u": "https://www.bea.gov/help/faq/555",
     "bls_mapping": "https://www.bls.gov/cpi/additional-resources/pce-cpi-code-mapping.htm",
-    "formula_effect_bps": -3.0
+    "formula_effect_bps": -3.0,
+    "portfolio_management_method": {
+      "description": "Uses old WPU402 PPI deflator through July 2026 Core PCE reference month; switches to BEA annual-update AUM/CES proxy starting August 2026.",
+      "active_series": "WPU402",
+      "new_method_start_month": "2026-08",
+      "old_deflator_series": "WPU402",
+      "quantity_series": "CES5552390001",
+      "market_proxy": "SP500",
+      "aum_beta": 0.45,
+      "lag_weights": [
+        {
+          "months": 1,
+          "weight": 0.6
+        },
+        {
+          "months": 2,
+          "weight": 0.4
+        }
+      ],
+      "clamp_bands_pct": [
+        -2.0,
+        2.0
+      ]
+    }
   },
   "core_cpi_sa": {
     "mom_bps": 20.8,
@@ -161,6 +184,30 @@
   ],
   "ppi_components": [
     {
+      "name": "Portfolio Mgmt",
+      "series_id": "WPU402",
+      "category": "financial",
+      "source": "PPI",
+      "data_month": "2026-05",
+      "mom_pct": 4.842,
+      "pce_wt": 4.5,
+      "pce_bps": 21.8,
+      "note": "Official pre-annual-update bridge: direct WPU402 PPI deflator through July 2026 reference month",
+      "method_meta": {
+        "mom_pct": 4.842014361580715,
+        "raw_mom_pct": 4.842014361580715,
+        "source": "PPI",
+        "data_month": "2026-05",
+        "method": "pre_annual_update_wpu402",
+        "method_active_until": "2026-07",
+        "new_method_start_month": "2026-08",
+        "old_ppi_series_id": "WPU402",
+        "old_ppi_mom_pct": 4.842014361580715,
+        "old_ppi_data_month": "2026-05",
+        "old_ppi_bps": 21.78906462711322
+      }
+    },
+    {
       "name": "Hospitals",
       "series_id": "WPU5111",
       "category": "medical_nonoop",
@@ -168,7 +215,9 @@
       "data_month": "2026-05",
       "mom_pct": 0.0762,
       "pce_wt": 6.0,
-      "pce_bps": 0.5
+      "pce_bps": 0.5,
+      "note": "BEA uses for PCE hospital deflator (NIPA Ch.5)",
+      "method_meta": null
     },
     {
       "name": "Physicians",
@@ -178,7 +227,9 @@
       "data_month": "2026-05",
       "mom_pct": 0.0482,
       "pce_wt": 3.5,
-      "pce_bps": 0.2
+      "pce_bps": 0.2,
+      "note": "BEA uses for PCE physician deflator",
+      "method_meta": null
     },
     {
       "name": "Nursing",
@@ -188,7 +239,9 @@
       "data_month": "2026-05",
       "mom_pct": 0.0464,
       "pce_wt": 1.0,
-      "pce_bps": 0.0
+      "pce_bps": 0.0,
+      "note": "BEA uses for PCE nursing care deflator",
+      "method_meta": null
     },
     {
       "name": "Home Health",
@@ -198,17 +251,9 @@
       "data_month": "2026-05",
       "mom_pct": 0.015,
       "pce_wt": 0.5,
-      "pce_bps": 0.0
-    },
-    {
-      "name": "Portfolio Mgmt",
-      "series_id": "WPU402",
-      "category": "financial",
-      "source": "PPI",
-      "data_month": "2026-05",
-      "mom_pct": 4.842,
-      "pce_wt": 4.5,
-      "pce_bps": 21.8
+      "pce_bps": 0.0,
+      "note": "BEA uses for PCE home health deflator",
+      "method_meta": null
     },
     {
       "name": "Banking",
@@ -218,7 +263,9 @@
       "data_month": "2026-05",
       "mom_pct": 5.3596,
       "pce_wt": 2.0,
-      "pce_bps": 10.7
+      "pce_bps": 10.7,
+      "note": "Banking + imputed financial services",
+      "method_meta": null
     },
     {
       "name": "Insurance",
@@ -228,7 +275,9 @@
       "data_month": "2026-05",
       "mom_pct": 0.0,
       "pce_wt": 1.5,
-      "pce_bps": 0.0
+      "pce_bps": 0.0,
+      "note": "Net premiums less claims = PCE insurance",
+      "method_meta": null
     },
     {
       "name": "Airlines PPI",
@@ -238,7 +287,9 @@
       "data_month": "2026-05",
       "mom_pct": 1.1198,
       "pce_wt": 0.85,
-      "pce_bps": 1.0
+      "pce_bps": 1.0,
+      "note": "PCE air transport uses PPI airline, NOT CPI airfares",
+      "method_meta": null
     }
   ],
   "kalshi_snapshot": {
