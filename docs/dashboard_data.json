@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Monday, June 29, 2026 08:42 AM ET",
-  "generated_at_iso": "2026-06-29T08:42:07.945053-04:00",
+  "generated_at_et": "Monday, June 29, 2026 01:56 PM ET",
+  "generated_at_iso": "2026-06-29T13:56:22.802645-04:00",
   "current_day": "Monday",
   "current_date": "June 29, 2026",
-  "current_time": "08:42 AM ET",
+  "current_time": "01:56 PM ET",
   "next_event": {
     "key": "adp",
     "label": "ADP",
@@ -14,10 +14,10 @@
     "release_date": "July 01, 2026",
     "release_time": "8:15 AM ET",
     "release_iso": "2026-07-01T08:15:00-04:00",
-    "hours_until_release": 47,
+    "hours_until_release": 42,
     "schedule_source": "seeded_official_schedule",
     "house_forecast": "200k",
-    "kalshi_consensus": "87k",
+    "kalshi_consensus": "72k",
     "last_release": "May 2026: 122k",
     "risk": null,
     "status": "review",
@@ -27,13 +27,13 @@
     "release_source_url": "https://adpemploymentreport.com/",
     "consensus_review": {
       "required": true,
-      "gap_value": 113.23519556950018,
-      "gap_display": "+113k",
+      "gap_value": 128.23519556950018,
+      "gap_display": "+128k",
       "threshold": 35.0,
       "threshold_display": "35k",
       "house_side": "above Kalshi",
       "label": "Review required",
-      "message": "ADP house forecast is +113k above Kalshi; threshold is 35k. Check official guidance and news before using the forecast.",
+      "message": "ADP house forecast is +128k above Kalshi; threshold is 35k. Check official guidance and news before using the forecast.",
       "news_query": "June 2026 macro data forecast adjustment",
       "news_search_url": "https://news.google.com/search?q=June+2026+macro+data+forecast+adjustment",
       "official_guidance": [],
@@ -72,10 +72,10 @@
       "release_date": "July 01, 2026",
       "release_time": "8:15 AM ET",
       "release_iso": "2026-07-01T08:15:00-04:00",
-      "hours_until_release": 47,
+      "hours_until_release": 42,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "200k",
-      "kalshi_consensus": "87k",
+      "kalshi_consensus": "72k",
       "last_release": "May 2026: 122k",
       "risk": null,
       "status": "review",
@@ -85,13 +85,13 @@
       "release_source_url": "https://adpemploymentreport.com/",
       "consensus_review": {
         "required": true,
-        "gap_value": 113.23519556950018,
-        "gap_display": "+113k",
+        "gap_value": 128.23519556950018,
+        "gap_display": "+128k",
         "threshold": 35.0,
         "threshold_display": "35k",
         "house_side": "above Kalshi",
         "label": "Review required",
-        "message": "ADP house forecast is +113k above Kalshi; threshold is 35k. Check official guidance and news before using the forecast.",
+        "message": "ADP house forecast is +128k above Kalshi; threshold is 35k. Check official guidance and news before using the forecast.",
         "news_query": "June 2026 macro data forecast adjustment",
         "news_search_url": "https://news.google.com/search?q=June+2026+macro+data+forecast+adjustment",
         "official_guidance": [],
@@ -129,10 +129,10 @@
       "release_date": "July 02, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-07-02T08:30:00-04:00",
-      "hours_until_release": 71,
+      "hours_until_release": 66,
       "schedule_source": "weekly_rule",
       "house_forecast": "217,148",
-      "kalshi_consensus": "249,000",
+      "kalshi_consensus": "238,838",
       "last_release": "Week ending Jun 13, 2026: 226,000",
       "risk": "elevated surprise risk",
       "status": "review",
@@ -142,13 +142,13 @@
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "consensus_review": {
         "required": true,
-        "gap_value": -31852.01255214901,
-        "gap_display": "-31,852",
+        "gap_value": -21689.51255214901,
+        "gap_display": "-21,690",
         "threshold": 10000.0,
         "threshold_display": "10,000",
         "house_side": "below Kalshi",
         "label": "Review required",
-        "message": "Weekly Claims house forecast is -31,852 below Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
+        "message": "Weekly Claims house forecast is -21,690 below Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
         "news_query": "Week ending June 27, 2026 jobless claims forecast seasonal adjustment",
         "news_search_url": "https://news.google.com/search?q=Week+ending+June+27%2C+2026+jobless+claims+forecast+seasonal+adjustment",
         "official_guidance": [
@@ -193,7 +193,7 @@
       "release_date": "July 02, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-07-02T08:30:00-04:00",
-      "hours_until_release": 71,
+      "hours_until_release": 66,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "93k",
       "kalshi_consensus": "102k",
@@ -206,7 +206,7 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": -8.966622924804668,
+        "gap_value": -8.716622924804682,
         "gap_display": "-9k",
         "threshold": 40.0,
         "threshold_display": "40k",
@@ -222,7 +222,7 @@
       "release_date": "July 02, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-07-02T08:30:00-04:00",
-      "hours_until_release": 71,
+      "hours_until_release": 66,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "4.30%",
       "kalshi_consensus": "4.49%",
@@ -235,13 +235,13 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": true,
-        "gap_value": -0.1896835443037972,
-        "gap_display": "-0.190 pp",
+        "gap_value": -0.19202059202059196,
+        "gap_display": "-0.192 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "below Kalshi",
         "label": "Review required",
-        "message": "Unemployment Rate house forecast is -0.190 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
+        "message": "Unemployment Rate house forecast is -0.192 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
         "news_query": "June 2026 jobs report BLS forecast adjustment survey",
         "news_search_url": "https://news.google.com/search?q=June+2026+jobs+report+BLS+forecast+adjustment+survey",
         "official_guidance": [
@@ -265,13 +265,13 @@
             "published": "Mon, 15 Jun 2026 07:00:00 GMT"
           },
           {
-            "title": "U.S. payrolls rose by 130,000 in January, more than expected; unemployment down to 4.3% - CNBC",
-            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE80QmlGMzFFZjM3TDhfN2R0NkdUZkM0VGRwQjE0UG1JVTh4Rnk4Wmg2U250a3p3cUFfX3l3YjV0TXh0dFlmRWdXakdNN2tFeTduNUpnaTRoZm44cExLbmhhbnlBX0FkMU1mRnRtcGdBZ9IBdEFVX3lxTE1tOWIxV2doSWlXYnlkTWl6bVNpYVpCbDB0YURFWWlCR2ZrNUkxRXIzRHphU2MwX0RxMlQ0WnozSTFBeHF5ZzQ2Wm91OW9XRTk3dG5VNTBlWW5vbGhIRFBEb2xDTUJkT1NCVmM1Mkcydzl0Zl9C?oc=5",
-            "published": "Wed, 11 Feb 2026 08:00:00 GMT"
+            "title": "Signs of Life - The Economic Policy Innovation Center",
+            "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1XeWpfT1NZb25DdXVVY3F6aVh1aWNGdjZLc1ljcnY1VUpSLUctakpoTElJTDZlZWF2ZkhLN1YtSm1NSk5XNF9vMDdzczkwTFRCRWdDT21XR2xKMU1vX2JxZ3p2WUJHVlU?oc=5",
+            "published": "Fri, 13 Feb 2026 08:00:00 GMT"
           },
           {
-            "title": "US job growth likely picked up in January; unemployment rate forecast steady at 4.4% - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQjFJSElZLWk1SDdvYkNPenhWQ3dMVmo0eHhfLV90WldHSi1WUW91Qm1GbVJSOUc5MjhkRnFMNGJoc1pBcUtocEtuNG9DQ3J4RHBicS1mN2g5Nmo4WXRlTnZyT0Y4S2k5a3pmaDBJdkN3VGdFMEowYU1tVmhTSFdMS1BnV2lKejRvd0RuYnlDeFdpS1BQaEhEQUNvTFc4dm1GVzVOUUZEWmgzUU1HdkhDeFZIbE1sU0ZMbFYzOQ?oc=5",
+            "title": "U.S. payrolls rose by 130,000 in January, more than expected; unemployment down to 4.3% - CNBC",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE80QmlGMzFFZjM3TDhfN2R0NkdUZkM0VGRwQjE0UG1JVTh4Rnk4Wmg2U250a3p3cUFfX3l3YjV0TXh0dFlmRWdXakdNN2tFeTduNUpnaTRoZm44cExLbmhhbnlBX0FkMU1mRnRtcGdBZ9IBdEFVX3lxTE1tOWIxV2doSWlXYnlkTWl6bVNpYVpCbDB0YURFWWlCR2ZrNUkxRXIzRHphU2MwX0RxMlQ0WnozSTFBeHF5ZzQ2Wm91OW9XRTk3dG5VNTBlWW5vbGhIRFBEb2xDTUJkT1NCVmM1Mkcydzl0Zl9C?oc=5",
             "published": "Wed, 11 Feb 2026 08:00:00 GMT"
           }
         ]
@@ -286,10 +286,10 @@
       "release_date": "July 15, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-07-15T08:30:00-04:00",
-      "hours_until_release": 383,
+      "hours_until_release": 378,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "0.221% m/m | 2.81% y/y",
-      "kalshi_consensus": "0.174% m/m | 3.36% y/y",
+      "kalshi_consensus": "0.172% m/m | 3.51% y/y",
       "last_release": "May 2026: 0.208% m/m, 2.82% y/y",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -299,8 +299,8 @@
       "release_source_url": "https://www.bls.gov/news.release/cpi.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": 0.04742410562638491,
-        "gap_display": "+0.047 pp",
+        "gap_value": 0.04892410562638491,
+        "gap_display": "+0.049 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "above Kalshi"
@@ -315,7 +315,7 @@
       "release_date": "July 29, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-07-29T08:30:00-04:00",
-      "hours_until_release": 719,
+      "hours_until_release": 714,
       "schedule_source": "fallback_schedule",
       "house_forecast": "0.352% m/m | 3.45% y/y",
       "kalshi_consensus": "0.212% m/m",
@@ -350,11 +350,6 @@
         "guidance_hit_count": 1,
         "news_headlines": [
           {
-            "title": "Residual Seasonality in Some Components of PCE Inflation - Federal Reserve Bank of Cleveland",
-            "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNN1o3RHpVSEJNblNWcEN0VWpVY1FMTHZYNGdOVXhkd3dJWF9Jc3ZRT1I0eGNuTl85WXVQV3lXM3VjRE9iZ2RWT3V6RmdUcTBaeGtOSnYwWU9IWjFRbDB6V2hPSmRPTzdCNHJWWWcwaS01ZmRWYklhVXZXcmdCTF9tUFVETGxwWjBOYk9YTXRVSjZnSlVFWS1URWw2TFdPc3lKNlNHakpWcnRvRTZ1OXEtOE5WV3gtQmttWTVfcTZoeUV0U3BCcjhvSFlaekFidw?oc=5",
-            "published": "Thu, 05 Mar 2026 14:15:42 GMT"
-          },
-          {
             "title": "US May PCE Rises to 4.1% YoY, Hitting New High Since March 2023. Fed Rate Hike Expectations for the Year Heat Up - TradingKey",
             "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxORTdxSUZvLTNxSmJjcmFDX1Ribl9HbUdsblVva2xXSWNHMG0zM2hDbFNsTDZ6bjdHRE5sN1lNVGJ1Z1lPdjRMeGNQYldLc0gzVG12cjV3NHMtM3Z4aWc2dlkwc2ZjRjdnS0hsZnRCWDJGSlhtY2t2VEwwN0VHSmU5dGIwc01UUWtTZ09na25fdkh4cmF2TThXTVV0eTFNV01raTNoMVBaQnZlSk5aZ0UxYmMxX1k5U3A0cTBHdjRnMERQdDlKMS0xQ1BSU01xZw?oc=5",
             "published": "Thu, 25 Jun 2026 22:51:18 GMT"
@@ -365,9 +360,14 @@
             "published": "Mon, 29 Jun 2026 01:45:56 GMT"
           },
           {
-            "title": "GDP (Advance Estimate), 4th Quarter and Year 2025 - U.S. Bureau of Economic Analysis (BEA) (.gov)",
-            "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQ3gxNnp5ajZDUWhLTi10dGxYRzEwM25EVzBQVDRkY3ZCR2RYaWNCLXdRY0xSVzNxUTRiSmJxcWNoSDJybmgwLWo4UjZsSUFYcFZzNEVzX25rTWdZVXlVM3ZoXzBXRk1TVDAzRU5QZDVuQ0JSMUQ3ZVRZa21BLTc0ZHNn?oc=5",
-            "published": "Fri, 20 Feb 2026 08:00:00 GMT"
+            "title": "The U.S. is changing its 'statistical methodology'! Wall Street: Aimed at 'lowering' core inflation, raising manipulation risks - \u5bcc\u9014\u725b\u725b",
+            "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUnFjWW0zb2UyQ0pnejdXT09qRTJOdGw3UmRpbnpFaHhXLUhOb0tjMkFqMjBWUmFNZURpalZHRkZWTjd5UFFvbFh2cXFOYU92OEtVa3pKcEtzOS0zeUlRbzhaRERndzdZclRtdFlmWnlhZHMyZ3QwU1RFOXFIeFY4RW1zcEJhdC1EbEU2UkhhRTRfc0ZQS3BSV2RLVnYtT2o5MHFsa0o2RVU?oc=5",
+            "published": "Mon, 29 Jun 2026 02:11:15 GMT"
+          },
+          {
+            "title": "Residual Seasonality in Some Components of PCE Inflation - Federal Reserve Bank of Cleveland",
+            "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNN1o3RHpVSEJNblNWcEN0VWpVY1FMTHZYNGdOVXhkd3dJWF9Jc3ZRT1I0eGNuTl85WXVQV3lXM3VjRE9iZ2RWT3V6RmdUcTBaeGtOSnYwWU9IWjFRbDB6V2hPSmRPTzdCNHJWWWcwaS01ZmRWYklhVXZXcmdCTF9tUFVETGxwWjBOYk9YTXRVSjZnSlVFWS1URWw2TFdPc3lKNlNHakpWcnRvRTZ1OXEtOE5WV3gtQmttWTVfcTZoeUV0U3BCcjhvSFlaekFidw?oc=5",
+            "published": "Thu, 05 Mar 2026 14:15:42 GMT"
           }
         ]
       }
@@ -11283,7 +11283,7 @@
     "period": "May 2026",
     "data_month": "2026-05-01",
     "generated_at": "2026-06-26T09:14:44",
-    "updated_display": "Monday, June 29, 2026 08:42 AM ET",
+    "updated_display": "Monday, June 29, 2026 01:56 PM ET",
     "source_path": "macro_forecasting/output/core_pce_bridge_latest.json",
     "model_source": "macro_forecasting/cpi_to_pce_bridge.py",
     "core_cpi_mom": 0.2081,
