@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-07-03T13:02:44.792462+00:00",
+  "generated_at_utc": "2026-07-03T18:19:25.841780+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26JUL09",
       "kind": "threshold",
       "market_count": 10,
-      "implied_value": 276087.5,
-      "consensus_label": "276,088",
+      "implied_value": 262875.0,
+      "consensus_label": "262,875",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26jul09",
       "title": "Initial jobless claims for the week ending July 4, 2026"
     },
@@ -26,8 +26,8 @@
       "event_ticker": "KXECONSTATCPICORE-26JUN",
       "kind": "bucket",
       "market_count": 8,
-      "implied_value": 0.159433962264151,
-      "consensus_label": "0.159% m/m",
+      "implied_value": 0.16000000000000003,
+      "consensus_label": "0.160% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26jun",
       "title": "CPI core month-over-month in Jun 2026?"
     },
@@ -36,7 +36,7 @@
       "event_ticker": "KXCPICOREYOY-26JUN",
       "kind": "threshold",
       "market_count": 15,
-      "implied_value": 2.7442500000000005,
+      "implied_value": 2.7365000000000004,
       "consensus_label": "2.74% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26jun",
       "title": "Core inflation in June 2026 (Core CPI YoY)"
@@ -46,8 +46,8 @@
       "event_ticker": "KXPAYROLLS-26JUL",
       "kind": "threshold",
       "market_count": 13,
-      "implied_value": 96.4125,
-      "consensus_label": "96k",
+      "implied_value": 88.4625,
+      "consensus_label": "88k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26jul",
       "title": "Jobs numbers in Jul 2026?"
     },
@@ -56,7 +56,7 @@
       "event_ticker": "KXECONSTATU3-26JUL",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.378052805280529,
+      "implied_value": 4.378404558404559,
       "consensus_label": "4.38%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26jul",
       "title": "Unemployment rate in Jul 2026?"
