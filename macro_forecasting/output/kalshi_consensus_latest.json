@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-07-10T13:17:29.998120+00:00",
+  "generated_at_utc": "2026-07-10T18:37:54.064378+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26JUL16",
       "kind": "threshold",
       "market_count": 10,
-      "implied_value": 217975.0,
-      "consensus_label": "217,975",
+      "implied_value": 218050.0,
+      "consensus_label": "218,050",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26jul16",
       "title": "Initial jobless claims for the week ending July 11, 2026"
     },
@@ -26,8 +26,8 @@
       "event_ticker": "KXECONSTATCPICORE-26JUN",
       "kind": "bucket",
       "market_count": 8,
-      "implied_value": 0.21384615384615385,
-      "consensus_label": "0.214% m/m",
+      "implied_value": 0.2058139534883721,
+      "consensus_label": "0.206% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26jun",
       "title": "CPI core month-over-month in Jun 2026?"
     },
@@ -46,7 +46,7 @@
       "event_ticker": "KXPAYROLLS-26JUL",
       "kind": "threshold",
       "market_count": 13,
-      "implied_value": 83.1125,
+      "implied_value": 83.3,
       "consensus_label": "83k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26jul",
       "title": "Jobs numbers in Jul 2026?"
@@ -56,7 +56,7 @@
       "event_ticker": "KXECONSTATU3-26JUL",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.280288461538465,
+      "implied_value": 4.280676328502419,
       "consensus_label": "4.28%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26jul",
       "title": "Unemployment rate in Jul 2026?"
@@ -66,8 +66,8 @@
       "event_ticker": "KXPCECORE-26AUG",
       "kind": "threshold",
       "market_count": 5,
-      "implied_value": 0.2765,
-      "consensus_label": "0.277% m/m",
+      "implied_value": 0.26975000000000005,
+      "consensus_label": "0.270% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxpcecore-26aug",
       "title": "How much will core PCE increase in Aug 2026?"
     }
