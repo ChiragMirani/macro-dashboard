@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-10T22:01:24.194691+00:00",
+  "generated_at_utc": "2026-07-13T22:01:54.635349+00:00",
   "inputs": {
     "spot_date": "2026-05-01",
     "spot_ur": 4.2,
@@ -29,10 +29,10 @@
     "as_of": "2026-07-01",
     "level_bps_per_1z": 25.0,
     "delta_bps_per_1z": 15.0,
-    "composite_z_tighter_positive": -0.2976792063598852,
-    "level_adjustment_pp": 0.0744198015899713,
-    "delta_adjustment_pp": -0.02758011005736467,
-    "total_adjustment_pp": 0.04683969153260663,
+    "composite_z_tighter_positive": -0.3179103027373527,
+    "level_adjustment_pp": 0.07947757568433818,
+    "delta_adjustment_pp": -0.021510781144124424,
+    "total_adjustment_pp": 0.05796679454021375,
     "components": [
       {
         "name": "ANFCI",
@@ -40,65 +40,65 @@
         "lookback_mean": -0.4436,
         "lookback_std": 0.17990772634881472,
         "zscore_tighter_positive": -0.34684447003135127,
-        "contribution_bps": 1.8604950397492825
+        "contribution_bps": 1.9869393921084544
       },
       {
         "name": "HY OAS",
-        "latest": 2.7,
-        "lookback_mean": 3.181621621621621,
-        "lookback_std": 0.4258505861152097,
-        "zscore_tighter_positive": -1.1309638575707464,
-        "contribution_bps": 1.8604950397492825
+        "latest": 2.69,
+        "lookback_mean": 3.181351351351351,
+        "lookback_std": 0.42615922771076853,
+        "zscore_tighter_positive": -1.1529759756483038,
+        "contribution_bps": 1.9869393921084544
       },
       {
         "name": "VIX",
-        "latest": 16.14142857142857,
-        "lookback_mean": 18.57008342426389,
-        "lookback_std": 6.671634921059566,
-        "zscore_tighter_positive": -0.36402694115786666,
-        "contribution_bps": 1.8604950397492825
+        "latest": 16.0025,
+        "lookback_mean": 18.56892568616865,
+        "lookback_std": 6.672068308622916,
+        "zscore_tighter_positive": -0.3846521899141569,
+        "contribution_bps": 1.9869393921084544
       },
       {
         "name": "Broad USD",
-        "latest": 120.6902,
-        "lookback_mean": 117.57033083333333,
-        "lookback_std": 4.7915539771177205,
-        "zscore_tighter_positive": 0.6511184433204236,
-        "contribution_bps": 1.8604950397492825
+        "latest": 120.5046,
+        "lookback_mean": 117.56878416666667,
+        "lookback_std": 4.7905765195328325,
+        "zscore_tighter_positive": 0.6128314246444011,
+        "contribution_bps": 1.9869393921084544
       }
     ],
     "checkpoint_deltas": [
       {
         "name": "since_last_fomc",
         "checkpoint_date": "2026-01-28",
-        "delta_z_tighter_positive": 0.11144295891241546,
-        "adjustment_bps": -1.6716443836862318
+        "delta_z_tighter_positive": 0.09121186253494795,
+        "adjustment_bps": -1.3681779380242194
       },
       {
         "name": "since_last_sep",
         "checkpoint_date": "2025-12-17",
-        "delta_z_tighter_positive": 0.0724244414700157,
-        "adjustment_bps": -1.0863666220502355
+        "delta_z_tighter_positive": 0.05219334509254819,
+        "adjustment_bps": -0.7829001763882228
       }
     ]
   },
   "adjusted_taylor": {
-    "spot": 4.946841036703614,
+    "spot": 4.957968139711221,
     "forward": null,
     "sep_delta_only_forward": null
   },
   "quarterly_revision": {
     "macro_revision_vs_sep_pp": null,
-    "fci_impulse_since_sep_pp": -0.010863666220502355,
+    "fci_impulse_since_sep_pp": -0.007829001763882229,
     "net_revision_vs_sep_pp": null
   },
   "market_pricing": {
     "treasury": {
       "as_of": "2026-07-01",
       "rates": {
-        "6m": 3.96,
-        "1y": 4.02,
-        "2y": 4.16
+        "6m": 3.99,
+        "1y": 4.06,
+        "2y": 4.21
       },
       "implied_cuts": {
         "6m": 0.0,
@@ -110,7 +110,7 @@
   },
   "policy_gap": {
     "raw_spot_vs_ff_pp": 1.2800013451710077,
-    "adjusted_spot_vs_ff_pp": 1.3268410367036143,
+    "adjusted_spot_vs_ff_pp": 1.3379681397112213,
     "raw_forward_vs_ff_pp": null,
     "adjusted_forward_vs_ff_pp": null
   }
