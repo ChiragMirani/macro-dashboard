@@ -1,17 +1,17 @@
 {
-  "generated_at_utc": "2026-06-15T22:05:49+00:00",
-  "target_month": "2026-06",
-  "latest_actual_month": "2026-05",
-  "final_mom": 0.22092410562638495,
-  "direct_mom": 0.26652838285400265,
-  "bottomup_mom": 0.17531982839876725,
-  "core_implied_yoy": 2.80950634902013,
-  "core_actual_yoy_at_forecast": 2.8229420636110225,
+  "generated_at_utc": "2026-07-14T22:02:00+00:00",
+  "target_month": "2026-07",
+  "latest_actual_month": "2026-06",
+  "final_mom": 0.1692934918418057,
+  "direct_mom": 0.20738369878649104,
+  "bottomup_mom": 0.13120328489712038,
+  "core_implied_yoy": 2.419340326929409,
+  "core_actual_yoy_at_forecast": 2.5657850563697515,
   "components": {
-    "shelter": 0.3452712756472538,
-    "core_goods": 0.21510381459900357,
-    "supercore": -0.0959840978206222,
-    "core_cpi": 0.26652838285400265
+    "shelter": 0.24983493311499994,
+    "core_goods": 0.15506772787178186,
+    "supercore": -0.05495091281014826,
+    "core_cpi": 0.20738369878649104
   },
   "uncertainty": {
     "component_rmse": {
@@ -27,44 +27,44 @@
   "model_details": {
     "shelter": {
       "selected_model": "ridge",
-      "raw_forecast": 0.3452712756472538,
-      "final_forecast": 0.3452712756472538,
-      "ensemble_forecast": 0.3452712756472538,
+      "raw_forecast": 0.24983493311499994,
+      "final_forecast": 0.24983493311499994,
+      "ensemble_forecast": 0.24983493311499994,
       "was_clipped": false,
       "gc_lo": null,
       "gc_hi": null
     },
     "core_goods": {
       "selected_model": "enet",
-      "raw_forecast": 0.21510381459900357,
-      "final_forecast": 0.21510381459900357,
-      "ensemble_forecast": 0.21510381459900357,
+      "raw_forecast": 0.15506772787178186,
+      "final_forecast": 0.15506772787178186,
+      "ensemble_forecast": 0.15506772787178186,
       "was_clipped": false,
       "gc_lo": null,
       "gc_hi": null
     },
     "supercore": {
       "selected_model": "sarimax",
-      "raw_forecast": -0.0959840978206222,
-      "final_forecast": -0.0959840978206222,
-      "ensemble_forecast": -0.0959840978206222,
+      "raw_forecast": -0.05495091281014826,
+      "final_forecast": -0.05495091281014826,
+      "ensemble_forecast": -0.05495091281014826,
       "was_clipped": false,
       "gc_lo": null,
       "gc_hi": null
     },
     "core_cpi": {
       "selected_model": "enet",
-      "raw_forecast": 0.26652838285400265,
-      "final_forecast": 0.26652838285400265,
-      "ensemble_forecast": 0.26652838285400265,
+      "raw_forecast": 0.20738369878649104,
+      "final_forecast": 0.20738369878649104,
+      "ensemble_forecast": 0.20738369878649104,
       "was_clipped": false,
       "gc_lo": null,
       "gc_hi": null
     }
   },
   "adjusted_core_signal": {
-    "latest_mom": 0.1745845239639599,
-    "avg3m": 0.21553408975209218
+    "latest_mom": 0.026932252480949354,
+    "avg3m": 0.17247209097818436
   },
   "training_cache_generated_at_utc": "2026-03-11T17:57:01+00:00",
   "training_cache_latest_actual_month": "2026-02"

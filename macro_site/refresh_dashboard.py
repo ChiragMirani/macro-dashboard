@@ -620,27 +620,34 @@ def _series_from_bls_rows(series_id: str, rows: list[dict[str, Any]]) -> pd.Seri
 
 
 def fetch_bls_series_batch(series_ids: list[str], start_year: int, end_year: int) -> dict[str, pd.Series]:
-    payload = {
-        "seriesid": series_ids,
-        "startyear": str(start_year),
-        "endyear": str(end_year),
-        "registrationkey": BLS_API_KEY,
-    }
-    try:
-        response = requests.post(BLS_BULK_API, json=payload, headers=REQUEST_HEADERS, timeout=60)
-        response.raise_for_status()
-        data = response.json()
-    except Exception:
-        return {}
-    if data.get("status") != "REQUEST_SUCCEEDED":
-        return {}
-
     out: dict[str, pd.Series] = {}
-    for entry in data.get("Results", {}).get("series", []):
-        series_id = entry.get("seriesID")
-        series = _series_from_bls_rows(str(series_id), entry.get("data") or [])
-        if series_id and series is not None and not series.empty:
-            out[str(series_id)] = series
+    chunk_size = 5
+    for start in range(0, len(series_ids), chunk_size):
+        chunk = series_ids[start : start + chunk_size]
+        payload = {
+            "seriesid": chunk,
+            "startyear": str(start_year),
+            "endyear": str(end_year),
+            "registrationkey": BLS_API_KEY,
+        }
+        data = None
+        for _attempt in range(2):
+            try:
+                response = requests.post(BLS_BULK_API, json=payload, headers=REQUEST_HEADERS, timeout=60)
+                response.raise_for_status()
+                data = response.json()
+                if data.get("status") == "REQUEST_SUCCEEDED":
+                    break
+            except Exception:
+                data = None
+        if not data or data.get("status") != "REQUEST_SUCCEEDED":
+            continue
+
+        for entry in data.get("Results", {}).get("series", []):
+            series_id = entry.get("seriesID")
+            series = _series_from_bls_rows(str(series_id), entry.get("data") or [])
+            if series_id and series is not None and not series.empty:
+                out[str(series_id)] = series
     return out
 
 
