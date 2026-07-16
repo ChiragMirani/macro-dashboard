@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-07-16T12:45:06.591103+00:00",
+  "generated_at_utc": "2026-07-16T18:13:28.197018+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26JUL23",
       "kind": "threshold",
-      "market_count": 0,
-      "implied_value": null,
-      "consensus_label": null,
+      "market_count": 9,
+      "implied_value": 209225.0,
+      "consensus_label": "209,225",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26jul23",
-      "title": null
+      "title": "Initial jobless claims for the week ending July 18, 2026"
     },
     "adp": {
       "key": "adp",
@@ -26,8 +26,8 @@
       "event_ticker": "KXECONSTATCPICORE-26JUL",
       "kind": "bucket",
       "market_count": 8,
-      "implied_value": 0.25662983425414365,
-      "consensus_label": "0.257% m/m",
+      "implied_value": 0.2528301886792453,
+      "consensus_label": "0.253% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26jul",
       "title": "CPI core month-over-month in Jul 2026?"
     },
@@ -36,8 +36,8 @@
       "event_ticker": "KXCPICOREYOY-26JUL",
       "kind": "threshold",
       "market_count": 15,
-      "implied_value": 2.966,
-      "consensus_label": "2.97% y/y",
+      "implied_value": 2.7540000000000004,
+      "consensus_label": "2.75% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26jul",
       "title": "Core inflation in July 2026 (Core CPI YoY)"
     },
@@ -46,7 +46,7 @@
       "event_ticker": "KXPAYROLLS-26JUL",
       "kind": "threshold",
       "market_count": 13,
-      "implied_value": 82.2875,
+      "implied_value": 82.1875,
       "consensus_label": "82k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26jul",
       "title": "Jobs numbers in Jul 2026?"
@@ -66,8 +66,8 @@
       "event_ticker": "KXPCECORE-26AUG",
       "kind": "threshold",
       "market_count": 5,
-      "implied_value": 0.32325,
-      "consensus_label": "0.323% m/m",
+      "implied_value": 0.31150000000000005,
+      "consensus_label": "0.312% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxpcecore-26aug",
       "title": "How much will core PCE increase in Aug 2026?"
     }
