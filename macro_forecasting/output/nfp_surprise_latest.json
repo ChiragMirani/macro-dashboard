@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-07-09T22:16:15.030122+00:00",
+  "generated_at_utc": "2026-07-16T22:12:05.577637+00:00",
   "target_month": "2026-07",
   "threshold_k": 75.0,
-  "house_forecast_k": 97.11178588867188,
+  "house_forecast_k": 114.66666666666667,
   "ma3_k": 114.66666666666667,
   "baseline": {
     "regression": {
@@ -525,8 +525,8 @@
       "ma12": 65.25,
       "mean_reversion_3m": 49.41666666666667,
       "payroll_momentum_12": -7.5,
-      "claims_delta_k": -0.5,
-      "claims_accel_k": -15.75,
+      "claims_delta_k": -5.0,
+      "claims_accel_k": -20.25,
       "claims_vol_3m_k": 4.418238713937187,
       "claims_vol_6m_k": 6.5429669620644315,
       "biz_days": 21.0,
@@ -542,7 +542,7 @@
       "government_prev": 8.0,
       "construction_prev": 11.0,
       "private_prev": 49.0,
-      "house_forecast": 97.11178588867188,
+      "house_forecast": 114.66666666666667,
       "is_january": 0.0,
       "is_february": 0.0,
       "is_march": 0.0,
