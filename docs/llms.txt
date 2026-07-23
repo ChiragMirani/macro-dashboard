@@ -2,7 +2,7 @@
 
 > Live US macroeconomic release calendar with house model forecasts and Kalshi market consensus, maintained by Chirag Mirani.
 
-Updated: Wednesday, July 22, 2026 02:15 PM ET
+Updated: Thursday, July 23, 2026 08:45 AM ET
 Machine-readable feed: https://chiragmirani.github.io/macro-dashboard/dashboard_data.json
 
 ## Data sources
@@ -11,27 +11,27 @@ BLS (CPI, PPI, Employment Situation/CES/CPS); BEA PCE data and methodology; DOL 
 
 ## Tracked releases
 
-- **Weekly Claims** (Labor) â€” releases Thursday, July 23, 2026 at 8:30 AM ET.
+- **Weekly Claims** (Labor) â€” releases Thursday, July 30, 2026 at 8:30 AM ET.
   House forecast: 215,370.
-  Kalshi consensus: 200,750.
+  Kalshi consensus: no live Kalshi market found.
   Last release: Week ending Jul 04, 2026: 215,000.
-- **Core CPI** (Inflation) â€” releases Friday, August 21, 2026 at 8:30 AM ET.
+- **Core CPI** (Inflation) â€” releases Saturday, August 22, 2026 at 8:30 AM ET.
   House forecast: n/a.
-  Kalshi consensus: 0.179% m/m | 2.58% y/y.
+  Kalshi consensus: 0.161% m/m | 2.48% y/y.
   Last release: June 2026: -0.017% m/m, 2.57% y/y.
-- **Core PCE** (Inflation) â€” releases Friday, August 21, 2026 at 8:30 AM ET.
+- **Core PCE** (Inflation) â€” releases Saturday, August 22, 2026 at 8:30 AM ET.
   House forecast: 0.052% m/m | 3.19% y/y.
-  Kalshi consensus: 0.231% m/m.
+  Kalshi consensus: 0.240% m/m.
   Last release: May 2026: 0.320% m/m, 3.41% y/y.
-- **ADP** (Labor) â€” releases Friday, August 21, 2026 at 8:15 AM ET.
+- **ADP** (Labor) â€” releases Saturday, August 22, 2026 at 8:15 AM ET.
   House forecast: 68k.
   Kalshi consensus: 70k.
   Last release: June 2026: 98k.
-- **NFP** (Labor) â€” releases Friday, August 21, 2026 at 8:30 AM ET.
+- **NFP** (Labor) â€” releases Saturday, August 22, 2026 at 8:30 AM ET.
   House forecast: 115k.
   Kalshi consensus: 76k.
   Last release: June 2026: 57k.
-- **Unemployment Rate** (Labor) â€” releases Friday, August 21, 2026 at 8:30 AM ET.
+- **Unemployment Rate** (Labor) â€” releases Saturday, August 22, 2026 at 8:30 AM ET.
   House forecast: 4.20%.
   Kalshi consensus: 4.28%.
   Last release: June 2026: 4.20%.
