@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Tuesday, July 28, 2026 08:58 AM ET",
-  "generated_at_iso": "2026-07-28T08:58:18.803321-04:00",
+  "generated_at_et": "Tuesday, July 28, 2026 02:20 PM ET",
+  "generated_at_iso": "2026-07-28T14:20:35.252834-04:00",
   "current_day": "Tuesday",
   "current_date": "July 28, 2026",
-  "current_time": "08:58 AM ET",
+  "current_time": "02:20 PM ET",
   "next_event": {
     "key": "weekly_claims",
     "label": "Weekly Claims",
@@ -14,10 +14,10 @@
     "release_date": "July 30, 2026",
     "release_time": "8:30 AM ET",
     "release_iso": "2026-07-30T08:30:00-04:00",
-    "hours_until_release": 47,
+    "hours_until_release": 42,
     "schedule_source": "weekly_rule",
     "house_forecast": "210,968",
-    "kalshi_consensus": "200,550",
+    "kalshi_consensus": "199,700",
     "last_release": "Week ending Jul 04, 2026: 215,000",
     "risk": "elevated surprise risk",
     "status": "review",
@@ -27,13 +27,13 @@
     "release_source_url": "https://www.dol.gov/ui/data.pdf",
     "consensus_review": {
       "required": true,
-      "gap_value": 10417.910776154866,
-      "gap_display": "+10,418",
+      "gap_value": 11267.910776154866,
+      "gap_display": "+11,268",
       "threshold": 10000.0,
       "threshold_display": "10,000",
       "house_side": "above Kalshi",
       "label": "Review required",
-      "message": "Weekly Claims house forecast is +10,418 above Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
+      "message": "Weekly Claims house forecast is +11,268 above Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
       "news_query": "Week ending July 25, 2026 jobless claims forecast seasonal adjustment",
       "news_search_url": "https://news.google.com/search?q=Week+ending+July+25%2C+2026+jobless+claims+forecast+seasonal+adjustment",
       "official_guidance": [
@@ -57,13 +57,13 @@
           "published": "Thu, 16 Jul 2026 07:00:00 GMT"
         },
         {
-          "title": "Spot gold shoots back above $4,000/oz after U.S. weekly jobless claims dip to 215k - KITCO",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbzlPTVJIVnRvLUZYNlktV3NXejN5NDE0aFFiczNwMG5pWHdhWDJfbXE4c2FrcS1EVFNiaWtfOENDdlFSck1rU0pQSndDRy1PUWlXUU5mbVlWcnp4TjM0VHlUSTlQTDQ2bTg3Nm5GNVFpWUVYSUdIMmVqTTlyNWh5UUhjVXNYSDFfV1pDRFUyTkEzYlBNM0tPYmh2YUZ3RGE5aDB0QjFTa0lEWS1wVmtuVXA2VnVFNUlGNjRYZA?oc=5",
-          "published": "Thu, 25 Jun 2026 07:00:00 GMT"
+          "title": "Crude Oil Posts Three Straight Weekly Gains, Metals Show Mixed Performance, LME Tin Rises Over 1%, SHFE Silver Gains Over 4% Weekly [Overnight Market] - Shanghai Metals Market",
+          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNdHZEbkxhS0RlZmR1aEwzMHZ6RXpOQVB5ckJjbkpUYnpkUXBFYU9uM0FQU2xoS01icEdnUm9mak5VZ1U2SGlrU3VUZEhPSGdlV2dkWWJhV045cllkOGpYVmlhLVY4eWNuZmFBMk8yMjFSMjdBMUxKenhZWEZsUHc3MXNrR3pEU2NUOFFqUnNyaE94NENuRzFXNGFUUUhJTmVKRl9DX0hMSzR3ek9nTVMyazd4MXNmVThBc2RGLTB3cHZhWHRoTTNQQzFYRXJEbHEtTlZ0M2Nmbm90b2FISkdGeE9IcnRadTBZTklTRDZBM21ULUp4emRQTXBOMA?oc=5",
+          "published": "Mon, 27 Jul 2026 01:28:18 GMT"
         },
         {
-          "title": "US weekly jobless claims drop more than expected - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOanJCNHlsRy02Sjc1UWEzNEhvSWFfekR3WjBJVC0yQllZLW93T3pyYldZdktwaWVVUHo3SFdYME5VSzVUU3FWRU5sSFRoQnJFTlpGek5JNkU5dVlTUUZmQTc5a0ZINERtdVFLV2phU0VjVUswT3JZamkzNkphOFRDVUxjNUdsMDVIamVKTDIzVUdtRE5WbmtSbw?oc=5",
+          "title": "Spot gold shoots back above $4,000/oz after U.S. weekly jobless claims dip to 215k - KITCO",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbzlPTVJIVnRvLUZYNlktV3NXejN5NDE0aFFiczNwMG5pWHdhWDJfbXE4c2FrcS1EVFNiaWtfOENDdlFSck1rU0pQSndDRy1PUWlXUU5mbVlWcnp4TjM0VHlUSTlQTDQ2bTg3Nm5GNVFpWUVYSUdIMmVqTTlyNWh5UUhjVXNYSDFfV1pDRFUyTkEzYlBNM0tPYmh2YUZ3RGE5aDB0QjFTa0lEWS1wVmtuVXA2VnVFNUlGNjRYZA?oc=5",
           "published": "Thu, 25 Jun 2026 07:00:00 GMT"
         }
       ]
@@ -79,10 +79,10 @@
       "release_date": "July 30, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-07-30T08:30:00-04:00",
-      "hours_until_release": 47,
+      "hours_until_release": 42,
       "schedule_source": "weekly_rule",
       "house_forecast": "210,968",
-      "kalshi_consensus": "200,550",
+      "kalshi_consensus": "199,700",
       "last_release": "Week ending Jul 04, 2026: 215,000",
       "risk": "elevated surprise risk",
       "status": "review",
@@ -92,13 +92,13 @@
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "consensus_review": {
         "required": true,
-        "gap_value": 10417.910776154866,
-        "gap_display": "+10,418",
+        "gap_value": 11267.910776154866,
+        "gap_display": "+11,268",
         "threshold": 10000.0,
         "threshold_display": "10,000",
         "house_side": "above Kalshi",
         "label": "Review required",
-        "message": "Weekly Claims house forecast is +10,418 above Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
+        "message": "Weekly Claims house forecast is +11,268 above Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
         "news_query": "Week ending July 25, 2026 jobless claims forecast seasonal adjustment",
         "news_search_url": "https://news.google.com/search?q=Week+ending+July+25%2C+2026+jobless+claims+forecast+seasonal+adjustment",
         "official_guidance": [
@@ -122,13 +122,13 @@
             "published": "Thu, 16 Jul 2026 07:00:00 GMT"
           },
           {
-            "title": "Spot gold shoots back above $4,000/oz after U.S. weekly jobless claims dip to 215k - KITCO",
-            "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbzlPTVJIVnRvLUZYNlktV3NXejN5NDE0aFFiczNwMG5pWHdhWDJfbXE4c2FrcS1EVFNiaWtfOENDdlFSck1rU0pQSndDRy1PUWlXUU5mbVlWcnp4TjM0VHlUSTlQTDQ2bTg3Nm5GNVFpWUVYSUdIMmVqTTlyNWh5UUhjVXNYSDFfV1pDRFUyTkEzYlBNM0tPYmh2YUZ3RGE5aDB0QjFTa0lEWS1wVmtuVXA2VnVFNUlGNjRYZA?oc=5",
-            "published": "Thu, 25 Jun 2026 07:00:00 GMT"
+            "title": "Crude Oil Posts Three Straight Weekly Gains, Metals Show Mixed Performance, LME Tin Rises Over 1%, SHFE Silver Gains Over 4% Weekly [Overnight Market] - Shanghai Metals Market",
+            "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNdHZEbkxhS0RlZmR1aEwzMHZ6RXpOQVB5ckJjbkpUYnpkUXBFYU9uM0FQU2xoS01icEdnUm9mak5VZ1U2SGlrU3VUZEhPSGdlV2dkWWJhV045cllkOGpYVmlhLVY4eWNuZmFBMk8yMjFSMjdBMUxKenhZWEZsUHc3MXNrR3pEU2NUOFFqUnNyaE94NENuRzFXNGFUUUhJTmVKRl9DX0hMSzR3ek9nTVMyazd4MXNmVThBc2RGLTB3cHZhWHRoTTNQQzFYRXJEbHEtTlZ0M2Nmbm90b2FISkdGeE9IcnRadTBZTklTRDZBM21ULUp4emRQTXBOMA?oc=5",
+            "published": "Mon, 27 Jul 2026 01:28:18 GMT"
           },
           {
-            "title": "US weekly jobless claims drop more than expected - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOanJCNHlsRy02Sjc1UWEzNEhvSWFfekR3WjBJVC0yQllZLW93T3pyYldZdktwaWVVUHo3SFdYME5VSzVUU3FWRU5sSFRoQnJFTlpGek5JNkU5dVlTUUZmQTc5a0ZINERtdVFLV2phU0VjVUswT3JZamkzNkphOFRDVUxjNUdsMDVIamVKTDIzVUdtRE5WbmtSbw?oc=5",
+            "title": "Spot gold shoots back above $4,000/oz after U.S. weekly jobless claims dip to 215k - KITCO",
+            "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbzlPTVJIVnRvLUZYNlktV3NXejN5NDE0aFFiczNwMG5pWHdhWDJfbXE4c2FrcS1EVFNiaWtfOENDdlFSck1rU0pQSndDRy1PUWlXUU5mbVlWcnp4TjM0VHlUSTlQTDQ2bTg3Nm5GNVFpWUVYSUdIMmVqTTlyNWh5UUhjVXNYSDFfV1pDRFUyTkEzYlBNM0tPYmh2YUZ3RGE5aDB0QjFTa0lEWS1wVmtuVXA2VnVFNUlGNjRYZA?oc=5",
             "published": "Thu, 25 Jun 2026 07:00:00 GMT"
           }
         ]
@@ -143,10 +143,10 @@
       "release_date": "August 27, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-08-27T08:30:00-04:00",
-      "hours_until_release": 719,
+      "hours_until_release": 714,
       "schedule_source": "fallback_schedule",
       "house_forecast": null,
-      "kalshi_consensus": "0.169% m/m | 2.44% y/y",
+      "kalshi_consensus": "0.165% m/m | 2.44% y/y",
       "last_release": "June 2026: -0.017% m/m, 2.57% y/y",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -165,7 +165,7 @@
       "release_date": "August 27, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-08-27T08:30:00-04:00",
-      "hours_until_release": 719,
+      "hours_until_release": 714,
       "schedule_source": "fallback_schedule",
       "house_forecast": "0.052% m/m | 3.19% y/y",
       "kalshi_consensus": "0.433% m/m",
@@ -231,7 +231,7 @@
       "release_date": "August 27, 2026",
       "release_time": "8:15 AM ET",
       "release_iso": "2026-08-27T08:30:00-04:00",
-      "hours_until_release": 719,
+      "hours_until_release": 714,
       "schedule_source": "fallback_schedule",
       "house_forecast": "68k",
       "kalshi_consensus": "69k",
@@ -244,7 +244,7 @@
       "release_source_url": "https://adpemploymentreport.com/",
       "consensus_review": {
         "required": false,
-        "gap_value": -0.44679572966991543,
+        "gap_value": -0.32179572966991543,
         "gap_display": "-0k",
         "threshold": 35.0,
         "threshold_display": "35k",
@@ -260,7 +260,7 @@
       "release_date": "August 27, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-08-27T08:30:00-04:00",
-      "hours_until_release": 719,
+      "hours_until_release": 714,
       "schedule_source": "fallback_schedule",
       "house_forecast": "115k",
       "kalshi_consensus": "73k",
@@ -273,13 +273,13 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": true,
-        "gap_value": 41.69166666666668,
-        "gap_display": "+42k",
+        "gap_value": 41.31666666666668,
+        "gap_display": "+41k",
         "threshold": 40.0,
         "threshold_display": "40k",
         "house_side": "above Kalshi",
         "label": "Review required",
-        "message": "NFP house forecast is +42k above Kalshi; threshold is 40k. Check official guidance and news before using the forecast.",
+        "message": "NFP house forecast is +41k above Kalshi; threshold is 40k. Check official guidance and news before using the forecast.",
         "news_query": "August 2026 jobs report BLS forecast adjustment survey",
         "news_search_url": "https://news.google.com/search?q=August+2026+jobs+report+BLS+forecast+adjustment+survey",
         "official_guidance": [
@@ -303,14 +303,14 @@
             "published": "Fri, 13 Feb 2026 08:00:00 GMT"
           },
           {
+            "title": "Labor market impacts of AI: A new measure and early evidence - Anthropic",
+            "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9KTkM5U1RQMnVZS29QR3BLTzQyOHJYSHFZY253LXd2RTNyZlNOZjdxMFB5ZkV4SVNJcGtaSkJIQkdma21jS0tvWWdGQ3BDZ1ZMQjFIU09Xb2FaUl9JSlcxY1lVazhUQQ?oc=5",
+            "published": "Thu, 05 Mar 2026 08:00:00 GMT"
+          },
+          {
             "title": "U.S. payrolls rose by 130,000 in January, more than expected; unemployment down to 4.3% - CNBC",
             "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE80QmlGMzFFZjM3TDhfN2R0NkdUZkM0VGRwQjE0UG1JVTh4Rnk4Wmg2U250a3p3cUFfX3l3YjV0TXh0dFlmRWdXakdNN2tFeTduNUpnaTRoZm44cExLbmhhbnlBX0FkMU1mRnRtcGdBZ9IBdEFVX3lxTE1tOWIxV2doSWlXYnlkTWl6bVNpYVpCbDB0YURFWWlCR2ZrNUkxRXIzRHphU2MwX0RxMlQ0WnozSTFBeHF5ZzQ2Wm91OW9XRTk3dG5VNTBlWW5vbGhIRFBEb2xDTUJkT1NCVmM1Mkcydzl0Zl9C?oc=5",
             "published": "Wed, 11 Feb 2026 08:00:00 GMT"
-          },
-          {
-            "title": "Florida Job Openings and Labor Turnover \u2014 December 2025 - Bureau of Labor Statistics (.gov)",
-            "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUUNudERhYlc2YkdlQUR0MEhGMTFOVjUyRmJETGtDUUJoakMxaGM0d1lNakpHblFpeUVMR0xDYlI3SjRvbnRrYXl3TWx2QTB6dGVsa2Z0MjVrTEdEQnhhaklsUE5xNWZyWTlFUzMzejVVVENpVnJ6OHpHR1AwclIyWlpHdnRDSUplR0FNaXkwaTY?oc=5",
-            "published": "Tue, 24 Feb 2026 08:00:00 GMT"
           }
         ]
       }
@@ -324,7 +324,7 @@
       "release_date": "August 27, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-08-27T08:30:00-04:00",
-      "hours_until_release": 719,
+      "hours_until_release": 714,
       "schedule_source": "fallback_schedule",
       "house_forecast": "4.20%",
       "kalshi_consensus": "4.28%",
@@ -337,13 +337,13 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": true,
-        "gap_value": -0.07850467289720164,
-        "gap_display": "-0.079 pp",
+        "gap_value": -0.07777777777778283,
+        "gap_display": "-0.078 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "below Kalshi",
         "label": "Review required",
-        "message": "Unemployment Rate house forecast is -0.079 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
+        "message": "Unemployment Rate house forecast is -0.078 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
         "news_query": "August 2026 jobs report BLS forecast adjustment survey",
         "news_search_url": "https://news.google.com/search?q=August+2026+jobs+report+BLS+forecast+adjustment+survey",
         "official_guidance": [
@@ -367,14 +367,14 @@
             "published": "Fri, 13 Feb 2026 08:00:00 GMT"
           },
           {
+            "title": "Labor market impacts of AI: A new measure and early evidence - Anthropic",
+            "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9KTkM5U1RQMnVZS29QR3BLTzQyOHJYSHFZY253LXd2RTNyZlNOZjdxMFB5ZkV4SVNJcGtaSkJIQkdma21jS0tvWWdGQ3BDZ1ZMQjFIU09Xb2FaUl9JSlcxY1lVazhUQQ?oc=5",
+            "published": "Thu, 05 Mar 2026 08:00:00 GMT"
+          },
+          {
             "title": "U.S. payrolls rose by 130,000 in January, more than expected; unemployment down to 4.3% - CNBC",
             "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE80QmlGMzFFZjM3TDhfN2R0NkdUZkM0VGRwQjE0UG1JVTh4Rnk4Wmg2U250a3p3cUFfX3l3YjV0TXh0dFlmRWdXakdNN2tFeTduNUpnaTRoZm44cExLbmhhbnlBX0FkMU1mRnRtcGdBZ9IBdEFVX3lxTE1tOWIxV2doSWlXYnlkTWl6bVNpYVpCbDB0YURFWWlCR2ZrNUkxRXIzRHphU2MwX0RxMlQ0WnozSTFBeHF5ZzQ2Wm91OW9XRTk3dG5VNTBlWW5vbGhIRFBEb2xDTUJkT1NCVmM1Mkcydzl0Zl9C?oc=5",
             "published": "Wed, 11 Feb 2026 08:00:00 GMT"
-          },
-          {
-            "title": "Florida Job Openings and Labor Turnover \u2014 December 2025 - Bureau of Labor Statistics (.gov)",
-            "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUUNudERhYlc2YkdlQUR0MEhGMTFOVjUyRmJETGtDUUJoakMxaGM0d1lNakpHblFpeUVMR0xDYlI3SjRvbnRrYXl3TWx2QTB6dGVsa2Z0MjVrTEdEQnhhaklsUE5xNWZyWTlFUzMzejVVVENpVnJ6OHpHR1AwclIyWlpHdnRDSUplR0FNaXkwaTY?oc=5",
-            "published": "Tue, 24 Feb 2026 08:00:00 GMT"
           }
         ]
       }
@@ -11290,7 +11290,7 @@
     "period": "June 2026",
     "data_month": "2026-06-01",
     "generated_at": "2026-07-16T18:16:31",
-    "updated_display": "Tuesday, July 28, 2026 08:58 AM ET",
+    "updated_display": "Tuesday, July 28, 2026 02:20 PM ET",
     "source_path": "macro_forecasting/output/core_pce_bridge_latest.json",
     "model_source": "macro_forecasting/cpi_to_pce_bridge.py",
     "core_cpi_mom": -0.0167,
