@@ -1,33 +1,33 @@
 {
-  "generated_at_utc": "2026-07-23T22:01:15+00:00",
+  "generated_at_utc": "2026-07-30T22:01:02+00:00",
   "training_cache_generated_at_utc": "2026-03-11T16:13:33+00:00",
   "best_model_name": "calendar_factor_hgb",
-  "latest_actual_week": "2026-07-18",
-  "target_week": "2026-07-25",
-  "forecast": 210967.91077615487,
-  "lag1": 187000.0,
-  "ma4": 207500.0,
+  "latest_actual_week": "2026-07-25",
+  "target_week": "2026-08-01",
+  "forecast": 209875.87923914523,
+  "lag1": 197000.0,
+  "ma4": 202750.0,
   "context": {
     "holiday_week": 0,
     "post_holiday_week": 0,
     "pre_holiday_week": 0,
     "month_end_window": 0,
-    "month_start_window": 0,
+    "month_start_window": 1,
     "quarter_end_window": 0,
     "state_outlier_count_prev": 0,
     "ny_delta_prev": NaN,
-    "seasonal_ratio_lag1": 1.0283208556149732,
-    "seasonal_ratio_yoy": 0.8848858447488585
+    "seasonal_ratio_lag1": 0.8912335025380711,
+    "seasonal_ratio_yoy": 0.8650088495575221
   },
   "surprise": {
-    "expected_abs_gap_vs_ma4": 8571.050825104341,
-    "implied_range_low": 198928.94917489565,
-    "implied_range_high": 216071.05082510435,
+    "expected_abs_gap_vs_ma4": 7958.840821673226,
+    "implied_range_low": 194791.15917832678,
+    "implied_range_high": 210708.84082167322,
     "risk_label": "elevated",
-    "baseline_abs_gap_4wavg": 12750.0
+    "baseline_abs_gap_4wavg": 13312.5
   },
   "kalshi": {
-    "event_ticker": "KXJOBLESSCLAIMS-26JUL30",
+    "event_ticker": "KXJOBLESSCLAIMS-26AUG06",
     "markets": [],
     "consensus_floor": null,
     "consensus_range": null,

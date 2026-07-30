@@ -35,19 +35,19 @@
     }
   },
   "forecast": {
-    "generated_at_utc": "2026-07-23T22:04:17+00:00",
-    "latest_actual_week": "2026-07-18",
-    "target_week": "2026-07-25",
+    "generated_at_utc": "2026-07-30T22:04:21+00:00",
+    "latest_actual_week": "2026-07-25",
+    "target_week": "2026-08-01",
     "surprise_threshold": 10000.0,
-    "expected_abs_gap_vs_ma4": 6611.000038572165,
+    "expected_abs_gap_vs_ma4": 8368.270045294314,
     "expected_range_vs_ma4": [
-      200888.99996142782,
-      214111.00003857218
+      194381.7299547057,
+      211118.2700452943
     ],
-    "surprise_prob_10k": 0.18132356011862283,
+    "surprise_prob_10k": 0.1962915883724359,
     "baseline_abs_gap_4wavg": 9500.0,
     "baseline_prob_10k": 0.36538461538461536,
-    "ma4_reference": 207500.0,
+    "ma4_reference": 202750.0,
     "context": {
       "holiday_week": 0,
       "post_holiday_week": 0,
