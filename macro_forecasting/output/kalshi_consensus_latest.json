@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-07-31T13:02:48.592183+00:00",
+  "generated_at_utc": "2026-07-31T18:25:44.853168+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26AUG06",
       "kind": "threshold",
       "market_count": 9,
-      "implied_value": 205225.0,
-      "consensus_label": "205,225",
+      "implied_value": 204650.0,
+      "consensus_label": "204,650",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26aug06",
       "title": "Initial jobless claims for the week ending August 1, 2026"
     },
@@ -16,7 +16,7 @@
       "event_ticker": "KXADP-26JUL",
       "kind": "threshold",
       "market_count": 7,
-      "implied_value": 67.375,
+      "implied_value": 67.0,
       "consensus_label": "67k",
       "kalshi_url": "https://kalshi.com/markets/kxadp-26jul",
       "title": "ADP employment change in Jul 2026?"
@@ -26,8 +26,8 @@
       "event_ticker": "KXECONSTATCPICORE-26JUL",
       "kind": "bucket",
       "market_count": 8,
-      "implied_value": 0.18755760368663593,
-      "consensus_label": "0.188% m/m",
+      "implied_value": 0.1820175438596491,
+      "consensus_label": "0.182% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26jul",
       "title": "CPI core month-over-month in Jul 2026?"
     },
@@ -36,8 +36,8 @@
       "event_ticker": "KXCPICOREYOY-26JUL",
       "kind": "threshold",
       "market_count": 15,
-      "implied_value": 3.3165,
-      "consensus_label": "3.32% y/y",
+      "implied_value": 2.89125,
+      "consensus_label": "2.89% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26jul",
       "title": "Core inflation in July 2026 (Core CPI YoY)"
     },
@@ -46,7 +46,7 @@
       "event_ticker": "KXPAYROLLS-26JUL",
       "kind": "threshold",
       "market_count": 13,
-      "implied_value": 80.22500000000001,
+      "implied_value": 80.275,
       "consensus_label": "80k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26jul",
       "title": "Jobs numbers in Jul 2026?"
@@ -66,7 +66,7 @@
       "event_ticker": "KXPCECORE-26AUG",
       "kind": "threshold",
       "market_count": 8,
-      "implied_value": 0.43725,
+      "implied_value": 0.43674999999999997,
       "consensus_label": "0.437% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxpcecore-26aug",
       "title": "How much will core PCE increase in Aug 2026?"
