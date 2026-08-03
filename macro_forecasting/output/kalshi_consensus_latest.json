@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-08-03T13:45:53.281712+00:00",
+  "generated_at_utc": "2026-08-03T18:54:29.868871+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26AUG06",
       "kind": "threshold",
       "market_count": 9,
-      "implied_value": 205050.0,
-      "consensus_label": "205,050",
+      "implied_value": 203750.0,
+      "consensus_label": "203,750",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26aug06",
       "title": "Initial jobless claims for the week ending August 1, 2026"
     },
@@ -26,8 +26,8 @@
       "event_ticker": "KXECONSTATCPICORE-26AUG",
       "kind": "bucket",
       "market_count": 13,
-      "implied_value": 0.27050691244239633,
-      "consensus_label": "0.271% m/m",
+      "implied_value": 0.2653846153846154,
+      "consensus_label": "0.265% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26aug",
       "title": "CPI core month-over-month in Aug 2026?"
     },
@@ -36,8 +36,8 @@
       "event_ticker": "KXCPICOREYOY-26AUG",
       "kind": "threshold",
       "market_count": 15,
-      "implied_value": 2.976749999999999,
-      "consensus_label": "2.98% y/y",
+      "implied_value": 2.965,
+      "consensus_label": "2.96% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26aug",
       "title": "Core inflation in August 2026 (Core CPI YoY)"
     },
@@ -56,7 +56,7 @@
       "event_ticker": "KXECONSTATU3-26AUG",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.388073394495413,
+      "implied_value": 4.388479262672812,
       "consensus_label": "4.39%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26aug",
       "title": "Unemployment rate in Aug 2026?"
@@ -66,8 +66,8 @@
       "event_ticker": "KXPCECORE-26SEP",
       "kind": "threshold",
       "market_count": 7,
-      "implied_value": 0.29225,
-      "consensus_label": "0.292% m/m",
+      "implied_value": 0.47875,
+      "consensus_label": "0.479% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxpcecore-26sep",
       "title": "How much will core PCE increase in Sep 2026?"
     }
