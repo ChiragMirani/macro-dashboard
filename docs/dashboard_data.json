@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Wednesday, August 05, 2026 08:59 AM ET",
-  "generated_at_iso": "2026-08-05T08:59:33.162790-04:00",
+  "generated_at_et": "Wednesday, August 05, 2026 02:41 PM ET",
+  "generated_at_iso": "2026-08-05T14:41:03.705295-04:00",
   "current_day": "Wednesday",
   "current_date": "August 05, 2026",
-  "current_time": "08:59 AM ET",
+  "current_time": "02:41 PM ET",
   "next_event": {
     "key": "weekly_claims",
     "label": "Weekly Claims",
@@ -14,10 +14,10 @@
     "release_date": "August 06, 2026",
     "release_time": "8:30 AM ET",
     "release_iso": "2026-08-06T08:30:00-04:00",
-    "hours_until_release": 23,
+    "hours_until_release": 17,
     "schedule_source": "weekly_rule",
     "house_forecast": "209,876",
-    "kalshi_consensus": "200,025",
+    "kalshi_consensus": "201,850",
     "last_release": "Week ending Jul 04, 2026: 215,000",
     "risk": "elevated surprise risk",
     "status": "live",
@@ -27,8 +27,8 @@
     "release_source_url": "https://www.dol.gov/ui/data.pdf",
     "consensus_review": {
       "required": false,
-      "gap_value": 9850.87923914523,
-      "gap_display": "+9,851",
+      "gap_value": 8025.87923914523,
+      "gap_display": "+8,026",
       "threshold": 10000.0,
       "threshold_display": "10,000",
       "house_side": "above Kalshi"
@@ -44,10 +44,10 @@
       "release_date": "August 06, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-08-06T08:30:00-04:00",
-      "hours_until_release": 23,
+      "hours_until_release": 17,
       "schedule_source": "weekly_rule",
       "house_forecast": "209,876",
-      "kalshi_consensus": "200,025",
+      "kalshi_consensus": "201,850",
       "last_release": "Week ending Jul 04, 2026: 215,000",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -57,8 +57,8 @@
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "consensus_review": {
         "required": false,
-        "gap_value": 9850.87923914523,
-        "gap_display": "+9,851",
+        "gap_value": 8025.87923914523,
+        "gap_display": "+8,026",
         "threshold": 10000.0,
         "threshold_display": "10,000",
         "house_side": "above Kalshi"
@@ -73,10 +73,10 @@
       "release_date": "September 04, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-09-04T08:30:00-04:00",
-      "hours_until_release": 719,
+      "hours_until_release": 713,
       "schedule_source": "fallback_schedule",
       "house_forecast": null,
-      "kalshi_consensus": "0.263% m/m | 2.97% y/y",
+      "kalshi_consensus": "0.263% m/m | 2.99% y/y",
       "last_release": "June 2026: -0.017% m/m, 2.57% y/y",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -95,10 +95,10 @@
       "release_date": "September 04, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-09-04T08:30:00-04:00",
-      "hours_until_release": 719,
+      "hours_until_release": 713,
       "schedule_source": "fallback_schedule",
       "house_forecast": "0.052% m/m | 3.20% y/y",
-      "kalshi_consensus": "0.292% m/m",
+      "kalshi_consensus": "0.293% m/m",
       "last_release": "June 2026: 0.132% m/m, 3.29% y/y",
       "risk": null,
       "status": "review",
@@ -108,13 +108,13 @@
       "release_source_url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
       "consensus_review": {
         "required": true,
-        "gap_value": -0.24025000000000002,
-        "gap_display": "-0.240 pp",
+        "gap_value": -0.2415,
+        "gap_display": "-0.241 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "below Kalshi",
         "label": "Review required",
-        "message": "Core PCE house forecast is -0.240 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
+        "message": "Core PCE house forecast is -0.241 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
         "news_query": "September 2026 core PCE forecast BEA adjustment inflation",
         "news_search_url": "https://news.google.com/search?q=September+2026+core+PCE+forecast+BEA+adjustment+inflation",
         "official_guidance": [
@@ -128,7 +128,28 @@
           }
         ],
         "guidance_hit_count": 1,
-        "news_headlines": []
+        "news_headlines": [
+          {
+            "title": "A Statistical Revamp Is About to Lower Inflation, at a Critical Time - WSJ",
+            "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQVGJ3eDJ0X1JSRGZFSkpSQ2NSRXNUejVIQUU5bnJNekJ2UXZxS0F5UGhmMEk1cWRPNkhmanF2bUl4OHY2R0daLXpnV045eTVkZEpaV1lmYmFqN2p1blVSSEdQWHkwRFBiNUFFOG9qbXRKSXY0dkpYLWlFTThPUGlkd0Mtd3Y4dw?oc=5",
+            "published": "Sun, 19 Jul 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Residual Seasonality in Some Components of PCE Inflation - clevelandfed.org",
+            "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNN1o3RHpVSEJNblNWcEN0VWpVY1FMTHZYNGdOVXhkd3dJWF9Jc3ZRT1I0eGNuTl85WXVQV3lXM3VjRE9iZ2RWT3V6RmdUcTBaeGtOSnYwWU9IWjFRbDB6V2hPSmRPTzdCNHJWWWcwaS01ZmRWYklhVXZXcmdCTF9tUFVETGxwWjBOYk9YTXRVSjZnSlVFWS1URWw2TFdPc3lKNlNHakpWcnRvRTZ1OXEtOE5WV3gtQmttWTVfcTZoeUV0U3BCcjhvSFlaekFidw?oc=5",
+            "published": "Thu, 05 Mar 2026 14:15:42 GMT"
+          },
+          {
+            "title": "GDP (Advance Estimate), 4th Quarter and Year 2025 - Bureau of Economic Analysis (BEA) (.gov)",
+            "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQ3gxNnp5ajZDUWhLTi10dGxYRzEwM25EVzBQVDRkY3ZCR2RYaWNCLXdRY0xSVzNxUTRiSmJxcWNoSDJybmgwLWo4UjZsSUFYcFZzNEVzX25rTWdZVXlVM3ZoXzBXRk1TVDAzRU5QZDVuQ0JSMUQ3ZVRZa21BLTc0ZHNn?oc=5",
+            "published": "Fri, 20 Feb 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Core inflation rate hit 3.4% in May, highest since October 2023, Fed\u2019s preferred gauge shows - CNBC",
+            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZcDg3cWttTk56b3NGQXdmNk1IXzVpYWdNR0lsaTFBU2pVQWpmV2ZwRGt3aEJhekVneDRCQVh3SWtnUnF4cVRudEVrcWREVEhSQnl0bTB4TGtBRkVvNThLWVRzOTJ5MTQtZ0tGcHZHN1NEQ3RKQlHSAXtBVV95cUxNdjlBUGRsTDRJMXltYWlmWmRzMjJtNjlfZlQwZURzSDdic0F2MW5FcHJsSWd2TEY2d1JuSFpraVA4bG9vNmlPLVAtd1p4NDdNWVVwM2lIRlNxNWx3WkZIZ1huTjZkZzJVWkNhRmI1aF9zdmZ2S21tRDFyM1U?oc=5",
+            "published": "Thu, 25 Jun 2026 07:00:00 GMT"
+          }
+        ]
       }
     },
     {
@@ -140,7 +161,7 @@
       "release_date": "September 04, 2026",
       "release_time": "8:15 AM ET",
       "release_iso": "2026-09-04T08:30:00-04:00",
-      "hours_until_release": 719,
+      "hours_until_release": 713,
       "schedule_source": "fallback_schedule",
       "house_forecast": "68k",
       "kalshi_consensus": "49k",
@@ -153,7 +174,7 @@
       "release_source_url": "https://adpemploymentreport.com/",
       "consensus_review": {
         "required": false,
-        "gap_value": 19.553204270330085,
+        "gap_value": 19.803204270330077,
         "gap_display": "+20k",
         "threshold": 35.0,
         "threshold_display": "35k",
@@ -169,7 +190,7 @@
       "release_date": "September 04, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-09-04T08:30:00-04:00",
-      "hours_until_release": 719,
+      "hours_until_release": 713,
       "schedule_source": "fallback_schedule",
       "house_forecast": "115k",
       "kalshi_consensus": "81k",
@@ -182,7 +203,7 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": 34.016666666666666,
+        "gap_value": 34.06666666666668,
         "gap_display": "+34k",
         "threshold": 40.0,
         "threshold_display": "40k",
@@ -198,10 +219,10 @@
       "release_date": "September 04, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-09-04T08:30:00-04:00",
-      "hours_until_release": 719,
+      "hours_until_release": 713,
       "schedule_source": "fallback_schedule",
       "house_forecast": "4.20%",
-      "kalshi_consensus": "4.38%",
+      "kalshi_consensus": "4.37%",
       "last_release": "June 2026: 4.20%",
       "risk": "elevated surprise risk",
       "status": "review",
@@ -211,13 +232,13 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": true,
-        "gap_value": -0.18310502283105023,
-        "gap_display": "-0.183 pp",
+        "gap_value": -0.17181818181818187,
+        "gap_display": "-0.172 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "below Kalshi",
         "label": "Review required",
-        "message": "Unemployment Rate house forecast is -0.183 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
+        "message": "Unemployment Rate house forecast is -0.172 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
         "news_query": "September 2026 jobs report BLS forecast adjustment survey",
         "news_search_url": "https://news.google.com/search?q=September+2026+jobs+report+BLS+forecast+adjustment+survey",
         "official_guidance": [
@@ -229,7 +250,28 @@
           }
         ],
         "guidance_hit_count": 0,
-        "news_headlines": []
+        "news_headlines": [
+          {
+            "title": "Labor Market Recap February 2026 - Employ America",
+            "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9wbGpubTY4ZnptOFRfalpzZllFV1VzbWl1RkQ0Y1pwSE5DZENMLXVoNXhWMjFqeFhETW5aQ0otZ25ydmJQemt3X2tWZ293Y1JkeDFRRlNLUzhiS1JETXJnZXliQlEzSFVEVUtBSnpfM0RYZUtsVDcxV0F4WHQ?oc=5",
+            "published": "Fri, 06 Mar 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Slower US job growth expected in December; unemployment rate likely dipped - Reuters",
+            "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTGVQRms2YjZFbWdySmpwbjBpRVc3ZTBZMHgwSmhsYVlsZHlzc3NjVnBOczUxR0gzbmhkVkx3MXFHZ25PMWI3OTkwNHBkVV9iUUVrbGludGd2eDJkODJ6aUV2UnN1aWowZlRiVjd6c1gwMmU5WGRMSEJVQXZCYU54NTRaRDlGNU1ueUdnZDhmQ0xBMUhnUHZlVWZ4OEpQQThCc2MyWHRaZ2F6b1R4UkZmenBjenYyZw?oc=5",
+            "published": "Fri, 09 Jan 2026 08:00:00 GMT"
+          },
+          {
+            "title": "U.S. payrolls rose by 130,000 in January, more than expected; unemployment down to 4.3% - CNBC",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE80QmlGMzFFZjM3TDhfN2R0NkdUZkM0VGRwQjE0UG1JVTh4Rnk4Wmg2U250a3p3cUFfX3l3YjV0TXh0dFlmRWdXakdNN2tFeTduNUpnaTRoZm44cExLbmhhbnlBX0FkMU1mRnRtcGdBZ9IBdEFVX3lxTE1tOWIxV2doSWlXYnlkTWl6bVNpYVpCbDB0YURFWWlCR2ZrNUkxRXIzRHphU2MwX0RxMlQ0WnozSTFBeHF5ZzQ2Wm91OW9XRTk3dG5VNTBlWW5vbGhIRFBEb2xDTUJkT1NCVmM1Mkcydzl0Zl9C?oc=5",
+            "published": "Wed, 11 Feb 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Signs of Life - The Economic Policy Innovation Center",
+            "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1XeWpfT1NZb25DdXVVY3F6aVh1aWNGdjZLc1ljcnY1VUpSLUctakpoTElJTDZlZWF2ZkhLN1YtSm1NSk5XNF9vMDdzczkwTFRCRWdDT21XR2xKMU1vX2JxZ3p2WUJHVlU?oc=5",
+            "published": "Fri, 13 Feb 2026 08:00:00 GMT"
+          }
+        ]
       }
     }
   ],
@@ -11143,7 +11185,7 @@
     "period": "June 2026",
     "data_month": "2026-06-01",
     "generated_at": "2026-07-30T18:16:56",
-    "updated_display": "Wednesday, August 05, 2026 08:59 AM ET",
+    "updated_display": "Wednesday, August 05, 2026 02:41 PM ET",
     "source_path": "macro_forecasting/output/core_pce_bridge_latest.json",
     "model_source": "macro_forecasting/cpi_to_pce_bridge.py",
     "core_cpi_mom": -0.0167,
