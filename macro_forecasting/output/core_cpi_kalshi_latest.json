@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-07-14T22:02:01+00:00",
+  "generated_at_utc": "2026-08-06T15:44:46+00:00",
   "target_month": "2026-07",
   "forecast": {
-    "core_mom": 0.1692934918418057,
-    "core_yoy": 2.419340326929409,
-    "mom_rmse": 0.07127063930118488,
-    "yoy_rmse": 0.0730327791148565
+    "core_mom": 0.16853534908306195,
+    "core_yoy": 2.4185651544337494,
+    "mom_rmse": 0.0728410305010312,
+    "yoy_rmse": 0.07470997477653239
   },
   "events": {
     "mom_exact": "KXECONSTATCPICORE-26JUL",
