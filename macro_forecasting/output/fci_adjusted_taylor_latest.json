@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-08-06T22:16:02.141096+00:00",
+  "generated_at_utc": "2026-08-07T22:14:37.659364+00:00",
   "inputs": {
     "spot_date": "2026-06-01",
-    "spot_ur": 4.2,
+    "spot_ur": 4.1,
     "spot_nairu": 4.16389489162988,
     "spot_core_pce_yoy": 3.286526430967074,
     "current_fed_funds": 3.63,
@@ -22,7 +22,7 @@
   },
   "raw_taylor": {
     "sep_baseline": 4.257585877343754,
-    "spot": 4.711737092265551,
+    "spot": 4.761737092265551,
     "forward": null
   },
   "fci_overlay": {
@@ -83,7 +83,7 @@
     ]
   },
   "adjusted_taylor": {
-    "spot": 4.747067298533345,
+    "spot": 4.797067298533345,
     "forward": null,
     "sep_delta_only_forward": null
   },
@@ -96,9 +96,9 @@
     "treasury": {
       "as_of": "2026-08-01",
       "rates": {
-        "6m": 3.98,
-        "1y": 4.03,
-        "2y": 4.18
+        "6m": 3.99,
+        "1y": 4.06,
+        "2y": 4.25
       },
       "implied_cuts": {
         "6m": 0.0,
@@ -109,8 +109,8 @@
     "kalshi": null
   },
   "policy_gap": {
-    "raw_spot_vs_ff_pp": 1.0817370922655511,
-    "adjusted_spot_vs_ff_pp": 1.1170672985333452,
+    "raw_spot_vs_ff_pp": 1.131737092265551,
+    "adjusted_spot_vs_ff_pp": 1.167067298533345,
     "raw_forward_vs_ff_pp": null,
     "adjusted_forward_vs_ff_pp": null
   }
