@@ -1,0 +1,178 @@
+{
+  "generated_at_utc": "2026-08-10T18:15:42.255119+00:00",
+  "latest_actual_month": "2026-06",
+  "target_month": "2026-07",
+  "series_ids": {
+    "energy_services": "CUSR0000SAH2",
+    "electricity": "CUSR0000SEHF01",
+    "utility_gas": "CUSR0000SEHF02"
+  },
+  "weights_pct_all_items": {
+    "energy_services": 3.24,
+    "electricity": 2.505,
+    "utility_gas": 0.735
+  },
+  "forecast_mom_pct": {
+    "energy_services": 0.38095792899739783,
+    "electricity": NaN,
+    "utility_gas": 0.0,
+    "component_bridge": NaN,
+    "direct_aggregate": 0.38095792899739783
+  },
+  "headline_contribution_bps": 1.2343036899515691,
+  "final_source": "direct_aggregate",
+  "final_oos": {
+    "rmse": 0.8699781472932678,
+    "mae": 0.6651519320252428,
+    "n": 60
+  },
+  "direct_oos": {
+    "rmse": 0.8699781472932678,
+    "mae": 0.6651519320252428,
+    "n": 60
+  },
+  "component_bridge_oos": {
+    "rmse": 0.9374925315783856,
+    "mae": 0.7138094016904752,
+    "n": 53
+  },
+  "selected_rules": {
+    "energy_services": "ma3",
+    "electricity": "ridge",
+    "utility_gas": "zero"
+  },
+  "rule_backtests": {
+    "energy_services": [
+      {
+        "rule": "zero",
+        "rmse": 1.0025801805543895,
+        "mae": 0.7677900881166189,
+        "n": 60
+      },
+      {
+        "rule": "last",
+        "rmse": 0.9796419683417403,
+        "mae": 0.7163300987400587,
+        "n": 60
+      },
+      {
+        "rule": "ma3",
+        "rmse": 0.8699781472932678,
+        "mae": 0.6651519320252428,
+        "n": 60
+      },
+      {
+        "rule": "ma6",
+        "rmse": 0.8900306952382466,
+        "mae": 0.6987330812316069,
+        "n": 60
+      },
+      {
+        "rule": "seasonal5",
+        "rmse": 0.9969871290038788,
+        "mae": 0.7531338435213353,
+        "n": 60
+      },
+      {
+        "rule": "seasonal10",
+        "rmse": 0.95669766542439,
+        "mae": 0.7099869322643911,
+        "n": 60
+      },
+      {
+        "rule": "ridge",
+        "rmse": 0.8940380635293599,
+        "mae": 0.6761344486011671,
+        "n": 53
+      }
+    ],
+    "electricity": [
+      {
+        "rule": "zero",
+        "rmse": 0.9192012155191213,
+        "mae": 0.7197664034155139,
+        "n": 60
+      },
+      {
+        "rule": "last",
+        "rmse": 0.9988688271264382,
+        "mae": 0.7443894912523821,
+        "n": 60
+      },
+      {
+        "rule": "ma3",
+        "rmse": 0.8027638795599806,
+        "mae": 0.610120951364118,
+        "n": 60
+      },
+      {
+        "rule": "ma6",
+        "rmse": 0.7791161368387342,
+        "mae": 0.6152265971090888,
+        "n": 60
+      },
+      {
+        "rule": "seasonal5",
+        "rmse": 0.9024380848174223,
+        "mae": 0.6941887974968343,
+        "n": 60
+      },
+      {
+        "rule": "seasonal10",
+        "rmse": 0.864619652132293,
+        "mae": 0.6604874208286399,
+        "n": 60
+      },
+      {
+        "rule": "ridge",
+        "rmse": 0.7581384426803943,
+        "mae": 0.6126712404956615,
+        "n": 53
+      }
+    ],
+    "utility_gas": [
+      {
+        "rule": "zero",
+        "rmse": 3.0119318625122498,
+        "mae": 2.2350496564694144,
+        "n": 60
+      },
+      {
+        "rule": "last",
+        "rmse": 3.623620825359493,
+        "mae": 2.3085251086661542,
+        "n": 60
+      },
+      {
+        "rule": "ma3",
+        "rmse": 3.3017935207000146,
+        "mae": 2.325257633856451,
+        "n": 60
+      },
+      {
+        "rule": "ma6",
+        "rmse": 3.1653567740687483,
+        "mae": 2.24012670116341,
+        "n": 60
+      },
+      {
+        "rule": "seasonal5",
+        "rmse": 3.2849279976035506,
+        "mae": 2.510949120659601,
+        "n": 60
+      },
+      {
+        "rule": "seasonal10",
+        "rmse": 3.1592229414838755,
+        "mae": 2.3353518744707804,
+        "n": 60
+      },
+      {
+        "rule": "ridge",
+        "rmse": 3.169848159546067,
+        "mae": 2.3317490664498597,
+        "n": 53
+      }
+    ]
+  }
+}
