@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-08-10T11:54:45.746811+00:00",
+  "generated_at_utc": "2026-08-10T17:55:29.656230+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26AUG13",
       "kind": "threshold",
       "market_count": 11,
-      "implied_value": 201350.0,
-      "consensus_label": "201,350",
+      "implied_value": 200075.0,
+      "consensus_label": "200,075",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26aug13",
       "title": "How many initial jobless claims for the week ending Aug 8, 2026?"
     },
@@ -46,7 +46,7 @@
       "event_ticker": "KXPAYROLLS-26AUG",
       "kind": "threshold",
       "market_count": 13,
-      "implied_value": 57.8125,
+      "implied_value": 57.7375,
       "consensus_label": "58k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26aug",
       "title": "Jobs numbers in Aug 2026?"
@@ -56,8 +56,8 @@
       "event_ticker": "KXECONSTATU3-26AUG",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.225641025641025,
-      "consensus_label": "4.23%",
+      "implied_value": 4.224137931034481,
+      "consensus_label": "4.22%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26aug",
       "title": "Unemployment rate in Aug 2026?"
     },
