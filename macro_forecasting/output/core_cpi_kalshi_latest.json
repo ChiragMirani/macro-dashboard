@@ -1,16 +1,16 @@
 {
-  "generated_at_utc": "2026-08-06T15:44:46+00:00",
-  "target_month": "2026-07",
+  "generated_at_utc": "2026-08-12T22:02:48+00:00",
+  "target_month": "2026-08",
   "forecast": {
-    "core_mom": 0.16853534908306195,
-    "core_yoy": 2.4185651544337494,
-    "mom_rmse": 0.0728410305010312,
-    "yoy_rmse": 0.07470997477653239
+    "core_mom": 0.15506988507970293,
+    "core_yoy": 2.3085405869763598,
+    "mom_rmse": 0.07127063930118488,
+    "yoy_rmse": 0.0730327791148565
   },
   "events": {
-    "mom_exact": "KXECONSTATCPICORE-26JUL",
-    "yoy_exact": "KXECONSTATCORECPIYOY-26JUL",
-    "yoy_threshold": "KXCPICOREYOY-26JUL"
+    "mom_exact": "KXECONSTATCPICORE-26AUG",
+    "yoy_exact": "KXECONSTATCORECPIYOY-26AUG",
+    "yoy_threshold": "KXCPICOREYOY-26AUG"
   },
   "mom_exact": [],
   "yoy_exact": [],
