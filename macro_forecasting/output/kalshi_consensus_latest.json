@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-08-20T11:35:40.033094+00:00",
+  "generated_at_utc": "2026-08-20T17:37:27.467520+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
-      "event_ticker": "KXJOBLESSCLAIMS-26AUG21",
+      "event_ticker": "KXJOBLESSCLAIMS-26AUG27",
       "kind": "threshold",
-      "market_count": 0,
-      "implied_value": null,
-      "consensus_label": null,
-      "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26aug21",
-      "title": null
+      "market_count": 11,
+      "implied_value": 205850.0,
+      "consensus_label": "205,850",
+      "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26aug27",
+      "title": "Initial jobless claims for the week ending August 22, 2026"
     },
     "adp": {
       "key": "adp",
@@ -36,8 +36,8 @@
       "event_ticker": "KXCPICOREYOY-26AUG",
       "kind": "threshold",
       "market_count": 15,
-      "implied_value": 2.4132499999999997,
-      "consensus_label": "2.41% y/y",
+      "implied_value": 2.3989999999999996,
+      "consensus_label": "2.40% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26aug",
       "title": "Core inflation in August 2026 (Core CPI YoY)"
     },
@@ -46,8 +46,8 @@
       "event_ticker": "KXPAYROLLS-26AUG",
       "kind": "threshold",
       "market_count": 13,
-      "implied_value": 51.55,
-      "consensus_label": "52k",
+      "implied_value": 47.5375,
+      "consensus_label": "48k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26aug",
       "title": "Jobs numbers in Aug 2026?"
     },
@@ -56,7 +56,7 @@
       "event_ticker": "KXECONSTATU3-26AUG",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.215416666666665,
+      "implied_value": 4.215546218487394,
       "consensus_label": "4.22%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26aug",
       "title": "Unemployment rate in Aug 2026?"

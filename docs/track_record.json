@@ -1,18 +1,18 @@
 {
   "snapshots": [
     {
-      "id": "weekly_claims_2026-08-20",
+      "id": "weekly_claims_2026-08-27",
       "release_key": "weekly_claims",
       "release_label": "Weekly Claims",
       "release_group": "Labor",
-      "target_period": "Week ending August 15, 2026",
-      "release_iso": "2026-08-20T08:30:00-04:00",
-      "snapshot_at_utc": "2026-08-20T11:38:30.000470+00:00",
+      "target_period": "Week ending August 22, 2026",
+      "release_iso": "2026-08-27T08:30:00-04:00",
+      "snapshot_at_utc": "2026-08-20T17:40:19.156262+00:00",
       "house_raw": "209,737",
       "house_value": 209737.0,
-      "kalshi_raw": "no live Kalshi market found",
-      "kalshi_value": null,
-      "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26aug21",
+      "kalshi_raw": "205,850",
+      "kalshi_value": 205850.0,
+      "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26aug27",
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "fred_series": "ICSA",
       "unit": "claims",
@@ -24,9 +24,9 @@
       "actual_consensus_side": null,
       "house_consensus_side": null,
       "house_direction_correct": null,
-      "release_date_pretty": "Aug 20, 2026",
+      "release_date_pretty": "Aug 27, 2026",
       "house_display": "209,737",
-      "kalshi_display": "no live Kalshi market found",
+      "kalshi_display": "205,850",
       "actual_display": null,
       "house_error_display": null,
       "kalshi_error_display": null,
@@ -86,7 +86,7 @@
       "house_error_abs": 0.23766066684318235,
       "kalshi_error_abs": 0.18066066684318235,
       "winner": "kalshi",
-      "settled_at_utc": "2026-08-20T11:38:30.077934+00:00",
+      "settled_at_utc": "2026-08-20T17:40:19.230925+00:00",
       "actual_consensus_side": "below",
       "house_consensus_side": "above",
       "house_direction_correct": 0,
@@ -675,5 +675,5 @@
     "house_mean_abs_error": 2279.2023810144606,
     "kalshi_mean_abs_error": 1612.7980155974697
   },
-  "last_updated_utc": "2026-08-20T11:38:50.364431+00:00"
+  "last_updated_utc": "2026-08-20T17:40:39.641140+00:00"
 }
