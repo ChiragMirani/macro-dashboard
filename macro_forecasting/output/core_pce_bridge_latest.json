@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-19T17:54:37",
-  "runtime_seconds": 8.292,
+  "generated_at": "2026-08-20T15:52:38",
+  "runtime_seconds": 8.523,
   "date": "July 2026",
   "reporting_month": "July 2026",
   "data_month": "2026-07-01",
@@ -667,7 +667,9 @@
   ],
   "kalshi_snapshot": {
     "mom_event": "KXPCECORE-26JUL",
-    "mom_expected_value": 0.225,
+    "mom_expected_value": 0.224,
+    "mom_modal_value": 0.2,
+    "mom_modal_probability": 0.575,
     "mom_coinflip_range": "0.2%-0.3%",
     "yoy_event": null,
     "yoy_expected_value": null,

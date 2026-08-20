@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-13T22:13:09.721377+00:00",
+  "generated_at_utc": "2026-08-20T22:09:28.947316+00:00",
   "target_month": "2026-08",
   "threshold_k": 75.0,
   "house_forecast_k": 68.66666666666667,
@@ -529,8 +529,8 @@
       "ma12": 57.25,
       "mean_reversion_3m": 11.416666666666671,
       "payroll_momentum_12": -8.0,
-      "claims_delta_k": -15.75,
-      "claims_accel_k": -11.25,
+      "claims_delta_k": -15.0,
+      "claims_accel_k": -10.5,
       "claims_vol_3m_k": 15.376524314681781,
       "claims_vol_6m_k": 10.309886032347787,
       "biz_days": 22.0,
