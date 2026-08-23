@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20T15:52:38",
-  "runtime_seconds": 8.523,
+  "generated_at": "2026-08-23T17:22:31",
+  "runtime_seconds": 8.448,
   "date": "July 2026",
   "reporting_month": "July 2026",
   "data_month": "2026-07-01",
@@ -18,7 +18,7 @@
       "adjustment_bps": 5.24,
       "n": 24,
       "method": "24m_winsorized_mean_error",
-      "raw_mean_error_bps": -4.4128120071044865,
+      "raw_mean_error_bps": -4.412812007104488,
       "winsorized_mean_error_bps": -5.2446533740128585,
       "mae_bps": 13.880554296903341,
       "rmse_bps": 16.405360189910994,
@@ -308,7 +308,7 @@
       },
       {
         "line": "PPI / PCE-only components",
-        "bps": 6.564942054735489
+        "bps": 6.564942054735488
       },
       {
         "line": "Residual CPI mapped to remaining PCE",
@@ -667,12 +667,75 @@
   ],
   "kalshi_snapshot": {
     "mom_event": "KXPCECORE-26JUL",
-    "mom_expected_value": 0.224,
+    "mom_expected_value": 0.232,
     "mom_modal_value": 0.2,
-    "mom_modal_probability": 0.575,
+    "mom_modal_probability": 0.595,
     "mom_coinflip_range": "0.2%-0.3%",
     "yoy_event": null,
     "yoy_expected_value": null,
     "yoy_coinflip_range": null
+  },
+  "publication_view": {
+    "label": "Audited component bridge",
+    "mom_bps": 22.1,
+    "mom_pct": 0.221,
+    "mom_range_pct": [
+      0.18,
+      0.24
+    ],
+    "unrounded_component_sum_bps": 22.054814940646846,
+    "yoy_pct": 3.261795349205099,
+    "yoy_range_pct": [
+      3.2195513723008773,
+      3.2813718263070335
+    ],
+    "official_rounding_mom_pct": 0.2,
+    "official_rounding_yoy_pct": 3.3,
+    "previous_month_index": 130.266,
+    "year_ago_index": 126.43,
+    "projected_index": 130.55388786,
+    "components": [
+      {
+        "component": "Rent, OER and other shelter",
+        "contribution_bps": 1.9023035915540332,
+        "source": "CPI rent/OER +4.7 bp, offset by lodging -2.8 bp"
+      },
+      {
+        "component": "Core goods excluding medical goods",
+        "contribution_bps": 1.869403159079952,
+        "source": "CPI vehicles, apparel and other core goods"
+      },
+      {
+        "component": "Air transportation",
+        "contribution_bps": -4.30335,
+        "source": "Airline PPI; -3.65% central seasonally adjusted estimate"
+      },
+      {
+        "component": "Portfolio management",
+        "contribution_bps": 11.202804815999999,
+        "source": "PCU523940523940; +5.624% m/m"
+      },
+      {
+        "component": "Healthcare, including medical goods",
+        "contribution_bps": 2.803,
+        "source": "CPI medical goods/services plus physician, hospital, nursing and home-health PPIs"
+      },
+      {
+        "component": "Other services and residual mapping",
+        "contribution_bps": 6.336,
+        "source": "Recreation, education/communication, food services, banking, insurance and residual CPI"
+      },
+      {
+        "component": "Fisher-chain formula adjustment",
+        "contribution_bps": -3.0,
+        "source": "Estimated PCE-versus-CPI formula effect"
+      },
+      {
+        "component": "Historical model calibration",
+        "contribution_bps": 5.2446533740128585,
+        "source": "Prior 24-month winsorized average bridge error"
+      }
+    ],
+    "note": "Audited July component bridge using the direct combined-industry portfolio-management PPI and a seasonally adjusted airline-PPI estimate."
   }
 }

@@ -1,0 +1,144 @@
+{
+  "status": "research_only_not_live_bridge",
+  "data_vintage": "current-vintage inputs; not a real-time-vintage backtest",
+  "bea_source_file": "C:\\Users\\chira\\PycharmProjects\\BloombergFlyProject\\tmp\\BEAFlatFiles_20260730\\nipadataM.txt",
+  "training_start": "2016-11",
+  "training_end": "2026-06",
+  "n_training": 116,
+  "minimum_expanding_train_months": 60,
+  "correlations": {
+    "ppi_wpu402_mom": {
+      "n": 125,
+      "pearson": 0.9889585080327109,
+      "spearman": 0.98110599078341
+    },
+    "ppi_industry_mom": {
+      "n": 42,
+      "pearson": 0.9997367355656146,
+      "spearman": 0.9995138157361642
+    },
+    "spx_return_0m": {
+      "n": 118,
+      "pearson": -0.12334838450283134,
+      "spearman": -0.05734079811846512
+    },
+    "spx_return_lag1": {
+      "n": 117,
+      "pearson": 0.6794286479789013,
+      "spearman": 0.6797419412848985
+    },
+    "spx_return_lag2": {
+      "n": 116,
+      "pearson": 0.17941051515978734,
+      "spearman": 0.09943489793564757
+    }
+  },
+  "candidate_metrics": {
+    "ppi_only": {
+      "n_oos": 56,
+      "mae_pct": 0.31020171667052626,
+      "rmse_pct": 0.4268644664090156,
+      "oos_r2_vs_expanding_mean": 0.977288270324866,
+      "direction_accuracy": 0.9821428571428571
+    },
+    "ppi_spx_current": {
+      "n_oos": 56,
+      "mae_pct": 0.3166650650640116,
+      "rmse_pct": 0.43356077485041017,
+      "oos_r2_vs_expanding_mean": 0.9765701143237954,
+      "direction_accuracy": 0.9821428571428571
+    },
+    "ppi_spx_lag1": {
+      "n_oos": 56,
+      "mae_pct": 0.22663673265586137,
+      "rmse_pct": 0.3036004932221108,
+      "oos_r2_vs_expanding_mean": 0.9885111873472652,
+      "direction_accuracy": 0.9821428571428571
+    },
+    "ppi_spx_lag1_qstart": {
+      "n_oos": 56,
+      "mae_pct": 0.2269319652783381,
+      "rmse_pct": 0.3047592537426759,
+      "oos_r2_vs_expanding_mean": 0.9884233206378017,
+      "direction_accuracy": 0.9821428571428571
+    },
+    "ppi_spx_lag1_lag2": {
+      "n_oos": 56,
+      "mae_pct": 0.2409323732291948,
+      "rmse_pct": 0.3221909090157287,
+      "oos_r2_vs_expanding_mean": 0.9870611175820933,
+      "direction_accuracy": 0.9821428571428571
+    },
+    "ppi_spx_lag1_lag2_qstart": {
+      "n_oos": 56,
+      "mae_pct": 0.23919593519517773,
+      "rmse_pct": 0.3225128568240149,
+      "oos_r2_vs_expanding_mean": 0.9870352464232842,
+      "direction_accuracy": 0.9821428571428571
+    },
+    "ppi_spx_0_1_2": {
+      "n_oos": 56,
+      "mae_pct": 0.2493795229682385,
+      "rmse_pct": 0.329550413673475,
+      "oos_r2_vs_expanding_mean": 0.9864632650897154,
+      "direction_accuracy": 0.9821428571428571
+    },
+    "ppi_spx_0_1_2_ar": {
+      "n_oos": 56,
+      "mae_pct": 0.25403410853491504,
+      "rmse_pct": 0.33284905505690826,
+      "oos_r2_vs_expanding_mean": 0.9861909164060418,
+      "direction_accuracy": 1.0
+    },
+    "ppi_spx_0_1_2_qstart": {
+      "n_oos": 56,
+      "mae_pct": 0.2510466335544805,
+      "rmse_pct": 0.3400361001792857,
+      "oos_r2_vs_expanding_mean": 0.9855881326772148,
+      "direction_accuracy": 0.9642857142857143
+    }
+  },
+  "selected_model": "ppi_spx_lag1",
+  "selected_features": [
+    "ppi_wpu402_mom",
+    "spx_return_lag1"
+  ],
+  "coefficients_hac": [
+    {
+      "term": "const",
+      "coefficient": -0.0008710613964622409,
+      "hac_se": 0.027496490288003744,
+      "p_value": 0.9747280397141739
+    },
+    {
+      "term": "ppi_wpu402_mom",
+      "coefficient": 0.8738010976492367,
+      "hac_se": 0.009538441183836361,
+      "p_value": 0.0
+    },
+    {
+      "term": "spx_return_lag1",
+      "coefficient": 0.06178385544751569,
+      "hac_se": 0.012120480552127336,
+      "p_value": 3.4421252993688297e-07
+    }
+  ],
+  "forecast": {
+    "month": "2026-07",
+    "portfolio_pce_mom_pct": 5.576203361389307,
+    "empirical_oos_interval_80_pct": [
+      5.087151474576613,
+      5.873748087870155
+    ],
+    "empirical_oos_interval_95_pct": [
+      4.936122932390621,
+      6.033822306924483
+    ],
+    "core_pce_weight_pct": 1.96,
+    "core_pce_contribution_bps": 10.929358588323042,
+    "inputs": {
+      "ppi_wpu402_mom": 6.457821712414646,
+      "spx_return_lag1": -1.0646353722793878
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Data Archive",
+    "required": [
+        ["utils/datastore", "datastore"],
+        ["utils/utils", "utils"],
+        ["utils/modals", "modals"]
+    ]
+}
