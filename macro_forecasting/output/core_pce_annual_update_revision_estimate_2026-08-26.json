@@ -1,0 +1,151 @@
+{
+  "as_of": "2026-08-26",
+  "target": "July 2026 core PCE y/y annual-update revision",
+  "current_vintage_core_pce_yoy": 3.3441430040338282,
+  "headline": {
+    "september_30_initial_revision_pp": -0.24210853239508,
+    "september_30_revised_core_pce_yoy": 3.094240655614655,
+    "later_qss_revision_pp": -0.13599937127793948,
+    "later_qss_revised_core_pce_yoy": 3.20369114776462
+  },
+  "september_30_initial": {
+    "component_revision_pp": {
+      "portfolio_management": -0.186330309509819,
+      "computer_software_and_accessories": -0.09260943966838964,
+      "legal_services": 0.03683121678312862
+    },
+    "methodology_only_revision_pp": -0.24210853239508,
+    "revised_july_core_pce_yoy": 3.094240655614655,
+    "revised_reported_one_decimal": 3.1,
+    "new_portfolio_line_yoy": 9.918645296400319,
+    "methodology_only_revision_range_pp": [
+      -0.28284650301984016,
+      -0.20168797289190632
+    ],
+    "all_in_revision_range_including_other_update_items_pp": [
+      -0.3128465030198402,
+      -0.17168797289190632
+    ],
+    "revised_july_core_pce_yoy_range_methodology_only": [
+      3.052250707647608,
+      3.135920347518062
+    ]
+  },
+  "later_qss_vintage": {
+    "component_revision_pp": {
+      "portfolio_management": -0.08022114839267847,
+      "computer_software_and_accessories": -0.09260943966838964,
+      "legal_services": 0.03683121678312862
+    },
+    "methodology_only_revision_pp": -0.13599937127793948,
+    "revised_july_core_pce_yoy": 3.20369114776462,
+    "revised_reported_one_decimal": 3.2,
+    "new_portfolio_line_yoy": 16.008432464677224,
+    "methodology_only_revision_range_pp": [
+      -0.18489167144538632,
+      -0.08730431016145124
+    ],
+    "all_in_revision_range_including_other_update_items_pp": [
+      -0.21489167144538632,
+      -0.05730431016145124
+    ],
+    "revised_july_core_pce_yoy_range_methodology_only": [
+      3.1532448224940612,
+      3.253958486105768
+    ]
+  },
+  "weights_of_core_pce": {
+    "portfolio_management": 0.019704393832132402,
+    "computer_software_and_accessories": 0.012183365990058434,
+    "legal_services": 0.008279792574514782
+  },
+  "line_yoy_inputs": {
+    "portfolio_old": 20.830838144058262,
+    "software_old_cpi_based": 21.176788431185756,
+    "software_new_composite": 12.303194235840987,
+    "game_software_ppi": -3.261672273734295,
+    "hosting_ppi": -4.564371699936897,
+    "legal_old": 1.875954389119605,
+    "legal_new_proxy": 6.509162055834894
+  },
+  "software_composite_weights": {
+    "cpi": 0.6719999999999999,
+    "game_ppi": 0.168,
+    "hosting_ppi": 0.16
+  },
+  "assumptions": {
+    "software_hosting_weight": 0.16,
+    "software_game_share_within_publishers_central": 0.2,
+    "software_game_share_within_publishers_range": [
+      0.1,
+      0.3
+    ],
+    "july_portfolio_ahe_mom_central": 0.003,
+    "july_portfolio_ahe_mom_range": [
+      0.0,
+      0.006
+    ],
+    "july_portfolio_total_hours_yoy_central": 0.0475,
+    "july_portfolio_total_hours_yoy_range": [
+      0.04,
+      0.055
+    ],
+    "legal_composite_yoy_range": [
+      0.05,
+      0.08
+    ],
+    "other_annual_update_residual_pp": [
+      -0.03,
+      0.03
+    ]
+  },
+  "source_series": {
+    "ces_5239": {
+      "employment_thousands": {
+        "2025M07": 655.5,
+        "2026M06": 680.1
+      },
+      "average_weekly_hours": {
+        "2025M07": 37.7,
+        "2026M06": 37.9
+      },
+      "average_hourly_earnings": {
+        "2025M07": 67.11,
+        "2026M06": 69.25
+      },
+      "series": {
+        "employment": "CES5552390001",
+        "hours": "CES5552390002",
+        "earnings": "CES5552390003"
+      }
+    },
+    "ppi": {
+      "game_software": {
+        "series": "WPU342104",
+        "2025M07": 97.496,
+        "2026M07": 94.316
+      },
+      "hosting_asp_it_infrastructure": {
+        "series": "WPU381101",
+        "2025M07": 125.187,
+        "2026M07": 119.473
+      },
+      "legal_services_broad_proxy": {
+        "series": "WPU4511",
+        "2025M07": 190.132,
+        "2026M07": 202.508
+      }
+    }
+  },
+  "sources": {
+    "bea_annual_update_preview": "https://apps.bea.gov/scb/issues/2026/06-june/0626-nea-preview.htm",
+    "bea_annual_update_notice": "https://www.bea.gov/news/blog/2026-08-17/annual-update-gdp-industry-and-state-stats-publicly-available-starting-sept-30",
+    "bea_july_pio": "https://www.bea.gov/news/2026/personal-income-and-outlays-july-2026",
+    "fed_software_measurement": "https://www.federalreserve.gov/econres/notes/feds-notes/measurement-of-computer-software-and-accessories-inflation-20260522.html",
+    "bls_ppi_detailed_report": "https://www.bls.gov/web/ppi/ppi_dr.pdf",
+    "bls_public_api": "https://api.bls.gov/publicAPI/v2/timeseries/data/",
+    "reuters_methodology_report": "https://www.investing.com/news/economy-news/methodology-changes-could-lower-us-may-core-pce-inflation-economists-say-4766025",
+    "goldman_july_vintage_report": "https://ca.investing.com/news/stock-market-news/goldman-sachs-expects-july-core-pce-to-rise-023-93CH-4796065"
+  },
+  "method_note": "Component effects use Tornqvist midpoint expenditure shares and log price changes. The exact BEA software and legal composite weights are not public, and July CES 5239 AHE was not available at the cutoff; these inputs are explicitly sensitized."
+}

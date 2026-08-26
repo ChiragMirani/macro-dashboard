@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-23T17:22:31",
-  "runtime_seconds": 8.448,
+  "generated_at": "2026-08-26T18:00:50",
+  "runtime_seconds": 18.808,
   "date": "July 2026",
   "reporting_month": "July 2026",
   "data_month": "2026-07-01",
@@ -15,13 +15,13 @@
     "bls_mapping": "https://www.bls.gov/cpi/additional-resources/pce-cpi-code-mapping.htm",
     "formula_effect_bps": -3.0,
     "historical_release_calibration": {
-      "adjustment_bps": 5.24,
+      "adjustment_bps": 5.53,
       "n": 24,
       "method": "24m_winsorized_mean_error",
-      "raw_mean_error_bps": -4.412812007104488,
-      "winsorized_mean_error_bps": -5.2446533740128585,
-      "mae_bps": 13.880554296903341,
-      "rmse_bps": 16.405360189910994,
+      "raw_mean_error_bps": -4.643664873689386,
+      "winsorized_mean_error_bps": -5.5300501244103835,
+      "mae_bps": 13.995436449959263,
+      "rmse_bps": 16.59355824839084,
       "clamp_bps": [
         -8.0,
         8.0
@@ -57,27 +57,27 @@
   },
   "implied_core_pce": {
     "uncalibrated_mom_bps": 14.8,
-    "calibration_bps": 5.2,
-    "mom_bps": 20.1,
-    "mom_pct": 0.2008,
-    "annualized_pct": 2.41
+    "calibration_bps": 5.5,
+    "mom_bps": 20.4,
+    "mom_pct": 0.2037,
+    "annualized_pct": 2.44
   },
   "expected_core_pce": {
-    "yoy_pct": 3.24,
+    "yoy_pct": 3.3,
     "index_source": "FRED API",
-    "previous_month_index": 130.266,
+    "previous_month_index": 130.338,
     "year_ago_index": 126.43,
-    "projected_index": 130.528
+    "projected_index": 130.603
   },
   "wedge_decomposition_bps": {
-    "total": -1.5,
+    "total": -1.2,
     "shelter": -5.9,
     "medical_scope_weight": -0.9,
     "financial_services": 5.4,
     "airfare_scope_swap": -1.8,
     "food_services": 2.0,
     "formula_effect": -3.0,
-    "historical_calibration": 5.2,
+    "historical_calibration": 5.5,
     "other": -0.3
   },
   "translation_table": {
@@ -308,7 +308,7 @@
       },
       {
         "line": "PPI / PCE-only components",
-        "bps": 6.564942054735488
+        "bps": 6.564942054735489
       },
       {
         "line": "Residual CPI mapped to remaining PCE",
@@ -324,11 +324,11 @@
       },
       {
         "line": "Historical calibration",
-        "bps": 5.2446533740128585
+        "bps": 5.5300501244103835
       },
       {
         "line": "FINAL CORE PCE",
-        "bps": 20.083527121328025
+        "bps": 20.36892387172555
       }
     ]
   },
@@ -667,10 +667,10 @@
   ],
   "kalshi_snapshot": {
     "mom_event": "KXPCECORE-26JUL",
-    "mom_expected_value": 0.232,
-    "mom_modal_value": 0.2,
-    "mom_modal_probability": 0.595,
-    "mom_coinflip_range": "0.2%-0.3%",
+    "mom_expected_value": 0.25,
+    "mom_modal_value": 0.0,
+    "mom_modal_probability": 0.5,
+    "mom_coinflip_range": "0.0%-0.1%",
     "yoy_event": null,
     "yoy_expected_value": null,
     "yoy_coinflip_range": null
@@ -683,17 +683,17 @@
       0.18,
       0.24
     ],
-    "unrounded_component_sum_bps": 22.054814940646846,
-    "yoy_pct": 3.261795349205099,
+    "unrounded_component_sum_bps": 22.054814940646843,
+    "yoy_pct": 3.3188697144665102,
     "yoy_range_pct": [
-      3.2195513723008773,
-      3.2813718263070335
+      3.2766023886735773,
+      3.3384570117851675
     ],
     "official_rounding_mom_pct": 0.2,
     "official_rounding_yoy_pct": 3.3,
-    "previous_month_index": 130.266,
+    "previous_month_index": 130.338,
     "year_ago_index": 126.43,
-    "projected_index": 130.55388786,
+    "projected_index": 130.62604698,
     "components": [
       {
         "component": "Rent, OER and other shelter",

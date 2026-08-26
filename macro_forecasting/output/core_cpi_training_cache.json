@@ -1,19 +1,19 @@
 {
-  "generated_at_utc": "2026-03-11T17:57:01+00:00",
-  "latest_actual_month": "2026-02",
+  "generated_at_utc": "2026-08-26T13:18:33+00:00",
+  "latest_actual_month": "2026-07",
   "components": {
     "shelter": {
       "selected_model": "ridge",
-      "selected_model_rmse": 0.09411732647138839,
-      "ensemble_rmse": 0.10040838615685398,
-      "ensemble_gc_rmse": 0.10446148018653012,
+      "selected_model_rmse": 0.10784811121932299,
+      "ensemble_rmse": 0.11272690095070473,
+      "ensemble_gc_rmse": 0.11564529404034021,
       "gc_enabled": false,
       "ensemble_weights": {
         "ridge": 0.5,
-        "enet": 0.12570108805684335,
-        "arx": 0.125911702240054,
-        "sarimax": 0.12489255795724963,
-        "heur": 0.12349465174585311
+        "enet": 0.12740400246511552,
+        "arx": 0.12641716441583795,
+        "sarimax": 0.12537283669179042,
+        "heur": 0.1208059964272562
       },
       "feature_cols": [
         "ar_lag1",
@@ -49,16 +49,16 @@
     },
     "core_goods": {
       "selected_model": "enet",
-      "selected_model_rmse": 0.16517866370749154,
-      "ensemble_rmse": 0.1701224126684472,
-      "ensemble_gc_rmse": 0.17355268264612977,
+      "selected_model_rmse": 0.16594488638017035,
+      "ensemble_rmse": 0.17153458724839885,
+      "ensemble_gc_rmse": 0.17449508035764022,
       "gc_enabled": false,
       "ensemble_weights": {
-        "ridge": 0.1262605501858924,
+        "ridge": 0.12514978496748713,
         "enet": 0.5,
-        "arx": 0.12596683300012484,
-        "sarimax": 0.12339587228276137,
-        "heur": 0.12437674453122147
+        "arx": 0.1266985876892559,
+        "sarimax": 0.12369974560153035,
+        "heur": 0.12445188174172667
       },
       "feature_cols": [
         "ar_lag1",
@@ -109,16 +109,16 @@
     },
     "supercore": {
       "selected_model": "sarimax",
-      "selected_model_rmse": 0.2354721351658749,
-      "ensemble_rmse": 0.24990503554727567,
-      "ensemble_gc_rmse": 0.25962356266124254,
+      "selected_model_rmse": 0.22763975990915644,
+      "ensemble_rmse": 0.2414286082053244,
+      "ensemble_gc_rmse": 0.25102461959525985,
       "gc_enabled": false,
       "ensemble_weights": {
-        "ridge": 0.12450594108653319,
-        "enet": 0.13230115395157813,
-        "arx": 0.12371405821652956,
-        "sarimax": 0.4999999999999999,
-        "heur": 0.11947884674535914
+        "ridge": 0.12452380230189218,
+        "enet": 0.13237785051949139,
+        "arx": 0.12384788158142859,
+        "sarimax": 0.5,
+        "heur": 0.11925046559718795
       },
       "feature_cols": [
         "ar_lag1",
@@ -165,16 +165,16 @@
     },
     "core_cpi": {
       "selected_model": "enet",
-      "selected_model_rmse": 0.1074347337557971,
-      "ensemble_rmse": 0.1096271702594032,
-      "ensemble_gc_rmse": 0.11774097420430588,
+      "selected_model_rmse": 0.11021508238805687,
+      "ensemble_rmse": 0.11296707862756429,
+      "ensemble_gc_rmse": 0.1193696841471687,
       "gc_enabled": false,
       "ensemble_weights": {
-        "ridge": 0.128321293888061,
-        "enet": 0.5,
-        "arx": 0.12597114434919338,
-        "sarimax": 0.12407446419995279,
-        "heur": 0.12163309756279295
+        "ridge": 0.12804297896026987,
+        "enet": 0.4999999999999999,
+        "arx": 0.12531126677533308,
+        "sarimax": 0.12362617061576128,
+        "heur": 0.1230195836486358
       },
       "feature_cols": [
         "ar_lag1",
@@ -215,13 +215,13 @@
   },
   "uncertainty": {
     "component_rmse": {
-      "shelter": 0.09411732647138839,
-      "core_goods": 0.16517866370749154,
-      "supercore": 0.2354721351658749,
-      "core_cpi": 0.1074347337557971
+      "shelter": 0.10784811121932299,
+      "core_goods": 0.16594488638017035,
+      "supercore": 0.22763975990915644,
+      "core_cpi": 0.11021508238805687
     },
-    "bottomup_mom_rmse": 0.09367920841050796,
-    "final_mom_rmse": 0.07127063930118488,
-    "core_yoy_rmse": 0.0730327791148565
+    "bottomup_mom_rmse": 0.09470028367705287,
+    "final_mom_rmse": 0.07265588089466751,
+    "core_yoy_rmse": 0.07444795112185693
   }
 }

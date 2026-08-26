@@ -1,0 +1,318 @@
+{
+  "generated_at_utc": "2026-08-26T14:22:26+00:00",
+  "target_month": "2026-08",
+  "latest_actual_month": "2026-07",
+  "method": "bottom_up_used_cars_apparel_remaining_goods",
+  "weights": {
+    "source": "BLS July 2026 CPI release; June 2026 relative importance",
+    "core_all_items": 79.047,
+    "core_goods_all_items": 18.829,
+    "used_cars_all_items": 2.679,
+    "apparel_all_items": 2.437,
+    "remaining_goods_all_items": 13.713000000000003
+  },
+  "selected_remaining_goods_model": "ma6",
+  "remaining_goods_forecast_mom": 0.11979902128748322,
+  "core_goods_forecast_mom": 0.1676801730795718,
+  "aggregate_model_cross_check_mom": 0.0840581686054843,
+  "bottom_up_minus_aggregate_bp": 8.36220044740875,
+  "sleeves": [
+    {
+      "sleeve": "used_cars",
+      "weight_within_core_goods": 0.14228052472250252,
+      "forecast_mom": 0.518,
+      "contribution_to_core_goods_pp": 0.0737013118062563,
+      "contribution_to_core_cpi_bp": 1.7555656761167406
+    },
+    {
+      "sleeve": "apparel",
+      "weight_within_core_goods": 0.12942800998459822,
+      "forecast_mom": 0.052,
+      "contribution_to_core_goods_pp": 0.006730256519199107,
+      "contribution_to_core_cpi_bp": 0.16031474945285715
+    },
+    {
+      "sleeve": "remaining_core_goods",
+      "weight_within_core_goods": 0.7282914652928993,
+      "forecast_mom": 0.11979902128748322,
+      "contribution_to_core_goods_pp": 0.0872486047541164,
+      "contribution_to_core_cpi_bp": 2.078262272970837
+    }
+  ],
+  "candidate_forecasts": {
+    "last": 0.287682185526304,
+    "ma3": 0.11728131497521332,
+    "ma6": 0.11979902128748322,
+    "ma12": 0.24545069270588163,
+    "median3": 0.092578003872476,
+    "median6": 0.1091711933569584,
+    "zero": 0.0,
+    "seasonal3y": 0.3132423740689566,
+    "seasonal5y_median": 0.4699118404633723,
+    "ma3_seasonal_blend": 0.1760696327033363,
+    "ma3_ma12_blend": 0.1493236594078804
+  },
+  "candidate_backtest": [
+    {
+      "model": "ma6",
+      "n_full": 137,
+      "rmse_full": 0.25758436497343157,
+      "mae_full": 0.19005410933950892,
+      "bias_full": 0.001753912786081603,
+      "n_recent": 53,
+      "rmse_recent": 0.2639869887557766,
+      "mae_recent": 0.20164561960535896,
+      "bias_recent": 0.007119249727844951,
+      "selection_score": 1.0,
+      "selected": true
+    },
+    {
+      "model": "median6",
+      "n_full": 137,
+      "rmse_full": 0.2623447297157151,
+      "mae_full": 0.19188797560095383,
+      "bias_full": -0.000710757692866395,
+      "n_recent": 53,
+      "rmse_recent": 0.2723101538066237,
+      "mae_recent": 0.2067004731029674,
+      "bias_recent": -0.020602797549481886,
+      "selection_score": 1.026309535936292,
+      "selected": false
+    },
+    {
+      "model": "ma3_seasonal_blend",
+      "n_full": 137,
+      "rmse_full": 0.2716855306780615,
+      "mae_full": 0.19618820265708078,
+      "bias_full": -0.00395308235452399,
+      "n_recent": 53,
+      "rmse_recent": 0.26742759973179725,
+      "mae_recent": 0.20634249696821813,
+      "bias_recent": -0.018471041823238124,
+      "selection_score": 1.0297175049162206,
+      "selected": false
+    },
+    {
+      "model": "ma3_ma12_blend",
+      "n_full": 137,
+      "rmse_full": 0.278926553422573,
+      "mae_full": 0.20063588106644678,
+      "bias_full": 0.0008207329145956243,
+      "n_recent": 53,
+      "rmse_recent": 0.27329550521402446,
+      "mae_recent": 0.21251379851892727,
+      "bias_recent": -0.0008668474453489581,
+      "selection_score": 1.0542988176667003,
+      "selected": false
+    },
+    {
+      "model": "ma3",
+      "n_full": 137,
+      "rmse_full": 0.29148923364542517,
+      "mae_full": 0.21039707912044445,
+      "bias_full": 0.001518715825322587,
+      "n_recent": 53,
+      "rmse_recent": 0.2791780057945323,
+      "mae_recent": 0.2181962215870197,
+      "bias_recent": 0.0008747625924299568,
+      "selection_score": 1.087177247599297,
+      "selected": false
+    },
+    {
+      "model": "ma12",
+      "n_full": 137,
+      "rmse_full": 0.2692470235956294,
+      "mae_full": 0.19452235281195407,
+      "bias_full": -0.0012732158175852734,
+      "n_recent": 53,
+      "rmse_recent": 0.2978948611236503,
+      "mae_recent": 0.2257331781341597,
+      "bias_recent": -0.006091677558685706,
+      "selection_score": 1.095177962139216,
+      "selected": false
+    },
+    {
+      "model": "median3",
+      "n_full": 137,
+      "rmse_full": 0.30316851125123806,
+      "mae_full": 0.21348899635886157,
+      "bias_full": 0.004711474368769656,
+      "n_recent": 53,
+      "rmse_recent": 0.2773280009089182,
+      "mae_recent": 0.2112121888260483,
+      "bias_recent": -0.021638509612461568,
+      "selection_score": 1.1011091088439353,
+      "selected": false
+    },
+    {
+      "model": "last",
+      "n_full": 137,
+      "rmse_full": 0.29880325153243026,
+      "mae_full": 0.2189599612741333,
+      "bias_full": -0.00044911714835354,
+      "n_recent": 53,
+      "rmse_recent": 0.31220070850260845,
+      "mae_recent": 0.22891392828850424,
+      "bias_recent": -0.003278251573232617,
+      "selection_score": 1.1735904037616471,
+      "selected": false
+    },
+    {
+      "model": "seasonal5y_median",
+      "n_full": 137,
+      "rmse_full": 0.2813432713467017,
+      "mae_full": 0.20811212151794845,
+      "bias_full": -0.024758818772082147,
+      "n_recent": 53,
+      "rmse_recent": 0.3243844777343179,
+      "mae_recent": 0.25316807593510393,
+      "bias_recent": -0.09965657552013997,
+      "selection_score": 1.174168737044527,
+      "selected": false
+    },
+    {
+      "model": "seasonal3y",
+      "n_full": 137,
+      "rmse_full": 0.29935407385224894,
+      "mae_full": 0.22381451412984604,
+      "bias_full": -0.01672061144083263,
+      "n_recent": 53,
+      "rmse_recent": 0.35739674234558444,
+      "mae_recent": 0.27626054616271983,
+      "bias_recent": -0.0636112521264636,
+      "selection_score": 1.2771690912938598,
+      "selected": false
+    },
+    {
+      "model": "zero",
+      "n_full": 137,
+      "rmse_full": 0.3426987839050714,
+      "mae_full": 0.2758801117902994,
+      "bias_full": -0.215380626029204,
+      "n_recent": 53,
+      "rmse_recent": 0.4295518255868711,
+      "mae_recent": 0.34958214361652645,
+      "bias_recent": -0.3343355975257316,
+      "selection_score": 1.508475535175914,
+      "selected": false
+    }
+  ],
+  "recent_history": [
+    {
+      "month": "2025-06",
+      "core_goods_mom": 0.2527255952872398,
+      "used_cars_mom": -0.4524566599877988,
+      "apparel_mom": 0.3303206863329633,
+      "remaining_goods_mom": 0.37670167820151096
+    },
+    {
+      "month": "2025-07",
+      "core_goods_mom": 0.3792069954559718,
+      "used_cars_mom": 0.4993628064955402,
+      "apparel_mom": 0.10669593183654236,
+      "remaining_goods_mom": 0.40416229657648123
+    },
+    {
+      "month": "2025-08",
+      "core_goods_mom": 0.24542853677502752,
+      "used_cars_mom": 0.8234192853177724,
+      "apparel_mom": 0.25884251716732365,
+      "remaining_goods_mom": 0.13012721062013513
+    },
+    {
+      "month": "2025-09",
+      "core_goods_mom": 0.22596738952507245,
+      "used_cars_mom": -0.2105160882872048,
+      "apparel_mom": 0.5444439382204402,
+      "remaining_goods_mom": 0.2546417779075182
+    },
+    {
+      "month": "2025-12",
+      "core_goods_mom": 0.11309490044810744,
+      "used_cars_mom": -0.8749422967503695,
+      "apparel_mom": 0.3290795629459442,
+      "remaining_goods_mom": 0.26773626475843276
+    },
+    {
+      "month": "2026-01",
+      "core_goods_mom": 0.355545482553854,
+      "used_cars_mom": -1.84060042887777,
+      "apparel_mom": 0.306838879357918,
+      "remaining_goods_mom": 0.7932449566816024
+    },
+    {
+      "month": "2026-02",
+      "core_goods_mom": 0.20360849297955674,
+      "used_cars_mom": -0.37513308949682633,
+      "apparel_mom": 1.277849355424454,
+      "remaining_goods_mom": 0.12576438284144079
+    },
+    {
+      "month": "2026-03",
+      "core_goods_mom": 0.13910213970784735,
+      "used_cars_mom": -0.4202913798736274,
+      "apparel_mom": 1.0303602913278587,
+      "remaining_goods_mom": 0.08999684717235573
+    },
+    {
+      "month": "2026-04",
+      "core_goods_mom": 0.1920108032452017,
+      "used_cars_mom": -0.004448645943400109,
+      "apparel_mom": 0.6376837206562236,
+      "remaining_goods_mom": 0.15118895278546304
+    },
+    {
+      "month": "2026-05",
+      "core_goods_mom": 0.11968901914674035,
+      "used_cars_mom": 0.10176730322206673,
+      "apparel_mom": 0.29194409892441264,
+      "remaining_goods_mom": 0.092578003872476
+    },
+    {
+      "month": "2026-06",
+      "core_goods_mom": -0.12480455466509222,
+      "used_cars_mom": -0.22999361128857032,
+      "apparel_mom": -0.5515470310573534,
+      "remaining_goods_mom": -0.028416244473140197
+    },
+    {
+      "month": "2026-07",
+      "core_goods_mom": 0.27765102320194135,
+      "used_cars_mom": 0.39812685490920874,
+      "apparel_mom": 0.0887662952176349,
+      "remaining_goods_mom": 0.287682185526304
+    }
+  ],
+  "sensitivities": [
+    {
+      "remaining_goods_mom": 0.0,
+      "core_goods_mom": 0.08043156832545541,
+      "core_cpi_contribution_bp": 1.915880425569598
+    },
+    {
+      "remaining_goods_mom": 0.05,
+      "core_goods_mom": 0.11684614159010037,
+      "core_cpi_contribution_bp": 2.783275772641593
+    },
+    {
+      "remaining_goods_mom": 0.1,
+      "core_goods_mom": 0.15326071485474535,
+      "core_cpi_contribution_bp": 3.650671119713589
+    },
+    {
+      "remaining_goods_mom": 0.15,
+      "core_goods_mom": 0.1896752881193903,
+      "core_cpi_contribution_bp": 4.518066466785584
+    },
+    {
+      "remaining_goods_mom": 0.2,
+      "core_goods_mom": 0.2260898613840353,
+      "core_cpi_contribution_bp": 5.385461813857581
+    },
+    {
+      "remaining_goods_mom": 0.3,
+      "core_goods_mom": 0.2989190079133252,
+      "core_cpi_contribution_bp": 7.12025250800157
+    }
+  ]
+}

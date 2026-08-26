@@ -1,0 +1,97 @@
+{
+  "status": "first_release_ingested",
+  "target_month": "2026-07",
+  "ingested_at_et": "2026-08-26T08:49:24-04:00",
+  "source": {
+    "release_url": "https://www.bea.gov/news/2026/personal-income-and-outlays-july-2026",
+    "flat_zip_url": "https://apps.bea.gov/national/Release/TXT/FlatFiles.ZIP",
+    "snapshot": "macro_forecasting/vintages/core_pce_2026-07_prerelease_2026-08-23.json"
+  },
+  "reported": {
+    "reported_mom_pct": 0.2,
+    "reported_yoy_pct": 3.3
+  },
+  "index_levels": {
+    "year_ago": 126.43,
+    "previous_month": 130.338,
+    "target_month": 130.658
+  },
+  "index_implied": {
+    "mom_pct": 0.2455155058386671,
+    "yoy_pct": 3.3441430040338282
+  },
+  "baseline": {
+    "core_pce_mom_pct": 0.221,
+    "core_pce_mom_bps": 22.1,
+    "core_pce_mom_range_pct": [
+      0.18,
+      0.24
+    ],
+    "core_pce_yoy_pct": 3.261795349205099,
+    "core_pce_yoy_display_pct": 3.262,
+    "core_pce_yoy_range_pct": [
+      3.2195513723008773,
+      3.2813718263070335
+    ],
+    "bea_one_decimal_mom_call_pct": 0.2,
+    "bea_one_decimal_yoy_call_pct": 3.3,
+    "point_label": "Our published / email view",
+    "forecast_range_interpretation": "Judgmental central range, not a formal confidence interval"
+  },
+  "errors": {
+    "forecast_minus_actual_mom_bp": -2.45155058386671,
+    "forecast_minus_actual_yoy_bp": -8.234765482872941
+  },
+  "component_bridge": [
+    {
+      "component": "Rent, OER and other shelter",
+      "forecast_contribution_bp": 1.9023035915540332,
+      "actual_contribution_bp": 1.8997951027726794,
+      "actual_minus_forecast_bp": -0.0025084887813537904
+    },
+    {
+      "component": "Core goods excluding medical goods",
+      "forecast_contribution_bp": 1.869403159079952,
+      "actual_contribution_bp": 6.752887052222827,
+      "actual_minus_forecast_bp": 4.883483893142875
+    },
+    {
+      "component": "Air transportation",
+      "forecast_contribution_bp": -4.30335,
+      "actual_contribution_bp": -0.04435636383226493,
+      "actual_minus_forecast_bp": 4.258993636167735
+    },
+    {
+      "component": "Portfolio management",
+      "forecast_contribution_bp": 11.202804815999999,
+      "actual_contribution_bp": 11.196126254337312,
+      "actual_minus_forecast_bp": -0.006678561662686988
+    },
+    {
+      "component": "Healthcare, including medical goods",
+      "forecast_contribution_bp": 2.803,
+      "actual_contribution_bp": 0.7817785583624497,
+      "actual_minus_forecast_bp": -2.0212214416375502
+    },
+    {
+      "component": "Other services and residual mapping",
+      "forecast_contribution_bp": 6.336,
+      "actual_contribution_bp": 3.9143373532398194,
+      "actual_minus_forecast_bp": -2.421662646760181
+    },
+    {
+      "component": "Fisher-chain formula adjustment",
+      "forecast_contribution_bp": -3.0,
+      "actual_contribution_bp": 0.05098262676388998,
+      "actual_minus_forecast_bp": 3.05098262676389
+    },
+    {
+      "component": "Historical model calibration",
+      "forecast_contribution_bp": 5.2446533740128585,
+      "actual_contribution_bp": 0.0,
+      "actual_minus_forecast_bp": -5.2446533740128585
+    }
+  ],
+  "runtime_seconds": 0.9172958000563085,
+  "email": "macro_forecasting/output/core_pce_2026-07_postmortem_email.html"
+}

@@ -1,0 +1,159 @@
+{
+  "snapshot_date": "2026-08-26",
+  "target_month": "2026-08",
+  "status": "pre-CPI and pre-PPI",
+  "house_forecasts": {
+    "core_cpi_mom_sa": 0.1674961653332237,
+    "core_cpi_yoy": 2.3212340492156924,
+    "core_cpi_reported_mom_bucket": 0.2,
+    "core_cpi_reported_yoy_bucket": 2.3,
+    "core_cpi_rmse_mom": 0.07265588089466751,
+    "core_cpi_one_rmse_range_mom": [0.0948402844385562, 0.240152046227891],
+    "core_cpi_one_rmse_range_yoy": [2.24701596771544, 2.39545213071595],
+    "core_pce_mom": 0.189682568097355,
+    "core_pce_yoy_current_vintage": 3.30810758860474,
+    "core_pce_working_range_mom": [0.116762568097355, 0.256762568097355],
+    "core_pce_working_range_yoy": [3.23291793821099, 3.37727546776569]
+  },
+  "core_cpi_model": {
+    "direct_mom": 0.1537268253043694,
+    "bottom_up_mom": 0.18126550536207797,
+    "components": {
+      "shelter": {
+        "mom": 0.2075175209005068,
+        "normalized_core_weight": 0.446620365099245,
+        "contribution_bp": 9.26815509490745
+      },
+      "core_goods": {
+        "mom": 0.1676801730795718,
+        "normalized_core_weight": 0.238200058193227,
+        "contribution_bp": 3.99414276854044,
+        "used_cars_contribution_bp": 1.75556567611674,
+        "apparel_contribution_bp": 0.160314749452857,
+        "all_remaining_core_goods_weight_all_items": 0.13713,
+        "all_remaining_core_goods_implied_mom": 0.11979902128748322,
+        "all_remaining_core_goods_contribution_bp": 2.078262272970837,
+        "remaining_goods_selected_model": "ma6",
+        "aggregate_model_cross_check_mom": 0.0840581686054843,
+        "diagnostic": "True bottom-up build. The six-month average won the strictly lagged residual-model competition for both 2015+ and 2022+ evaluation windows; the aggregate ENet is retained only as a cross-check."
+      },
+      "core_services_ex_shelter": {
+        "mom": 0.1543316581730046,
+        "normalized_core_weight": 0.315166926006047,
+        "contribution_bp": 4.86402342918019
+      }
+    },
+    "volatile_categories": {
+      "airfares": {"mom": 1.829, "relative_importance_all_items": 0.01091, "contribution_bp": 2.52437031133376},
+      "used_cars": {"mom": 0.518, "relative_importance_all_items": 0.02679, "contribution_bp": 1.75556567611674},
+      "apparel": {"mom": 0.052, "relative_importance_all_items": 0.02437, "contribution_bp": 0.160314749452857},
+      "lodging_away": {"mom": 0.795, "relative_importance_all_items": 0.01450, "contribution_bp": 1.45862588187028},
+      "net_contribution_bp": 5.89887661877364
+    },
+    "core_ex_volatile_sleeve_mom": 0.108507399145487,
+    "external_market_fixing_used_as_model_input": false
+  },
+  "july_2026_bls_actuals_mom_sa": {
+    "core_cpi": 0.215435,
+    "shelter": 0.138623,
+    "rent_primary_residence": 0.255925,
+    "owners_equivalent_rent": 0.259654,
+    "lodging_away": -2.754693,
+    "core_goods": 0.277651,
+    "core_services_ex_shelter": 0.197693,
+    "airfares": 2.221046,
+    "used_cars": 0.398127,
+    "apparel": 0.088766,
+    "source": "BLS seasonally adjusted CPI index levels, June and July 2026"
+  },
+  "core_pce_bridge_contribution_bp": {
+    "core_cpi_reference_nonadditive": 16.750,
+    "shelter": 3.842,
+    "core_goods_ex_medical": 3.361,
+    "healthcare_including_medical_goods": 4.554,
+    "air_transportation": 1.194,
+    "portfolio_management": 0.663,
+    "other_core_services": 5.354,
+    "total": 18.968,
+    "market_fixing_overlay": 0.0
+  },
+  "portfolio_management_backfill_research": {
+    "conclusion": "BEA will backfill/restate the PCE history under the new portfolio-management method in the September 30 annual update; the revision window starts in Q1 2021.",
+    "confidence": "high",
+    "expected_recent_direction": "lower",
+    "july_2026_first_release_portfolio_mom": 5.6242769422,
+    "july_2026_first_release_portfolio_yoy": 20.8308381440583,
+    "july_2026_first_release_core_contribution_bp": 11.1961262543,
+    "july_core_pce_mom_revision_sensitivity_bp": [-10.6, -10.0],
+    "july_core_pce_yoy_portfolio_only_sensitivity_pp": [-0.186, -0.080],
+    "street_total_core_pce_yoy_revision_range_pp": [-0.2, -0.1],
+    "vintage_warning": "September early estimates likely use AHE/CES proxies; our initial July portfolio effect is -0.186 pp on aggregate core PCE y/y and narrows to -0.080 pp in a later QSS-style vintage.",
+    "counterfactual_recent_months": {
+      "2026-04": {"current_portfolio_yoy": 15.97, "ces_hours_counterfactual_yoy": 10.74, "approx_core_pce_yoy_effect_pp": -0.10},
+      "2026-05": {"current_portfolio_yoy": 22.61, "ces_hours_counterfactual_yoy": 15.38, "approx_core_pce_yoy_effect_pp": -0.14},
+      "2026-06": {"current_portfolio_yoy": 20.97, "ces_hours_counterfactual_yoy": 13.02, "approx_core_pce_yoy_effect_pp": -0.16}
+    },
+    "sources": [
+      "https://apps.bea.gov/scb/issues/2026/06-june/0626-nea-preview.htm",
+      "https://www.bea.gov/information-updates-national-regional-economic-accounts",
+      "https://www.bea.gov/news/blog/2026-08-17/annual-update-gdp-industry-and-state-stats-publicly-available-starting-sept-30",
+      "https://www.bea.gov/news/2026/personal-income-and-outlays-july-2026",
+      "https://www.investing.com/news/economy-news/methodology-changes-could-lower-us-may-core-pce-inflation-economists-say-4766025",
+      "https://ca.investing.com/news/stock-market-news/goldman-sachs-expects-july-core-pce-to-rise-023-93CH-4796065",
+      "https://www.federalreserve.gov/newsevents/speech/waller20260713a.htm",
+      "https://www.bea.gov/sites/default/files/methodologies/nipa-handbook-all-chapters.pdf",
+      "https://www.bea.gov/resources/methodologies/nipa-handbook/pdf/chapter-04.pdf"
+    ]
+  },
+  "external_comparisons_not_used_as_inputs": {
+    "cleveland_fed_core_cpi_mom": 0.20,
+    "td_securities_early_core_cpi_mom": 0.24,
+    "market_fixing_implied_core_cpi_mom": 0.22,
+    "kalshi": {
+      "url": "https://kalshi.com/markets/kxcpicore/cpi-core/kxcpicore-26aug",
+      "page_display_above_0_1": 0.69,
+      "page_display_above_0_2": 0.31,
+      "indicative_reported_bucket_distribution": {
+        "lte_0_0": 0.01,
+        "0_1": 0.30,
+        "0_2": 0.38,
+        "0_3": 0.28,
+        "gte_0_4": 0.03
+      },
+      "warning": "Bucket probabilities are differences of indicative threshold last prices, not executable probabilities; bid-ask spreads are wide."
+    },
+    "our_full_annual_update_revision_estimate": {
+      "current_july_core_pce_yoy": 3.344143004033828,
+      "september_initial": {
+        "portfolio_management_pp": -0.186330309509819,
+        "computer_software_and_accessories_pp": -0.092609439668390,
+        "legal_services_pp": 0.036831216783129,
+        "methodology_only_total_pp": -0.242108532395080,
+        "methodology_only_range_pp": [-0.282846503019840, -0.201687972891906],
+        "all_in_range_with_other_update_items_pp": [-0.312846503019840, -0.171687972891906],
+        "implied_revised_july_core_pce_yoy": 3.094240655614655,
+        "reported_one_decimal": 3.1
+      },
+      "later_qss_vintage": {
+        "portfolio_management_pp": -0.080221148392678,
+        "computer_software_and_accessories_pp": -0.092609439668390,
+        "legal_services_pp": 0.036831216783129,
+        "methodology_only_total_pp": -0.135999371277939,
+        "methodology_only_range_pp": [-0.184891671445386, -0.087304310161451],
+        "implied_revised_july_core_pce_yoy": 3.203691147764620,
+        "reported_one_decimal": 3.2
+      },
+      "method": "Tornqvist midpoint expenditure shares and log price changes. Exact BEA software and legal composite weights are not public; explicit sensitivity ranges are stored in the dedicated revision output."
+    }
+  },
+  "source_artifacts": [
+    "macro_forecasting/output/core_cpi_forecast_latest.json",
+    "macro_forecasting/output/core_goods_bottom_up_latest.json",
+    "macro_forecasting/output/core_cpi_kalshi_latest.json",
+    "macro_forecasting/output/volatile_core_forecast_latest.json",
+    "macro_forecasting/output/core_pce_portfolio_backfill_research_2026-08-26.md",
+    "macro_forecasting/output/core_pce_annual_update_revision_estimate_2026-08-26.json",
+    "macro_forecasting/output/core_pce_annual_update_revision_estimate_2026-08-26.md",
+    "macro_forecasting/output/august_2026_cpi_pce_email_to_mike.html"
+  ]
+}

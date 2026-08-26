@@ -1,0 +1,29 @@
+{
+  "generated_at_utc": "2026-08-26T13:49:23+00:00",
+  "target_month": "2026-08",
+  "house_core_cpi_mom": 0.1674961653332237,
+  "categories": [
+    {
+      "category": "Airfares",
+      "forecast_mom": 1.829,
+      "core_cpi_contribution_bps": 2.52437031133376
+    },
+    {
+      "category": "Used cars",
+      "forecast_mom": 0.518,
+      "core_cpi_contribution_bps": 1.75556567611674
+    },
+    {
+      "category": "Apparel",
+      "forecast_mom": 0.052,
+      "core_cpi_contribution_bps": 0.160314749452857
+    },
+    {
+      "category": "Lodging away",
+      "forecast_mom": 0.795,
+      "core_cpi_contribution_bps": 1.45862588187028
+    }
+  ],
+  "net_volatile_contribution_bps": 5.89887661877364,
+  "house_core_ex_volatile_sleeve_mom": 0.108507399145487
+}
