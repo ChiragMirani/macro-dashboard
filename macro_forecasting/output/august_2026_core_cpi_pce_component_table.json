@@ -1,0 +1,284 @@
+{
+  "generated_at_et": "2026-08-27T11:32:39-04:00",
+  "target_month": "2026-08",
+  "release_schedule": {
+    "august_cpi": "Friday, September 11, 2026 at 8:30 a.m. ET",
+    "august_pce": "Wednesday, September 30, 2026 at 8:30 a.m. ET"
+  },
+  "headline": {
+    "core_cpi_mom": 0.172515585277201,
+    "core_cpi_yoy": 2.3263613935393446,
+    "core_cpi_mom_working_range": [
+      0.13,
+      0.22
+    ],
+    "core_cpi_yoy_working_range": [
+      2.2829316651501452,
+      2.374866787989083
+    ],
+    "core_cpi_model_one_sigma_range": [
+      0.0998597043825335,
+      0.24517146617186852
+    ],
+    "core_goods_mom": 0.1676801730795718,
+    "core_pce_mom": 0.1938449966154591,
+    "core_pce_mom_working_range": [
+      0.15132941133825809,
+      0.24132941133825808
+    ],
+    "core_pce_yoy_current_vintage": 3.3123995735891976,
+    "core_pce_yoy_annual_update_vintage": 3.0625739857641054,
+    "core_pce_yoy_annual_update_working_range": [
+      3.01884110323698,
+      3.1114179642111273
+    ]
+  },
+  "core_goods_build": {
+    "house_core_goods_mom": 0.1676801730795718,
+    "used_car_reference_mom": 0.01,
+    "implied_core_goods_ex_used_cars_mom": 0.19383653120218314,
+    "july_core_goods_ex_used_cars_mom": 0.2576661576470588,
+    "apparel_house_mom": 0.052,
+    "core_goods_ex_used_deceleration_bp": -6.3829626444875665,
+    "residual_seasonality_double_count_adjustment_bp": 0.0
+  },
+  "core_pce_bridge": {
+    "prior_mom": 0.189682568097355,
+    "core_goods_revision_bp": 0.0,
+    "shelter_revision_bp": 0.4162428518104082,
+    "revised_mom": 0.1938449966154591,
+    "portfolio_management_contribution_bp": 0.663
+  },
+  "shelter_confidence": {
+    "aggregate_shelter_model_mom": 0.23,
+    "aggregate_shelter_model_before_panel_adjustment_mom": 0.2075175209005068,
+    "aggregate_model_oos_rmse": 0.10784811121932299,
+    "july_rent_mom": 0.25592482739043,
+    "july_oer_mom": 0.259654412879939,
+    "rent_3m_average_mom": 0.255794233049141,
+    "oer_3m_average_mom": 0.26550626339636435,
+    "rent_oer_central_mom": 0.23,
+    "near_term_crosscheck_range_mom": [
+      0.21,
+      0.24
+    ],
+    "directional_slowdown_confidence": "moderate (about 65%; judgmental)",
+    "sub_0_20_confidence": "low (about 25%-30%; judgmental)",
+    "core_cpi_if_shelter_0_23_mom": 0.172515585277201,
+    "core_cpi_before_shelter_adjustment_mom": 0.1674961653332237,
+    "core_cpi_after_shelter_adjustment_mom": 0.172515585277201,
+    "panel_pair": "Panel 2: February and August",
+    "january_2026": {
+      "rent_mom": 0.248983959162996,
+      "oer_mom": 0.219643960136806,
+      "weighted_mom": 0.226320023745011
+    },
+    "february_2026": {
+      "rent_mom": 0.131434333820546,
+      "oer_mom": 0.224451921064683,
+      "weighted_mom": 0.203286571721307
+    },
+    "same_panel_raw_corr_since_2015": {
+      "rent": 0.6431102249046216,
+      "oer": 0.6775476164845688
+    },
+    "oos_rmse_without_lag6": {
+      "rent": 0.07480742635526934,
+      "oer": 0.071607172593414
+    },
+    "oos_rmse_with_lag6": {
+      "rent": 0.080338091666175,
+      "oer": 0.07343749791013675
+    }
+  },
+  "kalshi_snapshot": {
+    "as_of": "August 27, 2026",
+    "mom_link": "https://kalshi.com/markets/kxcpicore/cpi-core/kxcpicore-26aug",
+    "mom_exact_link": "https://kalshi.com/markets/kxeconstatcpicore/month-over-month-core-inflation/kxeconstatcpicore-26aug",
+    "yoy_link": "https://kalshi.com/markets/kxcpicoreyoy/core-inflation/kxcpicoreyoy-26aug",
+    "yoy_exact_link": "https://kalshi.com/markets/kxeconstatcorecpiyoy/year-over-year-core-inflation/kxeconstatcorecpiyoy-26aug",
+    "mom_exact_0_2": 0.49,
+    "mom_above_0_1": 0.69,
+    "mom_above_0_2": 0.31,
+    "mom_above_0_3": 0.03,
+    "yoy_exact_2_3": 0.33,
+    "yoy_exact_2_4": 0.4,
+    "yoy_above_2_2": 0.92,
+    "yoy_above_2_3": 0.62,
+    "yoy_above_2_4": 0.46
+  },
+  "residual_seasonality_diagnostics": [
+    {
+      "window": "2005-2025",
+      "august_observations": 21,
+      "august_mean_mom": 0.15773760160493108,
+      "other_month_mean_mom": 0.16665124979271465,
+      "august_minus_other_bp": -0.8913648187783563,
+      "welch_t_stat": -0.26455168939310614
+    },
+    {
+      "window": "2015-2025",
+      "august_observations": 11,
+      "august_mean_mom": 0.1777249555873338,
+      "other_month_mean_mom": 0.190418834381256,
+      "august_minus_other_bp": -1.2693878793922198,
+      "welch_t_stat": -0.22053009805038123
+    },
+    {
+      "window": "2021-2025",
+      "august_observations": 5,
+      "august_mean_mom": 0.1888122604936493,
+      "other_month_mean_mom": 0.30093436209007335,
+      "august_minus_other_bp": -11.212210159642405,
+      "welch_t_stat": -1.7366675494507318
+    },
+    {
+      "window": "2022-2025",
+      "august_observations": 4,
+      "august_mean_mom": 0.21284187894634599,
+      "other_month_mean_mom": 0.233069441986945,
+      "august_minus_other_bp": -2.0227563040599,
+      "welch_t_stat": -0.30648801070049886
+    }
+  ],
+  "table_rows": [
+    {
+      "component": "CPI excluding food and energy",
+      "share": 79.047,
+      "july": 0.215435,
+      "reference": 0.2,
+      "ours": 0.172515585277201,
+      "contribution_bp": 17.2515585277201,
+      "style": "total"
+    },
+    {
+      "component": "Goods excluding food and energy",
+      "share": 18.829,
+      "july": 0.277651,
+      "reference": 0.02,
+      "ours": 0.1676801730795718,
+      "contribution_bp": 3.9941426985404385,
+      "style": "group"
+    },
+    {
+      "component": "  Used cars and trucks",
+      "share": 2.679,
+      "july": 0.398127,
+      "reference": 0.01,
+      "ours": 0.01,
+      "contribution_bp": 0.03389122926866295,
+      "style": "detail"
+    },
+    {
+      "component": "  Core goods excluding used cars",
+      "share": 16.150000000000002,
+      "july": 0.2576661576470588,
+      "reference": 0.021658823529411765,
+      "ours": 0.19383653120218314,
+      "contribution_bp": 3.960251469271773,
+      "style": "detail"
+    },
+    {
+      "component": "    of which: apparel",
+      "share": 2.437,
+      "july": 0.088766,
+      "reference": -0.46,
+      "ours": 0.052,
+      "contribution_bp": 0.16031474945285715,
+      "style": "subdetail"
+    },
+    {
+      "component": "Shelter",
+      "share": 35.304000000000016,
+      "july": 0.138623,
+      "reference": 0.24,
+      "ours": 0.23,
+      "contribution_bp": 10.272268397282636,
+      "style": "group"
+    },
+    {
+      "component": "  Rent/OER panel-adjusted cross-check",
+      "share": 33.6,
+      "july": 0.258791,
+      "reference": 0.242,
+      "ours": 0.23,
+      "contribution_bp": null,
+      "style": "detail"
+    },
+    {
+      "component": "  Lodging away from home",
+      "share": 1.45,
+      "july": -2.754693,
+      "reference": 0.23,
+      "ours": 0.795,
+      "contribution_bp": 1.45862588187028,
+      "style": "detail"
+    },
+    {
+      "component": "Core services excluding shelter",
+      "share": 24.912999999999997,
+      "july": 0.197693,
+      "reference": null,
+      "ours": 0.1543316581730046,
+      "contribution_bp": 4.864023429180188,
+      "style": "group"
+    },
+    {
+      "component": "  Airline fares",
+      "share": 1.091,
+      "july": 2.221046,
+      "reference": 2.54,
+      "ours": 1.829,
+      "contribution_bp": 2.52437031133376,
+      "style": "detail"
+    },
+    {
+      "component": "Bottom-up core CPI",
+      "share": 79.047,
+      "july": 0.215435,
+      "reference": null,
+      "ours": 0.1913043452500326,
+      "contribution_bp": 19.13043452500326,
+      "style": "subtotal"
+    },
+    {
+      "component": "Direct aggregate model",
+      "share": 79.047,
+      "july": 0.215435,
+      "reference": null,
+      "ours": 0.1537268253043694,
+      "contribution_bp": 15.37268253043694,
+      "style": "detail"
+    },
+    {
+      "component": "FINAL CORE CPI",
+      "share": 79.047,
+      "july": 0.215435,
+      "reference": 0.2,
+      "ours": 0.172515585277201,
+      "contribution_bp": 17.2515585277201,
+      "style": "total"
+    },
+    {
+      "component": "FINAL CORE PCE",
+      "share": null,
+      "july": 0.2455155058386671,
+      "reference": 0.2,
+      "ours": 0.1938449966154591,
+      "contribution_bp": 19.38449966154591,
+      "style": "pce"
+    }
+  ],
+  "sources": [
+    "https://www.bls.gov/cpi/seasonal-adjustment/home.htm",
+    "https://www.bls.gov/cpi/seasonal-adjustment/intervention-analysis-seasonal-adjustment-2026.htm",
+    "https://www.federalreserve.gov/econres/notes/feds-notes/residual-seasonality-in-core-consumer-price-inflation-an-update-20190212.html",
+    "https://www.clevelandfed.org/publications/economic-commentary/2026/ec-202604-residual-seasonality-in-some-components-of-pce-inflation",
+    "https://www.zillow.com/research/cpi-forecast-2026-july-36582/",
+    "https://www.bls.gov/cpi/additional-resources/rent-oer-faq.htm",
+    "https://kalshi.com/markets/kxcpicore/cpi-core/kxcpicore-26aug",
+    "https://kalshi.com/markets/kxcpicoreyoy/core-inflation/kxcpicoreyoy-26aug",
+    "https://www.bls.gov/schedule/news_release/cpi.htm",
+    "https://www.bea.gov/news/schedule/full"
+  ]
+}
