@@ -2,7 +2,7 @@
 
 > Live US macroeconomic release calendar with house model forecasts and Kalshi market consensus, maintained by Chirag Mirani.
 
-Updated: Wednesday, August 26, 2026 03:11 PM ET
+Updated: Thursday, August 27, 2026 04:58 PM ET
 Machine-readable feed: https://chiragmirani.github.io/macro-dashboard/dashboard_data.json
 
 ## Data sources
@@ -11,38 +11,38 @@ BLS (CPI, PPI, Employment Situation/CES/CPS); BEA PCE data and methodology; DOL 
 
 ## Tracked releases
 
-- **Weekly Claims** (Labor) â€” releases Thursday, August 27, 2026 at 8:30 AM ET.
+- **Weekly Claims** (Labor) â€” releases Thursday, September 03, 2026 at 8:30 AM ET.
   House forecast: 210,705.
-  Kalshi consensus: 205,400.
+  Kalshi consensus: 203,750.
   Last release: Week ending Jul 04, 2026: 215,000.
-- **Core CPI** (Inflation) â€” releases Friday, September 25, 2026 at 8:30 AM ET.
+- **Core CPI** (Inflation) â€” releases Saturday, September 26, 2026 at 8:30 AM ET.
   House forecast: n/a.
-  Kalshi consensus: 0.271% m/m | 3.72% y/y.
+  Kalshi consensus: 0.273% m/m | 3.72% y/y.
   Last release: July 2026: 0.215% m/m, 2.47% y/y.
-- **Core PCE** (Inflation) â€” releases Friday, September 25, 2026 at 8:30 AM ET.
-  House forecast: 0.201% m/m | 3.24% y/y.
-  Kalshi consensus: 0.205% m/m.
+- **Core PCE** (Inflation) â€” releases Saturday, September 26, 2026 at 8:30 AM ET.
+  House forecast: 0.204% m/m | 3.30% y/y.
+  Kalshi consensus: 0.206% m/m.
   Last release: July 2026: 0.246% m/m, 3.34% y/y.
-- **ADP** (Labor) â€” releases Friday, September 25, 2026 at 8:15 AM ET.
+- **ADP** (Labor) â€” releases Saturday, September 26, 2026 at 8:15 AM ET.
   House forecast: 60k.
-  Kalshi consensus: 51k.
+  Kalshi consensus: 50k.
   Last release: June 2026: 98k.
-- **NFP** (Labor) â€” releases Friday, September 25, 2026 at 8:30 AM ET.
+- **NFP** (Labor) â€” releases Saturday, September 26, 2026 at 8:30 AM ET.
   House forecast: 69k.
-  Kalshi consensus: 49k.
+  Kalshi consensus: 47k.
   Last release: July 2026: -23k.
-- **Unemployment Rate** (Labor) â€” releases Friday, September 25, 2026 at 8:30 AM ET.
+- **Unemployment Rate** (Labor) â€” releases Saturday, September 26, 2026 at 8:30 AM ET.
   House forecast: 4.10%.
-  Kalshi consensus: 4.21%.
+  Kalshi consensus: 4.16%.
   Last release: July 2026: 4.10%.
 
 ## CPI/PCE Bridge
 
 Page: https://chiragmirani.github.io/macro-dashboard/cpi-pce-bridge.html
 Reporting month: July 2026.
-Bridge Core PCE m/m: 0.201% (20.1 bps).
-Expected Core PCE y/y: 3.24%.
-CPI/PCE wedge: -1.5 bps.
+Bridge Core PCE m/m: 0.204% (20.4 bps).
+Expected Core PCE y/y: 3.30%.
+CPI/PCE wedge: -1.2 bps.
 
 ## How to cite
 
