@@ -2,7 +2,7 @@
 
 > Live US macroeconomic release calendar with house model forecasts and Kalshi market consensus, maintained by Chirag Mirani.
 
-Updated: Thursday, August 27, 2026 09:25 PM ET
+Updated: Friday, August 28, 2026 05:20 PM ET
 Machine-readable feed: https://chiragmirani.github.io/macro-dashboard/dashboard_data.json
 
 ## Data sources
@@ -13,27 +13,27 @@ BLS (CPI, PPI, Employment Situation/CES/CPS); BEA PCE data and methodology; DOL 
 
 - **Weekly Claims** (Labor) â€” releases Thursday, September 03, 2026 at 8:30 AM ET.
   House forecast: 207,463.
-  Kalshi consensus: 203,425.
+  Kalshi consensus: 203,100.
   Last release: Week ending Jul 04, 2026: 215,000.
-- **Core CPI** (Inflation) â€” releases Saturday, September 26, 2026 at 8:30 AM ET.
+- **Core CPI** (Inflation) â€” releases Sunday, September 27, 2026 at 8:30 AM ET.
   House forecast: n/a.
-  Kalshi consensus: 0.272% m/m | 3.72% y/y.
+  Kalshi consensus: 0.272% m/m | 2.41% y/y.
   Last release: July 2026: 0.215% m/m, 2.47% y/y.
-- **Core PCE** (Inflation) â€” releases Saturday, September 26, 2026 at 8:30 AM ET.
+- **Core PCE** (Inflation) â€” releases Sunday, September 27, 2026 at 8:30 AM ET.
   House forecast: 0.204% m/m | 3.30% y/y.
   Kalshi consensus: 0.206% m/m.
   Last release: July 2026: 0.246% m/m, 3.34% y/y.
-- **ADP** (Labor) â€” releases Saturday, September 26, 2026 at 8:15 AM ET.
+- **ADP** (Labor) â€” releases Sunday, September 27, 2026 at 8:15 AM ET.
   House forecast: 60k.
-  Kalshi consensus: 50k.
+  Kalshi consensus: 54k.
   Last release: June 2026: 98k.
-- **NFP** (Labor) â€” releases Saturday, September 26, 2026 at 8:30 AM ET.
+- **NFP** (Labor) â€” releases Sunday, September 27, 2026 at 8:30 AM ET.
   House forecast: 69k.
-  Kalshi consensus: 46k.
+  Kalshi consensus: 45k.
   Last release: July 2026: -23k.
-- **Unemployment Rate** (Labor) â€” releases Saturday, September 26, 2026 at 8:30 AM ET.
+- **Unemployment Rate** (Labor) â€” releases Sunday, September 27, 2026 at 8:30 AM ET.
   House forecast: 4.10%.
-  Kalshi consensus: 4.16%.
+  Kalshi consensus: 4.15%.
   Last release: July 2026: 4.10%.
 
 ## CPI/PCE Bridge
