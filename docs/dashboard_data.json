@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Monday, August 31, 2026 01:58 PM ET",
-  "generated_at_iso": "2026-08-31T13:58:23.652799-04:00",
+  "generated_at_et": "Monday, August 31, 2026 05:52 PM ET",
+  "generated_at_iso": "2026-08-31T17:52:09.741201-04:00",
   "current_day": "Monday",
   "current_date": "August 31, 2026",
-  "current_time": "01:58 PM ET",
+  "current_time": "05:52 PM ET",
   "next_event": {
     "key": "weekly_claims",
     "label": "Weekly Claims",
@@ -14,10 +14,10 @@
     "release_date": "September 03, 2026",
     "release_time": "8:30 AM ET",
     "release_iso": "2026-09-03T08:30:00-04:00",
-    "hours_until_release": 66,
+    "hours_until_release": 62,
     "schedule_source": "weekly_rule",
     "house_forecast": "207,463",
-    "kalshi_consensus": "203,675",
+    "kalshi_consensus": "203,625",
     "last_release": "Week ending Jul 04, 2026: 215,000",
     "risk": "normal surprise risk",
     "status": "live",
@@ -27,8 +27,8 @@
     "release_source_url": "https://www.dol.gov/ui/data.pdf",
     "consensus_review": {
       "required": false,
-      "gap_value": 3788.1415612124547,
-      "gap_display": "+3,788",
+      "gap_value": 3838.1415612124547,
+      "gap_display": "+3,838",
       "threshold": 10000.0,
       "threshold_display": "10,000",
       "house_side": "above Kalshi"
@@ -44,10 +44,10 @@
       "release_date": "September 03, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-09-03T08:30:00-04:00",
-      "hours_until_release": 66,
+      "hours_until_release": 62,
       "schedule_source": "weekly_rule",
       "house_forecast": "207,463",
-      "kalshi_consensus": "203,675",
+      "kalshi_consensus": "203,625",
       "last_release": "Week ending Jul 04, 2026: 215,000",
       "risk": "normal surprise risk",
       "status": "live",
@@ -57,8 +57,8 @@
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "consensus_review": {
         "required": false,
-        "gap_value": 3788.1415612124547,
-        "gap_display": "+3,788",
+        "gap_value": 3838.1415612124547,
+        "gap_display": "+3,838",
         "threshold": 10000.0,
         "threshold_display": "10,000",
         "house_side": "above Kalshi"
@@ -73,10 +73,10 @@
       "release_date": "September 30, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-09-30T08:30:00-04:00",
-      "hours_until_release": 714,
+      "hours_until_release": 710,
       "schedule_source": "fallback_schedule",
       "house_forecast": null,
-      "kalshi_consensus": "0.272% m/m | 2.40% y/y",
+      "kalshi_consensus": "0.268% m/m | 2.40% y/y",
       "last_release": "July 2026: 0.215% m/m, 2.47% y/y",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -95,7 +95,7 @@
       "release_date": "September 30, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-09-30T08:30:00-04:00",
-      "hours_until_release": 714,
+      "hours_until_release": 710,
       "schedule_source": "fallback_schedule",
       "house_forecast": "0.204% m/m | 3.30% y/y",
       "kalshi_consensus": "0.206% m/m",
@@ -108,7 +108,7 @@
       "release_source_url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
       "consensus_review": {
         "required": false,
-        "gap_value": -0.0018000000000000238,
+        "gap_value": -0.0023000000000000242,
         "gap_display": "-0.002 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
@@ -124,10 +124,10 @@
       "release_date": "September 30, 2026",
       "release_time": "8:15 AM ET",
       "release_iso": "2026-09-30T08:30:00-04:00",
-      "hours_until_release": 714,
+      "hours_until_release": 710,
       "schedule_source": "fallback_schedule",
       "house_forecast": "60k",
-      "kalshi_consensus": "61k",
+      "kalshi_consensus": "59k",
       "last_release": "June 2026: 98k",
       "risk": null,
       "status": "live",
@@ -137,11 +137,11 @@
       "release_source_url": "https://adpemploymentreport.com/",
       "consensus_review": {
         "required": false,
-        "gap_value": -0.7026102713613653,
-        "gap_display": "-1k",
+        "gap_value": 1.5473897286386276,
+        "gap_display": "+2k",
         "threshold": 35.0,
         "threshold_display": "35k",
-        "house_side": "below Kalshi"
+        "house_side": "above Kalshi"
       }
     },
     {
@@ -153,10 +153,10 @@
       "release_date": "September 30, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-09-30T08:30:00-04:00",
-      "hours_until_release": 714,
+      "hours_until_release": 710,
       "schedule_source": "fallback_schedule",
       "house_forecast": "69k",
-      "kalshi_consensus": "43k",
+      "kalshi_consensus": "45k",
       "last_release": "July 2026: -23k",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -166,8 +166,8 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": 25.766666666666673,
-        "gap_display": "+26k",
+        "gap_value": 23.41666666666667,
+        "gap_display": "+23k",
         "threshold": 40.0,
         "threshold_display": "40k",
         "house_side": "above Kalshi"
@@ -182,7 +182,7 @@
       "release_date": "September 30, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-09-30T08:30:00-04:00",
-      "hours_until_release": 714,
+      "hours_until_release": 710,
       "schedule_source": "fallback_schedule",
       "house_forecast": "4.10%",
       "kalshi_consensus": "4.16%",
@@ -195,13 +195,13 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": true,
-        "gap_value": -0.06330645161290249,
-        "gap_display": "-0.063 pp",
+        "gap_value": -0.06465863453815324,
+        "gap_display": "-0.065 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "below Kalshi",
         "label": "Review required",
-        "message": "Unemployment Rate house forecast is -0.063 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
+        "message": "Unemployment Rate house forecast is -0.065 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
         "news_query": "September 2026 jobs report BLS forecast adjustment survey",
         "news_search_url": "https://news.google.com/search?q=September+2026+jobs+report+BLS+forecast+adjustment+survey",
         "official_guidance": [
@@ -214,6 +214,11 @@
         ],
         "guidance_hit_count": 0,
         "news_headlines": [
+          {
+            "title": "August 2026 Jobs Report Preview: Date, Forecasts, and Why a Weak NFP Now Points to a Fed Hike Debate - TOP1markets",
+            "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBuNlRvaWJpaWN6OV9Xc2Z5a1VuLUE5MTRCT0Nha25zUVFOVnlEMmtuSWRVejJUZ3hHNjY1M09saGxkMkZoMW1zUHVNeGtteVV2Ul8xai1IeDFMQXJZMk1DTGw4MkR1OWdsc1NnMEUwQWdzbUlKTWdr?oc=5",
+            "published": "Mon, 31 Aug 2026 06:25:48 GMT"
+          },
           {
             "title": "U.S. payrolls rose by 130,000 in January, more than expected; unemployment down to 4.3% - CNBC",
             "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE80QmlGMzFFZjM3TDhfN2R0NkdUZkM0VGRwQjE0UG1JVTh4Rnk4Wmg2U250a3p3cUFfX3l3YjV0TXh0dFlmRWdXakdNN2tFeTduNUpnaTRoZm44cExLbmhhbnlBX0FkMU1mRnRtcGdBZ9IBdEFVX3lxTE1tOWIxV2doSWlXYnlkTWl6bVNpYVpCbDB0YURFWWlCR2ZrNUkxRXIzRHphU2MwX0RxMlQ0WnozSTFBeHF5ZzQ2Wm91OW9XRTk3dG5VNTBlWW5vbGhIRFBEb2xDTUJkT1NCVmM1Mkcydzl0Zl9C?oc=5",
@@ -228,11 +233,6 @@
             "title": "Signs of Life - Economic Policy Innovation Center",
             "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1XeWpfT1NZb25DdXVVY3F6aVh1aWNGdjZLc1ljcnY1VUpSLUctakpoTElJTDZlZWF2ZkhLN1YtSm1NSk5XNF9vMDdzczkwTFRCRWdDT21XR2xKMU1vX2JxZ3p2WUJHVlU?oc=5",
             "published": "Fri, 13 Feb 2026 08:00:00 GMT"
-          },
-          {
-            "title": "Slower US job growth expected in December; unemployment rate likely dipped - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTGVQRms2YjZFbWdySmpwbjBpRVc3ZTBZMHgwSmhsYVlsZHlzc3NjVnBOczUxR0gzbmhkVkx3MXFHZ25PMWI3OTkwNHBkVV9iUUVrbGludGd2eDJkODJ6aUV2UnN1aWowZlRiVjd6c1gwMmU5WGRMSEJVQXZCYU54NTRaRDlGNU1ueUdnZDhmQ0xBMUhnUHZlVWZ4OEpQQThCc2MyWHRaZ2F6b1R4UkZmenBjenYyZw?oc=5",
-            "published": "Fri, 09 Jan 2026 08:00:00 GMT"
           }
         ]
       }
@@ -11148,7 +11148,7 @@
     "period": "July 2026",
     "data_month": "2026-07-01",
     "generated_at": "2026-08-26T18:00:50",
-    "updated_display": "Monday, August 31, 2026 01:58 PM ET",
+    "updated_display": "Monday, August 31, 2026 05:52 PM ET",
     "source_path": "macro_forecasting/output/core_pce_bridge_latest.json",
     "model_source": "macro_forecasting/cpi_to_pce_bridge.py",
     "core_cpi_mom": 0.2154,
