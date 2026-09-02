@@ -1,27 +1,27 @@
 {
-  "generated_at_utc": "2026-08-05T22:00:59.150847+00:00",
-  "latest_actual_month": "2026-06-01",
-  "next_target_month": "2026-07-01",
-  "release_target_month": "2026-08-01",
+  "generated_at_utc": "2026-09-02T22:00:44.585287+00:00",
+  "latest_actual_month": "2026-07-01",
+  "next_target_month": "2026-08-01",
+  "release_target_month": "2026-09-01",
   "imputed_features": [],
   "release_imputed_features": [
     "payems_prev",
     "mfg_prev"
   ],
-  "one_step_upgraded_k": 85.95113855009656,
-  "one_step_ensemble_k": 39.459951354590046,
-  "one_step_linear_k": 66.38329310085639,
-  "one_step_tree_k": 19.009976020210075,
-  "release_upgraded_k": 60.422389728638635,
-  "release_ensemble_k": 46.55090757654168,
-  "release_linear_k": 76.61588262541645,
-  "release_tree_k": 23.714663696693428,
+  "one_step_upgraded_k": 45.33385822813328,
+  "one_step_ensemble_k": 19.723566675035965,
+  "one_step_linear_k": 44.24256178423174,
+  "one_step_tree_k": -0.053990006370228175,
+  "release_upgraded_k": 34.778776674852985,
+  "release_ensemble_k": 46.28774516250219,
+  "release_linear_k": 64.03027500119424,
+  "release_tree_k": 31.9762332920721,
   "weights": {
-    "linear": 0.431677083104964,
-    "tree": 0.5683229168950359,
-    "ensemble": 0.34549819006999083,
-    "naive": 0.26406569274658764,
-    "ma3_seas": 0.1364000492291623,
-    "ma3": 0.25403606795425937
+    "linear": 0.4464807277753442,
+    "tree": 0.5535192722246557,
+    "ensemble": 0.355904613893143,
+    "naive": 0.26188181216695894,
+    "ma3_seas": 0.126919983462674,
+    "ma3": 0.25529359047722405
   }
 }
