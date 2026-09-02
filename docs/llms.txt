@@ -2,7 +2,7 @@
 
 > Live US macroeconomic release calendar with house model forecasts and Kalshi market consensus, maintained by Chirag Mirani.
 
-Updated: Tuesday, September 01, 2026 03:50 PM ET
+Updated: Wednesday, September 02, 2026 11:03 AM ET
 Machine-readable feed: https://chiragmirani.github.io/macro-dashboard/dashboard_data.json
 
 ## Data sources
@@ -13,25 +13,25 @@ BLS (CPI, PPI, Employment Situation/CES/CPS); BEA PCE data and methodology; DOL 
 
 - **Weekly Claims** (Labor) â€” releases Thursday, September 03, 2026 at 8:30 AM ET.
   House forecast: 207,463.
-  Kalshi consensus: 205,325.
+  Kalshi consensus: 207,825.
   Last release: Week ending Jul 04, 2026: 215,000.
-- **Core CPI** (Inflation) â€” releases Thursday, October 01, 2026 at 8:30 AM ET.
+- **Core CPI** (Inflation) â€” releases Friday, October 02, 2026 at 8:30 AM ET.
   House forecast: n/a.
-  Kalshi consensus: 0.177% m/m | 3.30% y/y.
+  Kalshi consensus: 0.177% m/m | 3.61% y/y.
   Last release: July 2026: 0.215% m/m, 2.47% y/y.
-- **Core PCE** (Inflation) â€” releases Thursday, October 01, 2026 at 8:30 AM ET.
+- **Core PCE** (Inflation) â€” releases Friday, October 02, 2026 at 8:30 AM ET.
   House forecast: 0.204% m/m | 3.30% y/y.
-  Kalshi consensus: 0.277% m/m.
+  Kalshi consensus: 0.278% m/m.
   Last release: July 2026: 0.246% m/m, 3.34% y/y.
-- **ADP** (Labor) â€” releases Thursday, October 01, 2026 at 8:15 AM ET.
+- **ADP** (Labor) â€” releases Friday, October 02, 2026 at 8:15 AM ET.
   House forecast: 60k.
   Kalshi consensus: 39k.
   Last release: June 2026: 98k.
-- **NFP** (Labor) â€” releases Thursday, October 01, 2026 at 8:30 AM ET.
+- **NFP** (Labor) â€” releases Friday, October 02, 2026 at 8:30 AM ET.
   House forecast: 69k.
-  Kalshi consensus: 54k.
+  Kalshi consensus: 51k.
   Last release: July 2026: -23k.
-- **Unemployment Rate** (Labor) â€” releases Thursday, October 01, 2026 at 8:30 AM ET.
+- **Unemployment Rate** (Labor) â€” releases Friday, October 02, 2026 at 8:30 AM ET.
   House forecast: 4.10%.
   Kalshi consensus: 4.33%.
   Last release: July 2026: 4.10%.
