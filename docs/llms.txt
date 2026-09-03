@@ -2,7 +2,7 @@
 
 > Live US macroeconomic release calendar with house model forecasts and Kalshi market consensus, maintained by Chirag Mirani.
 
-Updated: Wednesday, September 02, 2026 03:41 PM ET
+Updated: Thursday, September 03, 2026 10:56 AM ET
 Machine-readable feed: https://chiragmirani.github.io/macro-dashboard/dashboard_data.json
 
 ## Data sources
@@ -11,27 +11,27 @@ BLS (CPI, PPI, Employment Situation/CES/CPS); BEA PCE data and methodology; DOL 
 
 ## Tracked releases
 
-- **Weekly Claims** (Labor) â€” releases Thursday, September 03, 2026 at 8:30 AM ET.
+- **Weekly Claims** (Labor) â€” releases Thursday, September 10, 2026 at 8:30 AM ET.
   House forecast: 207,463.
-  Kalshi consensus: 207,950.
+  Kalshi consensus: no live Kalshi market found.
   Last release: Week ending Jul 04, 2026: 215,000.
-- **Core CPI** (Inflation) â€” releases Friday, October 02, 2026 at 8:30 AM ET.
+- **Core CPI** (Inflation) â€” releases Saturday, October 03, 2026 at 8:30 AM ET.
   House forecast: n/a.
-  Kalshi consensus: 0.177% m/m | 3.63% y/y.
+  Kalshi consensus: 0.177% m/m | 3.61% y/y.
   Last release: July 2026: 0.215% m/m, 2.47% y/y.
-- **Core PCE** (Inflation) â€” releases Friday, October 02, 2026 at 8:30 AM ET.
+- **Core PCE** (Inflation) â€” releases Saturday, October 03, 2026 at 8:30 AM ET.
   House forecast: 0.204% m/m | 3.30% y/y.
   Kalshi consensus: 0.278% m/m.
   Last release: July 2026: 0.246% m/m, 3.34% y/y.
-- **ADP** (Labor) â€” releases Friday, October 02, 2026 at 8:15 AM ET.
-  House forecast: 60k.
+- **ADP** (Labor) â€” releases Saturday, October 03, 2026 at 8:15 AM ET.
+  House forecast: 35k.
   Kalshi consensus: 39k.
   Last release: June 2026: 98k.
-- **NFP** (Labor) â€” releases Friday, October 02, 2026 at 8:30 AM ET.
+- **NFP** (Labor) â€” releases Saturday, October 03, 2026 at 8:30 AM ET.
   House forecast: 69k.
-  Kalshi consensus: 53k.
+  Kalshi consensus: 54k.
   Last release: July 2026: -23k.
-- **Unemployment Rate** (Labor) â€” releases Friday, October 02, 2026 at 8:30 AM ET.
+- **Unemployment Rate** (Labor) â€” releases Saturday, October 03, 2026 at 8:30 AM ET.
   House forecast: 4.10%.
   Kalshi consensus: 4.33%.
   Last release: July 2026: 4.10%.
