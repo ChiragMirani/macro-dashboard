@@ -7,7 +7,7 @@
       "release_group": "Labor",
       "target_period": "Week ending September 05, 2026",
       "release_iso": "2026-09-10T08:30:00-04:00",
-      "snapshot_at_utc": "2026-09-03T15:00:02.684971+00:00",
+      "snapshot_at_utc": "2026-09-03T19:46:29.014996+00:00",
       "house_raw": "207,463",
       "house_value": 207463.0,
       "kalshi_raw": "no live Kalshi market found",
@@ -86,7 +86,7 @@
       "house_error_abs": 0.23766066684318235,
       "kalshi_error_abs": 0.18066066684318235,
       "winner": "kalshi",
-      "settled_at_utc": "2026-09-03T15:00:02.766130+00:00",
+      "settled_at_utc": "2026-09-03T19:46:29.130801+00:00",
       "actual_consensus_side": "below",
       "house_consensus_side": "above",
       "house_direction_correct": 0,
@@ -675,5 +675,5 @@
     "house_mean_abs_error": 2279.2023810144606,
     "kalshi_mean_abs_error": 1612.7980155974697
   },
-  "last_updated_utc": "2026-09-03T15:00:23.080858+00:00"
+  "last_updated_utc": "2026-09-03T19:46:49.533239+00:00"
 }

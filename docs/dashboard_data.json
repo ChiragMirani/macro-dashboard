@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Thursday, September 03, 2026 10:56 AM ET",
-  "generated_at_iso": "2026-09-03T10:56:58.388966-04:00",
+  "generated_at_et": "Thursday, September 03, 2026 03:43 PM ET",
+  "generated_at_iso": "2026-09-03T15:43:39.449552-04:00",
   "current_day": "Thursday",
   "current_date": "September 03, 2026",
-  "current_time": "10:56 AM ET",
+  "current_time": "03:43 PM ET",
   "next_event": {
     "key": "weekly_claims",
     "label": "Weekly Claims",
@@ -14,7 +14,7 @@
     "release_date": "September 10, 2026",
     "release_time": "8:30 AM ET",
     "release_iso": "2026-09-10T08:30:00-04:00",
-    "hours_until_release": 165,
+    "hours_until_release": 160,
     "schedule_source": "weekly_rule",
     "house_forecast": "207,463",
     "kalshi_consensus": "no live Kalshi market found",
@@ -37,7 +37,7 @@
       "release_date": "September 10, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-09-10T08:30:00-04:00",
-      "hours_until_release": 165,
+      "hours_until_release": 160,
       "schedule_source": "weekly_rule",
       "house_forecast": "207,463",
       "kalshi_consensus": "no live Kalshi market found",
@@ -59,10 +59,10 @@
       "release_date": "October 03, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-10-03T08:30:00-04:00",
-      "hours_until_release": 717,
+      "hours_until_release": 712,
       "schedule_source": "fallback_schedule",
       "house_forecast": null,
-      "kalshi_consensus": "0.177% m/m | 3.61% y/y",
+      "kalshi_consensus": "0.177% m/m | 3.64% y/y",
       "last_release": "July 2026: 0.215% m/m, 2.47% y/y",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -81,7 +81,7 @@
       "release_date": "October 03, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-10-03T08:30:00-04:00",
-      "hours_until_release": 717,
+      "hours_until_release": 712,
       "schedule_source": "fallback_schedule",
       "house_forecast": "0.204% m/m | 3.30% y/y",
       "kalshi_consensus": "0.278% m/m",
@@ -114,7 +114,28 @@
           }
         ],
         "guidance_hit_count": 1,
-        "news_headlines": []
+        "news_headlines": [
+          {
+            "title": "US inflation remains elevated as GDP growth outlook brightens - Reuters",
+            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNTGZMbzZKcjQta1dMdl9LYzRqcHJ3NENGVVZjT2UtVWFHTnNlMHgxWkFpU282LUFlanJqUDU2YWZBSnp5TVJEQ005d3FvSGZWa0tQRVdDZURPNFJRazRacHpCMU1nYjZ2cnhPb1JPcVZTTGtYNkxCb01uQ3V5UFZrNmppWTRpcGRwdVluU19tdFo0TjlfVFhneVRkTmNPYXVxU3FmRU1MZE1tZw?oc=5",
+            "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Residual Seasonality in Some Components of PCE Inflation - clevelandfed.org",
+            "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNN1o3RHpVSEJNblNWcEN0VWpVY1FMTHZYNGdOVXhkd3dJWF9Jc3ZRT1I0eGNuTl85WXVQV3lXM3VjRE9iZ2RWT3V6RmdUcTBaeGtOSnYwWU9IWjFRbDB6V2hPSmRPTzdCNHJWWWcwaS01ZmRWYklhVXZXcmdCTF9tUFVETGxwWjBOYk9YTXRVSjZnSlVFWS1URWw2TFdPc3lKNlNHakpWcnRvRTZ1OXEtOE5WV3gtQmttWTVfcTZoeUV0U3BCcjhvSFlaekFidw?oc=5",
+            "published": "Thu, 05 Mar 2026 14:15:42 GMT"
+          },
+          {
+            "title": "GDP (Advance Estimate), 4th Quarter and Year 2025 - U.S. Bureau of Economic Analysis (BEA) (.gov)",
+            "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQ3gxNnp5ajZDUWhLTi10dGxYRzEwM25EVzBQVDRkY3ZCR2RYaWNCLXdRY0xSVzNxUTRiSmJxcWNoSDJybmgwLWo4UjZsSUFYcFZzNEVzX25rTWdZVXlVM3ZoXzBXRk1TVDAzRU5QZDVuQ0JSMUQ3ZVRZa21BLTc0ZHNn?oc=5",
+            "published": "Fri, 20 Feb 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Core inflation rate hit 3.4% in May, highest since October 2023, Fed\u2019s preferred gauge shows - CNBC",
+            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZcDg3cWttTk56b3NGQXdmNk1IXzVpYWdNR0lsaTFBU2pVQWpmV2ZwRGt3aEJhekVneDRCQVh3SWtnUnF4cVRudEVrcWREVEhSQnl0bTB4TGtBRkVvNThLWVRzOTJ5MTQtZ0tGcHZHN1NEQ3RKQlHSAXtBVV95cUxNdjlBUGRsTDRJMXltYWlmWmRzMjJtNjlfZlQwZURzSDdic0F2MW5FcHJsSWd2TEY2d1JuSFpraVA4bG9vNmlPLVAtd1p4NDdNWVVwM2lIRlNxNWx3WkZIZ1huTjZkZzJVWkNhRmI1aF9zdmZ2S21tRDFyM1U?oc=5",
+            "published": "Thu, 25 Jun 2026 07:00:00 GMT"
+          }
+        ]
       }
     },
     {
@@ -126,7 +147,7 @@
       "release_date": "October 03, 2026",
       "release_time": "8:15 AM ET",
       "release_iso": "2026-10-03T08:30:00-04:00",
-      "hours_until_release": 717,
+      "hours_until_release": 712,
       "schedule_source": "fallback_schedule",
       "house_forecast": "35k",
       "kalshi_consensus": "39k",
@@ -155,7 +176,7 @@
       "release_date": "October 03, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-10-03T08:30:00-04:00",
-      "hours_until_release": 717,
+      "hours_until_release": 712,
       "schedule_source": "fallback_schedule",
       "house_forecast": "69k",
       "kalshi_consensus": "54k",
@@ -168,7 +189,7 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": 15.004166666666677,
+        "gap_value": 14.87916666666667,
         "gap_display": "+15k",
         "threshold": 40.0,
         "threshold_display": "40k",
@@ -184,7 +205,7 @@
       "release_date": "October 03, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-10-03T08:30:00-04:00",
-      "hours_until_release": 717,
+      "hours_until_release": 712,
       "schedule_source": "fallback_schedule",
       "house_forecast": "4.10%",
       "kalshi_consensus": "4.33%",
@@ -215,7 +236,28 @@
           }
         ],
         "guidance_hit_count": 0,
-        "news_headlines": []
+        "news_headlines": [
+          {
+            "title": "Counterfactual imputation approaches for the housing component of the October 2025 CPI - Bureau of Labor Statistics (.gov)",
+            "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPQ3B0U1RwOXc0RXJfUXpZVjdmbGYzdW5fRl9QZi12V3dCQkJsQWdJMGNmamtrZGl4X1VFQVhJLVRJTWlXeUo1NDIxRXoyekp2RWVqVzVJQjBtZVlIVl9fbHJ2TW95N3ROXy16djhWbXptY0xTLVRnaEt2RFdHMkVySk10NkJuaF9MWk9QQ0ZZS2h4WG5NX3loeUZ2d3NHR3pyZlBxR3dldUx4ejBlWmh2VkRhLXMwSUpqRkY0MVdtckQ5cnJ0VTRVSGNEd04?oc=5",
+            "published": "Tue, 12 May 2026 16:30:51 GMT"
+          },
+          {
+            "title": "More Thoughts on the Jobs Report - cepr.net",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5jazRVTlkwMkVMRF9ZTXY2T1JQcWxHLUI5cVNsWnEzRm01ZXNqOVh0ZEZrQk0weWYyMDdPWldpVkdiZUZmSHp4WTJEVmFEeFZtM2NLOXRpNFVzb0cweGxNbjZpOHA5SElwa19NWjNUT2E?oc=5",
+            "published": "Thu, 12 Feb 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Labor Market Recap February 2026 - Employ America",
+            "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9wbGpubTY4ZnptOFRfalpzZllFV1VzbWl1RkQ0Y1pwSE5DZENMLXVoNXhWMjFqeFhETW5aQ0otZ25ydmJQemt3X2tWZ293Y1JkeDFRRlNLUzhiS1JETXJnZXliQlEzSFVEVUtBSnpfM0RYZUtsVDcxV0F4WHQ?oc=5",
+            "published": "Fri, 06 Mar 2026 08:00:00 GMT"
+          },
+          {
+            "title": "NEWS RELEASE: Hawai\u2019i June Unemployment Rate at 2.6 Percent - Office of the Governor Josh Green (.gov)",
+            "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUDVkZUgwT2c1dkM1b2Y4ZHAtNWVieW5lOEFsa1NCejZ6ZXI5VzRDT3pLamxtSVZwZ3FsVnFGcGxJLUxhUGVVaVZYai1lc0NwSUotUmFOREd5NEhvZTk1eGpZVHBjVy1EUmpsQ2F4TVBNRDZwVUN2REdiaFN4Z3pVdzVwbUk1Ty1Tb2k3THFvcWRHejV5aXhQMkNsWQ?oc=5",
+            "published": "Mon, 20 Jul 2026 07:00:00 GMT"
+          }
+        ]
       }
     }
   ],
@@ -11129,7 +11171,7 @@
     "period": "July 2026",
     "data_month": "2026-07-01",
     "generated_at": "2026-08-26T18:00:50",
-    "updated_display": "Thursday, September 03, 2026 10:56 AM ET",
+    "updated_display": "Thursday, September 03, 2026 03:43 PM ET",
     "source_path": "macro_forecasting/output/core_pce_bridge_latest.json",
     "model_source": "macro_forecasting/cpi_to_pce_bridge.py",
     "core_cpi_mom": 0.2154,

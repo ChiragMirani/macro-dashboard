@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-03T14:56:57.800342+00:00",
+  "generated_at_utc": "2026-09-03T19:43:38.651756+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
@@ -36,8 +36,8 @@
       "event_ticker": "KXCPICOREYOY-26SEP",
       "kind": "threshold",
       "market_count": 15,
-      "implied_value": 3.6132499999999994,
-      "consensus_label": "3.61% y/y",
+      "implied_value": 3.6365,
+      "consensus_label": "3.64% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26sep",
       "title": "Core inflation in September 2026 (Core CPI YoY)"
     },
@@ -46,7 +46,7 @@
       "event_ticker": "KXPAYROLLS-26SEP",
       "kind": "threshold",
       "market_count": 13,
-      "implied_value": 53.662499999999994,
+      "implied_value": 53.7875,
       "consensus_label": "54k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26sep",
       "title": "Jobs numbers in Sep 2026?"
