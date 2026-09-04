@@ -1,75 +1,75 @@
 {
-  "generated_at_utc": "2026-08-06T15:07:35.236997+00:00",
+  "generated_at_utc": "2026-09-04T14:54:02.580069+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
-      "event_ticker": "KXJOBLESSCLAIMS-26AUG13",
+      "event_ticker": "KXJOBLESSCLAIMS-26SEP10",
       "kind": "threshold",
-      "market_count": 0,
-      "implied_value": null,
-      "consensus_label": null,
-      "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26aug13",
-      "title": null
+      "market_count": 11,
+      "implied_value": 208825.0,
+      "consensus_label": "208,825",
+      "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26sep10",
+      "title": "Initial jobless claims for the week ending September 5, 2026"
     },
     "adp": {
       "key": "adp",
-      "event_ticker": "KXADP-26AUG",
+      "event_ticker": "KXADP-26SEP",
       "kind": "threshold",
-      "market_count": 0,
-      "implied_value": null,
-      "consensus_label": null,
-      "kalshi_url": "https://kalshi.com/markets/kxadp-26aug",
-      "title": null
+      "market_count": 7,
+      "implied_value": 39.375,
+      "consensus_label": "39k",
+      "kalshi_url": "https://kalshi.com/markets/kxadp-26sep",
+      "title": "ADP employment change in Sep 2026?"
     },
     "core_cpi": {
       "key": "core_cpi",
-      "event_ticker": "KXECONSTATCPICORE-26AUG",
+      "event_ticker": "KXECONSTATCPICORE-26SEP",
       "kind": "bucket",
-      "market_count": 0,
-      "implied_value": null,
-      "consensus_label": null,
-      "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26aug",
-      "title": null
+      "market_count": 8,
+      "implied_value": 0.1813278008298755,
+      "consensus_label": "0.181% m/m",
+      "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26sep",
+      "title": "CPI core month-over-month in Sep 2026?"
     },
     "core_cpi_yoy": {
       "key": "core_cpi_yoy",
-      "event_ticker": "KXCPICOREYOY-26AUG",
+      "event_ticker": "KXCPICOREYOY-26SEP",
       "kind": "threshold",
-      "market_count": 0,
-      "implied_value": null,
-      "consensus_label": null,
-      "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26aug",
-      "title": null
+      "market_count": 15,
+      "implied_value": 3.4234999999999998,
+      "consensus_label": "3.42% y/y",
+      "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26sep",
+      "title": "Core inflation in September 2026 (Core CPI YoY)"
     },
     "nfp": {
       "key": "nfp",
-      "event_ticker": "KXPAYROLLS-26AUG",
+      "event_ticker": "KXPAYROLLS-26SEP",
       "kind": "threshold",
-      "market_count": 0,
-      "implied_value": null,
-      "consensus_label": null,
-      "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26aug",
-      "title": null
+      "market_count": 13,
+      "implied_value": 55.73749999999999,
+      "consensus_label": "56k",
+      "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26sep",
+      "title": "Jobs numbers in Sep 2026?"
     },
     "ur": {
       "key": "ur",
-      "event_ticker": "KXECONSTATU3-26AUG",
+      "event_ticker": "KXECONSTATU3-26SEP",
       "kind": "bucket",
-      "market_count": 0,
-      "implied_value": null,
-      "consensus_label": null,
-      "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26aug",
-      "title": null
+      "market_count": 23,
+      "implied_value": 4.257922077922078,
+      "consensus_label": "4.26%",
+      "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26sep",
+      "title": "Unemployment rate in Sep 2026?"
     },
     "core_pce": {
       "key": "core_pce",
-      "event_ticker": "KXPCECORE-26SEP",
+      "event_ticker": "KXPCECORE-26OCT",
       "kind": "threshold",
-      "market_count": 0,
-      "implied_value": null,
-      "consensus_label": null,
-      "kalshi_url": "https://kalshi.com/markets/kxpcecore-26sep",
-      "title": null
+      "market_count": 5,
+      "implied_value": 0.27475000000000005,
+      "consensus_label": "0.275% m/m",
+      "kalshi_url": "https://kalshi.com/markets/kxpcecore-26oct",
+      "title": "How much will core PCE increase in Oct 2026?"
     }
   }
 }
