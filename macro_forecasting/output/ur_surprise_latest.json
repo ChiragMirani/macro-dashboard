@@ -1,21 +1,21 @@
 {
-  "generated_at_utc": "2026-09-03T22:15:38.860414+00:00",
-  "target_month": "2026-08",
+  "generated_at_utc": "2026-09-04T22:14:25.164288+00:00",
+  "target_month": "2026-09",
   "threshold_pp": 0.12,
   "baseline": {
     "regression": {
-      "rows": 42.0,
-      "mae": 0.057142857142857204,
-      "rmse": 0.07354307028103307,
-      "bias": 0.003174603174603178
+      "rows": 43.0,
+      "mae": 0.05581395348837216,
+      "rmse": 0.07268288782118522,
+      "bias": 0.003100775193798467
     },
     "classification": {
-      "rows": 42.0,
-      "accuracy": 0.6904761904761905,
-      "brier": 0.213718820861678,
+      "rows": 43.0,
+      "accuracy": 0.6976744186046512,
+      "brier": 0.2109248242293131,
       "precision": 0.0,
       "recall": 0.0,
-      "base_rate": 0.30952380952380953
+      "base_rate": 0.3023255813953488
     }
   },
   "bakeoff": {
@@ -33,10 +33,10 @@
           "iur_4wma"
         ],
         "model": "hgb",
-        "rows": 42.0,
-        "mae": 0.051992180647242495,
-        "rmse": 0.06638563090274247,
-        "bias": 0.00020814805657766048
+        "rows": 43.0,
+        "mae": 0.05108017864380828,
+        "rmse": 0.06563808667930861,
+        "bias": 0.0005004258808333263
       },
       {
         "blocks": [
@@ -50,10 +50,10 @@
           "long_u_share_prev"
         ],
         "model": "hgb",
-        "rows": 41.0,
-        "mae": 0.053597656731131406,
-        "rmse": 0.06809308046663202,
-        "bias": 0.0007940449108275071
+        "rows": 42.0,
+        "mae": 0.052689881574809985,
+        "rmse": 0.06731990557621112,
+        "bias": 0.0011434986073704655
       },
       {
         "blocks": [
@@ -71,10 +71,10 @@
           "layoffs_to_unemployed"
         ],
         "model": "hgb",
-        "rows": 42.0,
-        "mae": 0.052038013629552966,
-        "rmse": 0.07089922816155982,
-        "bias": -0.013348004376981264
+        "rows": 43.0,
+        "mae": 0.051534367719375904,
+        "rmse": 0.07022297427299619,
+        "bias": -0.012331045217238918
       },
       {
         "blocks": [
@@ -89,10 +89,10 @@
           "gap_3m_mean"
         ],
         "model": "hgb",
-        "rows": 42.0,
-        "mae": 0.057334336388218866,
-        "rmse": 0.07263592039087641,
-        "bias": -0.016384659637951625
+        "rows": 43.0,
+        "mae": 0.056455456366778775,
+        "rmse": 0.07184818300243326,
+        "bias": -0.016458097680471236
       },
       {
         "blocks": [
@@ -105,10 +105,10 @@
           "u_signed_surprise_lag1"
         ],
         "model": "hgb",
-        "rows": 42.0,
-        "mae": 0.06165997650324978,
-        "rmse": 0.07709425749948846,
-        "bias": -0.009972540055037454
+        "rows": 43.0,
+        "mae": 0.062311180619529345,
+        "rmse": 0.07740970143754948,
+        "bias": -0.011825777577089405
       },
       {
         "blocks": [
@@ -123,10 +123,10 @@
           "prime_participation_gap"
         ],
         "model": "hgb",
-        "rows": 41.0,
-        "mae": 0.05696629656487962,
-        "rmse": 0.07883820737851681,
-        "bias": -0.00896580858043909
+        "rows": 42.0,
+        "mae": 0.05723814995164648,
+        "rmse": 0.07860546011109616,
+        "bias": -0.010380530728740251
       },
       {
         "blocks": [
@@ -140,10 +140,10 @@
           "is_january"
         ],
         "model": "hgb",
-        "rows": 42.0,
-        "mae": 0.07101518672574281,
-        "rmse": 0.08304688489570744,
-        "bias": -0.04007283547961541
+        "rows": 43.0,
+        "mae": 0.07006137232578734,
+        "rmse": 0.0822029598106319,
+        "bias": -0.039838610643523356
       },
       {
         "blocks": [
@@ -158,10 +158,10 @@
           "gap_3m_mean"
         ],
         "model": "ols",
-        "rows": 42.0,
-        "mae": 0.08952255803899914,
-        "rmse": 0.10367819801738522,
-        "bias": -0.06003005544470371
+        "rows": 43.0,
+        "mae": 0.09096011207197074,
+        "rmse": 0.10503245238028723,
+        "bias": -0.06215348163103102
       },
       {
         "blocks": [
@@ -174,10 +174,10 @@
           "u_signed_surprise_lag1"
         ],
         "model": "ols",
-        "rows": 42.0,
-        "mae": 0.08862361427342233,
-        "rmse": 0.1049350148476519,
-        "bias": -0.056683337766728244
+        "rows": 43.0,
+        "mae": 0.09093635649361614,
+        "rmse": 0.10760045696979079,
+        "bias": -0.05973887711498472
       },
       {
         "blocks": [
@@ -192,10 +192,10 @@
           "iur_4wma"
         ],
         "model": "ols",
-        "rows": 42.0,
-        "mae": 0.09571870261896846,
-        "rmse": 0.11235940441323299,
-        "bias": 0.09571870261896846
+        "rows": 43.0,
+        "mae": 0.0958182676743413,
+        "rmse": 0.11208745567263077,
+        "bias": 0.0958182676743413
       }
     ],
     "reg_combo_results": [
@@ -222,10 +222,10 @@
           "layoffs_to_unemployed"
         ],
         "model": "hgb",
-        "rows": 42.0,
-        "mae": 0.05231773609719831,
-        "rmse": 0.06811389726368783,
-        "bias": -0.013582607024763035
+        "rows": 43.0,
+        "mae": 0.05167202596443471,
+        "rmse": 0.067421260976724,
+        "bias": -0.012695751038411257
       },
       {
         "blocks": [
@@ -246,10 +246,10 @@
           "long_u_share_prev"
         ],
         "model": "hgb",
-        "rows": 41.0,
-        "mae": 0.05520880232897862,
-        "rmse": 0.07274994568469442,
-        "bias": -0.002183485849678292
+        "rows": 42.0,
+        "mae": 0.054313589050773325,
+        "rmse": 0.07192999988589499,
+        "bias": -0.0017122160760108113
       },
       {
         "blocks": [
@@ -271,10 +271,10 @@
           "gap_3m_mean"
         ],
         "model": "ols",
-        "rows": 42.0,
-        "mae": 0.059159706875409605,
-        "rmse": 0.07718348507207151,
-        "bias": -0.002482730893246821
+        "rows": 43.0,
+        "mae": 0.05811547208148171,
+        "rmse": 0.07631170395687625,
+        "bias": -0.002756565308206425
       },
       {
         "blocks": [
@@ -295,10 +295,10 @@
           "long_u_share_prev"
         ],
         "model": "ols",
-        "rows": 41.0,
-        "mae": 0.06354386277142765,
-        "rmse": 0.08043751265811301,
-        "bias": 0.022281753183819693
+        "rows": 42.0,
+        "mae": 0.06254018075492414,
+        "rmse": 0.07953108709877334,
+        "bias": 0.021200740855074153
       },
       {
         "blocks": [
@@ -322,10 +322,10 @@
           "layoffs_to_unemployed"
         ],
         "model": "hgb",
-        "rows": 41.0,
-        "mae": 0.061639123705218936,
-        "rmse": 0.08262624299822573,
-        "bias": -0.02354100980672732
+        "rows": 42.0,
+        "mae": 0.06044248974306701,
+        "rmse": 0.08165555605141367,
+        "bias": -0.02270954535192814
       },
       {
         "blocks": [
@@ -350,10 +350,10 @@
           "layoffs_to_unemployed"
         ],
         "model": "ols",
-        "rows": 42.0,
-        "mae": 0.09836661709488703,
-        "rmse": 0.11782473637303957,
-        "bias": 0.05426239404006344
+        "rows": 43.0,
+        "mae": 0.09840460274384316,
+        "rmse": 0.1174409378584197,
+        "bias": 0.0553260592949457
       },
       {
         "blocks": [
@@ -374,10 +374,10 @@
           "gap_3m_mean"
         ],
         "model": "ols",
-        "rows": 41.0,
-        "mae": 0.14240080674963343,
-        "rmse": 0.20765496556191745,
-        "bias": -0.045700148660577256
+        "rows": 42.0,
+        "mae": 0.14142370830430467,
+        "rmse": 0.20575053849464775,
+        "bias": -0.04219865292947241
       },
       {
         "blocks": [
@@ -402,10 +402,10 @@
           "gap_3m_mean"
         ],
         "model": "ols",
-        "rows": 42.0,
-        "mae": 0.18862856303449685,
-        "rmse": 0.23965131900633635,
-        "bias": -0.12782989195634875
+        "rows": 43.0,
+        "mae": 0.18574527110956382,
+        "rmse": 0.23705337115657119,
+        "bias": -0.12335368492800632
       },
       {
         "blocks": [
@@ -429,10 +429,10 @@
           "layoffs_to_unemployed"
         ],
         "model": "ols",
-        "rows": 41.0,
-        "mae": 0.2707853932749006,
-        "rmse": 0.33510152287265776,
-        "bias": -0.2559434335669961
+        "rows": 42.0,
+        "mae": 0.26671907438740294,
+        "rmse": 0.3314475558564335,
+        "bias": -0.24746858991063903
       }
     ],
     "cls_block_results": [
@@ -447,12 +447,12 @@
           "iur_4wma"
         ],
         "model": "logit",
-        "rows": 42.0,
-        "accuracy": 0.6904761904761905,
-        "brier": 0.21618161495618188,
+        "rows": 43.0,
+        "accuracy": 0.6976744186046512,
+        "brier": 0.21427520338459297,
         "precision": 0.0,
         "recall": 0.0,
-        "base_rate": 0.30952380952380953
+        "base_rate": 0.3023255813953488
       },
       {
         "blocks": [
@@ -465,29 +465,12 @@
           "openings_to_unemployed"
         ],
         "model": "logit",
-        "rows": 42.0,
-        "accuracy": 0.6904761904761905,
-        "brier": 0.22334402100023146,
+        "rows": 43.0,
+        "accuracy": 0.6976744186046512,
+        "brier": 0.2228484121462893,
         "precision": 0.0,
         "recall": 0.0,
-        "base_rate": 0.30952380952380953
-      },
-      {
-        "blocks": [
-          "numerator_recurrence"
-        ],
-        "features": [
-          "u_abs_surprise_lag1",
-          "u_same_month_last_year_abs_surprise",
-          "u_same_month_hist_abs_surprise"
-        ],
-        "model": "logit",
-        "rows": 42.0,
-        "accuracy": 0.6666666666666666,
-        "brier": 0.2252218593753738,
-        "precision": 0.4444444444444444,
-        "recall": 0.3076923076923077,
-        "base_rate": 0.30952380952380953
+        "base_rate": 0.3023255813953488
       },
       {
         "blocks": [
@@ -500,12 +483,12 @@
           "prime_participation_gap"
         ],
         "model": "logit",
-        "rows": 41.0,
-        "accuracy": 0.7073170731707317,
-        "brier": 0.22559426369359398,
+        "rows": 42.0,
+        "accuracy": 0.7142857142857143,
+        "brier": 0.22477372471927132,
         "precision": 0.0,
         "recall": 0.0,
-        "base_rate": 0.2926829268292683
+        "base_rate": 0.2857142857142857
       },
       {
         "blocks": [
@@ -517,12 +500,29 @@
           "sahm_gap_prev"
         ],
         "model": "logit",
-        "rows": 41.0,
-        "accuracy": 0.7073170731707317,
-        "brier": 0.22694250520216114,
+        "rows": 42.0,
+        "accuracy": 0.7142857142857143,
+        "brier": 0.22486099307758703,
         "precision": 0.0,
         "recall": 0.0,
-        "base_rate": 0.2926829268292683
+        "base_rate": 0.2857142857142857
+      },
+      {
+        "blocks": [
+          "numerator_recurrence"
+        ],
+        "features": [
+          "u_abs_surprise_lag1",
+          "u_same_month_last_year_abs_surprise",
+          "u_same_month_hist_abs_surprise"
+        ],
+        "model": "logit",
+        "rows": 43.0,
+        "accuracy": 0.6511627906976745,
+        "brier": 0.22783750371354436,
+        "precision": 0.4,
+        "recall": 0.3076923076923077,
+        "base_rate": 0.3023255813953488
       },
       {
         "blocks": [
@@ -537,12 +537,12 @@
           "gap_3m_mean"
         ],
         "model": "logit",
-        "rows": 42.0,
-        "accuracy": 0.6666666666666666,
-        "brier": 0.23301380716881517,
+        "rows": 43.0,
+        "accuracy": 0.6744186046511628,
+        "brier": 0.23227770143118284,
         "precision": 0.4,
         "recall": 0.15384615384615385,
-        "base_rate": 0.30952380952380953
+        "base_rate": 0.3023255813953488
       },
       {
         "blocks": [
@@ -555,12 +555,30 @@
           "openings_to_unemployed"
         ],
         "model": "hgb",
-        "rows": 42.0,
-        "accuracy": 0.5714285714285714,
-        "brier": 0.2524457116133715,
+        "rows": 43.0,
+        "accuracy": 0.5813953488372093,
+        "brier": 0.24792370679816456,
         "precision": 0.3333333333333333,
         "recall": 0.38461538461538464,
-        "base_rate": 0.30952380952380953
+        "base_rate": 0.3023255813953488
+      },
+      {
+        "blocks": [
+          "claims_iur"
+        ],
+        "features": [
+          "claims_delta",
+          "claims_accel",
+          "iur_delta",
+          "iur_4wma"
+        ],
+        "model": "hgb",
+        "rows": 43.0,
+        "accuracy": 0.5348837209302325,
+        "brier": 0.2514311966451432,
+        "precision": 0.23076923076923078,
+        "recall": 0.23076923076923078,
+        "base_rate": 0.3023255813953488
       },
       {
         "blocks": [
@@ -574,50 +592,29 @@
           "is_january"
         ],
         "model": "logit",
-        "rows": 42.0,
-        "accuracy": 0.42857142857142855,
-        "brier": 0.2559769225352521,
+        "rows": 43.0,
+        "accuracy": 0.4418604651162791,
+        "brier": 0.25579421967598087,
         "precision": 0.21052631578947367,
         "recall": 0.3076923076923077,
-        "base_rate": 0.30952380952380953
+        "base_rate": 0.3023255813953488
       },
       {
         "blocks": [
-          "claims_iur"
+          "denominator_recurrence"
         ],
         "features": [
-          "claims_delta",
-          "claims_accel",
-          "iur_delta",
-          "iur_4wma"
+          "lf_abs_surprise_lag1",
+          "lf_same_month_last_year_abs_surprise",
+          "lf_same_month_hist_abs_surprise"
         ],
-        "model": "hgb",
-        "rows": 42.0,
-        "accuracy": 0.5238095238095238,
-        "brier": 0.25667862441424266,
-        "precision": 0.23076923076923078,
-        "recall": 0.23076923076923078,
-        "base_rate": 0.30952380952380953
-      },
-      {
-        "blocks": [
-          "recurrence_ur"
-        ],
-        "features": [
-          "abs_gap_lag1",
-          "abs_gap_3m_avg",
-          "same_month_last_year_abs_gap",
-          "same_month_hist_abs_gap",
-          "gap_lag1",
-          "gap_3m_mean"
-        ],
-        "model": "hgb",
-        "rows": 42.0,
-        "accuracy": 0.6428571428571429,
-        "brier": 0.2882076226774274,
-        "precision": 0.4166666666666667,
-        "recall": 0.38461538461538464,
-        "base_rate": 0.30952380952380953
+        "model": "logit",
+        "rows": 43.0,
+        "accuracy": 0.4186046511627907,
+        "brier": 0.28808499088847556,
+        "precision": 0.2857142857142857,
+        "recall": 0.6153846153846154,
+        "base_rate": 0.3023255813953488
       }
     ],
     "cls_combo_results": [
@@ -637,12 +634,34 @@
           "prime_participation_gap"
         ],
         "model": "logit",
-        "rows": 41.0,
-        "accuracy": 0.7073170731707317,
-        "brier": 0.21277646290400004,
+        "rows": 42.0,
+        "accuracy": 0.7142857142857143,
+        "brier": 0.21088647017770576,
         "precision": 0.0,
         "recall": 0.0,
-        "base_rate": 0.2926829268292683
+        "base_rate": 0.2857142857142857
+      },
+      {
+        "blocks": [
+          "claims_iur",
+          "labor_state"
+        ],
+        "features": [
+          "claims_delta",
+          "claims_accel",
+          "iur_delta",
+          "iur_4wma",
+          "ur_prev",
+          "payems_prev",
+          "sahm_gap_prev"
+        ],
+        "model": "logit",
+        "rows": 42.0,
+        "accuracy": 0.7142857142857143,
+        "brier": 0.21496471548539922,
+        "precision": 0.0,
+        "recall": 0.0,
+        "base_rate": 0.2857142857142857
       },
       {
         "blocks": [
@@ -660,56 +679,12 @@
           "openings_to_unemployed"
         ],
         "model": "logit",
-        "rows": 42.0,
-        "accuracy": 0.6904761904761905,
-        "brier": 0.22114116940542777,
+        "rows": 43.0,
+        "accuracy": 0.6976744186046512,
+        "brier": 0.21899756559703085,
         "precision": 0.0,
         "recall": 0.0,
-        "base_rate": 0.30952380952380953
-      },
-      {
-        "blocks": [
-          "claims_iur",
-          "numerator_recurrence"
-        ],
-        "features": [
-          "claims_delta",
-          "claims_accel",
-          "iur_delta",
-          "iur_4wma",
-          "u_abs_surprise_lag1",
-          "u_same_month_last_year_abs_surprise",
-          "u_same_month_hist_abs_surprise"
-        ],
-        "model": "logit",
-        "rows": 42.0,
-        "accuracy": 0.6428571428571429,
-        "brier": 0.22327270783932093,
-        "precision": 0.4,
-        "recall": 0.3076923076923077,
-        "base_rate": 0.30952380952380953
-      },
-      {
-        "blocks": [
-          "numerator_recurrence",
-          "participation"
-        ],
-        "features": [
-          "u_abs_surprise_lag1",
-          "u_same_month_last_year_abs_surprise",
-          "u_same_month_hist_abs_surprise",
-          "civpart_prev",
-          "emratio_prev",
-          "participation_gap",
-          "prime_participation_gap"
-        ],
-        "model": "logit",
-        "rows": 41.0,
-        "accuracy": 0.6341463414634146,
-        "brier": 0.22414730420649887,
-        "precision": 0.3333333333333333,
-        "recall": 0.25,
-        "base_rate": 0.2926829268292683
+        "base_rate": 0.3023255813953488
       },
       {
         "blocks": [
@@ -727,34 +702,56 @@
           "prime_participation_gap"
         ],
         "model": "logit",
-        "rows": 41.0,
-        "accuracy": 0.7073170731707317,
-        "brier": 0.22462117112117358,
+        "rows": 42.0,
+        "accuracy": 0.7142857142857143,
+        "brier": 0.2242454559952287,
         "precision": 0.0,
         "recall": 0.0,
-        "base_rate": 0.2926829268292683
+        "base_rate": 0.2857142857142857
       },
       {
         "blocks": [
           "jolts_flows",
-          "numerator_recurrence"
+          "labor_state"
         ],
         "features": [
           "jts_hires_chg_lag2",
           "jts_quits_chg_lag2",
           "jts_layoffs_chg_lag2",
           "openings_to_unemployed",
-          "u_abs_surprise_lag1",
-          "u_same_month_last_year_abs_surprise",
-          "u_same_month_hist_abs_surprise"
+          "ur_prev",
+          "payems_prev",
+          "sahm_gap_prev"
         ],
         "model": "logit",
         "rows": 42.0,
-        "accuracy": 0.6666666666666666,
-        "brier": 0.22595435388731738,
-        "precision": 0.4444444444444444,
-        "recall": 0.3076923076923077,
-        "base_rate": 0.30952380952380953
+        "accuracy": 0.7142857142857143,
+        "brier": 0.22519597089147408,
+        "precision": 0.0,
+        "recall": 0.0,
+        "base_rate": 0.2857142857142857
+      },
+      {
+        "blocks": [
+          "participation",
+          "labor_state"
+        ],
+        "features": [
+          "civpart_prev",
+          "emratio_prev",
+          "participation_gap",
+          "prime_participation_gap",
+          "ur_prev",
+          "payems_prev",
+          "sahm_gap_prev"
+        ],
+        "model": "logit",
+        "rows": 42.0,
+        "accuracy": 0.7142857142857143,
+        "brier": 0.23307635606573265,
+        "precision": 0.0,
+        "recall": 0.0,
+        "base_rate": 0.2857142857142857
       }
     ],
     "reg_best": {
@@ -770,10 +767,10 @@
         "iur_4wma"
       ],
       "model": "hgb",
-      "rows": 42.0,
-      "mae": 0.051992180647242495,
-      "rmse": 0.06638563090274247,
-      "bias": 0.00020814805657766048
+      "rows": 43.0,
+      "mae": 0.05108017864380828,
+      "rmse": 0.06563808667930861,
+      "bias": 0.0005004258808333263
     },
     "cls_best": {
       "blocks": [
@@ -791,19 +788,19 @@
         "prime_participation_gap"
       ],
       "model": "logit",
-      "rows": 41.0,
-      "accuracy": 0.7073170731707317,
-      "brier": 0.21277646290400004,
+      "rows": 42.0,
+      "accuracy": 0.7142857142857143,
+      "brier": 0.21088647017770576,
       "precision": 0.0,
       "recall": 0.0,
-      "base_rate": 0.2926829268292683
+      "base_rate": 0.2857142857142857
     }
   },
   "live": {
-    "final_unrate": 4.1188130834835635,
+    "final_unrate": 4.119158989727673,
     "rounded_unrate": 4.1,
-    "expected_abs_gap_vs_ma3_pp": 0.09569518079514007,
-    "big_surprise_prob": 0.35327574002895995,
+    "expected_abs_gap_vs_ma3_pp": 0.08824421510673294,
+    "big_surprise_prob": 0.36414838381158715,
     "risk_label": "elevated"
   }
 }

@@ -1,23 +1,23 @@
 {
-  "generated_at_utc": "2026-09-03T22:11:55.261873+00:00",
-  "target_month": "2026-08",
+  "generated_at_utc": "2026-09-04T22:10:38.335108+00:00",
+  "target_month": "2026-09",
   "threshold_k": 75.0,
-  "house_forecast_k": 68.66666666666667,
-  "ma3_k": 68.66666666666667,
+  "house_forecast_k": 78.53999678425532,
+  "ma3_k": 65.33333333333333,
   "baseline": {
     "regression": {
-      "rows": 43.0,
-      "mae": 46.79328165374677,
-      "rmse": 62.44516859815332,
-      "bias": 3.527131782945741
+      "rows": 44.0,
+      "mae": 46.18939393939394,
+      "rmse": 61.806718295724885,
+      "bias": 2.9873737373737415
     },
     "classification": {
-      "rows": 43.0,
-      "accuracy": 0.5116279069767442,
-      "brier": 0.24986479177934018,
-      "precision": 0.5116279069767442,
+      "rows": 44.0,
+      "accuracy": 0.5227272727272727,
+      "brier": 0.24948347107438015,
+      "precision": 0.5227272727272727,
       "recall": 1.0,
-      "base_rate": 0.5116279069767442
+      "base_rate": 0.5227272727272727
     }
   },
   "search": {
@@ -25,220 +25,220 @@
       {
         "feature": "is_october",
         "model": "ols",
-        "rows": 28.0,
-        "mae": 40.47774313892306,
-        "rmse": 46.1878304536736,
-        "bias": 6.600786841574236
+        "rows": 29.0,
+        "mae": 39.67199720692954,
+        "rmse": 45.49559630828292,
+        "bias": 6.963211816385853
       },
       {
         "feature": "claims_vol_6m_k",
         "model": "ols",
-        "rows": 28.0,
-        "mae": 41.71890502221671,
-        "rmse": 49.233800765316786,
-        "bias": -1.703669743207134
-      },
-      {
-        "feature": "is_july",
-        "model": "ols",
-        "rows": 28.0,
-        "mae": 42.28894955956156,
-        "rmse": 49.27149054552364,
-        "bias": 4.519647865741456
-      },
-      {
-        "feature": "is_june",
-        "model": "ols",
-        "rows": 28.0,
-        "mae": 42.29278955659934,
-        "rmse": 49.306450165867226,
-        "bias": 5.15179825802666
+        "rows": 29.0,
+        "mae": 40.70077913852944,
+        "rmse": 48.43045326890551,
+        "bias": -1.224465462569451
       },
       {
         "feature": "private_prev",
         "model": "ols",
-        "rows": 28.0,
-        "mae": 42.28210940548826,
-        "rmse": 49.34287330194434,
-        "bias": 0.7781505806508885
+        "rows": 29.0,
+        "mae": 40.852235244918454,
+        "rmse": 48.48490754924457,
+        "bias": 0.7231881899745111
       },
       {
-        "feature": "same_month_hist_gap",
+        "feature": "is_july",
         "model": "ols",
-        "rows": 28.0,
-        "mae": 42.470589094729334,
-        "rmse": 49.60542913655005,
-        "bias": 5.179038820661416
+        "rows": 29.0,
+        "mae": 41.31729995789085,
+        "rmse": 48.48538966319493,
+        "bias": 4.8503879776507555
       },
       {
-        "feature": "claims_vol_3m_k",
+        "feature": "is_june",
         "model": "ols",
-        "rows": 28.0,
-        "mae": 42.74980153294429,
-        "rmse": 49.647451772708706,
-        "bias": -2.9218165205960824
+        "rows": 29.0,
+        "mae": 41.190191996629025,
+        "rmse": 48.48674855237592,
+        "bias": 5.329924535938166
       },
       {
         "feature": "is_may",
         "model": "ols",
-        "rows": 28.0,
-        "mae": 42.222455439205376,
-        "rmse": 49.668086468027205,
-        "bias": 5.008706029111252
+        "rows": 29.0,
+        "mae": 41.123377884377824,
+        "rmse": 48.84205114699706,
+        "bias": 5.192861212562807
       },
       {
-        "feature": "is_august",
+        "feature": "same_month_hist_gap",
         "model": "ols",
-        "rows": 28.0,
-        "mae": 42.43533664098077,
-        "rmse": 49.80314587482953,
-        "bias": 5.059723436204079
+        "rows": 29.0,
+        "mae": 41.66920913675813,
+        "rmse": 48.873296999902976,
+        "bias": 5.663574389382206
+      },
+      {
+        "feature": "claims_vol_3m_k",
+        "model": "ols",
+        "rows": 29.0,
+        "mae": 42.07771646159163,
+        "rmse": 48.97477948071362,
+        "bias": -2.0190182107921766
       },
       {
         "feature": "same_month_hist_abs_gap",
         "model": "ols",
-        "rows": 28.0,
-        "mae": 42.60655287360726,
-        "rmse": 49.82618977872673,
-        "bias": 5.273993834186998
+        "rows": 29.0,
+        "mae": 41.52341194734045,
+        "rmse": 49.00369997271575,
+        "bias": 5.478182529969172
       },
       {
         "feature": "claims_delta_k",
         "model": "ols",
-        "rows": 28.0,
-        "mae": 40.89770163498811,
-        "rmse": 49.870090772051284,
-        "bias": 4.374574582965002
+        "rows": 29.0,
+        "mae": 39.658006842781724,
+        "rmse": 49.011327010432105,
+        "bias": 4.053156402138521
       },
       {
         "feature": "strike_workers",
         "model": "ols",
-        "rows": 28.0,
-        "mae": 42.9684540205409,
-        "rmse": 49.87400872069534,
-        "bias": 5.143051240154613
+        "rows": 29.0,
+        "mae": 41.97394100605336,
+        "rmse": 49.076736993875954,
+        "bias": 5.452862459473499
+      },
+      {
+        "feature": "weather_prev",
+        "model": "ols",
+        "rows": 29.0,
+        "mae": 41.62224230810593,
+        "rmse": 49.09699535888726,
+        "bias": 4.5089067799546685
       }
     ],
     "classification_screen": [
       {
         "feature": "is_july",
         "model": "logit",
-        "rows": 28.0,
-        "accuracy": 0.5714285714285714,
-        "brier": 0.23675144606215565,
+        "rows": 29.0,
+        "accuracy": 0.5517241379310345,
+        "brier": 0.23797974781603923,
         "precision": 1.0,
-        "recall": 0.2,
-        "base_rate": 0.5357142857142857
+        "recall": 0.1875,
+        "base_rate": 0.5517241379310345
       },
       {
         "feature": "is_october",
         "model": "logit",
-        "rows": 28.0,
-        "accuracy": 0.5357142857142857,
-        "brier": 0.2403894437423894,
+        "rows": 29.0,
+        "accuracy": 0.5172413793103449,
+        "brier": 0.24149229730040284,
         "precision": 1.0,
-        "recall": 0.13333333333333333,
-        "base_rate": 0.5357142857142857
+        "recall": 0.125,
+        "base_rate": 0.5517241379310345
       },
       {
         "feature": "claims_vol_6m_k",
         "model": "logit",
-        "rows": 28.0,
-        "accuracy": 0.5,
-        "brier": 0.2481222255603788,
+        "rows": 29.0,
+        "accuracy": 0.4827586206896552,
+        "brier": 0.2482010749163477,
         "precision": 0.5185185185185185,
-        "recall": 0.9333333333333333,
-        "base_rate": 0.5357142857142857
-      },
-      {
-        "feature": "claims_vol_3m_k",
-        "model": "hgb",
-        "rows": 28.0,
-        "accuracy": 0.6428571428571429,
-        "brier": 0.24930708358484047,
-        "precision": 0.7272727272727273,
-        "recall": 0.5333333333333333,
-        "base_rate": 0.5357142857142857
+        "recall": 0.875,
+        "base_rate": 0.5517241379310345
       },
       {
         "feature": "is_june",
         "model": "logit",
-        "rows": 28.0,
-        "accuracy": 0.5714285714285714,
-        "brier": 0.24950453052839464,
-        "precision": 0.56,
-        "recall": 0.9333333333333333,
-        "base_rate": 0.5357142857142857
+        "rows": 29.0,
+        "accuracy": 0.5862068965517241,
+        "brier": 0.24913798185393837,
+        "precision": 0.5769230769230769,
+        "recall": 0.9375,
+        "base_rate": 0.5517241379310345
       },
       {
         "feature": "is_may",
         "model": "logit",
-        "rows": 28.0,
-        "accuracy": 0.5714285714285714,
-        "brier": 0.24996128623027952,
-        "precision": 0.56,
-        "recall": 0.9333333333333333,
-        "base_rate": 0.5357142857142857
-      },
-      {
-        "feature": "same_month_hist_gap",
-        "model": "logit",
-        "rows": 28.0,
-        "accuracy": 0.4642857142857143,
-        "brier": 0.25248692669298,
-        "precision": 0.5,
-        "recall": 0.3333333333333333,
-        "base_rate": 0.5357142857142857
-      },
-      {
-        "feature": "is_march",
-        "model": "logit",
-        "rows": 28.0,
-        "accuracy": 0.35714285714285715,
-        "brier": 0.2527956894301379,
-        "precision": 0.4,
-        "recall": 0.4,
-        "base_rate": 0.5357142857142857
-      },
-      {
-        "feature": "is_august",
-        "model": "logit",
-        "rows": 28.0,
-        "accuracy": 0.5357142857142857,
-        "brier": 0.25299290309641026,
-        "precision": 0.5384615384615384,
-        "recall": 0.9333333333333333,
-        "base_rate": 0.5357142857142857
-      },
-      {
-        "feature": "claims_vol_3m_k",
-        "model": "logit",
-        "rows": 28.0,
-        "accuracy": 0.42857142857142855,
-        "brier": 0.2535157860035812,
-        "precision": 0.47619047619047616,
-        "recall": 0.6666666666666666,
-        "base_rate": 0.5357142857142857
+        "rows": 29.0,
+        "accuracy": 0.5862068965517241,
+        "brier": 0.24957898735920653,
+        "precision": 0.5769230769230769,
+        "recall": 0.9375,
+        "base_rate": 0.5517241379310345
       },
       {
         "feature": "abs_gap_3m_avg",
         "model": "logit",
-        "rows": 28.0,
-        "accuracy": 0.5714285714285714,
-        "brier": 0.25353661790218107,
-        "precision": 0.6153846153846154,
-        "recall": 0.5333333333333333,
-        "base_rate": 0.5357142857142857
+        "rows": 29.0,
+        "accuracy": 0.5862068965517241,
+        "brier": 0.2515998860640459,
+        "precision": 0.6428571428571429,
+        "recall": 0.5625,
+        "base_rate": 0.5517241379310345
+      },
+      {
+        "feature": "is_march",
+        "model": "logit",
+        "rows": 29.0,
+        "accuracy": 0.3793103448275862,
+        "brier": 0.25269928634634004,
+        "precision": 0.4375,
+        "recall": 0.4375,
+        "base_rate": 0.5517241379310345
       },
       {
         "feature": "is_december",
         "model": "logit",
-        "rows": 28.0,
-        "accuracy": 0.5357142857142857,
-        "brier": 0.25356720786444925,
-        "precision": 0.5384615384615384,
-        "recall": 0.9333333333333333,
-        "base_rate": 0.5357142857142857
+        "rows": 29.0,
+        "accuracy": 0.5517241379310345,
+        "brier": 0.2530605668680601,
+        "precision": 0.5555555555555556,
+        "recall": 0.9375,
+        "base_rate": 0.5517241379310345
+      },
+      {
+        "feature": "is_november",
+        "model": "logit",
+        "rows": 29.0,
+        "accuracy": 0.5517241379310345,
+        "brier": 0.25308889453563543,
+        "precision": 0.5555555555555556,
+        "recall": 0.9375,
+        "base_rate": 0.5517241379310345
+      },
+      {
+        "feature": "is_february",
+        "model": "logit",
+        "rows": 29.0,
+        "accuracy": 0.5517241379310345,
+        "brier": 0.253328094156336,
+        "precision": 0.5555555555555556,
+        "recall": 0.9375,
+        "base_rate": 0.5517241379310345
+      },
+      {
+        "feature": "same_month_last_year_abs_gap",
+        "model": "logit",
+        "rows": 29.0,
+        "accuracy": 0.4482758620689655,
+        "brier": 0.2541194752530886,
+        "precision": 0.5,
+        "recall": 0.25,
+        "base_rate": 0.5517241379310345
+      },
+      {
+        "feature": "same_month_hist_abs_gap",
+        "model": "logit",
+        "rows": 29.0,
+        "accuracy": 0.4482758620689655,
+        "brier": 0.2541482487151435,
+        "precision": 0.5,
+        "recall": 0.5,
+        "base_rate": 0.5517241379310345
       }
     ],
     "regression_best": {
@@ -247,13 +247,14 @@
         "claims_vol_6m_k",
         "is_july",
         "is_june",
-        "is_may"
+        "is_may",
+        "weather_prev"
       ],
       "model": "ols",
-      "rows": 28.0,
-      "mae": 37.939718546856575,
-      "rmse": 43.80967415380053,
-      "bias": -3.148838548451884
+      "rows": 29.0,
+      "mae": 37.109987063032335,
+      "rmse": 42.99509302909488,
+      "bias": -2.229387754546209
     },
     "classification_best": {
       "features": [
@@ -264,12 +265,12 @@
         "is_may"
       ],
       "model": "logit",
-      "rows": 28.0,
-      "accuracy": 0.6785714285714286,
-      "brier": 0.2212588956144144,
+      "rows": 29.0,
+      "accuracy": 0.6551724137931034,
+      "brier": 0.2228844505646759,
       "precision": 0.6875,
-      "recall": 0.7333333333333333,
-      "base_rate": 0.5357142857142857
+      "recall": 0.6875,
+      "base_rate": 0.5517241379310345
     },
     "econ_regression_sets": [
       {
@@ -281,10 +282,10 @@
           "claims_delta_k",
           "biz_days_dev"
         ],
-        "rows": 28.0,
-        "mae": 42.104179999289336,
-        "rmse": 52.64376790601097,
-        "bias": -6.383855706926624
+        "rows": 29.0,
+        "mae": 40.731678989514805,
+        "rmse": 51.729919968205785,
+        "bias": -6.243090017578395
       },
       {
         "name": "recurrence_core",
@@ -295,10 +296,10 @@
           "same_month_hist_abs_gap",
           "biz_days_dev"
         ],
-        "rows": 28.0,
-        "mae": 45.16738496195539,
-        "rmse": 57.81427066358939,
-        "bias": 6.520109188745489
+        "rows": 29.0,
+        "mae": 44.284223830722546,
+        "rmse": 56.92467583967004,
+        "bias": 6.9696127393474665
       },
       {
         "name": "weather_strike_core",
@@ -309,10 +310,10 @@
           "strike_workers_prev",
           "construction_prev"
         ],
-        "rows": 28.0,
-        "mae": 45.458235887542024,
-        "rmse": 57.990889541784966,
-        "bias": 14.119988289734357
+        "rows": 29.0,
+        "mae": 44.093758966398454,
+        "rmse": 56.986289430653365,
+        "bias": 13.848325926760744
       },
       {
         "name": "claims_event_core",
@@ -323,10 +324,10 @@
           "claims_delta_k",
           "biz_days_dev"
         ],
-        "rows": 28.0,
-        "mae": 47.73699597936356,
-        "rmse": 58.51472968936576,
-        "bias": -0.6831849642048066
+        "rows": 29.0,
+        "mae": 46.880523317668136,
+        "rmse": 57.654032955338955,
+        "bias": 0.13000378594695014
       },
       {
         "name": "econ_defensible",
@@ -343,10 +344,10 @@
           "construction_prev",
           "temphelp_prev"
         ],
-        "rows": 28.0,
-        "mae": 52.31582998921342,
-        "rmse": 61.150968181848256,
-        "bias": 7.604728823797032
+        "rows": 29.0,
+        "mae": 50.80755595079723,
+        "rmse": 60.76387846887818,
+        "bias": 11.463414857067885
       },
       {
         "name": "recurrence_core",
@@ -357,10 +358,10 @@
           "same_month_hist_abs_gap",
           "biz_days_dev"
         ],
-        "rows": 28.0,
-        "mae": 52.57832474438773,
-        "rmse": 62.77833766462177,
-        "bias": 5.9663786086872665
+        "rows": 29.0,
+        "mae": 50.88626028446111,
+        "rmse": 61.689897540306255,
+        "bias": 5.881622636198589
       },
       {
         "name": "weather_strike_core",
@@ -371,10 +372,10 @@
           "strike_workers_prev",
           "construction_prev"
         ],
-        "rows": 28.0,
-        "mae": 52.79371401400202,
-        "rmse": 63.836947379849605,
-        "bias": 19.598053897009603
+        "rows": 29.0,
+        "mae": 53.24268120727383,
+        "rmse": 63.46047163563227,
+        "bias": 20.42517012968071
       },
       {
         "name": "econ_defensible",
@@ -391,10 +392,10 @@
           "construction_prev",
           "temphelp_prev"
         ],
-        "rows": 28.0,
-        "mae": 52.037936081132614,
-        "rmse": 66.72771641865776,
-        "bias": 9.779604655294188
+        "rows": 29.0,
+        "mae": 51.095421159245795,
+        "rmse": 65.72302766299866,
+        "bias": 10.314794352746429
       }
     ],
     "econ_classification_sets": [
@@ -407,12 +408,12 @@
           "same_month_hist_abs_gap",
           "biz_days_dev"
         ],
-        "rows": 28.0,
-        "accuracy": 0.39285714285714285,
-        "brier": 0.28571747287827953,
+        "rows": 29.0,
+        "accuracy": 0.3793103448275862,
+        "brier": 0.2853533025172521,
         "precision": 0.4166666666666667,
-        "recall": 0.3333333333333333,
-        "base_rate": 0.5357142857142857
+        "recall": 0.3125,
+        "base_rate": 0.5517241379310345
       },
       {
         "name": "weather_strike_core",
@@ -423,12 +424,12 @@
           "strike_workers_prev",
           "construction_prev"
         ],
-        "rows": 28.0,
-        "accuracy": 0.39285714285714285,
-        "brier": 0.34034775777858545,
+        "rows": 29.0,
+        "accuracy": 0.3793103448275862,
+        "brier": 0.33777530875965484,
         "precision": 0.3333333333333333,
-        "recall": 0.13333333333333333,
-        "base_rate": 0.5357142857142857
+        "recall": 0.125,
+        "base_rate": 0.5517241379310345
       },
       {
         "name": "econ_defensible",
@@ -445,34 +446,12 @@
           "construction_prev",
           "temphelp_prev"
         ],
-        "rows": 28.0,
-        "accuracy": 0.4642857142857143,
-        "brier": 0.370142108727936,
-        "precision": 0.5,
-        "recall": 0.5333333333333333,
-        "base_rate": 0.5357142857142857
-      },
-      {
-        "name": "econ_defensible",
-        "model": "logit",
-        "features": [
-          "abs_gap_lag1",
-          "same_month_last_year_abs_gap",
-          "same_month_hist_abs_gap",
-          "biz_days_dev",
-          "weather_abs_prev",
-          "strike_workers",
-          "strike_workers_prev",
-          "claims_vol_6m_k",
-          "construction_prev",
-          "temphelp_prev"
-        ],
-        "rows": 28.0,
-        "accuracy": 0.39285714285714285,
-        "brier": 0.40794995245793286,
-        "precision": 0.4,
-        "recall": 0.26666666666666666,
-        "base_rate": 0.5357142857142857
+        "rows": 29.0,
+        "accuracy": 0.4827586206896552,
+        "brier": 0.3964152508828592,
+        "precision": 0.5333333333333333,
+        "recall": 0.5,
+        "base_rate": 0.5517241379310345
       },
       {
         "name": "recurrence_core",
@@ -483,12 +462,34 @@
           "same_month_hist_abs_gap",
           "biz_days_dev"
         ],
-        "rows": 28.0,
-        "accuracy": 0.5,
-        "brier": 0.41185333296420373,
-        "precision": 0.5333333333333333,
-        "recall": 0.5333333333333333,
-        "base_rate": 0.5357142857142857
+        "rows": 29.0,
+        "accuracy": 0.5172413793103449,
+        "brier": 0.3994749347434048,
+        "precision": 0.5625,
+        "recall": 0.5625,
+        "base_rate": 0.5517241379310345
+      },
+      {
+        "name": "econ_defensible",
+        "model": "logit",
+        "features": [
+          "abs_gap_lag1",
+          "same_month_last_year_abs_gap",
+          "same_month_hist_abs_gap",
+          "biz_days_dev",
+          "weather_abs_prev",
+          "strike_workers",
+          "strike_workers_prev",
+          "claims_vol_6m_k",
+          "construction_prev",
+          "temphelp_prev"
+        ],
+        "rows": 29.0,
+        "accuracy": 0.3793103448275862,
+        "brier": 0.4076899855312244,
+        "precision": 0.4,
+        "recall": 0.25,
+        "base_rate": 0.5517241379310345
       },
       {
         "name": "weather_strike_core",
@@ -499,54 +500,54 @@
           "strike_workers_prev",
           "construction_prev"
         ],
-        "rows": 28.0,
-        "accuracy": 0.32142857142857145,
-        "brier": 0.4965059006913422,
+        "rows": 29.0,
+        "accuracy": 0.3103448275862069,
+        "brier": 0.4993110746446497,
         "precision": 0.3333333333333333,
-        "recall": 0.26666666666666666,
-        "base_rate": 0.5357142857142857
+        "recall": 0.25,
+        "base_rate": 0.5517241379310345
       }
     ]
   },
   "live": {
-    "expected_abs_gap_vs_ma3_k": 79.63704753051775,
-    "big_surprise_prob": 0.4819266565707145,
+    "expected_abs_gap_vs_ma3_k": 76.37617246949661,
+    "big_surprise_prob": 0.48245482627374325,
     "risk_label": "elevated",
     "implied_range_vs_ma3_k": [
-      -10.970380863851076,
-      148.30371419718443
+      -11.04283913616328,
+      141.70950580282994
     ],
     "features": {
-      "gap_lag1": -137.66666666666669,
-      "gap_3m_mean": -43.555555555555564,
-      "abs_gap_lag1": 137.66666666666669,
-      "abs_gap_3m_avg": 113.55555555555556,
-      "same_month_last_year_abs_gap": 97.66666666666667,
-      "same_month_hist_abs_gap": 175.0,
-      "same_month_last_year_gap": -97.66666666666667,
-      "same_month_hist_gap": -175.0,
-      "ma3": 68.66666666666667,
-      "ma12": 57.25,
-      "mean_reversion_3m": 11.416666666666671,
-      "payroll_momentum_12": -8.0,
-      "claims_delta_k": -15.0,
-      "claims_accel_k": -10.5,
-      "claims_vol_3m_k": 15.376524314681781,
-      "claims_vol_6m_k": 10.309886032347787,
-      "biz_days": 22.0,
-      "biz_days_dev": 0.0,
-      "weather_prev": 2.9616127694221435,
-      "weather_abs_prev": 2.9616127694221435,
+      "gap_lag1": 93.33333333333333,
+      "gap_3m_mean": -47.44444444444446,
+      "abs_gap_lag1": 93.33333333333333,
+      "abs_gap_3m_avg": 109.66666666666667,
+      "same_month_last_year_abs_gap": 38.33333333333333,
+      "same_month_hist_abs_gap": 180.8,
+      "same_month_last_year_gap": 38.33333333333333,
+      "same_month_hist_gap": -68.80000000000001,
+      "ma3": 65.33333333333333,
+      "ma12": 68.91666666666667,
+      "mean_reversion_3m": -3.583333333333343,
+      "payroll_momentum_12": 11.666666666666666,
+      "claims_delta_k": 7.5,
+      "claims_accel_k": 22.5,
+      "claims_vol_3m_k": 14.626602476310074,
+      "claims_vol_6m_k": 10.427927246901307,
+      "biz_days": 23.0,
+      "biz_days_dev": 1.0,
+      "weather_prev": 42.952786699917105,
+      "weather_abs_prev": 42.952786699917105,
       "strike_workers": 0.0,
       "strike_workers_prev": 0.0,
-      "temphelp_prev": 3.400000000000091,
-      "payback_1m": 91.66666666666667,
-      "payback_3m": 80.25,
+      "temphelp_prev": 6.800000000000182,
+      "payback_1m": -96.66666666666667,
+      "payback_3m": -93.08333333333333,
       "shock_abs": 0.0,
-      "government_prev": -53.0,
+      "government_prev": 35.0,
       "construction_prev": 22.0,
-      "private_prev": 30.0,
-      "house_forecast": 68.66666666666667,
+      "private_prev": 127.0,
+      "house_forecast": 78.53999678425532,
       "is_january": 0.0,
       "is_february": 0.0,
       "is_march": 0.0,
@@ -554,8 +555,8 @@
       "is_may": 0.0,
       "is_june": 0.0,
       "is_july": 0.0,
-      "is_august": 1.0,
-      "is_september": 0.0,
+      "is_august": 0.0,
+      "is_september": 1.0,
       "is_october": 0.0,
       "is_november": 0.0,
       "is_december": 0.0
