@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Wednesday, September 09, 2026 11:04 AM ET",
-  "generated_at_iso": "2026-09-09T11:04:43.801610-04:00",
+  "generated_at_et": "Wednesday, September 09, 2026 03:41 PM ET",
+  "generated_at_iso": "2026-09-09T15:41:33.615895-04:00",
   "current_day": "Wednesday",
   "current_date": "September 09, 2026",
-  "current_time": "11:04 AM ET",
+  "current_time": "03:41 PM ET",
   "next_event": {
     "key": "weekly_claims",
     "label": "Weekly Claims",
@@ -14,10 +14,10 @@
     "release_date": "September 10, 2026",
     "release_time": "8:30 AM ET",
     "release_iso": "2026-09-10T08:30:00-04:00",
-    "hours_until_release": 21,
+    "hours_until_release": 16,
     "schedule_source": "weekly_rule",
     "house_forecast": "207,504",
-    "kalshi_consensus": "202,400",
+    "kalshi_consensus": "203,888",
     "last_release": "Week ending Jul 04, 2026: 215,000",
     "risk": "normal surprise risk",
     "status": "live",
@@ -27,8 +27,8 @@
     "release_source_url": "https://www.dol.gov/ui/data.pdf",
     "consensus_review": {
       "required": false,
-      "gap_value": 5103.67190305097,
-      "gap_display": "+5,104",
+      "gap_value": 3616.1719030509703,
+      "gap_display": "+3,616",
       "threshold": 10000.0,
       "threshold_display": "10,000",
       "house_side": "above Kalshi"
@@ -44,10 +44,10 @@
       "release_date": "September 10, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-09-10T08:30:00-04:00",
-      "hours_until_release": 21,
+      "hours_until_release": 16,
       "schedule_source": "weekly_rule",
       "house_forecast": "207,504",
-      "kalshi_consensus": "202,400",
+      "kalshi_consensus": "203,888",
       "last_release": "Week ending Jul 04, 2026: 215,000",
       "risk": "normal surprise risk",
       "status": "live",
@@ -57,8 +57,8 @@
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "consensus_review": {
         "required": false,
-        "gap_value": 5103.67190305097,
-        "gap_display": "+5,104",
+        "gap_value": 3616.1719030509703,
+        "gap_display": "+3,616",
         "threshold": 10000.0,
         "threshold_display": "10,000",
         "house_side": "above Kalshi"
@@ -73,10 +73,10 @@
       "release_date": "October 09, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-10-09T08:30:00-04:00",
-      "hours_until_release": 717,
+      "hours_until_release": 712,
       "schedule_source": "fallback_schedule",
       "house_forecast": null,
-      "kalshi_consensus": "0.183% m/m | 3.11% y/y",
+      "kalshi_consensus": "0.183% m/m | 3.23% y/y",
       "last_release": "July 2026: 0.215% m/m, 2.47% y/y",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -95,7 +95,7 @@
       "release_date": "October 09, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-10-09T08:30:00-04:00",
-      "hours_until_release": 717,
+      "hours_until_release": 712,
       "schedule_source": "fallback_schedule",
       "house_forecast": "0.204% m/m | 3.30% y/y",
       "kalshi_consensus": "0.271% m/m",
@@ -130,6 +130,11 @@
         "guidance_hit_count": 1,
         "news_headlines": [
           {
+            "title": "July 2026 PCE inflation data: headline above forecast, core in line - qz.com",
+            "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQLXduRDhzOVJ1TDY2NzhIalFuSWYxLTdxOUZ0ZnN2MFJmQXVuN3ZuaW56Q1IxS0Zud1dPUWwzZVA1UlAxVEdOUFVvVUVsVUx6NnRpREVicUttZFRTM0JXYjhLMHZ4VmYwVlZOVzZ2bW9JOVY3SWNFWTVvUzc0MlJ1UFBPT0RkS3o1?oc=5",
+            "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+          },
+          {
             "title": "GDP (Advance Estimate), 4th Quarter and Year 2025 - U.S. Bureau of Economic Analysis (BEA) (.gov)",
             "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQ3gxNnp5ajZDUWhLTi10dGxYRzEwM25EVzBQVDRkY3ZCR2RYaWNCLXdRY0xSVzNxUTRiSmJxcWNoSDJybmgwLWo4UjZsSUFYcFZzNEVzX25rTWdZVXlVM3ZoXzBXRk1TVDAzRU5QZDVuQ0JSMUQ3ZVRZa21BLTc0ZHNn?oc=5",
             "published": "Fri, 20 Feb 2026 08:00:00 GMT"
@@ -143,11 +148,6 @@
             "title": "Core inflation rate hit 3.4% in May, highest since October 2023, Fed\u2019s preferred gauge shows - CNBC",
             "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZcDg3cWttTk56b3NGQXdmNk1IXzVpYWdNR0lsaTFBU2pVQWpmV2ZwRGt3aEJhekVneDRCQVh3SWtnUnF4cVRudEVrcWREVEhSQnl0bTB4TGtBRkVvNThLWVRzOTJ5MTQtZ0tGcHZHN1NEQ3RKQlHSAXtBVV95cUxNdjlBUGRsTDRJMXltYWlmWmRzMjJtNjlfZlQwZURzSDdic0F2MW5FcHJsSWd2TEY2d1JuSFpraVA4bG9vNmlPLVAtd1p4NDdNWVVwM2lIRlNxNWx3WkZIZ1huTjZkZzJVWkNhRmI1aF9zdmZ2S21tRDFyM1U?oc=5",
             "published": "Thu, 25 Jun 2026 07:00:00 GMT"
-          },
-          {
-            "title": "US consumer spending increases in January, Iran war to add to inflation pressures - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVkswd3VEeXZRSnQzcWtrY2FHUElyZnR1RmpRcWNhMXplaFpkOFh0YXRKN0pPUXZyOXdWVURSb2pnbktqR2pHWUZHTWFRb1ZoeWtwemd5c3FMSEgxZ0ZQS2ExU0RJeGRlNWc2WWFucDlCVWY0LWVMcWoxOXI1ei0yRVVObk40dXB6MHVBaTY0TGhwM0luTVd5ZmNDamdtejVZ?oc=5",
-            "published": "Fri, 13 Mar 2026 07:00:00 GMT"
           }
         ]
       }
@@ -161,7 +161,7 @@
       "release_date": "October 09, 2026",
       "release_time": "8:15 AM ET",
       "release_iso": "2026-10-09T08:30:00-04:00",
-      "hours_until_release": 717,
+      "hours_until_release": 712,
       "schedule_source": "fallback_schedule",
       "house_forecast": "35k",
       "kalshi_consensus": "40k",
@@ -190,10 +190,10 @@
       "release_date": "October 09, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-10-09T08:30:00-04:00",
-      "hours_until_release": 717,
+      "hours_until_release": 712,
       "schedule_source": "fallback_schedule",
       "house_forecast": "79k",
-      "kalshi_consensus": "65k",
+      "kalshi_consensus": "67k",
       "last_release": "August 2026: 162k",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -203,8 +203,8 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": 13.089996784255334,
-        "gap_display": "+13k",
+        "gap_value": 11.65249678425532,
+        "gap_display": "+12k",
         "threshold": 40.0,
         "threshold_display": "40k",
         "house_side": "above Kalshi"
@@ -219,7 +219,7 @@
       "release_date": "October 09, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-10-09T08:30:00-04:00",
-      "hours_until_release": 717,
+      "hours_until_release": 712,
       "schedule_source": "fallback_schedule",
       "house_forecast": "4.10%",
       "kalshi_consensus": "4.22%",
@@ -232,13 +232,13 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": true,
-        "gap_value": -0.12427983539095155,
-        "gap_display": "-0.124 pp",
+        "gap_value": -0.1182572614107924,
+        "gap_display": "-0.118 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "below Kalshi",
         "label": "Review required",
-        "message": "Unemployment Rate house forecast is -0.124 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
+        "message": "Unemployment Rate house forecast is -0.118 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
         "news_query": "October 2026 jobs report BLS forecast adjustment survey",
         "news_search_url": "https://news.google.com/search?q=October+2026+jobs+report+BLS+forecast+adjustment+survey",
         "official_guidance": [
@@ -11185,7 +11185,7 @@
     "period": "July 2026",
     "data_month": "2026-07-01",
     "generated_at": "2026-08-26T18:00:50",
-    "updated_display": "Wednesday, September 09, 2026 11:04 AM ET",
+    "updated_display": "Wednesday, September 09, 2026 03:41 PM ET",
     "source_path": "macro_forecasting/output/core_pce_bridge_latest.json",
     "model_source": "macro_forecasting/cpi_to_pce_bridge.py",
     "core_cpi_mom": 0.2154,
