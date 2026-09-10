@@ -1,7 +1,7 @@
 {
   "period": "June 2026",
   "source": "SQLite store populated from BLS CPI-U component series via public API",
-  "database": "macro_site/cpi_detail_data.db",
+  "database": "macro_site\\cpi_detail_data.db",
   "history_months": [
     {
       "label": "Jun-26",
