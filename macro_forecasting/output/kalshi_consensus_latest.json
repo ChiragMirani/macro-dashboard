@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-09-10T14:56:48.240186+00:00",
+  "generated_at_utc": "2026-09-10T19:32:11.134863+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26SEP17",
       "kind": "threshold",
-      "market_count": 0,
-      "implied_value": null,
-      "consensus_label": null,
+      "market_count": 11,
+      "implied_value": 207025.0,
+      "consensus_label": "207,025",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26sep17",
-      "title": null
+      "title": "Initial jobless claims for the week ending September 12, 2026"
     },
     "adp": {
       "key": "adp",
@@ -36,8 +36,8 @@
       "event_ticker": "KXCPICOREYOY-26SEP",
       "kind": "threshold",
       "market_count": 15,
-      "implied_value": 3.1205000000000003,
-      "consensus_label": "3.12% y/y",
+      "implied_value": 3.075,
+      "consensus_label": "3.08% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26sep",
       "title": "Core inflation in September 2026 (Core CPI YoY)"
     },
@@ -46,7 +46,7 @@
       "event_ticker": "KXPAYROLLS-26SEP",
       "kind": "threshold",
       "market_count": 13,
-      "implied_value": 68.225,
+      "implied_value": 68.175,
       "consensus_label": "68k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26sep",
       "title": "Jobs numbers in Sep 2026?"
@@ -56,8 +56,8 @@
       "event_ticker": "KXECONSTATU3-26SEP",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.219008264462813,
-      "consensus_label": "4.22%",
+      "implied_value": 4.211200000000004,
+      "consensus_label": "4.21%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26sep",
       "title": "Unemployment rate in Sep 2026?"
     },
