@@ -1,0 +1,21 @@
+{
+  "target_month": "2026-08",
+  "status": "complete",
+  "jobs": {
+    "cpi_detail": {
+      "elapsed_seconds": 3.271,
+      "returncode": 0
+    },
+    "core_pce_bridge": {
+      "elapsed_seconds": 26.944,
+      "returncode": 0
+    }
+  },
+  "paths": {
+    "first_print_html": "C:\\Users\\chira\\PycharmProjects\\BloombergFlyProject\\macro_forecasting\\output\\cpi_first_print_2026-08.html",
+    "detail_html": "C:\\Users\\chira\\PycharmProjects\\BloombergFlyProject\\macro_forecasting\\output\\cpi_detail_2026-08.html",
+    "detail_text": "C:\\Users\\chira\\PycharmProjects\\BloombergFlyProject\\macro_forecasting\\output\\cpi_detail_2026-08.txt",
+    "core_pce_email": "C:\\Users\\chira\\PycharmProjects\\BloombergFlyProject\\macro_forecasting\\output\\core_pce_vs_kalshi_email.html",
+    "core_pce_json": "C:\\Users\\chira\\PycharmProjects\\BloombergFlyProject\\macro_forecasting\\output\\core_pce_bridge_latest.json"
+  }
+}
