@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-17T22:18:44.401310+00:00",
+  "generated_at_utc": "2026-09-19T22:02:30.993020+00:00",
   "inputs": {
     "spot_date": "2026-07-01",
     "spot_ur": 4.1,
     "spot_nairu": 4.16389489162988,
     "spot_core_pce_yoy": 3.3441430040338282,
-    "current_fed_funds": 3.63,
+    "current_fed_funds": 3.88,
     "forecast_ur": null,
     "forecast_core_pce_yoy": null,
     "sep_reference": {
@@ -29,10 +29,10 @@
     "as_of": "2026-09-01",
     "level_bps_per_1z": 25.0,
     "delta_bps_per_1z": 15.0,
-    "composite_z_tighter_positive": -0.4975665711344511,
-    "level_adjustment_pp": 0.12439164278361277,
-    "delta_adjustment_pp": 0.033577142668071935,
-    "total_adjustment_pp": 0.1579687854516847,
+    "composite_z_tighter_positive": -0.49954464201259413,
+    "level_adjustment_pp": 0.12488616050314853,
+    "delta_adjustment_pp": 0.03417056393151485,
+    "total_adjustment_pp": 0.1590567244346634,
     "components": [
       {
         "name": "ANFCI",
@@ -40,7 +40,7 @@
         "lookback_mean": -0.45863333333333334,
         "lookback_std": 0.17716268104642002,
         "zscore_tighter_positive": -0.6963468036157242,
-        "contribution_bps": 3.1097910695903193
+        "contribution_bps": 3.1221540125787133
       },
       {
         "name": "HY OAS",
@@ -48,15 +48,15 @@
         "lookback_mean": 3.1232432432432424,
         "lookback_std": 0.40872943574391046,
         "zscore_tighter_positive": -1.0355095724214622,
-        "contribution_bps": 3.1097910695903193
+        "contribution_bps": 3.1221540125787133
       },
       {
         "name": "VIX",
-        "latest": 16.13,
-        "lookback_mean": 18.617499055733866,
-        "lookback_std": 6.644180476386895,
-        "zscore_tighter_positive": -0.3743876411205749,
-        "contribution_bps": 3.1097910695903193
+        "latest": 16.076923076923077,
+        "lookback_mean": 18.61705674804156,
+        "lookback_std": 6.644347820774434,
+        "zscore_tighter_positive": -0.38229992463314727,
+        "contribution_bps": 3.1221540125787133
       },
       {
         "name": "Broad USD",
@@ -64,41 +64,41 @@
         "lookback_mean": 117.66291916666667,
         "lookback_std": 4.739537676034373,
         "zscore_tighter_positive": 0.11597773261995688,
-        "contribution_bps": 3.1097910695903193
+        "contribution_bps": 3.1221540125787133
       }
     ],
     "checkpoint_deltas": [
       {
         "name": "since_last_fomc",
         "checkpoint_date": "2026-01-28",
-        "delta_z_tighter_positive": -0.09085604558275245,
-        "adjustment_bps": 1.3628406837412868
+        "delta_z_tighter_positive": -0.09283411646089551,
+        "adjustment_bps": 1.3925117469134327
       },
       {
         "name": "since_last_sep",
         "checkpoint_date": "2025-12-17",
-        "delta_z_tighter_positive": -0.13299157220439378,
-        "adjustment_bps": 1.9948735830659068
+        "delta_z_tighter_positive": -0.13496964308253684,
+        "adjustment_bps": 2.0245446462380525
       }
     ]
   },
   "adjusted_taylor": {
-    "spot": 5.006130737317367,
+    "spot": 5.0072186763003455,
     "forward": null,
     "sep_delta_only_forward": null
   },
   "quarterly_revision": {
     "macro_revision_vs_sep_pp": null,
-    "fci_impulse_since_sep_pp": 0.019948735830659068,
+    "fci_impulse_since_sep_pp": 0.020245446462380527,
     "net_revision_vs_sep_pp": null
   },
   "market_pricing": {
     "treasury": {
       "as_of": "2026-09-01",
       "rates": {
-        "6m": 4.22,
-        "1y": 4.45,
-        "2y": 4.74
+        "6m": 4.2,
+        "1y": 4.4,
+        "2y": 4.67
       },
       "implied_cuts": {
         "6m": 0.0,
@@ -109,8 +109,8 @@
     "kalshi": null
   },
   "policy_gap": {
-    "raw_spot_vs_ff_pp": 1.2181619518656825,
-    "adjusted_spot_vs_ff_pp": 1.376130737317367,
+    "raw_spot_vs_ff_pp": 0.9681619518656825,
+    "adjusted_spot_vs_ff_pp": 1.1272186763003456,
     "raw_forward_vs_ff_pp": null,
     "adjusted_forward_vs_ff_pp": null
   }
