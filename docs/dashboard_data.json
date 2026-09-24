@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Thursday, September 24, 2026 11:47 AM ET",
-  "generated_at_iso": "2026-09-24T11:47:14.762856-04:00",
+  "generated_at_et": "Thursday, September 24, 2026 04:21 PM ET",
+  "generated_at_iso": "2026-09-24T16:21:40.634814-04:00",
   "current_day": "Thursday",
   "current_date": "September 24, 2026",
-  "current_time": "11:47 AM ET",
+  "current_time": "04:21 PM ET",
   "next_event": {
     "key": "weekly_claims",
     "label": "Weekly Claims",
@@ -14,7 +14,7 @@
     "release_date": "October 01, 2026",
     "release_time": "8:30 AM ET",
     "release_iso": "2026-10-01T08:30:00-04:00",
-    "hours_until_release": 164,
+    "hours_until_release": 160,
     "schedule_source": "weekly_rule",
     "house_forecast": "204,470",
     "kalshi_consensus": "172,500",
@@ -47,6 +47,11 @@
       "guidance_hit_count": 0,
       "news_headlines": [
         {
+          "title": "US weekly jobless claims near 57-year lows; price reductions boost new home sales - 1470 & 100.3 WMBD",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObEZXTDhjTlVSbnhiNmpDU0hjZndmOVY2TnBSN1pnZUNMbWl5b1djLXA2OEFqd0dueUMtTk0tclhtakpycFJ3SU9WMVF5cnRUNFBNRy10aDM3QlJ0WUF0Z1d1cWpINnpCU00tdHZBaGFvWUtDaHZ6cUM4dGVLQmpndjBndkNENTh2aUxkT0dUUXR6Qm9pRjVHZ1dULTBZbzVY?oc=5",
+          "published": "Thu, 24 Sep 2026 17:16:20 GMT"
+        },
+        {
           "title": "US weekly jobless claims rise slightly; unemployment rate likely unchanged in February - Reuters",
           "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZFVXVGRjdlJDQzBBa0xDUENla0VvZ19tRFJGOGZFUnl0Q295cmE1bU1uckVmX2ZMdWRBNFpVY1JPdG1xeGRGbG5tN2c3RHBHZjRqUHhIdEJkejV2bHdSX1ZKYncwMVBmajh6OGRCYU9pemJELVZzVUlIX1NiYnF1X05YRHhkVkR6bXdrTE1XZFRQUU5INGxLUmwwRk1PQWRTSzIyN19OMjJpU3MxZVZTX2JBTQ?oc=5",
           "published": "Thu, 26 Feb 2026 08:00:00 GMT"
@@ -60,11 +65,6 @@
           "title": "U.S. Initial Jobless Claims Hit 229,000 in Early June 2026, Surpassing Forecasts - News and Statistics - IndexBox",
           "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUURhRXBkd0dMMTFyTTZrUDE1SzNXdEZuLVF3Q21PbDhqTkhNWUxOUy0xM3BmQWl0UV9saEsxaE9oaEU5ZF9qbEVLekxLUmFDOU55cFVQRDNpaXNkdThzQllVUHZVaWFnR2sxa0NsTGNPTXVBMVEteFRtV0toY3NPaDRKV0lVVExpMnhGM3lzY1VzLXc?oc=5",
           "published": "Thu, 11 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "US weekly jobless claims drop more than expected - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOanJCNHlsRy02Sjc1UWEzNEhvSWFfekR3WjBJVC0yQllZLW93T3pyYldZdktwaWVVUHo3SFdYME5VSzVUU3FWRU5sSFRoQnJFTlpGek5JNkU5dVlTUUZmQTc5a0ZINERtdVFLV2phU0VjVUswT3JZamkzNkphOFRDVUxjNUdsMDVIamVKTDIzVUdtRE5WbmtSbw?oc=5",
-          "published": "Thu, 25 Jun 2026 07:00:00 GMT"
         }
       ]
     }
@@ -79,7 +79,7 @@
       "release_date": "October 01, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-10-01T08:30:00-04:00",
-      "hours_until_release": 164,
+      "hours_until_release": 160,
       "schedule_source": "weekly_rule",
       "house_forecast": "204,470",
       "kalshi_consensus": "172,500",
@@ -112,6 +112,11 @@
         "guidance_hit_count": 0,
         "news_headlines": [
           {
+            "title": "US weekly jobless claims near 57-year lows; price reductions boost new home sales - 1470 & 100.3 WMBD",
+            "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObEZXTDhjTlVSbnhiNmpDU0hjZndmOVY2TnBSN1pnZUNMbWl5b1djLXA2OEFqd0dueUMtTk0tclhtakpycFJ3SU9WMVF5cnRUNFBNRy10aDM3QlJ0WUF0Z1d1cWpINnpCU00tdHZBaGFvWUtDaHZ6cUM4dGVLQmpndjBndkNENTh2aUxkT0dUUXR6Qm9pRjVHZ1dULTBZbzVY?oc=5",
+            "published": "Thu, 24 Sep 2026 17:16:20 GMT"
+          },
+          {
             "title": "US weekly jobless claims rise slightly; unemployment rate likely unchanged in February - Reuters",
             "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZFVXVGRjdlJDQzBBa0xDUENla0VvZ19tRFJGOGZFUnl0Q295cmE1bU1uckVmX2ZMdWRBNFpVY1JPdG1xeGRGbG5tN2c3RHBHZjRqUHhIdEJkejV2bHdSX1ZKYncwMVBmajh6OGRCYU9pemJELVZzVUlIX1NiYnF1X05YRHhkVkR6bXdrTE1XZFRQUU5INGxLUmwwRk1PQWRTSzIyN19OMjJpU3MxZVZTX2JBTQ?oc=5",
             "published": "Thu, 26 Feb 2026 08:00:00 GMT"
@@ -125,11 +130,6 @@
             "title": "U.S. Initial Jobless Claims Hit 229,000 in Early June 2026, Surpassing Forecasts - News and Statistics - IndexBox",
             "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUURhRXBkd0dMMTFyTTZrUDE1SzNXdEZuLVF3Q21PbDhqTkhNWUxOUy0xM3BmQWl0UV9saEsxaE9oaEU5ZF9qbEVLekxLUmFDOU55cFVQRDNpaXNkdThzQllVUHZVaWFnR2sxa0NsTGNPTXVBMVEteFRtV0toY3NPaDRKV0lVVExpMnhGM3lzY1VzLXc?oc=5",
             "published": "Thu, 11 Jun 2026 07:00:00 GMT"
-          },
-          {
-            "title": "US weekly jobless claims drop more than expected - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOanJCNHlsRy02Sjc1UWEzNEhvSWFfekR3WjBJVC0yQllZLW93T3pyYldZdktwaWVVUHo3SFdYME5VSzVUU3FWRU5sSFRoQnJFTlpGek5JNkU5dVlTUUZmQTc5a0ZINERtdVFLV2phU0VjVUswT3JZamkzNkphOFRDVUxjNUdsMDVIamVKTDIzVUdtRE5WbmtSbw?oc=5",
-            "published": "Thu, 25 Jun 2026 07:00:00 GMT"
           }
         ]
       }
@@ -143,7 +143,7 @@
       "release_date": "October 24, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-10-24T08:30:00-04:00",
-      "hours_until_release": 716,
+      "hours_until_release": 712,
       "schedule_source": "fallback_schedule",
       "house_forecast": null,
       "kalshi_consensus": "0.211% m/m | 2.40% y/y",
@@ -165,7 +165,7 @@
       "release_date": "October 24, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-10-24T08:30:00-04:00",
-      "hours_until_release": 716,
+      "hours_until_release": 712,
       "schedule_source": "fallback_schedule",
       "house_forecast": "0.267% m/m | 3.39% y/y",
       "kalshi_consensus": "0.212% m/m",
@@ -210,7 +210,7 @@
             "published": "Thu, 05 Mar 2026 14:15:42 GMT"
           },
           {
-            "title": "July 2026 PCE inflation data: headline above forecast, core in line - Yahoo Finance",
+            "title": "July 2026 PCE inflation data: headline above forecast, core in line - finance.yahoo.com",
             "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQRjFmM1p0OTJYcVcwYm8wd25pd0NlNWx2UkEyYzFjRnJucUNqVmxyeUlPLVZqTDBYX2FOeF9ZS0c1cFl0U3MxazVTQ04wNnBZT21pXzVFbW5jdGtBMDNIamhMWERWYjFDOHJheEllaVFTYm5hRFFpbWhZRi1yUlFIQUUtci1YQ1RqdGtndzBubEx1MzFWX1NwOQ?oc=5",
             "published": "Wed, 26 Aug 2026 07:00:00 GMT"
           },
@@ -231,7 +231,7 @@
       "release_date": "October 24, 2026",
       "release_time": "8:15 AM ET",
       "release_iso": "2026-10-24T08:30:00-04:00",
-      "hours_until_release": 716,
+      "hours_until_release": 712,
       "schedule_source": "fallback_schedule",
       "house_forecast": "35k",
       "kalshi_consensus": "55k",
@@ -244,7 +244,7 @@
       "release_source_url": "https://adpemploymentreport.com/",
       "consensus_review": {
         "required": false,
-        "gap_value": -19.971223325147015,
+        "gap_value": -19.846223325147015,
         "gap_display": "-20k",
         "threshold": 35.0,
         "threshold_display": "35k",
@@ -260,7 +260,7 @@
       "release_date": "October 24, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-10-24T08:30:00-04:00",
-      "hours_until_release": 716,
+      "hours_until_release": 712,
       "schedule_source": "fallback_schedule",
       "house_forecast": "84k",
       "kalshi_consensus": "77k",
@@ -273,8 +273,8 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": 7.736546584506627,
-        "gap_display": "+8k",
+        "gap_value": 6.87404658450663,
+        "gap_display": "+7k",
         "threshold": 40.0,
         "threshold_display": "40k",
         "house_side": "above Kalshi"
@@ -289,7 +289,7 @@
       "release_date": "October 24, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-10-24T08:30:00-04:00",
-      "hours_until_release": 716,
+      "hours_until_release": 712,
       "schedule_source": "fallback_schedule",
       "house_forecast": "4.10%",
       "kalshi_consensus": "4.25%",
@@ -302,7 +302,7 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": true,
-        "gap_value": -0.15021961932650107,
+        "gap_value": -0.15040234089246507,
         "gap_display": "-0.150 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
@@ -11255,7 +11255,7 @@
     "period": "August 2026",
     "data_month": "2026-08-01",
     "generated_at": "2026-09-11T18:08:02",
-    "updated_display": "Thursday, September 24, 2026 11:47 AM ET",
+    "updated_display": "Thursday, September 24, 2026 04:21 PM ET",
     "source_path": "macro_forecasting/output/core_pce_bridge_latest.json",
     "model_source": "macro_forecasting/cpi_to_pce_bridge.py",
     "core_cpi_mom": 0.2898,
