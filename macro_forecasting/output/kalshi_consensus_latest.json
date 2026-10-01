@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-10-01T17:20:13.519640+00:00",
+  "generated_at_utc": "2026-10-01T21:45:00.169061+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26OCT08",
       "kind": "threshold",
       "market_count": 11,
-      "implied_value": 199725.0,
-      "consensus_label": "199,725",
+      "implied_value": 199325.0,
+      "consensus_label": "199,325",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26oct08",
       "title": "Initial jobless claims for the week ending October 3, 2026"
     },
@@ -26,8 +26,8 @@
       "event_ticker": "KXECONSTATCPICORE-26OCT",
       "kind": "bucket",
       "market_count": 8,
-      "implied_value": 0.17669902912621363,
-      "consensus_label": "0.177% m/m",
+      "implied_value": 0.18080357142857145,
+      "consensus_label": "0.181% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26oct",
       "title": "CPI core month-over-month in Oct 2026?"
     },
@@ -56,8 +56,8 @@
       "event_ticker": "KXECONSTATU3-26OCT",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.344015444015446,
-      "consensus_label": "4.34%",
+      "implied_value": 4.313793103448278,
+      "consensus_label": "4.31%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26oct",
       "title": "Unemployment rate in Oct 2026?"
     },
@@ -66,7 +66,7 @@
       "event_ticker": "KXPCECORE-26NOV",
       "kind": "threshold",
       "market_count": 5,
-      "implied_value": 0.20650000000000004,
+      "implied_value": 0.20700000000000005,
       "consensus_label": "0.207% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxpcecore-26nov",
       "title": "How much will core PCE increase in Nov 2026?"
