@@ -1,7 +1,7 @@
 {
   "period": "June 2026",
   "source": "SQLite store populated from BLS CES establishment survey and CPS household survey component series; U-3 and LFPR exact rows are calculated from components and separated from official rounded published rates",
-  "database": "macro_site/nfp_survey_data.db",
+  "database": "macro_site\\nfp_survey_data.db",
   "headline": {
     "series_id": "CES0000000001",
     "label": "Total nonfarm",
