@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Thursday, October 08, 2026 05:58 PM ET",
-  "generated_at_iso": "2026-10-08T17:58:40.654813-04:00",
-  "current_day": "Thursday",
-  "current_date": "October 08, 2026",
-  "current_time": "05:58 PM ET",
+  "generated_at_et": "Friday, October 09, 2026 01:24 PM ET",
+  "generated_at_iso": "2026-10-09T13:24:38.443993-04:00",
+  "current_day": "Friday",
+  "current_date": "October 09, 2026",
+  "current_time": "01:24 PM ET",
   "next_event": {
     "key": "weekly_claims",
     "label": "Weekly Claims",
@@ -14,10 +14,10 @@
     "release_date": "October 15, 2026",
     "release_time": "8:30 AM ET",
     "release_iso": "2026-10-15T08:30:00-04:00",
-    "hours_until_release": 158,
+    "hours_until_release": 139,
     "schedule_source": "weekly_rule",
     "house_forecast": "203,321",
-    "kalshi_consensus": "293,200",
+    "kalshi_consensus": "371,388",
     "last_release": "Week ending Jul 04, 2026: 215,000",
     "risk": "elevated surprise risk",
     "status": "review",
@@ -27,13 +27,13 @@
     "release_source_url": "https://www.dol.gov/ui/data.pdf",
     "consensus_review": {
       "required": true,
-      "gap_value": -89879.33346713573,
-      "gap_display": "-89,879",
+      "gap_value": -168066.83346713573,
+      "gap_display": "-168,067",
       "threshold": 10000.0,
       "threshold_display": "10,000",
       "house_side": "below Kalshi",
       "label": "Review required",
-      "message": "Weekly Claims house forecast is -89,879 below Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
+      "message": "Weekly Claims house forecast is -168,067 below Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
       "news_query": "Week ending October 10, 2026 jobless claims forecast seasonal adjustment",
       "news_search_url": "https://news.google.com/search?q=Week+ending+October+10%2C+2026+jobless+claims+forecast+seasonal+adjustment",
       "official_guidance": [
@@ -52,14 +52,14 @@
           "published": "Thu, 08 Oct 2026 15:52:40 GMT"
         },
         {
-          "title": "US jobless claims hover near 57-year low for fourth consecutive week - Columbus Ledger-Enquirer",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaHlPaFloZEwyZ0FqT2Zrd053VkFqYnlQRVBGR1YzLXZnT1BNTExzdkZsSVQ3R0czWk5sX1lYZzhfVGdtYTZhTW0xdk9XaGVPYzVpRmxaak1qVDdUTGEwRFI3VmpUWTVRU2JyWXU4cG1mQnktTVJhY0JJNDVxcDZ1UUdzYTVobGc?oc=5",
-          "published": "Thu, 08 Oct 2026 12:36:00 GMT"
+          "title": "US jobless claims hover near 57-year low for fourth consecutive week - 95 KQDS",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNY1drR0MxeHVQNi10UTR5UnBWZmxQZFR0V3Q4X0lXc2JfeEp4OFRlOVF6SHZXTHVjUklHTTJVRmFhd0hoZW14VmhGaExIV3d4bDdRVTVhc3VUd0hMTFNpVy10SjhMRlo0Wjl6T003Tm1pUndHbkhRWUVwb3V3THlXQmw5Um8tVFNycUotYQ?oc=5",
+          "published": "Fri, 09 Oct 2026 00:12:55 GMT"
         },
         {
           "title": "Gold price at $4,122/oz after U.S. weekly jobless claims fall to 197k - Kitco",
           "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcFEyYkhodFBheWNtMFA2SWtXZlhSdVUxa3ZIalJYZTB1QUNQN1NNOVVrdzhNUmhQZ0tza3VBQnBzVWpLcHVlUGRTWUxSSnRpVGlLZ0ZmclpqQXpmSEFadW8weXNpQlRPcTJhNmtrMjhpZ0hpMFJta0dabXhNcHR1bV9CWDMzNWh4dU1aWnl1cXR2aXNMU3dQMmsyc3JiT0V2bFZpd0xiWQ?oc=5",
-          "published": "Thu, 08 Oct 2026 12:45:46 GMT"
+          "published": "Thu, 08 Oct 2026 09:40:00 GMT"
         },
         {
           "title": "Gold Steadies at $4,122 After Stronger-Than-Expected Jobless Claims Data - News and Statistics - IndexBox",
@@ -79,10 +79,10 @@
       "release_date": "October 15, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-10-15T08:30:00-04:00",
-      "hours_until_release": 158,
+      "hours_until_release": 139,
       "schedule_source": "weekly_rule",
       "house_forecast": "203,321",
-      "kalshi_consensus": "293,200",
+      "kalshi_consensus": "371,388",
       "last_release": "Week ending Jul 04, 2026: 215,000",
       "risk": "elevated surprise risk",
       "status": "review",
@@ -92,13 +92,13 @@
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "consensus_review": {
         "required": true,
-        "gap_value": -89879.33346713573,
-        "gap_display": "-89,879",
+        "gap_value": -168066.83346713573,
+        "gap_display": "-168,067",
         "threshold": 10000.0,
         "threshold_display": "10,000",
         "house_side": "below Kalshi",
         "label": "Review required",
-        "message": "Weekly Claims house forecast is -89,879 below Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
+        "message": "Weekly Claims house forecast is -168,067 below Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
         "news_query": "Week ending October 10, 2026 jobless claims forecast seasonal adjustment",
         "news_search_url": "https://news.google.com/search?q=Week+ending+October+10%2C+2026+jobless+claims+forecast+seasonal+adjustment",
         "official_guidance": [
@@ -117,14 +117,14 @@
             "published": "Thu, 08 Oct 2026 15:52:40 GMT"
           },
           {
-            "title": "US jobless claims hover near 57-year low for fourth consecutive week - Columbus Ledger-Enquirer",
-            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaHlPaFloZEwyZ0FqT2Zrd053VkFqYnlQRVBGR1YzLXZnT1BNTExzdkZsSVQ3R0czWk5sX1lYZzhfVGdtYTZhTW0xdk9XaGVPYzVpRmxaak1qVDdUTGEwRFI3VmpUWTVRU2JyWXU4cG1mQnktTVJhY0JJNDVxcDZ1UUdzYTVobGc?oc=5",
-            "published": "Thu, 08 Oct 2026 12:36:00 GMT"
+            "title": "US jobless claims hover near 57-year low for fourth consecutive week - 95 KQDS",
+            "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNY1drR0MxeHVQNi10UTR5UnBWZmxQZFR0V3Q4X0lXc2JfeEp4OFRlOVF6SHZXTHVjUklHTTJVRmFhd0hoZW14VmhGaExIV3d4bDdRVTVhc3VUd0hMTFNpVy10SjhMRlo0Wjl6T003Tm1pUndHbkhRWUVwb3V3THlXQmw5Um8tVFNycUotYQ?oc=5",
+            "published": "Fri, 09 Oct 2026 00:12:55 GMT"
           },
           {
             "title": "Gold price at $4,122/oz after U.S. weekly jobless claims fall to 197k - Kitco",
             "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcFEyYkhodFBheWNtMFA2SWtXZlhSdVUxa3ZIalJYZTB1QUNQN1NNOVVrdzhNUmhQZ0tza3VBQnBzVWpLcHVlUGRTWUxSSnRpVGlLZ0ZmclpqQXpmSEFadW8weXNpQlRPcTJhNmtrMjhpZ0hpMFJta0dabXhNcHR1bV9CWDMzNWh4dU1aWnl1cXR2aXNMU3dQMmsyc3JiT0V2bFZpd0xiWQ?oc=5",
-            "published": "Thu, 08 Oct 2026 12:45:46 GMT"
+            "published": "Thu, 08 Oct 2026 09:40:00 GMT"
           },
           {
             "title": "Gold Steadies at $4,122 After Stronger-Than-Expected Jobless Claims Data - News and Statistics - IndexBox",
@@ -139,11 +139,11 @@
       "label": "Core CPI",
       "group": "Inflation",
       "reporting_period": "November 2026",
-      "release_day": "Saturday",
-      "release_date": "November 07, 2026",
+      "release_day": "Sunday",
+      "release_date": "November 08, 2026",
       "release_time": "8:30 AM ET",
-      "release_iso": "2026-11-07T08:30:00-05:00",
-      "hours_until_release": 710,
+      "release_iso": "2026-11-08T08:30:00-05:00",
+      "hours_until_release": 715,
       "schedule_source": "fallback_schedule",
       "house_forecast": null,
       "kalshi_consensus": "0.184% m/m",
@@ -161,11 +161,11 @@
       "label": "Core PCE",
       "group": "Inflation",
       "reporting_period": "November 2026",
-      "release_day": "Saturday",
-      "release_date": "November 07, 2026",
+      "release_day": "Sunday",
+      "release_date": "November 08, 2026",
       "release_time": "8:30 AM ET",
-      "release_iso": "2026-11-07T08:30:00-05:00",
-      "hours_until_release": 710,
+      "release_iso": "2026-11-08T08:30:00-05:00",
+      "hours_until_release": 715,
       "schedule_source": "fallback_schedule",
       "house_forecast": "0.270% m/m | 3.03% y/y",
       "kalshi_consensus": "0.199% m/m",
@@ -198,28 +198,7 @@
           }
         ],
         "guidance_hit_count": 1,
-        "news_headlines": [
-          {
-            "title": "Fed\u2019s preferred gauge showed core inflation at 3.0% in August, much lighter than expected - CNBC",
-            "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOQndXXzRXaW96Nkx6SWhIMnZETC0wTWlMelQwWWtkZUhZWjMta0c2akhaMl83Z1dpRjBzOHduOUdrbVlhQXFvR3RYaEUwaHR5MjB6TUVoQzVaclEyQ3VqcDBwVDFNQ0dQM2RpM1JVaDJEX1NVMWZ5U2NYU2NJbUxjRmlNUzdNUlNPbWFvTHZrTHJUSmNCTEdjcnhWOEtXLURId0pXZVFRY3RsM2JKUkRIcnYzb3BNOGVINmFJSERMQ1pjUi1yWnIwZENkcDdYSXfSAdQBQVVfeXFMTXh2SEN5ZlFUdldiYzdtRF9TbUMyVU5NaV9qZUU0NmZMb2RFLTdMMmVfem5YdzBmdXVIM0toa1dTbVg4WnFWa0ZxSWRtZWxCNEl4TERQUDJzU2Nack5QSjU3STZBT0otSWRFZTJuLWQxbWc4QTJtX2FEcW96MTQtem5WbF91VmY0dGlqWVEzdlg0UURrT2RoMXRwQkE2ek5kdGFFX0xOcFVMejNDdzA5YkFoVU9LR1phdlRmekprZHMtLUJmeFR1dF9saGNIU04yeTVPQlU?oc=5",
-            "published": "Wed, 30 Sep 2026 12:32:07 GMT"
-          },
-          {
-            "title": "US inflation rises below expectations in August, gives the Fed breathing space - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSktrS2JqeGdwTmowTVBNV2lPbnZwcVdwSzJPVi1aRzZuVDVQU3RtRGZ1UExTOVJnWm9CcTNYbnFneF9wOWlCMU5MNXEwMDN4UmhVVkx2MFVWOC1EYVdyb3Y3WXNYYXhNUzZSUExKQzNZOWk4U1dRaVBMMUZBeklyT0VqNFVhbUV3RjJmbThsM3FOejFUV2lBV0ZtZjNTZjVqRFYwcGZqZWdKdjBRa3FvcmdKRTRWak0?oc=5",
-            "published": "Wed, 30 Sep 2026 07:00:00 GMT"
-          },
-          {
-            "title": "Fed\u2019s preferred measure of inflation dips to 3.4 percent in August - The Hill",
-            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5kY2NFM3J0MFBvRjNNMHFiVVhGTWtBVXBCcEQ0Nk5tREQyY2pkbG1OOV96bVZkY005LTdFX3FLNmdwbEdLNXhXWjltNEZRTm9NMjlWdnJ6WFZIZ0hQZDdoQVhHUmVMa3F1SzVicEhGZnAxRFdzWlHSAXtBVV95cUxONUpYNDYwU0h3UWJNLWRRM0FRQXNwZzZ2SEJpMDhMa0ZCY21IRVV2ZWdGdzBSSzM0b0VqN0JfNGlkUmxhUWotVWV0Sy1WSDZjRHo1QTJTTXBMa0JBWklNbEpiLWtYRG1XWHdoRkpoaDNKRmxPS3ZkVFlQT28?oc=5",
-            "published": "Wed, 30 Sep 2026 07:00:00 GMT"
-          },
-          {
-            "title": "The Fed - Measurement of \u201cComputer Software and Accessories\u201d Inflation - Federal Reserve (.gov)",
-            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQRy1sNXEzRjBmVXd0cTJ6TU5jSDV4S01zRVlOdlUtM1ZlVHNGTGlmaUpHZUJ5MWxKZzNmRkdGbklselhwdVloaTlYTUJzbVBDQnJ5UGJFcXY2aE8wOEE0WDZRRWZfNHhnZzZLdHFtQUdRZlJEa1ROaE1TRExqLVZkdWk4YzZqcnBRend3dFBBZjFybk9UeTJvX0xMMkd6d1JxWGZEUUtpOG8zRml1N0pNSjc3VDh3eWJnT1NNSjJWalRGcVJpYUU0?oc=5",
-            "published": "Fri, 22 May 2026 07:00:00 GMT"
-          }
-        ]
+        "news_headlines": []
       }
     },
     {
@@ -227,14 +206,14 @@
       "label": "ADP",
       "group": "Labor",
       "reporting_period": "November 2026",
-      "release_day": "Saturday",
-      "release_date": "November 07, 2026",
+      "release_day": "Sunday",
+      "release_date": "November 08, 2026",
       "release_time": "8:15 AM ET",
-      "release_iso": "2026-11-07T08:30:00-05:00",
-      "hours_until_release": 710,
+      "release_iso": "2026-11-08T08:30:00-05:00",
+      "hours_until_release": 715,
       "schedule_source": "fallback_schedule",
       "house_forecast": "35k",
-      "kalshi_consensus": "58k",
+      "kalshi_consensus": "62k",
       "last_release": "June 2026: 98k",
       "risk": null,
       "status": "live",
@@ -244,8 +223,8 @@
       "release_source_url": "https://adpemploymentreport.com/",
       "consensus_review": {
         "required": false,
-        "gap_value": -23.740941612873,
-        "gap_display": "-24k",
+        "gap_value": -27.24094161287301,
+        "gap_display": "-27k",
         "threshold": 35.0,
         "threshold_display": "35k",
         "house_side": "below Kalshi"
@@ -256,14 +235,14 @@
       "label": "NFP",
       "group": "Labor",
       "reporting_period": "November 2026",
-      "release_day": "Saturday",
-      "release_date": "November 07, 2026",
+      "release_day": "Sunday",
+      "release_date": "November 08, 2026",
       "release_time": "8:30 AM ET",
-      "release_iso": "2026-11-07T08:30:00-05:00",
-      "hours_until_release": 710,
+      "release_iso": "2026-11-08T08:30:00-05:00",
+      "hours_until_release": 715,
       "schedule_source": "fallback_schedule",
       "house_forecast": "83k",
-      "kalshi_consensus": "60k",
+      "kalshi_consensus": "59k",
       "last_release": "June 2026: 57k",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -273,8 +252,8 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": 23.15359974695952,
-        "gap_display": "+23k",
+        "gap_value": 24.27859974695953,
+        "gap_display": "+24k",
         "threshold": 40.0,
         "threshold_display": "40k",
         "house_side": "above Kalshi"
@@ -285,11 +264,11 @@
       "label": "Unemployment Rate",
       "group": "Labor",
       "reporting_period": "November 2026",
-      "release_day": "Saturday",
-      "release_date": "November 07, 2026",
+      "release_day": "Sunday",
+      "release_date": "November 08, 2026",
       "release_time": "8:30 AM ET",
-      "release_iso": "2026-11-07T08:30:00-05:00",
-      "hours_until_release": 710,
+      "release_iso": "2026-11-08T08:30:00-05:00",
+      "hours_until_release": 715,
       "schedule_source": "fallback_schedule",
       "house_forecast": "4.20%",
       "kalshi_consensus": "4.28%",
@@ -302,13 +281,13 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": true,
-        "gap_value": -0.07953020134228339,
-        "gap_display": "-0.080 pp",
+        "gap_value": -0.08120805369127648,
+        "gap_display": "-0.081 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "below Kalshi",
         "label": "Review required",
-        "message": "Unemployment Rate house forecast is -0.080 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
+        "message": "Unemployment Rate house forecast is -0.081 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
         "news_query": "November 2026 jobs report BLS forecast adjustment survey",
         "news_search_url": "https://news.google.com/search?q=November+2026+jobs+report+BLS+forecast+adjustment+survey",
         "official_guidance": [
@@ -11255,7 +11234,7 @@
     "period": "August 2026",
     "data_month": "2026-08-01",
     "generated_at": "2026-10-04T18:17:03",
-    "updated_display": "Thursday, October 08, 2026 05:58 PM ET",
+    "updated_display": "Friday, October 09, 2026 01:24 PM ET",
     "source_path": "macro_forecasting/output/core_pce_bridge_latest.json",
     "model_source": "macro_forecasting/cpi_to_pce_bridge.py",
     "core_cpi_mom": 0.2898,
