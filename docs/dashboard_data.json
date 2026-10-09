@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Friday, October 09, 2026 01:24 PM ET",
-  "generated_at_iso": "2026-10-09T13:24:38.443993-04:00",
+  "generated_at_et": "Friday, October 09, 2026 05:34 PM ET",
+  "generated_at_iso": "2026-10-09T17:34:14.354630-04:00",
   "current_day": "Friday",
   "current_date": "October 09, 2026",
-  "current_time": "01:24 PM ET",
+  "current_time": "05:34 PM ET",
   "next_event": {
     "key": "weekly_claims",
     "label": "Weekly Claims",
@@ -14,10 +14,10 @@
     "release_date": "October 15, 2026",
     "release_time": "8:30 AM ET",
     "release_iso": "2026-10-15T08:30:00-04:00",
-    "hours_until_release": 139,
+    "hours_until_release": 134,
     "schedule_source": "weekly_rule",
     "house_forecast": "203,321",
-    "kalshi_consensus": "371,388",
+    "kalshi_consensus": "371,562",
     "last_release": "Week ending Jul 04, 2026: 215,000",
     "risk": "elevated surprise risk",
     "status": "review",
@@ -27,13 +27,13 @@
     "release_source_url": "https://www.dol.gov/ui/data.pdf",
     "consensus_review": {
       "required": true,
-      "gap_value": -168066.83346713573,
-      "gap_display": "-168,067",
+      "gap_value": -168241.83346713573,
+      "gap_display": "-168,242",
       "threshold": 10000.0,
       "threshold_display": "10,000",
       "house_side": "below Kalshi",
       "label": "Review required",
-      "message": "Weekly Claims house forecast is -168,067 below Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
+      "message": "Weekly Claims house forecast is -168,242 below Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
       "news_query": "Week ending October 10, 2026 jobless claims forecast seasonal adjustment",
       "news_search_url": "https://news.google.com/search?q=Week+ending+October+10%2C+2026+jobless+claims+forecast+seasonal+adjustment",
       "official_guidance": [
@@ -79,10 +79,10 @@
       "release_date": "October 15, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-10-15T08:30:00-04:00",
-      "hours_until_release": 139,
+      "hours_until_release": 134,
       "schedule_source": "weekly_rule",
       "house_forecast": "203,321",
-      "kalshi_consensus": "371,388",
+      "kalshi_consensus": "371,562",
       "last_release": "Week ending Jul 04, 2026: 215,000",
       "risk": "elevated surprise risk",
       "status": "review",
@@ -92,13 +92,13 @@
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "consensus_review": {
         "required": true,
-        "gap_value": -168066.83346713573,
-        "gap_display": "-168,067",
+        "gap_value": -168241.83346713573,
+        "gap_display": "-168,242",
         "threshold": 10000.0,
         "threshold_display": "10,000",
         "house_side": "below Kalshi",
         "label": "Review required",
-        "message": "Weekly Claims house forecast is -168,067 below Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
+        "message": "Weekly Claims house forecast is -168,242 below Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
         "news_query": "Week ending October 10, 2026 jobless claims forecast seasonal adjustment",
         "news_search_url": "https://news.google.com/search?q=Week+ending+October+10%2C+2026+jobless+claims+forecast+seasonal+adjustment",
         "official_guidance": [
@@ -143,7 +143,7 @@
       "release_date": "November 08, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-11-08T08:30:00-05:00",
-      "hours_until_release": 715,
+      "hours_until_release": 710,
       "schedule_source": "fallback_schedule",
       "house_forecast": null,
       "kalshi_consensus": "0.184% m/m",
@@ -165,7 +165,7 @@
       "release_date": "November 08, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-11-08T08:30:00-05:00",
-      "hours_until_release": 715,
+      "hours_until_release": 710,
       "schedule_source": "fallback_schedule",
       "house_forecast": "0.270% m/m | 3.03% y/y",
       "kalshi_consensus": "0.199% m/m",
@@ -198,7 +198,28 @@
           }
         ],
         "guidance_hit_count": 1,
-        "news_headlines": []
+        "news_headlines": [
+          {
+            "title": "Fed\u2019s preferred gauge showed core inflation at 3.0% in August, much lighter than expected - CNBC",
+            "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOQndXXzRXaW96Nkx6SWhIMnZETC0wTWlMelQwWWtkZUhZWjMta0c2akhaMl83Z1dpRjBzOHduOUdrbVlhQXFvR3RYaEUwaHR5MjB6TUVoQzVaclEyQ3VqcDBwVDFNQ0dQM2RpM1JVaDJEX1NVMWZ5U2NYU2NJbUxjRmlNUzdNUlNPbWFvTHZrTHJUSmNCTEdjcnhWOEtXLURId0pXZVFRY3RsM2JKUkRIcnYzb3BNOGVINmFJSERMQ1pjUi1yWnIwZENkcDdYSXfSAdQBQVVfeXFMTXh2SEN5ZlFUdldiYzdtRF9TbUMyVU5NaV9qZUU0NmZMb2RFLTdMMmVfem5YdzBmdXVIM0toa1dTbVg4WnFWa0ZxSWRtZWxCNEl4TERQUDJzU2Nack5QSjU3STZBT0otSWRFZTJuLWQxbWc4QTJtX2FEcW96MTQtem5WbF91VmY0dGlqWVEzdlg0UURrT2RoMXRwQkE2ek5kdGFFX0xOcFVMejNDdzA5YkFoVU9LR1phdlRmekprZHMtLUJmeFR1dF9saGNIU04yeTVPQlU?oc=5",
+            "published": "Wed, 30 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "US inflation rises below expectations in August, gives the Fed breathing space - Reuters",
+            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSktrS2JqeGdwTmowTVBNV2lPbnZwcVdwSzJPVi1aRzZuVDVQU3RtRGZ1UExTOVJnWm9CcTNYbnFneF9wOWlCMU5MNXEwMDN4UmhVVkx2MFVWOC1EYVdyb3Y3WXNYYXhNUzZSUExKQzNZOWk4U1dRaVBMMUZBeklyT0VqNFVhbUV3RjJmbThsM3FOejFUV2lBV0ZtZjNTZjVqRFYwcGZqZWdKdjBRa3FvcmdKRTRWak0?oc=5",
+            "published": "Wed, 30 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Fed\u2019s preferred measure of inflation dips to 3.4 percent in August - The Hill",
+            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5kY2NFM3J0MFBvRjNNMHFiVVhGTWtBVXBCcEQ0Nk5tREQyY2pkbG1OOV96bVZkY005LTdFX3FLNmdwbEdLNXhXWjltNEZRTm9NMjlWdnJ6WFZIZ0hQZDdoQVhHUmVMa3F1SzVicEhGZnAxRFdzWlHSAXtBVV95cUxONUpYNDYwU0h3UWJNLWRRM0FRQXNwZzZ2SEJpMDhMa0ZCY21IRVV2ZWdGdzBSSzM0b0VqN0JfNGlkUmxhUWotVWV0Sy1WSDZjRHo1QTJTTXBMa0JBWklNbEpiLWtYRG1XWHdoRkpoaDNKRmxPS3ZkVFlQT28?oc=5",
+            "published": "Wed, 30 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "The Fed - Measurement of \u201cComputer Software and Accessories\u201d Inflation - Federal Reserve (.gov)",
+            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQRy1sNXEzRjBmVXd0cTJ6TU5jSDV4S01zRVlOdlUtM1ZlVHNGTGlmaUpHZUJ5MWxKZzNmRkdGbklselhwdVloaTlYTUJzbVBDQnJ5UGJFcXY2aE8wOEE0WDZRRWZfNHhnZzZLdHFtQUdRZlJEa1ROaE1TRExqLVZkdWk4YzZqcnBRend3dFBBZjFybk9UeTJvX0xMMkd6d1JxWGZEUUtpOG8zRml1N0pNSjc3VDh3eWJnT1NNSjJWalRGcVJpYUU0?oc=5",
+            "published": "Fri, 22 May 2026 07:00:00 GMT"
+          }
+        ]
       }
     },
     {
@@ -210,7 +231,7 @@
       "release_date": "November 08, 2026",
       "release_time": "8:15 AM ET",
       "release_iso": "2026-11-08T08:30:00-05:00",
-      "hours_until_release": 715,
+      "hours_until_release": 710,
       "schedule_source": "fallback_schedule",
       "house_forecast": "35k",
       "kalshi_consensus": "62k",
@@ -223,7 +244,7 @@
       "release_source_url": "https://adpemploymentreport.com/",
       "consensus_review": {
         "required": false,
-        "gap_value": -27.24094161287301,
+        "gap_value": -27.11594161287301,
         "gap_display": "-27k",
         "threshold": 35.0,
         "threshold_display": "35k",
@@ -239,10 +260,10 @@
       "release_date": "November 08, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-11-08T08:30:00-05:00",
-      "hours_until_release": 715,
+      "hours_until_release": 710,
       "schedule_source": "fallback_schedule",
       "house_forecast": "83k",
-      "kalshi_consensus": "59k",
+      "kalshi_consensus": "58k",
       "last_release": "June 2026: 57k",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -252,8 +273,8 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": 24.27859974695953,
-        "gap_display": "+24k",
+        "gap_value": 25.27859974695952,
+        "gap_display": "+25k",
         "threshold": 40.0,
         "threshold_display": "40k",
         "house_side": "above Kalshi"
@@ -268,10 +289,10 @@
       "release_date": "November 08, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-11-08T08:30:00-05:00",
-      "hours_until_release": 715,
+      "hours_until_release": 710,
       "schedule_source": "fallback_schedule",
       "house_forecast": "4.20%",
-      "kalshi_consensus": "4.28%",
+      "kalshi_consensus": "4.27%",
       "last_release": "June 2026: 4.20%",
       "risk": "normal surprise risk",
       "status": "review",
@@ -281,13 +302,13 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": true,
-        "gap_value": -0.08120805369127648,
-        "gap_display": "-0.081 pp",
+        "gap_value": -0.07229729729730039,
+        "gap_display": "-0.072 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "below Kalshi",
         "label": "Review required",
-        "message": "Unemployment Rate house forecast is -0.081 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
+        "message": "Unemployment Rate house forecast is -0.072 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
         "news_query": "November 2026 jobs report BLS forecast adjustment survey",
         "news_search_url": "https://news.google.com/search?q=November+2026+jobs+report+BLS+forecast+adjustment+survey",
         "official_guidance": [
@@ -11234,7 +11255,7 @@
     "period": "August 2026",
     "data_month": "2026-08-01",
     "generated_at": "2026-10-04T18:17:03",
-    "updated_display": "Friday, October 09, 2026 01:24 PM ET",
+    "updated_display": "Friday, October 09, 2026 05:34 PM ET",
     "source_path": "macro_forecasting/output/core_pce_bridge_latest.json",
     "model_source": "macro_forecasting/cpi_to_pce_bridge.py",
     "core_cpi_mom": 0.2898,
