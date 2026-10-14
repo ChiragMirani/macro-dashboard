@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-10-13T21:47:12.867683+00:00",
+  "generated_at_utc": "2026-10-14T15:47:14.125219+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26OCT15",
       "kind": "threshold",
       "market_count": 11,
-      "implied_value": 196362.5,
-      "consensus_label": "196,362",
+      "implied_value": 194200.0,
+      "consensus_label": "194,200",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26oct15",
       "title": "Initial jobless claims for the week ending October 10, 2026"
     },
@@ -26,8 +26,8 @@
       "event_ticker": "KXECONSTATCPICORE-26OCT",
       "kind": "bucket",
       "market_count": 8,
-      "implied_value": 0.18347826086956526,
-      "consensus_label": "0.183% m/m",
+      "implied_value": 0.18695652173913047,
+      "consensus_label": "0.187% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26oct",
       "title": "CPI core month-over-month in Oct 2026?"
     },
@@ -46,8 +46,8 @@
       "event_ticker": "KXPAYROLLS-26OCT",
       "kind": "threshold",
       "market_count": 13,
-      "implied_value": 62.25,
-      "consensus_label": "62k",
+      "implied_value": 60.275000000000006,
+      "consensus_label": "60k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26oct",
       "title": "Jobs numbers in October 2026?"
     },
@@ -56,7 +56,7 @@
       "event_ticker": "KXECONSTATU3-26OCT",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.273539518900346,
+      "implied_value": 4.271034482758623,
       "consensus_label": "4.27%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26oct",
       "title": "Unemployment rate in Oct 2026?"
@@ -66,8 +66,8 @@
       "event_ticker": "KXPCECORE-26NOV",
       "kind": "threshold",
       "market_count": 5,
-      "implied_value": 0.198,
-      "consensus_label": "0.198% m/m",
+      "implied_value": 0.183,
+      "consensus_label": "0.183% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxpcecore-26nov",
       "title": "How much will core PCE increase in Nov 2026?"
     }
