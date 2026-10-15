@@ -1,23 +1,23 @@
 {
-  "generated_at_utc": "2026-10-14T20:34:07.052514+00:00",
+  "generated_at_utc": "2026-10-15T15:33:30.803535+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
-      "event_ticker": "KXJOBLESSCLAIMS-26OCT15",
+      "event_ticker": "KXJOBLESSCLAIMS-26OCT22",
       "kind": "threshold",
-      "market_count": 11,
-      "implied_value": 198400.0,
-      "consensus_label": "198,400",
-      "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26oct15",
-      "title": "Initial jobless claims for the week ending October 10, 2026"
+      "market_count": 0,
+      "implied_value": null,
+      "consensus_label": null,
+      "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26oct22",
+      "title": null
     },
     "adp": {
       "key": "adp",
       "event_ticker": "KXADP-26OCT",
       "kind": "threshold",
       "market_count": 7,
-      "implied_value": 67.375,
-      "consensus_label": "67k",
+      "implied_value": 67.625,
+      "consensus_label": "68k",
       "kalshi_url": "https://kalshi.com/markets/kxadp-26oct",
       "title": "ADP employment change in Oct 2026?"
     },
@@ -26,8 +26,8 @@
       "event_ticker": "KXECONSTATCPICORE-26OCT",
       "kind": "bucket",
       "market_count": 8,
-      "implied_value": 0.2212962962962963,
-      "consensus_label": "0.221% m/m",
+      "implied_value": 0.2244541484716157,
+      "consensus_label": "0.224% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26oct",
       "title": "CPI core month-over-month in Oct 2026?"
     },
@@ -46,8 +46,8 @@
       "event_ticker": "KXPAYROLLS-26OCT",
       "kind": "threshold",
       "market_count": 13,
-      "implied_value": 60.275,
-      "consensus_label": "60k",
+      "implied_value": 62.575,
+      "consensus_label": "63k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26oct",
       "title": "Jobs numbers in October 2026?"
     },
@@ -56,7 +56,7 @@
       "event_ticker": "KXECONSTATU3-26OCT",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.272508591065295,
+      "implied_value": 4.272108843537418,
       "consensus_label": "4.27%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26oct",
       "title": "Unemployment rate in Oct 2026?"
