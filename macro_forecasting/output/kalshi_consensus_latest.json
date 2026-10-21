@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-10-20T20:26:22.629084+00:00",
+  "generated_at_utc": "2026-10-21T15:54:41.108144+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26OCT22",
       "kind": "threshold",
       "market_count": 21,
-      "implied_value": 310275.0,
-      "consensus_label": "310,275",
+      "implied_value": 198187.5,
+      "consensus_label": "198,188",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26oct22",
       "title": "Initial jobless claims for the week ending October 17, 2026"
     },
@@ -16,8 +16,8 @@
       "event_ticker": "KXADP-26OCT",
       "kind": "threshold",
       "market_count": 7,
-      "implied_value": 68.00000000000001,
-      "consensus_label": "68k",
+      "implied_value": 66.125,
+      "consensus_label": "66k",
       "kalshi_url": "https://kalshi.com/markets/kxadp-26oct",
       "title": "ADP employment change in Oct 2026?"
     },
@@ -26,8 +26,8 @@
       "event_ticker": "KXECONSTATCPICORE-26OCT",
       "kind": "bucket",
       "market_count": 8,
-      "implied_value": 0.2271889400921659,
-      "consensus_label": "0.227% m/m",
+      "implied_value": 0.21944444444444444,
+      "consensus_label": "0.219% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26oct",
       "title": "Core CPI in October (exact value)"
     },
@@ -46,7 +46,7 @@
       "event_ticker": "KXPAYROLLS-26OCT",
       "kind": "threshold",
       "market_count": 13,
-      "implied_value": 62.025000000000006,
+      "implied_value": 62.03750000000001,
       "consensus_label": "62k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26oct",
       "title": "Jobs numbers in October 2026?"
@@ -56,7 +56,7 @@
       "event_ticker": "KXECONSTATU3-26OCT",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.259550561797753,
+      "implied_value": 4.260948905109489,
       "consensus_label": "4.26%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26oct",
       "title": "Unemployment rate in Oct 2026?"
