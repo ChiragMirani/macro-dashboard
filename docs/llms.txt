@@ -2,7 +2,7 @@
 
 > Live US macroeconomic release calendar with house model forecasts and Kalshi market consensus, maintained by Chirag Mirani.
 
-Updated: Wednesday, October 21, 2026 04:31 PM ET
+Updated: Thursday, October 22, 2026 11:51 AM ET
 Machine-readable feed: https://chiragmirani.github.io/macro-dashboard/dashboard_data.json
 
 ## Data sources
@@ -11,27 +11,27 @@ BLS (CPI, PPI, Employment Situation/CES/CPS); BEA PCE data and methodology; DOL 
 
 ## Tracked releases
 
-- **Weekly Claims** (Labor) â€” releases Thursday, October 22, 2026 at 8:30 AM ET.
+- **Weekly Claims** (Labor) â€” releases Thursday, October 29, 2026 at 8:30 AM ET.
   House forecast: 203,321.
-  Kalshi consensus: 198,512.
+  Kalshi consensus: no live Kalshi market found.
   Last release: Week ending Jul 04, 2026: 215,000.
-- **Core CPI** (Inflation) â€” releases Friday, November 20, 2026 at 8:30 AM ET.
+- **Core CPI** (Inflation) â€” releases Saturday, November 21, 2026 at 8:30 AM ET.
   House forecast: n/a.
-  Kalshi consensus: 0.223% m/m.
+  Kalshi consensus: 0.207% m/m.
   Last release: June 2026: -0.017% m/m, 2.57% y/y.
-- **Core PCE** (Inflation) â€” releases Friday, November 20, 2026 at 8:30 AM ET.
+- **Core PCE** (Inflation) â€” releases Saturday, November 21, 2026 at 8:30 AM ET.
   House forecast: 0.270% m/m | 3.03% y/y.
-  Kalshi consensus: 0.189% m/m.
+  Kalshi consensus: 0.205% m/m.
   Last release: August 2026: 0.247% m/m, 3.01% y/y.
-- **ADP** (Labor) â€” releases Friday, November 20, 2026 at 8:15 AM ET.
+- **ADP** (Labor) â€” releases Saturday, November 21, 2026 at 8:15 AM ET.
   House forecast: 35k.
   Kalshi consensus: 66k.
   Last release: June 2026: 98k.
-- **NFP** (Labor) â€” releases Friday, November 20, 2026 at 8:30 AM ET.
+- **NFP** (Labor) â€” releases Saturday, November 21, 2026 at 8:30 AM ET.
   House forecast: 83k.
-  Kalshi consensus: 62k.
+  Kalshi consensus: 64k.
   Last release: June 2026: 57k.
-- **Unemployment Rate** (Labor) â€” releases Friday, November 20, 2026 at 8:30 AM ET.
+- **Unemployment Rate** (Labor) â€” releases Saturday, November 21, 2026 at 8:30 AM ET.
   House forecast: 4.20%.
   Kalshi consensus: 4.26%.
   Last release: June 2026: 4.20%.
