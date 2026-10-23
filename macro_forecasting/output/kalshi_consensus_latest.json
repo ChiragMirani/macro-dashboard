@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-10-23T15:42:13.011176+00:00",
+  "generated_at_utc": "2026-10-23T20:18:21.855348+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26OCT29",
       "kind": "threshold",
       "market_count": 11,
-      "implied_value": 201487.5,
-      "consensus_label": "201,488",
+      "implied_value": 199975.0,
+      "consensus_label": "199,975",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26oct29",
       "title": "Initial jobless claims for the week ending October 24, 2026"
     },
@@ -16,7 +16,7 @@
       "event_ticker": "KXADP-26OCT",
       "kind": "threshold",
       "market_count": 7,
-      "implied_value": 66.25,
+      "implied_value": 66.125,
       "consensus_label": "66k",
       "kalshi_url": "https://kalshi.com/markets/kxadp-26oct",
       "title": "ADP employment change in Oct 2026?"
@@ -26,8 +26,8 @@
       "event_ticker": "KXECONSTATCPICORE-26OCT",
       "kind": "bucket",
       "market_count": 8,
-      "implied_value": 0.21391304347826084,
-      "consensus_label": "0.214% m/m",
+      "implied_value": 0.21101321585903082,
+      "consensus_label": "0.211% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26oct",
       "title": "Core CPI in October (exact value)"
     },
@@ -46,7 +46,7 @@
       "event_ticker": "KXPAYROLLS-26OCT",
       "kind": "threshold",
       "market_count": 13,
-      "implied_value": 64.22500000000001,
+      "implied_value": 64.425,
       "consensus_label": "64k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26oct",
       "title": "Jobs numbers in October 2026?"
@@ -56,7 +56,7 @@
       "event_ticker": "KXECONSTATU3-26OCT",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.262043795620438,
+      "implied_value": 4.2613382899628265,
       "consensus_label": "4.26%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26oct",
       "title": "Unemployment rate in Oct 2026?"
