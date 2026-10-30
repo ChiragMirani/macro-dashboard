@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Thursday, October 29, 2026 05:43 PM ET",
-  "generated_at_iso": "2026-10-29T17:43:34.410200-04:00",
-  "current_day": "Thursday",
-  "current_date": "October 29, 2026",
-  "current_time": "05:43 PM ET",
+  "generated_at_et": "Friday, October 30, 2026 12:58 PM ET",
+  "generated_at_iso": "2026-10-30T12:58:59.248594-04:00",
+  "current_day": "Friday",
+  "current_date": "October 30, 2026",
+  "current_time": "12:58 PM ET",
   "next_event": {
     "key": "weekly_claims",
     "label": "Weekly Claims",
@@ -14,10 +14,10 @@
     "release_date": "November 05, 2026",
     "release_time": "8:30 AM ET",
     "release_iso": "2026-11-05T08:30:00-05:00",
-    "hours_until_release": 158,
+    "hours_until_release": 139,
     "schedule_source": "weekly_rule",
     "house_forecast": "203,321",
-    "kalshi_consensus": "197,088",
+    "kalshi_consensus": "196,075",
     "last_release": "Week ending Jul 04, 2026: 215,000",
     "risk": "elevated surprise risk",
     "status": "live",
@@ -27,8 +27,8 @@
     "release_source_url": "https://www.dol.gov/ui/data.pdf",
     "consensus_review": {
       "required": false,
-      "gap_value": 6233.16653286427,
-      "gap_display": "+6,233",
+      "gap_value": 7245.666532864299,
+      "gap_display": "+7,246",
       "threshold": 10000.0,
       "threshold_display": "10,000",
       "house_side": "above Kalshi"
@@ -44,10 +44,10 @@
       "release_date": "November 05, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-11-05T08:30:00-05:00",
-      "hours_until_release": 158,
+      "hours_until_release": 139,
       "schedule_source": "weekly_rule",
       "house_forecast": "203,321",
-      "kalshi_consensus": "197,088",
+      "kalshi_consensus": "196,075",
       "last_release": "Week ending Jul 04, 2026: 215,000",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -57,8 +57,8 @@
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "consensus_review": {
         "required": false,
-        "gap_value": 6233.16653286427,
-        "gap_display": "+6,233",
+        "gap_value": 7245.666532864299,
+        "gap_display": "+7,246",
         "threshold": 10000.0,
         "threshold_display": "10,000",
         "house_side": "above Kalshi"
@@ -69,14 +69,14 @@
       "label": "Core CPI",
       "group": "Inflation",
       "reporting_period": "November 2026",
-      "release_day": "Saturday",
-      "release_date": "November 28, 2026",
+      "release_day": "Sunday",
+      "release_date": "November 29, 2026",
       "release_time": "8:30 AM ET",
-      "release_iso": "2026-11-28T08:30:00-05:00",
-      "hours_until_release": 710,
+      "release_iso": "2026-11-29T08:30:00-05:00",
+      "hours_until_release": 715,
       "schedule_source": "fallback_schedule",
       "house_forecast": null,
-      "kalshi_consensus": "0.212% m/m",
+      "kalshi_consensus": "0.175% m/m",
       "last_release": "June 2026: -0.017% m/m, 2.57% y/y",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -91,11 +91,11 @@
       "label": "Core PCE",
       "group": "Inflation",
       "reporting_period": "November 2026",
-      "release_day": "Saturday",
-      "release_date": "November 28, 2026",
+      "release_day": "Sunday",
+      "release_date": "November 29, 2026",
       "release_time": "8:30 AM ET",
-      "release_iso": "2026-11-28T08:30:00-05:00",
-      "hours_until_release": 710,
+      "release_iso": "2026-11-29T08:30:00-05:00",
+      "hours_until_release": 715,
       "schedule_source": "fallback_schedule",
       "house_forecast": "0.270% m/m | 3.03% y/y",
       "kalshi_consensus": "0.180% m/m",
@@ -130,14 +130,9 @@
         "guidance_hit_count": 1,
         "news_headlines": [
           {
-            "title": "PCE Inflation Report: Prices Are 3.6% Higher Than a Year Ago - Stock Titan",
-            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1hY1hZcDhSMDJnNDJyaURENWNnZEszeHVZNTdleUZDSzFnM2VzdE5Yb0pQYTltekpKUV9wSXlTa3Z6Z1dYWHVHSXZSdGlmX1NuRVB4bzI5dG0ycFM5NVZvOWt3dUdQdXBlV3dOYXJaYUltUXdzS0xhaQ?oc=5",
-            "published": "Thu, 29 Oct 2026 12:36:30 GMT"
-          },
-          {
-            "title": "Fed\u2019s preferred gauge showed core inflation at 3.0% in August, much lighter than expected - CNBC",
-            "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOQndXXzRXaW96Nkx6SWhIMnZETC0wTWlMelQwWWtkZUhZWjMta0c2akhaMl83Z1dpRjBzOHduOUdrbVlhQXFvR3RYaEUwaHR5MjB6TUVoQzVaclEyQ3VqcDBwVDFNQ0dQM2RpM1JVaDJEX1NVMWZ5U2NYU2NJbUxjRmlNUzdNUlNPbWFvTHZrTHJUSmNCTEdjcnhWOEtXLURId0pXZVFRY3RsM2JKUkRIcnYzb3BNOGVINmFJSERMQ1pjUi1yWnIwZENkcDdYSXfSAdQBQVVfeXFMTXh2SEN5ZlFUdldiYzdtRF9TbUMyVU5NaV9qZUU0NmZMb2RFLTdMMmVfem5YdzBmdXVIM0toa1dTbVg4WnFWa0ZxSWRtZWxCNEl4TERQUDJzU2Nack5QSjU3STZBT0otSWRFZTJuLWQxbWc4QTJtX2FEcW96MTQtem5WbF91VmY0dGlqWVEzdlg0UURrT2RoMXRwQkE2ek5kdGFFX0xOcFVMejNDdzA5YkFoVU9LR1phdlRmekprZHMtLUJmeFR1dF9saGNIU04yeTVPQlU?oc=5",
-            "published": "Wed, 30 Sep 2026 07:00:00 GMT"
+            "title": "The Fed Is Off Its Own Reaction Function. It Should Tell Us Why. - Peterson Institute for International Economics",
+            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQ05Db1JYZTZ1RmRfajU2Q2ZmWnVkQS1rNGdobTgwa1p5YVQ5QmN3aTNqSlNsRXpyYl9NdzEwdXcwaHM0QnNULTd4NlBIOEdkNG5XNGVsaDg5YWhhMFVQTzVZbWE0U3I1Q05ZbHZVbm5mSFVPNnJNVlVGUU1zQnBrVXRaSTMwUGMtdWllMjM1ekVDbzBHVTNUUmFRLWk0b3pGMDZvNQ?oc=5",
+            "published": "Tue, 27 Oct 2026 14:34:03 GMT"
           },
           {
             "title": "PCE Inflation Report Thursday: Prices Would Have to Speed Up to Hit the Fed's Guess - Stock Titan",
@@ -145,9 +140,14 @@
             "published": "Wed, 28 Oct 2026 15:07:39 GMT"
           },
           {
-            "title": "US inflation rises below expectations in August, gives the Fed breathing space - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSktrS2JqeGdwTmowTVBNV2lPbnZwcVdwSzJPVi1aRzZuVDVQU3RtRGZ1UExTOVJnWm9CcTNYbnFneF9wOWlCMU5MNXEwMDN4UmhVVkx2MFVWOC1EYVdyb3Y3WXNYYXhNUzZSUExKQzNZOWk4U1dRaVBMMUZBeklyT0VqNFVhbUV3RjJmbThsM3FOejFUV2lBV0ZtZjNTZjVqRFYwcGZqZWdKdjBRa3FvcmdKRTRWak0?oc=5",
+            "title": "Fed\u2019s preferred gauge showed core inflation at 3.0% in August, much lighter than expected - CNBC",
+            "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOQndXXzRXaW96Nkx6SWhIMnZETC0wTWlMelQwWWtkZUhZWjMta0c2akhaMl83Z1dpRjBzOHduOUdrbVlhQXFvR3RYaEUwaHR5MjB6TUVoQzVaclEyQ3VqcDBwVDFNQ0dQM2RpM1JVaDJEX1NVMWZ5U2NYU2NJbUxjRmlNUzdNUlNPbWFvTHZrTHJUSmNCTEdjcnhWOEtXLURId0pXZVFRY3RsM2JKUkRIcnYzb3BNOGVINmFJSERMQ1pjUi1yWnIwZENkcDdYSXfSAdQBQVVfeXFMTXh2SEN5ZlFUdldiYzdtRF9TbUMyVU5NaV9qZUU0NmZMb2RFLTdMMmVfem5YdzBmdXVIM0toa1dTbVg4WnFWa0ZxSWRtZWxCNEl4TERQUDJzU2Nack5QSjU3STZBT0otSWRFZTJuLWQxbWc4QTJtX2FEcW96MTQtem5WbF91VmY0dGlqWVEzdlg0UURrT2RoMXRwQkE2ek5kdGFFX0xOcFVMejNDdzA5YkFoVU9LR1phdlRmekprZHMtLUJmeFR1dF9saGNIU04yeTVPQlU?oc=5",
             "published": "Wed, 30 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "PCE Inflation Report: Prices Are 3.6% Higher Than a Year Ago - Stock Titan",
+            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1hY1hZcDhSMDJnNDJyaURENWNnZEszeHVZNTdleUZDSzFnM2VzdE5Yb0pQYTltekpKUV9wSXlTa3Z6Z1dYWHVHSXZSdGlmX1NuRVB4bzI5dG0ycFM5NVZvOWt3dUdQdXBlV3dOYXJaYUltUXdzS0xhaQ?oc=5",
+            "published": "Thu, 29 Oct 2026 12:36:30 GMT"
           }
         ]
       }
@@ -157,11 +157,11 @@
       "label": "ADP",
       "group": "Labor",
       "reporting_period": "November 2026",
-      "release_day": "Saturday",
-      "release_date": "November 28, 2026",
+      "release_day": "Sunday",
+      "release_date": "November 29, 2026",
       "release_time": "8:15 AM ET",
-      "release_iso": "2026-11-28T08:30:00-05:00",
-      "hours_until_release": 710,
+      "release_iso": "2026-11-29T08:30:00-05:00",
+      "hours_until_release": 715,
       "schedule_source": "fallback_schedule",
       "house_forecast": "35k",
       "kalshi_consensus": "65k",
@@ -174,7 +174,7 @@
       "release_source_url": "https://adpemploymentreport.com/",
       "consensus_review": {
         "required": false,
-        "gap_value": -29.99094161287301,
+        "gap_value": -29.86594161287301,
         "gap_display": "-30k",
         "threshold": 35.0,
         "threshold_display": "35k",
@@ -186,11 +186,11 @@
       "label": "NFP",
       "group": "Labor",
       "reporting_period": "November 2026",
-      "release_day": "Saturday",
-      "release_date": "November 28, 2026",
+      "release_day": "Sunday",
+      "release_date": "November 29, 2026",
       "release_time": "8:30 AM ET",
-      "release_iso": "2026-11-28T08:30:00-05:00",
-      "hours_until_release": 710,
+      "release_iso": "2026-11-29T08:30:00-05:00",
+      "hours_until_release": 715,
       "schedule_source": "fallback_schedule",
       "house_forecast": "83k",
       "kalshi_consensus": "61k",
@@ -203,7 +203,7 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": 22.14109974695951,
+        "gap_value": 21.928599746959513,
         "gap_display": "+22k",
         "threshold": 40.0,
         "threshold_display": "40k",
@@ -215,14 +215,14 @@
       "label": "Unemployment Rate",
       "group": "Labor",
       "reporting_period": "November 2026",
-      "release_day": "Saturday",
-      "release_date": "November 28, 2026",
+      "release_day": "Sunday",
+      "release_date": "November 29, 2026",
       "release_time": "8:30 AM ET",
-      "release_iso": "2026-11-28T08:30:00-05:00",
-      "hours_until_release": 710,
+      "release_iso": "2026-11-29T08:30:00-05:00",
+      "hours_until_release": 715,
       "schedule_source": "fallback_schedule",
       "house_forecast": "4.20%",
-      "kalshi_consensus": "4.26%",
+      "kalshi_consensus": "4.25%",
       "last_release": "June 2026: 4.20%",
       "risk": "normal surprise risk",
       "status": "review",
@@ -232,13 +232,13 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": true,
-        "gap_value": -0.055471698113208845,
-        "gap_display": "-0.055 pp",
+        "gap_value": -0.05055350553505633,
+        "gap_display": "-0.051 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "below Kalshi",
         "label": "Review required",
-        "message": "Unemployment Rate house forecast is -0.055 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
+        "message": "Unemployment Rate house forecast is -0.051 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
         "news_query": "November 2026 jobs report BLS forecast adjustment survey",
         "news_search_url": "https://news.google.com/search?q=November+2026+jobs+report+BLS+forecast+adjustment+survey",
         "official_guidance": [
@@ -252,24 +252,24 @@
         "guidance_hit_count": 0,
         "news_headlines": [
           {
-            "title": "Has Immigration Enforcement Benefitted American Workers? - Center for Immigration Studies",
-            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbXpzS3RDeWt4TnJ2cFktZUFiQ1pxWTBkbkFkeTJoTEYwNlBUenlCdnJLNTBVbFVvUEQ5NjZvNWt4WlZqZzJmNi1iRkR3T2c3b082cWUzN2ZrbzJxazVWcXRUOEota2VkOVJ5aU4tMEdVWXBNbmZHVDk0ckpyTXZFa05HR2g3MVk?oc=5",
-            "published": "Thu, 09 Jul 2026 05:32:39 GMT"
-          },
-          {
-            "title": "BLS Benchmark Revisions: Is This Time Different? - Federal Reserve Bank of Cleveland",
-            "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOaWM3OGdIdExtelhWck9YRnQ3QXhHNFBsTzllWDBkbEpFQ3AzekJMbDMwaTV6OEY5RHVQOWtMd0RrZ0FISF9lZ2JmNGVfcUw4djFHTnRlWnFqdGpWOWFuTFc1RkQ1RmlyZzJLQkRpQk9MRldDRlRrNUZYZG5UNmc4aXhhSkJNa3JjTXZFYXRKOE10RmRtczBaelBrNWg2YUFaamVSRlo2d05tR1N5eTdjNUltaFRDblhPSi1BbVlFU1Y?oc=5",
-            "published": "Wed, 03 Jun 2026 13:31:34 GMT"
-          },
-          {
             "title": "U.S. payrolls rose by 130,000 in January, more than expected; unemployment down to 4.3% - CNBC",
             "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE80QmlGMzFFZjM3TDhfN2R0NkdUZkM0VGRwQjE0UG1JVTh4Rnk4Wmg2U250a3p3cUFfX3l3YjV0TXh0dFlmRWdXakdNN2tFeTduNUpnaTRoZm44cExLbmhhbnlBX0FkMU1mRnRtcGdBZ9IBdEFVX3lxTE1tOWIxV2doSWlXYnlkTWl6bVNpYVpCbDB0YURFWWlCR2ZrNUkxRXIzRHphU2MwX0RxMlQ0WnozSTFBeHF5ZzQ2Wm91OW9XRTk3dG5VNTBlWW5vbGhIRFBEb2xDTUJkT1NCVmM1Mkcydzl0Zl9C?oc=5",
             "published": "Wed, 11 Feb 2026 08:00:00 GMT"
           },
           {
-            "title": "Florida Job Openings and Labor Turnover \u2014 December 2025 - Bureau of Labor Statistics (.gov)",
-            "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUUNudERhYlc2YkdlQUR0MEhGMTFOVjUyRmJETGtDUUJoakMxaGM0d1lNakpHblFpeUVMR0xDYlI3SjRvbnRrYXl3TWx2QTB6dGVsa2Z0MjVrTEdEQnhhaklsUE5xNWZyWTlFUzMzejVVVENpVnJ6OHpHR1AwclIyWlpHdnRDSUplR0FNaXkwaTY?oc=5",
-            "published": "Tue, 24 Feb 2026 08:00:00 GMT"
+            "title": "Massachusetts Job Openings and Labor Turnover \u2014 December 2025 - Bureau of Labor Statistics (.gov)",
+            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOd2RZaFBvbUpDU3owall1ZXZvTjNaWVhsVFMtNWFROGNsaXZXMm04bDJFZ0JId2Z5aHJxckg5TlFxdXBNRkpVdWQxUl84Q1g0UUZTZE9jZ2NQczAtUER6VlhyNDVmTGlZRi0yNzR0V3dCN285OFIzR1VrN3VidHZTSENtU1RWMWVTNEVEY1hfNmQyUEktdXZRaGk5T1AxcTZMZXlibHhYaTdDWGc?oc=5",
+            "published": "Wed, 25 Feb 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Ohio Job Openings and Labor Turnover \u2014 December 2025 - Bureau of Labor Statistics (.gov)",
+            "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNW1JN1o0dmpEcF9wb1FBUkpCZFN6VXAyNzU2X3VLS0ZGdW5sLVAyZ0liX1FDUnF3aV8tdWZGeE5VYW40dm1NLVh1eFBzLVhHcHBNZmR0WFJoMmNJeEFTT0NwU2tfbmc1VzBxSWs3SGNIMDRnbkVIMEZLYmJ5V0xvTGhwcV9wNmtRbVdKWmdVSXQ4YU1ZYnhXZVJQM1U?oc=5",
+            "published": "Fri, 27 Feb 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Incorporating AI impacts in BLS employment projections: occupational case studies - Bureau of Labor Statistics (.gov)",
+            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQa19kd3hMSTBHN1dXQjZlbWt1bGtMUHVTNEJGS1llU3VJTGtyWVg3aDJYMjl4N0owSEwxb0Y1QjRvZmQtWHZHdGNXRDZyc1p3UWl4TUFrVDlSd3I1ZHhYUGlCVDJ6eV9pTTh0MDNiaVJjSmd4LWpteklDU05WYWlubUpqYXo1ejdfZENtTjNha2xIS2hVZk55eWpvUVoxcVdEc3c?oc=5",
+            "published": "Mon, 10 Feb 2025 08:00:00 GMT"
           }
         ]
       }
@@ -11185,7 +11185,7 @@
     "period": "August 2026",
     "data_month": "2026-08-01",
     "generated_at": "2026-10-04T18:17:03",
-    "updated_display": "Thursday, October 29, 2026 05:43 PM ET",
+    "updated_display": "Friday, October 30, 2026 12:58 PM ET",
     "source_path": "macro_forecasting/output/core_pce_bridge_latest.json",
     "model_source": "macro_forecasting/cpi_to_pce_bridge.py",
     "core_cpi_mom": 0.2898,

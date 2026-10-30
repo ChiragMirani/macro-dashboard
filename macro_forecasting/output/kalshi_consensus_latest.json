@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-10-29T21:43:33.808693+00:00",
+  "generated_at_utc": "2026-10-30T16:58:58.611091+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26NOV05",
       "kind": "threshold",
       "market_count": 11,
-      "implied_value": 197087.5,
-      "consensus_label": "197,088",
+      "implied_value": 196074.99999999997,
+      "consensus_label": "196,075",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26nov05",
       "title": "Initial jobless claims for the week ending October 31, 2026"
     },
@@ -16,7 +16,7 @@
       "event_ticker": "KXADP-26OCT",
       "kind": "threshold",
       "market_count": 7,
-      "implied_value": 64.75,
+      "implied_value": 64.625,
       "consensus_label": "65k",
       "kalshi_url": "https://kalshi.com/markets/kxadp-26oct",
       "title": "ADP employment change in Oct 2026?"
@@ -26,8 +26,8 @@
       "event_ticker": "KXECONSTATCPICORE-26OCT",
       "kind": "bucket",
       "market_count": 8,
-      "implied_value": 0.21225490196078434,
-      "consensus_label": "0.212% m/m",
+      "implied_value": 0.17459016393442622,
+      "consensus_label": "0.175% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26oct",
       "title": "Core CPI in October (exact value)"
     },
@@ -46,7 +46,7 @@
       "event_ticker": "KXPAYROLLS-26OCT",
       "kind": "threshold",
       "market_count": 13,
-      "implied_value": 61.03750000000001,
+      "implied_value": 61.25000000000001,
       "consensus_label": "61k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26oct",
       "title": "Jobs numbers in October 2026?"
@@ -56,8 +56,8 @@
       "event_ticker": "KXECONSTATU3-26OCT",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.255471698113209,
-      "consensus_label": "4.26%",
+      "implied_value": 4.2505535055350565,
+      "consensus_label": "4.25%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26oct",
       "title": "Unemployment rate in Oct 2026?"
     },
