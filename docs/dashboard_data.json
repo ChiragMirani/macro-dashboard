@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Friday, October 30, 2026 12:58 PM ET",
-  "generated_at_iso": "2026-10-30T12:58:59.248594-04:00",
+  "generated_at_et": "Friday, October 30, 2026 05:25 PM ET",
+  "generated_at_iso": "2026-10-30T17:25:23.485303-04:00",
   "current_day": "Friday",
   "current_date": "October 30, 2026",
-  "current_time": "12:58 PM ET",
+  "current_time": "05:25 PM ET",
   "next_event": {
     "key": "weekly_claims",
     "label": "Weekly Claims",
@@ -14,10 +14,10 @@
     "release_date": "November 05, 2026",
     "release_time": "8:30 AM ET",
     "release_iso": "2026-11-05T08:30:00-05:00",
-    "hours_until_release": 139,
+    "hours_until_release": 135,
     "schedule_source": "weekly_rule",
     "house_forecast": "203,321",
-    "kalshi_consensus": "196,075",
+    "kalshi_consensus": "196,325",
     "last_release": "Week ending Jul 04, 2026: 215,000",
     "risk": "elevated surprise risk",
     "status": "live",
@@ -27,8 +27,8 @@
     "release_source_url": "https://www.dol.gov/ui/data.pdf",
     "consensus_review": {
       "required": false,
-      "gap_value": 7245.666532864299,
-      "gap_display": "+7,246",
+      "gap_value": 6995.66653286427,
+      "gap_display": "+6,996",
       "threshold": 10000.0,
       "threshold_display": "10,000",
       "house_side": "above Kalshi"
@@ -44,10 +44,10 @@
       "release_date": "November 05, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-11-05T08:30:00-05:00",
-      "hours_until_release": 139,
+      "hours_until_release": 135,
       "schedule_source": "weekly_rule",
       "house_forecast": "203,321",
-      "kalshi_consensus": "196,075",
+      "kalshi_consensus": "196,325",
       "last_release": "Week ending Jul 04, 2026: 215,000",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -57,8 +57,8 @@
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "consensus_review": {
         "required": false,
-        "gap_value": 7245.666532864299,
-        "gap_display": "+7,246",
+        "gap_value": 6995.66653286427,
+        "gap_display": "+6,996",
         "threshold": 10000.0,
         "threshold_display": "10,000",
         "house_side": "above Kalshi"
@@ -73,10 +73,10 @@
       "release_date": "November 29, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-11-29T08:30:00-05:00",
-      "hours_until_release": 715,
+      "hours_until_release": 711,
       "schedule_source": "fallback_schedule",
       "house_forecast": null,
-      "kalshi_consensus": "0.175% m/m",
+      "kalshi_consensus": "0.195% m/m",
       "last_release": "June 2026: -0.017% m/m, 2.57% y/y",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -95,7 +95,7 @@
       "release_date": "November 29, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-11-29T08:30:00-05:00",
-      "hours_until_release": 715,
+      "hours_until_release": 711,
       "schedule_source": "fallback_schedule",
       "house_forecast": "0.270% m/m | 3.03% y/y",
       "kalshi_consensus": "0.180% m/m",
@@ -135,6 +135,11 @@
             "published": "Tue, 27 Oct 2026 14:34:03 GMT"
           },
           {
+            "title": "What Is PCE? How Does It Impact Your Monthly Portfolio? - Mitrade",
+            "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE8wQVUxREJlX0R3VTlGLUZ2cDZNd1VoVVAtLTloal9UdHhXOV84eWdOaG9uZWYtT1pNcUs0MVhlMjhuTHVkWW9LMS1zalJmQVNUcmUyQTFEcndINmFHbE5RVVI3Y19tbXkxeEVjbmJpcWEyVmpDZGZhUTlSU1E?oc=5",
+            "published": "Fri, 30 Oct 2026 02:28:38 GMT"
+          },
+          {
             "title": "PCE Inflation Report Thursday: Prices Would Have to Speed Up to Hit the Fed's Guess - Stock Titan",
             "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5RVHdnNEhXQlVrakpmcVRtZ3JHWWpBdUxKT1ppWThaYnJncjVWUlZpbzgzeHE4TkNJWkxFYlpaT20tYTQ2TkJNVmY2T3dQUHc5U1BKZDR3YkJ0cnJteWJEc2NKZzN3bDZSd25pbU8wWnBVLUJmUi1YYkU2VQ?oc=5",
             "published": "Wed, 28 Oct 2026 15:07:39 GMT"
@@ -143,11 +148,6 @@
             "title": "Fed\u2019s preferred gauge showed core inflation at 3.0% in August, much lighter than expected - CNBC",
             "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOQndXXzRXaW96Nkx6SWhIMnZETC0wTWlMelQwWWtkZUhZWjMta0c2akhaMl83Z1dpRjBzOHduOUdrbVlhQXFvR3RYaEUwaHR5MjB6TUVoQzVaclEyQ3VqcDBwVDFNQ0dQM2RpM1JVaDJEX1NVMWZ5U2NYU2NJbUxjRmlNUzdNUlNPbWFvTHZrTHJUSmNCTEdjcnhWOEtXLURId0pXZVFRY3RsM2JKUkRIcnYzb3BNOGVINmFJSERMQ1pjUi1yWnIwZENkcDdYSXfSAdQBQVVfeXFMTXh2SEN5ZlFUdldiYzdtRF9TbUMyVU5NaV9qZUU0NmZMb2RFLTdMMmVfem5YdzBmdXVIM0toa1dTbVg4WnFWa0ZxSWRtZWxCNEl4TERQUDJzU2Nack5QSjU3STZBT0otSWRFZTJuLWQxbWc4QTJtX2FEcW96MTQtem5WbF91VmY0dGlqWVEzdlg0UURrT2RoMXRwQkE2ek5kdGFFX0xOcFVMejNDdzA5YkFoVU9LR1phdlRmekprZHMtLUJmeFR1dF9saGNIU04yeTVPQlU?oc=5",
             "published": "Wed, 30 Sep 2026 07:00:00 GMT"
-          },
-          {
-            "title": "PCE Inflation Report: Prices Are 3.6% Higher Than a Year Ago - Stock Titan",
-            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1hY1hZcDhSMDJnNDJyaURENWNnZEszeHVZNTdleUZDSzFnM2VzdE5Yb0pQYTltekpKUV9wSXlTa3Z6Z1dYWHVHSXZSdGlmX1NuRVB4bzI5dG0ycFM5NVZvOWt3dUdQdXBlV3dOYXJaYUltUXdzS0xhaQ?oc=5",
-            "published": "Thu, 29 Oct 2026 12:36:30 GMT"
           }
         ]
       }
@@ -161,7 +161,7 @@
       "release_date": "November 29, 2026",
       "release_time": "8:15 AM ET",
       "release_iso": "2026-11-29T08:30:00-05:00",
-      "hours_until_release": 715,
+      "hours_until_release": 711,
       "schedule_source": "fallback_schedule",
       "house_forecast": "35k",
       "kalshi_consensus": "65k",
@@ -190,10 +190,10 @@
       "release_date": "November 29, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-11-29T08:30:00-05:00",
-      "hours_until_release": 715,
+      "hours_until_release": 711,
       "schedule_source": "fallback_schedule",
       "house_forecast": "83k",
-      "kalshi_consensus": "61k",
+      "kalshi_consensus": "62k",
       "last_release": "June 2026: 57k",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -203,8 +203,8 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": 21.928599746959513,
-        "gap_display": "+22k",
+        "gap_value": 21.466099746959507,
+        "gap_display": "+21k",
         "threshold": 40.0,
         "threshold_display": "40k",
         "house_side": "above Kalshi"
@@ -219,7 +219,7 @@
       "release_date": "November 29, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-11-29T08:30:00-05:00",
-      "hours_until_release": 715,
+      "hours_until_release": 711,
       "schedule_source": "fallback_schedule",
       "house_forecast": "4.20%",
       "kalshi_consensus": "4.25%",
@@ -232,13 +232,13 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": true,
-        "gap_value": -0.05055350553505633,
-        "gap_display": "-0.051 pp",
+        "gap_value": -0.05167286245353342,
+        "gap_display": "-0.052 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "below Kalshi",
         "label": "Review required",
-        "message": "Unemployment Rate house forecast is -0.051 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
+        "message": "Unemployment Rate house forecast is -0.052 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
         "news_query": "November 2026 jobs report BLS forecast adjustment survey",
         "news_search_url": "https://news.google.com/search?q=November+2026+jobs+report+BLS+forecast+adjustment+survey",
         "official_guidance": [
@@ -257,14 +257,14 @@
             "published": "Wed, 11 Feb 2026 08:00:00 GMT"
           },
           {
-            "title": "Massachusetts Job Openings and Labor Turnover \u2014 December 2025 - Bureau of Labor Statistics (.gov)",
-            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOd2RZaFBvbUpDU3owall1ZXZvTjNaWVhsVFMtNWFROGNsaXZXMm04bDJFZ0JId2Z5aHJxckg5TlFxdXBNRkpVdWQxUl84Q1g0UUZTZE9jZ2NQczAtUER6VlhyNDVmTGlZRi0yNzR0V3dCN285OFIzR1VrN3VidHZTSENtU1RWMWVTNEVEY1hfNmQyUEktdXZRaGk5T1AxcTZMZXlibHhYaTdDWGc?oc=5",
-            "published": "Wed, 25 Feb 2026 08:00:00 GMT"
-          },
-          {
             "title": "Ohio Job Openings and Labor Turnover \u2014 December 2025 - Bureau of Labor Statistics (.gov)",
             "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNW1JN1o0dmpEcF9wb1FBUkpCZFN6VXAyNzU2X3VLS0ZGdW5sLVAyZ0liX1FDUnF3aV8tdWZGeE5VYW40dm1NLVh1eFBzLVhHcHBNZmR0WFJoMmNJeEFTT0NwU2tfbmc1VzBxSWs3SGNIMDRnbkVIMEZLYmJ5V0xvTGhwcV9wNmtRbVdKWmdVSXQ4YU1ZYnhXZVJQM1U?oc=5",
             "published": "Fri, 27 Feb 2026 08:00:00 GMT"
+          },
+          {
+            "title": "Massachusetts Job Openings and Labor Turnover \u2014 December 2025 - Bureau of Labor Statistics (.gov)",
+            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOd2RZaFBvbUpDU3owall1ZXZvTjNaWVhsVFMtNWFROGNsaXZXMm04bDJFZ0JId2Z5aHJxckg5TlFxdXBNRkpVdWQxUl84Q1g0UUZTZE9jZ2NQczAtUER6VlhyNDVmTGlZRi0yNzR0V3dCN285OFIzR1VrN3VidHZTSENtU1RWMWVTNEVEY1hfNmQyUEktdXZRaGk5T1AxcTZMZXlibHhYaTdDWGc?oc=5",
+            "published": "Wed, 25 Feb 2026 08:00:00 GMT"
           },
           {
             "title": "Incorporating AI impacts in BLS employment projections: occupational case studies - Bureau of Labor Statistics (.gov)",
@@ -11185,7 +11185,7 @@
     "period": "August 2026",
     "data_month": "2026-08-01",
     "generated_at": "2026-10-04T18:17:03",
-    "updated_display": "Friday, October 30, 2026 12:58 PM ET",
+    "updated_display": "Friday, October 30, 2026 05:25 PM ET",
     "source_path": "macro_forecasting/output/core_pce_bridge_latest.json",
     "model_source": "macro_forecasting/cpi_to_pce_bridge.py",
     "core_cpi_mom": 0.2898,
