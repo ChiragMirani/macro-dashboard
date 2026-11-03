@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-11-03T18:21:36.234563+00:00",
+  "generated_at_utc": "2026-11-03T22:15:44.973856+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26NOV05",
       "kind": "threshold",
       "market_count": 11,
-      "implied_value": 197225.0,
-      "consensus_label": "197,225",
+      "implied_value": 197125.0,
+      "consensus_label": "197,125",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26nov05",
       "title": "Initial jobless claims for the week ending October 31, 2026"
     },
@@ -36,7 +36,7 @@
       "event_ticker": "KXCPICOREYOY-26NOV",
       "kind": "threshold",
       "market_count": 16,
-      "implied_value": 2.8064999999999998,
+      "implied_value": 2.8055000000000003,
       "consensus_label": "2.81% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26nov",
       "title": "Core CPI YoY in November"

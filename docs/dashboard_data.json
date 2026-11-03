@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Tuesday, November 03, 2026 01:21 PM ET",
-  "generated_at_iso": "2026-11-03T13:21:36.854654-05:00",
+  "generated_at_et": "Tuesday, November 03, 2026 05:15 PM ET",
+  "generated_at_iso": "2026-11-03T17:15:45.520666-05:00",
   "current_day": "Tuesday",
   "current_date": "November 03, 2026",
-  "current_time": "01:21 PM ET",
+  "current_time": "05:15 PM ET",
   "next_event": {
     "key": "weekly_claims",
     "label": "Weekly Claims",
@@ -14,10 +14,10 @@
     "release_date": "November 05, 2026",
     "release_time": "8:30 AM ET",
     "release_iso": "2026-11-05T08:30:00-05:00",
-    "hours_until_release": 43,
+    "hours_until_release": 39,
     "schedule_source": "weekly_rule",
     "house_forecast": "203,321",
-    "kalshi_consensus": "197,225",
+    "kalshi_consensus": "197,125",
     "last_release": "Week ending Jul 04, 2026: 215,000",
     "risk": "elevated surprise risk",
     "status": "live",
@@ -27,8 +27,8 @@
     "release_source_url": "https://www.dol.gov/ui/data.pdf",
     "consensus_review": {
       "required": false,
-      "gap_value": 6095.66653286427,
-      "gap_display": "+6,096",
+      "gap_value": 6195.66653286427,
+      "gap_display": "+6,196",
       "threshold": 10000.0,
       "threshold_display": "10,000",
       "house_side": "above Kalshi"
@@ -44,10 +44,10 @@
       "release_date": "November 05, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-11-05T08:30:00-05:00",
-      "hours_until_release": 43,
+      "hours_until_release": 39,
       "schedule_source": "weekly_rule",
       "house_forecast": "203,321",
-      "kalshi_consensus": "197,225",
+      "kalshi_consensus": "197,125",
       "last_release": "Week ending Jul 04, 2026: 215,000",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -57,8 +57,8 @@
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "consensus_review": {
         "required": false,
-        "gap_value": 6095.66653286427,
-        "gap_display": "+6,096",
+        "gap_value": 6195.66653286427,
+        "gap_display": "+6,196",
         "threshold": 10000.0,
         "threshold_display": "10,000",
         "house_side": "above Kalshi"
@@ -73,7 +73,7 @@
       "release_date": "December 03, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-12-03T08:30:00-05:00",
-      "hours_until_release": 715,
+      "hours_until_release": 711,
       "schedule_source": "fallback_schedule",
       "house_forecast": null,
       "kalshi_consensus": "0.198% m/m | 2.81% y/y",
@@ -95,7 +95,7 @@
       "release_date": "December 03, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-12-03T08:30:00-05:00",
-      "hours_until_release": 715,
+      "hours_until_release": 711,
       "schedule_source": "fallback_schedule",
       "house_forecast": "0.270% m/m | 3.03% y/y",
       "kalshi_consensus": "no live Kalshi market found",
@@ -117,7 +117,7 @@
       "release_date": "December 03, 2026",
       "release_time": "8:15 AM ET",
       "release_iso": "2026-12-03T08:30:00-05:00",
-      "hours_until_release": 715,
+      "hours_until_release": 711,
       "schedule_source": "fallback_schedule",
       "house_forecast": "35k",
       "kalshi_consensus": "55k",
@@ -146,7 +146,7 @@
       "release_date": "December 03, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-12-03T08:30:00-05:00",
-      "hours_until_release": 715,
+      "hours_until_release": 711,
       "schedule_source": "fallback_schedule",
       "house_forecast": "83k",
       "kalshi_consensus": "62k",
@@ -175,7 +175,7 @@
       "release_date": "December 03, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-12-03T08:30:00-05:00",
-      "hours_until_release": 715,
+      "hours_until_release": 711,
       "schedule_source": "fallback_schedule",
       "house_forecast": "4.20%",
       "kalshi_consensus": "4.27%",
@@ -208,24 +208,24 @@
         "guidance_hit_count": 0,
         "news_headlines": [
           {
-            "title": "Labor market faltered in September as jobs increased by just 29,000, unemployment rate rose to 4.2% - CNBC",
-            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBjc1c3eWxhak03S19wOWloT192VXI2UGhzeHJLZDBMRnZxdGNwaEhxQ2Y1LWNqZFQtc2o5bk9BeW5uSnI5WVVNcDJMeXRmblA0aTloYlAzQUFYTzFJMW1Wc0ZrVkpLZFUwbGRfNmpjOWjSAXZBVV95cUxOUnZ1bXVuT3Y0RHBfSHFjVkJiWnhYb3J2ajZ6Qkd6UlQ1a2xEejMwVG9tdzRNbDJSU1gtcEJ1UXNVTWFFWC1XVFdxazlWTl9FcUxwdXNZeExGRUo0QnVTbHMwVmZLQy1zNEEzM3JqYnNmZUpvazR3?oc=5",
+            "title": "Addressing missing consumer expenditure data due to the 2025 lapse in appropriations - Bureau of Labor Statistics (.gov)",
+            "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNYkdteDJnUm1CLTFDRGFuM0p5OTVwNFlaQ19CVnV2T2luYkdCYmpmQ3dod29lVk9QeGNrZExMbi0xVDJ3ODZBS25saU1tZlc0RkN3NFdVd2p0YVdNMVVYVTRuSnhrQUlnb0pmS01fdXNGRV9xSHZYYTBsOVAzWDJjR1hKRUJ2cnFPX0RsYXNjdzBKQlJZOEhmY2FaWlB5YUZQaEQwczJzWUp3TnRPeVdhei0yTkFZcUlxM2oySDZZbTg3YXNvRVlNM0Vn?oc=5",
+            "published": "Fri, 26 Jun 2026 15:08:10 GMT"
+          },
+          {
+            "title": "Weather-Adjusted Employment Change - Federal Reserve Bank of San Francisco",
+            "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQTHNGcmVOUUhyQTJ6RURvbGdPeDB2N1hxQlAzVGg5T1FqNzVIQlgtYzVWd0ZnbjMyUUtkNnVyVHJ5dFY1V0Jqc05lSjh1WWIwakowaXc0OWtPOUVmcUxBTXpaU2piUUJxU185R21TQkNCbWNnb0lzeGtlRnIwcDl1emhlbF9WeFZGSWx6alVzcGt4ZUpRSWdzTmpvZnoydHhP?oc=5",
             "published": "Fri, 02 Oct 2026 07:00:00 GMT"
           },
           {
-            "title": "Consumer Price Index, Northeast region \u2014 September 2026 - Bureau of Labor Statistics (.gov)",
-            "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZ2lPN2JNZ19uSTZtbGJmMWZhUWRjVU5Mc3NTdnBDdHI4ejRYM1BRRU9DUTJ2Um5MLVV0RGFiMVN4NmlaYjJiWnBwSkVkNGNqX1MxeTlodkh4WUNpQ2dUZXZTLWZqRjlqd3FZZVNlVkl5QjFhaEhkaHFyTWdOSGx4bnhYUjlNNGdWSnQySGZ0TQ?oc=5",
-            "published": "Wed, 14 Oct 2026 07:00:00 GMT"
+            "title": "U.S. payrolls rose by 130,000 in January, more than expected; unemployment down to 4.3% - CNBC",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE80QmlGMzFFZjM3TDhfN2R0NkdUZkM0VGRwQjE0UG1JVTh4Rnk4Wmg2U250a3p3cUFfX3l3YjV0TXh0dFlmRWdXakdNN2tFeTduNUpnaTRoZm44cExLbmhhbnlBX0FkMU1mRnRtcGdBZ9IBdEFVX3lxTE1tOWIxV2doSWlXYnlkTWl6bVNpYVpCbDB0YURFWWlCR2ZrNUkxRXIzRHphU2MwX0RxMlQ0WnozSTFBeHF5ZzQ2Wm91OW9XRTk3dG5VNTBlWW5vbGhIRFBEb2xDTUJkT1NCVmM1Mkcydzl0Zl9C?oc=5",
+            "published": "Wed, 11 Feb 2026 08:00:00 GMT"
           },
           {
-            "title": "Consumer Price Index, Dallas-Fort Worth-Arlington area \u2014 September 2026 - Bureau of Labor Statistics (.gov)",
-            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQVlpSnBPUXh2bjh5QVdwNmFPLTFvcFlKMGJFel9sMnFPSmVpb0gyWEE5SlFBRml0Z2xtRGR2RTZDazk5VnFPTDFtUElGbzl0MEpTRTlOSjJIQlRWeHNwcU1wZHpKTkxpanA3UzVZNl9IQ0NuRzhIXzJnUmx5YUJtMHRQOXEyRmU0Vzc1b09YRGhrUlU?oc=5",
-            "published": "Wed, 14 Oct 2026 07:00:00 GMT"
-          },
-          {
-            "title": "Consumer Price Index, Boston-Cambridge-Newton \u2014 September 2026 - Bureau of Labor Statistics (.gov)",
-            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQm9BVkxpMlFEazVIVjhuQUtWRE1tUWktYTJFakhMWDBlbDdKeHR4d1BzTTZJZ3Zvb25fSWE1S1dEcld5S0djdUoxMDM5OThKcjUwMHExZkFXZVI5S0ZKS0ZRZUhwNTJTMV9sZ2hhaFV1blhkZzJmWmxuM0VuMmY3X1pFWmtXblU?oc=5",
-            "published": "Mon, 17 Jul 2023 15:56:03 GMT"
+            "title": "US job growth stuck at stall speed in December; unemployment rate dips to 4.4% - Reuters",
+            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxON1RhQlUxWkpGTXN5U25rTWFPVmF1c2UxMmVqZGdaWTRjcDUxZWh2a19Nc3VEMUlQVzZRNjkzOTlWRkQ0UjNKT1R4X3NFNllWS1dLZENOLWJZdzdYQ3BDbEZGbm5ScWRWTmZMYjd4dWxFWU8wMURxa283MC1va19YQjhCeUJjNFFCaGtzeW9jX1IxeEMycXdwSDBQWGFLLXpyblE?oc=5",
+            "published": "Fri, 09 Jan 2026 08:00:00 GMT"
           }
         ]
       }
@@ -11141,7 +11141,7 @@
     "period": "August 2026",
     "data_month": "2026-08-01",
     "generated_at": "2026-10-04T18:17:03",
-    "updated_display": "Tuesday, November 03, 2026 01:21 PM ET",
+    "updated_display": "Tuesday, November 03, 2026 05:15 PM ET",
     "source_path": "macro_forecasting/output/core_pce_bridge_latest.json",
     "model_source": "macro_forecasting/cpi_to_pce_bridge.py",
     "core_cpi_mom": 0.2898,
