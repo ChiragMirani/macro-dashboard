@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-11-02T23:50:05.943712+00:00",
+  "generated_at_utc": "2026-11-03T18:21:36.234563+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26NOV05",
       "kind": "threshold",
       "market_count": 11,
-      "implied_value": 196875.0,
-      "consensus_label": "196,875",
+      "implied_value": 197225.0,
+      "consensus_label": "197,225",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26nov05",
       "title": "Initial jobless claims for the week ending October 31, 2026"
     },
@@ -26,8 +26,8 @@
       "event_ticker": "KXECONSTATCPICORE-26NOV",
       "kind": "bucket",
       "market_count": 8,
-      "implied_value": 0.19710144927536236,
-      "consensus_label": "0.197% m/m",
+      "implied_value": 0.19808612440191387,
+      "consensus_label": "0.198% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26nov",
       "title": "Core CPI in November (exact value)"
     },
@@ -36,7 +36,7 @@
       "event_ticker": "KXCPICOREYOY-26NOV",
       "kind": "threshold",
       "market_count": 16,
-      "implied_value": 2.81,
+      "implied_value": 2.8064999999999998,
       "consensus_label": "2.81% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26nov",
       "title": "Core CPI YoY in November"
@@ -46,7 +46,7 @@
       "event_ticker": "KXPAYROLLS-26NOV",
       "kind": "threshold",
       "market_count": 13,
-      "implied_value": 61.7,
+      "implied_value": 61.875,
       "consensus_label": "62k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26nov",
       "title": "Jobs numbers in Nov 2026?"
@@ -56,7 +56,7 @@
       "event_ticker": "KXECONSTATU3-26NOV",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.274436090225566,
+      "implied_value": 4.2747169811320775,
       "consensus_label": "4.27%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26nov",
       "title": "Unemployment rate in Nov 2026?"
