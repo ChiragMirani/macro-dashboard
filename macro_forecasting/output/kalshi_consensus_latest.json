@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-11-04T18:33:53.212256+00:00",
+  "generated_at_utc": "2026-11-04T22:30:58.139720+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26NOV05",
       "kind": "threshold",
       "market_count": 11,
-      "implied_value": 197200.0,
-      "consensus_label": "197,200",
+      "implied_value": 197350.0,
+      "consensus_label": "197,350",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26nov05",
       "title": "Initial jobless claims for the week ending October 31, 2026"
     },
@@ -36,8 +36,8 @@
       "event_ticker": "KXCPICOREYOY-26NOV",
       "kind": "threshold",
       "market_count": 16,
-      "implied_value": 2.7975,
-      "consensus_label": "2.80% y/y",
+      "implied_value": 2.7925,
+      "consensus_label": "2.79% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26nov",
       "title": "Core CPI YoY in November"
     },
@@ -46,8 +46,8 @@
       "event_ticker": "KXPAYROLLS-26NOV",
       "kind": "threshold",
       "market_count": 13,
-      "implied_value": 78.45,
-      "consensus_label": "78k",
+      "implied_value": 76.57499999999999,
+      "consensus_label": "77k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26nov",
       "title": "Jobs numbers in Nov 2026?"
     },
