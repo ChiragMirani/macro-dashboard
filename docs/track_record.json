@@ -7,11 +7,11 @@
       "release_group": "Labor",
       "target_period": "Week ending November 07, 2026",
       "release_iso": "2026-11-12T08:30:00-05:00",
-      "snapshot_at_utc": "2026-11-05T18:46:48.579735+00:00",
+      "snapshot_at_utc": "2026-11-05T22:45:18.210176+00:00",
       "house_raw": "203,321",
       "house_value": 203321.0,
-      "kalshi_raw": "282,062",
-      "kalshi_value": 282062.0,
+      "kalshi_raw": "193,438",
+      "kalshi_value": 193438.0,
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26nov12",
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "fred_series": "ICSA",
@@ -26,7 +26,7 @@
       "house_direction_correct": null,
       "release_date_pretty": "Nov 12, 2026",
       "house_display": "203,321",
-      "kalshi_display": "282,062",
+      "kalshi_display": "193,438",
       "actual_display": null,
       "house_error_display": null,
       "kalshi_error_display": null,
@@ -86,7 +86,7 @@
       "house_error_abs": 0.23766066684318235,
       "kalshi_error_abs": 0.18066066684318235,
       "winner": "kalshi",
-      "settled_at_utc": "2026-11-05T18:46:48.642545+00:00",
+      "settled_at_utc": "2026-11-05T22:45:18.287473+00:00",
       "actual_consensus_side": "below",
       "house_consensus_side": "above",
       "house_direction_correct": 0,
@@ -675,5 +675,5 @@
     "house_mean_abs_error": 2279.2023810144606,
     "kalshi_mean_abs_error": 1612.7980155974697
   },
-  "last_updated_utc": "2026-11-05T18:47:08.907156+00:00"
+  "last_updated_utc": "2026-11-05T22:45:38.520838+00:00"
 }
