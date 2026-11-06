@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-11-05T22:38:32.391789+00:00",
+  "generated_at_utc": "2026-11-06T17:53:13.995846+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26NOV12",
       "kind": "threshold",
       "market_count": 11,
-      "implied_value": 193437.5,
-      "consensus_label": "193,438",
+      "implied_value": 191525.0,
+      "consensus_label": "191,525",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26nov12",
       "title": "Initial jobless claims for the week ending November 7, 2026"
     },
@@ -16,8 +16,8 @@
       "event_ticker": "KXADP-26NOV",
       "kind": "threshold",
       "market_count": 7,
-      "implied_value": 67.625,
-      "consensus_label": "68k",
+      "implied_value": 67.125,
+      "consensus_label": "67k",
       "kalshi_url": "https://kalshi.com/markets/kxadp-26nov",
       "title": "ADP employment change in Nov 2026?"
     },
@@ -36,8 +36,8 @@
       "event_ticker": "KXCPICOREYOY-26NOV",
       "kind": "threshold",
       "market_count": 16,
-      "implied_value": 2.7959999999999994,
-      "consensus_label": "2.80% y/y",
+      "implied_value": 2.7864999999999998,
+      "consensus_label": "2.79% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26nov",
       "title": "Core CPI YoY in November"
     },
@@ -46,8 +46,8 @@
       "event_ticker": "KXPAYROLLS-26NOV",
       "kind": "threshold",
       "market_count": 13,
-      "implied_value": 73.27499999999999,
-      "consensus_label": "73k",
+      "implied_value": 79.9375,
+      "consensus_label": "80k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26nov",
       "title": "Jobs numbers in Nov 2026?"
     },
@@ -56,8 +56,8 @@
       "event_ticker": "KXECONSTATU3-26NOV",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.274436090225566,
-      "consensus_label": "4.27%",
+      "implied_value": 4.250950570342209,
+      "consensus_label": "4.25%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26nov",
       "title": "Unemployment rate in Nov 2026?"
     },
