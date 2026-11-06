@@ -64,7 +64,7 @@
             "contentUrl": "https://chiragmirani.github.io/macro-dashboard/dashboard_data.json"
           }],
           "keywords": ["CPI", "PCE", "NFP", "ADP", "Unemployment Rate", "Jobless Claims", "Kalshi", "macro forecast"],
-          "dateModified": "2026-11-06T12:53:14.426307-05:00"
+          "dateModified": "2026-11-06T16:59:56.995063-05:00"
 ,"variableMeasured": [
 {"@type": "PropertyValue", "name": "Weekly Claims", "value": "203,321", "unitText": "Labor"},{"@type": "PropertyValue", "name": "Core CPI", "value": "n/a", "unitText": "Inflation"},{"@type": "PropertyValue", "name": "Core PCE", "value": "0.270% m/m | 3.03% y/y", "unitText": "Inflation"},{"@type": "PropertyValue", "name": "ADP", "value": "35k", "unitText": "Labor"},{"@type": "PropertyValue", "name": "NFP", "value": "83k", "unitText": "Labor"},{"@type": "PropertyValue", "name": "Unemployment Rate", "value": "4.20%", "unitText": "Labor"}          ]        }
       ]
@@ -83,7 +83,7 @@
 
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Created by Chirag Mirani &middot; Updated Friday, November 06, 2026 12:53 PM ET</p>
+          <p class="eyebrow">Created by Chirag Mirani &middot; Updated Friday, November 06, 2026 04:59 PM ET</p>
           <h1>Macro Forecast Schedule</h1>
         </div>
       </section>
@@ -127,7 +127,7 @@
                 <td data-label="Releases">Thursday, November 12, 2026 &middot; 8:30 AM ET</td>
                 <td data-label="House forecast">203,321</td>
                 <td data-label="Kalshi consensus">
-                    <a href="https://kalshi.com/markets/kxjoblessclaims-26nov12" target="_blank" rel="noopener">191,525</a>
+                    <a href="https://kalshi.com/markets/kxjoblessclaims-26nov12" target="_blank" rel="noopener">190,850</a>
                 </td>
                 <td data-label="Latest actual">
                     <a href="https://www.dol.gov/ui/data.pdf" target="_blank" rel="noopener">Week ending Jul 04, 2026: 215,000</a>
@@ -138,7 +138,7 @@
               <tr class="detail-row">
                 <td colspan="8">
                   <span class="detail">Weekly model output with surprise-risk overlay.</span>
-                  <span class="detail review-note">Weekly Claims house forecast is +11,796 above Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.</span>
+                  <span class="detail review-note">Weekly Claims house forecast is +12,471 above Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.</span>
                     <a class="detail source" href="https://www.dol.gov/ui/data.pdf" target="_blank" rel="noopener">DOL weekly claims release</a>
                     <a class="detail source" href="https://news.google.com/search?q=Week+ending+November+07%2C+2026+jobless+claims+forecast+seasonal+adjustment" target="_blank" rel="noopener">News search: Week ending November 07, 2026 jobless claims forecast seasonal adjustment</a>
                   <span class="detail source">Source: macro_forecasting/output/weekly_claims_forecast_latest.json</span>
@@ -202,17 +202,19 @@
                 <td data-label="Releases">Sunday, December 06, 2026 &middot; 8:15 AM ET</td>
                 <td data-label="House forecast">35k</td>
                 <td data-label="Kalshi consensus">
-                    <a href="https://kalshi.com/markets/kxadp-26nov" target="_blank" rel="noopener">67k</a>
+                    <a href="https://kalshi.com/markets/kxadp-26nov" target="_blank" rel="noopener">72k</a>
                 </td>
                 <td data-label="Latest actual">
                     <a href="https://adpemploymentreport.com/" target="_blank" rel="noopener">June 2026: 98k</a>
                 </td>
                 <td data-label="Surprise risk">n/a</td>
-                <td data-label="Status" class="col-status"><span class="status status-live">live</span></td>
+                <td data-label="Status" class="col-status"><span class="status status-review">review</span></td>
               </tr>
               <tr class="detail-row">
                 <td colspan="8">
                   <span class="detail">Two-step recursive forecast for the October 2026 ADP release; cached in macro_forecasting/output/adp_forecast_latest.json.</span>
+                  <span class="detail review-note">ADP house forecast is -37k below Kalshi; threshold is 35k. Check official guidance and news before using the forecast.</span>
+                    <a class="detail source" href="https://news.google.com/search?q=December+2026+macro+data+forecast+adjustment" target="_blank" rel="noopener">News search: December 2026 macro data forecast adjustment</a>
                   <span class="detail source">Source: macro_forecasting/adp_forecast_kaggle_style.py</span>
                   <span class="detail source">Schedule: fallback_schedule</span>
                 </td>
@@ -226,7 +228,7 @@
                 <td data-label="Releases">Sunday, December 06, 2026 &middot; 8:30 AM ET</td>
                 <td data-label="House forecast">83k</td>
                 <td data-label="Kalshi consensus">
-                    <a href="https://kalshi.com/markets/kxpayrolls-26nov" target="_blank" rel="noopener">80k</a>
+                    <a href="https://kalshi.com/markets/kxpayrolls-26nov" target="_blank" rel="noopener">85k</a>
                 </td>
                 <td data-label="Latest actual">
                     <a href="https://www.bls.gov/news.release/empsit.toc.htm" target="_blank" rel="noopener">June 2026: 57k</a>
@@ -256,14 +258,11 @@
                     <a href="https://www.bls.gov/news.release/empsit.toc.htm" target="_blank" rel="noopener">June 2026: 4.20%</a>
                 </td>
                 <td data-label="Surprise risk">normal surprise risk</td>
-                <td data-label="Status" class="col-status"><span class="status status-review">review</span></td>
+                <td data-label="Status" class="col-status"><span class="status status-live">live</span></td>
               </tr>
               <tr class="detail-row">
                 <td colspan="8">
                   <span class="detail">Latest BLS actual: June 2026: 4.20%. Rounded to the market print convention; live model also stores unrounded UR.</span>
-                  <span class="detail review-note">Unemployment Rate house forecast is -0.051 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.</span>
-                    <a class="detail source" href="https://www.bls.gov/news.release/empsit.toc.htm" target="_blank" rel="noopener">BLS Employment Situation latest release</a>
-                    <a class="detail source" href="https://news.google.com/search?q=December+2026+jobs+report+BLS+forecast+adjustment+survey" target="_blank" rel="noopener">News search: December 2026 jobs report BLS forecast adjustment survey</a>
                   <span class="detail source">Source: macro_forecasting/output/ur_surprise_latest.json</span>
                   <span class="detail source">Schedule: fallback_schedule</span>
                 </td>

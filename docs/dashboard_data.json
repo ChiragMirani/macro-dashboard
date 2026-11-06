@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Friday, November 06, 2026 12:53 PM ET",
-  "generated_at_iso": "2026-11-06T12:53:14.426307-05:00",
+  "generated_at_et": "Friday, November 06, 2026 04:59 PM ET",
+  "generated_at_iso": "2026-11-06T16:59:56.995063-05:00",
   "current_day": "Friday",
   "current_date": "November 06, 2026",
-  "current_time": "12:53 PM ET",
+  "current_time": "04:59 PM ET",
   "next_event": {
     "key": "weekly_claims",
     "label": "Weekly Claims",
@@ -14,10 +14,10 @@
     "release_date": "November 12, 2026",
     "release_time": "8:30 AM ET",
     "release_iso": "2026-11-12T08:30:00-05:00",
-    "hours_until_release": 139,
+    "hours_until_release": 135,
     "schedule_source": "weekly_rule",
     "house_forecast": "203,321",
-    "kalshi_consensus": "191,525",
+    "kalshi_consensus": "190,850",
     "last_release": "Week ending Jul 04, 2026: 215,000",
     "risk": "elevated surprise risk",
     "status": "review",
@@ -27,13 +27,13 @@
     "release_source_url": "https://www.dol.gov/ui/data.pdf",
     "consensus_review": {
       "required": true,
-      "gap_value": 11795.66653286427,
-      "gap_display": "+11,796",
+      "gap_value": 12470.66653286427,
+      "gap_display": "+12,471",
       "threshold": 10000.0,
       "threshold_display": "10,000",
       "house_side": "above Kalshi",
       "label": "Review required",
-      "message": "Weekly Claims house forecast is +11,796 above Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
+      "message": "Weekly Claims house forecast is +12,471 above Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
       "news_query": "Week ending November 07, 2026 jobless claims forecast seasonal adjustment",
       "news_search_url": "https://news.google.com/search?q=Week+ending+November+07%2C+2026+jobless+claims+forecast+seasonal+adjustment",
       "official_guidance": [
@@ -47,9 +47,9 @@
       "guidance_hit_count": 0,
       "news_headlines": [
         {
-          "title": "US weekly jobless claims at 57-year lows; worker productivity surges in third quarter - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcm5OTDhuLTE5VENNbUNPODhwRmJyXzBnR1FocDlCWnphSElfTk44Zzl4enh1S1hPUmZsaldReHlNcmVSSVRGTXJFY2Y2TXVmVGVuSlRmQlRGOWg2TV9QQlROV19rank0bG9rX1NIcmlkNWsxcE1KR19XUnhsbFJwdzBMbTgxQ0RLb0JsYy1lQTFkR3VJVkFyel9KeFFCdDNWWE4xeEE4aDNTYmZEejVrcEhPQQ?oc=5",
-          "published": "Thu, 05 Nov 2026 15:59:10 GMT"
+          "title": "US weekly jobless claims at 57-year lows; worker productivity surges in third quarter - AOL.com",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1VRmZXSjBOV1hqY0RyYlYtNVQ3SVFyOHBDS1BSLXNPaFhDX3YxYXJPNHZuRU5mNE1IX3pHMTZMVUxsbTl6Z05KU2lIZ1VuYzZxS1hqU041QTVhQ2l0ai1Yc0swZ1RPSC1NeUJLMHl1VWpYQW1LVDN2WmljWQ?oc=5",
+          "published": "Thu, 05 Nov 2026 15:58:33 GMT"
         },
         {
           "title": "US weekly jobless claims at 57-year lows amid low layoffs - The Economic Times",
@@ -79,10 +79,10 @@
       "release_date": "November 12, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-11-12T08:30:00-05:00",
-      "hours_until_release": 139,
+      "hours_until_release": 135,
       "schedule_source": "weekly_rule",
       "house_forecast": "203,321",
-      "kalshi_consensus": "191,525",
+      "kalshi_consensus": "190,850",
       "last_release": "Week ending Jul 04, 2026: 215,000",
       "risk": "elevated surprise risk",
       "status": "review",
@@ -92,13 +92,13 @@
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "consensus_review": {
         "required": true,
-        "gap_value": 11795.66653286427,
-        "gap_display": "+11,796",
+        "gap_value": 12470.66653286427,
+        "gap_display": "+12,471",
         "threshold": 10000.0,
         "threshold_display": "10,000",
         "house_side": "above Kalshi",
         "label": "Review required",
-        "message": "Weekly Claims house forecast is +11,796 above Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
+        "message": "Weekly Claims house forecast is +12,471 above Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
         "news_query": "Week ending November 07, 2026 jobless claims forecast seasonal adjustment",
         "news_search_url": "https://news.google.com/search?q=Week+ending+November+07%2C+2026+jobless+claims+forecast+seasonal+adjustment",
         "official_guidance": [
@@ -112,9 +112,9 @@
         "guidance_hit_count": 0,
         "news_headlines": [
           {
-            "title": "US weekly jobless claims at 57-year lows; worker productivity surges in third quarter - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcm5OTDhuLTE5VENNbUNPODhwRmJyXzBnR1FocDlCWnphSElfTk44Zzl4enh1S1hPUmZsaldReHlNcmVSSVRGTXJFY2Y2TXVmVGVuSlRmQlRGOWg2TV9QQlROV19rank0bG9rX1NIcmlkNWsxcE1KR19XUnhsbFJwdzBMbTgxQ0RLb0JsYy1lQTFkR3VJVkFyel9KeFFCdDNWWE4xeEE4aDNTYmZEejVrcEhPQQ?oc=5",
-            "published": "Thu, 05 Nov 2026 15:59:10 GMT"
+            "title": "US weekly jobless claims at 57-year lows; worker productivity surges in third quarter - AOL.com",
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1VRmZXSjBOV1hqY0RyYlYtNVQ3SVFyOHBDS1BSLXNPaFhDX3YxYXJPNHZuRU5mNE1IX3pHMTZMVUxsbTl6Z05KU2lIZ1VuYzZxS1hqU041QTVhQ2l0ai1Yc0swZ1RPSC1NeUJLMHl1VWpYQW1LVDN2WmljWQ?oc=5",
+            "published": "Thu, 05 Nov 2026 15:58:33 GMT"
           },
           {
             "title": "US weekly jobless claims at 57-year lows amid low layoffs - The Economic Times",
@@ -143,7 +143,7 @@
       "release_date": "December 06, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-12-06T08:30:00-05:00",
-      "hours_until_release": 715,
+      "hours_until_release": 711,
       "schedule_source": "fallback_schedule",
       "house_forecast": null,
       "kalshi_consensus": "0.198% m/m | 2.79% y/y",
@@ -165,7 +165,7 @@
       "release_date": "December 06, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-12-06T08:30:00-05:00",
-      "hours_until_release": 715,
+      "hours_until_release": 711,
       "schedule_source": "fallback_schedule",
       "house_forecast": "0.270% m/m | 3.03% y/y",
       "kalshi_consensus": "no live Kalshi market found",
@@ -187,24 +187,52 @@
       "release_date": "December 06, 2026",
       "release_time": "8:15 AM ET",
       "release_iso": "2026-12-06T08:30:00-05:00",
-      "hours_until_release": 715,
+      "hours_until_release": 711,
       "schedule_source": "fallback_schedule",
       "house_forecast": "35k",
-      "kalshi_consensus": "67k",
+      "kalshi_consensus": "72k",
       "last_release": "June 2026: 98k",
       "risk": null,
-      "status": "live",
+      "status": "review",
       "notes": "Two-step recursive forecast for the October 2026 ADP release; cached in macro_forecasting/output/adp_forecast_latest.json.",
       "model_source": "macro_forecasting/adp_forecast_kaggle_style.py",
       "kalshi_url": "https://kalshi.com/markets/kxadp-26nov",
       "release_source_url": "https://adpemploymentreport.com/",
       "consensus_review": {
-        "required": false,
-        "gap_value": -32.36594161287301,
-        "gap_display": "-32k",
+        "required": true,
+        "gap_value": -36.865941612872994,
+        "gap_display": "-37k",
         "threshold": 35.0,
         "threshold_display": "35k",
-        "house_side": "below Kalshi"
+        "house_side": "below Kalshi",
+        "label": "Review required",
+        "message": "ADP house forecast is -37k below Kalshi; threshold is 35k. Check official guidance and news before using the forecast.",
+        "news_query": "December 2026 macro data forecast adjustment",
+        "news_search_url": "https://news.google.com/search?q=December+2026+macro+data+forecast+adjustment",
+        "official_guidance": [],
+        "guidance_hit_count": 0,
+        "news_headlines": [
+          {
+            "title": "Farm Sector Income & Finances - Farm Sector Income Forecast - USDA (.gov)",
+            "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQczdOZzVSMEZOSnBQc2twSlhzNGw2VGZkemFMVWFiYTBJQU94b3NYM2lDdTBGSTJIdDFZT3FWNWVDeU13NjRueUNnc1Vob19oWDlRNGxaZFo5OXNBclV2VkFNVW5KRkZTY3p4WmExd1lhSUxUOWlGWnVza01sTm9KMkFRQ2o1LUJPUVR4d1A3bnAyZjdsNWFrc3NXMVl0aW5J?oc=5",
+            "published": "Thu, 03 Sep 2026 07:00:00 GMT"
+          },
+          {
+            "title": "Eurostatistics - data for short-term economic analysis - European Commission",
+            "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSzkwSEJRRFlsUlhZRU5oMTIwWG9IX3RrTzBocXNGTzFXa1VMc0xQcVdxejM2REJ5YUZNM0Vock91aWpDaENYTUp5VlQxVDYzUHJNZHhHSzM5TjN1aGtjLVZDX28zQ2FnMVlCRXhyUHhTQkhRaDVKYnFVNjJWZTdhckRZdUZKMFhXZjE4RTVmNEZYMXc5SVBZNkYxTnFMcC01MlFHQjVDN2Z1OGljMXp0NHNMQnFTdFVRR1EyZ0x3?oc=5",
+            "published": "Tue, 20 Oct 2026 07:00:00 GMT"
+          },
+          {
+            "title": "The Budget and Economic Outlook: 2026 to 2036 - Congressional Budget Office (.gov)",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1xYkpKUjdyNWpIYlp2eU9kZkNKNWw2dlNfNk9OTHRjNk5XQ0lJOVd6OXZnSkR3RnNyblVfNFMtT2RxdVBYLUFTaDYxZkdvdw?oc=5",
+            "published": "Wed, 11 Feb 2026 08:00:00 GMT"
+          },
+          {
+            "title": "ECB staff macroeconomic projections for the euro area, September 2026 - European Central Bank",
+            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOeXNPZHk5SHpFSDdWaHNhckZ6NmdSYWI5dllmLW52dDJZWFl0dGZ6TVlTOERDTi1mY1FCb2paT3REYVdBc3BiWHZoV2YtS2p3cy1obFFRM1hVaW1pUGVtbno0dGVJcGR3WEJSUnRubXdsSVFXRk5KMzFJcEVWN3ZYazZXY2ZrblJLYjdnSVRPcVg5OW5zT29BZjlicEJ2RDg?oc=5",
+            "published": "Mon, 07 Sep 2026 07:00:00 GMT"
+          }
+        ]
       }
     },
     {
@@ -216,10 +244,10 @@
       "release_date": "December 06, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-12-06T08:30:00-05:00",
-      "hours_until_release": 715,
+      "hours_until_release": 711,
       "schedule_source": "fallback_schedule",
       "house_forecast": "83k",
-      "kalshi_consensus": "80k",
+      "kalshi_consensus": "85k",
       "last_release": "June 2026: 57k",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -229,11 +257,11 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": 3.24109974695952,
-        "gap_display": "+3k",
+        "gap_value": -1.683900253040477,
+        "gap_display": "-2k",
         "threshold": 40.0,
         "threshold_display": "40k",
-        "house_side": "above Kalshi"
+        "house_side": "below Kalshi"
       }
     },
     {
@@ -245,59 +273,24 @@
       "release_date": "December 06, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-12-06T08:30:00-05:00",
-      "hours_until_release": 715,
+      "hours_until_release": 711,
       "schedule_source": "fallback_schedule",
       "house_forecast": "4.20%",
       "kalshi_consensus": "4.25%",
       "last_release": "June 2026: 4.20%",
       "risk": "normal surprise risk",
-      "status": "review",
+      "status": "live",
       "notes": "Latest BLS actual: June 2026: 4.20%. Rounded to the market print convention; live model also stores unrounded UR.",
       "model_source": "macro_forecasting/output/ur_surprise_latest.json",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26nov",
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
-        "required": true,
-        "gap_value": -0.0509505703422084,
-        "gap_display": "-0.051 pp",
+        "required": false,
+        "gap_value": -0.04924242424242742,
+        "gap_display": "-0.049 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
-        "house_side": "below Kalshi",
-        "label": "Review required",
-        "message": "Unemployment Rate house forecast is -0.051 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
-        "news_query": "December 2026 jobs report BLS forecast adjustment survey",
-        "news_search_url": "https://news.google.com/search?q=December+2026+jobs+report+BLS+forecast+adjustment+survey",
-        "official_guidance": [
-          {
-            "label": "BLS Employment Situation latest release",
-            "url": "https://www.bls.gov/news.release/empsit.toc.htm",
-            "status": "unavailable",
-            "hits": []
-          }
-        ],
-        "guidance_hit_count": 0,
-        "news_headlines": [
-          {
-            "title": "Jobs Report Shows 165,000 New Jobs When 59,000 Were Expected - Stock Titan",
-            "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBDSWhjUWI0dzl4X3kxdXFwLU54c09vMi1jUW9aOUR3YjJuODQtQmQzQ0RXQzFtZHdnenR3QndQellrT1R0VDRvZEdWblBDenhWaWllWkFuTTJxbmo5ZEVibHJVWWxmRHRkS0QwNg?oc=5",
-            "published": "Fri, 06 Nov 2026 13:48:50 GMT"
-          },
-          {
-            "title": "Labor market faltered in September as jobs increased by just 29,000, unemployment rate rose to 4.2% - CNBC",
-            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBjc1c3eWxhak03S19wOWloT192VXI2UGhzeHJLZDBMRnZxdGNwaEhxQ2Y1LWNqZFQtc2o5bk9BeW5uSnI5WVVNcDJMeXRmblA0aTloYlAzQUFYTzFJMW1Wc0ZrVkpLZFUwbGRfNmpjOWjSAXZBVV95cUxOUnZ1bXVuT3Y0RHBfSHFjVkJiWnhYb3J2ajZ6Qkd6UlQ1a2xEejMwVG9tdzRNbDJSU1gtcEJ1UXNVTWFFWC1XVFdxazlWTl9FcUxwdXNZeExGRUo0QnVTbHMwVmZLQy1zNEEzM3JqYnNmZUpvazR3?oc=5",
-            "published": "Fri, 02 Oct 2026 07:00:00 GMT"
-          },
-          {
-            "title": "Consumer Price Index, Northeast region \u2014 September 2026 - Bureau of Labor Statistics (.gov)",
-            "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZ2lPN2JNZ19uSTZtbGJmMWZhUWRjVU5Mc3NTdnBDdHI4ejRYM1BRRU9DUTJ2Um5MLVV0RGFiMVN4NmlaYjJiWnBwSkVkNGNqX1MxeTlodkh4WUNpQ2dUZXZTLWZqRjlqd3FZZVNlVkl5QjFhaEhkaHFyTWdOSGx4bnhYUjlNNGdWSnQySGZ0TQ?oc=5",
-            "published": "Wed, 14 Oct 2026 07:00:00 GMT"
-          },
-          {
-            "title": "Labor market impacts of AI A new measure and early evidence - Anthropic",
-            "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9KTkM5U1RQMnVZS29QR3BLTzQyOHJYSHFZY253LXd2RTNyZlNOZjdxMFB5ZkV4SVNJcGtaSkJIQkdma21jS0tvWWdGQ3BDZ1ZMQjFIU09Xb2FaUl9JSlcxY1lVazhUQQ?oc=5",
-            "published": "Thu, 05 Mar 2026 08:00:00 GMT"
-          }
-        ]
+        "house_side": "below Kalshi"
       }
     }
   ],
@@ -11211,7 +11204,7 @@
     "period": "August 2026",
     "data_month": "2026-08-01",
     "generated_at": "2026-10-04T18:17:03",
-    "updated_display": "Friday, November 06, 2026 12:53 PM ET",
+    "updated_display": "Friday, November 06, 2026 04:59 PM ET",
     "source_path": "macro_forecasting/output/core_pce_bridge_latest.json",
     "model_source": "macro_forecasting/cpi_to_pce_bridge.py",
     "core_cpi_mom": 0.2898,
