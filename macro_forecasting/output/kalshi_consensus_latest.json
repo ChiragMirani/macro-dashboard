@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-07T15:30:01.311935+00:00",
+  "generated_at_utc": "2026-11-07T15:55:42.317995+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
@@ -46,7 +46,7 @@
       "event_ticker": "KXPAYROLLS-26NOV",
       "kind": "threshold",
       "market_count": 13,
-      "implied_value": 76.75,
+      "implied_value": 76.6125,
       "consensus_label": "77k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26nov",
       "title": "Jobs numbers in Nov 2026?"

@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Saturday, November 07, 2026 10:30 AM ET",
-  "generated_at_iso": "2026-11-07T10:30:01.827445-05:00",
+  "generated_at_et": "Saturday, November 07, 2026 10:55 AM ET",
+  "generated_at_iso": "2026-11-07T10:55:42.738527-05:00",
   "current_day": "Saturday",
   "current_date": "November 07, 2026",
-  "current_time": "10:30 AM ET",
+  "current_time": "10:55 AM ET",
   "next_event": {
     "key": "core_cpi",
     "label": "Core CPI",
@@ -77,7 +77,7 @@
       "schedule_source": "weekly_rule",
       "house_forecast": "204,392",
       "kalshi_consensus": "190,425",
-      "last_release": "Week ending Jul 04, 2026: 215,000",
+      "last_release": "Week ending Oct 31, 2026: 189,000",
       "risk": "elevated surprise risk",
       "status": "review",
       "notes": "Weekly model output with surprise-risk overlay.",
@@ -106,14 +106,14 @@
         "guidance_hit_count": 0,
         "news_headlines": [
           {
-            "title": "US weekly jobless claims at 57-year lows; worker productivity surges in third quarter - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcm5OTDhuLTE5VENNbUNPODhwRmJyXzBnR1FocDlCWnphSElfTk44Zzl4enh1S1hPUmZsaldReHlNcmVSSVRGTXJFY2Y2TXVmVGVuSlRmQlRGOWg2TV9QQlROV19rank0bG9rX1NIcmlkNWsxcE1KR19XUnhsbFJwdzBMbTgxQ0RLb0JsYy1lQTFkR3VJVkFyel9KeFFCdDNWWE4xeEE4aDNTYmZEejVrcEhPQQ?oc=5",
-            "published": "Thu, 05 Nov 2026 15:59:10 GMT"
-          },
-          {
             "title": "US weekly jobless claims at 57-year lows amid low layoffs - The Economic Times",
             "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdWRlTTd5d3V3Tnk1c2tkcmIzTDFTY1puRFNzZHFQT05yNVFQT0hEOTVFWDR3TEpoT3ozcWlOdk10bTBMc0xXLXVxTVRtdWtnUjR3Tjl4S19zaFNtSnJRZk8teTBKWHMtVnUyQ2VVdDVLR1pZRjd1bVJTMDlBczA0ZGtOMmc5V2ZuM2ctRnBlaE12ZUN4VkdRV3JlSGp5Q3VrYVB6bkU4YnExbUxsRTlWbXZadFI2OXB4QTNTaHJIVnpGNV9sdEJSQkJYUDRDZkJHSDdFOGtn0gHbAUFVX3lxTE5kYUU3bldudE01UVdKcXlaMUR2RlFOUDctSkNIZ3hCQmpHZHZNUFl4eHhMN1J2X0U0VG41Q0VVZEtIVGhqd2lXTHV2ZkZNODgyQzlQemhja0dmdVpReVdIb0J5T05VYXlYMHZQbzZSVjRHVWV2YWpCSVJFODI1aUVsaUdWUE9SQXgtYWlOYjVnWGMtWUsxWGVjNEZmWmZHd2NwMkVrdGVuNWpYd0JkSXdMT1MybXVkVVQ4cTVNNVpDUm9kNENTdTh6UHJ2bi13amZwRlM5MkF1c0JONA?oc=5",
             "published": "Thu, 05 Nov 2026 13:45:04 GMT"
+          },
+          {
+            "title": "US weekly jobless claims fall; labor market remains stable - Reuters",
+            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNYk1NRGJBS2x3Z2dTWjZxR3BGRWRsSmVadWFnb3FsS2xaS1g2WkJVUGFwVWtiYWhCTjZyVVkxaS1BcF9ZZkFYclM4R3REOFI2Y0x2YXk4MmVTSnB2bmJHdnBXdGVSMnk3YmloWVBISHQzN1BQU2dsZE5uWUs3SjJrZWdCbUVybzgxaDYwaExUTDh6YTdReDhnc2E3T2czRDJxVV9FRw?oc=5",
+            "published": "Thu, 16 Jul 2026 07:00:00 GMT"
           },
           {
             "title": "US Initial Jobless Claims Forecast: 15 October 2026 Preview - Admirals",
@@ -121,9 +121,9 @@
             "published": "Thu, 15 Oct 2026 07:00:00 GMT"
           },
           {
-            "title": "US weekly jobless claims fall; labor market remains stable - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNYk1NRGJBS2x3Z2dTWjZxR3BGRWRsSmVadWFnb3FsS2xaS1g2WkJVUGFwVWtiYWhCTjZyVVkxaS1BcF9ZZkFYclM4R3REOFI2Y0x2YXk4MmVTSnB2bmJHdnBXdGVSMnk3YmloWVBISHQzN1BQU2dsZE5uWUs3SjJrZWdCbUVybzgxaDYwaExUTDh6YTdReDhnc2E3T2czRDJxVV9FRw?oc=5",
-            "published": "Thu, 16 Jul 2026 07:00:00 GMT"
+            "title": "US weekly jobless claims fall more than expected amid labor market stability - Reuters",
+            "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWEk4b19rcFZBbEFsLUdESDY2UV9pdXF6ZkJWV3E3VmhUNW9tNWd6WkJ4cUZzSnFEbW1TWGNqRHp1Qi1yd09wQldkREhSeDBfaXhKMlBJYVNHU1MxZkhSNll3MmNPTVpiWWZQTk9BTk1JTnNHZno4dGRXSVk2Y3Z6WTJsZkdiaG1JUnVoN21FdXZRWTFUZDR2VHpDTTVJWjNEUWdVX0pxOXZ3T3FFcE5kUVNKRl84M1ZuNUc2RS1n?oc=5",
+            "published": "Thu, 19 Feb 2026 08:00:00 GMT"
           }
         ]
       }
@@ -163,7 +163,7 @@
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "87k",
       "kalshi_consensus": "73k",
-      "last_release": "June 2026: 98k",
+      "last_release": "October 2026: 86k",
       "risk": null,
       "status": "live",
       "notes": "Two-step recursive forecast for the November 2026 ADP release; cached in macro_forecasting/output/adp_forecast_latest.json.",
@@ -201,7 +201,7 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": 25.35803985595703,
+        "gap_value": 25.495539855957034,
         "gap_display": "+25k",
         "threshold": 40.0,
         "threshold_display": "40k",
@@ -11183,7 +11183,7 @@
     "period": "September 2026",
     "data_month": "2026-09-01",
     "generated_at": "2026-11-07T06:20:07",
-    "updated_display": "Saturday, November 07, 2026 10:30 AM ET",
+    "updated_display": "Saturday, November 07, 2026 10:55 AM ET",
     "source_path": "macro_forecasting/output/core_pce_bridge_latest.json",
     "model_source": "macro_forecasting/cpi_to_pce_bridge.py",
     "core_cpi_mom": 0.3348,
