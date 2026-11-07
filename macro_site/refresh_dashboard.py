@@ -1819,16 +1819,68 @@ def load_core_pce_last_release() -> str | None:
     return cached_actual("core_pce")
 
 
+def _period_of(text: str | None) -> pd.Timestamp:
+    """Parse the period out of a display string such as 'October 2026: 98k' or 'Week ending Oct 31, 2026: 189,000'."""
+    if not text:
+        return pd.Timestamp.min
+    head = text.split(":")[0].replace("Week ending", "").strip()
+    try:
+        return pd.Timestamp(head)
+    except Exception:
+        return pd.Timestamp.min
+
+
+def _newest(candidates: dict[str, str | None], key: str) -> str | None:
+    """Show the most recent period among all sources, and say which one won."""
+    found = {name: value for name, value in candidates.items() if value}
+    if not found:
+        return None
+    winner = max(found, key=lambda name: _period_of(found[name]))
+    if winner == "cache":
+        warn(f"{key}: no fresher source than the cache; showing {found[winner]}")
+    else:
+        write_actual_cache(key, found[winner])
+    return found[winner]
+
+
+def _local_actual(key: str) -> str | None:
+    """Actuals fetched from FRED on Chirag's computer by macro_site/fetch_latest_actuals.py."""
+    payload = read_json(BASE_DIR / "macro_forecasting" / "output" / "latest_actuals_local.json") or {}
+    return (payload.get(key) or {}).get("display")
+
+
+def fetch_dol_claims_series() -> pd.Series | None:
+    """Seasonally adjusted initial claims from the Department of Labor (no key needed)."""
+    year = datetime.now().year
+    try:
+        response = requests.post(
+            "https://oui.doleta.gov/unemploy/wkclaims/report.asp",
+            data={"level": "US", "strtdate": str(year - 1), "enddate": str(year), "filetype": "xml", "final": "Submit"},
+            headers={"User-Agent": "Mozilla/5.0 MacroForecastbyCM"},
+            timeout=60,
+        )
+        response.raise_for_status()
+        root = ETREE.fromstring(response.content)
+    except Exception as exc:
+        warn(f"Department of Labor claims fetch failed: {exc!r}")
+        return None
+    rows = {}
+    for week in root.findall("week"):
+        sa = (week.find("InitialClaims").findtext("SA") or "").replace(",", "").strip()
+        if sa.isdigit():
+            rows[pd.to_datetime(week.findtext("weekEnded"), format="%m/%d/%Y")] = float(sa)
+    return pd.Series(rows).sort_index() if rows else None
+
+
 def load_adp_last_release() -> str | None:
     # Monthly NSA ADP National Employment Report level series; FRED's weekly series
     # (ADPWNUSNERSA) was lagging by months as of Apr 2026, so we use the monthly one.
+    live = None
     series = fetch_fred_series("ADPMNUSNERSA")
     if series is not None and len(series) >= 2:
         change_k = (series.iloc[-1] - series.iloc[-2]) / 1000.0
-        value = f"{series.index[-1].strftime('%B %Y')}: {fmt_k(change_k)}"
-        write_actual_cache("adp", value)
-        return value
-    return cached_actual("adp")
+        live = f"{series.index[-1].strftime('%B %Y')}: {fmt_k(change_k)}"
+    return _newest({"fred": live, "local": _local_actual("adp"), "cache": read_actual_cache().get("adp")}, "adp")
 
 
 def load_nfp_last_release() -> str | None:
@@ -1864,18 +1916,25 @@ def load_ur_last_release() -> str | None:
 
 
 def load_claims_last_release() -> str | None:
-    series = fetch_fred_series("ICSA")
-    if series is not None and len(series) >= 1:
-        value = f"Week ending {series.index[-1].strftime('%b %d, %Y')}: {fmt_claims(series.iloc[-1])}"
-        write_actual_cache("weekly_claims", value)
-        return value
+    def show(series: pd.Series | None) -> str | None:
+        if series is None or not len(series):
+            return None
+        return f"Week ending {series.index[-1].strftime('%b %d, %Y')}: {fmt_claims(series.iloc[-1])}"
+
+    model = None
     claims_fc = read_json(WEEKLY_CLAIMS_FORECAST)
-    if claims_fc:
-        latest_actual_week = claims_fc.get("latest_actual_week")
-        lag1 = claims_fc.get("lag1")
-        if latest_actual_week and lag1 is not None:
-            return cached_actual("weekly_claims") or f"Week ending {pd.Timestamp(latest_actual_week).strftime('%b %d, %Y')}: {fmt_claims(float(lag1))}"
-    return cached_actual("weekly_claims")
+    if claims_fc and claims_fc.get("latest_actual_week") and claims_fc.get("lag1") is not None:
+        model = f"Week ending {pd.Timestamp(claims_fc['latest_actual_week']).strftime('%b %d, %Y')}: {fmt_claims(float(claims_fc['lag1']))}"
+    return _newest(
+        {
+            "fred": show(fetch_fred_series("ICSA")),
+            "dol": show(fetch_dol_claims_series()),
+            "model": model,
+            "local": _local_actual("weekly_claims"),
+            "cache": read_actual_cache().get("weekly_claims"),
+        },
+        "weekly_claims",
+    )
 
 
 def parse_adp_log() -> dict[str, Any] | None:
