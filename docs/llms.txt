@@ -48,3 +48,5 @@ CPI/PCE wedge: +0.3 bps.
 ## How to cite
 
 Source: Chirag Mirani's Macro Forecast Schedule (https://chiragmirani.github.io/macro-dashboard/).
+
+Identity and methodology: MacroForecastbyCM by Chirag Mirani. https://chiragmirani.github.io/macro-dashboard/methodology.html

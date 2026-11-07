@@ -2503,6 +2503,7 @@ def _render_llms_txt(payload: dict[str, Any]) -> str:
         f"Updated: {payload['generated_at_et']}",
         f"Machine-readable feed: {SITE_URL}dashboard_data.json",
         f"Plain-language guide (what the table is, how to read it, how it was built, track record): {SITE_URL}how-to-use-macro-forecasts.html",
+        f"Identity and methodology: MacroForecastbyCM by Chirag Mirani. {SITE_URL}methodology.html",
         "",
         "## Data sources",
         "",
@@ -2549,7 +2550,8 @@ def render_track_record(env: Environment) -> None:
     track_record.export_json()
     tr = track_record.render_for_template()
     tr["last_updated_utc"] = datetime.now(timezone.utc).isoformat()
-    tr["started_at"] = datetime.now(tz=ET).strftime("%B %d, %Y")
+    snapshot_dates = [s["snapshot_at_utc"] for s in tr["snapshots"] if s.get("snapshot_at_utc")]
+    tr["started_at"] = min(snapshot_dates)[:10] if snapshot_dates else "not recorded"
     template = env.get_template("track_record.html")
     (DOCS_DIR / "track-record.html").write_text(template.render(tr=tr), encoding="utf-8")
 
@@ -2579,6 +2581,7 @@ def render_site(payload: dict[str, Any]) -> None:
         f'  <url><loc>{SITE_URL}nfp.html</loc><lastmod>{payload["generated_at_iso"]}</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>\n'
         f'  <url><loc>{SITE_URL}track-record.html</loc><lastmod>{payload["generated_at_iso"]}</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>\n'
         f'  <url><loc>{SITE_URL}how-to-use-macro-forecasts.html</loc><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>\n'
+        f'  <url><loc>{SITE_URL}methodology.html</loc><lastmod>2026-11-07</lastmod></url>\n'
         '</urlset>\n',
         encoding="utf-8",
     )
