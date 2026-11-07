@@ -7,7 +7,7 @@
       "release_group": "Labor",
       "target_period": "Week ending November 07, 2026",
       "release_iso": "2026-11-12T08:30:00-05:00",
-      "snapshot_at_utc": "2026-11-07T15:26:41.595940+00:00",
+      "snapshot_at_utc": "2026-11-07T15:32:49.382277+00:00",
       "house_raw": "204,392",
       "house_value": 204392.0,
       "kalshi_raw": "190,425",
@@ -40,7 +40,7 @@
       "release_group": "Inflation",
       "target_period": "October 2026",
       "release_iso": "2026-11-10T08:30:00-05:00",
-      "snapshot_at_utc": "2026-11-07T15:26:41.595940+00:00",
+      "snapshot_at_utc": "2026-11-07T15:32:49.382277+00:00",
       "house_raw": "0.225% m/m | 2.80% y/y",
       "house_value": 0.225,
       "kalshi_raw": "0.198% m/m | 2.79% y/y",
@@ -119,7 +119,7 @@
       "house_error_abs": 0.23766066684318235,
       "kalshi_error_abs": 0.18066066684318235,
       "winner": "kalshi",
-      "settled_at_utc": "2026-11-07T15:26:41.674201+00:00",
+      "settled_at_utc": "2026-11-07T15:32:49.439875+00:00",
       "actual_consensus_side": "below",
       "house_consensus_side": "above",
       "house_direction_correct": 0,
@@ -708,5 +708,5 @@
     "house_mean_abs_error": 2279.2023810144606,
     "kalshi_mean_abs_error": 1612.7980155974697
   },
-  "last_updated_utc": "2026-11-07T15:27:01.995078+00:00"
+  "last_updated_utc": "2026-11-07T15:33:09.743772+00:00"
 }
