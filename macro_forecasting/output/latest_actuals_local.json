@@ -1,6 +1,5 @@
 {
-  "fetched_at_utc": "2026-11-07T16:05:00+00:00",
-  "note": "Seeded by hand on Saturday, November 7, 2026; refreshed nightly by macro_site/fetch_latest_actuals.py",
+  "fetched_at_utc": "2026-11-07T23:00:17.639154+00:00",
   "weekly_claims": {
     "period_end": "2026-10-31",
     "value": 189000.0,
