@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-04T18:17:03",
-  "runtime_seconds": 7.943,
-  "date": "August 2026",
-  "reporting_month": "August 2026",
-  "data_month": "2026-08-01",
+  "generated_at": "2026-11-07T06:20:07",
+  "runtime_seconds": 11.548,
+  "date": "September 2026",
+  "reporting_month": "September 2026",
+  "data_month": "2026-09-01",
   "release_status": {
     "stage": "CPI+PPI complete",
     "ppi_release_complete": true,
@@ -16,7 +16,7 @@
     "formula_effect_bps": -3.0,
     "historical_release_calibration": {
       "adjustment_bps": 0.0,
-      "n": 0,
+      "n": 1,
       "method": "insufficient_history",
       "portfolio_method_regime_start": "2026-08"
     },
@@ -42,168 +42,168 @@
     }
   },
   "core_cpi_sa": {
-    "mom_bps": 29.0,
-    "mom_pct": 0.2898,
-    "yoy_pct": 2.76,
+    "mom_bps": 33.5,
+    "mom_pct": 0.3348,
+    "yoy_pct": 2.79,
     "series_id": "CUSR0000SA0L1E"
   },
   "implied_core_pce": {
-    "uncalibrated_mom_bps": 27.0,
+    "uncalibrated_mom_bps": 33.8,
     "calibration_bps": 0.0,
-    "mom_bps": 27.0,
-    "mom_pct": 0.2704,
-    "annualized_pct": 3.25
+    "mom_bps": 33.8,
+    "mom_pct": 0.3376,
+    "annualized_pct": 4.05
   },
   "expected_core_pce": {
-    "yoy_pct": 3.03,
+    "yoy_pct": 3.14,
     "index_source": "FRED API",
-    "previous_month_index": 130.133,
-    "year_ago_index": 126.646,
-    "projected_index": 130.485
+    "previous_month_index": 130.489,
+    "year_ago_index": 126.94,
+    "projected_index": 130.929
   },
   "wedge_decomposition_bps": {
-    "total": -1.9,
-    "shelter": -4.9,
-    "medical_scope_weight": 4.9,
-    "financial_services": 0.9,
-    "airfare_scope_swap": 0.1,
-    "food_services": 1.7,
+    "total": 0.3,
+    "shelter": -8.4,
+    "medical_scope_weight": 1.8,
+    "financial_services": 3.7,
+    "airfare_scope_swap": 2.6,
+    "food_services": 1.5,
     "formula_effect": -3.0,
     "historical_calibration": 0.0,
-    "other": 2.7
+    "other": 4.3
   },
   "translation_table": {
     "cpi_reweighting": [
       {
         "component": "Rent",
         "series_id": "CUSR0000SEHA",
-        "mom_pct": 0.17367381426935946,
+        "mom_pct": 0.24659430563003237,
         "cpi_weight_pct": 9.67,
         "pce_weight_pct": 4.5,
-        "cpi_contribution_bps": 1.679425783984706,
-        "pce_contribution_bps": 0.7815321642121176,
-        "translation_bps": -0.8978936197725884,
+        "cpi_contribution_bps": 2.384566935442413,
+        "pce_contribution_bps": 1.1096743753351457,
+        "translation_bps": -1.2748925601072671,
         "treatment": "CPI reweighted"
       },
       {
         "component": "OER",
         "series_id": "CUSR0000SEHC",
-        "mom_pct": 0.18627734325609158,
+        "mom_pct": 0.3497756432649046,
         "cpi_weight_pct": 32.98,
         "pce_weight_pct": 13.5,
-        "cpi_contribution_bps": 6.1434267805859,
-        "pce_contribution_bps": 2.5147441339572363,
-        "translation_bps": -3.6286826466286635,
+        "cpi_contribution_bps": 11.535600714876553,
+        "pce_contribution_bps": 4.721971184076212,
+        "translation_bps": -6.813629530800341,
         "treatment": "CPI reweighted"
       },
       {
         "component": "Lodging",
         "series_id": "CUSR0000SEHB",
-        "mom_pct": 2.3567502447104927,
+        "mom_pct": 2.035036465667628,
         "cpi_weight_pct": 1.16,
         "pce_weight_pct": 1.0,
-        "cpi_contribution_bps": 2.7338302838641715,
-        "pce_contribution_bps": 2.3567502447104927,
-        "translation_bps": -0.3770800391536788,
+        "cpi_contribution_bps": 2.3606423001744483,
+        "pce_contribution_bps": 2.035036465667628,
+        "translation_bps": -0.32560583450682046,
         "treatment": "CPI reweighted"
       },
       {
         "component": "Used Cars",
         "series_id": "CUSR0000SETA02",
-        "mom_pct": 0.36548977848767095,
+        "mom_pct": 0.6691901748956841,
         "cpi_weight_pct": 3.63,
         "pce_weight_pct": 3.2,
-        "cpi_contribution_bps": 1.3267278959102455,
-        "pce_contribution_bps": 1.169567291160547,
-        "translation_bps": -0.1571606047496985,
+        "cpi_contribution_bps": 2.4291603348713333,
+        "pce_contribution_bps": 2.141408559666189,
+        "translation_bps": -0.28775177520514417,
         "treatment": "CPI reweighted"
       },
       {
         "component": "New Vehicles",
         "series_id": "CUSR0000SETA01",
-        "mom_pct": 0.25110452435546105,
+        "mom_pct": 0.19859532854697992,
         "cpi_weight_pct": 4.92,
         "pce_weight_pct": 4.2,
-        "cpi_contribution_bps": 1.2354342598288683,
-        "pce_contribution_bps": 1.0546390022929364,
-        "translation_bps": -0.18079525753593195,
+        "cpi_contribution_bps": 0.9770890164511412,
+        "pce_contribution_bps": 0.8341003798973157,
+        "translation_bps": -0.14298863655382554,
         "treatment": "CPI reweighted"
       },
       {
         "component": "Med Svcs OOP",
         "series_id": "CUSR0000SAM2",
-        "mom_pct": -0.24848891873739953,
+        "mom_pct": 0.2843013042972631,
         "cpi_weight_pct": 8.95,
         "pce_weight_pct": 4.8,
-        "cpi_contribution_bps": -2.2239758226997255,
-        "pce_contribution_bps": -1.1927468099395178,
-        "translation_bps": 1.0312290127602077,
+        "cpi_contribution_bps": 2.5444966734605043,
+        "pce_contribution_bps": 1.3646462606268628,
+        "translation_bps": -1.1798504128336416,
         "treatment": "CPI reweighted"
       },
       {
         "component": "Med Goods OOP",
         "series_id": "CUSR0000SAM1",
-        "mom_pct": -0.22978777843930542,
+        "mom_pct": -0.6648122940956069,
         "cpi_weight_pct": 2.03,
         "pce_weight_pct": 1.5,
-        "cpi_contribution_bps": -0.46646919023178995,
-        "pce_contribution_bps": -0.34468166765895814,
-        "translation_bps": 0.12178752257283182,
+        "cpi_contribution_bps": -1.3495689570140819,
+        "pce_contribution_bps": -0.9972184411434104,
+        "translation_bps": 0.35235051587067145,
         "treatment": "CPI reweighted"
       },
       {
         "component": "Apparel",
         "series_id": "CUSR0000SAA",
-        "mom_pct": 0.01685796795520833,
+        "mom_pct": 0.3063236037726291,
         "cpi_weight_pct": 3.91,
         "pce_weight_pct": 3.0,
-        "cpi_contribution_bps": 0.06591465470486457,
-        "pce_contribution_bps": 0.05057390386562499,
-        "translation_bps": -0.01534075083923958,
+        "cpi_contribution_bps": 1.1977252907509799,
+        "pce_contribution_bps": 0.9189708113178874,
+        "translation_bps": -0.2787544794330925,
         "treatment": "CPI reweighted"
       },
       {
         "component": "Recreation",
         "series_id": "CUSR0000SAR",
-        "mom_pct": 0.004132516013499732,
+        "mom_pct": 0.5103446375933407,
         "cpi_weight_pct": 7.19,
         "pce_weight_pct": 5.0,
-        "cpi_contribution_bps": 0.029712790137063072,
-        "pce_contribution_bps": 0.02066258006749866,
-        "translation_bps": -0.009050210069564413,
+        "cpi_contribution_bps": 3.66937794429612,
+        "pce_contribution_bps": 2.5517231879667035,
+        "translation_bps": -1.1176547563294164,
         "treatment": "CPI reweighted"
       },
       {
         "component": "Edu/Comm",
         "series_id": "CUSR0000SAE",
-        "mom_pct": 1.6066459488554452,
+        "mom_pct": 0.15859054320592758,
         "cpi_weight_pct": 7.95,
         "pce_weight_pct": 5.5,
-        "cpi_contribution_bps": 12.77283529340079,
-        "pce_contribution_bps": 8.836552718704949,
-        "translation_bps": -3.9362825746958414,
+        "cpi_contribution_bps": 1.2607948184871243,
+        "pce_contribution_bps": 0.8722479876326017,
+        "translation_bps": -0.3885468308545226,
         "treatment": "CPI reweighted"
       },
       {
         "component": "Airfares CPI",
         "series_id": "CUSR0000SETG01",
-        "mom_pct": 2.681359453372445,
+        "mom_pct": 1.1591862493967264,
         "cpi_weight_pct": 0.83,
         "pce_weight_pct": 0.0,
-        "cpi_contribution_bps": 2.225528346299129,
+        "cpi_contribution_bps": 0.9621245869992829,
         "pce_contribution_bps": 0.0,
-        "translation_bps": -2.225528346299129,
+        "translation_bps": -0.9621245869992829,
         "treatment": "Removed / replaced"
       },
       {
         "component": "Food Svcs",
         "series_id": "CUSR0000SEFV",
-        "mom_pct": 0.25424647040888093,
+        "mom_pct": 0.22997577085868137,
         "cpi_weight_pct": 0.0,
         "pce_weight_pct": 6.5,
         "cpi_contribution_bps": 0.0,
-        "pce_contribution_bps": 1.652602057657726,
-        "translation_bps": 1.652602057657726,
+        "pce_contribution_bps": 1.494842510581429,
+        "translation_bps": 1.494842510581429,
         "treatment": "Added PCE scope"
       }
     ],
@@ -211,100 +211,100 @@
       {
         "component": "Portfolio Mgmt",
         "series_id": "CES5552390003",
-        "data_month": "2026-08",
-        "raw_mom_pct": 0.5085730892182561,
-        "bridge_mom_pct": 0.5085730892182561,
+        "data_month": "2026-09",
+        "raw_mom_pct": 0.15932792584010258,
+        "bridge_mom_pct": 0.15932792584010258,
         "pce_weight_pct": 1.96,
-        "pce_contribution_bps": 0.9968032548677819,
+        "pce_contribution_bps": 0.31228273464660106,
         "treatment": "CES AHE proxy"
       },
       {
         "component": "Hospitals",
         "series_id": "PCU622110622110",
-        "data_month": "2026-08",
-        "raw_mom_pct": 0.6303433140980585,
-        "bridge_mom_pct": 0.4709212376251147,
+        "data_month": "2026-09",
+        "raw_mom_pct": 0.047270521315057046,
+        "bridge_mom_pct": 0.35011051689285677,
         "pce_weight_pct": 6.0,
-        "pce_contribution_bps": 2.825527425750688,
+        "pce_contribution_bps": 2.1006631013571404,
         "treatment": "NSA to STL-SA"
       },
       {
         "component": "Physicians",
         "series_id": "WPU511101",
-        "data_month": "2026-08",
-        "raw_mom_pct": 0.03594624402598612,
-        "bridge_mom_pct": 0.1411740144887641,
+        "data_month": "2026-09",
+        "raw_mom_pct": 0.000815933550368797,
+        "bridge_mom_pct": 0.06778171422572303,
         "pce_weight_pct": 3.5,
-        "pce_contribution_bps": 0.49410905071067435,
+        "pce_contribution_bps": 0.2372359997900306,
         "treatment": "NSA to STL-SA"
       },
       {
         "component": "Nursing",
         "series_id": "PCU6231106231101",
-        "data_month": "2026-08",
-        "raw_mom_pct": 0.020551253112666146,
-        "bridge_mom_pct": 0.3406835058767242,
+        "data_month": "2026-09",
+        "raw_mom_pct": 0.40889273083402067,
+        "bridge_mom_pct": 0.5336101749104647,
         "pce_weight_pct": 1.0,
-        "pce_contribution_bps": 0.3406835058767242,
+        "pce_contribution_bps": 0.5336101749104647,
         "treatment": "NSA to STL-SA"
       },
       {
         "component": "Home Health",
         "series_id": "PCU621610621610",
-        "data_month": "2026-08",
-        "raw_mom_pct": -0.0005765449964556524,
-        "bridge_mom_pct": 0.2669507121555654,
+        "data_month": "2026-09",
+        "raw_mom_pct": 0.0011532229698962837,
+        "bridge_mom_pct": -0.44955830815071074,
         "pce_weight_pct": 0.5,
-        "pce_contribution_bps": 0.1334753560777827,
+        "pce_contribution_bps": -0.22477915407535537,
         "treatment": "NSA to STL-SA"
       },
       {
         "component": "Banking",
         "series_id": "WPU39",
-        "data_month": "2026-08",
-        "raw_mom_pct": 2.7221906386204253,
-        "bridge_mom_pct": 0.00035859935893196046,
+        "data_month": "2026-09",
+        "raw_mom_pct": 0.2763467327946634,
+        "bridge_mom_pct": 1.8649417356188918,
         "pce_weight_pct": 2.0,
-        "pce_contribution_bps": 0.0007171987178639209,
+        "pce_contribution_bps": 3.7298834712377835,
         "treatment": "NSA to STL-SA"
       },
       {
         "component": "Insurance",
         "series_id": "WPU4111",
-        "data_month": "2026-08",
-        "raw_mom_pct": 0.0,
-        "bridge_mom_pct": -0.08631550519285475,
+        "data_month": "2026-09",
+        "raw_mom_pct": 0.052983290394781335,
+        "bridge_mom_pct": -0.2521835535000609,
         "pce_weight_pct": 1.5,
-        "pce_contribution_bps": -0.12947325778928212,
+        "pce_contribution_bps": -0.3782753302500913,
         "treatment": "NSA to STL-SA"
       },
       {
         "component": "Airlines PPI",
         "series_id": "PCU481111481111",
-        "data_month": "2026-08",
-        "raw_mom_pct": 0.9494888786963251,
-        "bridge_mom_pct": 2.7099403409084157,
+        "data_month": "2026-09",
+        "raw_mom_pct": 2.7026242069160267,
+        "bridge_mom_pct": 4.170512216429648,
         "pce_weight_pct": 0.85,
-        "pce_contribution_bps": 2.3034492897721535,
+        "pce_contribution_bps": 3.5449353839652007,
         "treatment": "NSA to STL-SA"
       }
     ],
     "assembly_bps": [
       {
         "line": "Core CPI reference (not additive)",
-        "bps": 28.97956881014574
+        "bps": 33.48481932704761
       },
       {
         "line": "CPI-derived mapped components",
-        "bps": 16.900195619030654
+        "bps": 17.047403281624565
       },
       {
         "line": "PPI / PCE-only components",
-        "bps": 6.965291823984386
+        "bps": 9.855556381581774
       },
       {
         "line": "Residual CPI mapped to remaining PCE",
-        "bps": 6.178829574106187
+        "bps": 9.852751010183024
       },
       {
         "line": "Fisher / formula adjustment",
@@ -312,7 +312,7 @@
       },
       {
         "line": "Uncalibrated bridge",
-        "bps": 27.04431701712123
+        "bps": 33.75571067338936
       },
       {
         "line": "Historical calibration",
@@ -320,7 +320,7 @@
       },
       {
         "line": "FINAL CORE PCE",
-        "bps": 27.04431701712123
+        "bps": 33.75571067338936
       }
     ]
   },
@@ -330,120 +330,120 @@
       "series_id": "CUSR0000SEHA",
       "category": "shelter",
       "source": "CPI",
-      "mom_pct": 0.1737,
+      "mom_pct": 0.2466,
       "cpi_wt": 9.67,
       "pce_wt": 4.5,
-      "cpi_bps": 1.7,
-      "pce_bps": 0.8
+      "cpi_bps": 2.4,
+      "pce_bps": 1.1
     },
     {
       "name": "OER",
       "series_id": "CUSR0000SEHC",
       "category": "shelter",
       "source": "CPI",
-      "mom_pct": 0.1863,
+      "mom_pct": 0.3498,
       "cpi_wt": 32.98,
       "pce_wt": 13.5,
-      "cpi_bps": 6.1,
-      "pce_bps": 2.5
+      "cpi_bps": 11.5,
+      "pce_bps": 4.7
     },
     {
       "name": "Lodging",
       "series_id": "CUSR0000SEHB",
       "category": "shelter",
       "source": "CPI",
-      "mom_pct": 2.3568,
+      "mom_pct": 2.035,
       "cpi_wt": 1.16,
       "pce_wt": 1.0,
-      "cpi_bps": 2.7,
-      "pce_bps": 2.4
+      "cpi_bps": 2.4,
+      "pce_bps": 2.0
     },
     {
       "name": "Used Cars",
       "series_id": "CUSR0000SETA02",
       "category": "goods",
       "source": "CPI",
-      "mom_pct": 0.3655,
+      "mom_pct": 0.6692,
       "cpi_wt": 3.63,
       "pce_wt": 3.2,
-      "cpi_bps": 1.3,
-      "pce_bps": 1.2
+      "cpi_bps": 2.4,
+      "pce_bps": 2.1
     },
     {
       "name": "New Vehicles",
       "series_id": "CUSR0000SETA01",
       "category": "goods",
       "source": "CPI",
-      "mom_pct": 0.2511,
+      "mom_pct": 0.1986,
       "cpi_wt": 4.92,
       "pce_wt": 4.2,
-      "cpi_bps": 1.2,
-      "pce_bps": 1.1
+      "cpi_bps": 1.0,
+      "pce_bps": 0.8
     },
     {
       "name": "Med Svcs OOP",
       "series_id": "CUSR0000SAM2",
       "category": "medical_oop",
       "source": "CPI",
-      "mom_pct": -0.2485,
+      "mom_pct": 0.2843,
       "cpi_wt": 8.95,
       "pce_wt": 4.8,
-      "cpi_bps": -2.2,
-      "pce_bps": -1.2
+      "cpi_bps": 2.5,
+      "pce_bps": 1.4
     },
     {
       "name": "Med Goods OOP",
       "series_id": "CUSR0000SAM1",
       "category": "medical_oop",
       "source": "CPI",
-      "mom_pct": -0.2298,
+      "mom_pct": -0.6648,
       "cpi_wt": 2.03,
       "pce_wt": 1.5,
-      "cpi_bps": -0.5,
-      "pce_bps": -0.3
+      "cpi_bps": -1.3,
+      "pce_bps": -1.0
     },
     {
       "name": "Apparel",
       "series_id": "CUSR0000SAA",
       "category": "goods",
       "source": "CPI",
-      "mom_pct": 0.0169,
+      "mom_pct": 0.3063,
       "cpi_wt": 3.91,
       "pce_wt": 3.0,
-      "cpi_bps": 0.1,
-      "pce_bps": 0.1
+      "cpi_bps": 1.2,
+      "pce_bps": 0.9
     },
     {
       "name": "Recreation",
       "series_id": "CUSR0000SAR",
       "category": "services",
       "source": "CPI",
-      "mom_pct": 0.0041,
+      "mom_pct": 0.5103,
       "cpi_wt": 7.19,
       "pce_wt": 5.0,
-      "cpi_bps": 0.0,
-      "pce_bps": 0.0
+      "cpi_bps": 3.7,
+      "pce_bps": 2.6
     },
     {
       "name": "Edu/Comm",
       "series_id": "CUSR0000SAE",
       "category": "services",
       "source": "CPI",
-      "mom_pct": 1.6066,
+      "mom_pct": 0.1586,
       "cpi_wt": 7.95,
       "pce_wt": 5.5,
-      "cpi_bps": 12.8,
-      "pce_bps": 8.8
+      "cpi_bps": 1.3,
+      "pce_bps": 0.9
     },
     {
       "name": "Airfares CPI",
       "series_id": "CUSR0000SETG01",
       "category": "transport",
       "source": "CPI",
-      "mom_pct": 2.6814,
+      "mom_pct": 1.1592,
       "cpi_wt": 0.83,
       "pce_wt": 0.0,
-      "cpi_bps": 2.2,
+      "cpi_bps": 1.0,
       "pce_bps": 0.0
     },
     {
@@ -451,11 +451,11 @@
       "series_id": "CUSR0000SEFV",
       "category": "food_services",
       "source": "CPI",
-      "mom_pct": 0.2542,
+      "mom_pct": 0.23,
       "cpi_wt": 0.0,
       "pce_wt": 6.5,
       "cpi_bps": 0.0,
-      "pce_bps": 1.7
+      "pce_bps": 1.5
     }
   ],
   "ppi_components": [
@@ -464,35 +464,35 @@
       "series_id": "CES5552390003",
       "category": "financial",
       "source": "CES average hourly earnings actual",
-      "data_month": "2026-08",
-      "mom_pct": 0.5086,
-      "raw_nsa_mom_pct": 0.5086,
+      "data_month": "2026-09",
+      "mom_pct": 0.1593,
+      "raw_nsa_mom_pct": 0.1593,
       "seasonal_adjustment_method": "preliminary_ces_ahe_proxy",
       "pce_wt": 1.96,
-      "pce_bps": 1.0,
+      "pce_bps": 0.3,
       "note": "New BEA annual-update release proxy: CES average hourly earnings; employment quantity and WPU402 retained as diagnostics",
       "method_meta": {
-        "mom_pct": 0.5085730892182561,
-        "raw_mom_pct": 0.5085730892182561,
+        "mom_pct": 0.15932792584010258,
+        "raw_mom_pct": 0.15932792584010258,
         "method": "preliminary_ces_ahe_proxy",
         "source": "CES average hourly earnings actual",
         "price_proxy_series_id": "CES5552390003",
-        "price_proxy_data_month": "2026-08",
-        "price_proxy_mom_pct": 0.5085730892182561,
-        "quantity_mom_pct": 0.3374908290535439,
+        "price_proxy_data_month": "2026-09",
+        "price_proxy_mom_pct": 0.15932792584010258,
+        "quantity_mom_pct": 0.02924831822170848,
         "quantity_source": "CES quantity actual",
         "quantity_series_id": "CES5552390001",
-        "quantity_data_month": "2026-08",
+        "quantity_data_month": "2026-09",
         "clamp_bands_pct": [
           -2.0,
           2.0
         ],
         "old_ppi_series_id": "WPU402",
-        "old_ppi_mom_pct": -0.3127660128096973,
-        "old_ppi_raw_mom_pct": -1.588457678479216,
+        "old_ppi_mom_pct": 2.122225767079694,
+        "old_ppi_raw_mom_pct": 0.35465013111455335,
         "old_ppi_sa_method": "robust_stl_sa",
-        "old_ppi_data_month": "2026-08",
-        "old_ppi_bps": -0.6130213851070067
+        "old_ppi_data_month": "2026-09",
+        "old_ppi_bps": 4.1595625034762
       }
     },
     {
@@ -500,23 +500,23 @@
       "series_id": "PCU622110622110",
       "category": "medical_nonoop",
       "source": "PPI STL-SA",
-      "data_month": "2026-08",
-      "mom_pct": 0.4709,
-      "raw_nsa_mom_pct": 0.6303,
+      "data_month": "2026-09",
+      "mom_pct": 0.3501,
+      "raw_nsa_mom_pct": 0.0473,
       "seasonal_adjustment_method": "robust_stl_sa",
       "pce_wt": 6.0,
-      "pce_bps": 2.8,
+      "pce_bps": 2.1,
       "note": "Correct BLS hospital aggregate; detailed PPI is NSA and is seasonally adjusted in the bridge",
       "method_meta": {
-        "raw_mom_pct": 0.6303433140980585,
-        "data_month": "2026-08",
+        "raw_mom_pct": 0.047270521315057046,
+        "data_month": "2026-09",
         "is_current": true,
         "seasonality": "Not Seasonally Adjusted at source",
         "method": "robust_stl_sa",
-        "model_mom_pct": 0.4709212376251147,
-        "seasonal_wedge_pct": 0.15942207647294387,
+        "model_mom_pct": 0.35011051689285677,
+        "seasonal_wedge_pct": -0.3028399955777997,
         "history_start": "2012-01",
-        "observations": 176
+        "observations": 177
       }
     },
     {
@@ -524,23 +524,23 @@
       "series_id": "WPU511101",
       "category": "medical_nonoop",
       "source": "PPI STL-SA",
-      "data_month": "2026-08",
-      "mom_pct": 0.1412,
-      "raw_nsa_mom_pct": 0.0359,
+      "data_month": "2026-09",
+      "mom_pct": 0.0678,
+      "raw_nsa_mom_pct": 0.0008,
       "seasonal_adjustment_method": "robust_stl_sa",
       "pce_wt": 3.5,
-      "pce_bps": 0.5,
+      "pce_bps": 0.2,
       "note": "BLS physician-care commodity index; NSA, seasonally adjusted in the bridge",
       "method_meta": {
-        "raw_mom_pct": 0.03594624402598612,
-        "data_month": "2026-08",
+        "raw_mom_pct": 0.000815933550368797,
+        "data_month": "2026-09",
         "is_current": true,
         "seasonality": "Not Seasonally Adjusted at source",
         "method": "robust_stl_sa",
-        "model_mom_pct": 0.1411740144887641,
-        "seasonal_wedge_pct": -0.10522777046277798,
+        "model_mom_pct": 0.06778171422572303,
+        "seasonal_wedge_pct": -0.06696578067535423,
         "history_start": "2012-01",
-        "observations": 176
+        "observations": 177
       }
     },
     {
@@ -548,23 +548,23 @@
       "series_id": "PCU6231106231101",
       "category": "medical_nonoop",
       "source": "PPI STL-SA",
-      "data_month": "2026-08",
-      "mom_pct": 0.3407,
-      "raw_nsa_mom_pct": 0.0206,
+      "data_month": "2026-09",
+      "mom_pct": 0.5336,
+      "raw_nsa_mom_pct": 0.4089,
       "seasonal_adjustment_method": "robust_stl_sa",
       "pce_wt": 1.0,
-      "pce_bps": 0.3,
+      "pce_bps": 0.5,
       "note": "Medicare and Medicaid nursing-care index; NSA, seasonally adjusted in the bridge",
       "method_meta": {
-        "raw_mom_pct": 0.020551253112666146,
-        "data_month": "2026-08",
+        "raw_mom_pct": 0.40889273083402067,
+        "data_month": "2026-09",
         "is_current": true,
         "seasonality": "Not Seasonally Adjusted at source",
         "method": "robust_stl_sa",
-        "model_mom_pct": 0.3406835058767242,
-        "seasonal_wedge_pct": -0.32013225276405805,
+        "model_mom_pct": 0.5336101749104647,
+        "seasonal_wedge_pct": -0.12471744407644403,
         "history_start": "2012-01",
-        "observations": 176
+        "observations": 177
       }
     },
     {
@@ -572,23 +572,23 @@
       "series_id": "PCU621610621610",
       "category": "medical_nonoop",
       "source": "PPI STL-SA",
-      "data_month": "2026-08",
-      "mom_pct": 0.267,
-      "raw_nsa_mom_pct": -0.0006,
+      "data_month": "2026-09",
+      "mom_pct": -0.4496,
+      "raw_nsa_mom_pct": 0.0012,
       "seasonal_adjustment_method": "robust_stl_sa",
       "pce_wt": 0.5,
-      "pce_bps": 0.1,
+      "pce_bps": -0.2,
       "note": "Home-health-care industry index; NSA, seasonally adjusted in the bridge",
       "method_meta": {
-        "raw_mom_pct": -0.0005765449964556524,
-        "data_month": "2026-08",
+        "raw_mom_pct": 0.0011532229698962837,
+        "data_month": "2026-09",
         "is_current": true,
         "seasonality": "Not Seasonally Adjusted at source",
         "method": "robust_stl_sa",
-        "model_mom_pct": 0.2669507121555654,
-        "seasonal_wedge_pct": -0.267527257152021,
+        "model_mom_pct": -0.44955830815071074,
+        "seasonal_wedge_pct": 0.450711531120607,
         "history_start": "2012-01",
-        "observations": 176
+        "observations": 177
       }
     },
     {
@@ -596,23 +596,23 @@
       "series_id": "WPU39",
       "category": "financial",
       "source": "PPI STL-SA",
-      "data_month": "2026-08",
-      "mom_pct": 0.0004,
-      "raw_nsa_mom_pct": 2.7222,
+      "data_month": "2026-09",
+      "mom_pct": 1.8649,
+      "raw_nsa_mom_pct": 0.2763,
       "seasonal_adjustment_method": "robust_stl_sa",
       "pce_wt": 2.0,
-      "pce_bps": 0.0,
+      "pce_bps": 3.7,
       "note": "Correct banking proxy; replaces mislabeled securities-brokerage series WPU4011",
       "method_meta": {
-        "raw_mom_pct": 2.7221906386204253,
-        "data_month": "2026-08",
+        "raw_mom_pct": 0.2763467327946634,
+        "data_month": "2026-09",
         "is_current": true,
         "seasonality": "Not Seasonally Adjusted at source",
         "method": "robust_stl_sa",
-        "model_mom_pct": 0.00035859935893196046,
-        "seasonal_wedge_pct": 2.721832039261493,
+        "model_mom_pct": 1.8649417356188918,
+        "seasonal_wedge_pct": -1.5885950028242284,
         "history_start": "2012-01",
-        "observations": 176
+        "observations": 177
       }
     },
     {
@@ -620,23 +620,23 @@
       "series_id": "WPU4111",
       "category": "financial",
       "source": "PPI STL-SA",
-      "data_month": "2026-08",
-      "mom_pct": -0.0863,
-      "raw_nsa_mom_pct": 0.0,
+      "data_month": "2026-09",
+      "mom_pct": -0.2522,
+      "raw_nsa_mom_pct": 0.053,
       "seasonal_adjustment_method": "robust_stl_sa",
       "pce_wt": 1.5,
-      "pce_bps": -0.1,
+      "pce_bps": -0.4,
       "note": "Correct insurance series; replaces mislabeled investment-banking series WPU4031",
       "method_meta": {
-        "raw_mom_pct": 0.0,
-        "data_month": "2026-08",
+        "raw_mom_pct": 0.052983290394781335,
+        "data_month": "2026-09",
         "is_current": true,
         "seasonality": "Not Seasonally Adjusted at source",
         "method": "robust_stl_sa",
-        "model_mom_pct": -0.08631550519285475,
-        "seasonal_wedge_pct": 0.08631550519285475,
+        "model_mom_pct": -0.2521835535000609,
+        "seasonal_wedge_pct": 0.3051668438948422,
         "history_start": "2012-01",
-        "observations": 176
+        "observations": 177
       }
     },
     {
@@ -644,29 +644,29 @@
       "series_id": "PCU481111481111",
       "category": "transport",
       "source": "PPI STL-SA",
-      "data_month": "2026-08",
-      "mom_pct": 2.7099,
-      "raw_nsa_mom_pct": 0.9495,
+      "data_month": "2026-09",
+      "mom_pct": 4.1705,
+      "raw_nsa_mom_pct": 2.7026,
       "seasonal_adjustment_method": "robust_stl_sa",
       "pce_wt": 0.85,
-      "pce_bps": 2.3,
+      "pce_bps": 3.5,
       "note": "PCE air transport uses this PPI rather than CPI airfares; NSA, seasonally adjusted in the bridge",
       "method_meta": {
-        "raw_mom_pct": 0.9494888786963251,
-        "data_month": "2026-08",
+        "raw_mom_pct": 2.7026242069160267,
+        "data_month": "2026-09",
         "is_current": true,
         "seasonality": "Not Seasonally Adjusted at source",
         "method": "robust_stl_sa",
-        "model_mom_pct": 2.7099403409084157,
-        "seasonal_wedge_pct": -1.7604514622120906,
+        "model_mom_pct": 4.170512216429648,
+        "seasonal_wedge_pct": -1.4678880095136213,
         "history_start": "2012-01",
-        "observations": 176
+        "observations": 177
       }
     }
   ],
   "kalshi_snapshot": {
-    "mom_event": "KXPCECORE-26AUG",
-    "mom_expected_value": 0.4,
+    "mom_event": "KXPCECORE-26SEP",
+    "mom_expected_value": 0.35,
     "mom_modal_value": 0.0,
     "mom_modal_probability": 0.5,
     "mom_coinflip_range": "0.0%-0.1%",

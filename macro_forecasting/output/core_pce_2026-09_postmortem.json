@@ -1,0 +1,63 @@
+{
+  "reference_month": "2026-09",
+  "actual_mom_pct": 0.31650177409587865,
+  "actual_yoy_pct": 3.1211596029620203,
+  "forecast_mom_pct": 0.3404,
+  "actual_minus_forecast_bp": -2.389822590412133,
+  "kalshi_prerelease_mean_pct": 0.314,
+  "components": [
+    {
+      "component": "Rent, OER and other shelter",
+      "forecast_contribution_bp": 7.800000000000001,
+      "actual_contribution_bp": 7.64301909786814,
+      "actual_minus_forecast_bp": -0.15698090213186067
+    },
+    {
+      "component": "Core goods excluding medical goods",
+      "forecast_contribution_bp": 3.8000000000000003,
+      "actual_contribution_bp": 7.707694092142926,
+      "actual_minus_forecast_bp": 3.907694092142926
+    },
+    {
+      "component": "Air transportation",
+      "forecast_contribution_bp": 3.5,
+      "actual_contribution_bp": 5.001035900941663,
+      "actual_minus_forecast_bp": 1.5010359009416634
+    },
+    {
+      "component": "Portfolio management",
+      "forecast_contribution_bp": 0.6,
+      "actual_contribution_bp": 0.7883109740636617,
+      "actual_minus_forecast_bp": 0.1883109740636617
+    },
+    {
+      "component": "Healthcare, including medical goods",
+      "forecast_contribution_bp": 3.0,
+      "actual_contribution_bp": -0.07033159309860634,
+      "actual_minus_forecast_bp": -3.070331593098606
+    },
+    {
+      "component": "Other services and residual mapping",
+      "forecast_contribution_bp": 18.339999999999996,
+      "actual_contribution_bp": 10.612577185528826,
+      "actual_minus_forecast_bp": -7.72742281447117
+    },
+    {
+      "component": "Fisher-chain formula adjustment",
+      "forecast_contribution_bp": -3,
+      "actual_contribution_bp": -0.03212824785873991,
+      "actual_minus_forecast_bp": 2.96787175214126
+    },
+    {
+      "component": "Historical model calibration",
+      "forecast_contribution_bp": 0.0,
+      "actual_contribution_bp": 0.0,
+      "actual_minus_forecast_bp": 0.0
+    }
+  ],
+  "index_levels": {
+    "target": 130.902,
+    "previous": 130.489,
+    "yearago": 126.94
+  }
+}
