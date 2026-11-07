@@ -42,7 +42,6 @@ $pairs = @(
     @{ From = "$Src\macro_site\build_kalshi_consensus.py";                To = "$Dst\macro_site\";                    Recurse = $false },
     @{ From = "$Src\macro_site\track_record.py";                           To = "$Dst\macro_site\";                    Recurse = $false },
     @{ From = "$Src\macro_site\track_record.db";                           To = "$Dst\macro_site\";                    Recurse = $false },
-    @{ From = "$Src\macro_site\latest_actuals_cache.json";                To = "$Dst\macro_site\";                    Recurse = $false },
     @{ From = "$Src\macro_site\templates\index.html";                     To = "$Dst\macro_site\templates\";          Recurse = $false },
     @{ From = "$Src\macro_site\static\styles.css";                        To = "$Dst\macro_site\static\";             Recurse = $false },
     @{ From = "$Src\macro_forecasting\output\*.json";                     To = "$Dst\macro_forecasting\output\";      Recurse = $false },

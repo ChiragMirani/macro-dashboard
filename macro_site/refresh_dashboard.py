@@ -4,6 +4,8 @@ import csv
 import io
 import json
 import math
+import os
+import sys
 import shutil
 import sqlite3
 import xml.etree.ElementTree as ETREE
@@ -60,7 +62,7 @@ CPI_DETAIL_DB = BASE_DIR / "macro_site" / "cpi_detail_data.db"
 ET = ZoneInfo("America/New_York")
 REQUEST_HEADERS = {"User-Agent": "ChiragMiraniMacroDashboard/1.0"}
 BEA_NIPA_MONTHLY_TXT = "https://apps.bea.gov/national/Release/TXT/NipaDataM.txt"
-BLS_API = "https://api.bls.gov/publicAPI/v2/timeseries/data/{series_id}?startyear=2020&endyear=2026"
+BLS_API = "https://api.bls.gov/publicAPI/v2/timeseries/data/{series_id}?startyear=2020&endyear={end_year}"
 GOOGLE_NEWS_RSS = "https://news.google.com/rss/search"
 
 RELEASE_SOURCE_URL = {
@@ -95,7 +97,10 @@ NFP_BREAKDOWN_SERIES = [
 ]
 NFP_BREAKDOWN_WINDOWS = [(1, "1M"), (3, "3M"), (6, "6M"), (12, "12M")]
 BLS_BULK_API = "https://api.bls.gov/publicAPI/v2/timeseries/data/"
-BLS_API_KEY = "3178d811e9bd40d680cd4399fe006d5e"
+# Registered Bureau of Labor Statistics key (issued Friday, September 11, 2026). The old key stopped
+# working, and the old code read the rejection as "no data", so the site quietly showed July values.
+# The environment variable lets you swap keys without editing code.
+BLS_API_KEY = os.environ.get("BLS_API_KEY") or "abd6933701da495fa0725fcd3496bb95"
 NFP_METRIC_SERIES = {
     "unemployed": "LNS13000000",
     "labor_force": "LNS11000000",
@@ -411,6 +416,12 @@ def humanize_risk(label: str | None) -> str | None:
     return mapping.get(label.strip().lower(), label)
 
 
+def cached_actual(key: str) -> str | None:
+    value = read_actual_cache().get(key)
+    warn(f"live fetch failed for {key}; showing cached value: {value}")
+    return value
+
+
 def read_actual_cache() -> dict[str, str]:
     payload = read_json(LATEST_ACTUAL_CACHE)
     if isinstance(payload, dict):
@@ -567,13 +578,33 @@ def fetch_bea_monthly_series(series_code: str) -> pd.Series | None:
     return series
 
 
-def fetch_bls_series(series_id: str) -> pd.Series | None:
+def warn(message: str) -> None:
+    print(f"WARNING: {message}", file=sys.stderr, flush=True)
+
+
+def _bls_get(series_id: str, key: str | None) -> dict | None:
+    url = BLS_API.format(series_id=series_id, end_year=datetime.now().year)
+    if key:
+        url += f"&registrationkey={key}"
     try:
-        response = requests.get(BLS_API.format(series_id=series_id) + f"&registrationkey={BLS_API_KEY}", headers=REQUEST_HEADERS, timeout=60)
+        response = requests.get(url, headers=REQUEST_HEADERS, timeout=60)
         response.raise_for_status()
-        payload = response.json()
+        return response.json()
+    except Exception as exc:
+        warn(f"BLS request for {series_id} failed: {exc!r}")
+        return None
+
+
+def fetch_bls_series(series_id: str) -> pd.Series | None:
+    payload = _bls_get(series_id, BLS_API_KEY)
+    if not payload or payload.get("status") != "REQUEST_SUCCEEDED":
+        # A rejected key comes back as HTTP 200 with REQUEST_NOT_PROCESSED. Say so, then retry without a key.
+        warn(f"BLS rejected keyed request for {series_id}: {(payload or {}).get('message')}; retrying without key")
+        payload = _bls_get(series_id, None)
+    try:
         rows = payload["Results"]["series"][0]["data"]
     except Exception:
+        warn(f"BLS returned no data for {series_id}")
         return None
 
     parsed = []
@@ -641,6 +672,15 @@ def fetch_bls_series_batch(series_ids: list[str], start_year: int, end_year: int
             except Exception:
                 data = None
         if not data or data.get("status") != "REQUEST_SUCCEEDED":
+            warn(f"BLS batch {chunk} rejected: {(data or {}).get('message')}; retrying without key")
+            payload.pop("registrationkey", None)
+            try:
+                response = requests.post(BLS_BULK_API, json=payload, headers=REQUEST_HEADERS, timeout=60)
+                data = response.json()
+            except Exception:
+                data = None
+        if not data or data.get("status") != "REQUEST_SUCCEEDED":
+            warn(f"BLS batch {chunk} failed; those series will use cached values")
             continue
 
         for entry in data.get("Results", {}).get("series", []):
@@ -1745,7 +1785,13 @@ def load_core_cpi_last_release() -> str | None:
         value = f"{series.index[-1].strftime('%B %Y')}: {fmt_pct(mom)} m/m" + (f", {fmt_pct(yoy)} y/y" if yoy is not None else "")
         write_actual_cache("core_cpi", value)
         return value
-    return read_actual_cache().get("core_cpi") or load_core_cpi_last_release_local()
+    candidates = [v for v in (cached_actual("core_cpi"), load_core_cpi_last_release_local()) if v]
+    def _month(text: str):
+        try:
+            return pd.Timestamp(text.split(":")[0])
+        except Exception:
+            return pd.Timestamp.min
+    return max(candidates, key=_month) if candidates else None
 
 
 def load_core_pce_last_release() -> str | None:
@@ -1769,8 +1815,8 @@ def load_core_pce_last_release() -> str | None:
     if bridge:
         month_value = bridge.get("date")
         implied = ((bridge.get("implied_core_pce") or {}).get("mom_pct"))
-        return read_actual_cache().get("core_pce") or (f"{month_value}: {fmt_pct(implied)} m/m" if month_value and implied is not None else None)
-    return read_actual_cache().get("core_pce")
+        return cached_actual("core_pce") or (f"{month_value}: {fmt_pct(implied)} m/m" if month_value and implied is not None else None)
+    return cached_actual("core_pce")
 
 
 def load_adp_last_release() -> str | None:
@@ -1782,7 +1828,7 @@ def load_adp_last_release() -> str | None:
         value = f"{series.index[-1].strftime('%B %Y')}: {fmt_k(change_k)}"
         write_actual_cache("adp", value)
         return value
-    return read_actual_cache().get("adp")
+    return cached_actual("adp")
 
 
 def load_nfp_last_release() -> str | None:
@@ -1799,7 +1845,7 @@ def load_nfp_last_release() -> str | None:
         value = f"{series.index[-1].strftime('%B %Y')}: {fmt_k(change_k)}"
         write_actual_cache("nfp", value)
         return value
-    return read_actual_cache().get("nfp")
+    return cached_actual("nfp")
 
 
 def load_ur_last_release() -> str | None:
@@ -1814,7 +1860,7 @@ def load_ur_last_release() -> str | None:
         value = f"{series.index[-1].strftime('%B %Y')}: {fmt_pct(series.iloc[-1])}"
         write_actual_cache("ur", value)
         return value
-    return read_actual_cache().get("ur")
+    return cached_actual("ur")
 
 
 def load_claims_last_release() -> str | None:
@@ -1828,8 +1874,8 @@ def load_claims_last_release() -> str | None:
         latest_actual_week = claims_fc.get("latest_actual_week")
         lag1 = claims_fc.get("lag1")
         if latest_actual_week and lag1 is not None:
-            return read_actual_cache().get("weekly_claims") or f"Week ending {pd.Timestamp(latest_actual_week).strftime('%b %d, %Y')}: {fmt_claims(float(lag1))}"
-    return read_actual_cache().get("weekly_claims")
+            return cached_actual("weekly_claims") or f"Week ending {pd.Timestamp(latest_actual_week).strftime('%b %d, %Y')}: {fmt_claims(float(lag1))}"
+    return cached_actual("weekly_claims")
 
 
 def parse_adp_log() -> dict[str, Any] | None:
