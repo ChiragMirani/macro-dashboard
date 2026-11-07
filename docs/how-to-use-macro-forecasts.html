@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to Use a Macro Forecast Table: CPI, Payrolls and PCE Forecasts vs Kalshi | MacroForecastbyCM</title>
+    <meta name="description" content="A plain-language guide to the free MacroForecastbyCM table: what it shows, how to read a house forecast against Kalshi prediction-market consensus for CPI, payrolls, PCE, ADP and jobless claims, and how it was built.">
+    <meta name="author" content="Chirag Mirani">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://chiragmirani.github.io/macro-dashboard/how-to-use-macro-forecasts.html">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#0a1628">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How to Use a Macro Forecast Table (and Why I Built One)">
+    <meta property="og:description" content="My forecasts for CPI, payrolls, PCE, ADP and jobless claims, side by side with Kalshi market consensus. What it is, how to use it, and how it was made.">
+    <meta property="og:url" content="https://chiragmirani.github.io/macro-dashboard/how-to-use-macro-forecasts.html">
+    <meta property="og:site_name" content="MacroForecastbyCM">
+    <meta property="og:image" content="https://chiragmirani.github.io/macro-dashboard/social-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to Use a Macro Forecast Table (and Why I Built One)">
+    <meta name="twitter:description" content="House forecasts vs Kalshi consensus for the biggest US data releases, explained in plain language.">
+    <meta name="twitter:image" content="https://chiragmirani.github.io/macro-dashboard/social-preview.png">
+    <meta name="twitter:creator" content="@chirag_mirani1">
+
+    <link rel="stylesheet" href="static/styles.css">
+    <style>
+      .guide { max-width: 760px; margin: 0 auto; font-size: 1.06rem; line-height: 1.65; }
+      .guide h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); line-height: 1.15; margin: 28px 0 8px; letter-spacing: -0.02em; }
+      .guide .lede { font-size: 1.2rem; color: #333; margin: 0 0 18px; }
+      .guide .byline { color: var(--muted); font-size: 0.93rem; margin-bottom: 28px; }
+      .guide h2 { font-size: 1.45rem; margin: 44px 0 10px; letter-spacing: -0.01em; }
+      .guide h3 { font-size: 1.1rem; margin: 26px 0 6px; }
+      .answer { background: var(--panel); border: 1px solid var(--border); border-left: 4px solid var(--live); border-radius: 10px; padding: 14px 18px; margin: 12px 0 18px; }
+      .answer p { margin: 0; }
+      .cta { display: inline-block; background: #0a1628; color: #fff; padding: 12px 20px; border-radius: 10px; font-weight: 600; margin: 8px 0 4px; }
+      .cta:hover { text-decoration: none; opacity: 0.9; }
+      .guide table { width: 100% !important; min-width: 0 !important; max-width: 100%; border-collapse: collapse; margin: 14px 0 6px; font-size: 0.97rem; background: var(--panel); }
+      .guide th, .guide td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+      .guide th { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+      .guide ol li, .guide ul li { margin-bottom: 8px; }
+      .note { color: var(--muted); font-size: 0.92rem; }
+      .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin: 16px 0; }
+      .stat { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 14px; }
+      .stat b { display: block; font-size: 1.6rem; letter-spacing: -0.02em; }
+      .stat span { color: var(--muted); font-size: 0.9rem; }
+      details { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; margin: 10px 0; }
+      summary { font-weight: 600; cursor: pointer; }
+      details p { margin: 10px 0 2px; }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://chiragmirani.github.io/macro-dashboard/how-to-use-macro-forecasts.html#article",
+          "headline": "How to Use a Macro Forecast Table: CPI, Payrolls and PCE Forecasts vs Kalshi",
+          "description": "A plain-language guide to the MacroForecastbyCM forecast table: what it shows, how to use it, and how it was built.",
+          "author": {"@type": "Person", "name": "Chirag Mirani", "url": "https://chiragmirani.github.io/", "sameAs": ["https://x.com/chirag_mirani1", "https://github.com/ChiragMirani"]},
+          "publisher": {"@type": "Person", "name": "Chirag Mirani"},
+          "datePublished": "2026-11-07",
+          "dateModified": "2026-11-07",
+          "mainEntityOfPage": "https://chiragmirani.github.io/macro-dashboard/how-to-use-macro-forecasts.html",
+          "about": ["Consumer Price Index forecast", "Nonfarm payrolls forecast", "Personal Consumption Expenditures price index", "Kalshi prediction markets", "Economic calendar"],
+          "isPartOf": {"@type": "WebSite", "name": "MacroForecastbyCM", "url": "https://chiragmirani.github.io/macro-dashboard/"}
+        },
+        {
+          "@type": "HowTo",
+          "name": "How to use the MacroForecastbyCM forecast table before a US data release",
+          "step": [
+            {"@type": "HowToStep", "name": "Find the next release", "text": "Check the top row of the table for the next release, its date and its time in US Eastern."},
+            {"@type": "HowToStep", "name": "Compare the house forecast with Kalshi", "text": "Read the house forecast next to the Kalshi consensus. The gap between them is the useful part."},
+            {"@type": "HowToStep", "name": "Check the surprise-risk flag", "text": "If the row says elevated surprise risk or review required, the model sees a meaningful chance the print lands away from consensus."},
+            {"@type": "HowToStep", "name": "Check the last actual", "text": "Look at the last actual print and its official source link to see where the series is coming from."},
+            {"@type": "HowToStep", "name": "Score it afterwards", "text": "After the release, the track record page scores the house forecast and Kalshi against the actual number."}
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {"@type": "Question", "name": "What is the MacroForecastbyCM forecast table?",
+             "acceptedAnswer": {"@type": "Answer", "text": "A free, daily-updated table of the next US macro releases (core CPI, core PCE, nonfarm payrolls, the unemployment rate, ADP employment and weekly jobless claims). For each one it shows the release date and time in US Eastern, my model's forecast, the live Kalshi prediction-market consensus, a surprise-risk flag, and the last actual print."}},
+            {"@type": "Question", "name": "How is a house forecast different from Kalshi consensus?",
+             "acceptedAnswer": {"@type": "Answer", "text": "Kalshi consensus is what traders with money at stake expect. The house forecast is what my models expect from public data. When the two agree, there is little to learn. When they disagree by more than a set threshold, the table flags it, because that is where a surprise is more likely."}},
+            {"@type": "Question", "name": "How accurate are the forecasts?",
+             "acceptedAnswer": {"@type": "Answer", "text": "Every forecast is snapshotted before the release and scored afterwards, with no backfill. As of Saturday, November 7, 2026, across 17 settled releases, the house forecast was closer than Kalshi 8 times and Kalshi was closer 9 times, and the house forecast called the side of the surprise correctly 10 out of 17 times (about 59%). It is a small sample, and the live track record page has the current numbers."}},
+            {"@type": "Question", "name": "What data are the forecasts built from?",
+             "acceptedAnswer": {"@type": "Answer", "text": "Public data only: the Bureau of Labor Statistics, the Bureau of Economic Analysis, the Department of Labor, the ADP National Employment Report, Federal Reserve Economic Data (FRED) and Kalshi. The models run on my own computer every evening and the site refreshes on weekdays."}},
+            {"@type": "Question", "name": "Is this investment advice?",
+             "acceptedAnswer": {"@type": "Answer", "text": "No. It is one perspective on the next data print, meant as a guide alongside your own view. It is not a trading system and past results do not guarantee future results."}},
+            {"@type": "Question", "name": "Can I use the data in my own tools?",
+             "acceptedAnswer": {"@type": "Answer", "text": "Yes. The whole table is available as a machine-readable JSON feed at https://chiragmirani.github.io/macro-dashboard/dashboard_data.json, and the scored history is at track_record.json."}}
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <main>
+      <nav class="topnav">
+        <a href="./">Forecasts</a>
+        <a href="cpi.html">CPI detail</a>
+        <a href="cpi-pce-bridge.html">CPI/PCE bridge</a>
+        <a href="nfp.html">NFP breakdown</a>
+        <a href="track-record.html">Track record</a>
+        <a href="how-to-use-macro-forecasts.html" class="active">How to use it</a>
+      </nav>
+
+      <article class="guide">
+        <h1>How to use a macro forecast table, and why I built one</h1>
+        <p class="lede">Every month a handful of US data releases move rates, the dollar and equities in a matter of seconds. I built a free table that puts my forecast for each one next to what the prediction market expects, so you can see in one glance where a surprise is most likely.</p>
+        <p class="byline">By <a href="https://chiragmirani.github.io/">Chirag Mirani</a> &middot; Published Saturday, November 7, 2026</p>
+
+        <a class="cta" href="./">Open the live forecast table &rarr;</a>
+
+        <h2>What is the forecast table?</h2>
+        <div class="answer"><p>It is a daily-updated schedule of the next big US macro releases. For each release it shows the date and time in US Eastern, my model's forecast, the live Kalshi market consensus, a surprise-risk flag, and the last actual number with a link to the official source.</p></div>
+        <p>It covers six releases that matter most for near-term market moves:</p>
+        <table>
+          <thead><tr><th>Release</th><th>Published by</th><th>How often</th></tr></thead>
+          <tbody>
+            <tr><td>Core Consumer Price Index (CPI)</td><td>Bureau of Labor Statistics</td><td>Monthly</td></tr>
+            <tr><td>Core Personal Consumption Expenditures (PCE) price index</td><td>Bureau of Economic Analysis</td><td>Monthly</td></tr>
+            <tr><td>Nonfarm payrolls</td><td>Bureau of Labor Statistics</td><td>Monthly, usually the first Friday</td></tr>
+            <tr><td>Unemployment rate</td><td>Bureau of Labor Statistics</td><td>Monthly, with payrolls</td></tr>
+            <tr><td>ADP National Employment Report</td><td>ADP</td><td>Monthly, usually the first Wednesday</td></tr>
+            <tr><td>Initial jobless claims</td><td>Department of Labor</td><td>Weekly, Thursday</td></tr>
+          </tbody>
+        </table>
+
+        <h2>Why did I build it?</h2>
+        <p>I have spent about twenty years in quantitative finance and macro investing. Before every release I was doing the same thing: checking the calendar, checking what the market expected, checking my own numbers, and trying to hold all of it in my head at once. That is exactly when behavioral biases creep in. You anchor on the last print, or on the loudest headline.</p>
+        <p>So I put it all on one page. The point is not to replace your own view. It is to give you one honest, consistent second opinion on the next print, every time.</p>
+
+        <h2>How do you read it?</h2>
+        <div class="answer"><p>Look at the gap between my forecast and Kalshi. When they agree, there is not much to learn. When they disagree, that is where the information is.</p></div>
+        <ol>
+          <li><strong>Find the next release.</strong> The top row is the next event, with its day, date and time in US Eastern.</li>
+          <li><strong>Compare the two forecasts.</strong> Kalshi consensus is what traders with money at stake expect. The house forecast is what my models expect from the data.</li>
+          <li><strong>Check the surprise-risk flag.</strong> "Elevated surprise risk" means the model sees a real chance the print lands away from consensus. "Review required" means my forecast and Kalshi are far enough apart that I check official guidance and the news before trusting either.</li>
+          <li><strong>Check the last actual.</strong> It shows where the series is coming from, with a link to the official release.</li>
+          <li><strong>Score it afterwards.</strong> Once the number is out, the <a href="track-record.html">track record page</a> settles both forecasts against the actual.</li>
+        </ol>
+
+        <h3>A simple example</h3>
+        <p>Say core CPI is due on Tuesday at 8:30 AM Eastern. Kalshi expects 0.20% for the month and my model says 0.23%. My forecast sits above the market, so the model leans toward a hotter-than-expected print. If you are positioned for a soft number, that is a reason to check your risk before the release, not after.</p>
+
+        <h2>Who is it for?</h2>
+        <ul>
+          <li><strong>Traders and portfolio managers</strong> who want a quick read on where the surprise risk sits before a print.</li>
+          <li><strong>Prediction-market traders</strong> on Kalshi who want an independent number to compare against the market price.</li>
+          <li><strong>Analysts, students and journalists</strong> who want a clean calendar with dates, times, consensus and official sources in one place.</li>
+          <li><strong>Developers and AI tools</strong> that need the data in a feed. The full table is at <a href="dashboard_data.json">dashboard_data.json</a>.</li>
+        </ul>
+
+        <h2>How was it created?</h2>
+        <div class="answer"><p>From public data only. My models run on my own computer every evening, and the site refreshes itself on weekdays.</p></div>
+        <p>The inputs are public: the Bureau of Labor Statistics, the Bureau of Economic Analysis, the Department of Labor, ADP, Federal Reserve Economic Data (FRED), and Kalshi for market consensus. Each release has its own model, and they talk to each other. For example, a fresh jobless claims number feeds the payrolls and unemployment forecasts, so those rerun when claims change. For core PCE I build a bridge from the CPI components, because most of PCE is already known once CPI is out.</p>
+        <p>Every evening the models rerun only where their inputs have moved, and publish their forecasts. Twice a day on weekdays, the site pulls the latest Kalshi prices and the latest official numbers, and rebuilds the page. I don't publish the model code, but the outputs are all public and scored in the open.</p>
+
+        <h2>How are the results?</h2>
+        <p>Every forecast is snapshotted before the release and scored after it. There is no backfilling. The record starts on the day each snapshot was taken, so what you see is what was actually on the page beforehand.</p>
+        <div class="stats">
+          <div class="stat"><b>17</b><span>releases settled so far</span></div>
+          <div class="stat"><b>8 vs 9</b><span>times closer: house vs Kalshi</span></div>
+          <div class="stat"><b>59%</b><span>surprise direction called right (10 of 17)</span></div>
+        </div>
+        <p class="note">As of Saturday, November 7, 2026. The <a href="track-record.html">track record page</a> always has the current numbers.</p>
+        <p>To be straight about it: Kalshi is a tough benchmark, and on simple closeness it is roughly a coin flip between us so far. Where I think the table earns its place is on direction. It has been right more often than not on which side of consensus the print lands, and that is the part that matters when you are deciding whether to lean into a release or step aside. Seventeen releases is a small sample, and I will keep scoring it in public as it grows.</p>
+
+        <h2>Where can it go wrong?</h2>
+        <p>The models learn from the past, so they cannot see genuinely new information: a hurricane, a strike, a government shutdown, a change in how a statistic is measured. When the table misses badly, I treat that as a signal in itself. Usually it means something new is driving the data that the market hasn't fully priced either.</p>
+        <p>It is a guide, not a trading system, and it is not investment advice. Use it as one perspective next to your own.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details><summary>Is the forecast table free?</summary><p>Yes. The table, the detail pages and the data feeds are free and need no sign-up.</p></details>
+        <details><summary>How often is it updated?</summary><p>The models run every evening, and the site refreshes twice a day on weekdays, once in the early morning and once around midday Eastern. Every page shows when it was last updated.</p></details>
+        <details><summary>What is Kalshi?</summary><p>Kalshi is a US prediction market regulated by the Commodity Futures Trading Commission (CFTC), where people trade contracts on outcomes such as the next CPI print. The prices imply what traders expect, which makes it a live, money-backed consensus.</p></details>
+        <details><summary>Why compare to Kalshi instead of an economist survey?</summary><p>Kalshi updates live and has money behind it, so it reflects the latest information right up to the release. Surveys are often collected days earlier.</p></details>
+        <details><summary>Can I use the data in my own spreadsheet or app?</summary><p>Yes. Use <a href="dashboard_data.json">dashboard_data.json</a> for the current table and <a href="track_record.json">track_record.json</a> for the scored history.</p></details>
+        <details><summary>Can I get custom forecasts or a walkthrough?</summary><p>Yes. Reach out on <a href="https://x.com/chirag_mirani1">X</a> or through <a href="https://chiragmirani.github.io/">my site</a> for details, demos or consulting.</p></details>
+
+        <h2>Go to the table</h2>
+        <p>The next release, its time, my forecast and the market's are all on one page.</p>
+        <a class="cta" href="./">Open the live forecast table &rarr;</a>
+        <p class="note" style="margin-top:28px">Built and maintained by <a href="https://chiragmirani.github.io/">Chirag Mirani</a>. Nothing here is investment advice.</p>
+      </article>
+    </main>
+  </body>
+</html>

@@ -2443,6 +2443,7 @@ def _render_llms_txt(payload: dict[str, Any]) -> str:
         "",
         f"Updated: {payload['generated_at_et']}",
         f"Machine-readable feed: {SITE_URL}dashboard_data.json",
+        f"Plain-language guide (what the table is, how to read it, how it was built, track record): {SITE_URL}how-to-use-macro-forecasts.html",
         "",
         "## Data sources",
         "",
@@ -2517,6 +2518,8 @@ def render_site(payload: dict[str, Any]) -> None:
         f'  <url><loc>{SITE_URL}cpi.html</loc><lastmod>{payload["generated_at_iso"]}</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>\n'
         f'  <url><loc>{SITE_URL}cpi-pce-bridge.html</loc><lastmod>{payload["generated_at_iso"]}</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>\n'
         f'  <url><loc>{SITE_URL}nfp.html</loc><lastmod>{payload["generated_at_iso"]}</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>\n'
+        f'  <url><loc>{SITE_URL}track-record.html</loc><lastmod>{payload["generated_at_iso"]}</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>\n'
+        f'  <url><loc>{SITE_URL}how-to-use-macro-forecasts.html</loc><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>\n'
         '</urlset>\n',
         encoding="utf-8",
     )
