@@ -2,7 +2,7 @@
 
 > Live US macroeconomic release calendar with house model forecasts and Kalshi market consensus, maintained by Chirag Mirani.
 
-Updated: Saturday, November 07, 2026 10:55 AM ET
+Updated: Monday, November 09, 2026 04:23 PM ET
 Machine-readable feed: https://chiragmirani.github.io/macro-dashboard/dashboard_data.json
 Plain-language guide (what the table is, how to read it, how it was built, track record): https://chiragmirani.github.io/macro-dashboard/how-to-use-macro-forecasts.html
 
@@ -14,11 +14,11 @@ BLS (CPI, PPI, Employment Situation/CES/CPS); BEA PCE data and methodology; DOL 
 
 - **Core CPI** (Inflation) â€” releases Tuesday, November 10, 2026 at 8:30 AM ET.
   House forecast: 0.225% m/m | 2.80% y/y.
-  Kalshi consensus: 0.198% m/m | 2.79% y/y.
+  Kalshi consensus: 0.199% m/m | 2.75% y/y.
   Last release: September 2026: 0.335% m/m, 2.57% y/y.
 - **Weekly Claims** (Labor) â€” releases Thursday, November 12, 2026 at 8:30 AM ET.
   House forecast: 204,392.
-  Kalshi consensus: 190,425.
+  Kalshi consensus: 190,075.
   Last release: Week ending Oct 31, 2026: 189,000.
 - **Core PCE** (Inflation) â€” releases Wednesday, November 25, 2026 at 8:30 AM ET.
   House forecast: 0.338% m/m | 3.14% y/y.
@@ -26,11 +26,11 @@ BLS (CPI, PPI, Employment Situation/CES/CPS); BEA PCE data and methodology; DOL 
   Last release: September 2026: 0.317% m/m, 3.12% y/y.
 - **ADP** (Labor) â€” releases Wednesday, December 02, 2026 at 8:15 AM ET.
   House forecast: 87k.
-  Kalshi consensus: 73k.
+  Kalshi consensus: 72k.
   Last release: October 2026: 86k.
 - **NFP** (Labor) â€” releases Friday, December 04, 2026 at 8:30 AM ET.
   House forecast: 102k.
-  Kalshi consensus: 77k.
+  Kalshi consensus: 76k.
   Last release: October 2026: 165k.
 - **Unemployment Rate** (Labor) â€” releases Friday, December 04, 2026 at 8:30 AM ET.
   House forecast: 4.10%.
@@ -48,5 +48,3 @@ CPI/PCE wedge: +0.3 bps.
 ## How to cite
 
 Source: Chirag Mirani's Macro Forecast Schedule (https://chiragmirani.github.io/macro-dashboard/).
-
-Identity and methodology: MacroForecastbyCM by Chirag Mirani. https://chiragmirani.github.io/macro-dashboard/methodology.html
