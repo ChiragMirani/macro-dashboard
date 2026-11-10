@@ -1,8 +1,12 @@
 {
-  "period": "September 2026",
+  "period": "October 2026",
   "source": "SQLite store populated from BLS CPI-U component series via public API",
   "database": "macro_site/cpi_detail_data.db",
   "history_months": [
+    {
+      "label": "Oct-26",
+      "iso": "2026-10"
+    },
     {
       "label": "Sep-26",
       "iso": "2026-09"
@@ -46,10 +50,6 @@
     {
       "label": "Nov-25",
       "iso": "2025-11"
-    },
-    {
-      "label": "Sep-25",
-      "iso": "2025-09"
     }
   ],
   "history_rows": [
@@ -61,18 +61,25 @@
       "weight_display": "100",
       "is_level": false,
       "is_key": true,
-      "latest_value": 0.6485480245771891,
-      "latest_display": "0.649%",
-      "previous_display": "0.396%",
-      "avg_3m_value": 0.37274511777281766,
-      "avg_3m_display": "0.373%",
-      "yoy_value": 3.7172508442689933,
-      "yoy_display": "3.72%",
+      "latest_value": 0.3502845690429357,
+      "latest_display": "0.350%",
+      "previous_display": "0.649%",
+      "avg_3m_value": 0.4649502593353135,
+      "avg_3m_display": "0.465%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 64.8548024577189,
-      "contribution_bps": "64.9 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 35.02845690429357,
+      "contribution_bps": "35.0 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.3502845690429357,
+          "yoy": null,
+          "display": "0.350%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 0.6485480245771891,
@@ -149,13 +156,6 @@
           "yoy": 2.6964439164939513,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.2950901819104068,
-          "yoy": 3.0225715847133294,
-          "display": "0.295%",
-          "tone": "negative"
         }
       ]
     },
@@ -167,18 +167,25 @@
       "weight_display": "100",
       "is_level": false,
       "is_key": true,
-      "latest_value": 0.5851095587796173,
-      "latest_display": "0.585%",
-      "previous_display": "0.318%",
-      "avg_3m_value": 0.2976568696567261,
-      "avg_3m_display": "0.298%",
-      "yoy_value": 3.737684729064039,
-      "yoy_display": "3.74%",
+      "latest_value": 0.1694663738351032,
+      "latest_display": "0.169%",
+      "previous_display": "0.585%",
+      "avg_3m_value": 0.35753936222549704,
+      "avg_3m_display": "0.358%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 58.510955877961734,
-      "contribution_bps": "58.5 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 16.94663738351032,
+      "contribution_bps": "16.9 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.1694663738351032,
+          "yoy": null,
+          "display": "0.169%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 0.5851095587796173,
@@ -255,13 +262,6 @@
           "yoy": 2.735084455122627,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.2543398276415587,
-          "yoy": 3.0126767755256134,
-          "display": "0.254%",
-          "tone": "negative"
         }
       ]
     },
@@ -273,18 +273,25 @@
       "weight_display": "-",
       "is_level": true,
       "is_key": true,
-      "latest_value": 336.94,
-      "latest_display": "336.940",
-      "previous_display": "334.980",
-      "avg_3m_value": 335.27933333333334,
-      "avg_3m_display": "335.279",
-      "yoy_value": 3.737684729064039,
-      "yoy_display": "3.74%",
+      "latest_value": 337.511,
+      "latest_display": "337.511",
+      "previous_display": "336.940",
+      "avg_3m_value": 336.47700000000003,
+      "avg_3m_display": "336.477",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "flat",
-      "yoy_tone": "negative",
+      "yoy_tone": "flat",
       "contribution_bps_value": null,
       "contribution_bps": null,
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 337.511,
+          "yoy": null,
+          "display": "337.511",
+          "tone": "flat"
+        },
         {
           "label": "Sep-26",
           "value": 336.94,
@@ -361,13 +368,6 @@
           "yoy": 2.735084455122627,
           "display": "324.122",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 324.8,
-          "yoy": 3.0126767755256134,
-          "display": "324.800",
-          "tone": "flat"
         }
       ]
     },
@@ -379,18 +379,25 @@
       "weight_display": "13.4",
       "is_level": false,
       "is_key": true,
-      "latest_value": 0.04551949847884096,
-      "latest_display": "0.0455%",
-      "previous_display": "0.122%",
-      "avg_3m_value": 0.08375136813952484,
-      "avg_3m_display": "0.0838%",
-      "yoy_value": 2.393371566734004,
-      "yoy_display": "2.39%",
-      "latest_tone": "positive",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 0.6095060846316804,
-      "contribution_bps": "0.6 bps",
+      "latest_value": 0.44721276730537163,
+      "latest_display": "0.447%",
+      "previous_display": "0.0455%",
+      "avg_3m_value": 0.2049154839120456,
+      "avg_3m_display": "0.205%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
+      "latest_tone": "negative",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 5.9881789542189265,
+      "contribution_bps": "6.0 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.44721276730537163,
+          "yoy": null,
+          "display": "0.447%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 0.04551949847884096,
@@ -467,13 +474,6 @@
           "yoy": 2.580853757663837,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.2231153402878272,
-          "yoy": 3.049445624397995,
-          "display": "0.223%",
-          "tone": "negative"
         }
       ]
     },
@@ -485,18 +485,25 @@
       "weight_display": "8.56",
       "is_level": false,
       "is_key": false,
-      "latest_value": -0.0697091820063167,
-      "latest_display": "-0.0697%",
-      "previous_display": "0.0370%",
-      "avg_3m_value": -0.034738045138782425,
-      "avg_3m_display": "-0.0347%",
-      "yoy_value": 1.7655447803764934,
-      "yoy_display": "1.77%",
-      "latest_tone": "positive",
-      "yoy_tone": "positive",
-      "contribution_bps_value": -0.596710597974071,
-      "contribution_bps": "-0.6 bps",
+      "latest_value": 0.44346036105895603,
+      "latest_display": "0.443%",
+      "previous_display": "-0.0697%",
+      "avg_3m_value": 0.13693263383576607,
+      "avg_3m_display": "0.137%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
+      "latest_tone": "negative",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 3.7960206906646636,
+      "contribution_bps": "3.8 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.44346036105895603,
+          "yoy": null,
+          "display": "0.443%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": -0.0697091820063167,
@@ -573,13 +580,6 @@
           "yoy": 1.911075307431731,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.2838101110133051,
-          "yoy": 2.69545463421621,
-          "display": "0.284%",
-          "tone": "negative"
         }
       ]
     },
@@ -591,18 +591,25 @@
       "weight_display": "4.83",
       "is_level": false,
       "is_key": false,
-      "latest_value": 0.22997577085868137,
-      "latest_display": "0.230%",
-      "previous_display": "0.254%",
-      "avg_3m_value": 0.2647017968499495,
-      "avg_3m_display": "0.265%",
-      "yoy_value": 3.4588053993892753,
-      "yoy_display": "3.46%",
+      "latest_value": 0.5183270099277104,
+      "latest_display": "0.518%",
+      "previous_display": "0.230%",
+      "avg_3m_value": 0.3341830837317576,
+      "avg_3m_display": "0.334%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 1.110782973247431,
-      "contribution_bps": "1.1 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 2.5035194579508415,
+      "contribution_bps": "2.5 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.5183270099277104,
+          "yoy": null,
+          "display": "0.518%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 0.22997577085868137,
@@ -679,13 +686,6 @@
           "yoy": 3.660214708323295,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.14081250373465526,
-          "yoy": 3.726278511533798,
-          "display": "0.141%",
-          "tone": "positive"
         }
       ]
     },
@@ -697,18 +697,25 @@
       "weight_display": "7.36",
       "is_level": false,
       "is_key": true,
-      "latest_value": 5.195735299612636,
-      "latest_display": "5.20%",
-      "previous_display": "2.10%",
-      "avg_3m_value": 1.9362523528273723,
-      "avg_3m_display": "1.94%",
-      "yoy_value": 20.35411471321695,
-      "yoy_display": "20.4%",
+      "latest_value": 0.6994559458195493,
+      "latest_display": "0.699%",
+      "previous_display": "5.20%",
+      "avg_3m_value": 2.6639390837415102,
+      "avg_3m_display": "2.66%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 38.240611805149,
-      "contribution_bps": "38.2 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 5.147995761231883,
+      "contribution_bps": "5.1 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.6994559458195493,
+          "yoy": null,
+          "display": "0.699%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 5.195735299612636,
@@ -785,13 +792,6 @@
           "yoy": 4.159454920027383,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 1.433145186352247,
-          "yoy": 2.940798955556123,
-          "display": "1.43%",
-          "tone": "negative"
         }
       ]
     },
@@ -803,18 +803,25 @@
       "weight_display": "3.79",
       "is_level": false,
       "is_key": false,
-      "latest_value": 9.317601503970362,
-      "latest_display": "9.32%",
-      "previous_display": "4.24%",
-      "avg_3m_value": 3.547671979934948,
-      "avg_3m_display": "3.55%",
-      "yoy_value": 35.28237287664764,
-      "yoy_display": "35.3%",
+      "latest_value": 0.8090411373804285,
+      "latest_display": "0.809%",
+      "previous_display": "9.32%",
+      "avg_3m_value": 4.7893592423357445,
+      "avg_3m_display": "4.79%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 35.313709700047674,
-      "contribution_bps": "35.3 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 3.066265910671824,
+      "contribution_bps": "3.1 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.8090411373804285,
+          "yoy": null,
+          "display": "0.809%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 9.317601503970362,
@@ -891,13 +898,6 @@
           "yoy": 1.1867974849049334,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 3.4086787913607086,
-          "yoy": -0.33396434714295653,
-          "display": "3.41%",
-          "tone": "negative"
         }
       ]
     },
@@ -909,18 +909,25 @@
       "weight_display": "3.57",
       "is_level": false,
       "is_key": false,
-      "latest_value": 0.36861824078735506,
-      "latest_display": "0.369%",
-      "previous_display": "0.327%",
-      "avg_3m_value": 0.3080331107981449,
-      "avg_3m_display": "0.308%",
-      "yoy_value": 3.155661201482318,
-      "yoy_display": "3.16%",
+      "latest_value": 0.3396304624456503,
+      "latest_display": "0.340%",
+      "previous_display": "0.369%",
+      "avg_3m_value": 0.3452202151178622,
+      "avg_3m_display": "0.345%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 1.3159671196108575,
-      "contribution_bps": "1.3 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 1.2124807509309716,
+      "contribution_bps": "1.2 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.3396304624456503,
+          "yoy": null,
+          "display": "0.340%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 0.36861824078735506,
@@ -997,13 +1004,6 @@
           "yoy": 2.9829166243382055,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.23318832030674308,
-          "yoy": 3.477592732237955,
-          "display": "0.233%",
-          "tone": "negative"
         }
       ]
     },
@@ -1015,18 +1015,25 @@
       "weight_display": "79.2",
       "is_level": false,
       "is_key": true,
-      "latest_value": 0.3348481932704761,
-      "latest_display": "0.335%",
-      "previous_display": "0.290%",
-      "avg_3m_value": 0.28002613184280695,
-      "avg_3m_display": "0.280%",
-      "yoy_value": 2.565840844021827,
-      "yoy_display": "2.57%",
+      "latest_value": 0.2962560785609636,
+      "latest_display": "0.296%",
+      "previous_display": "0.335%",
+      "avg_3m_value": 0.3069666533109657,
+      "avg_3m_display": "0.307%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 26.536719316685232,
-      "contribution_bps": "26.5 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 23.478294225956365,
+      "contribution_bps": "23.5 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.2962560785609636,
+          "yoy": null,
+          "display": "0.296%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 0.3348481932704761,
@@ -1103,13 +1110,6 @@
           "yoy": 2.5990448060944082,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.2177737336973129,
-          "yoy": 3.0199668258857892,
-          "display": "0.218%",
-          "tone": "negative"
         }
       ]
     },
@@ -1121,18 +1121,25 @@
       "weight_display": "79.2",
       "is_level": false,
       "is_key": true,
-      "latest_value": 0.36859434210643194,
-      "latest_display": "0.369%",
-      "previous_display": "0.269%",
-      "avg_3m_value": 0.23747701702722482,
-      "avg_3m_display": "0.237%",
-      "yoy_value": 2.5643583511686607,
-      "yoy_display": "2.56%",
+      "latest_value": 0.18686244978440847,
+      "latest_display": "0.187%",
+      "previous_display": "0.369%",
+      "avg_3m_value": 0.2749289000884299,
+      "avg_3m_display": "0.275%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 29.21110161193473,
-      "contribution_bps": "29.2 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 14.80884914541437,
+      "contribution_bps": "14.8 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.18686244978440847,
+          "yoy": null,
+          "display": "0.187%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 0.36859434210643194,
@@ -1209,13 +1216,6 @@
           "yoy": 2.633352694698199,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.25275025002271523,
-          "yoy": 3.0192240018186878,
-          "display": "0.253%",
-          "tone": "negative"
         }
       ]
     },
@@ -1227,18 +1227,25 @@
       "weight_display": "-",
       "is_level": true,
       "is_key": true,
-      "latest_value": 339.287,
-      "latest_display": "339.287",
-      "previous_display": "338.041",
-      "avg_3m_value": 338.15366666666665,
-      "avg_3m_display": "338.154",
-      "yoy_value": 2.5643583511686607,
-      "yoy_display": "2.56%",
+      "latest_value": 339.921,
+      "latest_display": "339.921",
+      "previous_display": "339.287",
+      "avg_3m_value": 339.083,
+      "avg_3m_display": "339.083",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "flat",
-      "yoy_tone": "negative",
+      "yoy_tone": "flat",
       "contribution_bps_value": null,
       "contribution_bps": null,
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 339.921,
+          "yoy": null,
+          "display": "339.921",
+          "tone": "flat"
+        },
         {
           "label": "Sep-26",
           "value": 339.287,
@@ -1315,13 +1322,6 @@
           "yoy": 2.633352694698199,
           "display": "330.425",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 330.804,
-          "yoy": 3.0192240018186878,
-          "display": "330.804",
-          "tone": "flat"
         }
       ]
     },
@@ -1333,18 +1333,25 @@
       "weight_display": "7.66",
       "is_level": false,
       "is_key": false,
-      "latest_value": 0.24659430563003237,
-      "latest_display": "0.247%",
-      "previous_display": "0.174%",
-      "avg_3m_value": 0.22539764909660734,
-      "avg_3m_display": "0.225%",
-      "yoy_value": 2.782056284613099,
-      "yoy_display": "2.78%",
+      "latest_value": 0.20158559950624877,
+      "latest_display": "0.202%",
+      "previous_display": "0.247%",
+      "avg_3m_value": 0.20728457313521353,
+      "avg_3m_display": "0.207%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 1.888912381126048,
-      "contribution_bps": "1.9 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 1.5441456922178656,
+      "contribution_bps": "1.5 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.20158559950624877,
+          "yoy": null,
+          "display": "0.202%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 0.24659430563003237,
@@ -1421,13 +1428,6 @@
           "yoy": 2.969447063624986,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.21564439484649256,
-          "yoy": 3.3924097221239125,
-          "display": "0.216%",
-          "tone": "negative"
         }
       ]
     },
@@ -1439,18 +1439,25 @@
       "weight_display": "26.1",
       "is_level": false,
       "is_key": false,
-      "latest_value": 0.3497756432649046,
-      "latest_display": "0.350%",
-      "previous_display": "0.186%",
-      "avg_3m_value": 0.26523579980031187,
-      "avg_3m_display": "0.265%",
-      "yoy_value": 3.2781143594073248,
-      "yoy_display": "3.28%",
+      "latest_value": 0.31936038089677155,
+      "latest_display": "0.319%",
+      "previous_display": "0.350%",
+      "avg_3m_value": 0.2851377891392559,
+      "avg_3m_display": "0.285%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 9.143135314944606,
-      "contribution_bps": "9.1 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 8.348080356641608,
+      "contribution_bps": "8.3 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.31936038089677155,
+          "yoy": null,
+          "display": "0.319%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 0.3497756432649046,
@@ -1527,13 +1534,6 @@
           "yoy": 3.3641058485303965,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.15704276395265282,
-          "yoy": 3.7604661293311636,
-          "display": "0.157%",
-          "tone": "positive"
         }
       ]
     },
@@ -1545,18 +1545,25 @@
       "weight_display": "0.916",
       "is_level": false,
       "is_key": false,
-      "latest_value": 2.035036465667628,
-      "latest_display": "2.04%",
-      "previous_display": "2.36%",
-      "avg_3m_value": 0.5456980015986787,
-      "avg_3m_display": "0.546%",
-      "yoy_value": 4.380801874875706,
-      "yoy_display": "4.38%",
+      "latest_value": 0.6442177466282839,
+      "latest_display": "0.644%",
+      "previous_display": "2.04%",
+      "avg_3m_value": 1.678668152335468,
+      "avg_3m_display": "1.68%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 1.8640934025515472,
-      "contribution_bps": "1.9 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 0.590103455911508,
+      "contribution_bps": "0.6 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.6442177466282839,
+          "yoy": null,
+          "display": "0.644%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 2.035036465667628,
@@ -1633,13 +1640,6 @@
           "yoy": -4.152789342214813,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.8576524610071745,
-          "yoy": 0.0010750549621851846,
-          "display": "0.858%",
-          "tone": "negative"
         }
       ]
     },
@@ -1651,18 +1651,25 @@
       "weight_display": "0.659",
       "is_level": false,
       "is_key": false,
-      "latest_value": 1.1591862493967264,
-      "latest_display": "1.16%",
-      "previous_display": "2.68%",
-      "avg_3m_value": 2.0205305791733665,
-      "avg_3m_display": "2.02%",
-      "yoy_value": 22.447443511604746,
-      "yoy_display": "22.4%",
+      "latest_value": 0.40582156695443405,
+      "latest_display": "0.406%",
+      "previous_display": "1.16%",
+      "avg_3m_value": 1.4154557565745352,
+      "avg_3m_display": "1.42%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 0.7639037383524427,
-      "contribution_bps": "0.8 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 0.2674364126229721,
+      "contribution_bps": "0.3 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.40582156695443405,
+          "yoy": null,
+          "display": "0.406%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 1.1591862493967264,
@@ -1739,13 +1746,6 @@
           "yoy": -5.12141810042629,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 1.9539720839314656,
-          "yoy": 2.9848904383238395,
-          "display": "1.95%",
-          "tone": "negative"
         }
       ]
     },
@@ -1757,18 +1757,25 @@
       "weight_display": "8.71",
       "is_level": false,
       "is_key": false,
-      "latest_value": 0.12345387513619244,
-      "latest_display": "0.123%",
-      "previous_display": "-0.245%",
-      "avg_3m_value": 0.07808066592700132,
-      "avg_3m_display": "0.0781%",
-      "yoy_value": 1.5035768510033076,
-      "yoy_display": "1.50%",
-      "latest_tone": "positive",
-      "yoy_tone": "positive",
-      "contribution_bps_value": 1.0752832524362361,
-      "contribution_bps": "1.1 bps",
+      "latest_value": 0.3384057702479071,
+      "latest_display": "0.338%",
+      "previous_display": "0.123%",
+      "avg_3m_value": 0.07213305013057392,
+      "avg_3m_display": "0.0721%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
+      "latest_tone": "negative",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 2.947514258859271,
+      "contribution_bps": "2.9 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.3384057702479071,
+          "yoy": null,
+          "display": "0.338%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 0.12345387513619244,
@@ -1845,13 +1852,6 @@
           "yoy": 2.8993320175038084,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.18208009811426784,
-          "yoy": 3.287558983922456,
-          "display": "0.182%",
-          "tone": "negative"
         }
       ]
     },
@@ -1863,18 +1863,25 @@
       "weight_display": "2.88",
       "is_level": false,
       "is_key": false,
-      "latest_value": 0.6691901748956841,
-      "latest_display": "0.669%",
-      "previous_display": "0.365%",
-      "avg_3m_value": 0.4776022694308546,
-      "avg_3m_display": "0.478%",
-      "yoy_value": -1.4567071818422872,
-      "yoy_display": "-1.46%",
-      "latest_tone": "negative",
+      "latest_value": -1.224090988933768,
+      "latest_display": "-1.22%",
+      "previous_display": "0.669%",
+      "avg_3m_value": -0.06313701185013769,
+      "avg_3m_display": "-0.0631%",
+      "yoy_value": -3.3125392910682283,
+      "yoy_display": "-3.31%",
+      "latest_tone": "positive",
       "yoy_tone": "positive",
-      "contribution_bps_value": 1.9272677036995702,
-      "contribution_bps": "1.9 bps",
+      "contribution_bps_value": -3.525382048129252,
+      "contribution_bps": "-3.5 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": -1.224090988933768,
+          "yoy": -3.3125392910682283,
+          "display": "-1.22%",
+          "tone": "positive"
+        },
         {
           "label": "Sep-26",
           "value": 0.6691901748956841,
@@ -1951,13 +1958,6 @@
           "yoy": 3.5541177516897893,
           "display": "0.100%",
           "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": -0.2105160882872048,
-          "yoy": 5.138369143624089,
-          "display": "-0.211%",
-          "tone": "positive"
         }
       ]
     },
@@ -1969,18 +1969,25 @@
       "weight_display": "3.10",
       "is_level": false,
       "is_key": false,
-      "latest_value": 0.3063236037726291,
-      "latest_display": "0.306%",
-      "previous_display": "0.0169%",
-      "avg_3m_value": 0.13731595564849078,
-      "avg_3m_display": "0.137%",
-      "yoy_value": 3.371321113804737,
-      "yoy_display": "3.37%",
-      "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 0.9496031716951503,
-      "contribution_bps": "0.9 bps",
+      "latest_value": 0.08036529680366389,
+      "latest_display": "0.0804%",
+      "previous_display": "0.306%",
+      "avg_3m_value": 0.13451562284383378,
+      "avg_3m_display": "0.135%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
+      "latest_tone": "positive",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 0.24913242009135805,
+      "contribution_bps": "0.2 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.08036529680366389,
+          "yoy": null,
+          "display": "0.0804%",
+          "tone": "positive"
+        },
         {
           "label": "Sep-26",
           "value": 0.3063236037726291,
@@ -2057,13 +2064,6 @@
           "yoy": 0.14503538559669238,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.5444439382204402,
-          "yoy": -0.09657534763352071,
-          "display": "0.544%",
-          "tone": "negative"
         }
       ]
     }
@@ -2077,18 +2077,25 @@
       "weight_display": "100",
       "is_level": false,
       "is_key": true,
-      "latest_value": 0.6485480245771891,
-      "latest_display": "0.649%",
-      "previous_display": "0.396%",
-      "avg_3m_value": 0.37274511777281766,
-      "avg_3m_display": "0.373%",
-      "yoy_value": 3.7172508442689933,
-      "yoy_display": "3.72%",
+      "latest_value": 0.3502845690429357,
+      "latest_display": "0.350%",
+      "previous_display": "0.649%",
+      "avg_3m_value": 0.4649502593353135,
+      "avg_3m_display": "0.465%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 64.8548024577189,
-      "contribution_bps": "64.9 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 35.02845690429357,
+      "contribution_bps": "35.0 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.3502845690429357,
+          "yoy": null,
+          "display": "0.350%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 0.6485480245771891,
@@ -2165,13 +2172,6 @@
           "yoy": 2.6964439164939513,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.2950901819104068,
-          "yoy": 3.0225715847133294,
-          "display": "0.295%",
-          "tone": "negative"
         }
       ]
     },
@@ -2183,18 +2183,25 @@
       "weight_display": "100",
       "is_level": false,
       "is_key": true,
-      "latest_value": 0.5851095587796173,
-      "latest_display": "0.585%",
-      "previous_display": "0.318%",
-      "avg_3m_value": 0.2976568696567261,
-      "avg_3m_display": "0.298%",
-      "yoy_value": 3.737684729064039,
-      "yoy_display": "3.74%",
+      "latest_value": 0.1694663738351032,
+      "latest_display": "0.169%",
+      "previous_display": "0.585%",
+      "avg_3m_value": 0.35753936222549704,
+      "avg_3m_display": "0.358%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 58.510955877961734,
-      "contribution_bps": "58.5 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 16.94663738351032,
+      "contribution_bps": "16.9 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.1694663738351032,
+          "yoy": null,
+          "display": "0.169%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 0.5851095587796173,
@@ -2271,13 +2278,6 @@
           "yoy": 2.735084455122627,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.2543398276415587,
-          "yoy": 3.0126767755256134,
-          "display": "0.254%",
-          "tone": "negative"
         }
       ]
     },
@@ -2289,18 +2289,25 @@
       "weight_display": "-",
       "is_level": true,
       "is_key": true,
-      "latest_value": 336.94,
-      "latest_display": "336.940",
-      "previous_display": "334.980",
-      "avg_3m_value": 335.27933333333334,
-      "avg_3m_display": "335.279",
-      "yoy_value": 3.737684729064039,
-      "yoy_display": "3.74%",
+      "latest_value": 337.511,
+      "latest_display": "337.511",
+      "previous_display": "336.940",
+      "avg_3m_value": 336.47700000000003,
+      "avg_3m_display": "336.477",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "flat",
-      "yoy_tone": "negative",
+      "yoy_tone": "flat",
       "contribution_bps_value": null,
       "contribution_bps": null,
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 337.511,
+          "yoy": null,
+          "display": "337.511",
+          "tone": "flat"
+        },
         {
           "label": "Sep-26",
           "value": 336.94,
@@ -2377,13 +2384,6 @@
           "yoy": 2.735084455122627,
           "display": "324.122",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 324.8,
-          "yoy": 3.0126767755256134,
-          "display": "324.800",
-          "tone": "flat"
         }
       ]
     },
@@ -2395,18 +2395,25 @@
       "weight_display": "13.4",
       "is_level": false,
       "is_key": true,
-      "latest_value": 0.04551949847884096,
-      "latest_display": "0.0455%",
-      "previous_display": "0.122%",
-      "avg_3m_value": 0.08375136813952484,
-      "avg_3m_display": "0.0838%",
-      "yoy_value": 2.393371566734004,
-      "yoy_display": "2.39%",
-      "latest_tone": "positive",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 0.6095060846316804,
-      "contribution_bps": "0.6 bps",
+      "latest_value": 0.44721276730537163,
+      "latest_display": "0.447%",
+      "previous_display": "0.0455%",
+      "avg_3m_value": 0.2049154839120456,
+      "avg_3m_display": "0.205%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
+      "latest_tone": "negative",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 5.9881789542189265,
+      "contribution_bps": "6.0 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.44721276730537163,
+          "yoy": null,
+          "display": "0.447%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 0.04551949847884096,
@@ -2483,13 +2490,6 @@
           "yoy": 2.580853757663837,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.2231153402878272,
-          "yoy": 3.049445624397995,
-          "display": "0.223%",
-          "tone": "negative"
         }
       ]
     },
@@ -2501,18 +2501,25 @@
       "weight_display": "8.56",
       "is_level": false,
       "is_key": false,
-      "latest_value": -0.0697091820063167,
-      "latest_display": "-0.0697%",
-      "previous_display": "0.0370%",
-      "avg_3m_value": -0.034738045138782425,
-      "avg_3m_display": "-0.0347%",
-      "yoy_value": 1.7655447803764934,
-      "yoy_display": "1.77%",
-      "latest_tone": "positive",
-      "yoy_tone": "positive",
-      "contribution_bps_value": -0.596710597974071,
-      "contribution_bps": "-0.6 bps",
+      "latest_value": 0.44346036105895603,
+      "latest_display": "0.443%",
+      "previous_display": "-0.0697%",
+      "avg_3m_value": 0.13693263383576607,
+      "avg_3m_display": "0.137%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
+      "latest_tone": "negative",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 3.7960206906646636,
+      "contribution_bps": "3.8 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.44346036105895603,
+          "yoy": null,
+          "display": "0.443%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": -0.0697091820063167,
@@ -2589,13 +2596,6 @@
           "yoy": 1.911075307431731,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.2838101110133051,
-          "yoy": 2.69545463421621,
-          "display": "0.284%",
-          "tone": "negative"
         }
       ]
     },
@@ -2607,18 +2607,25 @@
       "weight_display": "4.83",
       "is_level": false,
       "is_key": false,
-      "latest_value": 0.22997577085868137,
-      "latest_display": "0.230%",
-      "previous_display": "0.254%",
-      "avg_3m_value": 0.2647017968499495,
-      "avg_3m_display": "0.265%",
-      "yoy_value": 3.4588053993892753,
-      "yoy_display": "3.46%",
+      "latest_value": 0.5183270099277104,
+      "latest_display": "0.518%",
+      "previous_display": "0.230%",
+      "avg_3m_value": 0.3341830837317576,
+      "avg_3m_display": "0.334%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 1.110782973247431,
-      "contribution_bps": "1.1 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 2.5035194579508415,
+      "contribution_bps": "2.5 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.5183270099277104,
+          "yoy": null,
+          "display": "0.518%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 0.22997577085868137,
@@ -2695,13 +2702,6 @@
           "yoy": 3.660214708323295,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.14081250373465526,
-          "yoy": 3.726278511533798,
-          "display": "0.141%",
-          "tone": "positive"
         }
       ]
     },
@@ -2713,18 +2713,25 @@
       "weight_display": "7.36",
       "is_level": false,
       "is_key": true,
-      "latest_value": 5.195735299612636,
-      "latest_display": "5.20%",
-      "previous_display": "2.10%",
-      "avg_3m_value": 1.9362523528273723,
-      "avg_3m_display": "1.94%",
-      "yoy_value": 20.35411471321695,
-      "yoy_display": "20.4%",
+      "latest_value": 0.6994559458195493,
+      "latest_display": "0.699%",
+      "previous_display": "5.20%",
+      "avg_3m_value": 2.6639390837415102,
+      "avg_3m_display": "2.66%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 38.240611805149,
-      "contribution_bps": "38.2 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 5.147995761231883,
+      "contribution_bps": "5.1 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.6994559458195493,
+          "yoy": null,
+          "display": "0.699%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 5.195735299612636,
@@ -2801,13 +2808,6 @@
           "yoy": 4.159454920027383,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 1.433145186352247,
-          "yoy": 2.940798955556123,
-          "display": "1.43%",
-          "tone": "negative"
         }
       ]
     },
@@ -2819,18 +2819,25 @@
       "weight_display": "3.79",
       "is_level": false,
       "is_key": false,
-      "latest_value": 9.317601503970362,
-      "latest_display": "9.32%",
-      "previous_display": "4.24%",
-      "avg_3m_value": 3.547671979934948,
-      "avg_3m_display": "3.55%",
-      "yoy_value": 35.28237287664764,
-      "yoy_display": "35.3%",
+      "latest_value": 0.8090411373804285,
+      "latest_display": "0.809%",
+      "previous_display": "9.32%",
+      "avg_3m_value": 4.7893592423357445,
+      "avg_3m_display": "4.79%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 35.313709700047674,
-      "contribution_bps": "35.3 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 3.066265910671824,
+      "contribution_bps": "3.1 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.8090411373804285,
+          "yoy": null,
+          "display": "0.809%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 9.317601503970362,
@@ -2907,13 +2914,6 @@
           "yoy": 1.1867974849049334,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 3.4086787913607086,
-          "yoy": -0.33396434714295653,
-          "display": "3.41%",
-          "tone": "negative"
         }
       ]
     },
@@ -2925,18 +2925,25 @@
       "weight_display": "3.57",
       "is_level": false,
       "is_key": false,
-      "latest_value": 0.36861824078735506,
-      "latest_display": "0.369%",
-      "previous_display": "0.327%",
-      "avg_3m_value": 0.3080331107981449,
-      "avg_3m_display": "0.308%",
-      "yoy_value": 3.155661201482318,
-      "yoy_display": "3.16%",
+      "latest_value": 0.3396304624456503,
+      "latest_display": "0.340%",
+      "previous_display": "0.369%",
+      "avg_3m_value": 0.3452202151178622,
+      "avg_3m_display": "0.345%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 1.3159671196108575,
-      "contribution_bps": "1.3 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 1.2124807509309716,
+      "contribution_bps": "1.2 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.3396304624456503,
+          "yoy": null,
+          "display": "0.340%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 0.36861824078735506,
@@ -3013,13 +3020,6 @@
           "yoy": 2.9829166243382055,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.23318832030674308,
-          "yoy": 3.477592732237955,
-          "display": "0.233%",
-          "tone": "negative"
         }
       ]
     },
@@ -3031,18 +3031,25 @@
       "weight_display": "79.2",
       "is_level": false,
       "is_key": true,
-      "latest_value": 0.3348481932704761,
-      "latest_display": "0.335%",
-      "previous_display": "0.290%",
-      "avg_3m_value": 0.28002613184280695,
-      "avg_3m_display": "0.280%",
-      "yoy_value": 2.565840844021827,
-      "yoy_display": "2.57%",
+      "latest_value": 0.2962560785609636,
+      "latest_display": "0.296%",
+      "previous_display": "0.335%",
+      "avg_3m_value": 0.3069666533109657,
+      "avg_3m_display": "0.307%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 26.536719316685232,
-      "contribution_bps": "26.5 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 23.478294225956365,
+      "contribution_bps": "23.5 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.2962560785609636,
+          "yoy": null,
+          "display": "0.296%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 0.3348481932704761,
@@ -3119,13 +3126,6 @@
           "yoy": 2.5990448060944082,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.2177737336973129,
-          "yoy": 3.0199668258857892,
-          "display": "0.218%",
-          "tone": "negative"
         }
       ]
     },
@@ -3137,18 +3137,25 @@
       "weight_display": "79.2",
       "is_level": false,
       "is_key": true,
-      "latest_value": 0.36859434210643194,
-      "latest_display": "0.369%",
-      "previous_display": "0.269%",
-      "avg_3m_value": 0.23747701702722482,
-      "avg_3m_display": "0.237%",
-      "yoy_value": 2.5643583511686607,
-      "yoy_display": "2.56%",
+      "latest_value": 0.18686244978440847,
+      "latest_display": "0.187%",
+      "previous_display": "0.369%",
+      "avg_3m_value": 0.2749289000884299,
+      "avg_3m_display": "0.275%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 29.21110161193473,
-      "contribution_bps": "29.2 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 14.80884914541437,
+      "contribution_bps": "14.8 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.18686244978440847,
+          "yoy": null,
+          "display": "0.187%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 0.36859434210643194,
@@ -3225,13 +3232,6 @@
           "yoy": 2.633352694698199,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.25275025002271523,
-          "yoy": 3.0192240018186878,
-          "display": "0.253%",
-          "tone": "negative"
         }
       ]
     },
@@ -3243,18 +3243,25 @@
       "weight_display": "-",
       "is_level": true,
       "is_key": true,
-      "latest_value": 339.287,
-      "latest_display": "339.287",
-      "previous_display": "338.041",
-      "avg_3m_value": 338.15366666666665,
-      "avg_3m_display": "338.154",
-      "yoy_value": 2.5643583511686607,
-      "yoy_display": "2.56%",
+      "latest_value": 339.921,
+      "latest_display": "339.921",
+      "previous_display": "339.287",
+      "avg_3m_value": 339.083,
+      "avg_3m_display": "339.083",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "flat",
-      "yoy_tone": "negative",
+      "yoy_tone": "flat",
       "contribution_bps_value": null,
       "contribution_bps": null,
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 339.921,
+          "yoy": null,
+          "display": "339.921",
+          "tone": "flat"
+        },
         {
           "label": "Sep-26",
           "value": 339.287,
@@ -3331,13 +3338,6 @@
           "yoy": 2.633352694698199,
           "display": "330.425",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 330.804,
-          "yoy": 3.0192240018186878,
-          "display": "330.804",
-          "tone": "flat"
         }
       ]
     },
@@ -3349,18 +3349,25 @@
       "weight_display": "7.66",
       "is_level": false,
       "is_key": false,
-      "latest_value": 0.24659430563003237,
-      "latest_display": "0.247%",
-      "previous_display": "0.174%",
-      "avg_3m_value": 0.22539764909660734,
-      "avg_3m_display": "0.225%",
-      "yoy_value": 2.782056284613099,
-      "yoy_display": "2.78%",
+      "latest_value": 0.20158559950624877,
+      "latest_display": "0.202%",
+      "previous_display": "0.247%",
+      "avg_3m_value": 0.20728457313521353,
+      "avg_3m_display": "0.207%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 1.888912381126048,
-      "contribution_bps": "1.9 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 1.5441456922178656,
+      "contribution_bps": "1.5 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.20158559950624877,
+          "yoy": null,
+          "display": "0.202%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 0.24659430563003237,
@@ -3437,13 +3444,6 @@
           "yoy": 2.969447063624986,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.21564439484649256,
-          "yoy": 3.3924097221239125,
-          "display": "0.216%",
-          "tone": "negative"
         }
       ]
     },
@@ -3455,18 +3455,25 @@
       "weight_display": "26.1",
       "is_level": false,
       "is_key": false,
-      "latest_value": 0.3497756432649046,
-      "latest_display": "0.350%",
-      "previous_display": "0.186%",
-      "avg_3m_value": 0.26523579980031187,
-      "avg_3m_display": "0.265%",
-      "yoy_value": 3.2781143594073248,
-      "yoy_display": "3.28%",
+      "latest_value": 0.31936038089677155,
+      "latest_display": "0.319%",
+      "previous_display": "0.350%",
+      "avg_3m_value": 0.2851377891392559,
+      "avg_3m_display": "0.285%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 9.143135314944606,
-      "contribution_bps": "9.1 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 8.348080356641608,
+      "contribution_bps": "8.3 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.31936038089677155,
+          "yoy": null,
+          "display": "0.319%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 0.3497756432649046,
@@ -3543,13 +3550,6 @@
           "yoy": 3.3641058485303965,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.15704276395265282,
-          "yoy": 3.7604661293311636,
-          "display": "0.157%",
-          "tone": "positive"
         }
       ]
     },
@@ -3561,18 +3561,25 @@
       "weight_display": "0.916",
       "is_level": false,
       "is_key": false,
-      "latest_value": 2.035036465667628,
-      "latest_display": "2.04%",
-      "previous_display": "2.36%",
-      "avg_3m_value": 0.5456980015986787,
-      "avg_3m_display": "0.546%",
-      "yoy_value": 4.380801874875706,
-      "yoy_display": "4.38%",
+      "latest_value": 0.6442177466282839,
+      "latest_display": "0.644%",
+      "previous_display": "2.04%",
+      "avg_3m_value": 1.678668152335468,
+      "avg_3m_display": "1.68%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 1.8640934025515472,
-      "contribution_bps": "1.9 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 0.590103455911508,
+      "contribution_bps": "0.6 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.6442177466282839,
+          "yoy": null,
+          "display": "0.644%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 2.035036465667628,
@@ -3649,13 +3656,6 @@
           "yoy": -4.152789342214813,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.8576524610071745,
-          "yoy": 0.0010750549621851846,
-          "display": "0.858%",
-          "tone": "negative"
         }
       ]
     },
@@ -3667,18 +3667,25 @@
       "weight_display": "0.659",
       "is_level": false,
       "is_key": false,
-      "latest_value": 1.1591862493967264,
-      "latest_display": "1.16%",
-      "previous_display": "2.68%",
-      "avg_3m_value": 2.0205305791733665,
-      "avg_3m_display": "2.02%",
-      "yoy_value": 22.447443511604746,
-      "yoy_display": "22.4%",
+      "latest_value": 0.40582156695443405,
+      "latest_display": "0.406%",
+      "previous_display": "1.16%",
+      "avg_3m_value": 1.4154557565745352,
+      "avg_3m_display": "1.42%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
       "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 0.7639037383524427,
-      "contribution_bps": "0.8 bps",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 0.2674364126229721,
+      "contribution_bps": "0.3 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.40582156695443405,
+          "yoy": null,
+          "display": "0.406%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 1.1591862493967264,
@@ -3755,13 +3762,6 @@
           "yoy": -5.12141810042629,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 1.9539720839314656,
-          "yoy": 2.9848904383238395,
-          "display": "1.95%",
-          "tone": "negative"
         }
       ]
     },
@@ -3773,18 +3773,25 @@
       "weight_display": "8.71",
       "is_level": false,
       "is_key": false,
-      "latest_value": 0.12345387513619244,
-      "latest_display": "0.123%",
-      "previous_display": "-0.245%",
-      "avg_3m_value": 0.07808066592700132,
-      "avg_3m_display": "0.0781%",
-      "yoy_value": 1.5035768510033076,
-      "yoy_display": "1.50%",
-      "latest_tone": "positive",
-      "yoy_tone": "positive",
-      "contribution_bps_value": 1.0752832524362361,
-      "contribution_bps": "1.1 bps",
+      "latest_value": 0.3384057702479071,
+      "latest_display": "0.338%",
+      "previous_display": "0.123%",
+      "avg_3m_value": 0.07213305013057392,
+      "avg_3m_display": "0.0721%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
+      "latest_tone": "negative",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 2.947514258859271,
+      "contribution_bps": "2.9 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.3384057702479071,
+          "yoy": null,
+          "display": "0.338%",
+          "tone": "negative"
+        },
         {
           "label": "Sep-26",
           "value": 0.12345387513619244,
@@ -3861,13 +3868,6 @@
           "yoy": 2.8993320175038084,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.18208009811426784,
-          "yoy": 3.287558983922456,
-          "display": "0.182%",
-          "tone": "negative"
         }
       ]
     },
@@ -3879,18 +3879,25 @@
       "weight_display": "2.88",
       "is_level": false,
       "is_key": false,
-      "latest_value": 0.6691901748956841,
-      "latest_display": "0.669%",
-      "previous_display": "0.365%",
-      "avg_3m_value": 0.4776022694308546,
-      "avg_3m_display": "0.478%",
-      "yoy_value": -1.4567071818422872,
-      "yoy_display": "-1.46%",
-      "latest_tone": "negative",
+      "latest_value": -1.224090988933768,
+      "latest_display": "-1.22%",
+      "previous_display": "0.669%",
+      "avg_3m_value": -0.06313701185013769,
+      "avg_3m_display": "-0.0631%",
+      "yoy_value": -3.3125392910682283,
+      "yoy_display": "-3.31%",
+      "latest_tone": "positive",
       "yoy_tone": "positive",
-      "contribution_bps_value": 1.9272677036995702,
-      "contribution_bps": "1.9 bps",
+      "contribution_bps_value": -3.525382048129252,
+      "contribution_bps": "-3.5 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": -1.224090988933768,
+          "yoy": -3.3125392910682283,
+          "display": "-1.22%",
+          "tone": "positive"
+        },
         {
           "label": "Sep-26",
           "value": 0.6691901748956841,
@@ -3967,13 +3974,6 @@
           "yoy": 3.5541177516897893,
           "display": "0.100%",
           "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": -0.2105160882872048,
-          "yoy": 5.138369143624089,
-          "display": "-0.211%",
-          "tone": "positive"
         }
       ]
     },
@@ -3985,18 +3985,25 @@
       "weight_display": "3.10",
       "is_level": false,
       "is_key": false,
-      "latest_value": 0.3063236037726291,
-      "latest_display": "0.306%",
-      "previous_display": "0.0169%",
-      "avg_3m_value": 0.13731595564849078,
-      "avg_3m_display": "0.137%",
-      "yoy_value": 3.371321113804737,
-      "yoy_display": "3.37%",
-      "latest_tone": "negative",
-      "yoy_tone": "negative",
-      "contribution_bps_value": 0.9496031716951503,
-      "contribution_bps": "0.9 bps",
+      "latest_value": 0.08036529680366389,
+      "latest_display": "0.0804%",
+      "previous_display": "0.306%",
+      "avg_3m_value": 0.13451562284383378,
+      "avg_3m_display": "0.135%",
+      "yoy_value": null,
+      "yoy_display": "n/a",
+      "latest_tone": "positive",
+      "yoy_tone": "flat",
+      "contribution_bps_value": 0.24913242009135805,
+      "contribution_bps": "0.2 bps",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 0.08036529680366389,
+          "yoy": null,
+          "display": "0.0804%",
+          "tone": "positive"
+        },
         {
           "label": "Sep-26",
           "value": 0.3063236037726291,
@@ -4073,13 +4080,6 @@
           "yoy": 0.14503538559669238,
           "display": "n/a",
           "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.5444439382204402,
-          "yoy": -0.09657534763352071,
-          "display": "0.544%",
-          "tone": "negative"
         }
       ]
     }
@@ -4092,18 +4092,25 @@
     "weight_display": "100",
     "is_level": false,
     "is_key": true,
-    "latest_value": 0.6485480245771891,
-    "latest_display": "0.649%",
-    "previous_display": "0.396%",
-    "avg_3m_value": 0.37274511777281766,
-    "avg_3m_display": "0.373%",
-    "yoy_value": 3.7172508442689933,
-    "yoy_display": "3.72%",
+    "latest_value": 0.3502845690429357,
+    "latest_display": "0.350%",
+    "previous_display": "0.649%",
+    "avg_3m_value": 0.4649502593353135,
+    "avg_3m_display": "0.465%",
+    "yoy_value": null,
+    "yoy_display": "n/a",
     "latest_tone": "negative",
-    "yoy_tone": "negative",
-    "contribution_bps_value": 64.8548024577189,
-    "contribution_bps": "64.9 bps",
+    "yoy_tone": "flat",
+    "contribution_bps_value": 35.02845690429357,
+    "contribution_bps": "35.0 bps",
     "history": [
+      {
+        "label": "Oct-26",
+        "value": 0.3502845690429357,
+        "yoy": null,
+        "display": "0.350%",
+        "tone": "negative"
+      },
       {
         "label": "Sep-26",
         "value": 0.6485480245771891,
@@ -4180,13 +4187,6 @@
         "yoy": 2.6964439164939513,
         "display": "n/a",
         "tone": "flat"
-      },
-      {
-        "label": "Sep-25",
-        "value": 0.2950901819104068,
-        "yoy": 3.0225715847133294,
-        "display": "0.295%",
-        "tone": "negative"
       }
     ]
   },
@@ -4198,18 +4198,25 @@
     "weight_display": "79.2",
     "is_level": false,
     "is_key": true,
-    "latest_value": 0.3348481932704761,
-    "latest_display": "0.335%",
-    "previous_display": "0.290%",
-    "avg_3m_value": 0.28002613184280695,
-    "avg_3m_display": "0.280%",
-    "yoy_value": 2.565840844021827,
-    "yoy_display": "2.57%",
+    "latest_value": 0.2962560785609636,
+    "latest_display": "0.296%",
+    "previous_display": "0.335%",
+    "avg_3m_value": 0.3069666533109657,
+    "avg_3m_display": "0.307%",
+    "yoy_value": null,
+    "yoy_display": "n/a",
     "latest_tone": "negative",
-    "yoy_tone": "negative",
-    "contribution_bps_value": 26.536719316685232,
-    "contribution_bps": "26.5 bps",
+    "yoy_tone": "flat",
+    "contribution_bps_value": 23.478294225956365,
+    "contribution_bps": "23.5 bps",
     "history": [
+      {
+        "label": "Oct-26",
+        "value": 0.2962560785609636,
+        "yoy": null,
+        "display": "0.296%",
+        "tone": "negative"
+      },
       {
         "label": "Sep-26",
         "value": 0.3348481932704761,
@@ -4286,13 +4293,6 @@
         "yoy": 2.5990448060944082,
         "display": "n/a",
         "tone": "flat"
-      },
-      {
-        "label": "Sep-25",
-        "value": 0.2177737336973129,
-        "yoy": 3.0199668258857892,
-        "display": "0.218%",
-        "tone": "negative"
       }
     ]
   },
@@ -4304,18 +4304,25 @@
     "weight_display": "-",
     "is_level": true,
     "is_key": true,
-    "latest_value": 336.94,
-    "latest_display": "336.940",
-    "previous_display": "334.980",
-    "avg_3m_value": 335.27933333333334,
-    "avg_3m_display": "335.279",
-    "yoy_value": 3.737684729064039,
-    "yoy_display": "3.74%",
+    "latest_value": 337.511,
+    "latest_display": "337.511",
+    "previous_display": "336.940",
+    "avg_3m_value": 336.47700000000003,
+    "avg_3m_display": "336.477",
+    "yoy_value": null,
+    "yoy_display": "n/a",
     "latest_tone": "flat",
-    "yoy_tone": "negative",
+    "yoy_tone": "flat",
     "contribution_bps_value": null,
     "contribution_bps": null,
     "history": [
+      {
+        "label": "Oct-26",
+        "value": 337.511,
+        "yoy": null,
+        "display": "337.511",
+        "tone": "flat"
+      },
       {
         "label": "Sep-26",
         "value": 336.94,
@@ -4392,257 +4399,250 @@
         "yoy": 2.735084455122627,
         "display": "324.122",
         "tone": "flat"
-      },
-      {
-        "label": "Sep-25",
-        "value": 324.8,
-        "yoy": 3.0126767755256134,
-        "display": "324.800",
-        "tone": "flat"
       }
     ]
   },
   "largest_upside": {
-    "series_id": "CUSR0000SA0E",
-    "label": "Energy CPI",
-    "group": "Energy",
-    "weight": 7.36,
-    "weight_display": "7.36",
+    "series_id": "CUSR0000SEHC",
+    "label": "OER SA",
+    "group": "Shelter",
+    "weight": 26.14,
+    "weight_display": "26.1",
     "is_level": false,
-    "is_key": true,
-    "latest_value": 5.195735299612636,
-    "latest_display": "5.20%",
-    "previous_display": "2.10%",
-    "avg_3m_value": 1.9362523528273723,
-    "avg_3m_display": "1.94%",
-    "yoy_value": 20.35411471321695,
-    "yoy_display": "20.4%",
+    "is_key": false,
+    "latest_value": 0.31936038089677155,
+    "latest_display": "0.319%",
+    "previous_display": "0.350%",
+    "avg_3m_value": 0.2851377891392559,
+    "avg_3m_display": "0.285%",
+    "yoy_value": null,
+    "yoy_display": "n/a",
     "latest_tone": "negative",
-    "yoy_tone": "negative",
-    "contribution_bps_value": 38.240611805149,
-    "contribution_bps": "38.2 bps",
+    "yoy_tone": "flat",
+    "contribution_bps_value": 8.348080356641608,
+    "contribution_bps": "8.3 bps",
     "history": [
       {
+        "label": "Oct-26",
+        "value": 0.31936038089677155,
+        "yoy": null,
+        "display": "0.319%",
+        "tone": "negative"
+      },
+      {
         "label": "Sep-26",
-        "value": 5.195735299612636,
-        "yoy": 20.35411471321695,
-        "display": "5.20%",
+        "value": 0.3497756432649046,
+        "yoy": 3.2781143594073248,
+        "display": "0.350%",
         "tone": "negative"
       },
       {
         "label": "Aug-26",
-        "value": 2.096626005792346,
-        "yoy": 16.049347026386364,
-        "display": "2.10%",
+        "value": 0.18627734325609158,
+        "yoy": 3.0797572806512186,
+        "display": "0.186%",
         "tone": "negative"
       },
       {
         "label": "Jul-26",
-        "value": -1.483604246922865,
-        "yoy": 14.445333818446414,
-        "display": "-1.48%",
-        "tone": "positive"
+        "value": 0.2596544128799394,
+        "yoy": 3.2336864678391253,
+        "display": "0.260%",
+        "tone": "negative"
       },
       {
         "label": "Jun-26",
-        "value": -5.713754174799712,
-        "yoy": 15.45137005619075,
-        "display": "-5.71%",
-        "tone": "positive"
+        "value": 0.24008187291091332,
+        "yoy": 3.2508011303475692,
+        "display": "0.240%",
+        "tone": "negative"
       },
       {
         "label": "May-26",
-        "value": 3.8840044420175523,
-        "yoy": 22.972869920145843,
-        "display": "3.88%",
+        "value": 0.29678250439824083,
+        "yoy": 3.3181722270414715,
+        "display": "0.297%",
         "tone": "negative"
       },
       {
         "label": "Apr-26",
-        "value": 3.808368283447816,
-        "yoy": 17.536047421424005,
-        "display": "3.81%",
+        "value": 0.5326609480358124,
+        "yoy": 3.300410729273695,
+        "display": "0.533%",
         "tone": "negative"
       },
       {
         "label": "Mar-26",
-        "value": 10.873410704639097,
-        "yoy": 12.589546298752975,
-        "display": "10.9%",
+        "value": 0.2840667901141014,
+        "yoy": 3.097275199860361,
+        "display": "0.284%",
         "tone": "negative"
       },
       {
         "label": "Feb-26",
-        "value": 0.6349578589803784,
-        "yoy": 0.3995093868753852,
-        "display": "0.635%",
+        "value": 0.22445192106468337,
+        "yoy": 3.185197461880862,
+        "display": "0.224%",
         "tone": "negative"
       },
       {
         "label": "Jan-26",
-        "value": -1.4662633392152125,
-        "yoy": -0.296168234894012,
-        "display": "-1.47%",
-        "tone": "positive"
+        "value": 0.2196439601368061,
+        "yoy": 3.263641847188503,
+        "display": "0.220%",
+        "tone": "negative"
       },
       {
         "label": "Dec-25",
-        "value": 0.3428796267670897,
-        "yoy": 2.0709075899924656,
-        "display": "0.343%",
+        "value": 0.314433418723592,
+        "yoy": 3.3566543510730407,
+        "display": "0.314%",
         "tone": "negative"
       },
       {
         "label": "Nov-25",
         "value": null,
-        "yoy": 4.159454920027383,
+        "yoy": 3.3641058485303965,
         "display": "n/a",
         "tone": "flat"
-      },
-      {
-        "label": "Sep-25",
-        "value": 1.433145186352247,
-        "yoy": 2.940798955556123,
-        "display": "1.43%",
-        "tone": "negative"
       }
     ]
   },
   "largest_downside": {
-    "series_id": "CUSR0000SAF11",
-    "label": "Food at home CPI",
-    "group": "Food",
-    "weight": 8.56,
-    "weight_display": "8.56",
+    "series_id": "CUSR0000SETA02",
+    "label": "Used cars SA",
+    "group": "Transportation",
+    "weight": 2.88,
+    "weight_display": "2.88",
     "is_level": false,
     "is_key": false,
-    "latest_value": -0.0697091820063167,
-    "latest_display": "-0.0697%",
-    "previous_display": "0.0370%",
-    "avg_3m_value": -0.034738045138782425,
-    "avg_3m_display": "-0.0347%",
-    "yoy_value": 1.7655447803764934,
-    "yoy_display": "1.77%",
+    "latest_value": -1.224090988933768,
+    "latest_display": "-1.22%",
+    "previous_display": "0.669%",
+    "avg_3m_value": -0.06313701185013769,
+    "avg_3m_display": "-0.0631%",
+    "yoy_value": -3.3125392910682283,
+    "yoy_display": "-3.31%",
     "latest_tone": "positive",
     "yoy_tone": "positive",
-    "contribution_bps_value": -0.596710597974071,
-    "contribution_bps": "-0.6 bps",
+    "contribution_bps_value": -3.525382048129252,
+    "contribution_bps": "-3.5 bps",
     "history": [
       {
+        "label": "Oct-26",
+        "value": -1.224090988933768,
+        "yoy": -3.3125392910682283,
+        "display": "-1.22%",
+        "tone": "positive"
+      },
+      {
         "label": "Sep-26",
-        "value": -0.0697091820063167,
-        "yoy": 1.7655447803764934,
-        "display": "-0.0697%",
-        "tone": "positive"
-      },
-      {
-        "label": "Aug-26",
-        "value": 0.0370467224546589,
-        "yoy": 2.125556576099563,
-        "display": "0.0370%",
-        "tone": "positive"
-      },
-      {
-        "label": "Jul-26",
-        "value": -0.07155167586468947,
-        "yoy": 2.6134457808232314,
-        "display": "-0.0716%",
-        "tone": "positive"
-      },
-      {
-        "label": "Jun-26",
-        "value": 0.19012828984279473,
-        "yoy": 2.7043088739927557,
-        "display": "0.190%",
+        "value": 0.6691901748956841,
+        "yoy": -1.4567071818422872,
+        "display": "0.669%",
         "tone": "negative"
       },
       {
+        "label": "Aug-26",
+        "value": 0.36548977848767095,
+        "yoy": -2.317836110526339,
+        "display": "0.365%",
+        "tone": "negative"
+      },
+      {
+        "label": "Jul-26",
+        "value": 0.39812685490920874,
+        "yoy": -1.8721495978143765,
+        "display": "0.398%",
+        "tone": "negative"
+      },
+      {
+        "label": "Jun-26",
+        "value": -0.22999361128857032,
+        "yoy": -1.7732028681911816,
+        "display": "-0.230%",
+        "tone": "positive"
+      },
+      {
         "label": "May-26",
-        "value": 0.06331226043483351,
-        "yoy": 2.7345851371775476,
-        "display": "0.0633%",
+        "value": 0.10176730322206673,
+        "yoy": -1.992224932485409,
+        "display": "0.102%",
         "tone": "positive"
       },
       {
         "label": "Apr-26",
-        "value": 0.6817139878541267,
-        "yoy": 2.9517724120215805,
-        "display": "0.682%",
-        "tone": "negative"
+        "value": -0.004448645943400109,
+        "yoy": -2.6937229437229537,
+        "display": "-0.00445%",
+        "tone": "positive"
       },
       {
         "label": "Mar-26",
-        "value": -0.16395755286299218,
-        "yoy": 2.0207974269110807,
-        "display": "-0.164%",
+        "value": -0.4202913798736274,
+        "yoy": -3.1756116471398976,
+        "display": "-0.420%",
         "tone": "positive"
       },
       {
         "label": "Feb-26",
-        "value": 0.439561823614798,
-        "yoy": 2.58236722355325,
-        "display": "0.440%",
-        "tone": "negative"
+        "value": -0.37513308949682633,
+        "yoy": -3.1990222827339543,
+        "display": "-0.375%",
+        "tone": "positive"
       },
       {
         "label": "Jan-26",
-        "value": 0.19149352329153047,
-        "yoy": 2.1787740052828575,
-        "display": "0.191%",
-        "tone": "negative"
+        "value": -1.84060042887777,
+        "yoy": -1.958992054778208,
+        "display": "-1.84%",
+        "tone": "positive"
       },
       {
         "label": "Dec-25",
-        "value": 0.6292063492063571,
-        "yoy": 2.329169989056301,
-        "display": "0.629%",
-        "tone": "negative"
+        "value": -0.8749422967503695,
+        "yoy": 1.630665089017902,
+        "display": "-0.875%",
+        "tone": "positive"
       },
       {
         "label": "Nov-25",
-        "value": null,
-        "yoy": 1.911075307431731,
-        "display": "n/a",
-        "tone": "flat"
-      },
-      {
-        "label": "Sep-25",
-        "value": 0.2838101110133051,
-        "yoy": 2.69545463421621,
-        "display": "0.284%",
-        "tone": "negative"
+        "value": 0.10047767192697954,
+        "yoy": 3.5541177516897893,
+        "display": "0.100%",
+        "tone": "positive"
       }
     ]
   },
   "volatile_adjusted": {
-    "core_mom": "0.335%",
-    "adjusted_core_mom": "0.280%",
-    "volatile_contribution_removed": "5.5 bps"
+    "core_mom": "0.296%",
+    "adjusted_core_mom": "0.320%",
+    "volatile_contribution_removed": "-2.4 bps"
   },
   "stats": [
     {
       "label": "Headline CPI m/m",
-      "value": "0.649%",
+      "value": "0.350%",
       "tone": "negative",
-      "detail": "3.72% y/y"
+      "detail": "n/a y/y"
     },
     {
       "label": "Core CPI m/m",
-      "value": "0.335%",
+      "value": "0.296%",
       "tone": "negative",
-      "detail": "2.57% y/y"
+      "detail": "n/a y/y"
     },
     {
       "label": "Core CPI 3M avg",
-      "value": "0.280%",
+      "value": "0.307%",
       "tone": "negative",
       "detail": "average monthly change"
     },
     {
       "label": "CPI NSA level",
-      "value": "336.940",
+      "value": "337.511",
       "tone": "flat",
-      "detail": "Sep 2026"
+      "detail": "Oct 2026"
     }
   ]
 }
