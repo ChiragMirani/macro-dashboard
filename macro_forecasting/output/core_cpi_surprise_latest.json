@@ -1,17 +1,17 @@
 {
-  "generated_at_utc": "2026-11-07T10:56:31.184996+00:00",
-  "target_month": "2026-10",
+  "generated_at_utc": "2026-11-10T23:05:03.298655+00:00",
+  "target_month": "2026-11",
   "threshold_pp": 0.1,
-  "house_forecast_mom": 0.2248224865491455,
-  "house_forecast_yoy": 2.7964319177573804,
+  "house_forecast_mom": 0.23578644400408272,
+  "house_forecast_yoy": 2.9175781161872694,
   "ma3_mom": 0.24799842977876185,
-  "house_gap_vs_ma3": -0.023175943229616358,
+  "house_gap_vs_ma3": -0.012211985774679135,
   "consensus_proxy": {
     "source": "kalshi_implied",
-    "mom_event": "KXECONSTATCPICORE-26OCT",
-    "yoy_event": "KXECONSTATCORECPIYOY-26OCT",
-    "core_mom": 0.18207885304659496,
-    "core_yoy": 2.95
+    "mom_event": "KXECONSTATCPICORE-26NOV",
+    "yoy_event": "KXECONSTATCORECPIYOY-26NOV",
+    "core_mom": 0.1971830985915493,
+    "core_yoy": 2.884710743801653
   },
   "baseline": {
     "regression": {
@@ -845,13 +845,13 @@
       "natgas_mom_lag1": 79.5,
       "natgas_mom_lag2": -12.85403050108932,
       "natgas_vol_3m": 46.25843165831158,
-      "days_in_month": 31.0,
-      "bizdays_total": 22.0,
+      "days_in_month": 30.0,
+      "bizdays_total": 21.0,
       "bizdays_p1": 7.0,
-      "bizdays_p2": 7.0,
-      "bizdays_p3": 8.0,
-      "month_mod6": 3.0,
-      "is_even_month": 1.0,
+      "bizdays_p2": 8.0,
+      "bizdays_p3": 6.0,
+      "month_mod6": 4.0,
+      "is_even_month": 0.0,
       "is_january": 0.0,
       "is_february": 0.0,
       "is_march": 0.0,
@@ -861,10 +861,10 @@
       "is_july": 0.0,
       "is_august": 0.0,
       "is_september": 0.0,
-      "is_october": 1.0,
-      "is_november": 0.0,
+      "is_october": 0.0,
+      "is_november": 1.0,
       "is_december": 0.0,
-      "month": 10.0
+      "month": 11.0
     }
   }
 }
