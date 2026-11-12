@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-10T23:05:20.511062+00:00",
+  "generated_at_utc": "2026-11-12T23:19:36.611077+00:00",
   "inputs": {
     "spot_date": "2026-09-01",
     "spot_ur": 4.1,
@@ -26,79 +26,79 @@
     "forward": null
   },
   "fci_overlay": {
-    "as_of": "2026-10-01",
+    "as_of": "2026-11-01",
     "level_bps_per_1z": 25.0,
     "delta_bps_per_1z": 15.0,
-    "composite_z_tighter_positive": 0.450043490066666,
-    "level_adjustment_pp": -0.1125108725166665,
-    "delta_adjustment_pp": -0.24995241286815278,
-    "total_adjustment_pp": -0.3624632853848193,
+    "composite_z_tighter_positive": 0.47185208400953516,
+    "level_adjustment_pp": -0.11796302100238379,
+    "delta_adjustment_pp": -0.25701252330920615,
+    "total_adjustment_pp": -0.37497554431158997,
     "components": [
       {
         "name": "ANFCI",
-        "latest": -0.435,
-        "lookback_mean": -0.4522333333333333,
-        "lookback_std": 0.17683630534731518,
-        "zscore_tighter_positive": 0.09745359302483848,
-        "contribution_bps": -2.8127718129166626
+        "latest": -0.477,
+        "lookback_mean": -0.4723833333333334,
+        "lookback_std": 0.1813309213994005,
+        "zscore_tighter_positive": -0.025459897468330328,
+        "contribution_bps": -2.9490755250595946
       },
       {
         "name": "HY OAS",
-        "latest": 3.44,
-        "lookback_mean": 3.0824999999999996,
-        "lookback_std": 0.31353163051490246,
-        "zscore_tighter_positive": 1.1402358333444385,
-        "contribution_bps": -2.8127718129166626
+        "latest": 3.3,
+        "lookback_mean": 3.088378378378378,
+        "lookback_std": 0.31127040051249355,
+        "zscore_tighter_positive": 0.6798642635894571,
+        "contribution_bps": -2.9490755250595946
       },
       {
         "name": "VIX",
-        "latest": 16.89590909090909,
-        "lookback_mean": 18.633800101909916,
-        "lookback_std": 6.637003921476229,
-        "zscore_tighter_positive": -0.26184872444888924,
-        "contribution_bps": -2.8127718129166626
+        "latest": 21.16,
+        "lookback_mean": 18.683165181274994,
+        "lookback_std": 6.633578742448618,
+        "zscore_tighter_positive": 0.37337837009088476,
+        "contribution_bps": -2.9490755250595946
       },
       {
         "name": "Broad USD",
-        "latest": 121.6656,
-        "lookback_mean": 117.749615,
-        "lookback_std": 4.750487694571474,
-        "zscore_tighter_positive": 0.824333258346276,
-        "contribution_bps": -2.8127718129166626
+        "latest": 121.8803,
+        "lookback_mean": 117.78392083333334,
+        "lookback_std": 4.76530616060668,
+        "zscore_tighter_positive": 0.8596255998261291,
+        "contribution_bps": -2.9490755250595946
       }
     ],
     "checkpoint_deltas": [
       {
         "name": "since_last_fomc",
         "checkpoint_date": "2026-01-28",
-        "delta_z_tighter_positive": 0.8456352570178951,
-        "adjustment_bps": -12.684528855268427
+        "delta_z_tighter_positive": 0.872380328669085,
+        "adjustment_bps": -13.085704930036275
       },
       {
         "name": "since_last_sep",
         "checkpoint_date": "2025-12-17",
-        "delta_z_tighter_positive": 0.8207141621031234,
-        "adjustment_bps": -12.310712431546852
+        "delta_z_tighter_positive": 0.8410364933922894,
+        "adjustment_bps": -12.61554740088434
       }
     ]
   },
   "adjusted_taylor": {
-    "spot": 4.151223564873151,
+    "spot": 4.138711305946381,
     "forward": null,
     "sep_delta_only_forward": null
   },
   "quarterly_revision": {
     "macro_revision_vs_sep_pp": null,
-    "fci_impulse_since_sep_pp": -0.12310712431546852,
+    "fci_impulse_since_sep_pp": -0.12615547400884342,
     "net_revision_vs_sep_pp": null
   },
   "market_pricing": {
     "treasury": {
       "as_of": "2026-11-01",
       "rates": {
-        "6m": 4.26,
-        "1y": 4.38,
-        "2y": 4.56
+        "6m": 4.38,
+        "1y": 4.56,
+        "2y": 4.73
       },
       "implied_cuts": {
         "6m": 0.0,
@@ -110,7 +110,7 @@
   },
   "policy_gap": {
     "raw_spot_vs_ff_pp": 0.6336868502579707,
-    "adjusted_spot_vs_ff_pp": 0.2712235648731509,
+    "adjusted_spot_vs_ff_pp": 0.25871130594638103,
     "raw_forward_vs_ff_pp": null,
     "adjusted_forward_vs_ff_pp": null
   }

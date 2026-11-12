@@ -1,9 +1,9 @@
 {
-  "fetched_at_utc": "2026-11-11T23:00:16.200520+00:00",
+  "fetched_at_utc": "2026-11-12T23:19:39.951144+00:00",
   "weekly_claims": {
-    "period_end": "2026-10-31",
-    "value": 189000.0,
-    "display": "Week ending Oct 31, 2026: 189,000"
+    "period_end": "2026-11-07",
+    "value": 200000.0,
+    "display": "Week ending Nov 07, 2026: 200,000"
   },
   "adp": {
     "period_end": "2026-10-01",
