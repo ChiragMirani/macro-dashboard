@@ -64,6 +64,10 @@ def market_mid(m: dict) -> float | None:
     if yb > 1 or ya > 1:
         yb /= 100.0
         ya /= 100.0
+    # An empty or barely quoted book (for example bid 0 / ask 1 right after a market lists) says nothing about the
+    # probability; its 0.5 midpoint wrecked the claims consensus on Thursday, November 12, 2026 (343,575 vs ~197,000).
+    if ya <= 0 or ya - yb > 0.25:
+        return None
     return (yb + ya) / 2.0
 
 
@@ -77,7 +81,14 @@ def implied_mean_from_thresholds(markets: list[dict], scale: float = 1.0) -> flo
             continue
         rows.append((float(strike) * scale, prob))
     rows.sort(key=lambda r: r[0])
-    if len(rows) < 2:
+    if len(rows) < 3:
+        return None
+    # "At least this much" probabilities must fall as the strike rises; clean up crossed quotes.
+    for i in range(1, len(rows)):
+        if rows[i][1] > rows[i - 1][1]:
+            rows[i] = (rows[i][0], rows[i - 1][1])
+    # Without both tails pinned (low strike near certain, high strike near zero) the mean is a guess: skip it.
+    if rows[0][1] < 0.65 or rows[-1][1] > 0.35:
         return None
     bins = []
     for i in range(len(rows) - 1):

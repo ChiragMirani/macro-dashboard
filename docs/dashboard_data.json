@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Thursday, November 12, 2026 05:39 PM ET",
-  "generated_at_iso": "2026-11-12T17:39:57.170702-05:00",
-  "current_day": "Thursday",
-  "current_date": "November 12, 2026",
-  "current_time": "05:39 PM ET",
+  "generated_at_et": "Friday, November 13, 2026 11:51 AM ET",
+  "generated_at_iso": "2026-11-13T11:51:10.777332-05:00",
+  "current_day": "Friday",
+  "current_date": "November 13, 2026",
+  "current_time": "11:51 AM ET",
   "next_event": {
     "key": "weekly_claims",
     "label": "Weekly Claims",
@@ -14,59 +14,24 @@
     "release_date": "November 19, 2026",
     "release_time": "8:30 AM ET",
     "release_iso": "2026-11-19T08:30:00-05:00",
-    "hours_until_release": 158,
+    "hours_until_release": 140,
     "schedule_source": "weekly_rule",
-    "house_forecast": "204,392",
-    "kalshi_consensus": "343,575",
+    "house_forecast": "205,082",
+    "kalshi_consensus": "196,950",
     "last_release": "Week ending Oct 31, 2026: 189,000",
-    "risk": "elevated surprise risk",
-    "status": "review",
+    "risk": "normal surprise risk",
+    "status": "live",
     "notes": "Weekly model output with surprise-risk overlay.",
     "model_source": "macro_forecasting/output/weekly_claims_forecast_latest.json",
     "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26nov19",
     "release_source_url": "https://www.dol.gov/ui/data.pdf",
     "consensus_review": {
-      "required": true,
-      "gap_value": -139182.7016670052,
-      "gap_display": "-139,183",
+      "required": false,
+      "gap_value": 8132.192601919291,
+      "gap_display": "+8,132",
       "threshold": 10000.0,
       "threshold_display": "10,000",
-      "house_side": "below Kalshi",
-      "label": "Review required",
-      "message": "Weekly Claims house forecast is -139,183 below Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
-      "news_query": "Week ending November 14, 2026 jobless claims forecast seasonal adjustment",
-      "news_search_url": "https://news.google.com/search?q=Week+ending+November+14%2C+2026+jobless+claims+forecast+seasonal+adjustment",
-      "official_guidance": [
-        {
-          "label": "DOL weekly claims release",
-          "url": "https://www.dol.gov/ui/data.pdf",
-          "status": "unavailable",
-          "hits": []
-        }
-      ],
-      "guidance_hit_count": 0,
-      "news_headlines": [
-        {
-          "title": "U.S. jobless claims rise as home sales hit 16-year low - Honolulu Star-Advertiser",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUG1nUXI4YTE5U2hiakJIR0lVVDQ5QmNjMC1Ic0Z1d2kzUUhaU1J2LXVabngtZ1ZzQzg4dzQzVUluLXBTdXhNZGs5N1czTDRXTUJNeWV3OFNrd0ZQM184LXRGdXJOdUw0bGo0ZmFKQ0NPbERJVG9zYmpuRHNlSWx4ZGY3RHBMcWRDeVlETFZRNkE0eWNCVVhrMTFxWjJPTmI5MktPSjdLeWZjSG1RdDZv?oc=5",
-          "published": "Thu, 12 Nov 2026 20:59:49 GMT"
-        },
-        {
-          "title": "US weekly jobless claims at 57-year lows; worker productivity surges in third quarter - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcm5OTDhuLTE5VENNbUNPODhwRmJyXzBnR1FocDlCWnphSElfTk44Zzl4enh1S1hPUmZsaldReHlNcmVSSVRGTXJFY2Y2TXVmVGVuSlRmQlRGOWg2TV9QQlROV19rank0bG9rX1NIcmlkNWsxcE1KR19XUnhsbFJwdzBMbTgxQ0RLb0JsYy1lQTFkR3VJVkFyel9KeFFCdDNWWE4xeEE4aDNTYmZEejVrcEhPQQ?oc=5",
-          "published": "Thu, 05 Nov 2026 15:59:10 GMT"
-        },
-        {
-          "title": "U.S. Initial Unemployment Claims Declined in the Week of March 14 - Haver Analytics",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTks2N2NLWXJ6M2xrZ2JZdXB3WGZzaGNZdEw1SWZjVEstTjVia1hwRGIyeHJraVk2OVhzV0t0eE1aLWdGMjJWRUZQSFFpLTEtZE9jRmFiUVNiVURCYnVodzdrR2pUY3FOMzlHNnZqRW9ONGpYRExTNlQ4dkswblF1VVFlcnNxX2FjeEZVM19PbHBnSXhiNV83Z19lRQ?oc=5",
-          "published": "Thu, 19 Mar 2026 14:07:39 GMT"
-        },
-        {
-          "title": "US weekly jobless claims fall; labor market remains stable - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNYk1NRGJBS2x3Z2dTWjZxR3BGRWRsSmVadWFnb3FsS2xaS1g2WkJVUGFwVWtiYWhCTjZyVVkxaS1BcF9ZZkFYclM4R3REOFI2Y0x2YXk4MmVTSnB2bmJHdnBXdGVSMnk3YmloWVBISHQzN1BQU2dsZE5uWUs3SjJrZWdCbUVybzgxaDYwaExUTDh6YTdReDhnc2E3T2czRDJxVV9FRw?oc=5",
-          "published": "Thu, 16 Jul 2026 07:00:00 GMT"
-        }
-      ]
+      "house_side": "above Kalshi"
     }
   },
   "events": [
@@ -79,59 +44,24 @@
       "release_date": "November 19, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-11-19T08:30:00-05:00",
-      "hours_until_release": 158,
+      "hours_until_release": 140,
       "schedule_source": "weekly_rule",
-      "house_forecast": "204,392",
-      "kalshi_consensus": "343,575",
+      "house_forecast": "205,082",
+      "kalshi_consensus": "196,950",
       "last_release": "Week ending Oct 31, 2026: 189,000",
-      "risk": "elevated surprise risk",
-      "status": "review",
+      "risk": "normal surprise risk",
+      "status": "live",
       "notes": "Weekly model output with surprise-risk overlay.",
       "model_source": "macro_forecasting/output/weekly_claims_forecast_latest.json",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26nov19",
       "release_source_url": "https://www.dol.gov/ui/data.pdf",
       "consensus_review": {
-        "required": true,
-        "gap_value": -139182.7016670052,
-        "gap_display": "-139,183",
+        "required": false,
+        "gap_value": 8132.192601919291,
+        "gap_display": "+8,132",
         "threshold": 10000.0,
         "threshold_display": "10,000",
-        "house_side": "below Kalshi",
-        "label": "Review required",
-        "message": "Weekly Claims house forecast is -139,183 below Kalshi; threshold is 10,000. Check official guidance and news before using the forecast.",
-        "news_query": "Week ending November 14, 2026 jobless claims forecast seasonal adjustment",
-        "news_search_url": "https://news.google.com/search?q=Week+ending+November+14%2C+2026+jobless+claims+forecast+seasonal+adjustment",
-        "official_guidance": [
-          {
-            "label": "DOL weekly claims release",
-            "url": "https://www.dol.gov/ui/data.pdf",
-            "status": "unavailable",
-            "hits": []
-          }
-        ],
-        "guidance_hit_count": 0,
-        "news_headlines": [
-          {
-            "title": "U.S. jobless claims rise as home sales hit 16-year low - Honolulu Star-Advertiser",
-            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUG1nUXI4YTE5U2hiakJIR0lVVDQ5QmNjMC1Ic0Z1d2kzUUhaU1J2LXVabngtZ1ZzQzg4dzQzVUluLXBTdXhNZGs5N1czTDRXTUJNeWV3OFNrd0ZQM184LXRGdXJOdUw0bGo0ZmFKQ0NPbERJVG9zYmpuRHNlSWx4ZGY3RHBMcWRDeVlETFZRNkE0eWNCVVhrMTFxWjJPTmI5MktPSjdLeWZjSG1RdDZv?oc=5",
-            "published": "Thu, 12 Nov 2026 20:59:49 GMT"
-          },
-          {
-            "title": "US weekly jobless claims at 57-year lows; worker productivity surges in third quarter - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcm5OTDhuLTE5VENNbUNPODhwRmJyXzBnR1FocDlCWnphSElfTk44Zzl4enh1S1hPUmZsaldReHlNcmVSSVRGTXJFY2Y2TXVmVGVuSlRmQlRGOWg2TV9QQlROV19rank0bG9rX1NIcmlkNWsxcE1KR19XUnhsbFJwdzBMbTgxQ0RLb0JsYy1lQTFkR3VJVkFyel9KeFFCdDNWWE4xeEE4aDNTYmZEejVrcEhPQQ?oc=5",
-            "published": "Thu, 05 Nov 2026 15:59:10 GMT"
-          },
-          {
-            "title": "U.S. Initial Unemployment Claims Declined in the Week of March 14 - Haver Analytics",
-            "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTks2N2NLWXJ6M2xrZ2JZdXB3WGZzaGNZdEw1SWZjVEstTjVia1hwRGIyeHJraVk2OVhzV0t0eE1aLWdGMjJWRUZQSFFpLTEtZE9jRmFiUVNiVURCYnVodzdrR2pUY3FOMzlHNnZqRW9ONGpYRExTNlQ4dkswblF1VVFlcnNxX2FjeEZVM19PbHBnSXhiNV83Z19lRQ?oc=5",
-            "published": "Thu, 19 Mar 2026 14:07:39 GMT"
-          },
-          {
-            "title": "US weekly jobless claims fall; labor market remains stable - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNYk1NRGJBS2x3Z2dTWjZxR3BGRWRsSmVadWFnb3FsS2xaS1g2WkJVUGFwVWtiYWhCTjZyVVkxaS1BcF9ZZkFYclM4R3REOFI2Y0x2YXk4MmVTSnB2bmJHdnBXdGVSMnk3YmloWVBISHQzN1BQU2dsZE5uWUs3SjJrZWdCbUVybzgxaDYwaExUTDh6YTdReDhnc2E3T2czRDJxVV9FRw?oc=5",
-            "published": "Thu, 16 Jul 2026 07:00:00 GMT"
-          }
-        ]
+        "house_side": "above Kalshi"
       }
     },
     {
@@ -143,7 +73,7 @@
       "release_date": "November 25, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-11-25T08:30:00-05:00",
-      "hours_until_release": 302,
+      "hours_until_release": 284,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "0.305% m/m | 3.25% y/y",
       "kalshi_consensus": "no live Kalshi market found",
@@ -165,7 +95,7 @@
       "release_date": "December 02, 2026",
       "release_time": "8:15 AM ET",
       "release_iso": "2026-12-02T08:15:00-05:00",
-      "hours_until_release": 470,
+      "hours_until_release": 452,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "87k",
       "kalshi_consensus": "75k",
@@ -194,10 +124,10 @@
       "release_date": "December 04, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-12-04T08:30:00-05:00",
-      "hours_until_release": 518,
+      "hours_until_release": 500,
       "schedule_source": "seeded_official_schedule",
-      "house_forecast": "102k",
-      "kalshi_consensus": "80k",
+      "house_forecast": "106k",
+      "kalshi_consensus": "84k",
       "last_release": "October 2026: 165k",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -207,7 +137,7 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": 22.433039855957034,
+        "gap_value": 22.02068939208985,
         "gap_display": "+22k",
         "threshold": 40.0,
         "threshold_display": "40k",
@@ -223,7 +153,7 @@
       "release_date": "December 04, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-12-04T08:30:00-05:00",
-      "hours_until_release": 518,
+      "hours_until_release": 500,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "4.10%",
       "kalshi_consensus": "4.24%",
@@ -236,13 +166,13 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": true,
-        "gap_value": -0.14311594202898803,
-        "gap_display": "-0.143 pp",
+        "gap_value": -0.13941605839416038,
+        "gap_display": "-0.139 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "below Kalshi",
         "label": "Review required",
-        "message": "Unemployment Rate house forecast is -0.143 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
+        "message": "Unemployment Rate house forecast is -0.139 pp below Kalshi; threshold is 0.050 pp. Check official guidance and news before using the forecast.",
         "news_query": "November 2026 jobs report BLS forecast adjustment survey",
         "news_search_url": "https://news.google.com/search?q=November+2026+jobs+report+BLS+forecast+adjustment+survey",
         "official_guidance": [
@@ -261,14 +191,14 @@
             "published": "Tue, 10 Nov 2026 13:31:08 GMT"
           },
           {
+            "title": "PPI Report Shows Business Prices Up 6.5% in a Year, the Most Since 2022 - Stock Titan",
+            "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB4aEhfZGJtcWpHTDJudzN4UTBwT3puOHBlNkJaOEhqZGxYTU50N2ZaVWtuNXZEcGkzOGdYWGZUck91Mk8yZEVJeFRyUjh5Zk4xd3FPdGNkU243cVFWYS1RekRXcXRyMUNjXzdZ?oc=5",
+            "published": "Fri, 13 Nov 2026 13:57:38 GMT"
+          },
+          {
             "title": "Manufacturing industry added 19K jobs in October - Manufacturing Dive",
             "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcmxIN2dOSTdtMGdaaF9CLWJQcWo2VG5YQzI4YnlEeUp3TnNsRndPMEgzcGFIcHBFOXlKSWlTMl9HN2Z0ODF3WWxVRkJVbko0czJWZWZJMHY2ZmRGWUFvMWN2UzlMQ2ZhZTNUVUtjQW11Y1BiYkljZ0tQSUpzcjR3YUJRWU5hamlkMkR0TnZMQjlNbHZoY1BrZ0FaRXJqWXctYUVWX2xoNF84NEFXUUprNGxpSnI?oc=5",
             "published": "Fri, 06 Nov 2026 17:16:24 GMT"
-          },
-          {
-            "title": "Jobs Report Shows 165,000 New Jobs When 59,000 Were Expected - Stock Titan",
-            "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBDSWhjUWI0dzl4X3kxdXFwLU54c09vMi1jUW9aOUR3YjJuODQtQmQzQ0RXQzFtZHdnenR3QndQellrT1R0VDRvZEdWblBDenhWaWllWkFuTTJxbmo5ZEVibHJVWWxmRHRkS0QwNg?oc=5",
-            "published": "Fri, 06 Nov 2026 13:48:50 GMT"
           },
           {
             "title": "Why won't the October CPI report have a yearly inflation rate? The 2025 shutdown left a gap - Nacionale",
@@ -287,10 +217,10 @@
       "release_date": "December 10, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-12-10T08:30:00-05:00",
-      "hours_until_release": 662,
+      "hours_until_release": 644,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "0.236% m/m | 2.92% y/y",
-      "kalshi_consensus": "0.218% m/m | 2.85% y/y",
+      "kalshi_consensus": "0.224% m/m | 2.85% y/y",
       "last_release": "October 2026: 0.296% m/m",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -300,8 +230,8 @@
       "release_source_url": "https://www.bls.gov/news.release/cpi.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": 0.017317975535614205,
-        "gap_display": "+0.017 pp",
+        "gap_value": 0.012257032239376797,
+        "gap_display": "+0.012 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "above Kalshi"
@@ -11218,7 +11148,7 @@
     "period": "October 2026",
     "data_month": "2026-10-01",
     "generated_at": "2026-11-10T18:05:34",
-    "updated_display": "Thursday, November 12, 2026 05:39 PM ET",
+    "updated_display": "Friday, November 13, 2026 11:51 AM ET",
     "source_path": "macro_forecasting/output/core_pce_bridge_latest.json",
     "model_source": "macro_forecasting/cpi_to_pce_bridge.py",
     "core_cpi_mom": 0.2963,
@@ -12123,8 +12053,8 @@
   },
   "summary": {
     "event_count": 6,
-    "live_count": 4,
+    "live_count": 5,
     "partial_count": 0,
-    "review_count": 2
+    "review_count": 1
   }
 }

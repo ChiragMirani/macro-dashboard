@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-11-12T22:39:56.838265+00:00",
+  "generated_at_utc": "2026-11-13T16:51:10.112154+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26NOV19",
       "kind": "threshold",
       "market_count": 11,
-      "implied_value": 343575.0,
-      "consensus_label": "343,575",
+      "implied_value": 196950.0,
+      "consensus_label": "196,950",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26nov19",
       "title": "Initial jobless claims for the week ending November 14, 2026"
     },
@@ -26,8 +26,8 @@
       "event_ticker": "KXECONSTATCPICORE-26NOV",
       "kind": "bucket",
       "market_count": 8,
-      "implied_value": 0.2184684684684685,
-      "consensus_label": "0.218% m/m",
+      "implied_value": 0.22352941176470592,
+      "consensus_label": "0.224% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26nov",
       "title": "Core CPI in November (exact value)"
     },
@@ -36,7 +36,7 @@
       "event_ticker": "KXCPICOREYOY-26NOV",
       "kind": "threshold",
       "market_count": 16,
-      "implied_value": 2.8510000000000004,
+      "implied_value": 2.8505,
       "consensus_label": "2.85% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26nov",
       "title": "Core CPI YoY in November"
@@ -46,8 +46,8 @@
       "event_ticker": "KXPAYROLLS-26NOV",
       "kind": "threshold",
       "market_count": 13,
-      "implied_value": 79.675,
-      "consensus_label": "80k",
+      "implied_value": 83.725,
+      "consensus_label": "84k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26nov",
       "title": "Jobs numbers in Nov 2026?"
     },
@@ -56,7 +56,7 @@
       "event_ticker": "KXECONSTATU3-26NOV",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.243115942028988,
+      "implied_value": 4.23941605839416,
       "consensus_label": "4.24%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26nov",
       "title": "Unemployment rate in Nov 2026?"
