@@ -1,54 +1,78 @@
 {
-  "period": "June 2026",
+  "period": "October 2026",
   "source": "SQLite store populated from BLS CES establishment survey and CPS household survey component series; U-3 and LFPR exact rows are calculated from components and separated from official rounded published rates",
-  "database": "macro_site\\nfp_survey_data.db",
+  "database": "macro_site/nfp_survey_data.db",
   "headline": {
     "series_id": "CES0000000001",
     "label": "Total nonfarm",
     "group": "Headline",
-    "level_value": 158984.0,
-    "level": "159.0m",
-    "latest_date": "June 2026",
+    "level_value": 159293.0,
+    "level": "159.3m",
+    "latest_date": "October 2026",
     "is_headline": true,
     "is_major": false,
     "is_metric": false,
     "windows": [
       {
         "label": "1M",
-        "value": 57.0,
-        "display": "+57.0k",
+        "value": 165.0,
+        "display": "+165k",
         "tone": "positive"
       },
       {
         "label": "3M",
-        "value": 334.0,
-        "display": "+334k",
+        "value": 411.0,
+        "display": "+411k",
         "tone": "positive"
       },
       {
         "label": "6M",
-        "value": 552.0,
-        "display": "+552k",
+        "value": 495.0,
+        "display": "+495k",
         "tone": "positive"
       },
       {
         "label": "12M",
-        "value": 506.0,
-        "display": "+506k",
+        "value": 885.0,
+        "display": "+885k",
         "tone": "positive"
       }
     ],
     "history": [
       {
+        "label": "Oct-26",
+        "value": 165.0,
+        "display": "+165k",
+        "tone": "positive"
+      },
+      {
+        "label": "Sep-26",
+        "value": 60.0,
+        "display": "+60.0k",
+        "tone": "positive"
+      },
+      {
+        "label": "Aug-26",
+        "value": 186.0,
+        "display": "+186k",
+        "tone": "positive"
+      },
+      {
+        "label": "Jul-26",
+        "value": -10.0,
+        "display": "-10.0k",
+        "tone": "negative"
+      },
+      {
         "label": "Jun-26",
-        "value": 57.0,
-        "display": "+57.0k",
+        "value": 31.0,
+        "display": "+31.0k",
         "tone": "positive"
       },
       {
         "label": "May-26",
-        "value": 129.0,
-        "display": "+129k",
+        "value": 63.0,
+        "display": "+63.0k",
         "tone": "positive"
       },
       {
@@ -86,210 +110,210 @@
         "value": 41.0,
         "display": "+41.0k",
         "tone": "positive"
-      },
-      {
-        "label": "Oct-25",
-        "value": -140.0,
-        "display": "-140k",
-        "tone": "negative"
-      },
-      {
-        "label": "Sep-25",
-        "value": 76.0,
-        "display": "+76.0k",
-        "tone": "positive"
-      },
-      {
-        "label": "Aug-25",
-        "value": -70.0,
-        "display": "-70.0k",
-        "tone": "negative"
-      },
-      {
-        "label": "Jul-25",
-        "value": 64.0,
-        "display": "+64.0k",
-        "tone": "positive"
       }
     ],
-    "change_1m_value": 57.0,
-    "change_1m": "+57.0k",
-    "change_3m": "+334k",
-    "change_6m": "+552k",
-    "change_12m": "+506k",
+    "change_1m_value": 165.0,
+    "change_1m": "+165k",
+    "change_3m": "+411k",
+    "change_6m": "+495k",
+    "change_12m": "+885k",
     "tone_1m": "positive",
-    "bar_pct": 82.6
+    "bar_pct": 100.0
   },
   "breadth": {
-    "positive": 8,
+    "positive": 9,
     "total": 14,
-    "display": "8/14"
+    "display": "9/14"
   },
   "biggest_gain": {
-    "series_id": "CES6500000001",
-    "label": "Private education and health services",
+    "series_id": "CES6000000001",
+    "label": "Professional and business services",
     "group": "Major sector",
-    "level_value": 27973.0,
-    "level": "28.0m",
-    "latest_date": "June 2026",
+    "level_value": 22604.0,
+    "level": "22.6m",
+    "latest_date": "October 2026",
     "is_headline": false,
     "is_major": true,
     "is_metric": false,
     "windows": [
       {
         "label": "1M",
-        "value": 69.0,
-        "display": "+69.0k",
+        "value": 70.0,
+        "display": "+70.0k",
         "tone": "positive"
       },
       {
         "label": "3M",
-        "value": 181.0,
-        "display": "+181k",
+        "value": 108.0,
+        "display": "+108k",
         "tone": "positive"
       },
       {
         "label": "6M",
-        "value": 346.0,
-        "display": "+346k",
+        "value": 144.0,
+        "display": "+144k",
         "tone": "positive"
       },
       {
         "label": "12M",
-        "value": 648.0,
-        "display": "+648k",
+        "value": 269.0,
+        "display": "+269k",
         "tone": "positive"
       }
     ],
     "history": [
       {
+        "label": "Oct-26",
+        "value": 70.0,
+        "display": "+70.0k",
+        "tone": "positive"
+      },
+      {
+        "label": "Sep-26",
+        "value": 8.0,
+        "display": "+8.0k",
+        "tone": "positive"
+      },
+      {
+        "label": "Aug-26",
+        "value": 30.0,
+        "display": "+30.0k",
+        "tone": "positive"
+      },
+      {
+        "label": "Jul-26",
+        "value": -6.0,
+        "display": "-6.0k",
+        "tone": "negative"
+      },
+      {
         "label": "Jun-26",
-        "value": 69.0,
-        "display": "+69.0k",
+        "value": 36.0,
+        "display": "+36.0k",
         "tone": "positive"
       },
       {
         "label": "May-26",
-        "value": 45.0,
-        "display": "+45.0k",
+        "value": 6.0,
+        "display": "+6.0k",
         "tone": "positive"
       },
       {
         "label": "Apr-26",
-        "value": 67.0,
-        "display": "+67.0k",
+        "value": 20.0,
+        "display": "+20.0k",
         "tone": "positive"
       },
       {
         "label": "Mar-26",
-        "value": 95.0,
-        "display": "+95.0k",
+        "value": 28.0,
+        "display": "+28.0k",
         "tone": "positive"
       },
       {
         "label": "Feb-26",
-        "value": -49.0,
-        "display": "-49.0k",
-        "tone": "negative"
+        "value": 4.0,
+        "display": "+4.0k",
+        "tone": "positive"
       },
       {
         "label": "Jan-26",
-        "value": 119.0,
-        "display": "+119k",
+        "value": 36.0,
+        "display": "+36.0k",
         "tone": "positive"
       },
       {
         "label": "Dec-25",
-        "value": 38.0,
-        "display": "+38.0k",
-        "tone": "positive"
+        "value": -19.0,
+        "display": "-19.0k",
+        "tone": "negative"
       },
       {
         "label": "Nov-25",
         "value": 56.0,
         "display": "+56.0k",
         "tone": "positive"
-      },
-      {
-        "label": "Oct-25",
-        "value": 44.0,
-        "display": "+44.0k",
-        "tone": "positive"
-      },
-      {
-        "label": "Sep-25",
-        "value": 54.0,
-        "display": "+54.0k",
-        "tone": "positive"
-      },
-      {
-        "label": "Aug-25",
-        "value": 23.0,
-        "display": "+23.0k",
-        "tone": "positive"
-      },
-      {
-        "label": "Jul-25",
-        "value": 87.0,
-        "display": "+87.0k",
-        "tone": "positive"
       }
     ],
-    "change_1m_value": 69.0,
-    "change_1m": "+69.0k",
-    "change_3m": "+181k",
-    "change_6m": "+346k",
-    "change_12m": "+648k",
+    "change_1m_value": 70.0,
+    "change_1m": "+70.0k",
+    "change_3m": "+108k",
+    "change_6m": "+144k",
+    "change_12m": "+269k",
     "tone_1m": "positive",
-    "bar_pct": 100.0
+    "bar_pct": 42.4
   },
   "biggest_drag": {
     "series_id": "CES7000000001",
     "label": "Leisure and hospitality",
     "group": "Major sector",
-    "level_value": 16951.0,
+    "level_value": 16964.0,
     "level": "17.0m",
-    "latest_date": "June 2026",
+    "latest_date": "October 2026",
     "is_headline": false,
     "is_major": true,
     "is_metric": false,
     "windows": [
       {
         "label": "1M",
-        "value": -61.0,
-        "display": "-61.0k",
+        "value": -13.0,
+        "display": "-13.0k",
         "tone": "negative"
       },
       {
         "label": "3M",
-        "value": -28.0,
-        "display": "-28.0k",
-        "tone": "negative"
+        "value": 42.0,
+        "display": "+42.0k",
+        "tone": "positive"
       },
       {
         "label": "6M",
-        "value": -10.0,
-        "display": "-10.0k",
+        "value": -8.0,
+        "display": "-8.0k",
         "tone": "negative"
       },
       {
         "label": "12M",
-        "value": 114.0,
-        "display": "+114k",
+        "value": 16.0,
+        "display": "+16.0k",
         "tone": "positive"
       }
     ],
     "history": [
       {
+        "label": "Oct-26",
+        "value": -13.0,
+        "display": "-13.0k",
+        "tone": "negative"
+      },
+      {
+        "label": "Sep-26",
+        "value": 13.0,
+        "display": "+13.0k",
+        "tone": "positive"
+      },
+      {
+        "label": "Aug-26",
+        "value": 42.0,
+        "display": "+42.0k",
+        "tone": "positive"
+      },
+      {
+        "label": "Jul-26",
+        "value": -38.0,
+        "display": "-38.0k",
+        "tone": "negative"
+      },
+      {
         "label": "Jun-26",
-        "value": -61.0,
-        "display": "-61.0k",
+        "value": -54.0,
+        "display": "-54.0k",
         "tone": "negative"
       },
       {
         "label": "May-26",
-        "value": 40.0,
-        "display": "+40.0k",
+        "value": 42.0,
+        "display": "+42.0k",
         "tone": "positive"
       },
       {
@@ -327,83 +351,59 @@
         "value": -12.0,
         "display": "-12.0k",
         "tone": "negative"
-      },
-      {
-        "label": "Oct-25",
-        "value": 41.0,
-        "display": "+41.0k",
-        "tone": "positive"
-      },
-      {
-        "label": "Sep-25",
-        "value": 37.0,
-        "display": "+37.0k",
-        "tone": "positive"
-      },
-      {
-        "label": "Aug-25",
-        "value": 22.0,
-        "display": "+22.0k",
-        "tone": "positive"
-      },
-      {
-        "label": "Jul-25",
-        "value": 11.0,
-        "display": "+11.0k",
-        "tone": "positive"
       }
     ],
-    "change_1m_value": -61.0,
-    "change_1m": "-61.0k",
-    "change_3m": "-28.0k",
-    "change_6m": "-10.0k",
-    "change_12m": "+114k",
+    "change_1m_value": -13.0,
+    "change_1m": "-13.0k",
+    "change_3m": "+42.0k",
+    "change_6m": "-8.0k",
+    "change_12m": "+16.0k",
     "tone_1m": "negative",
-    "bar_pct": 88.4
+    "bar_pct": 7.9
   },
   "household_rounding": [
     {
       "label": "U-3 unemployment rate",
-      "exact": "4.189%",
-      "official": "4.2%",
+      "exact": "4.141%",
+      "official": "4.1%",
       "formula": "100 * unemployed persons / civilian labor force",
       "rounding": {
-        "exact_value": 4.1887599050532005,
-        "exact_display": "4.189%",
-        "rounded_value": 4.2,
-        "rounded_display": "4.2%",
-        "lower_print": "4.1%",
-        "higher_print": "4.3%",
-        "lower_cutoff": "4.15%",
-        "upper_cutoff": "4.25%",
-        "down_buffer_bps_value": 3.875990505320015,
-        "up_buffer_bps_value": 6.1240094946799495,
-        "down_buffer_bps": "3.88 bps",
-        "up_buffer_bps": "6.12 bps",
-        "closest_side": "lower",
-        "summary": "3.88 bps above 4.1% cutoff; 6.12 bps below 4.3% cutoff"
+        "exact_value": 4.141009942407855,
+        "exact_display": "4.141%",
+        "rounded_value": 4.1,
+        "rounded_display": "4.1%",
+        "lower_print": "4.0%",
+        "higher_print": "4.2%",
+        "lower_cutoff": "4.05%",
+        "upper_cutoff": "4.15%",
+        "down_buffer_bps_value": 9.100994240785543,
+        "up_buffer_bps_value": 0.8990057592144218,
+        "down_buffer_bps": "9.10 bps",
+        "up_buffer_bps": "0.90 bps",
+        "closest_side": "higher",
+        "summary": "9.10 bps above 4.0% cutoff; 0.90 bps below 4.2% cutoff"
       }
     },
     {
       "label": "Labor force participation rate",
-      "exact": "61.548%",
-      "official": "61.5%",
+      "exact": "61.913%",
+      "official": "61.9%",
       "formula": "100 * civilian labor force / civilian noninstitutional population",
       "rounding": {
-        "exact_value": 61.547574918412884,
-        "exact_display": "61.548%",
-        "rounded_value": 61.5,
-        "rounded_display": "61.5%",
-        "lower_print": "61.4%",
-        "higher_print": "61.6%",
-        "lower_cutoff": "61.45%",
-        "upper_cutoff": "61.55%",
-        "down_buffer_bps_value": 9.757491841288157,
-        "up_buffer_bps_value": 0.2425081587112743,
-        "down_buffer_bps": "9.76 bps",
-        "up_buffer_bps": "0.24 bps",
+        "exact_value": 61.91300121154083,
+        "exact_display": "61.913%",
+        "rounded_value": 61.9,
+        "rounded_display": "61.9%",
+        "lower_print": "61.8%",
+        "higher_print": "62.0%",
+        "lower_cutoff": "61.85%",
+        "upper_cutoff": "61.95%",
+        "down_buffer_bps_value": 6.300121154082916,
+        "up_buffer_bps_value": 3.6998788459165155,
+        "down_buffer_bps": "6.30 bps",
+        "up_buffer_bps": "3.70 bps",
         "closest_side": "higher",
-        "summary": "9.76 bps above 61.4% cutoff; 0.24 bps below 61.6% cutoff"
+        "summary": "6.30 bps above 61.8% cutoff; 3.70 bps below 62.0% cutoff"
       }
     }
   ],
@@ -416,6 +416,30 @@
       "formula": "100 * unemployed persons / civilian labor force",
       "history": [
         {
+          "label": "Oct-26",
+          "value": 4.141009942407855,
+          "display": "4.141%",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 4.17532978585944,
+          "display": "4.175%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-26",
+          "value": 4.141314783510134,
+          "display": "4.141%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-26",
+          "value": 4.09003276284197,
+          "display": "4.090%",
+          "tone": "positive"
+        },
+        {
           "label": "Jun-26",
           "value": 4.1887599050532005,
           "display": "4.189%",
@@ -462,49 +486,25 @@
           "value": 4.535941844806781,
           "display": "4.536%",
           "tone": "flat"
-        },
-        {
-          "label": "Oct-25",
-          "value": null,
-          "display": "n/a",
-          "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 4.440590677387146,
-          "display": "4.441%",
-          "tone": "negative"
-        },
-        {
-          "label": "Aug-25",
-          "value": 4.322108345534407,
-          "display": "4.322%",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": 4.2673051193577916,
-          "display": "4.267%",
-          "tone": "negative"
         }
       ],
-      "latest_value": 4.1887599050532005,
-      "latest": "4.189%",
+      "latest_value": 4.141009942407855,
+      "latest": "4.141%",
       "rounding": {
-        "exact_value": 4.1887599050532005,
-        "exact_display": "4.189%",
-        "rounded_value": 4.2,
-        "rounded_display": "4.2%",
-        "lower_print": "4.1%",
-        "higher_print": "4.3%",
-        "lower_cutoff": "4.15%",
-        "upper_cutoff": "4.25%",
-        "down_buffer_bps_value": 3.875990505320015,
-        "up_buffer_bps_value": 6.1240094946799495,
-        "down_buffer_bps": "3.88 bps",
-        "up_buffer_bps": "6.12 bps",
-        "closest_side": "lower",
-        "summary": "3.88 bps above 4.1% cutoff; 6.12 bps below 4.3% cutoff"
+        "exact_value": 4.141009942407855,
+        "exact_display": "4.141%",
+        "rounded_value": 4.1,
+        "rounded_display": "4.1%",
+        "lower_print": "4.0%",
+        "higher_print": "4.2%",
+        "lower_cutoff": "4.05%",
+        "upper_cutoff": "4.15%",
+        "down_buffer_bps_value": 9.100994240785543,
+        "up_buffer_bps_value": 0.8990057592144218,
+        "down_buffer_bps": "9.10 bps",
+        "up_buffer_bps": "0.90 bps",
+        "closest_side": "higher",
+        "summary": "9.10 bps above 4.0% cutoff; 0.90 bps below 4.2% cutoff"
       }
     },
     {
@@ -514,6 +514,30 @@
       "is_metric": true,
       "formula": null,
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 4.1,
+          "display": "4.1%",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 4.2,
+          "display": "4.2%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-26",
+          "value": 4.1,
+          "display": "4.1%",
+          "tone": "flat"
+        },
+        {
+          "label": "Jul-26",
+          "value": 4.1,
+          "display": "4.1%",
+          "tone": "positive"
+        },
         {
           "label": "Jun-26",
           "value": 4.2,
@@ -561,34 +585,10 @@
           "value": 4.5,
           "display": "4.5%",
           "tone": "flat"
-        },
-        {
-          "label": "Oct-25",
-          "value": null,
-          "display": "n/a",
-          "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 4.4,
-          "display": "4.4%",
-          "tone": "negative"
-        },
-        {
-          "label": "Aug-25",
-          "value": 4.3,
-          "display": "4.3%",
-          "tone": "flat"
-        },
-        {
-          "label": "Jul-25",
-          "value": 4.3,
-          "display": "4.3%",
-          "tone": "negative"
         }
       ],
-      "latest_value": 4.2,
-      "latest": "4.2%"
+      "latest_value": 4.1,
+      "latest": "4.1%"
     },
     {
       "series_id": "LNS11000000/LNU00000000",
@@ -597,6 +597,30 @@
       "is_metric": true,
       "formula": "100 * civilian labor force / civilian noninstitutional population",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 61.91300121154083,
+          "display": "61.913%",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 61.78897784100394,
+          "display": "61.789%",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 61.64406441188751,
+          "display": "61.644%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 61.4257379705175,
+          "display": "61.426%",
+          "tone": "negative"
+        },
         {
           "label": "Jun-26",
           "value": 61.547574918412884,
@@ -644,49 +668,25 @@
           "value": 62.46190370421617,
           "display": "62.462%",
           "tone": "flat"
-        },
-        {
-          "label": "Oct-25",
-          "value": null,
-          "display": "n/a",
-          "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 62.45250268027102,
-          "display": "62.453%",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": 62.31729081280725,
-          "display": "62.317%",
-          "tone": "positive"
-        },
-        {
-          "label": "Jul-25",
-          "value": 62.24300089486276,
-          "display": "62.243%",
-          "tone": "negative"
         }
       ],
-      "latest_value": 61.547574918412884,
-      "latest": "61.548%",
+      "latest_value": 61.91300121154083,
+      "latest": "61.913%",
       "rounding": {
-        "exact_value": 61.547574918412884,
-        "exact_display": "61.548%",
-        "rounded_value": 61.5,
-        "rounded_display": "61.5%",
-        "lower_print": "61.4%",
-        "higher_print": "61.6%",
-        "lower_cutoff": "61.45%",
-        "upper_cutoff": "61.55%",
-        "down_buffer_bps_value": 9.757491841288157,
-        "up_buffer_bps_value": 0.2425081587112743,
-        "down_buffer_bps": "9.76 bps",
-        "up_buffer_bps": "0.24 bps",
+        "exact_value": 61.91300121154083,
+        "exact_display": "61.913%",
+        "rounded_value": 61.9,
+        "rounded_display": "61.9%",
+        "lower_print": "61.8%",
+        "higher_print": "62.0%",
+        "lower_cutoff": "61.85%",
+        "upper_cutoff": "61.95%",
+        "down_buffer_bps_value": 6.300121154082916,
+        "up_buffer_bps_value": 3.6998788459165155,
+        "down_buffer_bps": "6.30 bps",
+        "up_buffer_bps": "3.70 bps",
         "closest_side": "higher",
-        "summary": "9.76 bps above 61.4% cutoff; 0.24 bps below 61.6% cutoff"
+        "summary": "6.30 bps above 61.8% cutoff; 3.70 bps below 62.0% cutoff"
       }
     },
     {
@@ -696,6 +696,30 @@
       "is_metric": true,
       "formula": null,
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 61.9,
+          "display": "61.9%",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 61.8,
+          "display": "61.8%",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 61.6,
+          "display": "61.6%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 61.4,
+          "display": "61.4%",
+          "tone": "negative"
+        },
         {
           "label": "Jun-26",
           "value": 61.5,
@@ -743,34 +767,10 @@
           "value": 62.5,
           "display": "62.5%",
           "tone": "flat"
-        },
-        {
-          "label": "Oct-25",
-          "value": null,
-          "display": "n/a",
-          "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 62.5,
-          "display": "62.5%",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": 62.3,
-          "display": "62.3%",
-          "tone": "positive"
-        },
-        {
-          "label": "Jul-25",
-          "value": 62.2,
-          "display": "62.2%",
-          "tone": "negative"
         }
       ],
-      "latest_value": 61.5,
-      "latest": "61.5%"
+      "latest_value": 61.9,
+      "latest": "61.9%"
     },
     {
       "series_id": "",
@@ -779,15 +779,39 @@
       "is_metric": true,
       "history": [
         {
+          "label": "Oct-26",
+          "value": 0.3697834125726329,
+          "display": "0.370%",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 0.26483050847458944,
+          "display": "0.265%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-26",
+          "value": 0.31880977683313994,
+          "display": "0.319%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 0.1330140994945328,
+          "display": "0.133%",
+          "tone": "negative"
+        },
+        {
           "label": "Jun-26",
-          "value": 0.3465742468675037,
-          "display": "0.347%",
+          "value": 0.26673779674579734,
+          "display": "0.267%",
           "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 0.2673082063619381,
-          "display": "0.267%",
+          "value": 0.21384656508955935,
+          "display": "0.214%",
           "tone": "positive"
         },
         {
@@ -825,34 +849,10 @@
           "value": 0.407055630936215,
           "display": "0.407%",
           "tone": "negative"
-        },
-        {
-          "label": "Oct-25",
-          "value": 0.4087193460490468,
-          "display": "0.409%",
-          "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.21845985800110768,
-          "display": "0.218%",
-          "tone": "negative"
-        },
-        {
-          "label": "Aug-25",
-          "value": 0.4112969564025182,
-          "display": "0.411%",
-          "tone": "positive"
-        },
-        {
-          "label": "Jul-25",
-          "value": 0.30253025302529046,
-          "display": "0.303%",
-          "tone": "positive"
         }
       ],
-      "latest_value": 0.3465742468675037,
-      "latest": "0.347%"
+      "latest_value": 0.3697834125726329,
+      "latest": "0.370%"
     },
     {
       "series_id": "",
@@ -861,15 +861,39 @@
       "is_metric": true,
       "history": [
         {
+          "label": "Oct-26",
+          "value": 3.1207598371777445,
+          "display": "3.12%",
+          "tone": "negative"
+        },
+        {
+          "label": "Sep-26",
+          "value": 3.1607629427792716,
+          "display": "3.16%",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 3.1130529765155623,
+          "display": "3.11%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-26",
+          "value": 3.208116259939686,
+          "display": "3.21%",
+          "tone": "negative"
+        },
+        {
           "label": "Jun-26",
-          "value": 3.5203520352035333,
-          "display": "3.52%",
+          "value": 3.3828382838283932,
+          "display": "3.38%",
           "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 3.390297684674737,
-          "display": "3.39%",
+          "value": 3.335170893054018,
+          "display": "3.34%",
           "tone": "negative"
         },
         {
@@ -907,34 +931,10 @@
           "value": 3.93258426966292,
           "display": "3.93%",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": 3.9199097574732056,
-          "display": "3.92%",
-          "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": 3.848330503678543,
-          "display": "3.85%",
-          "tone": "negative"
-        },
-        {
-          "label": "Aug-25",
-          "value": 3.9750141964792762,
-          "display": "3.98%",
-          "tone": "positive"
-        },
-        {
-          "label": "Jul-25",
-          "value": 3.9623717217788013,
-          "display": "3.96%",
-          "tone": "positive"
         }
       ],
-      "latest_value": 3.5203520352035333,
-      "latest": "3.52%"
+      "latest_value": 3.1207598371777445,
+      "latest": "3.12%"
     }
   ],
   "history_rows": [
@@ -946,6 +946,30 @@
       "formula": "100 * unemployed persons / civilian labor force",
       "history": [
         {
+          "label": "Oct-26",
+          "value": 4.141009942407855,
+          "display": "4.141%",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 4.17532978585944,
+          "display": "4.175%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-26",
+          "value": 4.141314783510134,
+          "display": "4.141%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-26",
+          "value": 4.09003276284197,
+          "display": "4.090%",
+          "tone": "positive"
+        },
+        {
           "label": "Jun-26",
           "value": 4.1887599050532005,
           "display": "4.189%",
@@ -992,49 +1016,25 @@
           "value": 4.535941844806781,
           "display": "4.536%",
           "tone": "flat"
-        },
-        {
-          "label": "Oct-25",
-          "value": null,
-          "display": "n/a",
-          "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 4.440590677387146,
-          "display": "4.441%",
-          "tone": "negative"
-        },
-        {
-          "label": "Aug-25",
-          "value": 4.322108345534407,
-          "display": "4.322%",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": 4.2673051193577916,
-          "display": "4.267%",
-          "tone": "negative"
         }
       ],
-      "latest_value": 4.1887599050532005,
-      "latest": "4.189%",
+      "latest_value": 4.141009942407855,
+      "latest": "4.141%",
       "rounding": {
-        "exact_value": 4.1887599050532005,
-        "exact_display": "4.189%",
-        "rounded_value": 4.2,
-        "rounded_display": "4.2%",
-        "lower_print": "4.1%",
-        "higher_print": "4.3%",
-        "lower_cutoff": "4.15%",
-        "upper_cutoff": "4.25%",
-        "down_buffer_bps_value": 3.875990505320015,
-        "up_buffer_bps_value": 6.1240094946799495,
-        "down_buffer_bps": "3.88 bps",
-        "up_buffer_bps": "6.12 bps",
-        "closest_side": "lower",
-        "summary": "3.88 bps above 4.1% cutoff; 6.12 bps below 4.3% cutoff"
+        "exact_value": 4.141009942407855,
+        "exact_display": "4.141%",
+        "rounded_value": 4.1,
+        "rounded_display": "4.1%",
+        "lower_print": "4.0%",
+        "higher_print": "4.2%",
+        "lower_cutoff": "4.05%",
+        "upper_cutoff": "4.15%",
+        "down_buffer_bps_value": 9.100994240785543,
+        "up_buffer_bps_value": 0.8990057592144218,
+        "down_buffer_bps": "9.10 bps",
+        "up_buffer_bps": "0.90 bps",
+        "closest_side": "higher",
+        "summary": "9.10 bps above 4.0% cutoff; 0.90 bps below 4.2% cutoff"
       }
     },
     {
@@ -1044,6 +1044,30 @@
       "is_metric": true,
       "formula": null,
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 4.1,
+          "display": "4.1%",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 4.2,
+          "display": "4.2%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-26",
+          "value": 4.1,
+          "display": "4.1%",
+          "tone": "flat"
+        },
+        {
+          "label": "Jul-26",
+          "value": 4.1,
+          "display": "4.1%",
+          "tone": "positive"
+        },
         {
           "label": "Jun-26",
           "value": 4.2,
@@ -1091,34 +1115,10 @@
           "value": 4.5,
           "display": "4.5%",
           "tone": "flat"
-        },
-        {
-          "label": "Oct-25",
-          "value": null,
-          "display": "n/a",
-          "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 4.4,
-          "display": "4.4%",
-          "tone": "negative"
-        },
-        {
-          "label": "Aug-25",
-          "value": 4.3,
-          "display": "4.3%",
-          "tone": "flat"
-        },
-        {
-          "label": "Jul-25",
-          "value": 4.3,
-          "display": "4.3%",
-          "tone": "negative"
         }
       ],
-      "latest_value": 4.2,
-      "latest": "4.2%"
+      "latest_value": 4.1,
+      "latest": "4.1%"
     },
     {
       "series_id": "LNS11000000/LNU00000000",
@@ -1127,6 +1127,30 @@
       "is_metric": true,
       "formula": "100 * civilian labor force / civilian noninstitutional population",
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 61.91300121154083,
+          "display": "61.913%",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 61.78897784100394,
+          "display": "61.789%",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 61.64406441188751,
+          "display": "61.644%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 61.4257379705175,
+          "display": "61.426%",
+          "tone": "negative"
+        },
         {
           "label": "Jun-26",
           "value": 61.547574918412884,
@@ -1174,49 +1198,25 @@
           "value": 62.46190370421617,
           "display": "62.462%",
           "tone": "flat"
-        },
-        {
-          "label": "Oct-25",
-          "value": null,
-          "display": "n/a",
-          "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 62.45250268027102,
-          "display": "62.453%",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": 62.31729081280725,
-          "display": "62.317%",
-          "tone": "positive"
-        },
-        {
-          "label": "Jul-25",
-          "value": 62.24300089486276,
-          "display": "62.243%",
-          "tone": "negative"
         }
       ],
-      "latest_value": 61.547574918412884,
-      "latest": "61.548%",
+      "latest_value": 61.91300121154083,
+      "latest": "61.913%",
       "rounding": {
-        "exact_value": 61.547574918412884,
-        "exact_display": "61.548%",
-        "rounded_value": 61.5,
-        "rounded_display": "61.5%",
-        "lower_print": "61.4%",
-        "higher_print": "61.6%",
-        "lower_cutoff": "61.45%",
-        "upper_cutoff": "61.55%",
-        "down_buffer_bps_value": 9.757491841288157,
-        "up_buffer_bps_value": 0.2425081587112743,
-        "down_buffer_bps": "9.76 bps",
-        "up_buffer_bps": "0.24 bps",
+        "exact_value": 61.91300121154083,
+        "exact_display": "61.913%",
+        "rounded_value": 61.9,
+        "rounded_display": "61.9%",
+        "lower_print": "61.8%",
+        "higher_print": "62.0%",
+        "lower_cutoff": "61.85%",
+        "upper_cutoff": "61.95%",
+        "down_buffer_bps_value": 6.300121154082916,
+        "up_buffer_bps_value": 3.6998788459165155,
+        "down_buffer_bps": "6.30 bps",
+        "up_buffer_bps": "3.70 bps",
         "closest_side": "higher",
-        "summary": "9.76 bps above 61.4% cutoff; 0.24 bps below 61.6% cutoff"
+        "summary": "6.30 bps above 61.8% cutoff; 3.70 bps below 62.0% cutoff"
       }
     },
     {
@@ -1226,6 +1226,30 @@
       "is_metric": true,
       "formula": null,
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 61.9,
+          "display": "61.9%",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 61.8,
+          "display": "61.8%",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 61.6,
+          "display": "61.6%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 61.4,
+          "display": "61.4%",
+          "tone": "negative"
+        },
         {
           "label": "Jun-26",
           "value": 61.5,
@@ -1273,34 +1297,10 @@
           "value": 62.5,
           "display": "62.5%",
           "tone": "flat"
-        },
-        {
-          "label": "Oct-25",
-          "value": null,
-          "display": "n/a",
-          "tone": "flat"
-        },
-        {
-          "label": "Sep-25",
-          "value": 62.5,
-          "display": "62.5%",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": 62.3,
-          "display": "62.3%",
-          "tone": "positive"
-        },
-        {
-          "label": "Jul-25",
-          "value": 62.2,
-          "display": "62.2%",
-          "tone": "negative"
         }
       ],
-      "latest_value": 61.5,
-      "latest": "61.5%"
+      "latest_value": 61.9,
+      "latest": "61.9%"
     },
     {
       "series_id": "",
@@ -1309,15 +1309,39 @@
       "is_metric": true,
       "history": [
         {
+          "label": "Oct-26",
+          "value": 0.3697834125726329,
+          "display": "0.370%",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 0.26483050847458944,
+          "display": "0.265%",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-26",
+          "value": 0.31880977683313994,
+          "display": "0.319%",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 0.1330140994945328,
+          "display": "0.133%",
+          "tone": "negative"
+        },
+        {
           "label": "Jun-26",
-          "value": 0.3465742468675037,
-          "display": "0.347%",
+          "value": 0.26673779674579734,
+          "display": "0.267%",
           "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 0.2673082063619381,
-          "display": "0.267%",
+          "value": 0.21384656508955935,
+          "display": "0.214%",
           "tone": "positive"
         },
         {
@@ -1355,34 +1379,10 @@
           "value": 0.407055630936215,
           "display": "0.407%",
           "tone": "negative"
-        },
-        {
-          "label": "Oct-25",
-          "value": 0.4087193460490468,
-          "display": "0.409%",
-          "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.21845985800110768,
-          "display": "0.218%",
-          "tone": "negative"
-        },
-        {
-          "label": "Aug-25",
-          "value": 0.4112969564025182,
-          "display": "0.411%",
-          "tone": "positive"
-        },
-        {
-          "label": "Jul-25",
-          "value": 0.30253025302529046,
-          "display": "0.303%",
-          "tone": "positive"
         }
       ],
-      "latest_value": 0.3465742468675037,
-      "latest": "0.347%"
+      "latest_value": 0.3697834125726329,
+      "latest": "0.370%"
     },
     {
       "series_id": "",
@@ -1391,15 +1391,39 @@
       "is_metric": true,
       "history": [
         {
+          "label": "Oct-26",
+          "value": 3.1207598371777445,
+          "display": "3.12%",
+          "tone": "negative"
+        },
+        {
+          "label": "Sep-26",
+          "value": 3.1607629427792716,
+          "display": "3.16%",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 3.1130529765155623,
+          "display": "3.11%",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-26",
+          "value": 3.208116259939686,
+          "display": "3.21%",
+          "tone": "negative"
+        },
+        {
           "label": "Jun-26",
-          "value": 3.5203520352035333,
-          "display": "3.52%",
+          "value": 3.3828382838283932,
+          "display": "3.38%",
           "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 3.390297684674737,
-          "display": "3.39%",
+          "value": 3.335170893054018,
+          "display": "3.34%",
           "tone": "negative"
         },
         {
@@ -1437,82 +1461,82 @@
           "value": 3.93258426966292,
           "display": "3.93%",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": 3.9199097574732056,
-          "display": "3.92%",
-          "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": 3.848330503678543,
-          "display": "3.85%",
-          "tone": "negative"
-        },
-        {
-          "label": "Aug-25",
-          "value": 3.9750141964792762,
-          "display": "3.98%",
-          "tone": "positive"
-        },
-        {
-          "label": "Jul-25",
-          "value": 3.9623717217788013,
-          "display": "3.96%",
-          "tone": "positive"
         }
       ],
-      "latest_value": 3.5203520352035333,
-      "latest": "3.52%"
+      "latest_value": 3.1207598371777445,
+      "latest": "3.12%"
     },
     {
       "series_id": "CES0000000001",
       "label": "Total nonfarm",
       "group": "Headline",
-      "level_value": 158984.0,
-      "level": "159.0m",
-      "latest_date": "June 2026",
+      "level_value": 159293.0,
+      "level": "159.3m",
+      "latest_date": "October 2026",
       "is_headline": true,
       "is_major": false,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 57.0,
-          "display": "+57.0k",
+          "value": 165.0,
+          "display": "+165k",
           "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 334.0,
-          "display": "+334k",
+          "value": 411.0,
+          "display": "+411k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 552.0,
-          "display": "+552k",
+          "value": 495.0,
+          "display": "+495k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 506.0,
-          "display": "+506k",
+          "value": 885.0,
+          "display": "+885k",
           "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": 165.0,
+          "display": "+165k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 60.0,
+          "display": "+60.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 186.0,
+          "display": "+186k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": -10.0,
+          "display": "-10.0k",
+          "tone": "negative"
+        },
+        {
           "label": "Jun-26",
-          "value": 57.0,
-          "display": "+57.0k",
+          "value": 31.0,
+          "display": "+31.0k",
           "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 129.0,
-          "display": "+129k",
+          "value": 63.0,
+          "display": "+63.0k",
           "tone": "positive"
         },
         {
@@ -1550,87 +1574,87 @@
           "value": 41.0,
           "display": "+41.0k",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": -140.0,
-          "display": "-140k",
-          "tone": "negative"
-        },
-        {
-          "label": "Sep-25",
-          "value": 76.0,
-          "display": "+76.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": -70.0,
-          "display": "-70.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": 64.0,
-          "display": "+64.0k",
-          "tone": "positive"
         }
       ],
-      "change_1m_value": 57.0,
-      "change_1m": "+57.0k",
-      "change_3m": "+334k",
-      "change_6m": "+552k",
-      "change_12m": "+506k",
+      "change_1m_value": 165.0,
+      "change_1m": "+165k",
+      "change_3m": "+411k",
+      "change_6m": "+495k",
+      "change_12m": "+885k",
       "tone_1m": "positive",
-      "bar_pct": 82.6
+      "bar_pct": 100.0
     },
     {
       "series_id": "CES0500000001",
       "label": "Total private",
       "group": "Aggregate",
-      "level_value": 135613.0,
-      "level": "135.6m",
-      "latest_date": "June 2026",
+      "level_value": 135961.0,
+      "level": "136.0m",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": false,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 49.0,
-          "display": "+49.0k",
+          "value": 159.0,
+          "display": "+159k",
           "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 296.0,
-          "display": "+296k",
+          "value": 379.0,
+          "display": "+379k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 530.0,
-          "display": "+530k",
+          "value": 494.0,
+          "display": "+494k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 721.0,
-          "display": "+721k",
+          "value": 943.0,
+          "display": "+943k",
           "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": 159.0,
+          "display": "+159k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 78.0,
+          "display": "+78.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 142.0,
+          "display": "+142k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 28.0,
+          "display": "+28.0k",
+          "tone": "positive"
+        },
+        {
           "label": "Jun-26",
-          "value": 49.0,
-          "display": "+49.0k",
+          "value": 26.0,
+          "display": "+26.0k",
           "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 97.0,
-          "display": "+97.0k",
+          "value": 61.0,
+          "display": "+61.0k",
           "tone": "positive"
         },
         {
@@ -1668,87 +1692,87 @@
           "value": 72.0,
           "display": "+72.0k",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": 13.0,
-          "display": "+13.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": 68.0,
-          "display": "+68.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": -20.0,
-          "display": "-20.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": 65.0,
-          "display": "+65.0k",
-          "tone": "positive"
         }
       ],
-      "change_1m_value": 49.0,
-      "change_1m": "+49.0k",
-      "change_3m": "+296k",
-      "change_6m": "+530k",
-      "change_12m": "+721k",
+      "change_1m_value": 159.0,
+      "change_1m": "+159k",
+      "change_3m": "+379k",
+      "change_6m": "+494k",
+      "change_12m": "+943k",
       "tone_1m": "positive",
-      "bar_pct": 71.0
+      "bar_pct": 96.4
     },
     {
       "series_id": "CES0600000001",
       "label": "Goods-producing",
       "group": "Aggregate",
-      "level_value": 21536.0,
-      "level": "21.5m",
-      "latest_date": "June 2026",
+      "level_value": 21653.0,
+      "level": "21.7m",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": false,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 10.0,
-          "display": "+10.0k",
+          "value": 15.0,
+          "display": "+15.0k",
           "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 23.0,
-          "display": "+23.0k",
+          "value": 82.0,
+          "display": "+82.0k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 80.0,
-          "display": "+80.0k",
+          "value": 134.0,
+          "display": "+134k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 17.0,
-          "display": "+17.0k",
+          "value": 201.0,
+          "display": "+201k",
           "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": 15.0,
+          "display": "+15.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 27.0,
+          "display": "+27.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 40.0,
+          "display": "+40.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 35.0,
+          "display": "+35.0k",
+          "tone": "positive"
+        },
+        {
           "label": "Jun-26",
-          "value": 10.0,
-          "display": "+10.0k",
+          "value": 14.0,
+          "display": "+14.0k",
           "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 7.0,
-          "display": "+7.0k",
+          "value": 3.0,
+          "display": "+3.0k",
           "tone": "positive"
         },
         {
@@ -1786,87 +1810,87 @@
           "value": 25.0,
           "display": "+25.0k",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": -20.0,
-          "display": "-20.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Sep-25",
-          "value": 11.0,
-          "display": "+11.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": -35.0,
-          "display": "-35.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": -23.0,
-          "display": "-23.0k",
-          "tone": "negative"
         }
       ],
-      "change_1m_value": 10.0,
-      "change_1m": "+10.0k",
-      "change_3m": "+23.0k",
-      "change_6m": "+80.0k",
-      "change_12m": "+17.0k",
+      "change_1m_value": 15.0,
+      "change_1m": "+15.0k",
+      "change_3m": "+82.0k",
+      "change_6m": "+134k",
+      "change_12m": "+201k",
       "tone_1m": "positive",
-      "bar_pct": 14.5
+      "bar_pct": 9.1
     },
     {
       "series_id": "CES0800000001",
       "label": "Private service-providing",
       "group": "Aggregate",
-      "level_value": 114077.0,
-      "level": "114.1m",
-      "latest_date": "June 2026",
+      "level_value": 114308.0,
+      "level": "114.3m",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": false,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 39.0,
-          "display": "+39.0k",
+          "value": 144.0,
+          "display": "+144k",
           "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 273.0,
-          "display": "+273k",
+          "value": 297.0,
+          "display": "+297k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 450.0,
-          "display": "+450k",
+          "value": 360.0,
+          "display": "+360k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 704.0,
-          "display": "+704k",
+          "value": 742.0,
+          "display": "+742k",
           "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": 144.0,
+          "display": "+144k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 51.0,
+          "display": "+51.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 102.0,
+          "display": "+102k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": -7.0,
+          "display": "-7.0k",
+          "tone": "negative"
+        },
+        {
           "label": "Jun-26",
-          "value": 39.0,
-          "display": "+39.0k",
+          "value": 12.0,
+          "display": "+12.0k",
           "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 90.0,
-          "display": "+90.0k",
+          "value": 58.0,
+          "display": "+58.0k",
           "tone": "positive"
         },
         {
@@ -1904,81 +1928,81 @@
           "value": 47.0,
           "display": "+47.0k",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": 33.0,
-          "display": "+33.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": 57.0,
-          "display": "+57.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": 15.0,
-          "display": "+15.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Jul-25",
-          "value": 88.0,
-          "display": "+88.0k",
-          "tone": "positive"
         }
       ],
-      "change_1m_value": 39.0,
-      "change_1m": "+39.0k",
-      "change_3m": "+273k",
-      "change_6m": "+450k",
-      "change_12m": "+704k",
+      "change_1m_value": 144.0,
+      "change_1m": "+144k",
+      "change_3m": "+297k",
+      "change_6m": "+360k",
+      "change_12m": "+742k",
       "tone_1m": "positive",
-      "bar_pct": 56.5
+      "bar_pct": 87.3
     },
     {
       "series_id": "CES1000000001",
       "label": "Mining and logging",
       "group": "Major sector",
-      "level_value": 607.0,
-      "level": "607.0k",
-      "latest_date": "June 2026",
+      "level_value": 605.0,
+      "level": "605.0k",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": -4.0,
-          "display": "-4.0k",
+          "value": -1.0,
+          "display": "-1.0k",
           "tone": "negative"
         },
         {
           "label": "3M",
-          "value": 3.0,
-          "display": "+3.0k",
-          "tone": "positive"
+          "value": -1.0,
+          "display": "-1.0k",
+          "tone": "negative"
         },
         {
           "label": "6M",
-          "value": 3.0,
-          "display": "+3.0k",
-          "tone": "positive"
+          "value": -3.0,
+          "display": "-3.0k",
+          "tone": "negative"
         },
         {
           "label": "12M",
-          "value": -9.0,
-          "display": "-9.0k",
+          "value": -1.0,
+          "display": "-1.0k",
           "tone": "negative"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": -1.0,
+          "display": "-1.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Sep-26",
+          "value": -2.0,
+          "display": "-2.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-26",
+          "value": 2.0,
+          "display": "+2.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": -3.0,
+          "display": "-3.0k",
+          "tone": "negative"
+        },
+        {
           "label": "Jun-26",
-          "value": -4.0,
-          "display": "-4.0k",
+          "value": -2.0,
+          "display": "-2.0k",
           "tone": "negative"
         },
         {
@@ -2022,87 +2046,87 @@
           "value": -1.0,
           "display": "-1.0k",
           "tone": "negative"
-        },
-        {
-          "label": "Oct-25",
-          "value": 1.0,
-          "display": "+1.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": -2.0,
-          "display": "-2.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Aug-25",
-          "value": -3.0,
-          "display": "-3.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": -6.0,
-          "display": "-6.0k",
-          "tone": "negative"
         }
       ],
-      "change_1m_value": -4.0,
-      "change_1m": "-4.0k",
-      "change_3m": "+3.0k",
-      "change_6m": "+3.0k",
-      "change_12m": "-9.0k",
+      "change_1m_value": -1.0,
+      "change_1m": "-1.0k",
+      "change_3m": "-1.0k",
+      "change_6m": "-3.0k",
+      "change_12m": "-1.0k",
       "tone_1m": "negative",
-      "bar_pct": 5.8
+      "bar_pct": 0.6
     },
     {
       "series_id": "CES2000000001",
       "label": "Construction",
       "group": "Major sector",
-      "level_value": 8331.0,
-      "level": "8.3m",
-      "latest_date": "June 2026",
+      "level_value": 8367.0,
+      "level": "8.4m",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 11.0,
-          "display": "+11.0k",
-          "tone": "positive"
+          "value": -3.0,
+          "display": "-3.0k",
+          "tone": "negative"
         },
         {
           "label": "3M",
-          "value": 20.0,
-          "display": "+20.0k",
+          "value": 30.0,
+          "display": "+30.0k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 59.0,
-          "display": "+59.0k",
+          "value": 53.0,
+          "display": "+53.0k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 64.0,
-          "display": "+64.0k",
+          "value": 124.0,
+          "display": "+124k",
           "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": -3.0,
+          "display": "-3.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Sep-26",
+          "value": 16.0,
+          "display": "+16.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 17.0,
+          "display": "+17.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 18.0,
+          "display": "+18.0k",
+          "tone": "positive"
+        },
+        {
           "label": "Jun-26",
-          "value": 11.0,
-          "display": "+11.0k",
+          "value": 3.0,
+          "display": "+3.0k",
           "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 6.0,
-          "display": "+6.0k",
+          "value": 2.0,
+          "display": "+2.0k",
           "tone": "positive"
         },
         {
@@ -2140,81 +2164,81 @@
           "value": 36.0,
           "display": "+36.0k",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": -12.0,
-          "display": "-12.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Sep-25",
-          "value": 16.0,
-          "display": "+16.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": -22.0,
-          "display": "-22.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": -6.0,
-          "display": "-6.0k",
-          "tone": "negative"
         }
       ],
-      "change_1m_value": 11.0,
-      "change_1m": "+11.0k",
-      "change_3m": "+20.0k",
-      "change_6m": "+59.0k",
-      "change_12m": "+64.0k",
-      "tone_1m": "positive",
-      "bar_pct": 15.9
+      "change_1m_value": -3.0,
+      "change_1m": "-3.0k",
+      "change_3m": "+30.0k",
+      "change_6m": "+53.0k",
+      "change_12m": "+124k",
+      "tone_1m": "negative",
+      "bar_pct": 1.8
     },
     {
       "series_id": "CES3000000001",
       "label": "Manufacturing",
       "group": "Major sector",
-      "level_value": 12598.0,
-      "level": "12.6m",
-      "latest_date": "June 2026",
+      "level_value": 12681.0,
+      "level": "12.7m",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 3.0,
-          "display": "+3.0k",
+          "value": 19.0,
+          "display": "+19.0k",
           "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 0.0,
-          "display": "+0.0k",
-          "tone": "flat"
+          "value": 53.0,
+          "display": "+53.0k",
+          "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 18.0,
-          "display": "+18.0k",
+          "value": 84.0,
+          "display": "+84.0k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": -38.0,
-          "display": "-38.0k",
-          "tone": "negative"
+          "value": 78.0,
+          "display": "+78.0k",
+          "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": 19.0,
+          "display": "+19.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 13.0,
+          "display": "+13.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 21.0,
+          "display": "+21.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 20.0,
+          "display": "+20.0k",
+          "tone": "positive"
+        },
+        {
           "label": "Jun-26",
-          "value": 3.0,
-          "display": "+3.0k",
+          "value": 13.0,
+          "display": "+13.0k",
           "tone": "positive"
         },
         {
@@ -2258,87 +2282,87 @@
           "value": -10.0,
           "display": "-10.0k",
           "tone": "negative"
-        },
-        {
-          "label": "Oct-25",
-          "value": -9.0,
-          "display": "-9.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Sep-25",
-          "value": -3.0,
-          "display": "-3.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Aug-25",
-          "value": -10.0,
-          "display": "-10.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": -11.0,
-          "display": "-11.0k",
-          "tone": "negative"
         }
       ],
-      "change_1m_value": 3.0,
-      "change_1m": "+3.0k",
-      "change_3m": "+0.0k",
-      "change_6m": "+18.0k",
-      "change_12m": "-38.0k",
+      "change_1m_value": 19.0,
+      "change_1m": "+19.0k",
+      "change_3m": "+53.0k",
+      "change_6m": "+84.0k",
+      "change_12m": "+78.0k",
       "tone_1m": "positive",
-      "bar_pct": 4.3
+      "bar_pct": 11.5
     },
     {
       "series_id": "CES4142000001",
       "label": "Wholesale trade",
       "group": "Major sector",
-      "level_value": 6057.9,
+      "level_value": 6068.8,
       "level": "6.1m",
-      "latest_date": "June 2026",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 2.399999999999636,
-          "display": "+2.4k",
-          "tone": "positive"
+          "value": -9.099999999999454,
+          "display": "-9.1k",
+          "tone": "negative"
         },
         {
           "label": "3M",
-          "value": 6.599999999999454,
-          "display": "+6.6k",
+          "value": 3.5,
+          "display": "+3.5k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 15.399999999999636,
-          "display": "+15.4k",
+          "value": 16.900000000000546,
+          "display": "+16.9k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 0.5999999999994543,
-          "display": "+0.6k",
+          "value": 14.199999999999818,
+          "display": "+14.2k",
           "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": -9.099999999999454,
+          "display": "-9.1k",
+          "tone": "negative"
+        },
+        {
+          "label": "Sep-26",
+          "value": 8.099999999999454,
+          "display": "+8.1k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 4.5,
+          "display": "+4.5k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 6.300000000000182,
+          "display": "+6.3k",
+          "tone": "positive"
+        },
+        {
           "label": "Jun-26",
-          "value": 2.399999999999636,
-          "display": "+2.4k",
+          "value": 4.600000000000364,
+          "display": "+4.6k",
           "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 3.600000000000364,
-          "display": "+3.6k",
+          "value": 2.5,
+          "display": "+2.5k",
           "tone": "positive"
         },
         {
@@ -2376,87 +2400,87 @@
           "value": -6.400000000000546,
           "display": "-6.4k",
           "tone": "negative"
-        },
-        {
-          "label": "Oct-25",
-          "value": 2.800000000000182,
-          "display": "+2.8k",
-          "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": 8.800000000000182,
-          "display": "+8.8k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": -8.600000000000364,
-          "display": "-8.6k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": -5.699999999999818,
-          "display": "-5.7k",
-          "tone": "negative"
         }
       ],
-      "change_1m_value": 2.399999999999636,
-      "change_1m": "+2.4k",
-      "change_3m": "+6.6k",
-      "change_6m": "+15.4k",
-      "change_12m": "+0.6k",
-      "tone_1m": "positive",
-      "bar_pct": 3.5
+      "change_1m_value": -9.099999999999454,
+      "change_1m": "-9.1k",
+      "change_3m": "+3.5k",
+      "change_6m": "+16.9k",
+      "change_12m": "+14.2k",
+      "tone_1m": "negative",
+      "bar_pct": 5.5
     },
     {
       "series_id": "CES4200000001",
       "label": "Retail trade",
       "group": "Major sector",
-      "level_value": 15459.7,
+      "level_value": 15501.3,
       "level": "15.5m",
-      "latest_date": "June 2026",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": -7.5,
-          "display": "-7.5k",
-          "tone": "negative"
+          "value": 6.0,
+          "display": "+6.0k",
+          "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 24.200000000000728,
-          "display": "+24.2k",
+          "value": 22.099999999998545,
+          "display": "+22.1k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 46.20000000000073,
-          "display": "+46.2k",
+          "value": 42.29999999999927,
+          "display": "+42.3k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 34.20000000000073,
-          "display": "+34.2k",
+          "value": 63.29999999999927,
+          "display": "+63.3k",
           "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": 6.0,
+          "display": "+6.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 12.699999999998909,
+          "display": "+12.7k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 3.399999999999636,
+          "display": "+3.4k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 5.600000000000364,
+          "display": "+5.6k",
+          "tone": "positive"
+        },
+        {
           "label": "Jun-26",
-          "value": -7.5,
-          "display": "-7.5k",
-          "tone": "negative"
+          "value": 9.600000000000364,
+          "display": "+9.6k",
+          "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 8.200000000000728,
-          "display": "+8.2k",
+          "value": 5.0,
+          "display": "+5.0k",
           "tone": "positive"
         },
         {
@@ -2494,87 +2518,87 @@
           "value": -0.8999999999996362,
           "display": "-0.9k",
           "tone": "negative"
-        },
-        {
-          "label": "Oct-25",
-          "value": -15.399999999999636,
-          "display": "-15.4k",
-          "tone": "negative"
-        },
-        {
-          "label": "Sep-25",
-          "value": 13.100000000000364,
-          "display": "+13.1k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": 10.099999999998545,
-          "display": "+10.1k",
-          "tone": "positive"
-        },
-        {
-          "label": "Jul-25",
-          "value": 4.700000000000728,
-          "display": "+4.7k",
-          "tone": "positive"
         }
       ],
-      "change_1m_value": -7.5,
-      "change_1m": "-7.5k",
-      "change_3m": "+24.2k",
-      "change_6m": "+46.2k",
-      "change_12m": "+34.2k",
-      "tone_1m": "negative",
-      "bar_pct": 10.9
+      "change_1m_value": 6.0,
+      "change_1m": "+6.0k",
+      "change_3m": "+22.1k",
+      "change_6m": "+42.3k",
+      "change_12m": "+63.3k",
+      "tone_1m": "positive",
+      "bar_pct": 3.6
     },
     {
       "series_id": "CES4300000001",
       "label": "Transportation and warehousing",
       "group": "Major sector",
-      "level_value": 6603.7,
+      "level_value": 6636.1,
       "level": "6.6m",
-      "latest_date": "June 2026",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 2.300000000000182,
-          "display": "+2.3k",
+          "value": 24.800000000000182,
+          "display": "+24.8k",
           "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 46.099999999999454,
-          "display": "+46.1k",
+          "value": 38.30000000000018,
+          "display": "+38.3k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 48.30000000000018,
-          "display": "+48.3k",
+          "value": 39.100000000000364,
+          "display": "+39.1k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": -51.80000000000018,
-          "display": "-51.8k",
-          "tone": "negative"
+          "value": 17.0,
+          "display": "+17.0k",
+          "tone": "positive"
         }
       ],
       "history": [
         {
-          "label": "Jun-26",
-          "value": 2.300000000000182,
-          "display": "+2.3k",
+          "label": "Oct-26",
+          "value": 24.800000000000182,
+          "display": "+24.8k",
           "tone": "positive"
         },
         {
+          "label": "Sep-26",
+          "value": 7.400000000000546,
+          "display": "+7.4k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 6.099999999999454,
+          "display": "+6.1k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 10.300000000000182,
+          "display": "+10.3k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jun-26",
+          "value": -10.300000000000182,
+          "display": "-10.3k",
+          "tone": "negative"
+        },
+        {
           "label": "May-26",
-          "value": 4.399999999999636,
-          "display": "+4.4k",
+          "value": 0.8000000000001819,
+          "display": "+0.8k",
           "tone": "positive"
         },
         {
@@ -2612,82 +2636,82 @@
           "value": -58.900000000000546,
           "display": "-58.9k",
           "tone": "negative"
-        },
-        {
-          "label": "Oct-25",
-          "value": 0.6000000000003638,
-          "display": "+0.6k",
-          "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": -39.30000000000018,
-          "display": "-39.3k",
-          "tone": "negative"
-        },
-        {
-          "label": "Aug-25",
-          "value": -1.5999999999994543,
-          "display": "-1.6k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": 3.899999999999636,
-          "display": "+3.9k",
-          "tone": "positive"
         }
       ],
-      "change_1m_value": 2.300000000000182,
-      "change_1m": "+2.3k",
-      "change_3m": "+46.1k",
-      "change_6m": "+48.3k",
-      "change_12m": "-51.8k",
+      "change_1m_value": 24.800000000000182,
+      "change_1m": "+24.8k",
+      "change_3m": "+38.3k",
+      "change_6m": "+39.1k",
+      "change_12m": "+17.0k",
       "tone_1m": "positive",
-      "bar_pct": 3.3
+      "bar_pct": 15.0
     },
     {
       "series_id": "CES4422000001",
       "label": "Utilities",
       "group": "Major sector",
-      "level_value": 606.8,
-      "level": "606.8k",
-      "latest_date": "June 2026",
+      "level_value": 611.5,
+      "level": "611.5k",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": -0.8000000000000682,
-          "display": "-0.8k",
-          "tone": "negative"
+          "value": 0.10000000000002274,
+          "display": "+0.1k",
+          "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 1.0,
-          "display": "+1.0k",
+          "value": 2.6000000000000227,
+          "display": "+2.6k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 2.2999999999999545,
-          "display": "+2.3k",
+          "value": 4.7000000000000455,
+          "display": "+4.7k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 4.599999999999909,
-          "display": "+4.6k",
+          "value": 9.600000000000023,
+          "display": "+9.6k",
           "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": 0.10000000000002274,
+          "display": "+0.1k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 0.39999999999997726,
+          "display": "+0.4k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 2.1000000000000227,
+          "display": "+2.1k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 1.1000000000000227,
+          "display": "+1.1k",
+          "tone": "positive"
+        },
+        {
           "label": "Jun-26",
-          "value": -0.8000000000000682,
-          "display": "-0.8k",
-          "tone": "negative"
+          "value": 0.1999999999999318,
+          "display": "+0.2k",
+          "tone": "positive"
         },
         {
           "label": "May-26",
@@ -2730,87 +2754,87 @@
           "value": 1.8999999999999773,
           "display": "+1.9k",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": 0.5,
-          "display": "+0.5k",
-          "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.0,
-          "display": "+0.0k",
-          "tone": "flat"
-        },
-        {
-          "label": "Aug-25",
-          "value": -1.2000000000000455,
-          "display": "-1.2k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": 0.39999999999997726,
-          "display": "+0.4k",
-          "tone": "positive"
         }
       ],
-      "change_1m_value": -0.8000000000000682,
-      "change_1m": "-0.8k",
-      "change_3m": "+1.0k",
-      "change_6m": "+2.3k",
-      "change_12m": "+4.6k",
-      "tone_1m": "negative",
-      "bar_pct": 1.2
+      "change_1m_value": 0.10000000000002274,
+      "change_1m": "+0.1k",
+      "change_3m": "+2.6k",
+      "change_6m": "+4.7k",
+      "change_12m": "+9.6k",
+      "tone_1m": "positive",
+      "bar_pct": 0.1
     },
     {
       "series_id": "CES5000000001",
       "label": "Information",
       "group": "Major sector",
-      "level_value": 2774.0,
-      "level": "2.8m",
-      "latest_date": "June 2026",
+      "level_value": 2734.0,
+      "level": "2.7m",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": -9.0,
-          "display": "-9.0k",
+          "value": -1.0,
+          "display": "-1.0k",
           "tone": "negative"
         },
         {
           "label": "3M",
-          "value": -19.0,
-          "display": "-19.0k",
+          "value": -33.0,
+          "display": "-33.0k",
           "tone": "negative"
         },
         {
           "label": "6M",
-          "value": -68.0,
-          "display": "-68.0k",
+          "value": -53.0,
+          "display": "-53.0k",
           "tone": "negative"
         },
         {
           "label": "12M",
-          "value": -89.0,
-          "display": "-89.0k",
+          "value": -119.0,
+          "display": "-119k",
           "tone": "negative"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": -1.0,
+          "display": "-1.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Sep-26",
+          "value": -11.0,
+          "display": "-11.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-26",
+          "value": -21.0,
+          "display": "-21.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-26",
+          "value": 4.0,
+          "display": "+4.0k",
+          "tone": "positive"
+        },
+        {
           "label": "Jun-26",
-          "value": -9.0,
-          "display": "-9.0k",
+          "value": -19.0,
+          "display": "-19.0k",
           "tone": "negative"
         },
         {
           "label": "May-26",
-          "value": -4.0,
-          "display": "-4.0k",
+          "value": -5.0,
+          "display": "-5.0k",
           "tone": "negative"
         },
         {
@@ -2848,87 +2872,87 @@
           "value": -5.0,
           "display": "-5.0k",
           "tone": "negative"
-        },
-        {
-          "label": "Oct-25",
-          "value": -6.0,
-          "display": "-6.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Sep-25",
-          "value": -1.0,
-          "display": "-1.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Aug-25",
-          "value": -1.0,
-          "display": "-1.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": -2.0,
-          "display": "-2.0k",
-          "tone": "negative"
         }
       ],
-      "change_1m_value": -9.0,
-      "change_1m": "-9.0k",
-      "change_3m": "-19.0k",
-      "change_6m": "-68.0k",
-      "change_12m": "-89.0k",
+      "change_1m_value": -1.0,
+      "change_1m": "-1.0k",
+      "change_3m": "-33.0k",
+      "change_6m": "-53.0k",
+      "change_12m": "-119k",
       "tone_1m": "negative",
-      "bar_pct": 13.0
+      "bar_pct": 0.6
     },
     {
       "series_id": "CES5500000001",
       "label": "Financial activities",
       "group": "Major sector",
-      "level_value": 9104.0,
+      "level_value": 9085.0,
       "level": "9.1m",
-      "latest_date": "June 2026",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 0.0,
-          "display": "+0.0k",
-          "tone": "flat"
+          "value": 7.0,
+          "display": "+7.0k",
+          "tone": "positive"
         },
         {
           "label": "3M",
-          "value": -28.0,
-          "display": "-28.0k",
+          "value": -13.0,
+          "display": "-13.0k",
           "tone": "negative"
         },
         {
           "label": "6M",
-          "value": -82.0,
-          "display": "-82.0k",
+          "value": -41.0,
+          "display": "-41.0k",
           "tone": "negative"
         },
         {
           "label": "12M",
-          "value": -100.0,
-          "display": "-100k",
+          "value": -99.0,
+          "display": "-99.0k",
           "tone": "negative"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": 7.0,
+          "display": "+7.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": -14.0,
+          "display": "-14.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-26",
+          "value": -6.0,
+          "display": "-6.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-26",
+          "value": -10.0,
+          "display": "-10.0k",
+          "tone": "negative"
+        },
+        {
           "label": "Jun-26",
-          "value": 0.0,
-          "display": "+0.0k",
-          "tone": "flat"
+          "value": 2.0,
+          "display": "+2.0k",
+          "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": -22.0,
-          "display": "-22.0k",
+          "value": -20.0,
+          "display": "-20.0k",
           "tone": "negative"
         },
         {
@@ -2966,77 +2990,77 @@
           "value": 1.0,
           "display": "+1.0k",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": -5.0,
-          "display": "-5.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Sep-25",
-          "value": 4.0,
-          "display": "+4.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": -19.0,
-          "display": "-19.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": 0.0,
-          "display": "+0.0k",
-          "tone": "flat"
         }
       ],
-      "change_1m_value": 0.0,
-      "change_1m": "+0.0k",
-      "change_3m": "-28.0k",
-      "change_6m": "-82.0k",
-      "change_12m": "-100k",
-      "tone_1m": "flat",
-      "bar_pct": 0.0
+      "change_1m_value": 7.0,
+      "change_1m": "+7.0k",
+      "change_3m": "-13.0k",
+      "change_6m": "-41.0k",
+      "change_12m": "-99.0k",
+      "tone_1m": "positive",
+      "bar_pct": 4.2
     },
     {
       "series_id": "CES6000000001",
       "label": "Professional and business services",
       "group": "Major sector",
-      "level_value": 22507.0,
-      "level": "22.5m",
-      "latest_date": "June 2026",
+      "level_value": 22604.0,
+      "level": "22.6m",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 36.0,
-          "display": "+36.0k",
+          "value": 70.0,
+          "display": "+70.0k",
           "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 67.0,
-          "display": "+67.0k",
+          "value": 108.0,
+          "display": "+108k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 135.0,
-          "display": "+135k",
+          "value": 144.0,
+          "display": "+144k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 88.0,
-          "display": "+88.0k",
+          "value": 269.0,
+          "display": "+269k",
           "tone": "positive"
         }
       ],
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 70.0,
+          "display": "+70.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 8.0,
+          "display": "+8.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 30.0,
+          "display": "+30.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": -6.0,
+          "display": "-6.0k",
+          "tone": "negative"
+        },
         {
           "label": "Jun-26",
           "value": 36.0,
@@ -3045,8 +3069,8 @@
         },
         {
           "label": "May-26",
-          "value": 11.0,
-          "display": "+11.0k",
+          "value": 6.0,
+          "display": "+6.0k",
           "tone": "positive"
         },
         {
@@ -3084,87 +3108,87 @@
           "value": 56.0,
           "display": "+56.0k",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": -24.0,
-          "display": "-24.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Sep-25",
-          "value": -16.0,
-          "display": "-16.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Aug-25",
-          "value": -28.0,
-          "display": "-28.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": -16.0,
-          "display": "-16.0k",
-          "tone": "negative"
         }
       ],
-      "change_1m_value": 36.0,
-      "change_1m": "+36.0k",
-      "change_3m": "+67.0k",
-      "change_6m": "+135k",
-      "change_12m": "+88.0k",
+      "change_1m_value": 70.0,
+      "change_1m": "+70.0k",
+      "change_3m": "+108k",
+      "change_6m": "+144k",
+      "change_12m": "+269k",
       "tone_1m": "positive",
-      "bar_pct": 52.2
+      "bar_pct": 42.4
     },
     {
       "series_id": "CES6500000001",
       "label": "Private education and health services",
       "group": "Major sector",
-      "level_value": 27973.0,
-      "level": "28.0m",
-      "latest_date": "June 2026",
+      "level_value": 28058.0,
+      "level": "28.1m",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 69.0,
-          "display": "+69.0k",
+          "value": 53.0,
+          "display": "+53.0k",
           "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 181.0,
-          "display": "+181k",
+          "value": 111.0,
+          "display": "+111k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 346.0,
-          "display": "+346k",
+          "value": 199.0,
+          "display": "+199k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 648.0,
-          "display": "+648k",
+          "value": 525.0,
+          "display": "+525k",
           "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": 53.0,
+          "display": "+53.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 21.0,
+          "display": "+21.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 37.0,
+          "display": "+37.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 14.0,
+          "display": "+14.0k",
+          "tone": "positive"
+        },
+        {
           "label": "Jun-26",
-          "value": 69.0,
-          "display": "+69.0k",
+          "value": 50.0,
+          "display": "+50.0k",
           "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 45.0,
-          "display": "+45.0k",
+          "value": 24.0,
+          "display": "+24.0k",
           "tone": "positive"
         },
         {
@@ -3202,87 +3226,87 @@
           "value": 56.0,
           "display": "+56.0k",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": 44.0,
-          "display": "+44.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": 54.0,
-          "display": "+54.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": 23.0,
-          "display": "+23.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Jul-25",
-          "value": 87.0,
-          "display": "+87.0k",
-          "tone": "positive"
         }
       ],
-      "change_1m_value": 69.0,
-      "change_1m": "+69.0k",
-      "change_3m": "+181k",
-      "change_6m": "+346k",
-      "change_12m": "+648k",
+      "change_1m_value": 53.0,
+      "change_1m": "+53.0k",
+      "change_3m": "+111k",
+      "change_6m": "+199k",
+      "change_12m": "+525k",
       "tone_1m": "positive",
-      "bar_pct": 100.0
+      "bar_pct": 32.1
     },
     {
       "series_id": "CES6562000001",
       "label": "Health care and social assistance",
       "group": "Detail",
-      "level_value": 23906.3,
-      "level": "23.9m",
-      "latest_date": "June 2026",
+      "level_value": 24004.6,
+      "level": "24.0m",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": false,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 46.599999999998545,
-          "display": "+46.6k",
+          "value": 55.099999999998545,
+          "display": "+55.1k",
           "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 149.59999999999854,
-          "display": "+150k",
+          "value": 104.09999999999854,
+          "display": "+104k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 318.7999999999993,
-          "display": "+319k",
+          "value": 190.79999999999927,
+          "display": "+191k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 628.7999999999993,
-          "display": "+629k",
+          "value": 518.7999999999993,
+          "display": "+519k",
           "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": 55.099999999998545,
+          "display": "+55.1k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 19.799999999999272,
+          "display": "+19.8k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 29.200000000000728,
+          "display": "+29.2k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 13.299999999999272,
+          "display": "+13.3k",
+          "tone": "positive"
+        },
+        {
           "label": "Jun-26",
-          "value": 46.599999999998545,
-          "display": "+46.6k",
+          "value": 38.60000000000218,
+          "display": "+38.6k",
           "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 45.900000000001455,
-          "display": "+45.9k",
+          "value": 34.79999999999927,
+          "display": "+34.8k",
           "tone": "positive"
         },
         {
@@ -3320,87 +3344,87 @@
           "value": 59.900000000001455,
           "display": "+59.9k",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": 47.599999999998545,
-          "display": "+47.6k",
-          "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": 55.29999999999927,
-          "display": "+55.3k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": 22.80000000000291,
-          "display": "+22.8k",
-          "tone": "positive"
-        },
-        {
-          "label": "Jul-25",
-          "value": 82.59999999999854,
-          "display": "+82.6k",
-          "tone": "positive"
         }
       ],
-      "change_1m_value": 46.599999999998545,
-      "change_1m": "+46.6k",
-      "change_3m": "+150k",
-      "change_6m": "+319k",
-      "change_12m": "+629k",
+      "change_1m_value": 55.099999999998545,
+      "change_1m": "+55.1k",
+      "change_3m": "+104k",
+      "change_6m": "+191k",
+      "change_12m": "+519k",
       "tone_1m": "positive",
-      "bar_pct": 67.5
+      "bar_pct": 33.4
     },
     {
       "series_id": "CES7000000001",
       "label": "Leisure and hospitality",
       "group": "Major sector",
-      "level_value": 16951.0,
+      "level_value": 16964.0,
       "level": "17.0m",
-      "latest_date": "June 2026",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": -61.0,
-          "display": "-61.0k",
+          "value": -13.0,
+          "display": "-13.0k",
           "tone": "negative"
         },
         {
           "label": "3M",
-          "value": -28.0,
-          "display": "-28.0k",
-          "tone": "negative"
+          "value": 42.0,
+          "display": "+42.0k",
+          "tone": "positive"
         },
         {
           "label": "6M",
-          "value": -10.0,
-          "display": "-10.0k",
+          "value": -8.0,
+          "display": "-8.0k",
           "tone": "negative"
         },
         {
           "label": "12M",
-          "value": 114.0,
-          "display": "+114k",
+          "value": 16.0,
+          "display": "+16.0k",
           "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": -13.0,
+          "display": "-13.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Sep-26",
+          "value": 13.0,
+          "display": "+13.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 42.0,
+          "display": "+42.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": -38.0,
+          "display": "-38.0k",
+          "tone": "negative"
+        },
+        {
           "label": "Jun-26",
-          "value": -61.0,
-          "display": "-61.0k",
+          "value": -54.0,
+          "display": "-54.0k",
           "tone": "negative"
         },
         {
           "label": "May-26",
-          "value": 40.0,
-          "display": "+40.0k",
+          "value": 42.0,
+          "display": "+42.0k",
           "tone": "positive"
         },
         {
@@ -3438,87 +3462,87 @@
           "value": -12.0,
           "display": "-12.0k",
           "tone": "negative"
-        },
-        {
-          "label": "Oct-25",
-          "value": 41.0,
-          "display": "+41.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": 37.0,
-          "display": "+37.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": 22.0,
-          "display": "+22.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Jul-25",
-          "value": 11.0,
-          "display": "+11.0k",
-          "tone": "positive"
         }
       ],
-      "change_1m_value": -61.0,
-      "change_1m": "-61.0k",
-      "change_3m": "-28.0k",
-      "change_6m": "-10.0k",
-      "change_12m": "+114k",
+      "change_1m_value": -13.0,
+      "change_1m": "-13.0k",
+      "change_3m": "+42.0k",
+      "change_6m": "-8.0k",
+      "change_12m": "+16.0k",
       "tone_1m": "negative",
-      "bar_pct": 88.4
+      "bar_pct": 7.9
     },
     {
       "series_id": "CES8000000001",
       "label": "Other services",
       "group": "Major sector",
-      "level_value": 6040.0,
+      "level_value": 6045.0,
       "level": "6.0m",
-      "latest_date": "June 2026",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 8.0,
-          "display": "+8.0k",
+          "value": 6.0,
+          "display": "+6.0k",
           "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 22.0,
-          "display": "+22.0k",
+          "value": 15.0,
+          "display": "+15.0k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 17.0,
-          "display": "+17.0k",
+          "value": 16.0,
+          "display": "+16.0k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 56.0,
-          "display": "+56.0k",
+          "value": 46.0,
+          "display": "+46.0k",
           "tone": "positive"
         }
       ],
       "history": [
         {
-          "label": "Jun-26",
-          "value": 8.0,
-          "display": "+8.0k",
+          "label": "Oct-26",
+          "value": 6.0,
+          "display": "+6.0k",
           "tone": "positive"
         },
         {
+          "label": "Sep-26",
+          "value": 5.0,
+          "display": "+5.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 4.0,
+          "display": "+4.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 6.0,
+          "display": "+6.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jun-26",
+          "value": -7.0,
+          "display": "-7.0k",
+          "tone": "negative"
+        },
+        {
           "label": "May-26",
-          "value": 3.0,
-          "display": "+3.0k",
+          "value": 2.0,
+          "display": "+2.0k",
           "tone": "positive"
         },
         {
@@ -3556,87 +3580,87 @@
           "value": 16.0,
           "display": "+16.0k",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": -6.0,
-          "display": "-6.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Sep-25",
-          "value": -3.0,
-          "display": "-3.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Aug-25",
-          "value": 19.0,
-          "display": "+19.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Jul-25",
-          "value": 5.0,
-          "display": "+5.0k",
-          "tone": "positive"
         }
       ],
-      "change_1m_value": 8.0,
-      "change_1m": "+8.0k",
-      "change_3m": "+22.0k",
-      "change_6m": "+17.0k",
-      "change_12m": "+56.0k",
+      "change_1m_value": 6.0,
+      "change_1m": "+6.0k",
+      "change_3m": "+15.0k",
+      "change_6m": "+16.0k",
+      "change_12m": "+46.0k",
       "tone_1m": "positive",
-      "bar_pct": 11.6
+      "bar_pct": 3.6
     },
     {
       "series_id": "CES9000000001",
       "label": "Government",
       "group": "Major sector",
-      "level_value": 23371.0,
-      "level": "23.4m",
-      "latest_date": "June 2026",
+      "level_value": 23332.0,
+      "level": "23.3m",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 8.0,
-          "display": "+8.0k",
+          "value": 6.0,
+          "display": "+6.0k",
           "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 38.0,
-          "display": "+38.0k",
+          "value": 32.0,
+          "display": "+32.0k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 22.0,
-          "display": "+22.0k",
+          "value": 1.0,
+          "display": "+1.0k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": -215.0,
-          "display": "-215k",
+          "value": -58.0,
+          "display": "-58.0k",
           "tone": "negative"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": 6.0,
+          "display": "+6.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": -18.0,
+          "display": "-18.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-26",
+          "value": 44.0,
+          "display": "+44.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": -38.0,
+          "display": "-38.0k",
+          "tone": "negative"
+        },
+        {
           "label": "Jun-26",
-          "value": 8.0,
-          "display": "+8.0k",
+          "value": 5.0,
+          "display": "+5.0k",
           "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 32.0,
-          "display": "+32.0k",
+          "value": 2.0,
+          "display": "+2.0k",
           "tone": "positive"
         },
         {
@@ -3674,87 +3698,87 @@
           "value": -31.0,
           "display": "-31.0k",
           "tone": "negative"
-        },
-        {
-          "label": "Oct-25",
-          "value": -153.0,
-          "display": "-153k",
-          "tone": "negative"
-        },
-        {
-          "label": "Sep-25",
-          "value": 8.0,
-          "display": "+8.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": -50.0,
-          "display": "-50.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": -1.0,
-          "display": "-1.0k",
-          "tone": "negative"
         }
       ],
-      "change_1m_value": 8.0,
-      "change_1m": "+8.0k",
-      "change_3m": "+38.0k",
-      "change_6m": "+22.0k",
-      "change_12m": "-215k",
+      "change_1m_value": 6.0,
+      "change_1m": "+6.0k",
+      "change_3m": "+32.0k",
+      "change_6m": "+1.0k",
+      "change_12m": "-58.0k",
       "tone_1m": "positive",
-      "bar_pct": 11.6
+      "bar_pct": 3.6
     },
     {
       "series_id": "CES9091000001",
       "label": "Federal government",
       "group": "Detail",
-      "level_value": 2686.0,
+      "level_value": 2677.0,
       "level": "2.7m",
-      "latest_date": "June 2026",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": false,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 2.0,
-          "display": "+2.0k",
-          "tone": "positive"
+          "value": -1.0,
+          "display": "-1.0k",
+          "tone": "negative"
         },
         {
           "label": "3M",
-          "value": 4.0,
-          "display": "+4.0k",
-          "tone": "positive"
+          "value": -9.0,
+          "display": "-9.0k",
+          "tone": "negative"
         },
         {
           "label": "6M",
-          "value": -36.0,
-          "display": "-36.0k",
+          "value": -4.0,
+          "display": "-4.0k",
           "tone": "negative"
         },
         {
           "label": "12M",
-          "value": -258.0,
-          "display": "-258k",
+          "value": -71.0,
+          "display": "-71.0k",
           "tone": "negative"
         }
       ],
       "history": [
         {
-          "label": "Jun-26",
-          "value": 2.0,
-          "display": "+2.0k",
+          "label": "Oct-26",
+          "value": -1.0,
+          "display": "-1.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Sep-26",
+          "value": -3.0,
+          "display": "-3.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-26",
+          "value": -5.0,
+          "display": "-5.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-26",
+          "value": 1.0,
+          "display": "+1.0k",
           "tone": "positive"
         },
         {
+          "label": "Jun-26",
+          "value": 0.0,
+          "display": "+0.0k",
+          "tone": "flat"
+        },
+        {
           "label": "May-26",
-          "value": 3.0,
-          "display": "+3.0k",
+          "value": 4.0,
+          "display": "+4.0k",
           "tone": "positive"
         },
         {
@@ -3792,39 +3816,15 @@
           "value": -15.0,
           "display": "-15.0k",
           "tone": "negative"
-        },
-        {
-          "label": "Oct-25",
-          "value": -166.0,
-          "display": "-166k",
-          "tone": "negative"
-        },
-        {
-          "label": "Sep-25",
-          "value": -2.0,
-          "display": "-2.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Aug-25",
-          "value": -19.0,
-          "display": "-19.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": -9.0,
-          "display": "-9.0k",
-          "tone": "negative"
         }
       ],
-      "change_1m_value": 2.0,
-      "change_1m": "+2.0k",
-      "change_3m": "+4.0k",
-      "change_6m": "-36.0k",
-      "change_12m": "-258k",
-      "tone_1m": "positive",
-      "bar_pct": 2.9
+      "change_1m_value": -1.0,
+      "change_1m": "-1.0k",
+      "change_3m": "-9.0k",
+      "change_6m": "-4.0k",
+      "change_12m": "-71.0k",
+      "tone_1m": "negative",
+      "bar_pct": 0.6
     }
   ],
   "rows": [
@@ -3832,49 +3832,73 @@
       "series_id": "CES0000000001",
       "label": "Total nonfarm",
       "group": "Headline",
-      "level_value": 158984.0,
-      "level": "159.0m",
-      "latest_date": "June 2026",
+      "level_value": 159293.0,
+      "level": "159.3m",
+      "latest_date": "October 2026",
       "is_headline": true,
       "is_major": false,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 57.0,
-          "display": "+57.0k",
+          "value": 165.0,
+          "display": "+165k",
           "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 334.0,
-          "display": "+334k",
+          "value": 411.0,
+          "display": "+411k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 552.0,
-          "display": "+552k",
+          "value": 495.0,
+          "display": "+495k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 506.0,
-          "display": "+506k",
+          "value": 885.0,
+          "display": "+885k",
           "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": 165.0,
+          "display": "+165k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 60.0,
+          "display": "+60.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 186.0,
+          "display": "+186k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": -10.0,
+          "display": "-10.0k",
+          "tone": "negative"
+        },
+        {
           "label": "Jun-26",
-          "value": 57.0,
-          "display": "+57.0k",
+          "value": 31.0,
+          "display": "+31.0k",
           "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 129.0,
-          "display": "+129k",
+          "value": 63.0,
+          "display": "+63.0k",
           "tone": "positive"
         },
         {
@@ -3912,87 +3936,87 @@
           "value": 41.0,
           "display": "+41.0k",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": -140.0,
-          "display": "-140k",
-          "tone": "negative"
-        },
-        {
-          "label": "Sep-25",
-          "value": 76.0,
-          "display": "+76.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": -70.0,
-          "display": "-70.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": 64.0,
-          "display": "+64.0k",
-          "tone": "positive"
         }
       ],
-      "change_1m_value": 57.0,
-      "change_1m": "+57.0k",
-      "change_3m": "+334k",
-      "change_6m": "+552k",
-      "change_12m": "+506k",
+      "change_1m_value": 165.0,
+      "change_1m": "+165k",
+      "change_3m": "+411k",
+      "change_6m": "+495k",
+      "change_12m": "+885k",
       "tone_1m": "positive",
-      "bar_pct": 82.6
+      "bar_pct": 100.0
     },
     {
       "series_id": "CES0500000001",
       "label": "Total private",
       "group": "Aggregate",
-      "level_value": 135613.0,
-      "level": "135.6m",
-      "latest_date": "June 2026",
+      "level_value": 135961.0,
+      "level": "136.0m",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": false,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 49.0,
-          "display": "+49.0k",
+          "value": 159.0,
+          "display": "+159k",
           "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 296.0,
-          "display": "+296k",
+          "value": 379.0,
+          "display": "+379k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 530.0,
-          "display": "+530k",
+          "value": 494.0,
+          "display": "+494k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 721.0,
-          "display": "+721k",
+          "value": 943.0,
+          "display": "+943k",
           "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": 159.0,
+          "display": "+159k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 78.0,
+          "display": "+78.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 142.0,
+          "display": "+142k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 28.0,
+          "display": "+28.0k",
+          "tone": "positive"
+        },
+        {
           "label": "Jun-26",
-          "value": 49.0,
-          "display": "+49.0k",
+          "value": 26.0,
+          "display": "+26.0k",
           "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 97.0,
-          "display": "+97.0k",
+          "value": 61.0,
+          "display": "+61.0k",
           "tone": "positive"
         },
         {
@@ -4030,87 +4054,87 @@
           "value": 72.0,
           "display": "+72.0k",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": 13.0,
-          "display": "+13.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": 68.0,
-          "display": "+68.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": -20.0,
-          "display": "-20.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": 65.0,
-          "display": "+65.0k",
-          "tone": "positive"
         }
       ],
-      "change_1m_value": 49.0,
-      "change_1m": "+49.0k",
-      "change_3m": "+296k",
-      "change_6m": "+530k",
-      "change_12m": "+721k",
+      "change_1m_value": 159.0,
+      "change_1m": "+159k",
+      "change_3m": "+379k",
+      "change_6m": "+494k",
+      "change_12m": "+943k",
       "tone_1m": "positive",
-      "bar_pct": 71.0
+      "bar_pct": 96.4
     },
     {
       "series_id": "CES0600000001",
       "label": "Goods-producing",
       "group": "Aggregate",
-      "level_value": 21536.0,
-      "level": "21.5m",
-      "latest_date": "June 2026",
+      "level_value": 21653.0,
+      "level": "21.7m",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": false,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 10.0,
-          "display": "+10.0k",
+          "value": 15.0,
+          "display": "+15.0k",
           "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 23.0,
-          "display": "+23.0k",
+          "value": 82.0,
+          "display": "+82.0k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 80.0,
-          "display": "+80.0k",
+          "value": 134.0,
+          "display": "+134k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 17.0,
-          "display": "+17.0k",
+          "value": 201.0,
+          "display": "+201k",
           "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": 15.0,
+          "display": "+15.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 27.0,
+          "display": "+27.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 40.0,
+          "display": "+40.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 35.0,
+          "display": "+35.0k",
+          "tone": "positive"
+        },
+        {
           "label": "Jun-26",
-          "value": 10.0,
-          "display": "+10.0k",
+          "value": 14.0,
+          "display": "+14.0k",
           "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 7.0,
-          "display": "+7.0k",
+          "value": 3.0,
+          "display": "+3.0k",
           "tone": "positive"
         },
         {
@@ -4148,87 +4172,87 @@
           "value": 25.0,
           "display": "+25.0k",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": -20.0,
-          "display": "-20.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Sep-25",
-          "value": 11.0,
-          "display": "+11.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": -35.0,
-          "display": "-35.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": -23.0,
-          "display": "-23.0k",
-          "tone": "negative"
         }
       ],
-      "change_1m_value": 10.0,
-      "change_1m": "+10.0k",
-      "change_3m": "+23.0k",
-      "change_6m": "+80.0k",
-      "change_12m": "+17.0k",
+      "change_1m_value": 15.0,
+      "change_1m": "+15.0k",
+      "change_3m": "+82.0k",
+      "change_6m": "+134k",
+      "change_12m": "+201k",
       "tone_1m": "positive",
-      "bar_pct": 14.5
+      "bar_pct": 9.1
     },
     {
       "series_id": "CES0800000001",
       "label": "Private service-providing",
       "group": "Aggregate",
-      "level_value": 114077.0,
-      "level": "114.1m",
-      "latest_date": "June 2026",
+      "level_value": 114308.0,
+      "level": "114.3m",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": false,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 39.0,
-          "display": "+39.0k",
+          "value": 144.0,
+          "display": "+144k",
           "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 273.0,
-          "display": "+273k",
+          "value": 297.0,
+          "display": "+297k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 450.0,
-          "display": "+450k",
+          "value": 360.0,
+          "display": "+360k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 704.0,
-          "display": "+704k",
+          "value": 742.0,
+          "display": "+742k",
           "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": 144.0,
+          "display": "+144k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 51.0,
+          "display": "+51.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 102.0,
+          "display": "+102k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": -7.0,
+          "display": "-7.0k",
+          "tone": "negative"
+        },
+        {
           "label": "Jun-26",
-          "value": 39.0,
-          "display": "+39.0k",
+          "value": 12.0,
+          "display": "+12.0k",
           "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 90.0,
-          "display": "+90.0k",
+          "value": 58.0,
+          "display": "+58.0k",
           "tone": "positive"
         },
         {
@@ -4266,81 +4290,81 @@
           "value": 47.0,
           "display": "+47.0k",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": 33.0,
-          "display": "+33.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": 57.0,
-          "display": "+57.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": 15.0,
-          "display": "+15.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Jul-25",
-          "value": 88.0,
-          "display": "+88.0k",
-          "tone": "positive"
         }
       ],
-      "change_1m_value": 39.0,
-      "change_1m": "+39.0k",
-      "change_3m": "+273k",
-      "change_6m": "+450k",
-      "change_12m": "+704k",
+      "change_1m_value": 144.0,
+      "change_1m": "+144k",
+      "change_3m": "+297k",
+      "change_6m": "+360k",
+      "change_12m": "+742k",
       "tone_1m": "positive",
-      "bar_pct": 56.5
+      "bar_pct": 87.3
     },
     {
       "series_id": "CES1000000001",
       "label": "Mining and logging",
       "group": "Major sector",
-      "level_value": 607.0,
-      "level": "607.0k",
-      "latest_date": "June 2026",
+      "level_value": 605.0,
+      "level": "605.0k",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": -4.0,
-          "display": "-4.0k",
+          "value": -1.0,
+          "display": "-1.0k",
           "tone": "negative"
         },
         {
           "label": "3M",
-          "value": 3.0,
-          "display": "+3.0k",
-          "tone": "positive"
+          "value": -1.0,
+          "display": "-1.0k",
+          "tone": "negative"
         },
         {
           "label": "6M",
-          "value": 3.0,
-          "display": "+3.0k",
-          "tone": "positive"
+          "value": -3.0,
+          "display": "-3.0k",
+          "tone": "negative"
         },
         {
           "label": "12M",
-          "value": -9.0,
-          "display": "-9.0k",
+          "value": -1.0,
+          "display": "-1.0k",
           "tone": "negative"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": -1.0,
+          "display": "-1.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Sep-26",
+          "value": -2.0,
+          "display": "-2.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-26",
+          "value": 2.0,
+          "display": "+2.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": -3.0,
+          "display": "-3.0k",
+          "tone": "negative"
+        },
+        {
           "label": "Jun-26",
-          "value": -4.0,
-          "display": "-4.0k",
+          "value": -2.0,
+          "display": "-2.0k",
           "tone": "negative"
         },
         {
@@ -4384,87 +4408,87 @@
           "value": -1.0,
           "display": "-1.0k",
           "tone": "negative"
-        },
-        {
-          "label": "Oct-25",
-          "value": 1.0,
-          "display": "+1.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": -2.0,
-          "display": "-2.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Aug-25",
-          "value": -3.0,
-          "display": "-3.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": -6.0,
-          "display": "-6.0k",
-          "tone": "negative"
         }
       ],
-      "change_1m_value": -4.0,
-      "change_1m": "-4.0k",
-      "change_3m": "+3.0k",
-      "change_6m": "+3.0k",
-      "change_12m": "-9.0k",
+      "change_1m_value": -1.0,
+      "change_1m": "-1.0k",
+      "change_3m": "-1.0k",
+      "change_6m": "-3.0k",
+      "change_12m": "-1.0k",
       "tone_1m": "negative",
-      "bar_pct": 5.8
+      "bar_pct": 0.6
     },
     {
       "series_id": "CES2000000001",
       "label": "Construction",
       "group": "Major sector",
-      "level_value": 8331.0,
-      "level": "8.3m",
-      "latest_date": "June 2026",
+      "level_value": 8367.0,
+      "level": "8.4m",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 11.0,
-          "display": "+11.0k",
-          "tone": "positive"
+          "value": -3.0,
+          "display": "-3.0k",
+          "tone": "negative"
         },
         {
           "label": "3M",
-          "value": 20.0,
-          "display": "+20.0k",
+          "value": 30.0,
+          "display": "+30.0k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 59.0,
-          "display": "+59.0k",
+          "value": 53.0,
+          "display": "+53.0k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 64.0,
-          "display": "+64.0k",
+          "value": 124.0,
+          "display": "+124k",
           "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": -3.0,
+          "display": "-3.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Sep-26",
+          "value": 16.0,
+          "display": "+16.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 17.0,
+          "display": "+17.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 18.0,
+          "display": "+18.0k",
+          "tone": "positive"
+        },
+        {
           "label": "Jun-26",
-          "value": 11.0,
-          "display": "+11.0k",
+          "value": 3.0,
+          "display": "+3.0k",
           "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 6.0,
-          "display": "+6.0k",
+          "value": 2.0,
+          "display": "+2.0k",
           "tone": "positive"
         },
         {
@@ -4502,81 +4526,81 @@
           "value": 36.0,
           "display": "+36.0k",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": -12.0,
-          "display": "-12.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Sep-25",
-          "value": 16.0,
-          "display": "+16.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": -22.0,
-          "display": "-22.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": -6.0,
-          "display": "-6.0k",
-          "tone": "negative"
         }
       ],
-      "change_1m_value": 11.0,
-      "change_1m": "+11.0k",
-      "change_3m": "+20.0k",
-      "change_6m": "+59.0k",
-      "change_12m": "+64.0k",
-      "tone_1m": "positive",
-      "bar_pct": 15.9
+      "change_1m_value": -3.0,
+      "change_1m": "-3.0k",
+      "change_3m": "+30.0k",
+      "change_6m": "+53.0k",
+      "change_12m": "+124k",
+      "tone_1m": "negative",
+      "bar_pct": 1.8
     },
     {
       "series_id": "CES3000000001",
       "label": "Manufacturing",
       "group": "Major sector",
-      "level_value": 12598.0,
-      "level": "12.6m",
-      "latest_date": "June 2026",
+      "level_value": 12681.0,
+      "level": "12.7m",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 3.0,
-          "display": "+3.0k",
+          "value": 19.0,
+          "display": "+19.0k",
           "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 0.0,
-          "display": "+0.0k",
-          "tone": "flat"
+          "value": 53.0,
+          "display": "+53.0k",
+          "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 18.0,
-          "display": "+18.0k",
+          "value": 84.0,
+          "display": "+84.0k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": -38.0,
-          "display": "-38.0k",
-          "tone": "negative"
+          "value": 78.0,
+          "display": "+78.0k",
+          "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": 19.0,
+          "display": "+19.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 13.0,
+          "display": "+13.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 21.0,
+          "display": "+21.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 20.0,
+          "display": "+20.0k",
+          "tone": "positive"
+        },
+        {
           "label": "Jun-26",
-          "value": 3.0,
-          "display": "+3.0k",
+          "value": 13.0,
+          "display": "+13.0k",
           "tone": "positive"
         },
         {
@@ -4620,87 +4644,87 @@
           "value": -10.0,
           "display": "-10.0k",
           "tone": "negative"
-        },
-        {
-          "label": "Oct-25",
-          "value": -9.0,
-          "display": "-9.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Sep-25",
-          "value": -3.0,
-          "display": "-3.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Aug-25",
-          "value": -10.0,
-          "display": "-10.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": -11.0,
-          "display": "-11.0k",
-          "tone": "negative"
         }
       ],
-      "change_1m_value": 3.0,
-      "change_1m": "+3.0k",
-      "change_3m": "+0.0k",
-      "change_6m": "+18.0k",
-      "change_12m": "-38.0k",
+      "change_1m_value": 19.0,
+      "change_1m": "+19.0k",
+      "change_3m": "+53.0k",
+      "change_6m": "+84.0k",
+      "change_12m": "+78.0k",
       "tone_1m": "positive",
-      "bar_pct": 4.3
+      "bar_pct": 11.5
     },
     {
       "series_id": "CES4142000001",
       "label": "Wholesale trade",
       "group": "Major sector",
-      "level_value": 6057.9,
+      "level_value": 6068.8,
       "level": "6.1m",
-      "latest_date": "June 2026",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 2.399999999999636,
-          "display": "+2.4k",
-          "tone": "positive"
+          "value": -9.099999999999454,
+          "display": "-9.1k",
+          "tone": "negative"
         },
         {
           "label": "3M",
-          "value": 6.599999999999454,
-          "display": "+6.6k",
+          "value": 3.5,
+          "display": "+3.5k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 15.399999999999636,
-          "display": "+15.4k",
+          "value": 16.900000000000546,
+          "display": "+16.9k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 0.5999999999994543,
-          "display": "+0.6k",
+          "value": 14.199999999999818,
+          "display": "+14.2k",
           "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": -9.099999999999454,
+          "display": "-9.1k",
+          "tone": "negative"
+        },
+        {
+          "label": "Sep-26",
+          "value": 8.099999999999454,
+          "display": "+8.1k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 4.5,
+          "display": "+4.5k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 6.300000000000182,
+          "display": "+6.3k",
+          "tone": "positive"
+        },
+        {
           "label": "Jun-26",
-          "value": 2.399999999999636,
-          "display": "+2.4k",
+          "value": 4.600000000000364,
+          "display": "+4.6k",
           "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 3.600000000000364,
-          "display": "+3.6k",
+          "value": 2.5,
+          "display": "+2.5k",
           "tone": "positive"
         },
         {
@@ -4738,87 +4762,87 @@
           "value": -6.400000000000546,
           "display": "-6.4k",
           "tone": "negative"
-        },
-        {
-          "label": "Oct-25",
-          "value": 2.800000000000182,
-          "display": "+2.8k",
-          "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": 8.800000000000182,
-          "display": "+8.8k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": -8.600000000000364,
-          "display": "-8.6k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": -5.699999999999818,
-          "display": "-5.7k",
-          "tone": "negative"
         }
       ],
-      "change_1m_value": 2.399999999999636,
-      "change_1m": "+2.4k",
-      "change_3m": "+6.6k",
-      "change_6m": "+15.4k",
-      "change_12m": "+0.6k",
-      "tone_1m": "positive",
-      "bar_pct": 3.5
+      "change_1m_value": -9.099999999999454,
+      "change_1m": "-9.1k",
+      "change_3m": "+3.5k",
+      "change_6m": "+16.9k",
+      "change_12m": "+14.2k",
+      "tone_1m": "negative",
+      "bar_pct": 5.5
     },
     {
       "series_id": "CES4200000001",
       "label": "Retail trade",
       "group": "Major sector",
-      "level_value": 15459.7,
+      "level_value": 15501.3,
       "level": "15.5m",
-      "latest_date": "June 2026",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": -7.5,
-          "display": "-7.5k",
-          "tone": "negative"
+          "value": 6.0,
+          "display": "+6.0k",
+          "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 24.200000000000728,
-          "display": "+24.2k",
+          "value": 22.099999999998545,
+          "display": "+22.1k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 46.20000000000073,
-          "display": "+46.2k",
+          "value": 42.29999999999927,
+          "display": "+42.3k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 34.20000000000073,
-          "display": "+34.2k",
+          "value": 63.29999999999927,
+          "display": "+63.3k",
           "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": 6.0,
+          "display": "+6.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 12.699999999998909,
+          "display": "+12.7k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 3.399999999999636,
+          "display": "+3.4k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 5.600000000000364,
+          "display": "+5.6k",
+          "tone": "positive"
+        },
+        {
           "label": "Jun-26",
-          "value": -7.5,
-          "display": "-7.5k",
-          "tone": "negative"
+          "value": 9.600000000000364,
+          "display": "+9.6k",
+          "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 8.200000000000728,
-          "display": "+8.2k",
+          "value": 5.0,
+          "display": "+5.0k",
           "tone": "positive"
         },
         {
@@ -4856,87 +4880,87 @@
           "value": -0.8999999999996362,
           "display": "-0.9k",
           "tone": "negative"
-        },
-        {
-          "label": "Oct-25",
-          "value": -15.399999999999636,
-          "display": "-15.4k",
-          "tone": "negative"
-        },
-        {
-          "label": "Sep-25",
-          "value": 13.100000000000364,
-          "display": "+13.1k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": 10.099999999998545,
-          "display": "+10.1k",
-          "tone": "positive"
-        },
-        {
-          "label": "Jul-25",
-          "value": 4.700000000000728,
-          "display": "+4.7k",
-          "tone": "positive"
         }
       ],
-      "change_1m_value": -7.5,
-      "change_1m": "-7.5k",
-      "change_3m": "+24.2k",
-      "change_6m": "+46.2k",
-      "change_12m": "+34.2k",
-      "tone_1m": "negative",
-      "bar_pct": 10.9
+      "change_1m_value": 6.0,
+      "change_1m": "+6.0k",
+      "change_3m": "+22.1k",
+      "change_6m": "+42.3k",
+      "change_12m": "+63.3k",
+      "tone_1m": "positive",
+      "bar_pct": 3.6
     },
     {
       "series_id": "CES4300000001",
       "label": "Transportation and warehousing",
       "group": "Major sector",
-      "level_value": 6603.7,
+      "level_value": 6636.1,
       "level": "6.6m",
-      "latest_date": "June 2026",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 2.300000000000182,
-          "display": "+2.3k",
+          "value": 24.800000000000182,
+          "display": "+24.8k",
           "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 46.099999999999454,
-          "display": "+46.1k",
+          "value": 38.30000000000018,
+          "display": "+38.3k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 48.30000000000018,
-          "display": "+48.3k",
+          "value": 39.100000000000364,
+          "display": "+39.1k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": -51.80000000000018,
-          "display": "-51.8k",
-          "tone": "negative"
+          "value": 17.0,
+          "display": "+17.0k",
+          "tone": "positive"
         }
       ],
       "history": [
         {
-          "label": "Jun-26",
-          "value": 2.300000000000182,
-          "display": "+2.3k",
+          "label": "Oct-26",
+          "value": 24.800000000000182,
+          "display": "+24.8k",
           "tone": "positive"
         },
         {
+          "label": "Sep-26",
+          "value": 7.400000000000546,
+          "display": "+7.4k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 6.099999999999454,
+          "display": "+6.1k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 10.300000000000182,
+          "display": "+10.3k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jun-26",
+          "value": -10.300000000000182,
+          "display": "-10.3k",
+          "tone": "negative"
+        },
+        {
           "label": "May-26",
-          "value": 4.399999999999636,
-          "display": "+4.4k",
+          "value": 0.8000000000001819,
+          "display": "+0.8k",
           "tone": "positive"
         },
         {
@@ -4974,82 +4998,82 @@
           "value": -58.900000000000546,
           "display": "-58.9k",
           "tone": "negative"
-        },
-        {
-          "label": "Oct-25",
-          "value": 0.6000000000003638,
-          "display": "+0.6k",
-          "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": -39.30000000000018,
-          "display": "-39.3k",
-          "tone": "negative"
-        },
-        {
-          "label": "Aug-25",
-          "value": -1.5999999999994543,
-          "display": "-1.6k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": 3.899999999999636,
-          "display": "+3.9k",
-          "tone": "positive"
         }
       ],
-      "change_1m_value": 2.300000000000182,
-      "change_1m": "+2.3k",
-      "change_3m": "+46.1k",
-      "change_6m": "+48.3k",
-      "change_12m": "-51.8k",
+      "change_1m_value": 24.800000000000182,
+      "change_1m": "+24.8k",
+      "change_3m": "+38.3k",
+      "change_6m": "+39.1k",
+      "change_12m": "+17.0k",
       "tone_1m": "positive",
-      "bar_pct": 3.3
+      "bar_pct": 15.0
     },
     {
       "series_id": "CES4422000001",
       "label": "Utilities",
       "group": "Major sector",
-      "level_value": 606.8,
-      "level": "606.8k",
-      "latest_date": "June 2026",
+      "level_value": 611.5,
+      "level": "611.5k",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": -0.8000000000000682,
-          "display": "-0.8k",
-          "tone": "negative"
+          "value": 0.10000000000002274,
+          "display": "+0.1k",
+          "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 1.0,
-          "display": "+1.0k",
+          "value": 2.6000000000000227,
+          "display": "+2.6k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 2.2999999999999545,
-          "display": "+2.3k",
+          "value": 4.7000000000000455,
+          "display": "+4.7k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 4.599999999999909,
-          "display": "+4.6k",
+          "value": 9.600000000000023,
+          "display": "+9.6k",
           "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": 0.10000000000002274,
+          "display": "+0.1k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 0.39999999999997726,
+          "display": "+0.4k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 2.1000000000000227,
+          "display": "+2.1k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 1.1000000000000227,
+          "display": "+1.1k",
+          "tone": "positive"
+        },
+        {
           "label": "Jun-26",
-          "value": -0.8000000000000682,
-          "display": "-0.8k",
-          "tone": "negative"
+          "value": 0.1999999999999318,
+          "display": "+0.2k",
+          "tone": "positive"
         },
         {
           "label": "May-26",
@@ -5092,87 +5116,87 @@
           "value": 1.8999999999999773,
           "display": "+1.9k",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": 0.5,
-          "display": "+0.5k",
-          "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": 0.0,
-          "display": "+0.0k",
-          "tone": "flat"
-        },
-        {
-          "label": "Aug-25",
-          "value": -1.2000000000000455,
-          "display": "-1.2k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": 0.39999999999997726,
-          "display": "+0.4k",
-          "tone": "positive"
         }
       ],
-      "change_1m_value": -0.8000000000000682,
-      "change_1m": "-0.8k",
-      "change_3m": "+1.0k",
-      "change_6m": "+2.3k",
-      "change_12m": "+4.6k",
-      "tone_1m": "negative",
-      "bar_pct": 1.2
+      "change_1m_value": 0.10000000000002274,
+      "change_1m": "+0.1k",
+      "change_3m": "+2.6k",
+      "change_6m": "+4.7k",
+      "change_12m": "+9.6k",
+      "tone_1m": "positive",
+      "bar_pct": 0.1
     },
     {
       "series_id": "CES5000000001",
       "label": "Information",
       "group": "Major sector",
-      "level_value": 2774.0,
-      "level": "2.8m",
-      "latest_date": "June 2026",
+      "level_value": 2734.0,
+      "level": "2.7m",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": -9.0,
-          "display": "-9.0k",
+          "value": -1.0,
+          "display": "-1.0k",
           "tone": "negative"
         },
         {
           "label": "3M",
-          "value": -19.0,
-          "display": "-19.0k",
+          "value": -33.0,
+          "display": "-33.0k",
           "tone": "negative"
         },
         {
           "label": "6M",
-          "value": -68.0,
-          "display": "-68.0k",
+          "value": -53.0,
+          "display": "-53.0k",
           "tone": "negative"
         },
         {
           "label": "12M",
-          "value": -89.0,
-          "display": "-89.0k",
+          "value": -119.0,
+          "display": "-119k",
           "tone": "negative"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": -1.0,
+          "display": "-1.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Sep-26",
+          "value": -11.0,
+          "display": "-11.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-26",
+          "value": -21.0,
+          "display": "-21.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-26",
+          "value": 4.0,
+          "display": "+4.0k",
+          "tone": "positive"
+        },
+        {
           "label": "Jun-26",
-          "value": -9.0,
-          "display": "-9.0k",
+          "value": -19.0,
+          "display": "-19.0k",
           "tone": "negative"
         },
         {
           "label": "May-26",
-          "value": -4.0,
-          "display": "-4.0k",
+          "value": -5.0,
+          "display": "-5.0k",
           "tone": "negative"
         },
         {
@@ -5210,87 +5234,87 @@
           "value": -5.0,
           "display": "-5.0k",
           "tone": "negative"
-        },
-        {
-          "label": "Oct-25",
-          "value": -6.0,
-          "display": "-6.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Sep-25",
-          "value": -1.0,
-          "display": "-1.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Aug-25",
-          "value": -1.0,
-          "display": "-1.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": -2.0,
-          "display": "-2.0k",
-          "tone": "negative"
         }
       ],
-      "change_1m_value": -9.0,
-      "change_1m": "-9.0k",
-      "change_3m": "-19.0k",
-      "change_6m": "-68.0k",
-      "change_12m": "-89.0k",
+      "change_1m_value": -1.0,
+      "change_1m": "-1.0k",
+      "change_3m": "-33.0k",
+      "change_6m": "-53.0k",
+      "change_12m": "-119k",
       "tone_1m": "negative",
-      "bar_pct": 13.0
+      "bar_pct": 0.6
     },
     {
       "series_id": "CES5500000001",
       "label": "Financial activities",
       "group": "Major sector",
-      "level_value": 9104.0,
+      "level_value": 9085.0,
       "level": "9.1m",
-      "latest_date": "June 2026",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 0.0,
-          "display": "+0.0k",
-          "tone": "flat"
+          "value": 7.0,
+          "display": "+7.0k",
+          "tone": "positive"
         },
         {
           "label": "3M",
-          "value": -28.0,
-          "display": "-28.0k",
+          "value": -13.0,
+          "display": "-13.0k",
           "tone": "negative"
         },
         {
           "label": "6M",
-          "value": -82.0,
-          "display": "-82.0k",
+          "value": -41.0,
+          "display": "-41.0k",
           "tone": "negative"
         },
         {
           "label": "12M",
-          "value": -100.0,
-          "display": "-100k",
+          "value": -99.0,
+          "display": "-99.0k",
           "tone": "negative"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": 7.0,
+          "display": "+7.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": -14.0,
+          "display": "-14.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-26",
+          "value": -6.0,
+          "display": "-6.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-26",
+          "value": -10.0,
+          "display": "-10.0k",
+          "tone": "negative"
+        },
+        {
           "label": "Jun-26",
-          "value": 0.0,
-          "display": "+0.0k",
-          "tone": "flat"
+          "value": 2.0,
+          "display": "+2.0k",
+          "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": -22.0,
-          "display": "-22.0k",
+          "value": -20.0,
+          "display": "-20.0k",
           "tone": "negative"
         },
         {
@@ -5328,77 +5352,77 @@
           "value": 1.0,
           "display": "+1.0k",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": -5.0,
-          "display": "-5.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Sep-25",
-          "value": 4.0,
-          "display": "+4.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": -19.0,
-          "display": "-19.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": 0.0,
-          "display": "+0.0k",
-          "tone": "flat"
         }
       ],
-      "change_1m_value": 0.0,
-      "change_1m": "+0.0k",
-      "change_3m": "-28.0k",
-      "change_6m": "-82.0k",
-      "change_12m": "-100k",
-      "tone_1m": "flat",
-      "bar_pct": 0.0
+      "change_1m_value": 7.0,
+      "change_1m": "+7.0k",
+      "change_3m": "-13.0k",
+      "change_6m": "-41.0k",
+      "change_12m": "-99.0k",
+      "tone_1m": "positive",
+      "bar_pct": 4.2
     },
     {
       "series_id": "CES6000000001",
       "label": "Professional and business services",
       "group": "Major sector",
-      "level_value": 22507.0,
-      "level": "22.5m",
-      "latest_date": "June 2026",
+      "level_value": 22604.0,
+      "level": "22.6m",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 36.0,
-          "display": "+36.0k",
+          "value": 70.0,
+          "display": "+70.0k",
           "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 67.0,
-          "display": "+67.0k",
+          "value": 108.0,
+          "display": "+108k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 135.0,
-          "display": "+135k",
+          "value": 144.0,
+          "display": "+144k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 88.0,
-          "display": "+88.0k",
+          "value": 269.0,
+          "display": "+269k",
           "tone": "positive"
         }
       ],
       "history": [
+        {
+          "label": "Oct-26",
+          "value": 70.0,
+          "display": "+70.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 8.0,
+          "display": "+8.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 30.0,
+          "display": "+30.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": -6.0,
+          "display": "-6.0k",
+          "tone": "negative"
+        },
         {
           "label": "Jun-26",
           "value": 36.0,
@@ -5407,8 +5431,8 @@
         },
         {
           "label": "May-26",
-          "value": 11.0,
-          "display": "+11.0k",
+          "value": 6.0,
+          "display": "+6.0k",
           "tone": "positive"
         },
         {
@@ -5446,87 +5470,87 @@
           "value": 56.0,
           "display": "+56.0k",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": -24.0,
-          "display": "-24.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Sep-25",
-          "value": -16.0,
-          "display": "-16.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Aug-25",
-          "value": -28.0,
-          "display": "-28.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": -16.0,
-          "display": "-16.0k",
-          "tone": "negative"
         }
       ],
-      "change_1m_value": 36.0,
-      "change_1m": "+36.0k",
-      "change_3m": "+67.0k",
-      "change_6m": "+135k",
-      "change_12m": "+88.0k",
+      "change_1m_value": 70.0,
+      "change_1m": "+70.0k",
+      "change_3m": "+108k",
+      "change_6m": "+144k",
+      "change_12m": "+269k",
       "tone_1m": "positive",
-      "bar_pct": 52.2
+      "bar_pct": 42.4
     },
     {
       "series_id": "CES6500000001",
       "label": "Private education and health services",
       "group": "Major sector",
-      "level_value": 27973.0,
-      "level": "28.0m",
-      "latest_date": "June 2026",
+      "level_value": 28058.0,
+      "level": "28.1m",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 69.0,
-          "display": "+69.0k",
+          "value": 53.0,
+          "display": "+53.0k",
           "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 181.0,
-          "display": "+181k",
+          "value": 111.0,
+          "display": "+111k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 346.0,
-          "display": "+346k",
+          "value": 199.0,
+          "display": "+199k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 648.0,
-          "display": "+648k",
+          "value": 525.0,
+          "display": "+525k",
           "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": 53.0,
+          "display": "+53.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 21.0,
+          "display": "+21.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 37.0,
+          "display": "+37.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 14.0,
+          "display": "+14.0k",
+          "tone": "positive"
+        },
+        {
           "label": "Jun-26",
-          "value": 69.0,
-          "display": "+69.0k",
+          "value": 50.0,
+          "display": "+50.0k",
           "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 45.0,
-          "display": "+45.0k",
+          "value": 24.0,
+          "display": "+24.0k",
           "tone": "positive"
         },
         {
@@ -5564,87 +5588,87 @@
           "value": 56.0,
           "display": "+56.0k",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": 44.0,
-          "display": "+44.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": 54.0,
-          "display": "+54.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": 23.0,
-          "display": "+23.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Jul-25",
-          "value": 87.0,
-          "display": "+87.0k",
-          "tone": "positive"
         }
       ],
-      "change_1m_value": 69.0,
-      "change_1m": "+69.0k",
-      "change_3m": "+181k",
-      "change_6m": "+346k",
-      "change_12m": "+648k",
+      "change_1m_value": 53.0,
+      "change_1m": "+53.0k",
+      "change_3m": "+111k",
+      "change_6m": "+199k",
+      "change_12m": "+525k",
       "tone_1m": "positive",
-      "bar_pct": 100.0
+      "bar_pct": 32.1
     },
     {
       "series_id": "CES6562000001",
       "label": "Health care and social assistance",
       "group": "Detail",
-      "level_value": 23906.3,
-      "level": "23.9m",
-      "latest_date": "June 2026",
+      "level_value": 24004.6,
+      "level": "24.0m",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": false,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 46.599999999998545,
-          "display": "+46.6k",
+          "value": 55.099999999998545,
+          "display": "+55.1k",
           "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 149.59999999999854,
-          "display": "+150k",
+          "value": 104.09999999999854,
+          "display": "+104k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 318.7999999999993,
-          "display": "+319k",
+          "value": 190.79999999999927,
+          "display": "+191k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 628.7999999999993,
-          "display": "+629k",
+          "value": 518.7999999999993,
+          "display": "+519k",
           "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": 55.099999999998545,
+          "display": "+55.1k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": 19.799999999999272,
+          "display": "+19.8k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 29.200000000000728,
+          "display": "+29.2k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 13.299999999999272,
+          "display": "+13.3k",
+          "tone": "positive"
+        },
+        {
           "label": "Jun-26",
-          "value": 46.599999999998545,
-          "display": "+46.6k",
+          "value": 38.60000000000218,
+          "display": "+38.6k",
           "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 45.900000000001455,
-          "display": "+45.9k",
+          "value": 34.79999999999927,
+          "display": "+34.8k",
           "tone": "positive"
         },
         {
@@ -5682,87 +5706,87 @@
           "value": 59.900000000001455,
           "display": "+59.9k",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": 47.599999999998545,
-          "display": "+47.6k",
-          "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": 55.29999999999927,
-          "display": "+55.3k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": 22.80000000000291,
-          "display": "+22.8k",
-          "tone": "positive"
-        },
-        {
-          "label": "Jul-25",
-          "value": 82.59999999999854,
-          "display": "+82.6k",
-          "tone": "positive"
         }
       ],
-      "change_1m_value": 46.599999999998545,
-      "change_1m": "+46.6k",
-      "change_3m": "+150k",
-      "change_6m": "+319k",
-      "change_12m": "+629k",
+      "change_1m_value": 55.099999999998545,
+      "change_1m": "+55.1k",
+      "change_3m": "+104k",
+      "change_6m": "+191k",
+      "change_12m": "+519k",
       "tone_1m": "positive",
-      "bar_pct": 67.5
+      "bar_pct": 33.4
     },
     {
       "series_id": "CES7000000001",
       "label": "Leisure and hospitality",
       "group": "Major sector",
-      "level_value": 16951.0,
+      "level_value": 16964.0,
       "level": "17.0m",
-      "latest_date": "June 2026",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": -61.0,
-          "display": "-61.0k",
+          "value": -13.0,
+          "display": "-13.0k",
           "tone": "negative"
         },
         {
           "label": "3M",
-          "value": -28.0,
-          "display": "-28.0k",
-          "tone": "negative"
+          "value": 42.0,
+          "display": "+42.0k",
+          "tone": "positive"
         },
         {
           "label": "6M",
-          "value": -10.0,
-          "display": "-10.0k",
+          "value": -8.0,
+          "display": "-8.0k",
           "tone": "negative"
         },
         {
           "label": "12M",
-          "value": 114.0,
-          "display": "+114k",
+          "value": 16.0,
+          "display": "+16.0k",
           "tone": "positive"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": -13.0,
+          "display": "-13.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Sep-26",
+          "value": 13.0,
+          "display": "+13.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 42.0,
+          "display": "+42.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": -38.0,
+          "display": "-38.0k",
+          "tone": "negative"
+        },
+        {
           "label": "Jun-26",
-          "value": -61.0,
-          "display": "-61.0k",
+          "value": -54.0,
+          "display": "-54.0k",
           "tone": "negative"
         },
         {
           "label": "May-26",
-          "value": 40.0,
-          "display": "+40.0k",
+          "value": 42.0,
+          "display": "+42.0k",
           "tone": "positive"
         },
         {
@@ -5800,87 +5824,87 @@
           "value": -12.0,
           "display": "-12.0k",
           "tone": "negative"
-        },
-        {
-          "label": "Oct-25",
-          "value": 41.0,
-          "display": "+41.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Sep-25",
-          "value": 37.0,
-          "display": "+37.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": 22.0,
-          "display": "+22.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Jul-25",
-          "value": 11.0,
-          "display": "+11.0k",
-          "tone": "positive"
         }
       ],
-      "change_1m_value": -61.0,
-      "change_1m": "-61.0k",
-      "change_3m": "-28.0k",
-      "change_6m": "-10.0k",
-      "change_12m": "+114k",
+      "change_1m_value": -13.0,
+      "change_1m": "-13.0k",
+      "change_3m": "+42.0k",
+      "change_6m": "-8.0k",
+      "change_12m": "+16.0k",
       "tone_1m": "negative",
-      "bar_pct": 88.4
+      "bar_pct": 7.9
     },
     {
       "series_id": "CES8000000001",
       "label": "Other services",
       "group": "Major sector",
-      "level_value": 6040.0,
+      "level_value": 6045.0,
       "level": "6.0m",
-      "latest_date": "June 2026",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 8.0,
-          "display": "+8.0k",
+          "value": 6.0,
+          "display": "+6.0k",
           "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 22.0,
-          "display": "+22.0k",
+          "value": 15.0,
+          "display": "+15.0k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 17.0,
-          "display": "+17.0k",
+          "value": 16.0,
+          "display": "+16.0k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": 56.0,
-          "display": "+56.0k",
+          "value": 46.0,
+          "display": "+46.0k",
           "tone": "positive"
         }
       ],
       "history": [
         {
-          "label": "Jun-26",
-          "value": 8.0,
-          "display": "+8.0k",
+          "label": "Oct-26",
+          "value": 6.0,
+          "display": "+6.0k",
           "tone": "positive"
         },
         {
+          "label": "Sep-26",
+          "value": 5.0,
+          "display": "+5.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Aug-26",
+          "value": 4.0,
+          "display": "+4.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": 6.0,
+          "display": "+6.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jun-26",
+          "value": -7.0,
+          "display": "-7.0k",
+          "tone": "negative"
+        },
+        {
           "label": "May-26",
-          "value": 3.0,
-          "display": "+3.0k",
+          "value": 2.0,
+          "display": "+2.0k",
           "tone": "positive"
         },
         {
@@ -5918,87 +5942,87 @@
           "value": 16.0,
           "display": "+16.0k",
           "tone": "positive"
-        },
-        {
-          "label": "Oct-25",
-          "value": -6.0,
-          "display": "-6.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Sep-25",
-          "value": -3.0,
-          "display": "-3.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Aug-25",
-          "value": 19.0,
-          "display": "+19.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Jul-25",
-          "value": 5.0,
-          "display": "+5.0k",
-          "tone": "positive"
         }
       ],
-      "change_1m_value": 8.0,
-      "change_1m": "+8.0k",
-      "change_3m": "+22.0k",
-      "change_6m": "+17.0k",
-      "change_12m": "+56.0k",
+      "change_1m_value": 6.0,
+      "change_1m": "+6.0k",
+      "change_3m": "+15.0k",
+      "change_6m": "+16.0k",
+      "change_12m": "+46.0k",
       "tone_1m": "positive",
-      "bar_pct": 11.6
+      "bar_pct": 3.6
     },
     {
       "series_id": "CES9000000001",
       "label": "Government",
       "group": "Major sector",
-      "level_value": 23371.0,
-      "level": "23.4m",
-      "latest_date": "June 2026",
+      "level_value": 23332.0,
+      "level": "23.3m",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": true,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 8.0,
-          "display": "+8.0k",
+          "value": 6.0,
+          "display": "+6.0k",
           "tone": "positive"
         },
         {
           "label": "3M",
-          "value": 38.0,
-          "display": "+38.0k",
+          "value": 32.0,
+          "display": "+32.0k",
           "tone": "positive"
         },
         {
           "label": "6M",
-          "value": 22.0,
-          "display": "+22.0k",
+          "value": 1.0,
+          "display": "+1.0k",
           "tone": "positive"
         },
         {
           "label": "12M",
-          "value": -215.0,
-          "display": "-215k",
+          "value": -58.0,
+          "display": "-58.0k",
           "tone": "negative"
         }
       ],
       "history": [
         {
+          "label": "Oct-26",
+          "value": 6.0,
+          "display": "+6.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Sep-26",
+          "value": -18.0,
+          "display": "-18.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-26",
+          "value": 44.0,
+          "display": "+44.0k",
+          "tone": "positive"
+        },
+        {
+          "label": "Jul-26",
+          "value": -38.0,
+          "display": "-38.0k",
+          "tone": "negative"
+        },
+        {
           "label": "Jun-26",
-          "value": 8.0,
-          "display": "+8.0k",
+          "value": 5.0,
+          "display": "+5.0k",
           "tone": "positive"
         },
         {
           "label": "May-26",
-          "value": 32.0,
-          "display": "+32.0k",
+          "value": 2.0,
+          "display": "+2.0k",
           "tone": "positive"
         },
         {
@@ -6036,87 +6060,87 @@
           "value": -31.0,
           "display": "-31.0k",
           "tone": "negative"
-        },
-        {
-          "label": "Oct-25",
-          "value": -153.0,
-          "display": "-153k",
-          "tone": "negative"
-        },
-        {
-          "label": "Sep-25",
-          "value": 8.0,
-          "display": "+8.0k",
-          "tone": "positive"
-        },
-        {
-          "label": "Aug-25",
-          "value": -50.0,
-          "display": "-50.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": -1.0,
-          "display": "-1.0k",
-          "tone": "negative"
         }
       ],
-      "change_1m_value": 8.0,
-      "change_1m": "+8.0k",
-      "change_3m": "+38.0k",
-      "change_6m": "+22.0k",
-      "change_12m": "-215k",
+      "change_1m_value": 6.0,
+      "change_1m": "+6.0k",
+      "change_3m": "+32.0k",
+      "change_6m": "+1.0k",
+      "change_12m": "-58.0k",
       "tone_1m": "positive",
-      "bar_pct": 11.6
+      "bar_pct": 3.6
     },
     {
       "series_id": "CES9091000001",
       "label": "Federal government",
       "group": "Detail",
-      "level_value": 2686.0,
+      "level_value": 2677.0,
       "level": "2.7m",
-      "latest_date": "June 2026",
+      "latest_date": "October 2026",
       "is_headline": false,
       "is_major": false,
       "is_metric": false,
       "windows": [
         {
           "label": "1M",
-          "value": 2.0,
-          "display": "+2.0k",
-          "tone": "positive"
+          "value": -1.0,
+          "display": "-1.0k",
+          "tone": "negative"
         },
         {
           "label": "3M",
-          "value": 4.0,
-          "display": "+4.0k",
-          "tone": "positive"
+          "value": -9.0,
+          "display": "-9.0k",
+          "tone": "negative"
         },
         {
           "label": "6M",
-          "value": -36.0,
-          "display": "-36.0k",
+          "value": -4.0,
+          "display": "-4.0k",
           "tone": "negative"
         },
         {
           "label": "12M",
-          "value": -258.0,
-          "display": "-258k",
+          "value": -71.0,
+          "display": "-71.0k",
           "tone": "negative"
         }
       ],
       "history": [
         {
-          "label": "Jun-26",
-          "value": 2.0,
-          "display": "+2.0k",
+          "label": "Oct-26",
+          "value": -1.0,
+          "display": "-1.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Sep-26",
+          "value": -3.0,
+          "display": "-3.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Aug-26",
+          "value": -5.0,
+          "display": "-5.0k",
+          "tone": "negative"
+        },
+        {
+          "label": "Jul-26",
+          "value": 1.0,
+          "display": "+1.0k",
           "tone": "positive"
         },
         {
+          "label": "Jun-26",
+          "value": 0.0,
+          "display": "+0.0k",
+          "tone": "flat"
+        },
+        {
           "label": "May-26",
-          "value": 3.0,
-          "display": "+3.0k",
+          "value": 4.0,
+          "display": "+4.0k",
           "tone": "positive"
         },
         {
@@ -6154,42 +6178,34 @@
           "value": -15.0,
           "display": "-15.0k",
           "tone": "negative"
-        },
-        {
-          "label": "Oct-25",
-          "value": -166.0,
-          "display": "-166k",
-          "tone": "negative"
-        },
-        {
-          "label": "Sep-25",
-          "value": -2.0,
-          "display": "-2.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Aug-25",
-          "value": -19.0,
-          "display": "-19.0k",
-          "tone": "negative"
-        },
-        {
-          "label": "Jul-25",
-          "value": -9.0,
-          "display": "-9.0k",
-          "tone": "negative"
         }
       ],
-      "change_1m_value": 2.0,
-      "change_1m": "+2.0k",
-      "change_3m": "+4.0k",
-      "change_6m": "-36.0k",
-      "change_12m": "-258k",
-      "tone_1m": "positive",
-      "bar_pct": 2.9
+      "change_1m_value": -1.0,
+      "change_1m": "-1.0k",
+      "change_3m": "-9.0k",
+      "change_6m": "-4.0k",
+      "change_12m": "-71.0k",
+      "tone_1m": "negative",
+      "bar_pct": 0.6
     }
   ],
   "history_months": [
+    {
+      "label": "Oct-26",
+      "iso": "2026-10"
+    },
+    {
+      "label": "Sep-26",
+      "iso": "2026-09"
+    },
+    {
+      "label": "Aug-26",
+      "iso": "2026-08"
+    },
+    {
+      "label": "Jul-26",
+      "iso": "2026-07"
+    },
     {
       "label": "Jun-26",
       "iso": "2026-06"
@@ -6221,22 +6237,6 @@
     {
       "label": "Nov-25",
       "iso": "2025-11"
-    },
-    {
-      "label": "Oct-25",
-      "iso": "2025-10"
-    },
-    {
-      "label": "Sep-25",
-      "iso": "2025-09"
-    },
-    {
-      "label": "Aug-25",
-      "iso": "2025-08"
-    },
-    {
-      "label": "Jul-25",
-      "iso": "2025-07"
     }
   ],
   "windows": [
