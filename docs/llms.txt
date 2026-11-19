@@ -2,7 +2,7 @@
 
 > Live US macroeconomic release calendar with house model forecasts and Kalshi market consensus, maintained by Chirag Mirani.
 
-Updated: Thursday, November 19, 2026 02:27 PM ET
+Updated: Thursday, November 19, 2026 06:28 PM ET
 Machine-readable feed: https://chiragmirani.github.io/macro-dashboard/dashboard_data.json
 Plain-language guide (what the table is, how to read it, how it was built, track record): https://chiragmirani.github.io/macro-dashboard/how-to-use-macro-forecasts.html
 
@@ -17,7 +17,7 @@ BLS (CPI, PPI, Employment Situation/CES/CPS); BEA PCE data and methodology; DOL 
   Kalshi consensus: no live Kalshi market found.
   Last release: September 2026: 0.317% m/m, 3.12% y/y.
 - **Weekly Claims** (Labor) â€” releases Thursday, November 26, 2026 at 8:30 AM ET.
-  House forecast: 205,082.
+  House forecast: 206,742.
   Kalshi consensus: no live Kalshi market found.
   Last release: Week ending Oct 31, 2026: 189,000.
 - **ADP** (Labor) â€” releases Wednesday, December 02, 2026 at 8:15 AM ET.
@@ -25,8 +25,8 @@ BLS (CPI, PPI, Employment Situation/CES/CPS); BEA PCE data and methodology; DOL 
   Kalshi consensus: 81k.
   Last release: October 2026: 86k.
 - **NFP** (Labor) â€” releases Friday, December 04, 2026 at 8:30 AM ET.
-  House forecast: 106k.
-  Kalshi consensus: 85k.
+  House forecast: 103k.
+  Kalshi consensus: 84k.
   Last release: October 2026: 165k.
 - **Unemployment Rate** (Labor) â€” releases Friday, December 04, 2026 at 8:30 AM ET.
   House forecast: 4.10%.
@@ -34,7 +34,7 @@ BLS (CPI, PPI, Employment Situation/CES/CPS); BEA PCE data and methodology; DOL 
   Last release: October 2026: 4.10%.
 - **Core CPI** (Inflation) â€” releases Thursday, December 10, 2026 at 8:30 AM ET.
   House forecast: 0.236% m/m | 2.92% y/y.
-  Kalshi consensus: 0.207% m/m | 2.86% y/y.
+  Kalshi consensus: 0.209% m/m | 2.86% y/y.
   Last release: October 2026: 0.296% m/m.
 
 ## CPI/PCE Bridge
