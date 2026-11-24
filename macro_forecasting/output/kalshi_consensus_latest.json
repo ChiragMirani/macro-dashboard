@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-23T22:32:56.512502+00:00",
+  "generated_at_utc": "2026-11-24T03:14:21.930570+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
@@ -16,8 +16,8 @@
       "event_ticker": "KXADP-26NOV",
       "kind": "threshold",
       "market_count": 7,
-      "implied_value": 81.375,
-      "consensus_label": "81k",
+      "implied_value": 81.625,
+      "consensus_label": "82k",
       "kalshi_url": "https://kalshi.com/markets/kxadp-26nov",
       "title": "ADP employment change in Nov 2026?"
     },
@@ -26,8 +26,8 @@
       "event_ticker": "KXECONSTATCPICORE-26NOV",
       "kind": "bucket",
       "market_count": 8,
-      "implied_value": 0.204954954954955,
-      "consensus_label": "0.205% m/m",
+      "implied_value": 0.1995535714285714,
+      "consensus_label": "0.200% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26nov",
       "title": "Core CPI in November (exact value)"
     },
@@ -36,8 +36,8 @@
       "event_ticker": "KXCPICOREYOY-26NOV",
       "kind": "threshold",
       "market_count": 16,
-      "implied_value": 2.844499999999999,
-      "consensus_label": "2.84% y/y",
+      "implied_value": 2.846,
+      "consensus_label": "2.85% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26nov",
       "title": "Core CPI YoY in November"
     },
@@ -46,7 +46,7 @@
       "event_ticker": "KXPAYROLLS-26NOV",
       "kind": "threshold",
       "market_count": 19,
-      "implied_value": 93.86250000000001,
+      "implied_value": 94.45,
       "consensus_label": "94k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26nov",
       "title": "Jobs numbers in Nov 2026?"
@@ -56,8 +56,8 @@
       "event_ticker": "KXECONSTATU3-26NOV",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.244848484848485,
-      "consensus_label": "4.24%",
+      "implied_value": 4.246060606060607,
+      "consensus_label": "4.25%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26nov",
       "title": "Unemployment rate in Nov 2026?"
     },
