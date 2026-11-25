@@ -1,0 +1,307 @@
+{
+  "months": [
+    "2026-08",
+    "2026-09",
+    "2026-10"
+  ],
+  "sign": "actual minus forecast",
+  "cpi": [
+    {
+      "component": "Lodging / hotels",
+      "core_weight_pct": 1.8343517148025859,
+      "forecast_rates": [
+        0.795,
+        0.636,
+        null
+      ],
+      "errors_bp": [
+        2.8647992394780504,
+        2.5663249398687618,
+        null
+      ],
+      "observations": 2,
+      "mean_absolute_available_bp": 2.715562089673406
+    },
+    {
+      "component": "Used cars",
+      "core_weight_pct": 3.389122926866295,
+      "forecast_rates": [
+        0.01,
+        -0.129,
+        null
+      ],
+      "errors_bp": [
+        1.204798558539186,
+        2.7051646217383802,
+        null
+      ],
+      "observations": 2,
+      "mean_absolute_available_bp": 1.9549815901387833
+    },
+    {
+      "component": "Apparel",
+      "core_weight_pct": 3.082975951016484,
+      "forecast_rates": [
+        null,
+        0.006,
+        null
+      ],
+      "errors_bp": [
+        null,
+        0.9258904479536189,
+        null
+      ],
+      "observations": 1,
+      "mean_absolute_available_bp": 0.9258904479536189
+    },
+    {
+      "component": "Airfares",
+      "core_weight_pct": 1.3801915316204283,
+      "forecast_rates": [
+        1.829,
+        1.321,
+        null
+      ],
+      "errors_bp": [
+        1.1764192994412659,
+        -0.22333396828237811,
+        null
+      ],
+      "observations": 2,
+      "mean_absolute_available_bp": 0.699876633861822
+    }
+  ],
+  "pce_fixed_forecast_weight_proxy_diagnostics": [
+    {
+      "component": "Hospitals",
+      "core_weight_pct": 6.0,
+      "forecast_contributions_bp": [
+        null,
+        2.0999999999999996,
+        1.8306316344512268
+      ],
+      "actual_rates": [
+        0.49340200294960557,
+        0.22661754050594674,
+        0.12849217890420483
+      ],
+      "errors_bp": [
+        null,
+        -0.7402947569643192,
+        -1.0596785610259978
+      ],
+      "observations": 2,
+      "mean_absolute_available_bp": 0.8999866589951585
+    },
+    {
+      "component": "Air transportation",
+      "core_weight_pct": 0.85,
+      "forecast_contributions_bp": [
+        2.3034492897721535,
+        3.54535,
+        -1.2696528193150496
+      ],
+      "actual_rates": [
+        3.153883248051015,
+        4.438419473639299,
+        -3.5043352601156097
+      ],
+      "errors_bp": [
+        0.37735147107120914,
+        0.22730655259340393,
+        -1.7090321517832188
+      ],
+      "observations": 3,
+      "mean_absolute_available_bp": 0.7712300584826105
+    },
+    {
+      "component": "Portfolio management",
+      "core_weight_pct": 1.96,
+      "forecast_contributions_bp": [
+        0.651979374291139,
+        0.5958399999999999,
+        0.25239970541756485
+      ],
+      "actual_rates": [
+        0.5586183789710875,
+        0.41528691725134514,
+        0.2683681407817051
+      ],
+      "errors_bp": [
+        0.4429126484921925,
+        0.21812235781263656,
+        0.2736018505145772
+      ],
+      "observations": 3,
+      "mean_absolute_available_bp": 0.3115456189398021
+    },
+    {
+      "component": "Physician services",
+      "core_weight_pct": 3.5,
+      "forecast_contributions_bp": [
+        null,
+        0.23800000000000002,
+        0.5275518940151003
+      ],
+      "actual_rates": [
+        0.06630772087101722,
+        0.05123901232386707,
+        0.046805316377440676
+      ],
+      "errors_bp": [
+        null,
+        -0.05866345686646526,
+        -0.3637332866940579
+      ],
+      "observations": 2,
+      "mean_absolute_available_bp": 0.21119837178026157
+    },
+    {
+      "component": "Home health care",
+      "core_weight_pct": 0.5,
+      "forecast_contributions_bp": [
+        null,
+        -0.225,
+        -0.08727993892013917
+      ],
+      "actual_rates": [
+        0.16769057171515112,
+        0.00783152816610233,
+        0.0
+      ],
+      "errors_bp": [
+        null,
+        0.22891576408305117,
+        0.08727993892013917
+      ],
+      "observations": 2,
+      "mean_absolute_available_bp": 0.15809785150159517
+    },
+    {
+      "component": "Net purchases of used motor vehicles",
+      "core_weight_pct": 3.2,
+      "forecast_contributions_bp": [
+        null,
+        null,
+        -3.917091164588058
+      ],
+      "actual_rates": [
+        0.3522929610185299,
+        0.6343573419437476,
+        -1.1903140370790877
+      ],
+      "errors_bp": [
+        null,
+        null,
+        0.1080862459349774
+      ],
+      "observations": 1,
+      "mean_absolute_available_bp": 0.1080862459349774
+    },
+    {
+      "component": "New motor vehicles",
+      "core_weight_pct": 4.2,
+      "forecast_contributions_bp": [
+        null,
+        null,
+        0.7225454444227886
+      ],
+      "actual_rates": [
+        0.2644068910019559,
+        0.216209133197931,
+        0.19531090390541017
+      ],
+      "errors_bp": [
+        null,
+        null,
+        0.09776035197993416
+      ],
+      "observations": 1,
+      "mean_absolute_available_bp": 0.09776035197993416
+    },
+    {
+      "component": "Nursing homes",
+      "core_weight_pct": 1.0,
+      "forecast_contributions_bp": [
+        null,
+        0.534,
+        -0.3839713485645621
+      ],
+      "actual_rates": [
+        0.11341742702388746,
+        0.3532464511815103,
+        -0.37292667943483737
+      ],
+      "errors_bp": [
+        null,
+        -0.1807535488184897,
+        0.011044669129724738
+      ],
+      "observations": 2,
+      "mean_absolute_available_bp": 0.09589910897410722
+    },
+    {
+      "component": "Owner-occupied rent / OER",
+      "core_weight_pct": 13.5,
+      "forecast_contributions_bp": [
+        null,
+        null,
+        4.311365142106416
+      ],
+      "actual_rates": [
+        0.19015074269022048,
+        0.3424469138519015,
+        0.3124957168898268
+      ],
+      "errors_bp": [
+        null,
+        null,
+        -0.09267296409375447
+      ],
+      "observations": 1,
+      "mean_absolute_available_bp": 0.09267296409375447
+    },
+    {
+      "component": "Lodging / accommodations",
+      "core_weight_pct": 1.0,
+      "forecast_contributions_bp": [
+        null,
+        null,
+        0.6442177466282839
+      ],
+      "actual_rates": [
+        2.2100246787507327,
+        1.8940970776788024,
+        0.6152865617492731
+      ],
+      "errors_bp": [
+        null,
+        null,
+        -0.028931184879010807
+      ],
+      "observations": 1,
+      "mean_absolute_available_bp": 0.028931184879010807
+    },
+    {
+      "component": "Tenant rent",
+      "core_weight_pct": 4.5,
+      "forecast_contributions_bp": [
+        null,
+        null,
+        0.9071351977781195
+      ],
+      "actual_rates": [
+        0.1737995466098985,
+        0.24687463568846546,
+        0.2011177770329109
+      ],
+      "errors_bp": [
+        null,
+        null,
+        -0.00210520113002044
+      ],
+      "observations": 1,
+      "mean_absolute_available_bp": 0.00210520113002044
+    }
+  ]
+}

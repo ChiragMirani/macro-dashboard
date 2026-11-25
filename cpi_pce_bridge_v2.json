@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-13T18:01:25",
-  "runtime_seconds": 10.427,
+  "generated_at": "2026-11-25T18:18:13",
+  "runtime_seconds": 7.733,
   "date": "October 2026",
   "reporting_month": "October 2026",
   "data_month": "2026-10-01",
@@ -61,11 +61,11 @@
     "annualized_pct": 3.38
   },
   "expected_core_pce": {
-    "yoy_pct": 3.23,
+    "yoy_pct": 3.25,
     "index_source": "FRED API",
-    "previous_month_index": 130.902,
+    "previous_month_index": 130.929,
     "year_ago_index": 127.165,
-    "projected_index": 131.271
+    "projected_index": 131.298
   },
   "wedge_decomposition_bps": {
     "total": -1.5,
@@ -672,10 +672,10 @@
   ],
   "kalshi_snapshot": {
     "mom_event": "KXPCECORE-26OCT",
-    "mom_expected_value": 0.301,
-    "mom_modal_value": 0.3,
-    "mom_modal_probability": 0.75,
-    "mom_coinflip_range": "0.3%-0.4%",
+    "mom_expected_value": 0.25,
+    "mom_modal_value": 0.0,
+    "mom_modal_probability": 0.5,
+    "mom_coinflip_range": "0.0%-0.1%",
     "yoy_event": null,
     "yoy_expected_value": null,
     "yoy_coinflip_range": null

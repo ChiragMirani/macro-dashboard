@@ -1,0 +1,95 @@
+{
+  "months": [
+    "2026-09",
+    "2026-10"
+  ],
+  "sign": "actual minus forecast",
+  "ranking": "descending two-month mean absolute contribution error",
+  "cpi_component_diagnostics": [
+    {
+      "component": "Shelter",
+      "sept_bp": 8.827753501148958,
+      "oct_bp": 2.6430865002048853,
+      "mean_abs_bp": 5.735420000676922,
+      "core_share_pct": 44.66203650992448
+    },
+    {
+      "component": "Services excluding shelter",
+      "sept_bp": 8.05862199713118,
+      "oct_bp": -0.6870994694665931,
+      "mean_abs_bp": 4.372860733298887,
+      "core_share_pct": 31.516692600604706
+    },
+    {
+      "component": "Core goods",
+      "sept_bp": 4.58422499535134,
+      "oct_bp": 1.663484047926915,
+      "mean_abs_bp": 3.1238545216391276,
+      "core_share_pct": 23.820005819322684
+    }
+  ],
+  "pce_reconciled_groups": [
+    {
+      "component": "Fisher-chain formula adjustment",
+      "sept_bp": 2.96787175214126,
+      "oct_bp": 3.0028559773147947,
+      "mean_abs_bp": 2.9853638647280274
+    },
+    {
+      "component": "Remaining goods and services / residual mapping",
+      "sept_bp": -3.8197287223282443,
+      "oct_bp": 0.943538694460841,
+      "mean_abs_bp": 2.381633708394543
+    },
+    {
+      "component": "Air transportation",
+      "sept_bp": 1.5010359009416634,
+      "oct_bp": -2.8417191854353154,
+      "mean_abs_bp": 2.1713775431884894
+    },
+    {
+      "component": "Healthcare, including medical goods",
+      "sept_bp": -3.070331593098606,
+      "oct_bp": -0.1087435994963557,
+      "mean_abs_bp": 1.589537596297481
+    },
+    {
+      "component": "Portfolio management",
+      "sept_bp": 0.1883109740636617,
+      "oct_bp": 0.2105580404087914,
+      "mean_abs_bp": 0.19943450723622655
+    },
+    {
+      "component": "Rent, OER and other shelter",
+      "sept_bp": -0.15698090213186067,
+      "oct_bp": -0.11399429985179843,
+      "mean_abs_bp": 0.13548760099182955
+    }
+  ],
+  "cpi_september_detail": [
+    {
+      "component": "Used cars",
+      "forecast_mom": -0.129,
+      "actual_mom": 0.6691901748956841,
+      "error_bp": 2.7051646217383802
+    },
+    {
+      "component": "Lodging away",
+      "forecast_mom": 0.636,
+      "actual_mom": 2.035036465667628,
+      "error_bp": 2.5663249398687618
+    },
+    {
+      "component": "Apparel",
+      "forecast_mom": 0.006,
+      "actual_mom": 0.3063236037726291,
+      "error_bp": 0.9258904479536189
+    },
+    {
+      "component": "Airfares",
+      "forecast_mom": 1.321,
+      "actual_mom": 1.1591862493967264,
+      "error_bp": -0.22333396828237811
+    }
+  ]
+}

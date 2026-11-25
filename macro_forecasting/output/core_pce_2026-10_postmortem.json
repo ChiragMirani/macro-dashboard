@@ -1,0 +1,73 @@
+{
+  "source": {
+    "release_url": "https://www.bea.gov/news/2026/personal-income-and-outlays-october-2026",
+    "release_date": "2026-11-25",
+    "forecast_snapshot": "macro_forecasting/vintages/core_pce_2026-10_post_ppi_2026-11-13.json",
+    "forecast_generated_at": "2026-11-13T08:37:05"
+  },
+  "reported": {
+    "reported_mom_pct": 0.3,
+    "reported_yoy_pct": 3.3
+  },
+  "reference_month": "2026-10",
+  "actual_mom_pct": 0.29252495627400954,
+  "actual_yoy_pct": 3.26111744583808,
+  "forecast_mom_pct": 0.2816,
+  "actual_minus_forecast_bp": 1.0924956274009523,
+  "kalshi_prerelease_mean_pct": 0.324,
+  "components": [
+    {
+      "component": "Rent, OER and other shelter",
+      "forecast_contribution_bp": 5.8,
+      "actual_contribution_bp": 5.686005700148201,
+      "actual_minus_forecast_bp": -0.11399429985179843
+    },
+    {
+      "component": "Core goods excluding medical goods",
+      "forecast_contribution_bp": -3.0,
+      "actual_contribution_bp": 6.438590808069681,
+      "actual_minus_forecast_bp": 9.43859080806968
+    },
+    {
+      "component": "Air transportation",
+      "forecast_contribution_bp": -1.3,
+      "actual_contribution_bp": -4.141719185435315,
+      "actual_minus_forecast_bp": -2.8417191854353154
+    },
+    {
+      "component": "Portfolio management",
+      "forecast_contribution_bp": 0.3,
+      "actual_contribution_bp": 0.5105580404087914,
+      "actual_minus_forecast_bp": 0.2105580404087914
+    },
+    {
+      "component": "Healthcare, including medical goods",
+      "forecast_contribution_bp": 3.9999999999999996,
+      "actual_contribution_bp": 3.891256400503644,
+      "actual_minus_forecast_bp": -0.1087435994963557
+    },
+    {
+      "component": "Other services and residual mapping",
+      "forecast_contribution_bp": 25.36,
+      "actual_contribution_bp": 16.86494788639116,
+      "actual_minus_forecast_bp": -8.495052113608839
+    },
+    {
+      "component": "Fisher-chain formula adjustment",
+      "forecast_contribution_bp": -3,
+      "actual_contribution_bp": 0.0028559773147947,
+      "actual_minus_forecast_bp": 3.0028559773147947
+    },
+    {
+      "component": "Historical model calibration",
+      "forecast_contribution_bp": 0.0,
+      "actual_contribution_bp": 0.0,
+      "actual_minus_forecast_bp": 0.0
+    }
+  ],
+  "index_levels": {
+    "target": 131.312,
+    "previous": 130.929,
+    "yearago": 127.165
+  }
+}
