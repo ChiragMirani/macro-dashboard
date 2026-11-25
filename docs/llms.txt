@@ -2,7 +2,7 @@
 
 > Live US macroeconomic release calendar with house model forecasts and Kalshi market consensus, maintained by Chirag Mirani.
 
-Updated: Tuesday, November 24, 2026 08:19 PM ET
+Updated: Wednesday, November 25, 2026 03:26 PM ET
 Machine-readable feed: https://chiragmirani.github.io/macro-dashboard/dashboard_data.json
 Plain-language guide (what the table is, how to read it, how it was built, track record): https://chiragmirani.github.io/macro-dashboard/how-to-use-macro-forecasts.html
 
@@ -12,10 +12,6 @@ BLS (CPI, PPI, Employment Situation/CES/CPS); BEA PCE data and methodology; DOL 
 
 ## Tracked releases
 
-- **Core PCE** (Inflation) â€” releases Wednesday, November 25, 2026 at 8:30 AM ET.
-  House forecast: 0.282% m/m | 3.23% y/y.
-  Kalshi consensus: no live Kalshi market found.
-  Last release: September 2026: 0.317% m/m, 3.12% y/y.
 - **Weekly Claims** (Labor) â€” releases Thursday, November 26, 2026 at 8:30 AM ET.
   House forecast: 206,742.
   Kalshi consensus: no live Kalshi market found.
@@ -26,7 +22,7 @@ BLS (CPI, PPI, Employment Situation/CES/CPS); BEA PCE data and methodology; DOL 
   Last release: October 2026: 86k.
 - **NFP** (Labor) â€” releases Friday, December 04, 2026 at 8:30 AM ET.
   House forecast: 103k.
-  Kalshi consensus: 97k.
+  Kalshi consensus: 98k.
   Last release: October 2026: 165k.
 - **Unemployment Rate** (Labor) â€” releases Friday, December 04, 2026 at 8:30 AM ET.
   House forecast: 4.10%.
@@ -34,8 +30,12 @@ BLS (CPI, PPI, Employment Situation/CES/CPS); BEA PCE data and methodology; DOL 
   Last release: October 2026: 4.10%.
 - **Core CPI** (Inflation) â€” releases Thursday, December 10, 2026 at 8:30 AM ET.
   House forecast: 0.236% m/m | 2.92% y/y.
-  Kalshi consensus: 0.205% m/m | 2.85% y/y.
+  Kalshi consensus: 0.203% m/m | 2.85% y/y.
   Last release: October 2026: 0.296% m/m.
+- **Core PCE** (Inflation) â€” releases Wednesday, December 23, 2026 at 8:30 AM ET.
+  House forecast: 0.282% m/m | 3.23% y/y.
+  Kalshi consensus: no live Kalshi market found.
+  Last release: October 2026: 0.293% m/m, 3.26% y/y.
 
 ## CPI/PCE Bridge
 
