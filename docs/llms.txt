@@ -2,7 +2,7 @@
 
 > Live US macroeconomic release calendar with house model forecasts and Kalshi market consensus, maintained by Chirag Mirani.
 
-Updated: Wednesday, November 25, 2026 03:26 PM ET
+Updated: Wednesday, November 25, 2026 07:54 PM ET
 Machine-readable feed: https://chiragmirani.github.io/macro-dashboard/dashboard_data.json
 Plain-language guide (what the table is, how to read it, how it was built, track record): https://chiragmirani.github.io/macro-dashboard/how-to-use-macro-forecasts.html
 
@@ -13,7 +13,7 @@ BLS (CPI, PPI, Employment Situation/CES/CPS); BEA PCE data and methodology; DOL 
 ## Tracked releases
 
 - **Weekly Claims** (Labor) â€” releases Thursday, November 26, 2026 at 8:30 AM ET.
-  House forecast: 206,742.
+  House forecast: 202,072.
   Kalshi consensus: no live Kalshi market found.
   Last release: Week ending Oct 31, 2026: 189,000.
 - **ADP** (Labor) â€” releases Wednesday, December 02, 2026 at 8:15 AM ET.
@@ -22,7 +22,7 @@ BLS (CPI, PPI, Employment Situation/CES/CPS); BEA PCE data and methodology; DOL 
   Last release: October 2026: 86k.
 - **NFP** (Labor) â€” releases Friday, December 04, 2026 at 8:30 AM ET.
   House forecast: 103k.
-  Kalshi consensus: 98k.
+  Kalshi consensus: 97k.
   Last release: October 2026: 165k.
 - **Unemployment Rate** (Labor) â€” releases Friday, December 04, 2026 at 8:30 AM ET.
   House forecast: 4.10%.
@@ -30,10 +30,10 @@ BLS (CPI, PPI, Employment Situation/CES/CPS); BEA PCE data and methodology; DOL 
   Last release: October 2026: 4.10%.
 - **Core CPI** (Inflation) â€” releases Thursday, December 10, 2026 at 8:30 AM ET.
   House forecast: 0.236% m/m | 2.92% y/y.
-  Kalshi consensus: 0.203% m/m | 2.85% y/y.
+  Kalshi consensus: 0.208% m/m | 2.85% y/y.
   Last release: October 2026: 0.296% m/m.
 - **Core PCE** (Inflation) â€” releases Wednesday, December 23, 2026 at 8:30 AM ET.
-  House forecast: 0.282% m/m | 3.23% y/y.
+  House forecast: 0.282% m/m | 3.25% y/y.
   Kalshi consensus: no live Kalshi market found.
   Last release: October 2026: 0.293% m/m, 3.26% y/y.
 
@@ -42,7 +42,7 @@ BLS (CPI, PPI, Employment Situation/CES/CPS); BEA PCE data and methodology; DOL 
 Page: https://chiragmirani.github.io/macro-dashboard/cpi-pce-bridge.html
 Reporting month: October 2026.
 Bridge Core PCE m/m: 0.282% (28.2 bps).
-Expected Core PCE y/y: 3.23%.
+Expected Core PCE y/y: 3.25%.
 CPI/PCE wedge: -1.5 bps.
 
 ## How to cite

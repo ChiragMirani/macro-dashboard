@@ -1,10 +1,10 @@
 {
   "created_by": "Chirag Mirani",
-  "generated_at_et": "Wednesday, November 25, 2026 03:26 PM ET",
-  "generated_at_iso": "2026-11-25T15:26:02.651685-05:00",
+  "generated_at_et": "Wednesday, November 25, 2026 07:54 PM ET",
+  "generated_at_iso": "2026-11-25T19:54:25.177837-05:00",
   "current_day": "Wednesday",
   "current_date": "November 25, 2026",
-  "current_time": "03:26 PM ET",
+  "current_time": "07:54 PM ET",
   "next_event": {
     "key": "weekly_claims",
     "label": "Weekly Claims",
@@ -14,12 +14,12 @@
     "release_date": "November 26, 2026",
     "release_time": "8:30 AM ET",
     "release_iso": "2026-11-26T08:30:00-05:00",
-    "hours_until_release": 17,
+    "hours_until_release": 12,
     "schedule_source": "weekly_rule",
-    "house_forecast": "206,742",
+    "house_forecast": "202,072",
     "kalshi_consensus": "no live Kalshi market found",
     "last_release": "Week ending Oct 31, 2026: 189,000",
-    "risk": "high",
+    "risk": "elevated surprise risk",
     "status": "live",
     "notes": "Weekly model output with surprise-risk overlay.",
     "model_source": "macro_forecasting/output/weekly_claims_forecast_latest.json",
@@ -37,12 +37,12 @@
       "release_date": "November 26, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-11-26T08:30:00-05:00",
-      "hours_until_release": 17,
+      "hours_until_release": 12,
       "schedule_source": "weekly_rule",
-      "house_forecast": "206,742",
+      "house_forecast": "202,072",
       "kalshi_consensus": "no live Kalshi market found",
       "last_release": "Week ending Oct 31, 2026: 189,000",
-      "risk": "high",
+      "risk": "elevated surprise risk",
       "status": "live",
       "notes": "Weekly model output with surprise-risk overlay.",
       "model_source": "macro_forecasting/output/weekly_claims_forecast_latest.json",
@@ -59,7 +59,7 @@
       "release_date": "December 02, 2026",
       "release_time": "8:15 AM ET",
       "release_iso": "2026-12-02T08:15:00-05:00",
-      "hours_until_release": 160,
+      "hours_until_release": 156,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "87k",
       "kalshi_consensus": "80k",
@@ -88,10 +88,10 @@
       "release_date": "December 04, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-12-04T08:30:00-05:00",
-      "hours_until_release": 209,
+      "hours_until_release": 204,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "103k",
-      "kalshi_consensus": "98k",
+      "kalshi_consensus": "97k",
       "last_release": "October 2026: 165k",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -101,8 +101,8 @@
       "release_source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": 4.917938232421875,
-        "gap_display": "+5k",
+        "gap_value": 5.642938232421869,
+        "gap_display": "+6k",
         "threshold": 40.0,
         "threshold_display": "40k",
         "house_side": "above Kalshi"
@@ -117,7 +117,7 @@
       "release_date": "December 04, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-12-04T08:30:00-05:00",
-      "hours_until_release": 209,
+      "hours_until_release": 204,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "4.10%",
       "kalshi_consensus": "4.24%",
@@ -150,24 +150,24 @@
         "guidance_hit_count": 0,
         "news_headlines": [
           {
-            "title": "Consumer Price Index, San Francisco Area \u2014 October 2026 - Bureau of Labor Statistics (.gov)",
-            "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPeTgzR3NqQ3Fkby04dGJfbVZJdnVFMjEtYUFieXpZcWVJQjNkYWx2Q2NHZXZzMy1CSndOYVBLT1RkWlcyVTVJUHU3X0pTRVB1SXNYdkczdXFzeDJZM05SUVJTOTRWaUdmNTJubFh0LUk1RnZZcWlXOURHZ2FJUGg5Snlia1ZhYlI1?oc=5",
+            "title": "Consumer Price Index, West Region \u2014 October 2026 - Bureau of Labor Statistics (.gov)",
+            "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9YdTNMX2E3REJVeDFfR1lpTW1DMENvX0NySVhvQlBWUlBHR3RZSnM3cUd6NE1fNTc3LWJwVGdwdno1NXZNa1Z5T3p1SGw1eFk1ek9YMGotOXFYbnlwMWxCRHVZN3ZSQWFfSnJtWTJIRmR1bllUc2V5N2MtT3R0dw?oc=5",
             "published": "Tue, 10 Nov 2026 08:00:00 GMT"
           },
           {
             "title": "A wave of 'pent-up quits' could boost turnover in the job market, expert says: 'The labor market is a bit like a coiled spring' - CNBC",
-            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWUZUZW1kN2Fxa0I3XzVzUzNJQnFkQy1iQWZVRjh5b19abTdiTWNRYW41dEI0cnJudU1zZW1HLTBiUWtkRHJrTWptRGl0WXRwQ052aFR6cUd5M1NMblhETWw0VnppV19LaW0tM3liSm5zSDR5RWZoMS0zNUI0OXZQWjVBUlTSAYoBQVVfeXFMUGNTZnJBblY3YjVoZEY0VmtSazNKV2djb3RfdExNNjRyMlNRWXVodkFwVTB2NXBSV1BETDEyRkdyTlo5dnI2V2l2dzVyLWlWWHc5UGNrRmNJbWNrUFNCMWNkMU9XcXlqSktVZzdybWRMX2VscWFrMVNOOGEzVXZpLUhNa3BhQlRyeFpB?oc=5",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWUZUZW1kN2Fxa0I3XzVzUzNJQnFkQy1iQWZVRjh5b19abTdiTWNRYW41dEI0cnJudU1zZW1HLTBiUWtkRHJrTWptRGl0WXRwQ052aFR6cUd5M1NMblhETWw0VnppV19LaW0tM3liSm5zSDR5RWZoMS0zNUI0OXZQWjVBUlQ?oc=5",
             "published": "Fri, 20 Nov 2026 18:55:39 GMT"
           },
           {
-            "title": "2026 U.S. Job Growth Has Lagged Far Behind Optimal Levels - Center for American Progress",
-            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQX3MtdzBOcTIxOC1FZzQtQmZkby1QNHBVUU9WVkRFejRoUGpTZUhqZkhFSWNDTERNQnBPUWUzMVMwbWd3Z185OEFFRGtuaXRNdm9IaDUzX21iYWR1VEk5eERaVkktZUxJX0VyTnhUQW1vd2lCQV9mdmhjNWpLT0pJN0ZuUThZNVdvQkthT3JTY1UxUUxMTjBQOXpXYTJqTjA?oc=5",
-            "published": "Fri, 04 Sep 2026 07:00:00 GMT"
+            "title": "Consumer Price Index, South Region \u2014 October 2026 - Bureau of Labor Statistics (.gov)",
+            "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOYlhCV0tpY0w2S3NxcGRueU03eklLLUVnLTRUUGUyeW1aZ25BUkhKTlVnRm03U1UyUDN2a1FsOW14eWtQMGhNamJ0Y296ZF9RamxBYW1yQktMbVhJZ004VWxjUzN6enFwTmV3ektPMG9WdF9Ka2UtekpMTWFUZjZHdWMwdVRkdw?oc=5",
+            "published": "Tue, 10 Nov 2026 08:00:00 GMT"
           },
           {
-            "title": "U.S. Bureau of Labor Statistics (BLS) - Britannica",
-            "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5kVndjZF9jTTB2UnRXNnN5TVhrRUJZaDNfVWlyX1FuTWFJYmQtWDJZXzNka1c2RjdCTGtXYVF4NUFLbWtxSUhsRWFadHhJbE5vWEtFeUN5T1hmbXJfSjloTGtLRV9TMGt4a2w0?oc=5",
-            "published": "Sat, 14 Nov 2026 08:00:00 GMT"
+            "title": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight - CNBC",
+            "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5sRXhidGNwejMxdTlFZnRZRzRxSWI2R2w4MzRUcnRIWmhqdUlHMmZaN0ZlaHpNbFp5RzFNQlZfU2hJOWNtVjU2ZzZybU5jYk9lOGtwUFg3dHhDTTVaeUFWdlhNTS11aHVTQV9wZ3k0S3JscjBIZnhNeFlB0gF_QVVfeXFMUFotOHdWZDUxTmpjRVplMUpNLWhuMGhic1JjQ0xZN3d6bnZ2VnJFX3E0ZkxxYkJ5aHByWWtrOWN0ZmYyNnFVYTZYdGFUazdBRkgxMkgxQ0ZFNkVmeFZUSGNqNlcwWVZEbVA5SExIV2xZMlVkVXdoaUk4cmU4TXEyQQ?oc=5",
+            "published": "Tue, 10 Nov 2026 08:00:00 GMT"
           }
         ]
       }
@@ -181,10 +181,10 @@
       "release_date": "December 10, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-12-10T08:30:00-05:00",
-      "hours_until_release": 353,
+      "hours_until_release": 348,
       "schedule_source": "seeded_official_schedule",
       "house_forecast": "0.236% m/m | 2.92% y/y",
-      "kalshi_consensus": "0.203% m/m | 2.85% y/y",
+      "kalshi_consensus": "0.208% m/m | 2.85% y/y",
       "last_release": "October 2026: 0.296% m/m",
       "risk": "elevated surprise risk",
       "status": "live",
@@ -194,8 +194,8 @@
       "release_source_url": "https://www.bls.gov/news.release/cpi.toc.htm",
       "consensus_review": {
         "required": false,
-        "gap_value": 0.033107872575511316,
-        "gap_display": "+0.033 pp",
+        "gap_value": 0.028197158289797047,
+        "gap_display": "+0.028 pp",
         "threshold": 0.05,
         "threshold_display": "0.050 pp",
         "house_side": "above Kalshi"
@@ -210,9 +210,9 @@
       "release_date": "December 23, 2026",
       "release_time": "8:30 AM ET",
       "release_iso": "2026-12-23T08:30:00-05:00",
-      "hours_until_release": 665,
+      "hours_until_release": 660,
       "schedule_source": "seeded_official_schedule",
-      "house_forecast": "0.282% m/m | 3.23% y/y",
+      "house_forecast": "0.282% m/m | 3.25% y/y",
       "kalshi_consensus": "no live Kalshi market found",
       "last_release": "October 2026: 0.293% m/m, 3.26% y/y",
       "risk": null,
@@ -11133,8 +11133,8 @@
   "cpi_pce_bridge": {
     "period": "October 2026",
     "data_month": "2026-10-01",
-    "generated_at": "2026-11-13T18:01:25",
-    "updated_display": "Wednesday, November 25, 2026 03:26 PM ET",
+    "generated_at": "2026-11-25T18:18:13",
+    "updated_display": "Wednesday, November 25, 2026 07:54 PM ET",
     "source_path": "macro_forecasting/output/core_pce_bridge_latest.json",
     "model_source": "macro_forecasting/cpi_to_pce_bridge.py",
     "core_cpi_mom": 0.2963,
@@ -11144,8 +11144,8 @@
     "pce_mom_display": "0.282%",
     "pce_bps_display": "28.2 bps",
     "pce_ann_display": "3.38%",
-    "pce_yoy": 3.23,
-    "pce_yoy_display": "3.23%",
+    "pce_yoy": 3.25,
+    "pce_yoy_display": "3.25%",
     "total_wedge": -1.5,
     "total_wedge_display": "-1.5 bps",
     "wedge_rows": [
@@ -12004,8 +12004,8 @@
     },
     "kalshi": {
       "mom_event": "KXPCECORE-26OCT",
-      "mom_expected": "0.301%",
-      "mom_coinflip_range": "0.3%-0.4%",
+      "mom_expected": "0.250%",
+      "mom_coinflip_range": "0.0%-0.1%",
       "yoy_event": "n/a",
       "yoy_expected": "n/a",
       "yoy_coinflip_range": "n/a"
@@ -12031,7 +12031,7 @@
       },
       {
         "label": "Expected Core PCE y/y",
-        "value": "3.23%",
+        "value": "3.25%",
         "tone": "bridge-hot",
         "detail": "FRED API"
       }

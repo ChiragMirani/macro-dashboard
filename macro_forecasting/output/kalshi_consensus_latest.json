@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-25T20:26:02.263320+00:00",
+  "generated_at_utc": "2026-11-26T00:54:24.895859+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
@@ -26,8 +26,8 @@
       "event_ticker": "KXECONSTATCPICORE-26NOV",
       "kind": "bucket",
       "market_count": 8,
-      "implied_value": 0.2026785714285714,
-      "consensus_label": "0.203% m/m",
+      "implied_value": 0.20758928571428567,
+      "consensus_label": "0.208% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26nov",
       "title": "Core CPI in November (exact value)"
     },
@@ -36,7 +36,7 @@
       "event_ticker": "KXCPICOREYOY-26NOV",
       "kind": "threshold",
       "market_count": 16,
-      "implied_value": 2.85,
+      "implied_value": 2.8505,
       "consensus_label": "2.85% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26nov",
       "title": "Core CPI YoY in November"
@@ -46,8 +46,8 @@
       "event_ticker": "KXPAYROLLS-26NOV",
       "kind": "threshold",
       "market_count": 19,
-      "implied_value": 97.75,
-      "consensus_label": "98k",
+      "implied_value": 97.025,
+      "consensus_label": "97k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26nov",
       "title": "Jobs numbers in Nov 2026?"
     },
