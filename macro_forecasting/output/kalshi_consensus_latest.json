@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-11-26T00:54:24.895859+00:00",
+  "generated_at_utc": "2026-11-26T20:04:43.961179+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
-      "event_ticker": "KXJOBLESSCLAIMS-26NOV26",
+      "event_ticker": "KXJOBLESSCLAIMS-26DEC03",
       "kind": "threshold",
-      "market_count": 0,
-      "implied_value": null,
-      "consensus_label": null,
-      "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26nov26",
-      "title": null
+      "market_count": 11,
+      "implied_value": 191400.0,
+      "consensus_label": "191,400",
+      "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26dec03",
+      "title": "Initial jobless claims for the week ending November 28, 2026"
     },
     "adp": {
       "key": "adp",
@@ -26,8 +26,8 @@
       "event_ticker": "KXECONSTATCPICORE-26NOV",
       "kind": "bucket",
       "market_count": 8,
-      "implied_value": 0.20758928571428567,
-      "consensus_label": "0.208% m/m",
+      "implied_value": 0.2090497737556561,
+      "consensus_label": "0.209% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26nov",
       "title": "Core CPI in November (exact value)"
     },
@@ -36,8 +36,8 @@
       "event_ticker": "KXCPICOREYOY-26NOV",
       "kind": "threshold",
       "market_count": 16,
-      "implied_value": 2.8505,
-      "consensus_label": "2.85% y/y",
+      "implied_value": 2.84,
+      "consensus_label": "2.84% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26nov",
       "title": "Core CPI YoY in November"
     },
@@ -46,8 +46,8 @@
       "event_ticker": "KXPAYROLLS-26NOV",
       "kind": "threshold",
       "market_count": 19,
-      "implied_value": 97.025,
-      "consensus_label": "97k",
+      "implied_value": 98.9625,
+      "consensus_label": "99k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26nov",
       "title": "Jobs numbers in Nov 2026?"
     },
@@ -56,8 +56,8 @@
       "event_ticker": "KXECONSTATU3-26NOV",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.241158536585365,
-      "consensus_label": "4.24%",
+      "implied_value": 4.245454545454545,
+      "consensus_label": "4.25%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26nov",
       "title": "Unemployment rate in Nov 2026?"
     },
