@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-25T23:18:01.290644+00:00",
+  "generated_at_utc": "2026-11-27T23:01:06.557951+00:00",
   "inputs": {
     "spot_date": "2026-10-01",
     "spot_ur": 4.1,
@@ -29,10 +29,10 @@
     "as_of": "2026-11-01",
     "level_bps_per_1z": 25.0,
     "delta_bps_per_1z": 15.0,
-    "composite_z_tighter_positive": 0.9700412856691165,
-    "level_adjustment_pp": -0.24251032141727913,
-    "delta_adjustment_pp": -0.40464965009910986,
-    "total_adjustment_pp": -0.6471599715163889,
+    "composite_z_tighter_positive": 1.0194570435028147,
+    "level_adjustment_pp": -0.2548642608757037,
+    "delta_adjustment_pp": -0.4194743774492193,
+    "total_adjustment_pp": -0.674338638324923,
     "components": [
       {
         "name": "ANFCI",
@@ -40,23 +40,23 @@
         "lookback_mean": -0.4535166666666667,
         "lookback_std": 0.17521572338754937,
         "zscore_tighter_positive": 0.06002124959645018,
-        "contribution_bps": -6.062758035431978
+        "contribution_bps": -6.371606521892592
       },
       {
         "name": "HY OAS",
-        "latest": 3.72,
-        "lookback_mean": 3.0997297297297295,
-        "lookback_std": 0.3260864293196107,
-        "zscore_tighter_positive": 1.9021652374938867,
-        "contribution_bps": -6.062758035431978
+        "latest": 3.77,
+        "lookback_mean": 3.1010810810810807,
+        "lookback_std": 0.3287468736571829,
+        "zscore_tighter_positive": 2.034753704202424,
+        "contribution_bps": -6.371606521892592
       },
       {
         "name": "VIX",
-        "latest": 23.383529411764705,
-        "lookback_mean": 18.7016945930397,
-        "lookback_std": 6.643569286886832,
-        "zscore_tighter_positive": 0.7047167895074224,
-        "contribution_bps": -6.062758035431978
+        "latest": 23.821578947368423,
+        "lookback_mean": 18.7053450058364,
+        "lookback_std": 6.6462605926378915,
+        "zscore_tighter_positive": 0.7697913541336779,
+        "contribution_bps": -6.371606521892592
       },
       {
         "name": "Broad USD",
@@ -64,41 +64,41 @@
         "lookback_mean": 117.79823333333334,
         "lookback_std": 4.7801441954250246,
         "zscore_tighter_positive": 1.2132618660787067,
-        "contribution_bps": -6.062758035431978
+        "contribution_bps": -6.371606521892592
       }
     ],
     "checkpoint_deltas": [
       {
         "name": "since_last_fomc",
         "checkpoint_date": "2026-01-28",
-        "delta_z_tighter_positive": 1.3613258581611167,
-        "adjustment_bps": -20.41988787241675
+        "delta_z_tighter_positive": 1.410741615994815,
+        "adjustment_bps": -21.161124239922223
       },
       {
         "name": "since_last_sep",
         "checkpoint_date": "2025-12-17",
-        "delta_z_tighter_positive": 1.3363384758329486,
-        "adjustment_bps": -20.04507713749423
+        "delta_z_tighter_positive": 1.3857542336666469,
+        "adjustment_bps": -20.786313504999704
       }
     ]
   },
   "adjusted_taylor": {
-    "spot": 4.076463643055671,
+    "spot": 4.049284976247137,
     "forward": null,
     "sep_delta_only_forward": null
   },
   "quarterly_revision": {
     "macro_revision_vs_sep_pp": null,
-    "fci_impulse_since_sep_pp": -0.20045077137494227,
+    "fci_impulse_since_sep_pp": -0.20786313504999704,
     "net_revision_vs_sep_pp": null
   },
   "market_pricing": {
     "treasury": {
       "as_of": "2026-11-01",
       "rates": {
-        "6m": 4.46,
-        "1y": 4.59,
-        "2y": 4.63
+        "6m": 4.44,
+        "1y": 4.56,
+        "2y": 4.61
       },
       "implied_cuts": {
         "6m": 0.0,
@@ -110,7 +110,7 @@
   },
   "policy_gap": {
     "raw_spot_vs_ff_pp": 0.8436236145720599,
-    "adjusted_spot_vs_ff_pp": 0.19646364305567143,
+    "adjusted_spot_vs_ff_pp": 0.16928497624713668,
     "raw_forward_vs_ff_pp": null,
     "adjusted_forward_vs_ff_pp": null
   }
