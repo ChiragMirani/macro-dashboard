@@ -2,7 +2,7 @@
 
 > Live US macroeconomic release calendar with house model forecasts and Kalshi market consensus, maintained by Chirag Mirani.
 
-Updated: Thursday, November 26, 2026 03:04 PM ET
+Updated: Thursday, November 26, 2026 07:58 PM ET
 Machine-readable feed: https://chiragmirani.github.io/macro-dashboard/dashboard_data.json
 Plain-language guide (what the table is, how to read it, how it was built, track record): https://chiragmirani.github.io/macro-dashboard/how-to-use-macro-forecasts.html
 
@@ -14,15 +14,15 @@ BLS (CPI, PPI, Employment Situation/CES/CPS); BEA PCE data and methodology; DOL 
 
 - **ADP** (Labor) â€” releases Wednesday, December 02, 2026 at 8:15 AM ET.
   House forecast: 87k.
-  Kalshi consensus: 80k.
+  Kalshi consensus: 81k.
   Last release: October 2026: 86k.
 - **Weekly Claims** (Labor) â€” releases Thursday, December 03, 2026 at 8:30 AM ET.
   House forecast: 202,072.
-  Kalshi consensus: 191,400.
+  Kalshi consensus: 191,225.
   Last release: Week ending Oct 31, 2026: 189,000.
 - **NFP** (Labor) â€” releases Friday, December 04, 2026 at 8:30 AM ET.
   House forecast: 103k.
-  Kalshi consensus: 99k.
+  Kalshi consensus: 98k.
   Last release: October 2026: 165k.
 - **Unemployment Rate** (Labor) â€” releases Friday, December 04, 2026 at 8:30 AM ET.
   House forecast: 4.10%.
