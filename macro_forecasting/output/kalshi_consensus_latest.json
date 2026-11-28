@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-11-27T19:52:48.802205+00:00",
+  "generated_at_utc": "2026-11-28T00:26:35.344759+00:00",
   "events": {
     "weekly_claims": {
       "key": "weekly_claims",
       "event_ticker": "KXJOBLESSCLAIMS-26DEC03",
       "kind": "threshold",
       "market_count": 11,
-      "implied_value": 191050.0,
-      "consensus_label": "191,050",
+      "implied_value": 190950.0,
+      "consensus_label": "190,950",
       "kalshi_url": "https://kalshi.com/markets/kxjoblessclaims-26dec03",
       "title": "Initial jobless claims for the week ending November 28, 2026"
     },
@@ -26,8 +26,8 @@
       "event_ticker": "KXECONSTATCPICORE-26NOV",
       "kind": "bucket",
       "market_count": 8,
-      "implied_value": 0.22405660377358488,
-      "consensus_label": "0.224% m/m",
+      "implied_value": 0.2254807692307692,
+      "consensus_label": "0.225% m/m",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatcpicore-26nov",
       "title": "Core CPI in November (exact value)"
     },
@@ -36,7 +36,7 @@
       "event_ticker": "KXCPICOREYOY-26NOV",
       "kind": "threshold",
       "market_count": 16,
-      "implied_value": 2.8394999999999997,
+      "implied_value": 2.839,
       "consensus_label": "2.84% y/y",
       "kalshi_url": "https://kalshi.com/markets/kxcpicoreyoy-26nov",
       "title": "Core CPI YoY in November"
@@ -46,7 +46,7 @@
       "event_ticker": "KXPAYROLLS-26NOV",
       "kind": "threshold",
       "market_count": 19,
-      "implied_value": 98.47500000000001,
+      "implied_value": 98.325,
       "consensus_label": "98k",
       "kalshi_url": "https://kalshi.com/markets/kxpayrolls-26nov",
       "title": "Jobs numbers in Nov 2026?"
@@ -56,7 +56,7 @@
       "event_ticker": "KXECONSTATU3-26NOV",
       "kind": "bucket",
       "market_count": 23,
-      "implied_value": 4.241087613293051,
+      "implied_value": 4.244477611940298,
       "consensus_label": "4.24%",
       "kalshi_url": "https://kalshi.com/markets/kxeconstatu3-26nov",
       "title": "Unemployment rate in Nov 2026?"
